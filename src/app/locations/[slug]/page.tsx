@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { Container } from '@/components/layout/Container'
 import { QuoteForm } from '@/components/forms/QuoteForm'
 import { Button } from '@/components/ui/Button'
+import { LocationFAQ } from '@/components/location/LocationFAQ'
 import { LOCATIONS, type LocationData } from '@/lib/locations'
 import { SERVICES, SITE_CONFIG } from '@/lib/constants'
 
@@ -339,6 +340,9 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
                   </div>
                 </div>
               </div>
+
+              {/* FAQ Section */}
+              <LocationFAQ city={location.city} />
             </div>
           </div>
         </Container>
@@ -379,7 +383,7 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "RoofingContractor",
-            "name": "Ripple Roofing & Construction",
+            "name": `Ripple Roofing & Construction - ${location.city}`,
             "image": "https://rippleroofs.com/images/logo.png",
             "telephone": SITE_CONFIG.phone,
             "email": SITE_CONFIG.email,
@@ -391,14 +395,24 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
               "postalCode": "78664",
               "addressCountry": "US"
             },
-            "areaServed": {
-              "@type": "City",
-              "name": location.city,
-              "containedIn": {
-                "@type": "State",
-                "name": "Texas"
-              }
-            },
+            "areaServed": [
+              {
+                "@type": "City",
+                "name": location.city,
+                "containedIn": {
+                  "@type": "State",
+                  "name": "Texas"
+                }
+              },
+              ...location.neighborhoods.slice(0, 5).map(neighborhood => ({
+                "@type": "Place",
+                "name": neighborhood,
+                "containedIn": {
+                  "@type": "City",
+                  "name": location.city
+                }
+              }))
+            ],
             "geo": {
               "@type": "GeoCoordinates",
               "latitude": "30.5088",
@@ -406,7 +420,100 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
             },
             "url": `https://rippleroofs.com/locations/${location.slug}`,
             "priceRange": "$$",
-            "openingHours": "Mo-Su 00:00-23:59"
+            "openingHours": "Mo-Su 00:00-23:59",
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Roofing Services",
+              "itemListElement": SERVICES.slice(0, 6).map(service => ({
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": service.title,
+                  "description": service.shortDescription
+                }
+              }))
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "reviewCount": "127"
+            }
+          })
+        }}
+      />
+      
+      {/* Breadcrumb Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://rippleroofs.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Locations",
+                "item": "https://rippleroofs.com/locations"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": location.city,
+                "item": `https://rippleroofs.com/locations/${location.slug}`
+              }
+            ]
+          })
+        }}
+      />
+
+      {/* FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": `How much does a roof replacement cost in ${location.city}?`,
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": `Roof replacement costs in ${location.city} typically range from $8,000 to $25,000+ depending on size, materials, and complexity. Contact Ripple Roofing for a free detailed quote.`
+                }
+              },
+              {
+                "@type": "Question",
+                "name": `Do you offer emergency roofing services in ${location.city}?`,
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": `Yes! We provide 24/7 emergency roofing services throughout ${location.city}. Call (512) 763-5277 for immediate assistance.`
+                }
+              },
+              {
+                "@type": "Question",
+                "name": `How long does a roof last in ${location.city}'s climate?`,
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": `In ${location.city}'s climate, asphalt shingles last 15-25 years, architectural shingles 25-30 years, metal roofing 40-70 years. Regular maintenance extends lifespan.`
+                }
+              },
+              {
+                "@type": "Question",
+                "name": `Are you licensed and insured in ${location.city}?`,
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": `Yes! We are fully licensed, insured, and CertainTeed Shingle Master certified to provide roofing services throughout ${location.city} and Central Texas.`
+                }
+              }
+            ]
           })
         }}
       />

@@ -46,9 +46,17 @@ export const NAV_LINKS: NavLink[] = [
     children: [
       { href: '/locations/round-rock', label: 'Round Rock' },
       { href: '/locations/austin', label: 'Austin' },
+      { href: '/locations/pflugerville', label: 'Pflugerville' },
+      { href: '/locations/cedar-park', label: 'Cedar Park' },
+      { href: '/locations/leander', label: 'Leander' },
       { href: '/locations/georgetown', label: 'Georgetown' },
+      { href: '/locations/san-marcos', label: 'San Marcos' },
+      { href: '/locations/new-braunfels', label: 'New Braunfels' },
       { href: '/locations/san-antonio', label: 'San Antonio' },
+      { href: '/locations/temple', label: 'Temple' },
       { href: '/locations/killeen', label: 'Killeen' },
+      { href: '/locations/copperas-cove', label: 'Copperas Cove' },
+      { href: '/locations/waco', label: 'Waco' },
     ]
   },
   { href: '/projects', label: 'Projects' },
