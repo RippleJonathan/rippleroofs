@@ -6,6 +6,7 @@ import { MDXRemote } from 'next-mdx-remote/rsc'
 import Image from 'next/image'
 import Link from 'next/link'
 import { BlogPostCard } from '@/components/blog/BlogPostCard'
+import { getBlurDataURL } from '@/lib/image-blur'
 
 interface BlogPostPageProps {
   params: {
@@ -163,6 +164,8 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
           fill
           className="object-cover"
           priority
+          placeholder="blur"
+          blurDataURL={getBlurDataURL(16, 9)}
         />
       </section>
 

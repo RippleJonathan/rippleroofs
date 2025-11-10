@@ -2,6 +2,7 @@ import { FC } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { BlogPostMetadata } from '@/lib/blog'
+import { getShimmerDataURL } from '@/lib/image-blur'
 
 interface BlogPostCardProps {
   post: BlogPostMetadata
@@ -18,6 +19,8 @@ export const BlogPostCard: FC<BlogPostCardProps> = ({ post }) => {
             alt={post.title}
             fill
             className="object-cover hover:scale-105 transition-transform duration-300"
+            placeholder="blur"
+            blurDataURL={getShimmerDataURL()}
           />
         </div>
       </Link>
