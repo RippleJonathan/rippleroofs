@@ -121,7 +121,7 @@ export const Navbar: FC = () => {
 
           {/* Mobile Menu */}
           {mobileMenuOpen && (
-            <div className="lg:hidden py-4 border-t border-primary-100">
+            <div className="lg:hidden py-4 border-t border-primary-100 max-h-[calc(100vh-12rem)] overflow-y-auto">
               <div className="flex flex-col space-y-4">
                 {NAV_LINKS.map((link) => (
                   <div key={link.href}>
