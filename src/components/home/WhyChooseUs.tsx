@@ -35,7 +35,7 @@ export const WhyChooseUs: FC = () => {
     },
     {
       feature: 'Customer Rating',
-      us: '5.0 stars (150+ reviews)',
+      us: '5.0 stars (62+ reviews)',
       them: 'Variable or no reviews',
       highlight: true,
     },

@@ -111,7 +111,7 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
             </div>
             <div>
               <div className="text-3xl font-bold text-accent-600 mb-1">100%</div>
-              <div className="text-sm text-primary-600">Licensed & Insured</div>
+              <div className="text-sm text-primary-600">Certified & Insured</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-accent-600 mb-1">Free</div>

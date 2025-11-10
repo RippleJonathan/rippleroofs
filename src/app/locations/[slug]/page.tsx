@@ -93,7 +93,7 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
               and all {location.city} neighborhoods
             </p>
             <p className="text-lg text-primary-200 mb-8">
-              CertainTeed Shingle Master Certified • Licensed & Insured • 24/7 Emergency Service
+              CertainTeed Shingle Master Certified • Certified & Insured • 24/7 Emergency Service
             </p>
             <div className="flex flex-wrap gap-4">
               <Button variant="primary" size="lg" href="#quote">
@@ -121,7 +121,7 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
             </div>
             <div>
               <div className="text-3xl font-bold mb-1">100%</div>
-              <div className="text-sm text-white/90">Licensed & Insured</div>
+              <div className="text-sm text-white/90">Certified & Insured</div>
             </div>
             <div>
               <div className="text-3xl font-bold mb-1">A+</div>
@@ -340,10 +340,12 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
                   </div>
                 </div>
               </div>
-
-              {/* FAQ Section */}
-              <LocationFAQ city={location.city} />
             </div>
+          </div>
+
+          {/* FAQ Section - Full Width */}
+          <div className="mt-16">
+            <LocationFAQ city={location.city} />
           </div>
         </Container>
       </section>
@@ -507,10 +509,10 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
               },
               {
                 "@type": "Question",
-                "name": `Are you licensed and insured in ${location.city}?`,
+                "name": `Are you certified and insured in ${location.city}?`,
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": `Yes! We are fully licensed, insured, and CertainTeed Shingle Master certified to provide roofing services throughout ${location.city} and Central Texas.`
+                  "text": `Yes! We are fully insured and CertainTeed Shingle Master certified to provide roofing services throughout ${location.city} and Central Texas. We carry comprehensive liability and workers' compensation coverage.`
                 }
               }
             ]

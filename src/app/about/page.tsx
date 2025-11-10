@@ -78,7 +78,7 @@ const AboutPage: FC = () => {
 
   const stats = [
     { number: '1000+', label: 'Projects Completed' },
-    { number: '100%', label: 'Licensed & Insured' },
+    { number: '100%', label: 'Certified & Insured' },
     { number: '24/7', label: 'Emergency Service' },
     { number: 'A+', label: 'CertainTeed Certified' },
   ]
@@ -310,7 +310,7 @@ const AboutPage: FC = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2">Fully Licensed & Insured</h3>
+              <h3 className="text-xl font-bold mb-2">Fully Certified & Insured</h3>
               <p className="text-primary-100">
                 Complete coverage for your protection and peace of mind
               </p>

@@ -156,7 +156,7 @@ const ServicesPage: FC = () => {
                 Fully Insured
               </h3>
               <p className="text-primary-600">
-                Licensed and insured for your protection and peace of mind
+                Certified and insured for your protection and peace of mind
               </p>
             </div>
           </div>

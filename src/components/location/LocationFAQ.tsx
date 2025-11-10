@@ -33,10 +33,6 @@ export const LocationFAQ: FC<LocationFAQProps> = ({ city, faqs }) => {
       answer: `For ${city}'s climate, we recommend impact-resistant shingles rated for hail, Class 4 rated materials, light-colored reflective options to reduce heat absorption, proper ventilation systems, and CertainTeed Landmark or Presidential shingles. These materials withstand Texas heat, UV exposure, hail, and severe weather common in ${city}. We'll help you choose the perfect material for your budget and needs.`
     },
     {
-      question: `Are you licensed and insured to work in ${city}?`,
-      answer: `Absolutely! We are fully licensed and insured to provide roofing services throughout ${city} and all Central Texas areas. We carry comprehensive liability insurance and workers' compensation coverage. Additionally, we're CertainTeed Shingle Master certified, placing us among the top 1% of roofing contractors nationwide. All work is performed to or above ${city} building codes and regulations.`
-    },
-    {
       question: `How long does a roof replacement take in ${city}?`,
       answer: `Most residential roof replacements in ${city} take 1-3 days depending on size and complexity. Single-story homes typically complete in 1-2 days, while larger two-story homes may take 2-3 days. Commercial projects vary based on size and scope. Weather can affect timelines. We work efficiently while maintaining quality, and always clean up thoroughly. We'll provide a specific timeline during your ${city} property inspection.`
     },
