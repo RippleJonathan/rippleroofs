@@ -1,13 +1,13 @@
 'use client'
 
 import { FC } from 'react'
-import Link from 'next/link'
 import Image from 'next/image'
+import Link from 'next/link'
 import { Container } from '@/components/layout/Container'
 import { Button } from '@/components/ui/Button'
 import { PROJECTS } from '@/lib/projects'
 
-export const ProjectGalleryPreview: FC = () => {
+export const FeaturedProjects: FC = () => {
   // Get 6 featured projects (mix of metal and shingle)
   const featuredProjects = [
     PROJECTS[0], // Metal roof Austin
@@ -85,4 +85,3 @@ export const ProjectGalleryPreview: FC = () => {
     </section>
   )
 }
-
