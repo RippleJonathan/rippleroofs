@@ -94,7 +94,7 @@ Don't forget to add the environment variable:
 2. Navigate to Environment Variables
 3. Add:
    - **Key**: `RESEND_API_KEY`
-   - **Value**: `re_RBLU4NcR_MibnSkWWw7FyTzMegM7Uxcn2`
+   - **Value**: 
 4. Deploy!
 
 ---

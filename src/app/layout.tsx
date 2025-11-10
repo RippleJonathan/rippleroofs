@@ -3,6 +3,7 @@ import { Inter, Space_Grotesk } from 'next/font/google'
 import './globals.css'
 import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
+import { FooterReviews } from '@/components/layout/FooterReviews'
 import { FloatingCallButton } from '@/components/ui/FloatingCallButton'
 import { EmergencyBanner } from '@/components/ui/EmergencyBanner'
 
@@ -77,6 +78,7 @@ export default function RootLayout({
         <EmergencyBanner />
         <Navbar />
         <main>{children}</main>
+        <FooterReviews />
         <Footer />
         <FloatingCallButton />
       </body>
