@@ -2741,6 +2741,673 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
             </div>
           )}
 
+          {/* Cedar Park-specific deep content */}
+          {location.slug === 'cedar-park' && (
+            <div className="space-y-16 mt-16">
+              {/* Cedar Park Neighborhoods Deep Dive */}
+              <div>
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Cedar Park Neighborhoods: Your Complete Roofing Guide by Area
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  Cedar Park is one of Austin metro's premier family communities, known for excellent schools and well-planned neighborhoods. Here's what homeowners need to know about roofing in Cedar Park's most popular areas:
+                </p>
+
+                <div className="space-y-8">
+                  {/* Avery Ranch */}
+                  <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-lg shadow-md p-6 border-l-4 border-orange-500">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">Avery Ranch & Trails of Avery Ranch</h3>
+                    <div className="grid md:grid-cols-2 gap-4 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Premier Community Profile:</p>
+                        <p className="mb-3">Cedar Park's flagship master-planned community, built 2000-present. 4,000+ homes, top-rated schools, extensive amenities (pools, trails, parks). Higher property values. Strong HOA maintaining community standards. Very popular with families and professionals.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Roofing Characteristics:</p>
+                        <ul className="list-disc pl-5 space-y-1">
+                          <li>Homes 10-25 years old, first replacements starting now</li>
+                          <li>Larger homes (2,500-4,000+ sq ft typical)</li>
+                          <li>More complex roof lines with architectural features</li>
+                          <li>Strict HOA color and material approval required</li>
+                          <li>2024 hailstorm damaged many Avery Ranch roofs</li>
+                          <li>Premium materials expected to match property values</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Best Materials for Avery Ranch:</p>
+                        <p className="mb-3">Impact-resistant architectural shingles (CertainTeed Landmark Pro, Owens Corning Duration Storm). Earth tone colors per HOA: Weathered Wood, Driftwood, Georgetown Gray. Must submit HOA application before work.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Typical Investment:</p>
+                        <p className="text-accent-600 font-bold text-xl">$18,000-$32,000</p>
+                        <p className="text-sm">Larger homes, moderate to high complexity, premium materials, HOA compliance</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Buttercup Creek */}
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-blue-500">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">Buttercup Creek & Anderson Mill</h3>
+                    <div className="grid md:grid-cols-2 gap-4 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Established Neighborhoods:</p>
+                        <p className="mb-3">Built 1980s-2000s, some of Cedar Park's original suburban developments. Mix of original owners and young families. Mature trees, good schools, convenient location. More affordable than newer developments.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Common Roofing Needs:</p>
+                        <ul className="list-disc pl-5 space-y-1">
+                          <li>Original roofs now 20-40+ years old (replacement due)</li>
+                          <li>Many homes on 2nd roof replacement</li>
+                          <li>Standard architectural or even 3-tab originally installed</li>
+                          <li>Potential decking issues from age</li>
+                          <li>Simpler roof lines than newer Cedar Park homes</li>
+                          <li>Large trees = debris accumulation and algae</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Smart Upgrade Path:</p>
+                        <p className="mb-3">Time to upgrade to impact-resistant shingles for hail protection and insurance savings. Algae-resistant formulas essential with tree coverage. Good value pricing for established neighborhoods.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Cost Range:</p>
+                        <p className="text-accent-600 font-bold text-xl">$13,000-$22,000</p>
+                        <p className="text-sm">1,800-2,600 sq ft homes, straightforward roof lines, budget for possible decking repairs</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Whitestone & Cypress Creek */}
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-green-500">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">Whitestone & Cypress Creek</h3>
+                    <div className="grid md:grid-cols-2 gap-4 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Premium Golf Course Community:</p>
+                        <p className="mb-3">Upscale neighborhood surrounding Whitestone golf course, built 1990s-2010s. Custom and semi-custom homes. Lake/golf course views. Higher-end finishes and larger lots. Strong community feel.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Roofing Considerations:</p>
+                        <ul className="list-disc pl-5 space-y-1">
+                          <li>Larger homes (2,800-4,500+ sq ft common)</li>
+                          <li>Complex roof lines on custom homes</li>
+                          <li>Roofs 15-30 years old approaching replacement</li>
+                          <li>Hail damage from Cedar Park's frequent storms</li>
+                          <li>Premium materials expected in upscale community</li>
+                          <li>Some homes have architectural features (turrets, dormers)</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Recommended Materials:</p>
+                        <p className="mb-3">Premium impact-resistant shingles to match home values. Designer colors popular. Some homeowners choose metal for longevity. Must match neighborhood aesthetics.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Investment Range:</p>
+                        <p className="text-accent-600 font-bold text-xl">$20,000-$38,000</p>
+                        <p className="text-sm">Larger custom homes, high complexity, premium materials, golf course community standards</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Twin Lakes & Lakeline */}
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-purple-500">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">Twin Lakes, Lakeline & Desert Oaks</h3>
+                    <div className="grid md:grid-cols-2 gap-4 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Mid-Range Cedar Park:</p>
+                        <p className="mb-3">Built 2000s-2015, good value neighborhoods. Family-oriented, convenient to Lakeline Mall and I-35. Mix of production builders. Good schools. Popular with young professionals and growing families.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Roofing Situation:</p>
+                        <ul className="list-disc pl-5 space-y-1">
+                          <li>Roofs 10-25 years old (varied ages)</li>
+                          <li>Some starting first replacement wave</li>
+                          <li>Standard two-story production homes</li>
+                          <li>Moderate roof complexity</li>
+                          <li>2024 storm created claims surge</li>
+                          <li>HOA guidelines in some subdivisions</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Material Choices:</p>
+                        <p className="mb-3">Impact-resistant architectural shingles standard recommendation. Neutral colors (grays, browns) most popular. Good ventilation essential for Cedar Park summers.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Typical Costs:</p>
+                        <p className="text-accent-600 font-bold text-xl">$15,000-$24,000</p>
+                        <p className="text-sm">Standard 2,100-2,800 sq ft Cedar Park homes, moderate complexity</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Newer Cedar Park Developments */}
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-red-500">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">New Cedar Park Developments (2015-Present)</h3>
+                    <div className="grid md:grid-cols-2 gap-4 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Modern Construction:</p>
+                        <p className="mb-3">Latest Cedar Park neighborhoods with newest building standards. Energy-efficient designs, modern amenities, strong HOAs. Built by major builders (DR Horton, Lennar, Taylor Morrison). Growing rapidly toward Leander.</p>
+                        <p className="font-semibold text-primary-900 mb-2">New Home Roofing:</p>
+                        <ul className="list-disc pl-5 space-y-1">
+                          <li>Homes under 10 years old with builder warranties</li>
+                          <li>Modern architectural shingles already installed</li>
+                          <li>Proper ventilation and installation practices</li>
+                          <li>Won't need replacement until 2030-2045</li>
+                          <li>Some had hail damage in 2024 storm (insurance claims)</li>
+                          <li>Strict HOA color approval processes</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Future Replacement Planning:</p>
+                        <p className="mb-3">When time comes, upgrade to impact-resistant for better protection. Match exact HOA colors. Coordinate with neighbors for group pricing potential.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Future Investment:</p>
+                        <p className="text-accent-600 font-bold text-xl">$17,000-$27,000</p>
+                        <p className="text-sm">Modern 2,300-3,000 sq ft homes when replacements needed in 15-20 years</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Original Cedar Park */}
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-amber-500">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">Original Cedar Park & Older Neighborhoods</h3>
+                    <div className="grid md:grid-cols-2 gap-4 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Historic Cedar Park:</p>
+                        <p className="mb-3">Original Cedar Park homes from 1960s-1980s near old downtown. Smaller homes on larger lots. Mature landscaping. Some being renovated by young buyers. Affordable entry to Cedar Park.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Roofing Challenges:</p>
+                        <ul className="list-disc pl-5 space-y-1">
+                          <li>Original roofs 40-60+ years past due</li>
+                          <li>On 2nd or 3rd replacement already</li>
+                          <li>Decking repairs very common (budget $2k-$5k)</li>
+                          <li>Simpler ranch-style roof lines (lower cost)</li>
+                          <li>Mature trees providing shade but maintenance needed</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Practical Approach:</p>
+                        <p className="mb-3">Quality architectural shingles appropriate for home values. Impact-resistant smart for insurance savings. Expect decking replacement in older homes. Simple roof lines keep costs reasonable.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Cost Range:</p>
+                        <p className="text-accent-600 font-bold text-xl">$11,000-$19,000</p>
+                        <p className="text-sm">Smaller 1,500-2,200 sq ft homes, simple roof lines, plus decking repairs (common)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-8 bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
+                  <p className="text-primary-900 font-semibold mb-2">💡 Cedar Park Roofing Pro Tip:</p>
+                  <p className="text-primary-700">
+                    Cedar Park sits in the same hail corridor as Round Rock and Georgetown, experiencing frequent severe storms. The March 2024 storm heavily impacted Avery Ranch, Buttercup Creek, and northern Cedar Park neighborhoods. <strong>Avery Ranch residents: Your HOA requires architectural approval—we handle all paperwork and ensure color compliance.</strong> After major storms, coordinate with neighbors for potential group pricing (10-15% savings when we work multiple homes). Free inspections available to assess storm damage.
+                  </p>
+                </div>
+              </div>
+
+              {/* Cedar Park Storm History */}
+              <div>
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Cedar Park Storm History & Hail Damage Patterns
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  Cedar Park shares Williamson County's unfortunate position in "Hail Alley," experiencing severe storms regularly. Understanding this history is crucial for protecting your Cedar Park home:
+                </p>
+
+                <div className="grid md:grid-cols-2 gap-6 mb-8">
+                  <div className="bg-white rounded-lg shadow-md p-6">
+                    <h3 className="text-xl font-bold text-primary-900 mb-4 flex items-center gap-2">
+                      <span className="text-2xl">🌩️</span> Major Cedar Park Hailstorms (2015-2025)
+                    </h3>
+                    <div className="space-y-4">
+                      <div className="border-l-4 border-red-600 pl-4">
+                        <p className="font-bold text-primary-900">March 2024 - Avery Ranch & Northern Cedar Park Hit Hard</p>
+                        <p className="text-sm text-primary-700">Golf ball to baseball-sized hail across northern Cedar Park and Avery Ranch. Southern Cedar Park received quarter to golf ball hail. <strong>Estimated 35-45% of Cedar Park homes sustained roof damage.</strong> Avery Ranch particularly impacted. Thousands of insurance claims filed throughout Cedar Park neighborhoods.</p>
+                      </div>
+                      <div className="border-l-4 border-orange-500 pl-4">
+                        <p className="font-bold text-primary-900">May 2022 - Whitestone to Buttercup Creek</p>
+                        <p className="text-sm text-primary-700">Severe supercell tracked across Cedar Park with golf ball to baseball hail. Whitestone, Buttercup Creek, and Anderson Mill heavily damaged. Wind gusts to 70 mph. Many custom homes in Whitestone had complex roof damage requiring full replacement.</p>
+                      </div>
+                      <div className="border-l-4 border-yellow-500 pl-4">
+                        <p className="font-bold text-primary-900">April 2021 - Round Rock to Cedar Park Path</p>
+                        <p className="text-sm text-primary-700">Major hailstorm moved from Round Rock through Cedar Park toward Leander. Baseball-sized hail reported in parts of Cedar Park. This storm created the first major insurance claims wave in newer Avery Ranch sections built in the 2010s.</p>
+                      </div>
+                      <div className="border-l-4 border-blue-500 pl-4">
+                        <p className="font-bold text-primary-900">March 2016 - $1.4 Billion Catastrophic Event</p>
+                        <p className="text-sm text-primary-700">Part of the devastating Williamson County hailstorm. Cedar Park received golf ball to baseball hail throughout the city. Entire neighborhoods like Buttercup Creek and Anderson Mill had 80-90%+ replacement rates. This event redefined roofing standards in Cedar Park.</p>
+                      </div>
+                      <div className="border-l-4 border-purple-500 pl-4">
+                        <p className="font-bold text-primary-900">Cedar Park Storm Pattern: Every 2-4 Years</p>
+                        <p className="text-sm text-primary-700">Cedar Park experiences a major (potentially roof-totaling) hailstorm approximately every 2-4 years, similar to Round Rock and Georgetown. Minor hail events occur multiple times annually. Living in Cedar Park means planning for regular hail exposure.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-lg shadow-md p-6">
+                    <h3 className="text-xl font-bold text-primary-900 mb-4 flex items-center gap-2">
+                      <span className="text-2xl">📊</span> Cedar Park Hail Statistics & Patterns
+                    </h3>
+                    <div className="space-y-4">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Why Cedar Park Gets Hit Frequently:</p>
+                        <p className="text-sm text-primary-700 mb-2">Cedar Park sits in northwest Austin metro along the I-35 corridor where storms frequently track and intensify. Proximity to Hill Country creates additional weather dynamics. Shares the same "Hail Alley" designation as Round Rock and Georgetown.</p>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Peak Hail Season: March - May</p>
+                        <p className="text-sm text-primary-700 mb-2">75% of Cedar Park's damaging hail occurs in spring. April is statistically the most dangerous month.</p>
+                        <div className="bg-primary-50 p-3 rounded">
+                          <p className="text-xs font-semibold text-primary-900 mb-1">Monthly Risk Distribution:</p>
+                          <p className="text-xs text-primary-700">March: 25% • April: 30% • May: 20% • Other: 25%</p>
+                        </div>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">North vs Central vs South Cedar Park:</p>
+                        <p className="text-sm text-primary-700 mb-2">Northern Cedar Park (Avery Ranch area) experiences slightly higher hail frequency. Central Cedar Park (Buttercup Creek, Whitestone) gets frequent hits. Southern Cedar Park (Lakeline area) also regularly affected. All areas at significant risk.</p>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Expected Hail Frequency in Cedar Park:</p>
+                        <div className="space-y-2 text-sm">
+                          <div className="flex justify-between items-center">
+                            <span className="text-primary-700">Pea-sized (1/4") - Cosmetic only</span>
+                            <span className="font-bold text-primary-900">5-8x per year</span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span className="text-primary-700">Quarter-sized (1") - Minor damage</span>
+                            <span className="font-bold text-primary-900">2-4x per year</span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span className="text-primary-700">Golf ball (1.75") - Major damage</span>
+                            <span className="font-bold text-accent-600">1-2x per year</span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span className="text-primary-700">Baseball (2.75") - Roof totaled</span>
+                            <span className="font-bold text-red-600">Every 2-4 years</span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span className="text-primary-700">Softball (4") - Catastrophic</span>
+                            <span className="font-bold text-red-600">Every 8-12 years</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-accent-50 to-blue-50 rounded-lg p-6">
+                  <h3 className="text-xl font-bold text-primary-900 mb-4">Protecting Your Cedar Park Home from Storm Damage</h3>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <p className="font-semibold text-primary-900 mb-2">✅ Before Storm Season (Essential Steps):</p>
+                      <ul className="text-sm text-primary-700 space-y-1">
+                        <li>• <strong>Install Class 4 impact-resistant shingles</strong> - Essential in Cedar Park</li>
+                        <li>• Document current roof condition with dated photos</li>
+                        <li>• Review homeowner's insurance - know deductible and coverage limits</li>
+                        <li>• Trim tree branches 10+ feet away from roof</li>
+                        <li>• Sign up for Williamson County emergency alerts</li>
+                        <li>• Save Ripple Roofing: (512) 763-5277 for post-storm inspections</li>
+                        <li>• Avery Ranch: Check HOA approved roof colors now</li>
+                        <li>• Talk to neighbors about past storm damage experiences</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-primary-900 mb-2">⚠️ After a Cedar Park Hailstorm:</p>
+                      <ul className="text-sm text-primary-700 space-y-1">
+                        <li>• <strong>Inspect within 1-2 weeks</strong> - damage may not be immediately obvious</li>
+                        <li>• Check gutters for shingle granule accumulation (damage indicator)</li>
+                        <li>• Look for dents on metal (mailbox, AC unit, vents, gutters)</li>
+                        <li>• Call us for FREE professional inspection - we assess from roof</li>
+                        <li>• Document ALL damage with photos and videos</li>
+                        <li>• File insurance claim if damage found (1 year deadline typically)</li>
+                        <li>• Have us present at adjuster meeting (crucial for proper scope)</li>
+                        <li>• Coordinate with neighbors - group pricing available (10-15% off)</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Best Roofing Materials for Cedar Park */}
+              <div>
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Best Roofing Materials for Cedar Park Homes
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  Cedar Park's hail frequency and Texas heat require specific roofing materials. Here's what performs best for Cedar Park's diverse neighborhoods:
+                </p>
+
+                <div className="space-y-6">
+                  {/* #1 Recommendation */}
+                  <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg p-6 border-2 border-green-500">
+                    <div className="flex items-start gap-3 mb-4">
+                      <span className="text-3xl">🏆</span>
+                      <div>
+                        <h3 className="text-2xl font-bold text-primary-900">#1 Recommendation: Class 4 Impact-Resistant Architectural Shingles</h3>
+                        <p className="text-accent-600 font-semibold">Best Value + Protection for Cedar Park's Hail Pattern</p>
+                      </div>
+                    </div>
+                    
+                    <div className="grid md:grid-cols-3 gap-6 mb-6">
+                      <div className="bg-white rounded p-4">
+                        <p className="font-bold text-primary-900 mb-2">Top Choice: CertainTeed Landmark Pro IR</p>
+                        <ul className="text-sm text-primary-700 space-y-1">
+                          <li>• Class 4 UL 2218 impact rating</li>
+                          <li>• Survives baseball-sized hail</li>
+                          <li>• 130 mph wind resistance</li>
+                          <li>• Cool Roof Technology (heat reflection)</li>
+                          <li>• 50-year warranty</li>
+                          <li>• 15-35% insurance discount</li>
+                          <li>• Most popular in Avery Ranch</li>
+                        </ul>
+                        <p className="text-accent-600 font-bold mt-3">$14,500-$21,000</p>
+                        <p className="text-xs text-primary-600">(2,000 sq ft Cedar Park home)</p>
+                      </div>
+                      <div className="bg-white rounded p-4">
+                        <p className="font-bold text-primary-900 mb-2">Excellent: GAF Timberline HDZ IR</p>
+                        <ul className="text-sm text-primary-700 space-y-1">
+                          <li>• Class 4 impact-rated</li>
+                          <li>• LayerLock technology</li>
+                          <li>• 130 mph wind warranty</li>
+                          <li>• Widely available</li>
+                          <li>• 50-year limited warranty</li>
+                          <li>• 10-35% insurance savings</li>
+                          <li>• Popular in Whitestone</li>
+                        </ul>
+                        <p className="text-accent-600 font-bold mt-3">$15,000-$22,000</p>
+                        <p className="text-xs text-primary-600">(2,000 sq ft Cedar Park home)</p>
+                      </div>
+                      <div className="bg-white rounded p-4">
+                        <p className="font-bold text-primary-900 mb-2">Premium: Owens Corning Duration Storm</p>
+                        <ul className="text-sm text-primary-700 space-y-1">
+                          <li>• Class 4 UL 2218 rated</li>
+                          <li>• SureNail Technology</li>
+                          <li>• 130 mph wind resistance</li>
+                          <li>• TruDefinition color</li>
+                          <li>• 50-year non-prorated warranty</li>
+                          <li>• Maximum insurance discounts</li>
+                          <li>• Buttercup Creek favorite</li>
+                        </ul>
+                        <p className="text-accent-600 font-bold mt-3">$15,500-$23,000</p>
+                        <p className="text-xs text-primary-600">(2,000 sq ft Cedar Park home)</p>
+                      </div>
+                    </div>
+
+                    <div className="bg-white rounded-lg p-4 border-l-4 border-green-600">
+                      <p className="font-bold text-primary-900 mb-2">💰 Impact-Resistant ROI for Cedar Park Homeowners:</p>
+                      <div className="grid md:grid-cols-2 gap-4 text-sm text-primary-700">
+                        <div>
+                          <p className="font-semibold text-primary-900 mb-1">Why Essential in Cedar Park:</p>
+                          <ul className="space-y-1">
+                            <li>• Withstands golf ball/baseball hail Cedar Park gets every 2-4 years</li>
+                            <li>• 15-35% insurance discount (typically 20% in Cedar Park)</li>
+                            <li>• Average $3,000/year home insurance × 20% = $600/year savings</li>
+                            <li>• Over 30 years: $18,000 in insurance savings</li>
+                            <li>• Upgrade cost over standard: $3,000-$5,000</li>
+                            <li>• <strong>Pays for itself in 5-8 years, then pure profit!</strong></li>
+                          </ul>
+                        </div>
+                        <div>
+                          <p className="font-semibold text-primary-900 mb-1">Additional Benefits:</p>
+                          <ul className="space-y-1">
+                            <li>• Survives storms that total standard roofs (avoid repeat claims)</li>
+                            <li>• Better heat reflection = 10-15% cooling cost savings</li>
+                            <li>• 50-year lifespan vs 20-25 for standard shingles</li>
+                            <li>• Higher home resale value (buyers demand hail protection)</li>
+                            <li>• Peace of mind during Cedar Park's intense storm seasons</li>
+                            <li>• Required by many Avery Ranch HOA sections</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Metal Roofing */}
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-gray-600">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">Alternative: Standing Seam Metal Roofing</h3>
+                    <p className="text-primary-700 mb-4">Growing popularity in Whitestone and custom Avery Ranch homes.</p>
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">✅ Pros for Cedar Park:</p>
+                        <ul className="text-sm text-primary-700 space-y-1">
+                          <li>• <strong>Ultimate hail resistance</strong> - may dent but never punctures</li>
+                          <li>• <strong>50-70 year lifespan</strong> - install once in lifetime</li>
+                          <li>• Survives softball hail (proven in 2024 storm)</li>
+                          <li>• 30-40% cooling cost savings (major in Cedar Park summers)</li>
+                          <li>• 140+ mph wind rating</li>
+                          <li>• Eco-friendly (100% recyclable)</li>
+                          <li>• Modern aesthetic popular in newer Cedar Park</li>
+                          <li>• Never file hail claims again</li>
+                        </ul>
+                        <p className="text-accent-600 font-bold mt-4 text-xl">$24,000-$44,000</p>
+                        <p className="text-sm text-primary-600">(2,000 sq ft Cedar Park home, standing seam)</p>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">⚠️ Considerations:</p>
+                        <ul className="text-sm text-primary-700 space-y-1">
+                          <li>• Higher upfront cost (2.5-3x impact shingles)</li>
+                          <li>• HOA restrictions in some Cedar Park communities (verify first)</li>
+                          <li>• Limited color options (grays, blacks, browns, copper)</li>
+                          <li>• Louder during heavy rain/hail than shingles</li>
+                          <li>• Requires specialized installation expertise</li>
+                          <li>• Best for simple roof lines (complex = very expensive)</li>
+                        </ul>
+                        <p className="font-semibold text-primary-900 mt-4 mb-1">Best For:</p>
+                        <p className="text-sm text-primary-700">Long-term homeowners (20+ years), tired of hail claims, eco-conscious, non-HOA or approved areas, custom Whitestone/Avery Ranch homes, simple roof lines.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Materials to Avoid */}
+                  <div className="bg-red-50 rounded-lg p-6 border-l-4 border-red-500">
+                    <h3 className="text-xl font-bold text-primary-900 mb-3">❌ Materials to AVOID in Cedar Park</h3>
+                    <div className="grid md:grid-cols-2 gap-4">
+                      <div>
+                        <p className="font-bold text-primary-900 mb-2">Standard 3-Tab or Basic Architectural Shingles</p>
+                        <p className="text-sm text-primary-700"><strong>Why this is a mistake:</strong> Zero hail protection - will fail in Cedar Park's regular baseball hail. Only 15-20 year lifespan. No insurance discounts. You'll pay $2,500-$4,000 deductible every 8-12 years. Only $2k-$3k cheaper initially than impact-resistant, but you lose that in your FIRST deductible payment. Then keep losing with every future Cedar Park storm. False economy.</p>
+                      </div>
+                      <div>
+                        <p className="font-bold text-primary-900 mb-2">Concrete or Clay Tile</p>
+                        <p className="text-sm text-primary-700"><strong>Why avoid:</strong> Tiles crack and shatter from Cedar Park's hail. Very expensive to replace broken tiles ($300-$500 each). Heavy (requires structural upgrades). Not common in Cedar Park, hard to match. Long material lead times. More complex insurance claims. Not worth the hassle in hail-prone area.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Color Guide */}
+                  <div className="bg-blue-50 rounded-lg p-6">
+                    <h3 className="text-xl font-bold text-primary-900 mb-4">🎨 Most Popular Cedar Park Roof Colors</h3>
+                    <p className="text-sm text-primary-700 mb-4">Cedar Park homeowners prefer earth tones. Avery Ranch has specific HOA-approved colors:</p>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                      <div className="bg-white p-3 rounded text-center">
+                        <div className="w-full h-16 bg-amber-700 rounded mb-2"></div>
+                        <p className="font-semibold text-xs text-primary-900">Weathered Wood</p>
+                        <p className="text-xs text-primary-600">#1 in Avery Ranch</p>
+                      </div>
+                      <div className="bg-white p-3 rounded text-center">
+                        <div className="w-full h-16 bg-stone-600 rounded mb-2"></div>
+                        <p className="font-semibold text-xs text-primary-900">Driftwood</p>
+                        <p className="text-xs text-primary-600">Buttercup Creek</p>
+                      </div>
+                      <div className="bg-white p-3 rounded text-center">
+                        <div className="w-full h-16 bg-gray-500 rounded mb-2"></div>
+                        <p className="font-semibold text-xs text-primary-900">Georgetown Gray</p>
+                        <p className="text-xs text-primary-600">Modern Homes</p>
+                      </div>
+                      <div className="bg-white p-3 rounded text-center">
+                        <div className="w-full h-16 bg-slate-700 rounded mb-2"></div>
+                        <p className="font-semibold text-xs text-primary-900">Charcoal</p>
+                        <p className="text-xs text-primary-600">Whitestone Popular</p>
+                      </div>
+                      <div className="bg-white p-3 rounded text-center">
+                        <div className="w-full h-16 bg-gray-400 rounded mb-2"></div>
+                        <p className="font-semibold text-xs text-primary-900">Pewter Gray</p>
+                        <p className="text-xs text-primary-600">Versatile Choice</p>
+                      </div>
+                      <div className="bg-white p-3 rounded text-center">
+                        <div className="w-full h-16 bg-amber-800 rounded mb-2"></div>
+                        <p className="font-semibold text-xs text-primary-900">Mission Brown</p>
+                        <p className="text-xs text-primary-600">Traditional</p>
+                      </div>
+                      <div className="bg-white p-3 rounded text-center">
+                        <div className="w-full h-16 bg-stone-300 rounded mb-2"></div>
+                        <p className="font-semibold text-xs text-primary-900">Oyster Gray</p>
+                        <p className="text-xs text-primary-600">Light Option</p>
+                      </div>
+                      <div className="bg-white p-3 rounded text-center">
+                        <div className="w-full h-16 bg-slate-800 rounded mb-2"></div>
+                        <p className="font-semibold text-xs text-primary-900">Onyx Black</p>
+                        <p className="text-xs text-primary-600">Contemporary</p>
+                      </div>
+                    </div>
+                    <p className="text-xs text-primary-600 mt-4 text-center">HOA communities (especially Avery Ranch): Always verify approved colors before ordering. We handle all HOA submissions and architectural approvals.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Cedar Park Roof Replacement Costs */}
+              <div>
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Cedar Park Roof Replacement Costs: Complete Pricing Guide
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  Cedar Park roof replacement costs vary by neighborhood and home size. Avery Ranch homes typically cost more due to size and complexity:
+                </p>
+
+                <div className="space-y-4 mb-8">
+                  <div className="border-l-4 border-blue-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">1,500-2,000 sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: Older Cedar Park, simple roof, 18-24 squares, original neighborhoods</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$11,000-$16,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-green-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">2,000-2,500 sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: Standard Cedar Park two-story, 3-4 bed/2-3 bath, moderate complexity, 24-28 squares - Buttercup Creek, Twin Lakes</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$14,000-$21,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-purple-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">2,500-3,000 sq ft Home (Common in Avery Ranch)</p>
+                        <p className="text-sm text-primary-700">Typical: Larger two-story, 4-bed/3-bath, increased complexity, 28-35 squares - Standard Avery Ranch size</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$17,000-$26,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-red-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">3,000-3,500 sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: Larger Avery Ranch, Whitestone homes, 4-5 bed/3-4 bath, complex roof, 35-42 squares</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$21,000-$33,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-amber-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">3,500+ sq ft Luxury Home</p>
+                        <p className="text-sm text-primary-700">Typical: Custom Avery Ranch, premium Whitestone estates, highly complex roofs, 42+ squares</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$28,000-$55,000+</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded mb-8">
+                  <p className="font-bold text-primary-900 mb-2">💡 Avery Ranch Homeowners: Important Pricing & Process Notes</p>
+                  <p className="text-sm text-primary-700 mb-3">Avery Ranch is Cedar Park's premier community with specific requirements:</p>
+                  <ul className="text-sm text-primary-700 space-y-1">
+                    <li>• <strong>HOA Architectural Approval Required:</strong> We handle all paperwork, photos, and color selection forms. Approval typically takes 2-3 weeks—plan ahead.</li>
+                    <li>• <strong>Approved Colors:</strong> Weathered Wood, Driftwood, Georgetown Gray most common. Must match neighborhood standards.</li>
+                    <li>• <strong>Larger Homes:</strong> Most Avery Ranch homes 2,500-3,500+ sq ft = higher costs than other Cedar Park neighborhoods.</li>
+                    <li>• <strong>Complex Roof Lines:</strong> Many Avery Ranch homes have architectural features increasing complexity and cost.</li>
+                    <li>• <strong>Group Pricing Available:</strong> When working multiple Avery Ranch homes after storms, we offer 10-15% discounts. Coordinate with neighbors!</li>
+                  </ul>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-6 mb-8">
+                  <div className="bg-red-50 rounded-lg p-6 border-l-4 border-red-500">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">📈 What INCREASES Cost in Cedar Park</h3>
+                    <ul className="space-y-2 text-sm text-primary-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+15-25%</span>
+                        <span><strong>Steep pitch roofs</strong> (safety equipment, slower work - some Whitestone customs)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+15-30%</span>
+                        <span><strong>Complex roof lines</strong> (valleys, dormers, turrets - Avery Ranch customs, Whitestone)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+20-35%</span>
+                        <span><strong>Two-story homes</strong> (most Cedar Park homes require additional setup)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+$2k-5k</span>
+                        <span><strong>Decking repairs</strong> (common in Buttercup Creek, Anderson Mill, older Cedar Park)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+100-200%</span>
+                        <span><strong>Metal roofing upgrade</strong> ($24k-$44k vs $14k-$21k shingles)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+$400-800</span>
+                        <span><strong>Permits & fees</strong> (Williamson County permits, HOA fees if applicable)</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-green-50 rounded-lg p-6 border-l-4 border-green-500">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">📉 What DECREASES Cost in Cedar Park</h3>
+                    <ul className="space-y-2 text-sm text-primary-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Simple gable or hip roof</strong> (standard Cedar Park production homes)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Low to moderate pitch</strong> (most Cedar Park homes, faster installation)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Good existing decking</strong> (newer Avery Ranch, Twin Lakes, Lakeline homes)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Insurance claim coverage</strong> (pay deductible only - $1.5k-$3k total cost)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Neighborhood group pricing</strong> (10-15% off when working multiple homes)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Easy property access</strong> (wide Cedar Park streets, good driveways)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-accent-50 to-blue-50 rounded-lg p-6">
+                  <h3 className="text-xl font-bold text-primary-900 mb-4">💡 6 Ways Cedar Park Homeowners Save on Roof Replacement</h3>
+                  <div className="grid md:grid-cols-2 gap-4 text-sm text-primary-700">
+                    <div>
+                      <p className="font-bold text-primary-900 mb-1">1. File Insurance Claims After Storms</p>
+                      <p className="mb-3">Cedar Park gets damaging hail every 2-4 years. The 2024 storm damaged 35-45% of Cedar Park roofs. If your neighbors filed claims, check your roof too. Insurance covers 100% minus deductible. We handle entire claims process and adjuster meetings.</p>
+                      
+                      <p className="font-bold text-primary-900 mb-1">2. Coordinate with Neighbors (Especially Avery Ranch)</p>
+                      <p className="mb-3">When we work 5-10 homes in one Cedar Park neighborhood, we offer 10-15% group discounts. One material delivery, one crew = lower per-home cost. Organize your street after major storms!</p>
+                      
+                      <p className="font-bold text-primary-900 mb-1">3. Choose Impact-Resistant for Insurance Savings</p>
+                      <p className="mb-3">$3k-$5k more upfront, but saves $500-$700/year on insurance (20% typical discount in Cedar Park). Pays for itself in 5-8 years. Plus survives Cedar Park hail = fewer claims.</p>
+                    </div>
+                    <div>
+                      <p className="font-bold text-primary-900 mb-1">4. Bundle Multiple Services</p>
+                      <p className="mb-3">Replace gutters, install gutter guards, or add ventilation simultaneously for 10-15% savings vs separate projects. One mobilization = lower total cost.</p>
+                      
+                      <p className="font-bold text-primary-900 mb-1">5. Schedule During Off-Season</p>
+                      <p className="mb-3">Fall/winter (October-February) are slower. We may offer flexibility or discounts. Avoid June-August when Cedar Park's busiest after spring storms.</p>
+                      
+                      <p className="font-bold text-primary-900 mb-1">6. Take Advantage of 0% Financing</p>
+                      <p className="mb-3">We offer 0% financing for 12-18 months through approved lenders. Spread cost into manageable payments. Popular with Avery Ranch families. Ask about current promotions.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-6 bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
+                  <p className="text-primary-900 font-semibold mb-2">📞 Get Your Exact Cedar Park Roof Replacement Cost</p>
+                  <p className="text-primary-700">
+                    These are estimates. Your actual cost depends on your specific home, neighborhood, materials, and current conditions. We provide <strong>FREE inspections</strong> and detailed written quotes with no obligation. Avery Ranch homeowners: We handle all HOA paperwork and approvals! Call <strong>(512) 763-5277</strong> or schedule online for your personalized Cedar Park roof replacement estimate.
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+
           {/* FAQ Section - Full Width */}
           <div className="mt-16">
             <LocationFAQ city={location.city} />
