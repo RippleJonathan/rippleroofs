@@ -70,7 +70,7 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
       <section className="relative h-[500px] bg-primary-900">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/hero/hero-bg.jpg"
+            src={location.heroImage || "/images/hero/hero-bg.jpg"}
             alt={`Roofing services in ${location.city}, ${location.state}`}
             fill
             className="object-cover"

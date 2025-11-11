@@ -11,6 +11,7 @@ export interface LocationData {
   description: string
   population: string
   weatherNote: string
+  heroImage?: string // Optional custom hero image
 }
 
 export const LOCATIONS: LocationData[] = [
@@ -21,6 +22,7 @@ export const LOCATIONS: LocationData[] = [
     zip: '78664',
     county: 'Williamson County',
     metroArea: 'Austin-Round Rock Metro',
+    heroImage: '/images/locations/round-rock-hero.jpg',
     neighborhoods: [
       'Heritage Center',
       'Stone Oak',
@@ -53,6 +55,7 @@ export const LOCATIONS: LocationData[] = [
     zip: '78701',
     county: 'Travis County',
     metroArea: 'Austin-Round Rock Metro',
+    heroImage: '/images/locations/austin-hero.jpg',
     neighborhoods: [
       'Downtown Austin',
       'South Congress (SoCo)',
@@ -185,6 +188,7 @@ export const LOCATIONS: LocationData[] = [
     zip: '78660',
     county: 'Travis County',
     metroArea: 'Austin-Round Rock Metro',
+    heroImage: '/images/locations/pflugerville-hero.jpg',
     neighborhoods: [
       'Blackhawk',
       'Brookfield',
