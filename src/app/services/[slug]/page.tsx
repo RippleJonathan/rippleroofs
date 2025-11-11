@@ -2661,6 +2661,461 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
                 </>
               )}
 
+              {/* Additional Content for Storm Damage Restoration */}
+              {service.slug === 'storm-damage-restoration' && (
+                <>
+                  {/* Types of Storm Damage We Restore */}
+                  <div className="bg-gradient-to-br from-red-50 to-orange-50 p-8 rounded-2xl">
+                    <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                      Types of Storm Damage We Restore in Central Texas
+                    </h2>
+                    <p className="text-primary-700 mb-8 leading-relaxed">
+                      Central Texas experiences severe weather including hailstorms, straight-line winds, tornadoes, and fallen trees. Our storm damage experts identify ALL damage—not just what's visible from the ground—to ensure you get maximum insurance coverage and complete restoration.
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="bg-white rounded-xl p-6 border-2 border-red-200">
+                        <h3 className="text-lg font-bold text-primary-900 mb-3 flex items-center gap-2">
+                          <span className="text-2xl">🧊</span> Hail Damage (Most Common)
+                        </h3>
+                        <p className="text-sm text-primary-700 mb-4">
+                          Central Texas experiences major hail events every 2-3 years. Hail sizes range from quarter-sized (cosmetic damage) to baseball-sized (catastrophic damage requiring immediate replacement).
+                        </p>
+                        <div className="space-y-2 text-xs text-primary-700">
+                          <p><strong>What We Look For:</strong></p>
+                          <ul className="list-disc ml-5 space-y-1">
+                            <li>Circular or oval impact marks on shingles (bruising)</li>
+                            <li>Loss of granules exposing black asphalt layer</li>
+                            <li>Cracked or punctured shingles (larger hail)</li>
+                            <li>Damage to roof vents, flashing, gutters, AC units</li>
+                            <li>Dented or damaged metal components</li>
+                            <li>Damage patterns consistent with hail trajectory</li>
+                          </ul>
+                          <p className="mt-3 bg-amber-100 p-2 rounded"><strong>Insurance Tip:</strong> Most insurance covers hail replacement if damage exceeds cosmetic thresholds (varies by policy). We document everything to maximize your claim.</p>
+                        </div>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6 border-2 border-blue-200">
+                        <h3 className="text-lg font-bold text-primary-900 mb-3 flex items-center gap-2">
+                          <span className="text-2xl">💨</span> Wind Damage (Very Common)
+                        </h3>
+                        <p className="text-sm text-primary-700 mb-4">
+                          Straight-line winds, microbursts, and tornadoes cause significant roofing damage. Wind speeds exceeding 50-60 mph can lift shingles, expose underlayment, and allow water intrusion.
+                        </p>
+                        <div className="space-y-2 text-xs text-primary-700">
+                          <p><strong>What We Look For:</strong></p>
+                          <ul className="list-disc ml-5 space-y-1">
+                            <li>Missing shingles (blown off completely)</li>
+                            <li>Lifted or creased shingles (wind got underneath)</li>
+                            <li>Torn or damaged underlayment</li>
+                            <li>Lifted or missing flashing around chimneys, vents</li>
+                            <li>Damage to soffit, fascia, or siding</li>
+                            <li>Directional patterns showing wind path</li>
+                          </ul>
+                          <p className="mt-3 bg-amber-100 p-2 rounded"><strong>Insurance Tip:</strong> Wind damage is covered by most policies. Document with photos showing wind direction and damage patterns. We provide comprehensive reports.</p>
+                        </div>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6 border-2 border-green-200">
+                        <h3 className="text-lg font-bold text-primary-900 mb-3 flex items-center gap-2">
+                          <span className="text-2xl">🌳</span> Fallen Trees & Debris
+                        </h3>
+                        <p className="text-sm text-primary-700 mb-4">
+                          Tree limbs, entire trees, or flying debris can puncture roofs, crack decking, and cause immediate water intrusion requiring emergency response.
+                        </p>
+                        <div className="space-y-2 text-xs text-primary-700">
+                          <p><strong>What We Look For:</strong></p>
+                          <ul className="list-disc ml-5 space-y-1">
+                            <li>Punctures or holes in roof surface</li>
+                            <li>Structural damage to decking, trusses, rafters</li>
+                            <li>Broken or displaced shingles around impact</li>
+                            <li>Hidden damage beyond visible impact zone</li>
+                            <li>Water intrusion and interior damage</li>
+                            <li>Compromised roof integrity</li>
+                          </ul>
+                          <p className="mt-3 bg-amber-100 p-2 rounded"><strong>Insurance Tip:</strong> Tree damage is covered if tree fell due to weather (wind, lightning). Not covered if tree was dead/unhealthy and fell on its own. We document causation.</p>
+                        </div>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6 border-2 border-purple-200">
+                        <h3 className="text-lg font-bold text-primary-900 mb-3 flex items-center gap-2">
+                          <span className="text-2xl">⚡</span> Combined Storm Events
+                        </h3>
+                        <p className="text-sm text-primary-700 mb-4">
+                          Many Central Texas storms bring multiple types of damage—hail + wind, falling debris + water intrusion. Comprehensive assessment is critical.
+                        </p>
+                        <div className="space-y-2 text-xs text-primary-700">
+                          <p><strong>What We Look For:</strong></p>
+                          <ul className="list-disc ml-5 space-y-1">
+                            <li>Multiple damage types compounding issues</li>
+                            <li>Hidden damage not visible from ground</li>
+                            <li>Secondary damage from water intrusion</li>
+                            <li>Compromised thermal/moisture barriers</li>
+                            <li>Structural issues beyond surface damage</li>
+                            <li>Long-term integrity concerns</li>
+                          </ul>
+                          <p className="mt-3 bg-amber-100 p-2 rounded"><strong>Insurance Tip:</strong> Multiple damage types = stronger claim. We document everything with drone footage, thermal imaging, and detailed reports to maximize your coverage.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Insurance Claims Process */}
+                  <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-2xl">
+                    <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                      Our Insurance Claims Management Process
+                    </h2>
+                    <p className="text-primary-700 mb-8 leading-relaxed">
+                      Navigating insurance claims can be confusing and frustrating. We've managed over 2,000 storm damage claims and recovered millions in rightful coverage for Central Texas homeowners. We handle everything so you don't have to fight your insurance company alone.
+                    </p>
+                    <div className="space-y-6">
+                      <div className="bg-white rounded-xl p-6 shadow-md">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                            <span className="text-xl font-bold text-blue-600">1</span>
+                          </div>
+                          <div className="flex-1">
+                            <h3 className="text-lg font-bold text-primary-900 mb-2">Free Damage Assessment & Documentation</h3>
+                            <p className="text-sm text-primary-700 mb-3">
+                              We conduct a comprehensive roof inspection using drones for aerial documentation and thermal imaging to detect hidden moisture. We document every hail impact, missing shingle, wind damage, and structural issue with professional photos and detailed measurements. You receive a complete damage report with our expert opinion on repairability.
+                            </p>
+                            <div className="bg-blue-50 p-3 rounded text-xs text-primary-700">
+                              <p><strong>What You Get:</strong> Professional inspection report • High-resolution photos and video • Drone aerial footage • Thermal imaging results • Detailed scope of work • Preliminary cost estimate</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6 shadow-md">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                            <span className="text-xl font-bold text-blue-600">2</span>
+                          </div>
+                          <div className="flex-1">
+                            <h3 className="text-lg font-bold text-primary-900 mb-2">File Your Claim & Schedule Adjuster</h3>
+                            <p className="text-sm text-primary-700 mb-3">
+                              We help you file your claim with your insurance company using proper terminology and documentation to maximize approval chances. We schedule the adjuster meeting and coordinate timing. You don't navigate confusing insurance processes alone—we guide you through every step and explain what to expect.
+                            </p>
+                            <div className="bg-blue-50 p-3 rounded text-xs text-primary-700">
+                              <p><strong>Critical Timing:</strong> Most policies require claims within 1 year of storm date. File ASAP after storm events. We track storm dates and help meet deadlines.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6 shadow-md">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                            <span className="text-xl font-bold text-blue-600">3</span>
+                          </div>
+                          <div className="flex-1">
+                            <h3 className="text-lg font-bold text-primary-900 mb-2">Meet Adjuster On-Site & Advocate for You</h3>
+                            <p className="text-sm text-primary-700 mb-3">
+                              This is THE MOST IMPORTANT STEP. We meet the insurance adjuster on your roof and walk through ALL damage with them. Adjusters often miss damage or try to minimize scope to save their company money. We ensure nothing is overlooked. We point out every impact, every damaged area, and advocate for full replacement if warranted. You should ALWAYS have a roofing professional present during adjuster inspections.
+                            </p>
+                            <div className="bg-amber-50 p-3 rounded text-xs text-primary-700">
+                              <p><strong>⚠ Warning:</strong> Never meet adjuster alone! Homeowners miss 60-70% of damage that professionals catch. Insurance companies know this and count on it to underpay claims.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6 shadow-md">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                            <span className="text-xl font-bold text-blue-600">4</span>
+                          </div>
+                          <div className="flex-1">
+                            <h3 className="text-lg font-bold text-primary-900 mb-2">Review Settlement & Fight for Fair Coverage</h3>
+                            <p className="text-sm text-primary-700 mb-3">
+                              Once the adjuster sends their estimate, we review it line-by-line against actual damage. If they underpaid, missed damage, or used incorrect pricing, we file a supplement (additional claim request) with detailed documentation showing what they missed. We negotiate on your behalf until you receive fair settlement. We've successfully supplemented thousands of claims for proper coverage.
+                            </p>
+                            <div className="bg-blue-50 p-3 rounded text-xs text-primary-700">
+                              <p><strong>Common Underpayments We Catch:</strong> Missed square footage • Inadequate decking allowance • Missing code upgrades • Underpriced materials • Missing components (vents, flashing, etc.)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6 shadow-md">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                            <span className="text-xl font-bold text-blue-600">5</span>
+                          </div>
+                          <div className="flex-1">
+                            <h3 className="text-lg font-bold text-primary-900 mb-2">Complete Restoration & Final Payment</h3>
+                            <p className="text-sm text-primary-700 mb-3">
+                              Once your claim is approved and you've received settlement (minus deductible), we schedule your restoration. We complete all work to manufacturer warranty standards, handle final inspections, and collect final insurance payment (recoverable depreciation) after work is verified. You pay only your deductible—insurance covers the rest.
+                            </p>
+                            <div className="bg-green-50 p-3 rounded text-xs text-primary-700">
+                              <p><strong>✓ You're Protected:</strong> 50-year manufacturer shingle warranty • Our 10-year workmanship warranty • Full code compliance • Professional installation • Complete peace of mind</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="mt-8 bg-accent-50 border-2 border-accent-300 rounded-xl p-6">
+                      <h3 className="text-lg font-bold text-primary-900 mb-3">💰 What Does Insurance Typically Cover?</h3>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-primary-700">
+                        <div>
+                          <p className="font-bold text-green-700 mb-2">✓ Usually Covered:</p>
+                          <ul className="list-disc ml-5 space-y-1">
+                            <li>Hail damage (bruising, granule loss)</li>
+                            <li>Wind damage (missing/lifted shingles)</li>
+                            <li>Tree damage from weather events</li>
+                            <li>Full roof replacement if warranted</li>
+                            <li>Damaged underlayment and decking</li>
+                            <li>Damaged gutters, vents, flashing</li>
+                            <li>Code compliance upgrades (if required)</li>
+                            <li>Permits and disposal fees</li>
+                          </ul>
+                        </div>
+                        <div>
+                          <p className="font-bold text-red-700 mb-2">✗ Usually NOT Covered:</p>
+                          <ul className="list-disc ml-5 space-y-1">
+                            <li>Wear and tear from aging</li>
+                            <li>Poor maintenance or neglect</li>
+                            <li>Cosmetic damage (if policy excludes)</li>
+                            <li>Pre-existing damage before storm</li>
+                            <li>Upgrades beyond like-for-like</li>
+                            <li>Secondary water damage (separate claim)</li>
+                            <li>Your deductible amount</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <p className="text-xs text-primary-600 mt-4">
+                        <strong>Note:</strong> Coverage varies by policy. We review your specific policy and explain what's covered vs. what's out-of-pocket.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Timeline & What to Expect */}
+                  <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-2xl">
+                    <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                      Storm Damage Restoration Timeline
+                    </h2>
+                    <p className="text-primary-700 mb-8 leading-relaxed">
+                      From emergency tarping to final restoration, here's what to expect during the storm damage restoration process. Timelines vary based on claim complexity and insurance responsiveness.
+                    </p>
+                    <div className="space-y-4">
+                      <div className="bg-white rounded-xl p-6 border-l-4 border-red-500">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0">
+                            <div className="bg-red-100 text-red-700 rounded-full w-16 h-16 flex items-center justify-center font-bold text-sm">
+                              0-2<br/>hours
+                            </div>
+                          </div>
+                          <div className="flex-1">
+                            <h3 className="font-bold text-primary-900 mb-2">🚨 Emergency Response (If Needed)</h3>
+                            <p className="text-sm text-primary-700">
+                              If you have active leaks, exposed roof, or immediate dangers, we respond within 2 hours. Emergency tarping prevents interior water damage and secures your home. Available 24/7 for true emergencies. Most tarping completed in 2-4 hours.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6 border-l-4 border-blue-500">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0">
+                            <div className="bg-blue-100 text-blue-700 rounded-full w-16 h-16 flex items-center justify-center font-bold text-sm">
+                              1-3<br/>days
+                            </div>
+                          </div>
+                          <div className="flex-1">
+                            <h3 className="font-bold text-primary-900 mb-2">🔍 Damage Assessment & Documentation</h3>
+                            <p className="text-sm text-primary-700">
+                              We schedule your free inspection (usually within 24-48 hours of your call). Comprehensive assessment takes 1-2 hours including drone footage and thermal imaging. You receive detailed report within 24 hours with photos, measurements, and damage documentation.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6 border-l-4 border-purple-500">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0">
+                            <div className="bg-purple-100 text-purple-700 rounded-full w-16 h-16 flex items-center justify-center font-bold text-sm">
+                              1<br/>week
+                            </div>
+                          </div>
+                          <div className="flex-1">
+                            <h3 className="font-bold text-primary-900 mb-2">📋 File Claim & Schedule Adjuster</h3>
+                            <p className="text-sm text-primary-700">
+                              You call your insurance company to file the claim (we guide you on what to say). Insurance schedules adjuster within 3-7 days typically. We coordinate to meet adjuster on-site. Adjuster inspection takes 30-60 minutes with us present pointing out all damage.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6 border-l-4 border-amber-500">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0">
+                            <div className="bg-amber-100 text-amber-700 rounded-full w-16 h-16 flex items-center justify-center font-bold text-sm">
+                              2-4<br/>weeks
+                            </div>
+                          </div>
+                          <div className="flex-1">
+                            <h3 className="font-bold text-primary-900 mb-2">⚖️ Settlement Review & Negotiation</h3>
+                            <p className="text-sm text-primary-700">
+                              Insurance sends initial settlement estimate (usually 7-14 days after inspection). We review for underpayments and file supplements if needed. Negotiation can take 1-3 weeks depending on complexity. Once agreed, you receive settlement check (minus deductible).
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6 border-l-4 border-green-500">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0">
+                            <div className="bg-green-100 text-green-700 rounded-full w-16 h-16 flex items-center justify-center font-bold text-sm">
+                              1-3<br/>days
+                            </div>
+                          </div>
+                          <div className="flex-1">
+                            <h3 className="font-bold text-primary-900 mb-2">🛠️ Complete Restoration Work</h3>
+                            <p className="text-sm text-primary-700">
+                              Once claim approved and you've signed contract, we schedule your restoration (usually 1-3 weeks out depending on season). Most roof restorations completed in 1 day for asphalt shingles. Larger or complex roofs take 2-3 days. Metal roofing takes 3-7 days.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6 border-l-4 border-indigo-500">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0">
+                            <div className="bg-indigo-100 text-indigo-700 rounded-full w-16 h-16 flex items-center justify-center font-bold text-sm">
+                              Final<br/>step
+                            </div>
+                          </div>
+                          <div className="flex-1">
+                            <h3 className="font-bold text-primary-900 mb-2">✅ Inspection & Final Payment</h3>
+                            <p className="text-sm text-primary-700">
+                              We conduct final quality inspection and cleanup. You verify work completion. We submit completion documentation to insurance for final payment (recoverable depreciation). Insurance sends final check typically within 1-2 weeks. Your roof is now fully restored with full warranty protection!
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="mt-8 bg-blue-50 border-2 border-blue-200 rounded-xl p-6">
+                      <p className="text-sm text-primary-700">
+                        <strong>⏱️ Total Timeline:</strong> Emergency response to complete restoration typically takes 4-8 weeks depending on insurance responsiveness, claim complexity, and scheduling. We prioritize emergency situations and expedite whenever possible.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Pricing & Insurance Coverage */}
+                  <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl">
+                    <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                      Storm Damage Restoration Pricing & What You Pay
+                    </h2>
+                    <p className="text-primary-700 mb-8 leading-relaxed">
+                      Most storm damage restoration projects are covered by homeowners insurance (minus your deductible). Here's what to expect for costs and out-of-pocket expenses:
+                    </p>
+
+                    <div className="bg-white rounded-xl p-6 shadow-lg mb-6">
+                      <h3 className="text-lg font-bold text-primary-900 mb-4">💵 Your Out-of-Pocket Cost (With Insurance)</h3>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                          <p className="text-sm text-primary-700 mb-3">
+                            If your claim is approved, you typically pay <strong>ONLY YOUR DEDUCTIBLE</strong>. Insurance covers the rest of restoration costs.
+                          </p>
+                          <div className="space-y-3">
+                            <div className="bg-blue-50 p-4 rounded-lg">
+                              <p className="font-bold text-primary-900 mb-1">Typical Deductible Amounts:</p>
+                              <p className="text-sm text-primary-700">• <strong>$2,500-$5,000</strong> (most common flat deductibles)</p>
+                              <p className="text-sm text-primary-700">• <strong>1% of dwelling coverage</strong> (percentage deductibles)</p>
+                              <p className="text-sm text-primary-700">• <strong>2% of dwelling coverage</strong> (high-wind deductibles)</p>
+                              <p className="text-xs text-primary-600 mt-2">Example: $300k dwelling with 1% deductible = $3,000 out-of-pocket</p>
+                            </div>
+                            <div className="bg-green-50 p-4 rounded-lg">
+                              <p className="font-bold text-primary-900 mb-1">✓ What Insurance Covers:</p>
+                              <p className="text-sm text-primary-700">• Full roof replacement (if approved)</p>
+                              <p className="text-sm text-primary-700">• Materials and labor</p>
+                              <p className="text-sm text-primary-700">• Damaged decking/structure</p>
+                              <p className="text-sm text-primary-700">• Gutters, vents, flashing</p>
+                              <p className="text-sm text-primary-700">• Code compliance upgrades</p>
+                              <p className="text-sm text-primary-700">• Permits and disposal</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <p className="text-sm text-primary-700 mb-3">
+                            <strong>Upgrade Opportunities:</strong> You can upgrade materials during restoration and pay the difference between insurance-covered "like-for-like" and your desired upgrade.
+                          </p>
+                          <div className="space-y-3">
+                            <div className="bg-purple-50 p-4 rounded-lg">
+                              <p className="font-bold text-primary-900 mb-1">Common Upgrade Costs (Your Additional Cost):</p>
+                              <p className="text-sm text-primary-700">• <strong>Standard → Impact-Resistant Shingles:</strong> +$3,000-$5,000</p>
+                              <p className="text-sm text-primary-700">• <strong>Standard → Architectural Premium:</strong> +$2,000-$4,000</p>
+                              <p className="text-sm text-primary-700">• <strong>Shingles → Metal Roofing:</strong> +$10,000-$20,000</p>
+                              <p className="text-sm text-primary-700">• <strong>Add Gutter Guards:</strong> +$1,500-$3,000</p>
+                              <p className="text-sm text-primary-700">• <strong>Enhanced Ventilation:</strong> +$800-$1,500</p>
+                              <p className="text-xs text-primary-600 mt-2">Note: Insurance covers base cost; you pay difference for upgrades</p>
+                            </div>
+                            <div className="bg-amber-50 p-4 rounded-lg">
+                              <p className="font-bold text-primary-900 mb-1">⚠ Additional Out-of-Pocket (Rare):</p>
+                              <p className="text-sm text-primary-700">• Damage insurance deems pre-existing</p>
+                              <p className="text-sm text-primary-700">• Wear/tear repairs not covered</p>
+                              <p className="text-sm text-primary-700">• Cosmetic-only damage (if excluded)</p>
+                              <p className="text-sm text-primary-700">• Decking beyond insurance allowance</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="bg-white rounded-xl p-6 shadow-lg mb-6">
+                      <h3 className="text-lg font-bold text-primary-900 mb-4">🏠 Full Restoration Cost (If Paying Cash / No Insurance)</h3>
+                      <p className="text-sm text-primary-700 mb-4">
+                        If you choose not to file insurance claim or if damage isn't covered, here are typical cash costs for complete storm damage restoration:
+                      </p>
+                      <div className="space-y-3">
+                        <div className="flex justify-between items-center pb-3 border-b">
+                          <span className="text-primary-700"><strong>Standard Shingle Roof</strong> (2,500 sq ft home)</span>
+                          <span className="font-bold text-accent-600">$10,500-$15,000</span>
+                        </div>
+                        <div className="flex justify-between items-center pb-3 border-b">
+                          <span className="text-primary-700"><strong>Impact-Resistant Shingles</strong> (recommended)</span>
+                          <span className="font-bold text-accent-600">$14,000-$20,000</span>
+                        </div>
+                        <div className="flex justify-between items-center pb-3 border-b">
+                          <span className="text-primary-700"><strong>Architectural Premium Shingles</strong></span>
+                          <span className="font-bold text-accent-600">$13,000-$18,000</span>
+                        </div>
+                        <div className="flex justify-between items-center pb-3 border-b">
+                          <span className="text-primary-700"><strong>Metal Roofing</strong> (standing seam)</span>
+                          <span className="font-bold text-accent-600">$24,000-$42,000</span>
+                        </div>
+                        <div className="flex justify-between items-center pb-3 border-b">
+                          <span className="text-primary-700"><strong>Emergency Tarping</strong> (immediate protection)</span>
+                          <span className="font-bold text-accent-600">$500-$1,500</span>
+                        </div>
+                        <div className="flex justify-between items-center">
+                          <span className="text-primary-700"><strong>Extensive Decking Repairs</strong> (per damaged area)</span>
+                          <span className="font-bold text-accent-600">+$1,500-$5,000</span>
+                        </div>
+                      </div>
+                      <p className="text-xs text-primary-600 mt-4">
+                        *Prices include complete restoration: tear-off, disposal, materials, labor, permits, cleanup. Actual cost depends on home size, roof complexity, extent of damage, and material choice.
+                      </p>
+                    </div>
+
+                    <div className="bg-accent-50 border-2 border-accent-200 rounded-xl p-6">
+                      <h3 className="text-lg font-bold text-primary-900 mb-3">💡 Smart Money Tips for Storm Damage</h3>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-primary-700">
+                        <p>• <strong>Always file insurance claim first</strong> — even if you're unsure damage is covered</p>
+                        <p>• <strong>Don't pay contractors upfront</strong> — you pay deductible only after work approved/completed</p>
+                        <p>• <strong>Upgrade to impact-resistant</strong> — earn 10-35% annual insurance discounts</p>
+                        <p>• <strong>Document everything</strong> — photos, videos, dates help maximize claim value</p>
+                        <p>• <strong>Have professional at adjuster meeting</strong> — catches 60-70% more damage than homeowners alone</p>
+                        <p>• <strong>Get multiple opinions</strong> — but choose experienced storm restoration specialists</p>
+                        <p>• <strong>Review your policy annually</strong> — ensure adequate coverage and understand deductibles</p>
+                        <p>• <strong>Ask about code upgrade coverage</strong> — some policies cover required improvements</p>
+                      </div>
+                    </div>
+                  </div>
+                </>
+              )}
+
               {/* Service Areas */}
               <div className="bg-gradient-to-br from-primary-900 to-primary-800 rounded-2xl p-8 text-white">
                 <h2 className="text-2xl font-display font-bold mb-4">
@@ -3105,6 +3560,73 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
                         </h3>
                         <p className="text-primary-600">
                           <strong>We remove and dispose of old gutters at no additional charge.</strong> Removal, haul-away, and disposal are included in installation price. If your fascia boards are damaged or rotted (common behind old gutters), we can repair or replace them: Minor repairs $150-$300, fascia replacement $8-$15/linear foot. We inspect fascia during free assessment and let you know what's needed before starting work.
+                        </p>
+                      </div>
+                    </>
+                  ) : service.slug === 'storm-damage-restoration' ? (
+                    <>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          How do I know if I have storm damage?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>Schedule a free professional inspection—storm damage isn't always visible from the ground.</strong> Obvious signs: missing/lifted shingles, holes/punctures, dented gutters/vents, visible granule loss. <strong>Hidden signs professionals find:</strong> Hail bruising (circular impacts), cracked shingles from wind stress, compromised seals, damaged flashing, hidden moisture intrusion detected by thermal imaging. After any major storm (hail 1"+ diameter, winds 50+ mph, fallen trees), schedule inspection within 1-2 weeks. We provide free drone and thermal imaging assessment. <strong>Don't wait</strong>—most insurance requires claims within 1 year of storm date.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          Will insurance cover my storm damage restoration?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>Most likely YES if damage is storm-related and you file within policy timeframe (typically 1 year).</strong> Insurance typically covers: hail damage, wind damage (missing/lifted shingles), fallen tree damage from weather events, full roof replacement if damage is extensive, and damaged gutters/vents/flashing. You pay your deductible ($2,500-$5,000 typical or 1-2% of dwelling coverage); insurance covers the rest. <strong>Not covered:</strong> Wear and tear, pre-existing damage, cosmetic-only damage (if policy excludes), neglect/poor maintenance. We provide free assessment, document all damage, meet with adjusters, and fight for maximum coverage. We've recovered millions in rightful claims for <Link href="/locations/round-rock" className="text-accent-600 hover:text-accent-700 font-semibold">Round Rock</Link>, <Link href="/locations/austin" className="text-accent-600 hover:text-accent-700 font-semibold">Austin</Link>, and <Link href="/locations/georgetown" className="text-accent-600 hover:text-accent-700 font-semibold">Georgetown</Link> homeowners.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          How long does the storm damage claims process take?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>Typical timeline: 4-8 weeks from initial inspection to complete restoration.</strong> Breakdown: (1) <strong>Damage assessment:</strong> 1-3 days to schedule and complete inspection. (2) <strong>File claim:</strong> Same day you call insurance. (3) <strong>Adjuster meeting:</strong> 5-10 days after filing—we attend with you. (4) <strong>Settlement review:</strong> 7-14 days for initial estimate; 1-3 weeks if supplements needed. (5) <strong>Restoration work:</strong> 1-3 weeks to schedule; 1-3 days actual work for most roofs. <strong>Emergency situations get priority</strong>—we can tarp immediately (2-hour response) to prevent interior damage while claim processes. Weather and insurance responsiveness affect timeline. We expedite whenever possible.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          How much will storm damage restoration cost me?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>With approved insurance claim: ONLY YOUR DEDUCTIBLE (typically $2,500-$5,000).</strong> Insurance covers everything else—materials, labor, permits, disposal, damaged decking, gutters, vents, flashing, and code compliance upgrades. <strong>Example:</strong> $18,000 roof replacement with $3,000 deductible = you pay $3,000; insurance pays $15,000. <strong>Upgrade opportunities:</strong> Want impact-resistant shingles or better materials? Pay the difference between insurance-covered base and your upgrade (+$3k-$5k typical). <strong>Without insurance:</strong> Full restoration $10,500-$42,000 depending on damage extent and materials chosen. Emergency tarping: $500-$1,500 if needed immediately. We provide detailed estimates and work with all insurance companies to maximize your coverage.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          Should I meet the insurance adjuster alone or have you there?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>ALWAYS HAVE US THERE—this is absolutely critical!</strong> Homeowners miss 60-70% of damage that professional roofers identify. Insurance adjusters work for the insurance company (not you) and have incentive to minimize payouts. <strong>With us present:</strong> We point out ALL damage including hidden issues, document with professional expertise, advocate for full replacement if warranted, ensure proper scope and pricing, catch underpayments before they happen, and protect your interests. <strong>Without us:</strong> Adjusters often overlook damage, minimize scope to "repairs only," use inadequate pricing, or deny claims for "cosmetic damage." Meeting adjuster alone is the #1 mistake homeowners make. We attend at no charge and significantly increase claim approvals and payouts.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          What if my insurance company denies my claim?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>Don't give up—many denials can be overturned with proper documentation.</strong> Common denial reasons: "cosmetic damage only," "pre-existing damage," "wear and tear," "not enough impacts," or "damage doesn't match storm date." <strong>Our approach:</strong> (1) Review denial letter and policy language. (2) Provide additional documentation (drone footage, thermal imaging, detailed reports). (3) Request re-inspection with different adjuster. (4) File supplement with comprehensive evidence. (5) Escalate to claims manager if needed. (6) Recommend public adjuster or attorney for complex disputes (we have referrals). We've successfully overturned hundreds of denials with proper documentation and persistence. Don't accept initial denial as final answer.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          Can I upgrade my roof materials during storm restoration?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>Yes! Storm damage restoration is the perfect opportunity for upgrades.</strong> Insurance covers "like-for-like" replacement (same material type and quality as damaged roof). <strong>Common upgrades and your additional cost:</strong> Standard → Impact-resistant shingles (+$3,000-$5,000)—earns 10-35% annual insurance discounts, pays for itself in 7-12 years. Standard → Architectural premium (+$2,000-$4,000)—better appearance and durability. Shingles → Metal roofing (+$10,000-$20,000)—lasts 50+ years vs 25 years. Add gutter guards (+$1,500-$3,000)—reduces maintenance. Enhanced ventilation (+$800-$1,500)—improves efficiency and shingle lifespan. You pay the price difference; insurance covers base cost. <strong>Smart investment</strong>—upgrading while you're already replacing is more cost-effective than doing separately later.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          Do you offer emergency storm damage services?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>Yes—24/7 emergency response for storm damage.</strong> Call <strong>(512) 763-5277</strong> anytime after severe weather. <strong>Emergency services:</strong> Emergency tarping (2-hour response typical) to prevent interior water damage ($500-$1,500 depending on size), temporary leak repairs, immediate damage assessment, tree/debris removal coordination, and emergency board-up if needed. <strong>After major storms</strong> affecting Round Rock, Austin, Georgetown, and Central Texas, we prioritize active emergencies (water intrusion, exposed roof) then schedule non-emergency inspections within 1-3 days. Don't wait if you have active damage—water intrusion causes exponential damage every hour. Emergency tarping often covered by insurance as part of restoration claim.
                         </p>
                       </div>
                     </>

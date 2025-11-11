@@ -283,6 +283,36 @@ export const SERVICES: Service[] = [
       'Most homes completed in 1 day',
     ],
   },
+  {
+    id: '8',
+    title: 'Storm Damage Restoration',
+    slug: 'storm-damage-restoration',
+    shortDescription: 'Expert storm damage assessment and restoration—we handle insurance claims, emergency repairs, and complete restoration.',
+    description: 'Central Texas storms bring hail, high winds, fallen trees, and flying debris that can devastate your roof. Storm damage restoration requires specialized expertise—identifying hidden damage that untrained eyes miss, documenting everything for insurance claims, working with adjusters to maximize coverage, and executing repairs to full manufacturer warranty standards. We respond within 2 hours for emergency tarping and immediate protection, conduct comprehensive damage assessments using drones and thermal imaging, handle all insurance paperwork and adjuster meetings, and restore your roof to better-than-before condition. We serve Round Rock, Austin, Georgetown, and all Central Texas. Our storm specialists have documented over 2,000 insurance claims and recovered millions in rightful coverage for homeowners. Most insurance claims cover 100% of roof replacement minus deductible—we ensure you get what you deserve.',
+    icon: '⛈️',
+    image: '/images/services/storm-damage.jpg',
+    process: [
+      { step: 1, title: 'Emergency Response & Immediate Protection', description: 'We respond within 2 hours for emergency situations. Our crew performs emergency tarping to prevent interior water damage, documents all damage with photos and video, secures loose materials, identifies safety hazards, and provides immediate stability. Available 24/7 for storm emergencies.' },
+      { step: 2, title: 'Comprehensive Damage Assessment', description: 'We conduct a thorough inspection using drones for aerial documentation, thermal imaging to detect hidden moisture, measure hail impacts and wind damage, check for structural issues, inspect gutters and flashing, document every detail for insurance, and create a complete scope of work with pricing.' },
+      { step: 3, title: 'Insurance Claims Management', description: 'We handle the entire insurance process—file your claim, schedule adjuster meeting, meet adjuster on-site and advocate for full coverage, document all damage with professional reports, fight for proper scope if needed (supplements), negotiate fair settlements, and ensure you maximize your coverage. We work with all insurance companies.' },
+      { step: 4, title: 'Complete Restoration Work', description: 'Once your claim is approved, we execute full restoration—remove damaged roofing materials, replace damaged decking and structure if needed, install new underlayment and ice/water shield, install new shingles to manufacturer specs, replace damaged gutters and flashing, upgrade ventilation if needed (often covered), and restore roof to better-than-before condition.' },
+      { step: 5, title: 'Final Inspection & Warranty Protection', description: 'We conduct final quality inspection, ensure all work meets manufacturer warranty requirements, provide complete documentation for your records and insurance, verify proper ventilation and installation, clean up all debris with magnet sweep, and activate your 50-year shingle warranty + our 10-year workmanship warranty. Your roof is now fully protected!' },
+    ],
+    benefits: [
+      'Emergency response within 2 hours—24/7 availability',
+      'Expert insurance claims management—maximize coverage',
+      'Drone & thermal imaging documentation',
+      'Work with ALL insurance companies',
+      '2,000+ successful claims—millions recovered',
+      'Free damage assessment & inspection',
+      'Meet with adjuster—fight for proper scope',
+      'Handle supplements & negotiations',
+      'Most claims cover 100% minus deductible',
+      'Upgrade opportunities often covered by insurance',
+      'Full restoration to manufacturer standards',
+      '50-year shingle + 10-year workmanship warranty',
+    ],
+  },
 ]
 
 // Service Types for Form
