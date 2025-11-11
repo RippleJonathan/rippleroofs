@@ -3408,6 +3408,676 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
             </div>
           )}
 
+          {/* Leander-specific deep content */}
+          {location.slug === 'leander' && (
+            <div className="space-y-16 mt-16">
+              {/* Leander Neighborhoods Deep Dive */}
+              <div>
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Leander Neighborhoods: Your Complete Roofing Guide by Area
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  Leander is one of Texas's fastest-growing cities, exploding from 8,000 residents in 2000 to 70,000+ today. This rapid growth means newer homes, modern construction, and master-planned communities throughout. Here's what Leander homeowners need to know about roofing:
+                </p>
+
+                <div className="space-y-8">
+                  {/* Crystal Falls */}
+                  <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-lg shadow-md p-6 border-l-4 border-blue-500">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">Crystal Falls & Crystal Falls Parkway</h3>
+                    <div className="grid md:grid-cols-2 gap-4 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Leander's Premier Community:</p>
+                        <p className="mb-3">Leander's flagship master-planned development, built 2000s-present. 3,000+ homes with resort-style amenities (multiple pools, lazy river, sports fields, trails). Strong HOA. Highly desirable location. Consistently rated among best communities in Austin metro.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Roofing Characteristics:</p>
+                        <ul className="list-disc pl-5 space-y-1">
+                          <li>Mix of ages: 5-25 years old depending on section</li>
+                          <li>Older sections (2000-2010) entering replacement window</li>
+                          <li>Newer sections still under builder warranty</li>
+                          <li>Larger homes (2,500-4,000+ sq ft common)</li>
+                          <li>Modern architectural shingles standard</li>
+                          <li>HOA color/material approval required</li>
+                          <li>March 2024 storm heavily impacted older sections</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Best Materials for Crystal Falls:</p>
+                        <p className="mb-3">Impact-resistant architectural shingles (Owens Corning Duration Storm, CertainTeed Landmark Pro IR). Earth tones per HOA: Weathered Wood, Driftwood, Georgetown Gray. Must get HOA architectural approval before ordering.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Typical Investment:</p>
+                        <p className="text-accent-600 font-bold text-xl">$17,000-$30,000</p>
+                        <p className="text-sm">2,400-3,500 sq ft homes, moderate complexity, HOA compliance, premium materials</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Mason Hills */}
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-green-500">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">Mason Hills & Mason Creek</h3>
+                    <div className="grid md:grid-cols-2 gap-4 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Affordable Leander Entry:</p>
+                        <p className="mb-3">Built 1990s-2010s, more established than Crystal Falls. Mix of original owners and young families upgrading from Austin. Good schools, convenient location, more affordable than newer Leander developments. Mature trees, friendly neighborhoods.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Common Roofing Needs:</p>
+                        <ul className="list-disc pl-5 space-y-1">
+                          <li>Roofs 15-30 years old (prime replacement age)</li>
+                          <li>Many starting first replacement wave now</li>
+                          <li>Standard two-story production homes</li>
+                          <li>Less complex roof lines than newer communities</li>
+                          <li>2024 storm created surge of claims</li>
+                          <li>Some areas without strict HOA (more flexibility)</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Smart Upgrade Strategy:</p>
+                        <p className="mb-3">Perfect time to upgrade to impact-resistant shingles for Williamson County hail protection. Good value pricing. Algae-resistant formulas help with tree coverage. Popular color: Weathered Wood, Driftwood.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Cost Range:</p>
+                        <p className="text-accent-600 font-bold text-xl">$14,000-$23,000</p>
+                        <p className="text-sm">2,000-2,800 sq ft homes, straightforward roof lines, good value</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Summerlyn */}
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-purple-500">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">Summerlyn</h3>
+                    <div className="grid md:grid-cols-2 gap-4 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Modern Master-Planned Living:</p>
+                        <p className="mb-3">Built 2015-present by major builders (Taylor Morrison, DR Horton). Modern amenities (pools, fitness center, trails, parks). Strong HOA maintaining community standards. Energy-efficient modern homes. Growing rapidly with new phases constantly opening.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Roofing Situation:</p>
+                        <ul className="list-disc pl-5 space-y-1">
+                          <li>Very new homes (5-10 years old)</li>
+                          <li>Still under builder warranties in many cases</li>
+                          <li>Modern architectural shingles installed</li>
+                          <li>Proper ventilation and installation standards</li>
+                          <li>Won't need replacement until 2030-2040</li>
+                          <li>Some had hail damage claims in 2024</li>
+                          <li>HOA color approval process required</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Future Replacement Planning:</p>
+                        <p className="mb-3">When time comes, upgrade to Class 4 impact-resistant for maximum hail protection. Match exact HOA colors. Contemporary grays popular in Summerlyn. Coordinate with neighbors for group pricing.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Future Investment:</p>
+                        <p className="text-accent-600 font-bold text-xl">$16,000-$26,000</p>
+                        <p className="text-sm">2,200-3,000 sq ft modern homes when replacements needed in 15-20 years</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Travisso */}
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-amber-500">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">Travisso</h3>
+                    <div className="grid md:grid-cols-2 gap-4 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Luxury Leander Living:</p>
+                        <p className="mb-3">Built 2016-present, Leander's newest upscale master-planned community. Premium finishes, larger lots, Hill Country views. Resort-style amenities rivaling Crystal Falls. Modern energy-efficient construction. Attracting affluent families and retirees.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Roofing Characteristics:</p>
+                        <ul className="list-disc pl-5 space-y-1">
+                          <li>Brand new homes (1-9 years old)</li>
+                          <li>Premium architectural shingles already installed</li>
+                          <li>Some custom homes with complex roof lines</li>
+                          <li>Strict architectural review for all changes</li>
+                          <li>Many homes 3,000-4,500+ sq ft</li>
+                          <li>2024 storm hit some sections (insurance claims)</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Premium Materials Expected:</p>
+                        <p className="mb-3">When replacement time comes (2030s-2040s), Class 4 impact-resistant premium shingles or standing seam metal roofing. Designer colors matching luxury aesthetics. Must maintain community standards.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Future Cost Range:</p>
+                        <p className="text-accent-600 font-bold text-xl">$22,000-$40,000+</p>
+                        <p className="text-sm">Larger luxury homes, complex roof lines, premium materials, architectural review</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* San Gabriel Village & Block House Creek */}
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-red-500">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">San Gabriel Village & Block House Creek</h3>
+                    <div className="grid md:grid-cols-2 gap-4 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Mid-Range Leander:</p>
+                        <p className="mb-3">Built 2000s-2015, established neighborhoods with good value. Family-friendly, convenient to schools and shopping. More affordable than Crystal Falls or Travisso. Mix of production builders. Some HOA sections, some more flexible.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Roofing Timeline:</p>
+                        <ul className="list-disc pl-5 space-y-1">
+                          <li>Roofs 10-25 years old (varied ages)</li>
+                          <li>Older sections entering replacement window</li>
+                          <li>Standard two-story homes (2,000-2,800 sq ft)</li>
+                          <li>Moderate roof complexity</li>
+                          <li>March 2024 storm damage widespread</li>
+                          <li>Good opportunity for group neighborhood pricing</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Practical Approach:</p>
+                        <p className="mb-3">Impact-resistant architectural shingles provide best value and protection. Neutral colors (grays, browns, tans) most popular. Good ventilation critical for Leander summers. Check with neighbors about timing for group discounts.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Typical Costs:</p>
+                        <p className="text-accent-600 font-bold text-xl">$15,000-$24,000</p>
+                        <p className="text-sm">Standard 2,100-2,800 sq ft Leander homes, moderate complexity</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Original Old Town Leander */}
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-gray-500">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">Original Leander & Old Town</h3>
+                    <div className="grid md:grid-cols-2 gap-4 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Historic Leander:</p>
+                        <p className="mb-3">Original Leander homes from 1970s-1990s near historic downtown and train station. Smaller homes on larger lots. Mix of original owners and young buyers renovating. More affordable entry to Leander. Charming older neighborhoods. MetroRail access.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Roofing Challenges:</p>
+                        <ul className="list-disc pl-5 space-y-1">
+                          <li>Roofs 30-50+ years past prime (overdue)</li>
+                          <li>On 2nd or 3rd replacement already</li>
+                          <li>Decking repairs common (budget $2k-$5k extra)</li>
+                          <li>Simpler ranch and basic two-story designs</li>
+                          <li>No HOA restrictions (material flexibility)</li>
+                          <li>Mature trees = debris and algae concerns</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Value Approach:</p>
+                        <p className="mb-3">Quality architectural shingles appropriate for home values. Impact-resistant smart for insurance savings ($600/year). Simple roof lines keep costs reasonable. Expect decking replacement on older homes. Algae-resistant shingles recommended.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Cost Range:</p>
+                        <p className="text-accent-600 font-bold text-xl">$11,000-$19,000</p>
+                        <p className="text-sm">Smaller 1,500-2,200 sq ft homes, simple lines, plus decking repairs (common)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-8 bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
+                  <p className="text-primary-900 font-semibold mb-2">💡 Leander Roofing Pro Tip:</p>
+                  <p className="text-primary-700">
+                    Leander sits in Williamson County's hail corridor between Georgetown and Cedar Park, experiencing the same frequent severe storms. The March 2024 hailstorm damaged thousands of Leander roofs, especially in Crystal Falls and Mason Hills. <strong>Crystal Falls & Summerlyn residents: Your HOAs require architectural approval—we handle all paperwork and color matching.</strong> Leander's rapid growth means whole neighborhoods replace roofs simultaneously after storms—coordinate with neighbors for 10-15% group discounts! Free post-storm inspections available citywide.
+                  </p>
+                </div>
+              </div>
+
+              {/* Leander Storm History */}
+              <div>
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Leander Storm History & Hail Damage Patterns
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  Leander shares Georgetown and Cedar Park's position in Williamson County's notorious "Hail Alley," experiencing destructive storms with alarming regularity. As Leander's newest city, understanding this storm history is crucial:
+                </p>
+
+                <div className="grid md:grid-cols-2 gap-6 mb-8">
+                  <div className="bg-white rounded-lg shadow-md p-6">
+                    <h3 className="text-xl font-bold text-primary-900 mb-4 flex items-center gap-2">
+                      <span className="text-2xl">🌩️</span> Major Leander Hailstorms (2015-2025)
+                    </h3>
+                    <div className="space-y-4">
+                      <div className="border-l-4 border-red-600 pl-4">
+                        <p className="font-bold text-primary-900">March 2024 - Crystal Falls & North Leander Devastated</p>
+                        <p className="text-sm text-primary-700">Baseball to softball-sized hail across northern Leander including Crystal Falls, Summerlyn, and Travisso. Southern Leander (Mason Hills, Block House Creek) received golf ball hail. <strong>Estimated 40-50% of Leander homes sustained roof damage requiring replacement.</strong> Crystal Falls particularly hard hit with entire sections filing simultaneous claims. Largest insurance event in Leander history.</p>
+                      </div>
+                      <div className="border-l-4 border-orange-500 pl-4">
+                        <p className="font-bold text-primary-900">May 2022 - Western Leander Path</p>
+                        <p className="text-sm text-primary-700">Severe supercell tracked from Cedar Park through western Leander toward Bertram. Golf ball to baseball hail across Crystal Falls and newer western developments. 60+ mph winds. Many newer Travisso homes experienced their first major storm damage. Thousands of claims filed.</p>
+                      </div>
+                      <div className="border-l-4 border-yellow-500 pl-4">
+                        <p className="font-bold text-primary-900">April 2021 - Round Rock to Leander Corridor</p>
+                        <p className="text-sm text-primary-700">Major hailstorm followed I-35/US 183 corridor through Georgetown, Cedar Park, and into Leander. Baseball-sized hail reported throughout Leander. Mason Hills and San Gabriel Village heavily impacted. This storm put Leander on the map for hail damage—many newer residents experienced severe Texas weather for first time.</p>
+                      </div>
+                      <div className="border-l-4 border-blue-500 pl-4">
+                        <p className="font-bold text-primary-900">March 2016 - $1.4 Billion Williamson County Catastrophe</p>
+                        <p className="text-sm text-primary-700">Part of the historic Williamson County disaster. Leander received golf ball to baseball hail citywide. Crystal Falls (then newer) had 70-80% roof replacement rates. Mason Hills nearly 100% replacements. This event established impact-resistant shingles as the standard for Leander.</p>
+                      </div>
+                      <div className="border-l-4 border-purple-500 pl-4">
+                        <p className="font-bold text-primary-900">Leander Pattern: Every 2-4 Years (Like Georgetown)</p>
+                        <p className="text-sm text-primary-700">Leander experiences a major (roof-totaling potential) hailstorm every 2-4 years. Minor hail occurs 5-8 times annually. Living in Leander means accepting hail as inevitable and planning accordingly with impact-resistant materials.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-lg shadow-md p-6">
+                    <h3 className="text-xl font-bold text-primary-900 mb-4 flex items-center gap-2">
+                      <span className="text-2xl">📊</span> Leander Hail Statistics & Risk Data
+                    </h3>
+                    <div className="space-y-4">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Why Leander Gets Hammered:</p>
+                        <p className="text-sm text-primary-700 mb-2">Leander sits at the northwest edge of Austin metro where Hill Country geography creates perfect conditions for hail formation. Storms intensify as they move northwest from Austin along the I-35/US 183 corridor. Same "Hail Alley" designation as Georgetown and Cedar Park—one of Texas's highest-risk areas.</p>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Peak Danger: March - May</p>
+                        <p className="text-sm text-primary-700 mb-2">80% of Leander's damaging hail falls in spring. April is the most dangerous month statistically.</p>
+                        <div className="bg-primary-50 p-3 rounded">
+                          <p className="text-xs font-semibold text-primary-900 mb-1">Monthly Risk Distribution:</p>
+                          <p className="text-xs text-primary-700">March: 25% • April: 35% • May: 20% • Other: 20%</p>
+                        </div>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">North vs South Leander Patterns:</p>
+                        <p className="text-sm text-primary-700 mb-2">Northern Leander (Crystal Falls, Travisso, Summerlyn) experiences highest hail frequency and largest sizes. Central Leander (San Gabriel Village) moderate risk. Southern Leander (toward Cedar Park line) also frequently hit. All areas high risk—no "safe" zones.</p>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Expected Hail Frequency in Leander:</p>
+                        <div className="space-y-2 text-sm">
+                          <div className="flex justify-between items-center">
+                            <span className="text-primary-700">Pea-sized (1/4") - Cosmetic only</span>
+                            <span className="font-bold text-primary-900">6-10x per year</span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span className="text-primary-700">Quarter-sized (1") - Minor damage</span>
+                            <span className="font-bold text-primary-900">3-5x per year</span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span className="text-primary-700">Golf ball (1.75") - Major damage</span>
+                            <span className="font-bold text-accent-600">2-3x per year</span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span className="text-primary-700">Baseball (2.75") - Roof totaled</span>
+                            <span className="font-bold text-red-600">Every 2-4 years</span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span className="text-primary-700">Softball (4") - Catastrophic</span>
+                            <span className="font-bold text-red-600">Every 8-15 years</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-accent-50 to-blue-50 rounded-lg p-6">
+                  <h3 className="text-xl font-bold text-primary-900 mb-4">Protecting Your Leander Home from Storm Damage</h3>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <p className="font-semibold text-primary-900 mb-2">✅ Before Storm Season (Critical for Leander):</p>
+                      <ul className="text-sm text-primary-700 space-y-1">
+                        <li>• <strong>Install Class 4 impact-resistant shingles</strong> - Absolutely essential in Leander</li>
+                        <li>• Document current roof condition with dated photos and videos</li>
+                        <li>• Review homeowner's insurance - confirm coverage limits and deductible</li>
+                        <li>• Trim tree branches 10+ feet from roof (especially older Leander neighborhoods)</li>
+                        <li>• Sign up for Williamson County CodeRED emergency alerts</li>
+                        <li>• Save Ripple Roofing: (512) 763-5277 for immediate post-storm inspections</li>
+                        <li>• Crystal Falls/Summerlyn: Get approved roof colors list from HOA now</li>
+                        <li>• Join neighborhood Facebook/Nextdoor - coordinate group pricing after storms</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-primary-900 mb-2">⚠️ After a Leander Hailstorm:</p>
+                      <ul className="text-sm text-primary-700 space-y-1">
+                        <li>• <strong>Inspect within 1-2 weeks</strong> - hail damage may not be immediately visible</li>
+                        <li>• Check gutters for shingle granule accumulation (key damage indicator)</li>
+                        <li>• Look for dents on metal surfaces (mailbox, AC unit, vents, gutters, cars)</li>
+                        <li>• Call us for FREE professional roof inspection - we check from roof level</li>
+                        <li>• Document ALL damage thoroughly with photos and videos</li>
+                        <li>• File insurance claim promptly if damage confirmed (1 year deadline typical)</li>
+                        <li>• Have us present at insurance adjuster meeting (maximizes claim scope)</li>
+                        <li>• Talk to neighbors - coordinate for 10-15% group pricing discounts</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Best Roofing Materials for Leander */}
+              <div>
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Best Roofing Materials for Leander Homes
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  Leander's position in Williamson County's "Hail Alley" and explosive growth make material selection critical. Here's what performs best for Leander's climate and community standards:
+                </p>
+
+                <div className="space-y-6">
+                  {/* #1 Recommendation */}
+                  <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg p-6 border-2 border-green-500">
+                    <div className="flex items-start gap-3 mb-4">
+                      <span className="text-3xl">🏆</span>
+                      <div>
+                        <h3 className="text-2xl font-bold text-primary-900">#1 Recommendation: Class 4 Impact-Resistant Architectural Shingles</h3>
+                        <p className="text-accent-600 font-semibold">NON-NEGOTIABLE for Leander's Hail Pattern</p>
+                      </div>
+                    </div>
+                    
+                    <div className="grid md:grid-cols-3 gap-6 mb-6">
+                      <div className="bg-white rounded p-4">
+                        <p className="font-bold text-primary-900 mb-2">Best: Owens Corning Duration Storm</p>
+                        <ul className="text-sm text-primary-700 space-y-1">
+                          <li>• Class 4 UL 2218 impact rating</li>
+                          <li>• SureNail Technology (130 mph winds)</li>
+                          <li>• Survives baseball hail repeatedly</li>
+                          <li>• TruDefinition color technology</li>
+                          <li>• 50-year non-prorated warranty</li>
+                          <li>• 15-35% insurance discount</li>
+                          <li>• #1 choice in Crystal Falls/Travisso</li>
+                        </ul>
+                        <p className="text-accent-600 font-bold mt-3">$15,000-$22,000</p>
+                        <p className="text-xs text-primary-600">(2,000 sq ft Leander home)</p>
+                      </div>
+                      <div className="bg-white rounded p-4">
+                        <p className="font-bold text-primary-900 mb-2">Excellent: CertainTeed Landmark Pro IR</p>
+                        <ul className="text-sm text-primary-700 space-y-1">
+                          <li>• Class 4 impact-resistant</li>
+                          <li>• 130 mph wind resistance</li>
+                          <li>• Cool Roof Technology (heat reflection)</li>
+                          <li>• StreakFighter algae protection</li>
+                          <li>• 50-year limited warranty</li>
+                          <li>• 15-35% insurance savings</li>
+                          <li>• Popular in Summerlyn</li>
+                        </ul>
+                        <p className="text-accent-600 font-bold mt-3">$14,500-$21,000</p>
+                        <p className="text-xs text-primary-600">(2,000 sq ft Leander home)</p>
+                      </div>
+                      <div className="bg-white rounded p-4">
+                        <p className="font-bold text-primary-900 mb-2">Great: GAF Timberline HDZ IR</p>
+                        <ul className="text-sm text-primary-700 space-y-1">
+                          <li>• Class 4 UL 2218 rated</li>
+                          <li>• LayerLock Technology</li>
+                          <li>• 130 mph wind warranty</li>
+                          <li>• StainGuard Plus algae protection</li>
+                          <li>• 50-year limited warranty</li>
+                          <li>• 10-35% insurance discounts</li>
+                          <li>• Mason Hills standard</li>
+                        </ul>
+                        <p className="text-accent-600 font-bold mt-3">$14,000-$21,000</p>
+                        <p className="text-xs text-primary-600">(2,000 sq ft Leander home)</p>
+                      </div>
+                    </div>
+
+                    <div className="bg-white rounded-lg p-4 border-l-4 border-green-600">
+                      <p className="font-bold text-primary-900 mb-2">💰 Impact-Resistant ROI for Leander Homeowners:</p>
+                      <div className="grid md:grid-cols-2 gap-4 text-sm text-primary-700">
+                        <div>
+                          <p className="font-semibold text-primary-900 mb-1">Why Absolutely Essential in Leander:</p>
+                          <ul className="space-y-1">
+                            <li>• Withstands baseball/softball hail Leander gets every 2-4 years</li>
+                            <li>• 15-35% insurance discount (typically 20-25% in Leander)</li>
+                            <li>• Average $3,000/year Leander home insurance × 20% = $600/year savings</li>
+                            <li>• Over 30 years: <strong>$18,000 in insurance savings</strong></li>
+                            <li>• Upgrade cost over standard shingles: $3,000-$5,000</li>
+                            <li>• <strong>Pays for itself in 5-8 years, then pure savings!</strong></li>
+                          </ul>
+                        </div>
+                        <div>
+                          <p className="font-semibold text-primary-900 mb-1">Additional Benefits:</p>
+                          <ul className="space-y-1">
+                            <li>• Survives storms that total standard roofs (avoid repeat claims)</li>
+                            <li>• Better heat reflection = 10-15% lower cooling costs (Leander summers brutal)</li>
+                            <li>• 50-year lifespan vs 20-25 for standard shingles</li>
+                            <li>• Higher home resale value (buyers demand hail protection now)</li>
+                            <li>• Peace of mind during Leander's intense March-May storm season</li>
+                            <li>• Required/expected in Crystal Falls, Travisso, Summerlyn HOAs</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Metal Roofing */}
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-gray-600">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">Alternative: Standing Seam Metal Roofing</h3>
+                    <p className="text-primary-700 mb-4">Growing in popularity, especially in newer Travisso custom homes and original Leander renovations.</p>
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">✅ Pros for Leander:</p>
+                        <ul className="text-sm text-primary-700 space-y-1">
+                          <li>• <strong>Ultimate hail resistance</strong> - dents but never punctures or fails</li>
+                          <li>• <strong>50-70 year lifespan</strong> - install once, never worry again</li>
+                          <li>• Survived March 2024 softball hail with only cosmetic dents</li>
+                          <li>• 30-40% cooling cost savings (massive in Leander summers)</li>
+                          <li>• 140+ mph wind rating (severe thunderstorms)</li>
+                          <li>• Eco-friendly (100% recyclable aluminum or steel)</li>
+                          <li>• Modern aesthetic popular in Travisso and newer developments</li>
+                          <li>• Never file another hail claim (lifetime solution)</li>
+                        </ul>
+                        <p className="text-accent-600 font-bold mt-4 text-xl">$23,000-$43,000</p>
+                        <p className="text-sm text-primary-600">(2,000 sq ft Leander home, standing seam aluminum/steel)</p>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">⚠️ Considerations:</p>
+                        <ul className="text-sm text-primary-700 space-y-1">
+                          <li>• Higher upfront cost (2.5-3x impact-resistant shingles)</li>
+                          <li>• HOA restrictions in some communities (Crystal Falls, Summerlyn - verify first!)</li>
+                          <li>• Limited color options (grays, blacks, browns, copper, bronze)</li>
+                          <li>• Louder during heavy rain/hail than shingles (noticeable)</li>
+                          <li>• Requires specialized installation (fewer qualified contractors)</li>
+                          <li>• Best for simpler roof lines (complex = very expensive)</li>
+                        </ul>
+                        <p className="font-semibold text-primary-900 mt-4 mb-1">Best For:</p>
+                        <p className="text-sm text-primary-700">Long-term Leander homeowners (20+ years), tired of hail claims cycle, eco-conscious, custom Travisso homes, original Leander renovations, non-HOA areas, simple roof designs.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Materials to Avoid */}
+                  <div className="bg-red-50 rounded-lg p-6 border-l-4 border-red-500">
+                    <h3 className="text-xl font-bold text-primary-900 mb-3">❌ Materials to AVOID in Leander</h3>
+                    <div className="grid md:grid-cols-2 gap-4">
+                      <div>
+                        <p className="font-bold text-primary-900 mb-2">Standard 3-Tab or Basic Architectural Shingles (Non-Impact Rated)</p>
+                        <p className="text-sm text-primary-700"><strong>Why this is foolish in Leander:</strong> Zero hail protection - these WILL FAIL when (not if) Leander gets baseball hail. Only 15-20 year lifespan. No insurance discounts. You'll pay $2,000-$3,000 deductible every time Leander gets hit (every 2-4 years = $6k-$9k over 12 years!). Only saves $2k-$3k initially compared to impact-resistant, but costs 3x that in deductibles alone. Then insurance drops you or raises rates. Absolutely foolish decision in Williamson County.</p>
+                      </div>
+                      <div>
+                        <p className="font-bold text-primary-900 mb-2">Concrete or Clay Tile</p>
+                        <p className="text-sm text-primary-700"><strong>Why avoid in Leander:</strong> Tiles crack and shatter from Leander's frequent baseball/softball hail. Expensive individual tile replacements ($300-$500 each, dozens damaged per storm). Very heavy (requires structural reinforcement). Not common in Leander, hard to match. Long lead times for materials. Complex insurance claims. Simply not worth the headaches in hail-prone area.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Color Guide */}
+                  <div className="bg-blue-50 rounded-lg p-6">
+                    <h3 className="text-xl font-bold text-primary-900 mb-4">🎨 Most Popular Leander Roof Colors</h3>
+                    <p className="text-sm text-primary-700 mb-4">Leander homeowners favor earth tones and contemporary grays. HOA communities have approved color lists:</p>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                      <div className="bg-white p-3 rounded text-center">
+                        <div className="w-full h-16 bg-amber-700 rounded mb-2"></div>
+                        <p className="font-semibold text-xs text-primary-900">Weathered Wood</p>
+                        <p className="text-xs text-primary-600">#1 in Crystal Falls</p>
+                      </div>
+                      <div className="bg-white p-3 rounded text-center">
+                        <div className="w-full h-16 bg-stone-600 rounded mb-2"></div>
+                        <p className="font-semibold text-xs text-primary-900">Driftwood</p>
+                        <p className="text-xs text-primary-600">Mason Hills fave</p>
+                      </div>
+                      <div className="bg-white p-3 rounded text-center">
+                        <div className="w-full h-16 bg-gray-500 rounded mb-2"></div>
+                        <p className="font-semibold text-xs text-primary-900">Georgetown Gray</p>
+                        <p className="text-xs text-primary-600">Modern Summerlyn</p>
+                      </div>
+                      <div className="bg-white p-3 rounded text-center">
+                        <div className="w-full h-16 bg-slate-700 rounded mb-2"></div>
+                        <p className="font-semibold text-xs text-primary-900">Charcoal</p>
+                        <p className="text-xs text-primary-600">Travisso popular</p>
+                      </div>
+                      <div className="bg-white p-3 rounded text-center">
+                        <div className="w-full h-16 bg-gray-400 rounded mb-2"></div>
+                        <p className="font-semibold text-xs text-primary-900">Pewter Gray</p>
+                        <p className="text-xs text-primary-600">Contemporary</p>
+                      </div>
+                      <div className="bg-white p-3 rounded text-center">
+                        <div className="w-full h-16 bg-amber-800 rounded mb-2"></div>
+                        <p className="font-semibold text-xs text-primary-900">Mission Brown</p>
+                        <p className="text-xs text-primary-600">Traditional</p>
+                      </div>
+                      <div className="bg-white p-3 rounded text-center">
+                        <div className="w-full h-16 bg-stone-300 rounded mb-2"></div>
+                        <p className="font-semibold text-xs text-primary-900">Oyster Gray</p>
+                        <p className="text-xs text-primary-600">Light Option</p>
+                      </div>
+                      <div className="bg-white p-3 rounded text-center">
+                        <div className="w-full h-16 bg-slate-800 rounded mb-2"></div>
+                        <p className="font-semibold text-xs text-primary-900">Onyx Black</p>
+                        <p className="text-xs text-primary-600">Bold Modern</p>
+                      </div>
+                    </div>
+                    <p className="text-xs text-primary-600 mt-4 text-center">HOA communities (Crystal Falls, Summerlyn, Travisso): MUST verify approved colors before ordering. We handle all HOA submissions and approvals.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Leander Roof Replacement Costs */}
+              <div>
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Leander Roof Replacement Costs: Complete Pricing Guide
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  Leander roof replacement costs reflect the city's newer construction and larger homes. Crystal Falls and Travisso homes typically cost more due to size:
+                </p>
+
+                <div className="space-y-4 mb-8">
+                  <div className="border-l-4 border-blue-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">1,500-2,000 sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: Original Leander, small Block House Creek homes, simple roof, 18-24 squares</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$11,000-$17,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-green-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">2,000-2,500 sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: Standard Leander two-story, Mason Hills, older Crystal Falls sections, 24-28 squares, moderate complexity</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$15,000-$22,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-purple-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">2,500-3,000 sq ft Home (Common in Crystal Falls)</p>
+                        <p className="text-sm text-primary-700">Typical: Larger Crystal Falls, Summerlyn, San Gabriel Village, 4-bed/3-bath, 28-35 squares, increased complexity</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$18,000-$27,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-red-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">3,000-3,500 sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: Premium Crystal Falls, Travisso, 4-5 bed/3-4 bath, 35-42 squares, complex modern roof lines</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$22,000-$34,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-amber-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">3,500+ sq ft Luxury Home</p>
+                        <p className="text-sm text-primary-700">Typical: Custom Travisso estates, large Crystal Falls, highly complex roofs, 42+ squares, premium finishes</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$28,000-$55,000+</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded mb-8">
+                  <p className="font-bold text-primary-900 mb-2">💡 Crystal Falls, Summerlyn & Travisso Homeowners: Important Notes</p>
+                  <p className="text-sm text-primary-700 mb-3">Leander's master-planned communities have specific requirements and considerations:</p>
+                  <ul className="text-sm text-primary-700 space-y-1">
+                    <li>• <strong>HOA Architectural Approval REQUIRED:</strong> We handle all submissions, photos, color documentation. Crystal Falls typically 2-3 weeks, Summerlyn 1-2 weeks, Travisso 3-4 weeks. Plan accordingly.</li>
+                    <li>• <strong>Approved Color Lists:</strong> Each HOA maintains specific approved colors. Weathered Wood, Driftwood, Georgetown Gray most common. Must match exactly - no substitutions.</li>
+                    <li>• <strong>Larger Homes = Higher Costs:</strong> Crystal Falls/Travisso homes average 2,500-3,500+ sq ft = naturally higher costs than older Austin neighborhoods.</li>
+                    <li>• <strong>Modern Roof Complexity:</strong> Many newer Leander homes have architectural features, multiple roof planes, increased complexity vs simple ranch designs.</li>
+                    <li>• <strong>Group Pricing Goldmine:</strong> After major storms, entire Leander streets replace simultaneously. Coordinate with neighbors for 10-15% discounts. Crystal Falls perfect for this!</li>
+                  </ul>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-6 mb-8">
+                  <div className="bg-red-50 rounded-lg p-6 border-l-4 border-red-500">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">📈 What INCREASES Cost in Leander</h3>
+                    <ul className="space-y-2 text-sm text-primary-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+15-25%</span>
+                        <span><strong>Steep pitch roofs</strong> (safety equipment, slower work - some Travisso customs)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+15-30%</span>
+                        <span><strong>Complex roof lines</strong> (valleys, dormers, turrets - modern Crystal Falls/Travisso designs)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+20-35%</span>
+                        <span><strong>Two-story homes</strong> (most Leander homes - additional safety equipment)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+$2k-5k</span>
+                        <span><strong>Decking repairs</strong> (less common in newer Leander, but original areas need it)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+100-200%</span>
+                        <span><strong>Metal roofing upgrade</strong> ($23k-$43k vs $15k-$22k shingles)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+$400-800</span>
+                        <span><strong>Permits & fees</strong> (Williamson County permits, HOA fees where applicable)</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-green-50 rounded-lg p-6 border-l-4 border-green-500">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">📉 What DECREASES Cost in Leander</h3>
+                    <ul className="space-y-2 text-sm text-primary-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Simple gable or hip roof</strong> (many Summerlyn production homes)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Low to moderate pitch</strong> (most Leander homes, faster/safer installation)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Good existing decking</strong> (newer Crystal Falls, Summerlyn, Travisso - rarely needs work)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Insurance claim coverage</strong> (pay deductible only - $2k-$3k total cost, rest covered)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Neighborhood group pricing</strong> (10-15% off - HUGE in Leander after storms!)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Easy property access</strong> (wide Leander streets, good driveways, flat terrain)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-accent-50 to-blue-50 rounded-lg p-6">
+                  <h3 className="text-xl font-bold text-primary-900 mb-4">💡 6 Ways Leander Homeowners Save on Roof Replacement</h3>
+                  <div className="grid md:grid-cols-2 gap-4 text-sm text-primary-700">
+                    <div>
+                      <p className="font-bold text-primary-900 mb-1">1. File Insurance Claims After Storms (CRITICAL)</p>
+                      <p className="mb-3">Leander gets roof-damaging hail every 2-4 years. March 2024 damaged 40-50% of Leander roofs. If your neighbors filed claims, you should too. Insurance covers 100% minus deductible ($2k-$3k). We handle entire claims process, adjuster meetings, scope negotiations. Don't leave free money on table!</p>
+                      
+                      <p className="font-bold text-primary-900 mb-1">2. Coordinate with Neighbors (MASSIVE Savings)</p>
+                      <p className="mb-3">Leander's neighborhood structure perfect for this! When we work 5-10 Crystal Falls/Summerlyn homes, we offer 10-15% group discounts. One material delivery, one crew mobilization = $2k-$4k per home savings. Join neighborhood groups and organize after storms. This is the #1 way Leander homeowners save!</p>
+                      
+                      <p className="font-bold text-primary-900 mb-1">3. Choose Impact-Resistant for Long-Term Savings</p>
+                      <p className="mb-3">$3k-$5k more upfront, but saves $600-$750/year on insurance (20-25% typical Leander discount). Pays for itself in 5-7 years. Plus survives Leander's hail = fewer future claims. Over 30 years: $18,000+ in insurance savings. Essential investment in Williamson County.</p>
+                    </div>
+                    <div>
+                      <p className="font-bold text-primary-900 mb-1">4. Bundle Multiple Services</p>
+                      <p className="mb-3">Replace gutters, install gutter guards, add ridge vent upgrades simultaneously for 10-15% savings vs separate projects. One mobilization = lower total cost. Popular in Crystal Falls where homeowners want everything done right.</p>
+                      
+                      <p className="font-bold text-primary-900 mb-1">5. Schedule During Off-Season (When Possible)</p>
+                      <p className="mb-3">Fall/winter (October-February) are slower for roofing. We may offer scheduling flexibility or modest discounts. Avoid June-August post-storm rush when Leander's busiest. But don't delay if insurance claim has deadline!</p>
+                      
+                      <p className="font-bold text-primary-900 mb-1">6. Take Advantage of 0% Financing</p>
+                      <p className="mb-3">We offer 0% financing for 12-18 months through approved lenders. Spread $20k-$30k Crystal Falls roof into $1,200-$1,700/month payments. No interest if paid within promotional period. Popular with young Leander families. Ask about current promotions!</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-6 bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
+                  <p className="text-primary-900 font-semibold mb-2">📞 Get Your Exact Leander Roof Replacement Cost</p>
+                  <p className="text-primary-700">
+                    These are estimates. Your actual cost depends on your specific home, neighborhood, materials, HOA requirements, and current conditions. We provide <strong>FREE inspections</strong> and detailed written quotes with no obligation. <strong>Crystal Falls, Summerlyn & Travisso homeowners: We handle ALL HOA paperwork and approvals—you don't lift a finger!</strong> Call <strong>(512) 763-5277</strong> or schedule online for your personalized Leander roof replacement estimate.
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+
           {/* FAQ Section - Full Width */}
           <div className="mt-16">
             <LocationFAQ city={location.city} />
