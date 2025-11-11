@@ -2160,6 +2160,507 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
                 </>
               )}
 
+              {/* COMMERCIAL ROOFING SPECIFIC CONTENT */}
+              {service.slug === 'commercial-roofing' && (
+                <>
+                  {/* Commercial Roofing Systems */}
+                  <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-2xl">
+                    <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                      Commercial Roofing Systems We Install
+                    </h2>
+                    <p className="text-primary-700 mb-8 leading-relaxed">
+                      Commercial roofs face different challenges than residential—larger surface areas, foot traffic, HVAC equipment, and higher stakes if leaks occur. Here are the most common commercial roofing systems in Central Texas:
+                    </p>
+                    <div className="space-y-6">
+                      {/* TPO Roofing */}
+                      <div className="bg-white rounded-xl p-6 border-l-4 border-blue-500">
+                        <h3 className="text-xl font-bold text-primary-900 mb-3 flex items-center gap-2">
+                          <span className="text-2xl">🏢</span> TPO Roofing (Most Popular)
+                        </h3>
+                        <p className="text-primary-700 mb-4">
+                          Thermoplastic Polyolefin—white reflective membrane ideal for Texas heat. Heat-welded seams create watertight barrier. Best combination of cost, energy efficiency, and durability for most commercial properties.
+                        </p>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm mb-4">
+                          <div>
+                            <p className="font-semibold text-primary-900 mb-1">Cost</p>
+                            <p className="text-primary-700">$5.50-$8.50 per sq ft</p>
+                            <p className="text-xs text-primary-600">Installed, 5,000 sq ft roof</p>
+                          </div>
+                          <div>
+                            <p className="font-semibold text-primary-900 mb-1">Lifespan</p>
+                            <p className="text-primary-700">20-30 years</p>
+                            <p className="text-xs text-primary-600">Warranty: 15-20 years typical</p>
+                          </div>
+                          <div>
+                            <p className="font-semibold text-primary-900 mb-1">Best For</p>
+                            <p className="text-primary-700">Most commercial buildings</p>
+                            <p className="text-xs text-primary-600">Energy-conscious businesses</p>
+                          </div>
+                        </div>
+                        <div className="bg-green-50 p-3 rounded mb-2">
+                          <p className="text-sm text-green-900">
+                            <strong>✓ Pros:</strong> Highly reflective (saves cooling costs), heat-welded seams (no leaks), resistant to punctures/tears, UV resistant, recyclable, Energy Star rated
+                          </p>
+                        </div>
+                        <div className="bg-amber-50 p-3 rounded">
+                          <p className="text-sm text-amber-900">
+                            <strong>⚠ Cons:</strong> Can be punctured by sharp objects, seams require skilled installation, some formulations less flexible in cold (not issue in Texas)
+                          </p>
+                        </div>
+                      </div>
+
+                      {/* EPDM Roofing */}
+                      <div className="bg-white rounded-xl p-6 border-l-4 border-purple-500">
+                        <h3 className="text-xl font-bold text-primary-900 mb-3 flex items-center gap-2">
+                          <span className="text-2xl">⚫</span> EPDM Roofing (Rubber Membrane)
+                        </h3>
+                        <p className="text-primary-700 mb-4">
+                          Ethylene Propylene Diene Monomer—black rubber membrane, proven technology since 1960s. Extremely durable, easy to repair, cost-effective. Good choice for warehouses and industrial buildings.
+                        </p>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm mb-4">
+                          <div>
+                            <p className="font-semibold text-primary-900 mb-1">Cost</p>
+                            <p className="text-primary-700">$4.50-$7.00 per sq ft</p>
+                            <p className="text-xs text-primary-600">Installed, 5,000 sq ft roof</p>
+                          </div>
+                          <div>
+                            <p className="font-semibold text-primary-900 mb-1">Lifespan</p>
+                            <p className="text-primary-700">25-35 years</p>
+                            <p className="text-xs text-primary-600">Warranty: 15-25 years typical</p>
+                          </div>
+                          <div>
+                            <p className="font-semibold text-primary-900 mb-1">Best For</p>
+                            <p className="text-primary-700">Warehouses, industrial</p>
+                            <p className="text-xs text-primary-600">Budget-conscious projects</p>
+                          </div>
+                        </div>
+                        <div className="bg-green-50 p-3 rounded mb-2">
+                          <p className="text-sm text-green-900">
+                            <strong>✓ Pros:</strong> Most affordable option, very durable, easy to repair, resistant to ozone/UV, proven 50+ year track record, low maintenance
+                          </p>
+                        </div>
+                        <div className="bg-amber-50 p-3 rounded">
+                          <p className="text-sm text-amber-900">
+                            <strong>⚠ Cons:</strong> Black color absorbs heat (higher cooling costs in Texas), seams are glued (can separate over time), less energy efficient than TPO/white membranes
+                          </p>
+                        </div>
+                      </div>
+
+                      {/* Modified Bitumen */}
+                      <div className="bg-white rounded-xl p-6 border-l-4 border-orange-500">
+                        <h3 className="text-xl font-bold text-primary-900 mb-3 flex items-center gap-2">
+                          <span className="text-2xl">🔥</span> Modified Bitumen (Multi-Ply System)
+                        </h3>
+                        <p className="text-primary-700 mb-4">
+                          Asphalt-based membrane reinforced with fiberglass or polyester. Multiple layers torch-applied or self-adhering. Excellent for high foot-traffic areas like rooftop HVAC access.
+                        </p>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm mb-4">
+                          <div>
+                            <p className="font-semibold text-primary-900 mb-1">Cost</p>
+                            <p className="text-primary-700">$5.00-$8.00 per sq ft</p>
+                            <p className="text-xs text-primary-600">Installed, 5,000 sq ft roof</p>
+                          </div>
+                          <div>
+                            <p className="font-semibold text-primary-900 mb-1">Lifespan</p>
+                            <p className="text-primary-700">15-25 years</p>
+                            <p className="text-xs text-primary-600">Warranty: 10-20 years typical</p>
+                          </div>
+                          <div>
+                            <p className="font-semibold text-primary-900 mb-1">Best For</p>
+                            <p className="text-primary-700">High foot-traffic roofs</p>
+                            <p className="text-xs text-primary-600">Rooftop equipment access</p>
+                          </div>
+                        </div>
+                        <div className="bg-green-50 p-3 rounded mb-2">
+                          <p className="text-sm text-green-900">
+                            <strong>✓ Pros:</strong> Very durable/puncture resistant, handles foot traffic well, good for repairs, multi-ply redundancy, granulated surface available (better UV protection)
+                          </p>
+                        </div>
+                        <div className="bg-amber-50 p-3 rounded">
+                          <p className="text-sm text-amber-900">
+                            <strong>⚠ Cons:</strong> Torch application requires skilled installers, open-flame concerns during install, shorter lifespan than TPO/EPDM, less reflective (higher cooling costs)
+                          </p>
+                        </div>
+                      </div>
+
+                      {/* Metal Roofing */}
+                      <div className="bg-white rounded-xl p-6 border-l-4 border-gray-500">
+                        <h3 className="text-xl font-bold text-primary-900 mb-3 flex items-center gap-2">
+                          <span className="text-2xl">🔩</span> Metal Roofing (Premium Longevity)
+                        </h3>
+                        <p className="text-primary-700 mb-4">
+                          Standing seam metal panels or corrugated metal. Longest-lasting commercial option. Excellent for sloped commercial roofs, warehouses, agricultural buildings. Low maintenance, fire resistant.
+                        </p>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm mb-4">
+                          <div>
+                            <p className="font-semibold text-primary-900 mb-1">Cost</p>
+                            <p className="text-primary-700">$7.00-$12.00 per sq ft</p>
+                            <p className="text-xs text-primary-600">Installed, standing seam</p>
+                          </div>
+                          <div>
+                            <p className="font-semibold text-primary-900 mb-1">Lifespan</p>
+                            <p className="text-primary-700">40-60 years</p>
+                            <p className="text-xs text-primary-600">Warranty: 25-40 years typical</p>
+                          </div>
+                          <div>
+                            <p className="font-semibold text-primary-900 mb-1">Best For</p>
+                            <p className="text-primary-700">Long-term ownership</p>
+                            <p className="text-xs text-primary-600">Sloped commercial roofs</p>
+                          </div>
+                        </div>
+                        <div className="bg-green-50 p-3 rounded mb-2">
+                          <p className="text-sm text-green-900">
+                            <strong>✓ Pros:</strong> 40-60 year lifespan, minimal maintenance, fire resistant, highly reflective (energy efficient), increases property value, recyclable
+                          </p>
+                        </div>
+                        <div className="bg-amber-50 p-3 rounded">
+                          <p className="text-sm text-amber-900">
+                            <strong>⚠ Cons:</strong> Higher upfront cost, limited for flat roofs (need minimum slope), can be noisy in hail, requires skilled installation, expansion/contraction considerations
+                          </p>
+                        </div>
+                      </div>
+
+                      {/* Roof Coatings */}
+                      <div className="bg-white rounded-xl p-6 border-l-4 border-green-500">
+                        <h3 className="text-xl font-bold text-primary-900 mb-3 flex items-center gap-2">
+                          <span className="text-2xl">🎨</span> Roof Coatings & Restoration
+                        </h3>
+                        <p className="text-primary-700 mb-4">
+                          Liquid-applied coatings over existing roof. Extends life 10-15 years at fraction of replacement cost. Options: silicone, acrylic, urethane. Ideal for aging roofs not yet ready for replacement.
+                        </p>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm mb-4">
+                          <div>
+                            <p className="font-semibold text-primary-900 mb-1">Cost</p>
+                            <p className="text-primary-700">$2.50-$5.00 per sq ft</p>
+                            <p className="text-xs text-primary-600">Applied over existing roof</p>
+                          </div>
+                          <div>
+                            <p className="font-semibold text-primary-900 mb-1">Extended Life</p>
+                            <p className="text-primary-700">+10-15 years</p>
+                            <p className="text-xs text-primary-600">Warranty: 10-15 years typical</p>
+                          </div>
+                          <div>
+                            <p className="font-semibold text-primary-900 mb-1">Best For</p>
+                            <p className="text-primary-700">Budget-conscious restoration</p>
+                            <p className="text-xs text-primary-600">Aging but sound roofs</p>
+                          </div>
+                        </div>
+                        <div className="bg-green-50 p-3 rounded mb-2">
+                          <p className="text-sm text-green-900">
+                            <strong>✓ Pros:</strong> 40-60% less than replacement, extends roof life significantly, improves energy efficiency, minimal business disruption, environmentally friendly (no tear-off waste)
+                          </p>
+                        </div>
+                        <div className="bg-amber-50 p-3 rounded">
+                          <p className="text-sm text-amber-900">
+                            <strong>⚠ Cons:</strong> Only works on structurally sound roofs, doesn't fix underlying issues, requires proper substrate preparation, periodic recoating may be needed
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Property Types We Serve */}
+                  <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl">
+                    <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                      Commercial Property Types We Serve
+                    </h2>
+                    <p className="text-primary-700 mb-8 leading-relaxed">
+                      Every commercial property has unique roofing needs. We have experience with all property types and understand the specific challenges each faces:
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="bg-white rounded-xl p-6">
+                        <h3 className="text-lg font-bold text-primary-900 mb-3 flex items-center gap-2">
+                          <span className="text-xl">🏬</span> Retail & Shopping Centers
+                        </h3>
+                        <p className="text-sm text-primary-700 mb-3">
+                          Large flat roofs with HVAC equipment, signage penetrations, multiple tenants. We minimize disruption during business hours and coordinate with tenant needs.
+                        </p>
+                        <p className="text-xs text-primary-600">
+                          <strong>Common systems:</strong> TPO, EPDM, modified bitumen
+                        </p>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6">
+                        <h3 className="text-lg font-bold text-primary-900 mb-3 flex items-center gap-2">
+                          <span className="text-xl">🏢</span> Office Buildings
+                        </h3>
+                        <p className="text-sm text-primary-700 mb-3">
+                          Professional appearance matters. Energy efficiency reduces operating costs. Multiple roof levels and rooftop equipment require expertise.
+                        </p>
+                        <p className="text-xs text-primary-600">
+                          <strong>Common systems:</strong> TPO (white), metal, roof coatings
+                        </p>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6">
+                        <h3 className="text-lg font-bold text-primary-900 mb-3 flex items-center gap-2">
+                          <span className="text-xl">📦</span> Warehouses & Distribution
+                        </h3>
+                        <p className="text-sm text-primary-700 mb-3">
+                          Large square footage requires cost-effective solutions. Durability and minimal maintenance critical. Often have few roof penetrations (simpler projects).
+                        </p>
+                        <p className="text-xs text-primary-600">
+                          <strong>Common systems:</strong> EPDM, TPO, metal
+                        </p>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6">
+                        <h3 className="text-lg font-bold text-primary-900 mb-3 flex items-center gap-2">
+                          <span className="text-xl">🏭</span> Industrial & Manufacturing
+                        </h3>
+                        <p className="text-sm text-primary-700 mb-3">
+                          Heavy rooftop equipment, chemical exposure, temperature extremes. Need durable systems that handle harsh conditions and maintain operations.
+                        </p>
+                        <p className="text-xs text-primary-600">
+                          <strong>Common systems:</strong> Modified bitumen, TPO, metal
+                        </p>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6">
+                        <h3 className="text-lg font-bold text-primary-900 mb-3 flex items-center gap-2">
+                          <span className="text-xl">🏘️</span> Multi-Family & Apartments
+                        </h3>
+                        <p className="text-sm text-primary-700 mb-3">
+                          Tenant comfort is priority—leaks unacceptable. HOA/property management coordination. Budget constraints require cost-effective solutions.
+                        </p>
+                        <p className="text-xs text-primary-600">
+                          <strong>Common systems:</strong> TPO, EPDM, shingles (pitched roofs)
+                        </p>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6">
+                        <h3 className="text-lg font-bold text-primary-900 mb-3 flex items-center gap-2">
+                          <span className="text-xl">🍔</span> Restaurants & Hospitality
+                        </h3>
+                        <p className="text-sm text-primary-700 mb-3">
+                          Heavy kitchen exhaust systems, grease considerations, 24/7 operations. Work must be done without closing business. Fast turnaround critical.
+                        </p>
+                        <p className="text-xs text-primary-600">
+                          <strong>Common systems:</strong> TPO, modified bitumen, metal
+                        </p>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6">
+                        <h3 className="text-lg font-bold text-primary-900 mb-3 flex items-center gap-2">
+                          <span className="text-xl">🏥</span> Medical & Professional
+                        </h3>
+                        <p className="text-sm text-primary-700 mb-3">
+                          Patient/client comfort paramount—quiet, odorless work. After-hours scheduling often required. Code compliance critical for medical facilities.
+                        </p>
+                        <p className="text-xs text-primary-600">
+                          <strong>Common systems:</strong> TPO, EPDM, roof coatings
+                        </p>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6">
+                        <h3 className="text-lg font-bold text-primary-900 mb-3 flex items-center gap-2">
+                          <span className="text-xl">⛪</span> Churches & Nonprofits
+                        </h3>
+                        <p className="text-sm text-primary-700 mb-3">
+                          Budget-conscious organizations need cost-effective solutions. Often have unique architectural features. Weekend scheduling to avoid services.
+                        </p>
+                        <p className="text-xs text-primary-600">
+                          <strong>Common systems:</strong> Metal, TPO, shingles (pitched)
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Preventative Maintenance Plans */}
+                  <div className="bg-gradient-to-br from-amber-50 to-orange-50 p-8 rounded-2xl">
+                    <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                      Preventative Maintenance Programs
+                    </h2>
+                    <p className="text-primary-700 mb-8 leading-relaxed">
+                      <strong>Most commercial roof failures are preventable.</strong> Regular maintenance catches small issues before they become expensive emergencies, extends roof life by 5-10 years, and keeps warranties valid. Our maintenance programs pay for themselves many times over.
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                      <div className="bg-white rounded-xl p-6 border-2 border-blue-500">
+                        <h3 className="text-xl font-bold text-primary-900 mb-3">Basic Plan</h3>
+                        <p className="text-2xl font-bold text-accent-600 mb-1">$450-$800</p>
+                        <p className="text-xs text-primary-600 mb-4">per visit, 2x per year</p>
+                        <div className="space-y-2 text-sm text-primary-700 mb-4">
+                          <p className="flex items-start gap-2">
+                            <span className="text-green-600">✓</span>
+                            <span>Bi-annual inspections (spring/fall)</span>
+                          </p>
+                          <p className="flex items-start gap-2">
+                            <span className="text-green-600">✓</span>
+                            <span>Photo documentation report</span>
+                          </p>
+                          <p className="flex items-start gap-2">
+                            <span className="text-green-600">✓</span>
+                            <span>Drain cleaning and clearing</span>
+                          </p>
+                          <p className="flex items-start gap-2">
+                            <span className="text-green-600">✓</span>
+                            <span>Minor leak repairs (under $200)</span>
+                          </p>
+                          <p className="flex items-start gap-2">
+                            <span className="text-green-600">✓</span>
+                            <span>Preventative recommendations</span>
+                          </p>
+                        </div>
+                        <p className="text-xs text-primary-600">
+                          <strong>Best for:</strong> Small buildings (under 5,000 sq ft)
+                        </p>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6 border-2 border-purple-500">
+                        <h3 className="text-xl font-bold text-primary-900 mb-3">Standard Plan</h3>
+                        <p className="text-2xl font-bold text-accent-600 mb-1">$1,200-$2,000</p>
+                        <p className="text-xs text-primary-600 mb-4">per year (quarterly visits)</p>
+                        <div className="space-y-2 text-sm text-primary-700 mb-4">
+                          <p className="flex items-start gap-2">
+                            <span className="text-green-600">✓</span>
+                            <span>Quarterly inspections (4x per year)</span>
+                          </p>
+                          <p className="flex items-start gap-2">
+                            <span className="text-green-600">✓</span>
+                            <span>Detailed condition reports</span>
+                          </p>
+                          <p className="flex items-start gap-2">
+                            <span className="text-green-600">✓</span>
+                            <span>All drainage maintenance</span>
+                          </p>
+                          <p className="flex items-start gap-2">
+                            <span className="text-green-600">✓</span>
+                            <span>Minor repairs included (up to $500/year)</span>
+                          </p>
+                          <p className="flex items-start gap-2">
+                            <span className="text-green-600">✓</span>
+                            <span>Priority emergency response</span>
+                          </p>
+                          <p className="flex items-start gap-2">
+                            <span className="text-green-600">✓</span>
+                            <span>10% discount on major repairs</span>
+                          </p>
+                        </div>
+                        <p className="text-xs text-primary-600">
+                          <strong>Best for:</strong> Medium buildings (5,000-15,000 sq ft)
+                        </p>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6 border-2 border-green-500">
+                        <h3 className="text-xl font-bold text-primary-900 mb-3">Premium Plan</h3>
+                        <p className="text-2xl font-bold text-accent-600 mb-1">$2,500-$5,000</p>
+                        <p className="text-xs text-primary-600 mb-4">per year (monthly monitoring)</p>
+                        <div className="space-y-2 text-sm text-primary-700 mb-4">
+                          <p className="flex items-start gap-2">
+                            <span className="text-green-600">✓</span>
+                            <span>Monthly monitoring visits</span>
+                          </p>
+                          <p className="flex items-start gap-2">
+                            <span className="text-green-600">✓</span>
+                            <span>Comprehensive documentation</span>
+                          </p>
+                          <p className="flex items-start gap-2">
+                            <span className="text-green-600">✓</span>
+                            <span>All maintenance & minor repairs included</span>
+                          </p>
+                          <p className="flex items-start gap-2">
+                            <span className="text-green-600">✓</span>
+                            <span>Emergency response guarantee (2-4 hours)</span>
+                          </p>
+                          <p className="flex items-start gap-2">
+                            <span className="text-green-600">✓</span>
+                            <span>15% discount on major repairs</span>
+                          </p>
+                          <p className="flex items-start gap-2">
+                            <span className="text-green-600">✓</span>
+                            <span>Extended warranty on all work</span>
+                          </p>
+                        </div>
+                        <p className="text-xs text-primary-600">
+                          <strong>Best for:</strong> Large buildings (15,000+ sq ft), critical facilities
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="bg-white rounded-xl p-6">
+                      <h3 className="text-lg font-bold text-primary-900 mb-4">💰 ROI of Preventative Maintenance</h3>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-primary-700">
+                        <div className="border-l-4 border-green-500 pl-4">
+                          <p className="font-semibold text-green-700 mb-2">What You Save</p>
+                          <ul className="space-y-1">
+                            <li>• Emergency repair costs: $2,000-$10,000 per incident</li>
+                            <li>• Interior damage: $5,000-$50,000+ (water, inventory, equipment)</li>
+                            <li>• Business interruption: Lost revenue during repairs</li>
+                            <li>• Premature replacement: Extend roof life 5-10 years ($30k-$100k+)</li>
+                            <li>• Insurance claims: Avoid premium increases</li>
+                          </ul>
+                        </div>
+                        <div className="border-l-4 border-accent-500 pl-4">
+                          <p className="font-semibold text-primary-900 mb-2">What You Pay</p>
+                          <ul className="space-y-1">
+                            <li>• Bi-annual plan: $900-$1,600/year</li>
+                            <li>• Quarterly plan: $1,200-$2,000/year</li>
+                            <li>• Monthly plan: $2,500-$5,000/year</li>
+                          </ul>
+                          <p className="mt-3 font-semibold text-green-700">
+                            Average ROI: 3:1 to 10:1 (every $1 spent saves $3-$10)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Commercial Roofing Pricing */}
+                  <div className="bg-gradient-to-br from-primary-50 to-accent-50 p-8 rounded-2xl">
+                    <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                      Commercial Roofing Cost Guide
+                    </h2>
+                    <p className="text-primary-700 mb-8 leading-relaxed">
+                      Commercial roofing costs vary significantly by system type, building size, existing conditions, and complexity. Here's what to expect in Central Texas:
+                    </p>
+                    <div className="bg-white rounded-xl p-6 mb-6">
+                      <h3 className="text-xl font-bold text-primary-900 mb-4">💰 Typical Commercial Roof Pricing (5,000 sq ft building)</h3>
+                      <div className="space-y-3">
+                        <div className="flex justify-between items-center pb-3 border-b">
+                          <span className="text-primary-700"><strong>TPO Membrane</strong> (most popular)</span>
+                          <span className="font-bold text-accent-600">$27,500-$42,500</span>
+                        </div>
+                        <div className="flex justify-between items-center pb-3 border-b">
+                          <span className="text-primary-700"><strong>EPDM Rubber</strong> (budget-friendly)</span>
+                          <span className="font-bold text-accent-600">$22,500-$35,000</span>
+                        </div>
+                        <div className="flex justify-between items-center pb-3 border-b">
+                          <span className="text-primary-700"><strong>Modified Bitumen</strong> (durable)</span>
+                          <span className="font-bold text-accent-600">$25,000-$40,000</span>
+                        </div>
+                        <div className="flex justify-between items-center pb-3 border-b">
+                          <span className="text-primary-700"><strong>Metal Roofing</strong> (longest lasting)</span>
+                          <span className="font-bold text-accent-600">$35,000-$60,000</span>
+                        </div>
+                        <div className="flex justify-between items-center">
+                          <span className="text-primary-700"><strong>Roof Coating/Restoration</strong> (existing roof)</span>
+                          <span className="font-bold text-accent-600">$12,500-$25,000</span>
+                        </div>
+                      </div>
+                      <p className="text-xs text-primary-600 mt-4">
+                        *Prices shown for typical 5,000 sq ft commercial roof in good condition. Actual costs vary by specific conditions.
+                      </p>
+                    </div>
+
+                    <div className="bg-accent-50 border-2 border-accent-200 rounded-xl p-6">
+                      <h3 className="text-lg font-bold text-primary-900 mb-3">📊 Factors That Affect Commercial Roofing Costs</h3>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-primary-700">
+                        <p>• <strong>Square footage:</strong> Larger roofs = lower cost per sq ft (economies of scale)</p>
+                        <p>• <strong>Roof height:</strong> Taller buildings increase labor costs (safety equipment, lifts)</p>
+                        <p>• <strong>Existing roof removal:</strong> Tear-off and disposal adds $1-$3 per sq ft</p>
+                        <p>• <strong>Roof condition:</strong> Decking/substrate repairs increase costs significantly</p>
+                        <p>• <strong>Drainage systems:</strong> Drains, scuppers, gutters affect pricing</p>
+                        <p>• <strong>Rooftop equipment:</strong> HVAC units, pipes, vents increase complexity</p>
+                        <p>• <strong>Access limitations:</strong> Difficult access increases labor time</p>
+                        <p>• <strong>Business hours:</strong> After-hours/weekend work adds 15-30% premium</p>
+                        <p>• <strong>Permits & inspections:</strong> City requirements vary ($500-$2,000+)</p>
+                        <p>• <strong>Warranty level:</strong> Extended warranties increase material costs</p>
+                      </div>
+                    </div>
+                  </div>
+                </>
+              )}
+
               {/* Service Areas */}
               <div className="bg-gradient-to-br from-primary-900 to-primary-800 rounded-2xl p-8 text-white">
                 <h2 className="text-2xl font-display font-bold mb-4">
@@ -2604,6 +3105,73 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
                         </h3>
                         <p className="text-primary-600">
                           <strong>We remove and dispose of old gutters at no additional charge.</strong> Removal, haul-away, and disposal are included in installation price. If your fascia boards are damaged or rotted (common behind old gutters), we can repair or replace them: Minor repairs $150-$300, fascia replacement $8-$15/linear foot. We inspect fascia during free assessment and let you know what's needed before starting work.
+                        </p>
+                      </div>
+                    </>
+                  ) : service.slug === 'commercial-roofing' ? (
+                    <>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          How much does commercial roofing cost?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>Typical 5,000 sq ft commercial roof: $22,500-$60,000 depending on system.</strong> TPO: $27,500-$42,500 (most popular). EPDM: $22,500-$35,000 (budget-friendly). Modified Bitumen: $25,000-$40,000. Metal: $35,000-$60,000 (longest lasting). Roof coating/restoration: $12,500-$25,000 (over existing). Costs vary by square footage, roof height, existing condition, rooftop equipment, and after-hours scheduling needs. Free detailed proposal after inspection.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          What's the best commercial roofing system for Texas?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>TPO (white membrane) is best for most Texas commercial buildings.</strong> Highly reflective (saves cooling costs 15-25%), heat-welded seams (no leaks), handles extreme UV/heat, 20-30 year lifespan, Energy Star rated, and cost-effective ($5.50-$8.50/sq ft). EPDM works for warehouses on tight budgets. Metal roofing lasts 40-60 years but costs more upfront. Modified bitumen good for high foot-traffic roofs. Roof coatings excellent for budget-conscious restoration (40-60% less than replacement).
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          How long does a commercial roof last?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>Depends on system and maintenance:</strong> TPO: 20-30 years. EPDM: 25-35 years. Modified bitumen: 15-25 years. Metal: 40-60 years. <strong>Texas factors that affect lifespan:</strong> Intense UV exposure, extreme heat, ponding water (flat roofs), hail storms, lack of maintenance. <strong>Preventative maintenance extends life 5-10 years.</strong> Most commercial roofs in <Link href="/locations/round-rock" className="text-accent-600 hover:text-accent-700 font-semibold">Round Rock</Link>, <Link href="/locations/austin" className="text-accent-600 hover:text-accent-700 font-semibold">Austin</Link>, and <Link href="/locations/georgetown" className="text-accent-600 hover:text-accent-700 font-semibold">Georgetown</Link> need replacement every 20-30 years with proper care.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          Can you work around our business hours?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>Yes! We schedule to minimize business disruption.</strong> Options: After-hours installation (evenings/nights), weekend work, phased approach (section by section), or coordination with slow periods. We protect your operations, maintain safety, minimize noise/odors, and keep you updated daily. After-hours work adds 15-30% premium but avoids lost revenue. Most commercial projects: 3-10 days depending on size. Emergency repairs: 24/7 response available.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          Do you offer preventative maintenance programs?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>Yes—maintenance programs are our most valuable service!</strong> Plans include: Bi-annual inspections ($450-$800 per visit), quarterly monitoring ($1,200-$2,000/year), or monthly programs ($2,500-$5,000/year). Includes: inspections, drain cleaning, minor repairs, photo reports, priority emergency response, and discounts on major repairs. <strong>ROI: 3:1 to 10:1</strong>—every $1 spent saves $3-$10 in prevented damage. Extends roof life 5-10 years and catches issues before expensive emergencies.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          Should I replace or restore my commercial roof?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>Restore/coat if:</strong> Roof is structurally sound, minimal leaks, age 10-20 years, budget-conscious ($2.50-$5/sq ft vs $5-$12 for replacement), extends life 10-15 years. <strong>Replace if:</strong> Widespread deterioration, multiple leak areas, structural damage, age 25+ years, poor drainage causing ponding, or planning long-term ownership. Restoration costs 40-60% less than replacement but only works on sound roofs. We provide honest assessment—if coating won't work, we'll tell you why.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          What warranty do you offer on commercial roofing?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>Dual warranty protection:</strong> (1) <strong>10-year workmanship warranty</strong> from Ripple Roofing—covers installation defects, leaks from our work, and problems caused by our installation. (2) <strong>10-30 year material warranty</strong> from manufacturer (varies by system)—TPO/EPDM typically 15-20 years, metal 25-40 years. We register your warranty and provide documentation. <strong>Important:</strong> Most warranties require regular maintenance (our programs keep warranties valid).
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          Do you handle emergency commercial roof repairs?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>Yes—24/7 emergency response for commercial clients.</strong> Call <strong>(512) 763-5277</strong> anytime. Typical response: 2-4 hours during storms/emergencies. We provide emergency tarping ($500-$3,000 depending on size), temporary leak repairs, damage documentation for insurance, and permanent repair coordination. We understand commercial roof leaks affect operations, inventory, equipment, and revenue—we respond fast. Maintenance program clients get priority response and discounted emergency rates.
                         </p>
                       </div>
                     </>
