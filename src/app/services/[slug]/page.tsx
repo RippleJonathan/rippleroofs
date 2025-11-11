@@ -539,6 +539,259 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
                 </>
               )}
 
+              {/* ROOF REPAIRS SPECIFIC CONTENT */}
+              {service.slug === 'roof-repairs' && (
+                <>
+                  {/* Common Roof Repair Issues */}
+                  <div className="bg-gradient-to-br from-red-50 to-orange-50 p-8 rounded-2xl">
+                    <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                      Common Roof Problems We Fix
+                    </h2>
+                    <p className="text-primary-700 mb-8 leading-relaxed">
+                      Central Texas weather is tough on roofs. Here are the most common issues homeowners in <Link href="/locations/round-rock" className="text-accent-600 hover:text-accent-700 font-semibold">Round Rock</Link>, <Link href="/locations/austin" className="text-accent-600 hover:text-accent-700 font-semibold">Austin</Link>, and <Link href="/locations/georgetown" className="text-accent-600 hover:text-accent-700 font-semibold">Georgetown</Link> face—and how we fix them fast.
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="bg-white rounded-xl p-6 border-l-4 border-red-500">
+                        <h3 className="text-xl font-bold text-primary-900 mb-3">💧 Roof Leaks</h3>
+                        <p className="text-primary-700 mb-4">
+                          <strong>Causes:</strong> Damaged flashing, cracked shingles, worn underlayment, penetration around vents/chimneys
+                        </p>
+                        <p className="text-primary-700 mb-4">
+                          <strong>Symptoms:</strong> Water stains on ceilings, mold/mildew odors, dripping water, bubbling paint
+                        </p>
+                        <p className="text-primary-700">
+                          <strong>Our Fix:</strong> We trace leaks to their source (not always where water appears inside), replace damaged materials, seal penetrations, and test thoroughly. <span className="font-semibold">Cost: $300-$1,200</span> depending on severity and location.
+                        </p>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6 border-l-4 border-orange-500">
+                        <h3 className="text-xl font-bold text-primary-900 mb-3">🌪️ Storm & Hail Damage</h3>
+                        <p className="text-primary-700 mb-4">
+                          <strong>Causes:</strong> Hail impacts, wind-blown debris, fallen branches, severe thunderstorms
+                        </p>
+                        <p className="text-primary-700 mb-4">
+                          <strong>Symptoms:</strong> Dented/cracked shingles, granule loss, torn shingles, exposed underlayment
+                        </p>
+                        <p className="text-primary-700">
+                          <strong>Our Fix:</strong> Free post-storm inspections, document damage with photos for insurance, replace damaged sections or entire roof if needed. We work directly with insurance adjusters. <span className="font-semibold">Often covered by insurance.</span>
+                        </p>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6 border-l-4 border-amber-500">
+                        <h3 className="text-xl font-bold text-primary-900 mb-3">🍃 Missing or Damaged Shingles</h3>
+                        <p className="text-primary-700 mb-4">
+                          <strong>Causes:</strong> Wind damage, age/deterioration, improper installation, thermal cycling
+                        </p>
+                        <p className="text-primary-700 mb-4">
+                          <strong>Symptoms:</strong> Bare spots on roof, shingles in yard, curling/lifting edges, loose granules
+                        </p>
+                        <p className="text-primary-700">
+                          <strong>Our Fix:</strong> Replace missing shingles with matching materials, reseal surrounding shingles, inspect for hidden damage. <span className="font-semibold">Cost: $150-$500</span> for small areas.
+                        </p>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6 border-l-4 border-yellow-500">
+                        <h3 className="text-xl font-bold text-primary-900 mb-3">⚡ Flashing Failures</h3>
+                        <p className="text-primary-700 mb-4">
+                          <strong>Causes:</strong> Rust/corrosion, improper installation, sealant breakdown, thermal expansion
+                        </p>
+                        <p className="text-primary-700 mb-4">
+                          <strong>Symptoms:</strong> Leaks around chimneys/vents, rust stains, visible gaps, water in attic
+                        </p>
+                        <p className="text-primary-700">
+                          <strong>Our Fix:</strong> Remove and replace failed flashing, properly seal transitions, use galvanized or copper materials. <span className="font-semibold">Cost: $400-$1,000</span> per area.
+                        </p>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6 border-l-4 border-lime-500">
+                        <h3 className="text-xl font-bold text-primary-900 mb-3">🌡️ Heat & Sun Damage</h3>
+                        <p className="text-primary-700 mb-4">
+                          <strong>Causes:</strong> Extreme Texas heat (100°F+ summers), UV exposure, poor ventilation
+                        </p>
+                        <p className="text-primary-700 mb-4">
+                          <strong>Symptoms:</strong> Cracking/blistering shingles, accelerated aging, warped decking
+                        </p>
+                        <p className="text-primary-700">
+                          <strong>Our Fix:</strong> Replace heat-damaged sections, improve attic ventilation to reduce heat buildup, recommend reflective or heat-resistant materials. <span className="font-semibold">Cost: $500-$2,000</span> depending on extent.
+                        </p>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6 border-l-4 border-green-500">
+                        <h3 className="text-xl font-bold text-primary-900 mb-3">🌳 Tree Damage & Debris</h3>
+                        <p className="text-primary-700 mb-4">
+                          <strong>Causes:</strong> Falling branches, scraping limbs, accumulated leaves/debris
+                        </p>
+                        <p className="text-primary-700 mb-4">
+                          <strong>Symptoms:</strong> Punctured/cracked shingles, scratched surfaces, clogged gutters, moss/algae growth
+                        </p>
+                        <p className="text-primary-700">
+                          <strong>Our Fix:</strong> Emergency tarping if needed, remove debris, replace damaged shingles, recommend tree trimming. <span className="font-semibold">Cost: $200-$1,500</span> depending on damage.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Repair vs Replacement Guide */}
+                  <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-2xl">
+                    <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                      Should You Repair or Replace Your Roof?
+                    </h2>
+                    <p className="text-primary-700 mb-8 leading-relaxed">
+                      We believe in honest recommendations. Here's how we help you decide between repair and replacement:
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                      <div className="bg-white rounded-xl p-6 border-2 border-green-500">
+                        <div className="flex items-center gap-3 mb-4">
+                          <span className="text-4xl">✅</span>
+                          <h3 className="text-2xl font-bold text-primary-900">Repair Makes Sense When...</h3>
+                        </div>
+                        <ul className="space-y-3 text-primary-700">
+                          <li className="flex items-start gap-2">
+                            <span className="text-green-600 font-bold mt-1">•</span>
+                            <span><strong>Damage is localized:</strong> Only one area or section affected (less than 20-30% of roof)</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-green-600 font-bold mt-1">•</span>
+                            <span><strong>Roof is relatively new:</strong> Less than 10-12 years old for standard shingles, less than 15-20 for premium</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-green-600 font-bold mt-1">•</span>
+                            <span><strong>No structural damage:</strong> Decking is solid, rafters intact, no sagging</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-green-600 font-bold mt-1">•</span>
+                            <span><strong>Materials are available:</strong> We can match existing shingles/color for seamless repair</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-green-600 font-bold mt-1">•</span>
+                            <span><strong>Budget constraints:</strong> You need immediate fix but aren't ready for full replacement</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-green-600 font-bold mt-1">•</span>
+                            <span><strong>Cost-effective:</strong> Repair cost is less than 30-40% of replacement cost</span>
+                          </li>
+                        </ul>
+                        <div className="mt-6 bg-green-50 p-4 rounded-lg">
+                          <p className="font-semibold text-primary-900 mb-2">💰 Typical Repair Costs:</p>
+                          <ul className="text-sm space-y-1 text-primary-700">
+                            <li>• Minor leak repair: $300-$800</li>
+                            <li>• Shingle replacement (small section): $400-$1,200</li>
+                            <li>• Flashing repair: $400-$1,000</li>
+                            <li>• Emergency tarping: $200-$500</li>
+                            <li>• Major repair (multiple areas): $1,500-$4,000</li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6 border-2 border-red-500">
+                        <div className="flex items-center gap-3 mb-4">
+                          <span className="text-4xl">🔄</span>
+                          <h3 className="text-2xl font-bold text-primary-900">Replacement Is Better When...</h3>
+                        </div>
+                        <ul className="space-y-3 text-primary-700">
+                          <li className="flex items-start gap-2">
+                            <span className="text-red-600 font-bold mt-1">•</span>
+                            <span><strong>Widespread damage:</strong> More than 30-40% of roof affected by storm, age, or deterioration</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-red-600 font-bold mt-1">•</span>
+                            <span><strong>Roof is old:</strong> 15-20+ years for standard shingles, approaching end of expected lifespan</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-red-600 font-bold mt-1">•</span>
+                            <span><strong>Multiple past repairs:</strong> You've repaired several times in recent years (band-aid approach)</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-red-600 font-bold mt-1">•</span>
+                            <span><strong>Structural concerns:</strong> Decking damage, sagging, soft spots that indicate deeper problems</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-red-600 font-bold mt-1">•</span>
+                            <span><strong>Energy efficiency issues:</strong> High cooling bills, poor insulation, you want to upgrade</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-red-600 font-bold mt-1">•</span>
+                            <span><strong>Material mismatch:</strong> Can't find matching shingles, repair will look patchy/obvious</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-red-600 font-bold mt-1">•</span>
+                            <span><strong>Insurance is covering it:</strong> Storm damage claim approved, your out-of-pocket is just deductible</span>
+                          </li>
+                        </ul>
+                        <div className="mt-6 bg-red-50 p-4 rounded-lg">
+                          <p className="font-semibold text-primary-900 mb-2">💡 Our Honest Approach:</p>
+                          <p className="text-sm text-primary-700">
+                            We'll never upsell you on replacement if repair is appropriate. But we also won't patch a roof that's beyond repair—that just delays the inevitable and costs you more in the long run. We provide honest assessments and let YOU make the informed decision.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Repair Process Timeline */}
+                  <div className="bg-gradient-to-br from-primary-50 to-accent-50 p-8 rounded-2xl">
+                    <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                      What to Expect: Roof Repair Timeline
+                    </h2>
+                    <div className="space-y-6">
+                      <div className="bg-white p-6 rounded-xl border-l-4 border-accent-500">
+                        <h3 className="text-xl font-bold text-primary-900 mb-3 flex items-center gap-2">
+                          ⚡ Most Repairs: 2-4 Hours
+                        </h3>
+                        <p className="text-primary-700 leading-relaxed mb-4">
+                          <strong>The majority of roof repairs are completed in just a few hours.</strong> We arrive with the right materials, complete the repair efficiently, and clean up thoroughly—often finishing before lunch.
+                        </p>
+                        <div className="bg-primary-50 p-4 rounded-lg">
+                          <p className="font-semibold text-primary-900 mb-2">Typical same-day repairs:</p>
+                          <ul className="space-y-2 text-primary-700">
+                            <li className="flex items-start gap-2">
+                              <span className="text-accent-600 font-bold">✓</span>
+                              <span><strong>Minor leak repairs:</strong> 1-2 hours (locate source, replace shingles, test)</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-accent-600 font-bold">✓</span>
+                              <span><strong>Shingle replacement (small area):</strong> 2-3 hours</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-accent-600 font-bold">✓</span>
+                              <span><strong>Flashing repair/replacement:</strong> 2-4 hours</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-accent-600 font-bold">✓</span>
+                              <span><strong>Emergency tarping:</strong> 30-60 minutes</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mt-6 bg-white p-6 rounded-xl">
+                      <h3 className="font-bold text-primary-900 mb-3">Timeline by Repair Type:</h3>
+                      <ul className="space-y-2 text-primary-700">
+                        <li className="flex items-start gap-2">
+                          <span className="text-accent-600 font-bold mt-1">•</span>
+                          <span><strong>Simple repairs (leaks, missing shingles):</strong> 2-4 hours, same day</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-accent-600 font-bold mt-1">•</span>
+                          <span><strong>Medium repairs (flashing, valley repairs, multiple areas):</strong> 4-8 hours, same day or next day</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-accent-600 font-bold mt-1">•</span>
+                          <span><strong>Major repairs (large sections, decking replacement):</strong> 1-2 days</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-accent-600 font-bold mt-1">•</span>
+                          <span><strong>Emergency service:</strong> Same-day response, often within 2-4 hours of call</span>
+                        </li>
+                      </ul>
+                      <p className="text-sm text-primary-600 mt-4 italic">
+                        <strong>Scheduling:</strong> We offer flexible scheduling including evenings and weekends for non-emergency repairs. Emergency repairs get priority response.
+                      </p>
+                    </div>
+                  </div>
+                </>
+              )}
+
               {/* Service Areas */}
               <div className="bg-gradient-to-br from-primary-900 to-primary-800 rounded-2xl p-8 text-white">
                 <h2 className="text-2xl font-display font-bold mb-4">
@@ -672,6 +925,65 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
                           quality contractors work year-round. <strong>Don't wait if</strong>: you have active leaks, severe storm damage, or roof is 
                           past its lifespan. Summer heat is uncomfortable but doesn't affect quality. Winter is fine except rare ice storms. We work 
                           safely in all seasons. If you need replacement, sooner is better than risking water damage.
+                        </p>
+                      </div>
+                    </>
+                  ) : service.slug === 'roof-repairs' ? (
+                    <>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          How much does roof repair cost?
+                        </h3>
+                        <p className="text-primary-600">
+                          Roof repair costs vary by issue type: <strong>Minor leak repairs: $300-$800</strong>, <strong>Shingle replacement (small section): $400-$1,200</strong>, <strong>Flashing repair: $400-$1,000</strong>, <strong>Emergency tarping: $200-$500</strong>, <strong>Major repairs: $1,500-$4,000</strong>. We provide upfront, itemized pricing with no hidden fees. If the repair cost exceeds 30-40% of replacement cost, we'll recommend replacement as the smarter investment.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          How quickly can you repair my roof?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>Most repairs are completed in 2-4 hours, same day.</strong> Minor leaks take 1-2 hours, shingle replacement 2-3 hours, flashing repairs 2-4 hours. For emergencies, we offer same-day response—often within 2-4 hours of your call. Larger repairs may take 1-2 days. We'll provide an accurate timeline after inspection based on the specific damage.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          Will my insurance cover roof repairs?
+                        </h3>
+                        <p className="text-primary-600">
+                          Insurance typically covers repairs if damage resulted from a covered event (storm, hail, wind, falling tree). Damage from wear-and-tear or lack of maintenance usually isn't covered. We provide <strong>free post-storm inspections</strong>, document damage with photos, help you understand your coverage, and work directly with insurance adjusters. Many repairs cost less than typical deductibles ($2,500-$5,000), so cash payment may make more sense.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          Can you match my existing roof shingles?
+                        </h3>
+                        <p className="text-primary-600">
+                          In most cases, yes! We work with all major manufacturers (CertainTeed, Owens Corning, GAF, Tamko) and have access to extensive color/style options. For newer roofs (less than 10-12 years), matching is usually straightforward. For older roofs, the manufacturer may have discontinued your exact shingle, but we can typically find a very close match. We bring samples during inspection so you can see the match quality before work begins.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          Do you offer warranties on repairs?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>Yes! Every repair comes with our 10-year workmanship warranty.</strong> This covers any issues with our installation or repair work. If the repaired area develops leaks or problems from our workmanship, we fix it at no charge. Materials also carry manufacturer warranties (typically 25-50 years depending on product used). This gives you complete peace of mind.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          Should I repair or replace my roof?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>Repair makes sense when:</strong> Damage is localized (less than 30% of roof), roof is under 10-15 years old, no structural damage, repair cost is less than 30-40% of replacement. <strong>Replacement is better when:</strong> Roof is 15-20+ years old, damage exceeds 30-40%, you've done multiple repairs recently, structural concerns exist, or insurance is covering the replacement. We'll give you an honest assessment and let you decide.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          What if I have an emergency leak?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>Call us immediately at (512) 763-5277—we offer 24/7 emergency service.</strong> For active leaks, we provide emergency tarping within 2-4 hours to stop water damage. Tarping typically costs $200-$500 and protects your home until permanent repairs can be made (usually within 1-2 days). We also help you document damage for insurance claims and coordinate with adjusters if needed.
                         </p>
                       </div>
                     </>
