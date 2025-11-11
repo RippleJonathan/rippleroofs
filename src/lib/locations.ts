@@ -221,6 +221,7 @@ export const LOCATIONS: LocationData[] = [
     zip: '78613',
     county: 'Williamson County',
     metroArea: 'Austin-Round Rock Metro',
+    heroImage: '/images/locations/cedar-park-hero.jpg',
     neighborhoods: [
       'Buttercup Creek',
       'Anderson Mill',
@@ -251,6 +252,7 @@ export const LOCATIONS: LocationData[] = [
     zip: '78641',
     county: 'Williamson County',
     metroArea: 'Austin-Round Rock Metro',
+    heroImage: '/images/locations/leander-hero.jpg',
     neighborhoods: [
       'Crystal Falls',
       'Mason Hills',
