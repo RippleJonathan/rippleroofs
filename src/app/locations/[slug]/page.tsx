@@ -2091,6 +2091,656 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
             </div>
           )}
 
+          {/* Pflugerville-specific deep content */}
+          {location.slug === 'pflugerville' && (
+            <div className="space-y-16 mt-16">
+              {/* Pflugerville Neighborhoods Deep Dive */}
+              <div>
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Pflugerville Neighborhoods: Your Complete Roofing Guide by Area
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  Pflugerville ("Pf" to locals) is one of Austin metro's fastest-growing communities, attracting young families and tech professionals with excellent schools and new developments. Here's what homeowners need to know about roofing in Pflugerville's popular neighborhoods:
+                </p>
+
+                <div className="space-y-8">
+                  {/* Blackhawk & Park at Blackhawk */}
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-accent-500">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">Blackhawk & Park at Blackhawk</h3>
+                    <div className="grid md:grid-cols-2 gap-4 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Community Profile:</p>
+                        <p className="mb-3">One of Pflugerville's most established master-planned communities, built 1990s-2010s. Mix of age ranges in homes. Strong HOA, excellent amenities, mature trees, community pools and parks. Very popular with families.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Roofing Situation:</p>
+                        <ul className="list-disc pl-5 space-y-1">
+                          <li>Older Blackhawk homes (1990s-2000s) = roofs 20-30 years old</li>
+                          <li>Many roofs at or past replacement age</li>
+                          <li>2024 hailstorm damaged significant number of roofs</li>
+                          <li>HOA architectural guidelines (color approval required)</li>
+                          <li>Standard two-story homes, moderate complexity</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Best Materials:</p>
+                        <p className="mb-3">Impact-resistant architectural shingles for hail protection and insurance discounts. Popular colors: Weathered Wood, Driftwood, Georgetown Gray (HOA-approved). Ensure exact match to neighbors.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Typical Investment:</p>
+                        <p className="text-accent-600 font-bold text-xl">$15,000-$23,000</p>
+                        <p className="text-sm">Standard 2,000-2,700 sq ft two-story homes, moderate roof complexity</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Falcon Pointe */}
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-blue-500">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">Falcon Pointe</h3>
+                    <div className="grid md:grid-cols-2 gap-4 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Neighborhood Character:</p>
+                        <p className="mb-3">Premium Pflugerville neighborhood with larger homes built 2000s-2010s. Higher property values, well-maintained, strong sense of community. Popular with tech professionals and executives. Some luxury custom homes.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Roofing Considerations:</p>
+                        <ul className="list-disc pl-5 space-y-1">
+                          <li>Larger homes (2,500-3,500+ sq ft) = higher costs</li>
+                          <li>More complex roof lines with architectural features</li>
+                          <li>Roofs 15-25 years old approaching replacement</li>
+                          <li>Premium materials expected to match home values</li>
+                          <li>HOA color and material restrictions</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Recommended Solutions:</p>
+                        <p className="mb-3">Premium impact-resistant shingles (CertainTeed Landmark Pro, Owens Corning Duration Storm). Designer colors in earth tones. Some homeowners choose metal for longevity.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Cost Range:</p>
+                        <p className="text-accent-600 font-bold text-xl">$18,000-$30,000</p>
+                        <p className="text-sm">Larger homes with increased complexity, premium materials</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Sendero Springs & Brookfield */}
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-green-500">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">Sendero Springs & Brookfield</h3>
+                    <div className="grid md:grid-cols-2 gap-4 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Modern Development:</p>
+                        <p className="mb-3">Built 2010-present with newer construction standards. Family-oriented, growing fast, excellent schools nearby. Mix of production builders (DR Horton, Lennar, KB Home). Strong HOAs managing community appearance.</p>
+                        <p className="font-semibold text-primary-900 mb-2">New Home Roofing:</p>
+                        <ul className="list-disc pl-5 space-y-1">
+                          <li>Most homes have 10-15 year builder warranties still active</li>
+                          <li>Modern architectural shingles already installed</li>
+                          <li>Proper ventilation and installation practices used</li>
+                          <li>First wave of replacements won't hit until 2030-2040</li>
+                          <li>Some homes affected by 2024 hailstorm (insurance claims)</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">When Replacement Needed:</p>
+                        <p className="mb-3">Upgrade to impact-resistant for better hail protection and insurance savings. Match exact HOA colors before ordering. Coordinate with neighbors for potential group pricing.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Future Investment:</p>
+                        <p className="text-accent-600 font-bold text-xl">$16,000-$25,000</p>
+                        <p className="text-sm">Standard 2,200-2,800 sq ft homes, moderate complexity when replacements needed</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Gatlinburg & Highland Park */}
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-purple-500">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">Gatlinburg, Highland Park & Celebration</h3>
+                    <div className="grid md:grid-cols-2 gap-4 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Established Communities:</p>
+                        <p className="mb-3">Built 1990s-2000s, more affordable than newer developments. Mix of original owners and young families buying as first homes. Good starter home neighborhoods. Convenient to everything in Pflugerville.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Common Roofing Needs:</p>
+                        <ul className="list-disc pl-5 space-y-1">
+                          <li>Original roofs now 20-35 years old (replacement needed)</li>
+                          <li>Standard architectural or 3-tab shingles installed originally</li>
+                          <li>Hail damage from multiple Pflugerville storms</li>
+                          <li>Mostly two-story homes with straightforward roof lines</li>
+                          <li>Some homes have had first replacement already</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Smart Upgrade Path:</p>
+                        <p className="mb-3">This is the time to upgrade to impact-resistant shingles. Original roofs weren't Class 4 rated. New roof = 10-35% insurance discount that pays for upgrade over time.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Typical Costs:</p>
+                        <p className="text-accent-600 font-bold text-xl">$14,000-$21,000</p>
+                        <p className="text-sm">1,900-2,500 sq ft homes, straightforward roof lines, good value pricing</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Willow Creek & Greenbury */}
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-red-500">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">Willow Creek, Greenbury & Mansfield Dam</h3>
+                    <div className="grid md:grid-cols-2 gap-4 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Neighborhood Vibe:</p>
+                        <p className="mb-3">Mid-range Pflugerville neighborhoods built 2000s-2015. Popular with young professionals and tech workers. Well-maintained, convenient locations, good schools. Mix of single-family and townhomes.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Roofing Characteristics:</p>
+                        <ul className="list-disc pl-5 space-y-1">
+                          <li>Roofs 10-25 years old (varied ages within communities)</li>
+                          <li>Some starting to need first replacement</li>
+                          <li>HOA guidelines in place for consistency</li>
+                          <li>Standard two-story production homes</li>
+                          <li>2024 hailstorm created insurance claims wave</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Material Choices:</p>
+                        <p className="mb-3">Impact-resistant architectural shingles standard recommendation. Neutral colors popular (grays, browns). Good ventilation essential for hot Texas summers.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Investment Range:</p>
+                        <p className="text-accent-600 font-bold text-xl">$15,000-$23,000</p>
+                        <p className="text-sm">Typical 2,100-2,600 sq ft Pflugerville homes, moderate complexity</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Older Pflugerville */}
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-amber-500">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">Historic Pflugerville & Older Neighborhoods</h3>
+                    <div className="grid md:grid-cols-2 gap-4 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Old Town Character:</p>
+                        <p className="mb-3">Original Pflugerville near downtown and Pfluger Park. Homes from 1960s-1980s. Smaller lots, established trees, close-knit community. More affordable, convenient to amenities. Some homes being renovated by young buyers.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Roofing Challenges:</p>
+                        <ul className="list-disc pl-5 space-y-1">
+                          <li>Original roofs 40-60 years old (well past due)</li>
+                          <li>Many homes on 2nd or 3rd roof replacement</li>
+                          <li>Potential decking issues from age and leaks</li>
+                          <li>Simpler roof lines (ranch-style, basic gables)</li>
+                          <li>Mature trees providing shade but dropping debris</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Practical Solutions:</p>
+                        <p className="mb-3">Quality architectural shingles appropriate for home values. Impact-resistant smart for insurance savings. Budget for possible decking repairs ($2k-$4k common).</p>
+                        <p className="font-semibold text-primary-900 mb-2">Cost Range:</p>
+                        <p className="text-accent-600 font-bold text-xl">$12,000-$19,000</p>
+                        <p className="text-sm">Smaller 1,600-2,200 sq ft homes, simpler roof lines, plus decking repairs if needed</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-8 bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
+                  <p className="text-primary-900 font-semibold mb-2">💡 Pflugerville Roofing Pro Tip:</p>
+                  <p className="text-primary-700">
+                    Pflugerville sits directly in the Austin-to-Georgetown storm corridor, experiencing frequent hail. The March 2024 storm that hit Round Rock and Georgetown also damaged thousands of Pflugerville roofs, especially in Blackhawk, Falcon Pointe, and northern neighborhoods. <strong>After major storms, coordinate with neighbors—we offer group pricing when working multiple homes in one neighborhood.</strong> Many Pflugerville homeowners qualified for insurance claims after the 2024 storm. Free inspections available to check for damage.
+                  </p>
+                </div>
+              </div>
+
+              {/* Pflugerville Storm History */}
+              <div>
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Pflugerville Storm History & Hail Damage Patterns
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  Pflugerville sits in the Austin-Georgetown storm corridor, experiencing regular severe weather. Understanding this history helps protect your home and know when insurance claims are warranted:
+                </p>
+
+                <div className="grid md:grid-cols-2 gap-6 mb-8">
+                  <div className="bg-white rounded-lg shadow-md p-6">
+                    <h3 className="text-xl font-bold text-primary-900 mb-4 flex items-center gap-2">
+                      <span className="text-2xl">🌩️</span> Major Pflugerville Hailstorms (2015-2025)
+                    </h3>
+                    <div className="space-y-4">
+                      <div className="border-l-4 border-red-600 pl-4">
+                        <p className="font-bold text-primary-900">March 2024 - Widespread Damage</p>
+                        <p className="text-sm text-primary-700">Golf ball to baseball-sized hail across northern Pflugerville (Blackhawk, Falcon Pointe, Sendero Springs). Southern Pflugerville received quarter to golf ball hail. <strong>Estimated 40-50% of Pflugerville homes had roof damage.</strong> Thousands of insurance claims filed. Some homes received softball hail in northern areas.</p>
+                      </div>
+                      <div className="border-l-4 border-orange-500 pl-4">
+                        <p className="font-bold text-primary-900">May 2022 - Direct Hit on Pflugerville</p>
+                        <p className="text-sm text-primary-700">Severe thunderstorm complex moved directly over Pflugerville with golf ball hail. Wind gusts to 65 mph. Gatlinburg, Highland Park, and central Pflugerville neighborhoods heavily impacted. Widespread power outages. Many roofs totaled, vehicles and windows damaged.</p>
+                      </div>
+                      <div className="border-l-4 border-yellow-500 pl-4">
+                        <p className="font-bold text-primary-900">April 2021 - Round Rock to Pflugerville Path</p>
+                        <p className="text-sm text-primary-700">Supercell storm tracked from Round Rock through Pflugerville to Georgetown. Baseball-sized hail reported in parts of Pflugerville. This was the storm that created the first major insurance claims wave in newer Sendero Springs and Brookfield neighborhoods.</p>
+                      </div>
+                      <div className="border-l-4 border-blue-500 pl-4">
+                        <p className="font-bold text-primary-900">March 2016 - $1.4 Billion Regional Catastrophe</p>
+                        <p className="text-sm text-primary-700">Part of the massive hailstorm that devastated all of Central Texas. Pflugerville received golf ball to baseball hail. Entire established neighborhoods like Blackhawk had 90%+ roof replacement rates. This storm defined "before and after" for Pflugerville roofing.</p>
+                      </div>
+                      <div className="border-l-4 border-purple-500 pl-4">
+                        <p className="font-bold text-primary-900">Pflugerville Storm Pattern: Every 2-4 Years</p>
+                        <p className="text-sm text-primary-700">Pflugerville experiences a significant (potentially roof-totaling) hailstorm approximately every 2-4 years. Minor hail events happen multiple times annually. Living in Pflugerville means planning for inevitable hail damage.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-lg shadow-md p-6">
+                    <h3 className="text-xl font-bold text-primary-900 mb-4 flex items-center gap-2">
+                      <span className="text-2xl">📊</span> Pflugerville Hail Statistics & Patterns
+                    </h3>
+                    <div className="space-y-4">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Why Pflugerville Gets Hit Often:</p>
+                        <p className="text-sm text-primary-700 mb-2">Pflugerville sits in the direct path of storms moving north from Austin toward Georgetown and Round Rock. This I-35 corridor is notorious for storm development and strengthening. Pflugerville is geographically positioned where many storms intensify, creating large hail.</p>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Peak Hail Season: March - May</p>
+                        <p className="text-sm text-primary-700 mb-2">75% of Pflugerville's damaging hail occurs in spring months. April and early May are statistically most dangerous.</p>
+                        <div className="bg-primary-50 p-3 rounded">
+                          <p className="text-xs font-semibold text-primary-900 mb-1">Monthly Risk Distribution:</p>
+                          <p className="text-xs text-primary-700">March: 25% • April: 30% • May: 20% • Other: 25%</p>
+                        </div>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">North vs South Pflugerville:</p>
+                        <p className="text-sm text-primary-700 mb-2">Northern Pflugerville neighborhoods (Blackhawk, Falcon Pointe, Sendero Springs) experience slightly higher hail frequency and larger hail sizes due to being closer to where storms intensify. Southern Pflugerville still gets hit regularly.</p>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Expected Hail Frequency in Pflugerville:</p>
+                        <div className="space-y-2 text-sm">
+                          <div className="flex justify-between items-center">
+                            <span className="text-primary-700">Pea-sized (1/4") - Cosmetic</span>
+                            <span className="font-bold text-primary-900">5-8x per year</span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span className="text-primary-700">Quarter-sized (1") - Minor damage</span>
+                            <span className="font-bold text-primary-900">2-4x per year</span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span className="text-primary-700">Golf ball (1.75") - Major damage</span>
+                            <span className="font-bold text-accent-600">1-2x per year</span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span className="text-primary-700">Baseball (2.75") - Roof totaled</span>
+                            <span className="font-bold text-red-600">Every 2-4 years</span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span className="text-primary-700">Softball (4") - Catastrophic</span>
+                            <span className="font-bold text-red-600">Every 8-12 years</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-accent-50 to-blue-50 rounded-lg p-6">
+                  <h3 className="text-xl font-bold text-primary-900 mb-4">Protecting Your Pflugerville Home from Storm Damage</h3>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <p className="font-semibold text-primary-900 mb-2">✅ Before Storm Season (Essential Prep):</p>
+                      <ul className="text-sm text-primary-700 space-y-1">
+                        <li>• <strong>Install Class 4 impact-resistant shingles</strong> - Critical in Pflugerville</li>
+                        <li>• Document your current roof with photos (dated, from all angles)</li>
+                        <li>• Review homeowner's insurance policy - know deductible and coverage</li>
+                        <li>• Trim tree branches away from roof (10+ feet clearance)</li>
+                        <li>• Sign up for Travis County emergency alerts on phone</li>
+                        <li>• Save our emergency number: (512) 763-5277</li>
+                        <li>• Talk to neighbors about past storm damage (especially in Blackhawk, Falcon Pointe)</li>
+                        <li>• Check HOA requirements for roof colors/materials now</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-primary-900 mb-2">⚠️ After a Pflugerville Hailstorm:</p>
+                      <ul className="text-sm text-primary-700 space-y-1">
+                        <li>• <strong>Inspect within 1-2 weeks</strong> - hail damage often not immediately visible</li>
+                        <li>• Check gutters for shingle granules (telltale sign of damage)</li>
+                        <li>• Look for dents on metal items (mailbox, AC unit, vents, gutters)</li>
+                        <li>• Call us for FREE professional inspection - we assess from roof level</li>
+                        <li>• Document ALL damage with photos (roof, gutters, siding, windows)</li>
+                        <li>• File insurance claim if damage found (most policies: 1 year deadline)</li>
+                        <li>• Have us present at adjuster meeting (crucial for proper damage scope)</li>
+                        <li>• Coordinate with neighbors - often qualify for group pricing discounts</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Best Roofing Materials for Pflugerville */}
+              <div>
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Best Roofing Materials for Pflugerville Homes
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  Pflugerville's hail frequency and intense Texas heat require specific roofing materials. Here's what performs best for Pflugerville homeowners:
+                </p>
+
+                <div className="space-y-6">
+                  {/* #1 Recommendation */}
+                  <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg p-6 border-2 border-green-500">
+                    <div className="flex items-start gap-3 mb-4">
+                      <span className="text-3xl">🏆</span>
+                      <div>
+                        <h3 className="text-2xl font-bold text-primary-900">#1 Recommendation: Class 4 Impact-Resistant Architectural Shingles</h3>
+                        <p className="text-accent-600 font-semibold">Best Protection + Value for Pflugerville's Hail Pattern</p>
+                      </div>
+                    </div>
+                    
+                    <div className="grid md:grid-cols-3 gap-6 mb-6">
+                      <div className="bg-white rounded p-4">
+                        <p className="font-bold text-primary-900 mb-2">Top Choice: CertainTeed Landmark Pro IR</p>
+                        <ul className="text-sm text-primary-700 space-y-1">
+                          <li>• Class 4 UL 2218 impact rating</li>
+                          <li>• Survives baseball-sized hail</li>
+                          <li>• 130 mph wind resistance</li>
+                          <li>• Cool Roof Technology (heat reflection)</li>
+                          <li>• 50-year warranty</li>
+                          <li>• 15-35% insurance discount</li>
+                          <li>• Most popular in Pflugerville</li>
+                        </ul>
+                        <p className="text-accent-600 font-bold mt-3">$14,500-$21,000</p>
+                        <p className="text-xs text-primary-600">(2,000 sq ft Pflugerville home)</p>
+                      </div>
+                      <div className="bg-white rounded p-4">
+                        <p className="font-bold text-primary-900 mb-2">Excellent: GAF Timberline HDZ IR</p>
+                        <ul className="text-sm text-primary-700 space-y-1">
+                          <li>• Class 4 impact-rated</li>
+                          <li>• LayerLock technology</li>
+                          <li>• 130 mph wind warranty</li>
+                          <li>• Widely available, fast ordering</li>
+                          <li>• 50-year limited warranty</li>
+                          <li>• 10-35% insurance savings</li>
+                          <li>• Good color selection</li>
+                        </ul>
+                        <p className="text-accent-600 font-bold mt-3">$15,000-$22,000</p>
+                        <p className="text-xs text-primary-600">(2,000 sq ft Pflugerville home)</p>
+                      </div>
+                      <div className="bg-white rounded p-4">
+                        <p className="font-bold text-primary-900 mb-2">Premium: Owens Corning Duration Storm</p>
+                        <ul className="text-sm text-primary-700 space-y-1">
+                          <li>• Class 4 UL 2218 rated</li>
+                          <li>• SureNail Technology</li>
+                          <li>• 130 mph wind resistance</li>
+                          <li>• TruDefinition color clarity</li>
+                          <li>• 50-year non-prorated warranty</li>
+                          <li>• Maximum insurance discounts</li>
+                          <li>• Excellent in Pflugerville heat</li>
+                        </ul>
+                        <p className="text-accent-600 font-bold mt-3">$15,500-$23,000</p>
+                        <p className="text-xs text-primary-600">(2,000 sq ft Pflugerville home)</p>
+                      </div>
+                    </div>
+
+                    <div className="bg-white rounded-lg p-4 border-l-4 border-green-600">
+                      <p className="font-bold text-primary-900 mb-2">💰 Impact-Resistant ROI for Pflugerville Homeowners:</p>
+                      <div className="grid md:grid-cols-2 gap-4 text-sm text-primary-700">
+                        <div>
+                          <p className="font-semibold text-primary-900 mb-1">Why Essential in Pflugerville:</p>
+                          <ul className="space-y-1">
+                            <li>• Withstands the golf ball/baseball hail Pflugerville gets regularly</li>
+                            <li>• 10-35% insurance discount (typically 15-20% in Pflugerville)</li>
+                            <li>• Average $2,800/year home insurance × 15% = $420/year savings</li>
+                            <li>• Over 30 years: $12,600 in insurance savings</li>
+                            <li>• Upgrade cost over standard: $3,000-$5,000</li>
+                            <li>• <strong>Pays for itself in 7-12 years, then pure savings!</strong></li>
+                          </ul>
+                        </div>
+                        <div>
+                          <p className="font-semibold text-primary-900 mb-1">Additional Benefits:</p>
+                          <ul className="space-y-1">
+                            <li>• Survives storms that total standard roofs (avoid multiple claims)</li>
+                            <li>• Better heat reflection = lower cooling costs in Pflugerville summers</li>
+                            <li>• 50-year lifespan vs 20-25 for standard shingles</li>
+                            <li>• Higher home resale value (buyers want hail protection)</li>
+                            <li>• Peace of mind during Pflugerville's spring storm season</li>
+                            <li>• Required by some HOAs in newer Pflugerville communities</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Metal Roofing */}
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-gray-600">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">Alternative: Standing Seam Metal Roofing</h3>
+                    <p className="text-primary-700 mb-4">Growing in popularity among Pflugerville homeowners, especially in newer communities.</p>
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">✅ Pros for Pflugerville:</p>
+                        <ul className="text-sm text-primary-700 space-y-1">
+                          <li>• <strong>Ultimate hail resistance</strong> - may dent but never punctures</li>
+                          <li>• <strong>50-70 year lifespan</strong> - never replace again</li>
+                          <li>• Survives softball hail (proven in 2024 storm)</li>
+                          <li>• 25-35% cooling cost savings (reflects Texas heat)</li>
+                          <li>• 140+ mph wind rating</li>
+                          <li>• Environmentally friendly (100% recyclable)</li>
+                          <li>• Modern look popular in Sendero Springs, Brookfield</li>
+                          <li>• Never file hail claims again</li>
+                        </ul>
+                        <p className="text-accent-600 font-bold mt-4 text-xl">$24,000-$42,000</p>
+                        <p className="text-sm text-primary-600">(2,000 sq ft Pflugerville home, standing seam)</p>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">⚠️ Considerations:</p>
+                        <ul className="text-sm text-primary-700 space-y-1">
+                          <li>• Higher upfront cost (2-3x impact shingles)</li>
+                          <li>• HOA restrictions in some Pflugerville neighborhoods (verify first)</li>
+                          <li>• Limited color options (typically grays, blacks, browns)</li>
+                          <li>• Louder during heavy rain/hail than shingles</li>
+                          <li>• Requires specialized installation (not all contractors)</li>
+                          <li>• Best for simple roof lines (complex = expensive)</li>
+                        </ul>
+                        <p className="font-semibold text-primary-900 mt-4 mb-1">Best For:</p>
+                        <p className="text-sm text-primary-700">Long-term homeowners (20+ years), tired of filing insurance claims every few years, eco-conscious, non-HOA or HOA-approved areas, modern home styles in newer Pflugerville developments.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Materials to Avoid */}
+                  <div className="bg-red-50 rounded-lg p-6 border-l-4 border-red-500">
+                    <h3 className="text-xl font-bold text-primary-900 mb-3">❌ Materials to AVOID in Pflugerville</h3>
+                    <div className="grid md:grid-cols-2 gap-4">
+                      <div>
+                        <p className="font-bold text-primary-900 mb-2">Standard 3-Tab or Basic Architectural Shingles</p>
+                        <p className="text-sm text-primary-700"><strong>Why this is a mistake:</strong> Zero hail protection - will fail in Pflugerville's regular golf ball/baseball hail storms. Only 15-20 year lifespan before needing replacement. No insurance discounts. You'll pay $2,500-$4,000 deductible every 8-12 years on average. Only $2k-$3k cheaper upfront than impact-resistant, but you lose that savings in your FIRST insurance claim. Then keep losing money with every future Pflugerville hailstorm.</p>
+                      </div>
+                      <div>
+                        <p className="font-bold text-primary-900 mb-2">Concrete or Clay Tile</p>
+                        <p className="text-sm text-primary-700"><strong>Why avoid:</strong> Tiles crack and break from Pflugerville's frequent hail. Very expensive to replace broken tiles. Heavy (requires structural reinforcement). Not common in Pflugerville neighborhoods, hard to match if repairs needed. Long lead times for materials. Insurance claims process more complicated. Not worth the hassle.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Color Guide */}
+                  <div className="bg-blue-50 rounded-lg p-6">
+                    <h3 className="text-xl font-bold text-primary-900 mb-4">🎨 Most Popular Pflugerville Roof Colors</h3>
+                    <p className="text-sm text-primary-700 mb-4">Pflugerville homeowners prefer neutral earth tones that complement Texas homes. HOA communities have approved lists:</p>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                      <div className="bg-white p-3 rounded text-center">
+                        <div className="w-full h-16 bg-amber-700 rounded mb-2"></div>
+                        <p className="font-semibold text-xs text-primary-900">Weathered Wood</p>
+                        <p className="text-xs text-primary-600">#1 in Pflugerville</p>
+                      </div>
+                      <div className="bg-white p-3 rounded text-center">
+                        <div className="w-full h-16 bg-stone-600 rounded mb-2"></div>
+                        <p className="font-semibold text-xs text-primary-900">Driftwood</p>
+                        <p className="text-xs text-primary-600">Blackhawk Favorite</p>
+                      </div>
+                      <div className="bg-white p-3 rounded text-center">
+                        <div className="w-full h-16 bg-gray-500 rounded mb-2"></div>
+                        <p className="font-semibold text-xs text-primary-900">Georgetown Gray</p>
+                        <p className="text-xs text-primary-600">Modern Homes</p>
+                      </div>
+                      <div className="bg-white p-3 rounded text-center">
+                        <div className="w-full h-16 bg-slate-700 rounded mb-2"></div>
+                        <p className="font-semibold text-xs text-primary-900">Charcoal</p>
+                        <p className="text-xs text-primary-600">Contemporary</p>
+                      </div>
+                      <div className="bg-white p-3 rounded text-center">
+                        <div className="w-full h-16 bg-gray-400 rounded mb-2"></div>
+                        <p className="font-semibold text-xs text-primary-900">Pewter Gray</p>
+                        <p className="text-xs text-primary-600">Versatile</p>
+                      </div>
+                      <div className="bg-white p-3 rounded text-center">
+                        <div className="w-full h-16 bg-amber-800 rounded mb-2"></div>
+                        <p className="font-semibold text-xs text-primary-900">Mission Brown</p>
+                        <p className="text-xs text-primary-600">Traditional</p>
+                      </div>
+                      <div className="bg-white p-3 rounded text-center">
+                        <div className="w-full h-16 bg-stone-300 rounded mb-2"></div>
+                        <p className="font-semibold text-xs text-primary-900">Oyster Gray</p>
+                        <p className="text-xs text-primary-600">Light Option</p>
+                      </div>
+                      <div className="bg-white p-3 rounded text-center">
+                        <div className="w-full h-16 bg-slate-800 rounded mb-2"></div>
+                        <p className="font-semibold text-xs text-primary-900">Onyx Black</p>
+                        <p className="text-xs text-primary-600">Bold Choice</p>
+                      </div>
+                    </div>
+                    <p className="text-xs text-primary-600 mt-4 text-center">HOA communities: Always verify approved colors before ordering. We handle HOA submissions and approvals.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Pflugerville Roof Replacement Costs */}
+              <div>
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Pflugerville Roof Replacement Costs: Complete Pricing Guide
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  Pflugerville roof replacement costs are competitive with other Austin metro suburbs. Most homes fall in the $14k-$23k range:
+                </p>
+
+                <div className="space-y-4 mb-8">
+                  <div className="border-l-4 border-blue-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">1,600-2,000 sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: Older Pflugerville, single-story or small two-story, simple roof, 18-24 squares</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$11,000-$16,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-green-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">2,000-2,500 sq ft Home (Most Common)</p>
+                        <p className="text-sm text-primary-700">Typical: Standard Pflugerville two-story, 3-4 bed/2-3 bath, moderate complexity, 24-28 squares - Gatlinburg, Highland Park, Willow Creek</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$14,000-$21,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-purple-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">2,500-3,000 sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: Larger two-story, 4-bed/3-bath, increased complexity, 28-35 squares - Blackhawk, Sendero Springs, Brookfield</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$17,000-$25,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-red-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">3,000-3,500 sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: Premium homes, 4-5 bed/3-4 bath, complex roof, 35-42 squares - Falcon Pointe, larger Blackhawk homes</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$21,000-$32,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-amber-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">3,500+ sq ft Luxury Home</p>
+                        <p className="text-sm text-primary-700">Typical: High-end Pflugerville homes, highly complex roofs, 42+ squares - Custom Falcon Pointe homes</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$28,000-$50,000+</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-6 mb-8">
+                  <div className="bg-red-50 rounded-lg p-6 border-l-4 border-red-500">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">📈 What INCREASES Cost in Pflugerville</h3>
+                    <ul className="space-y-2 text-sm text-primary-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+15-25%</span>
+                        <span><strong>Steep pitch roofs</strong> (safety equipment, slower work - some Falcon Pointe customs)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+15-30%</span>
+                        <span><strong>Complex roof lines</strong> (multiple valleys, dormers, turrets - Blackhawk customs, Falcon Pointe)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+20-35%</span>
+                        <span><strong>Two-story homes</strong> (most Pflugerville homes - requires more setup)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+$2k-4k</span>
+                        <span><strong>Decking repairs</strong> (common in older Pflugerville, Gatlinburg, Highland Park)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+100-200%</span>
+                        <span><strong>Metal roofing upgrade</strong> ($24k-$42k vs $14k-$21k for shingles)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+$400-700</span>
+                        <span><strong>Travis County permits</strong> (required for all replacements, HOA fees separate)</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-green-50 rounded-lg p-6 border-l-4 border-green-500">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">📉 What DECREASES Cost in Pflugerville</h3>
+                    <ul className="space-y-2 text-sm text-primary-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Simple gable or hip roof</strong> (standard Pflugerville production homes)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Low to moderate pitch</strong> (most Pflugerville homes, faster installation)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Good existing decking</strong> (newer Pflugerville homes in Sendero Springs, Brookfield)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Insurance claim coverage</strong> (pay deductible only - $1.5k-$3k total cost)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Neighborhood group pricing</strong> (coordinate with neighbors for 10-15% discount)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Easy property access</strong> (wide Pflugerville streets, good driveways)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-accent-50 to-blue-50 rounded-lg p-6">
+                  <h3 className="text-xl font-bold text-primary-900 mb-4">💡 6 Ways Pflugerville Homeowners Save on Roof Replacement</h3>
+                  <div className="grid md:grid-cols-2 gap-4 text-sm text-primary-700">
+                    <div>
+                      <p className="font-bold text-primary-900 mb-1">1. File Insurance Claims After Storms</p>
+                      <p className="mb-3">Pflugerville gets damaging hail every 2-4 years. If your neighbors filed claims, you likely have damage too. Insurance covers 100% minus deductible ($1.5k-$3k). We handle entire claims process and adjuster meetings. This is how most Pflugerville homeowners afford roof replacements.</p>
+                      
+                      <p className="font-bold text-primary-900 mb-1">2. Coordinate with Neighbors for Group Pricing</p>
+                      <p className="mb-3">When we're replacing 5-10 roofs in one Pflugerville neighborhood (common after storms), we offer volume discounts of 10-15%. One material delivery, one crew, one mobilization = lower cost per home. Organize your street after storms!</p>
+                      
+                      <p className="font-bold text-primary-900 mb-1">3. Choose Impact-Resistant for Insurance Savings</p>
+                      <p className="mb-3">$3k-$5k more upfront, but saves $400-$600/year on insurance (15-20% discount). Pays for itself in 7-10 years, then pure savings. Plus survives Pflugerville's hail better = fewer future claims.</p>
+                    </div>
+                    <div>
+                      <p className="font-bold text-primary-900 mb-1">4. Bundle Multiple Services</p>
+                      <p className="mb-3">Replace gutters, install gutter guards, or add ventilation at same time for 10-15% discount vs separate projects. One mobilization = lower overall cost.</p>
+                      
+                      <p className="font-bold text-primary-900 mb-1">5. Schedule During Off-Season</p>
+                      <p className="mb-3">Fall/winter (October-February) are slower. We may offer scheduling flexibility or discounts. Avoid June-August when Pflugerville's busiest after spring storm season.</p>
+                      
+                      <p className="font-bold text-primary-900 mb-1">6. Take Advantage of 0% Financing</p>
+                      <p className="mb-3">We offer 0% financing for 12-18 months through approved lenders. Spread cost into manageable monthly payments. Popular with young Pflugerville families. Ask about current financing promotions.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-6 bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
+                  <p className="text-primary-900 font-semibold mb-2">📞 Get Your Exact Pflugerville Roof Replacement Cost</p>
+                  <p className="text-primary-700">
+                    These are estimates. Your actual cost depends on your specific home, neighborhood, materials, and current conditions. We provide <strong>FREE inspections</strong> and detailed written quotes with no obligation. Pflugerville homeowners: We work in your neighborhoods weekly - ask neighbors about us! Call <strong>(512) 763-5277</strong> or schedule online for your personalized Pflugerville roof replacement estimate.
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+
           {/* FAQ Section - Full Width */}
           <div className="mt-16">
             <LocationFAQ city={location.city} />
