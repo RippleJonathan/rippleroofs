@@ -38,6 +38,7 @@ export const NAV_LINKS: NavLink[] = [
       { href: '/services/emergency-services', label: 'Emergency Services' },
       { href: '/services/roof-inspection', label: 'Roof Inspection' },
       { href: '/services/gutter-installation', label: 'Gutter Installation' },
+      { href: '/services/storm-damage-restoration', label: 'Storm Damage Restoration' },
     ]
   },
   {
