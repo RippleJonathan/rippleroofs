@@ -1146,6 +1146,222 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
                 </>
               )}
 
+              {/* EMERGENCY SERVICES SPECIFIC CONTENT */}
+              {service.slug === 'emergency-services' && (
+                <>
+                  {/* What Qualifies as Emergency */}
+                  <div className="bg-gradient-to-br from-red-50 to-orange-50 p-8 rounded-2xl">
+                    <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                      When Should You Call for Emergency Roofing?
+                    </h2>
+                    <p className="text-primary-700 mb-8 leading-relaxed">
+                      Not sure if your situation is an emergency? <strong>When in doubt, call us at (512) 763-5277.</strong> We'll assess your situation and advise whether immediate service is needed or if it can wait until regular hours (which saves you money). Here are situations that definitely require emergency response:
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="bg-white rounded-xl p-6 border-l-4 border-red-600">
+                        <h3 className="text-xl font-bold text-red-700 mb-3">🚨 CALL IMMEDIATELY</h3>
+                        <ul className="space-y-3 text-primary-700">
+                          <li className="flex items-start gap-2">
+                            <span className="text-red-600 font-bold text-xl">•</span>
+                            <span><strong>Active water leaks</strong> dripping into your home during or after storms</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-red-600 font-bold text-xl">•</span>
+                            <span><strong>Major storm damage</strong> with visible holes, large sections of missing shingles, or exposed decking</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-red-600 font-bold text-xl">•</span>
+                            <span><strong>Tree or large branch</strong> has fallen on your roof</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-red-600 font-bold text-xl">•</span>
+                            <span><strong>Severe hail damage</strong> during ongoing storm with more weather coming</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-red-600 font-bold text-xl">•</span>
+                            <span><strong>Structural damage</strong> causing sagging, collapse, or visible instability</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-red-600 font-bold text-xl">•</span>
+                            <span><strong>Fire damage</strong> to roof structure or materials</span>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6 border-l-4 border-amber-500">
+                        <h3 className="text-xl font-bold text-amber-700 mb-3">⚠️ URGENT (Call Same Day)</h3>
+                        <ul className="space-y-3 text-primary-700">
+                          <li className="flex items-start gap-2">
+                            <span className="text-amber-600 font-bold text-xl">•</span>
+                            <span><strong>Torn or lifted shingles</strong> with rain forecast within 24-48 hours</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-amber-600 font-bold text-xl">•</span>
+                            <span><strong>Flashing failure</strong> around chimneys or vents with active seepage</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-amber-600 font-bold text-xl">•</span>
+                            <span><strong>Sudden appearance</strong> of water stains on ceilings after storms</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-amber-600 font-bold text-xl">•</span>
+                            <span><strong>Loose or detached gutters</strong> causing water to pour over</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-amber-600 font-bold text-xl">•</span>
+                            <span><strong>Wind damage</strong> that has lifted edge metal or ridge caps</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="mt-6 bg-white p-6 rounded-xl">
+                      <p className="text-primary-700">
+                        <strong>💡 Can it wait until morning?</strong> If damage occurred but no water is currently entering, weather is clear for 2-3 days, and there's no safety hazard, we can schedule next-day service (saves you emergency rates). However, if you're unsure or concerned, call us anytime—we're happy to assess your situation over the phone at no charge.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* What to Do Before We Arrive */}
+                  <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-2xl">
+                    <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                      What to Do While Waiting for Emergency Service
+                    </h2>
+                    <p className="text-primary-700 mb-8 leading-relaxed">
+                      After calling us, here are immediate steps you can take to minimize damage and stay safe:
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="bg-white rounded-xl p-6">
+                        <h3 className="text-lg font-bold text-primary-900 mb-4 flex items-center gap-2">
+                          <span className="text-2xl">🛡️</span> Safety First
+                        </h3>
+                        <ul className="space-y-2 text-sm text-primary-700">
+                          <li>✓ <strong>Stay indoors</strong> and away from damaged areas</li>
+                          <li>✓ <strong>Don't go on your roof</strong>—especially in storms or on wet surfaces</li>
+                          <li>✓ <strong>Avoid standing water</strong> if there are electrical outlets nearby</li>
+                          <li>✓ <strong>Turn off electricity</strong> in affected rooms if safe to do so</li>
+                          <li>✓ <strong>Watch for falling debris</strong> from damaged areas</li>
+                          <li>✓ <strong>Keep children and pets</strong> away from affected areas</li>
+                        </ul>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6">
+                        <h3 className="text-lg font-bold text-primary-900 mb-4 flex items-center gap-2">
+                          <span className="text-2xl">💧</span> Contain Water Damage
+                        </h3>
+                        <ul className="space-y-2 text-sm text-primary-700">
+                          <li>✓ <strong>Place buckets/containers</strong> under active leaks</li>
+                          <li>✓ <strong>Move furniture and valuables</strong> away from leak areas</li>
+                          <li>✓ <strong>Use towels</strong> to soak up standing water on floors</li>
+                          <li>✓ <strong>Roll up rugs</strong> to prevent water absorption</li>
+                          <li>✓ <strong>Turn on fans</strong> if safe—helps reduce mold risk</li>
+                          <li>✓ <strong>Don't use electrical equipment</strong> in wet areas</li>
+                        </ul>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6">
+                        <h3 className="text-lg font-bold text-primary-900 mb-4 flex items-center gap-2">
+                          <span className="text-2xl">📸</span> Document Everything
+                        </h3>
+                        <ul className="space-y-2 text-sm text-primary-700">
+                          <li>✓ <strong>Take photos</strong> of all visible damage</li>
+                          <li>✓ <strong>Video walkthrough</strong> showing extent of damage</li>
+                          <li>✓ <strong>Note the date and time</strong> damage occurred</li>
+                          <li>✓ <strong>Photograph damaged items</strong> before moving them</li>
+                          <li>✓ <strong>Save all receipts</strong> for emergency expenses</li>
+                          <li>✓ <strong>Don't throw away</strong> damaged materials yet</li>
+                        </ul>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6">
+                        <h3 className="text-lg font-bold text-primary-900 mb-4 flex items-center gap-2">
+                          <span className="text-2xl">📞</span> Contact Your Insurance
+                        </h3>
+                        <ul className="space-y-2 text-sm text-primary-700">
+                          <li>✓ <strong>Call your insurance company</strong> to report the claim</li>
+                          <li>✓ <strong>Get your claim number</strong> for reference</li>
+                          <li>✓ <strong>Ask about coverage</strong> for emergency services</li>
+                          <li>✓ <strong>Request adjuster visit</strong> ASAP</li>
+                          <li>✓ <strong>Ask if they require</strong> multiple estimates</li>
+                          <li>✓ <strong>We can help</strong> with this process when we arrive</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Emergency Pricing */}
+                  <div className="bg-gradient-to-br from-primary-50 to-accent-50 p-8 rounded-2xl">
+                    <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                      Emergency Service Pricing
+                    </h2>
+                    <div className="bg-white rounded-xl p-6 mb-6">
+                      <p className="text-primary-700 mb-4 leading-relaxed">
+                        <strong>We believe in transparent emergency pricing—no surprises when you're already stressed.</strong> Emergency rates apply for after-hours, weekends, and immediate-response situations. Regular business hours (Monday-Friday, 8 AM - 5 PM) are charged at standard rates.
+                      </p>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="bg-white rounded-xl p-6 border-2 border-accent-500">
+                        <h3 className="text-xl font-bold text-primary-900 mb-4">Emergency Tarping Services</h3>
+                        <div className="space-y-3 text-primary-700">
+                          <div className="flex justify-between items-center pb-2 border-b">
+                            <span><strong>Small area</strong> (10x10 to 15x15)</span>
+                            <span className="font-bold text-accent-600">$250-$500</span>
+                          </div>
+                          <div className="flex justify-between items-center pb-2 border-b">
+                            <span><strong>Medium area</strong> (20x20 to 30x30)</span>
+                            <span className="font-bold text-accent-600">$500-$1,000</span>
+                          </div>
+                          <div className="flex justify-between items-center pb-2 border-b">
+                            <span><strong>Large area</strong> (30x30+)</span>
+                            <span className="font-bold text-accent-600">$1,000-$2,500</span>
+                          </div>
+                          <div className="flex justify-between items-center pb-2">
+                            <span><strong>Complex/multi-level</strong></span>
+                            <span className="font-bold text-accent-600">$1,500-$3,500</span>
+                          </div>
+                        </div>
+                        <p className="text-sm text-primary-600 mt-4">
+                          <strong>Includes:</strong> Heavy-duty tarp, securing materials, labor, 2-4 hour response time
+                        </p>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6 border-2 border-blue-500">
+                        <h3 className="text-xl font-bold text-primary-900 mb-4">Emergency Rate Factors</h3>
+                        <ul className="space-y-3 text-primary-700">
+                          <li className="flex items-start gap-2">
+                            <span className="text-accent-600 font-bold">•</span>
+                            <span><strong>After hours</strong> (weeknights 5 PM - 8 AM): +25-50%</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-accent-600 font-bold">•</span>
+                            <span><strong>Weekends</strong> (Saturday-Sunday): +25-35%</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-accent-600 font-bold">•</span>
+                            <span><strong>Holidays</strong>: +50-75%</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-accent-600 font-bold">•</span>
+                            <span><strong>Severe weather conditions</strong>: +25-50%</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-accent-600 font-bold">•</span>
+                            <span><strong>Immediate response</strong> (under 2 hours): +25%</span>
+                          </li>
+                        </ul>
+                        <p className="text-sm text-primary-600 mt-4">
+                          <strong>Good news:</strong> Most insurance policies cover emergency tarping!
+                        </p>
+                      </div>
+                    </div>
+                    <div className="mt-6 bg-accent-50 border-2 border-accent-200 rounded-xl p-6">
+                      <p className="text-primary-700">
+                        <strong>💰 Credit Toward Permanent Repairs:</strong> If you hire us for permanent repairs, we credit your emergency tarping cost toward the total. This means tarping is essentially free if we do the final work!
+                      </p>
+                    </div>
+                  </div>
+                </>
+              )}
+
               {/* Service Areas */}
               <div className="bg-gradient-to-br from-primary-900 to-primary-800 rounded-2xl p-8 text-white">
                 <h2 className="text-2xl font-display font-bold mb-4">
@@ -1397,6 +1613,65 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
                         </h3>
                         <p className="text-primary-600">
                           <strong>No—we believe in honest assessments, not pressure sales.</strong> If your roof is in good condition, we'll tell you that and recommend when to schedule your next inspection. If minor repairs are needed, we'll recommend repair over replacement (it's better for you and builds trust). If replacement is truly needed, we'll explain why with photos and data. Our goal is to be your trusted roofing partner for years, not make a quick sale.
+                        </p>
+                      </div>
+                    </>
+                  ) : service.slug === 'emergency-services' ? (
+                    <>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          Are you really available 24/7/365?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>Yes—we answer our phone 24 hours a day, 7 days a week, 365 days a year.</strong> Call <strong>(512) 763-5277</strong> anytime and you'll speak with a real person (not voicemail). We typically arrive on-site within 2-4 hours across Central Texas. During severe storm events, response may take slightly longer, but we'll communicate your ETA clearly and keep you updated.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          How much does emergency tarping cost?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>Small areas (10x10-15x15): $250-$500.</strong> Medium areas (20x20-30x30): $500-$1,000. Large areas (30x30+): $1,000-$2,500. Complex/multi-level: $1,500-$3,500. After-hours, weekends, and holidays incur emergency rates (+25-75% depending on timing). <strong>Good news:</strong> Most insurance policies cover emergency tarping, and we credit tarping costs toward permanent repairs if you hire us for the final work!
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          What should I do while waiting for emergency service?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>Safety first:</strong> Stay indoors, don't go on roof, avoid standing water near outlets. <strong>Contain damage:</strong> Place buckets under leaks, move valuables, use towels for water. <strong>Document:</strong> Take photos/videos of all damage, note date/time. <strong>Insurance:</strong> Call to report claim, get claim number, ask about emergency coverage. We'll help with complete documentation and insurance coordination when we arrive.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          Will insurance cover emergency tarping?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>In most cases, yes—it's considered emergency mitigation to prevent further damage.</strong> Most policies cover "emergency services to protect property from additional damage." We provide detailed invoices for your insurance claim and can coordinate directly with your adjuster. Call your insurance company when damage occurs to confirm your coverage and get a claim number.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          How long will the tarp last?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>Our heavy-duty professional tarps last 3-6 months in Texas weather.</strong> We use commercial-grade tarps (not hardware store tarps) secured with proper techniques—not just nails that rip through. The tarp protects your home while we schedule permanent repairs (typically within 1-2 weeks). For insurance claims with delays, tarps can last several months while the claim processes.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          Do you handle insurance claims and adjusters?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>Yes—we provide complete insurance assistance.</strong> We document all damage with detailed photos, help you file the claim, attend adjuster meetings with you, ensure nothing is missed, and advocate for fair settlements. We've worked with thousands of insurance claims and know what adjusters look for. Having us there protects your interests and maximizes your settlement.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          What qualifies as a roofing emergency?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>Call immediately for:</strong> Active water leaks, major storm damage with holes, trees fallen on roof, severe hail during storms, structural damage/sagging, or fire damage. <strong>Call same day for:</strong> Torn shingles with rain coming, flashing failure with seepage, sudden water stains after storms, loose gutters, wind damage to edges. <strong>When in doubt, call us at (512) 763-5277</strong>—we'll assess your situation for free over the phone.
                         </p>
                       </div>
                     </>
