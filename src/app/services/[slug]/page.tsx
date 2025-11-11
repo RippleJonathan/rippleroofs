@@ -3794,7 +3794,7 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
         </Container>
       </section>
 
-      {/* Structured Data for SEO */}
+      {/* Enhanced Service Schema */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -3802,10 +3802,17 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
             "@context": "https://schema.org",
             "@type": "Service",
             "serviceType": service.title,
+            "name": service.title,
+            "description": service.description,
+            "url": `https://rippleroofs.com/services/${service.slug}`,
+            "image": `https://rippleroofs.com${service.image}`,
             "provider": {
               "@type": "RoofingContractor",
               "name": "Ripple Roofing & Construction",
               "telephone": "(512) 763-5277",
+              "email": "info@rippleroofs.com",
+              "url": "https://rippleroofs.com",
+              "logo": "https://rippleroofs.com/logo.png",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "1000 Heritage Center Circle",
@@ -3813,16 +3820,117 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
                 "addressRegion": "TX",
                 "postalCode": "78664",
                 "addressCountry": "US"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "30.5088",
+                "longitude": "-97.6789"
+              },
+              "priceRange": "$$",
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "reviewCount": "267"
               }
             },
             "areaServed": [
-              "Round Rock, TX",
-              "Austin, TX",
-              "Georgetown, TX",
-              "San Antonio, TX",
-              "Central Texas"
+              {
+                "@type": "City",
+                "name": "Round Rock",
+                "containedIn": {
+                  "@type": "State",
+                  "name": "Texas"
+                }
+              },
+              {
+                "@type": "City",
+                "name": "Austin",
+                "containedIn": {
+                  "@type": "State",
+                  "name": "Texas"
+                }
+              },
+              {
+                "@type": "City",
+                "name": "Georgetown",
+                "containedIn": {
+                  "@type": "State",
+                  "name": "Texas"
+                }
+              },
+              {
+                "@type": "City",
+                "name": "Pflugerville",
+                "containedIn": {
+                  "@type": "State",
+                  "name": "Texas"
+                }
+              },
+              {
+                "@type": "City",
+                "name": "Cedar Park",
+                "containedIn": {
+                  "@type": "State",
+                  "name": "Texas"
+                }
+              },
+              {
+                "@type": "City",
+                "name": "Leander",
+                "containedIn": {
+                  "@type": "State",
+                  "name": "Texas"
+                }
+              }
             ],
-            "description": service.description,
+            "availableChannel": {
+              "@type": "ServiceChannel",
+              "serviceUrl": `https://rippleroofs.com/services/${service.slug}`,
+              "servicePhone": "(512) 763-5277"
+            },
+            "potentialAction": {
+              "@type": "OrderAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://rippleroofs.com/contact",
+                "inLanguage": "en-US",
+                "actionPlatform": [
+                  "http://schema.org/DesktopWebPlatform",
+                  "http://schema.org/MobileWebPlatform"
+                ]
+              }
+            }
+          })
+        }}
+      />
+
+      {/* BreadcrumbList Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://rippleroofs.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Services",
+                "item": "https://rippleroofs.com/services"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": service.title,
+                "item": `https://rippleroofs.com/services/${service.slug}`
+              }
+            ]
           })
         }}
       />

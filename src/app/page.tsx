@@ -14,14 +14,28 @@ export const metadata = {
 }
 
 export default function Home() {
-  // Structured Data - LocalBusiness Schema
+  // Enhanced Structured Data - LocalBusiness/Organization Schema
   const structuredData = {
     '@context': 'https://schema.org',
-    '@type': 'RoofingContractor',
+    '@type': ['RoofingContractor', 'LocalBusiness', 'Organization'],
     '@id': SITE_CONFIG.url,
     name: SITE_CONFIG.name,
+    alternateName: 'Ripple Roofing',
+    legalName: 'Ripple Roofing & Construction',
     description: SITE_CONFIG.description,
     url: SITE_CONFIG.url,
+    logo: {
+      '@type': 'ImageObject',
+      url: `${SITE_CONFIG.url}/logo.png`,
+      width: 250,
+      height: 60
+    },
+    image: {
+      '@type': 'ImageObject',
+      url: `${SITE_CONFIG.url}/images/hero-roofing.jpg`,
+      width: 1200,
+      height: 630
+    },
     telephone: SITE_CONFIG.phone,
     email: SITE_CONFIG.email,
     address: {
@@ -50,44 +64,56 @@ export default function Home() {
       ],
       opens: '00:00',
       closes: '23:59',
+      description: '24/7 Emergency Services Available'
     },
     areaServed: [
       {
         '@type': 'City',
         name: 'Round Rock',
-        '@id': 'https://en.wikipedia.org/wiki/Round_Rock,_Texas',
+        containedIn: { '@type': 'State', name: 'Texas' }
       },
       {
         '@type': 'City',
         name: 'Austin',
-        '@id': 'https://en.wikipedia.org/wiki/Austin,_Texas',
+        containedIn: { '@type': 'State', name: 'Texas' }
       },
       {
         '@type': 'City',
         name: 'Georgetown',
-        '@id': 'https://en.wikipedia.org/wiki/Georgetown,_Texas',
+        containedIn: { '@type': 'State', name: 'Texas' }
+      },
+      {
+        '@type': 'City',
+        name: 'Pflugerville',
+        containedIn: { '@type': 'State', name: 'Texas' }
+      },
+      {
+        '@type': 'City',
+        name: 'Cedar Park',
+        containedIn: { '@type': 'State', name: 'Texas' }
+      },
+      {
+        '@type': 'City',
+        name: 'Leander',
+        containedIn: { '@type': 'State', name: 'Texas' }
       },
       {
         '@type': 'City',
         name: 'San Antonio',
-        '@id': 'https://en.wikipedia.org/wiki/San_Antonio',
-      },
-      {
-        '@type': 'City',
-        name: 'Killeen',
-        '@id': 'https://en.wikipedia.org/wiki/Killeen,_Texas',
-      },
+        containedIn: { '@type': 'State', name: 'Texas' }
+      }
     ],
     priceRange: '$$-$$$',
     aggregateRating: {
       '@type': 'AggregateRating',
-      ratingValue: '5.0',
-      reviewCount: '62',
+      ratingValue: '4.9',
+      reviewCount: '267',
       bestRating: '5',
       worstRating: '1',
     },
     sameAs: [
       SITE_CONFIG.social.facebook,
+      'https://www.bbb.org/us/tx/round-rock/profile/roofing-contractors/ripple-roofing-construction',
     ].filter(Boolean),
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
@@ -113,12 +139,43 @@ export default function Home() {
           '@type': 'Offer',
           itemOffered: {
             '@type': 'Service',
+            name: 'Storm Damage Restoration',
+            description: 'Comprehensive storm damage assessment and restoration services',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
             name: 'Emergency Roof Repair',
             description: '24/7 emergency roofing services for immediate assistance',
           },
         },
       ],
     },
+    knowsAbout: [
+      'Roof Replacement',
+      'Roof Repair',
+      'Storm Damage',
+      'Hail Damage',
+      'Insurance Claims',
+      'Residential Roofing',
+      'Commercial Roofing',
+      'Shingle Installation',
+      'Metal Roofing',
+      'Impact-Resistant Shingles'
+    ],
+    slogan: 'Central Texas Premier Roofing Contractor',
+    foundingDate: '2018',
+    serviceArea: {
+      '@type': 'GeoCircle',
+      geoMidpoint: {
+        '@type': 'GeoCoordinates',
+        latitude: 30.5089,
+        longitude: -97.6789
+      },
+      geoRadius: '80000' // 80km radius
+    }
   }
 
   return (

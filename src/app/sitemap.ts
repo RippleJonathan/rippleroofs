@@ -75,15 +75,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}/services/${service.slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
-    priority: 0.8,
+    priority: 0.85, // Increased priority for service pages
   }))
 
   // Location pages - dynamically generated from LOCATIONS constant
+  // Priority locations (with deep content) get higher priority
+  const priorityLocationSlugs = ['round-rock', 'austin', 'georgetown', 'pflugerville', 'cedar-park', 'leander']
   const locationPages = LOCATIONS.map((location) => ({
     url: `${baseUrl}/locations/${location.slug}`,
     lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.85, // High priority for local SEO
+    changeFrequency: 'weekly' as const, // More frequent for updated content
+    priority: priorityLocationSlugs.includes(location.slug) ? 0.95 : 0.85, // Higher priority for enhanced pages
   }))
 
   // Blog posts - dynamically generated from blog content
