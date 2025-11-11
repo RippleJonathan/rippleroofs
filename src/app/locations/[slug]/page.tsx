@@ -1416,6 +1416,681 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
             </div>
           )}
 
+          {/* Georgetown-specific deep content */}
+          {location.slug === 'georgetown' && (
+            <div className="space-y-16 mt-16">
+              {/* Georgetown Neighborhoods Deep Dive */}
+              <div>
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Georgetown Neighborhoods: Your Complete Roofing Guide by Area
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  Georgetown's rapid growth has created diverse neighborhoods—from the massive Sun City Texas active adult community to historic downtown homes and new master-planned developments. Each area has unique roofing needs:
+                </p>
+
+                <div className="space-y-8">
+                  {/* Sun City Texas */}
+                  <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-lg shadow-md p-6 border-l-4 border-orange-500">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">Sun City Texas (55+ Active Adult Community)</h3>
+                    <div className="grid md:grid-cols-2 gap-4 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Community Overview:</p>
+                        <p className="mb-3">Texas's largest active adult community with 10,000+ residents. Built primarily 2010-present with modern construction standards. Del Webb builder homes with HOA oversight. Amenities-rich lifestyle community.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Roofing Characteristics:</p>
+                        <ul className="list-disc pl-5 space-y-1">
+                          <li>Newer roofs (10-15 years old) approaching first replacement</li>
+                          <li>Consistent architectural shingles per builder specs</li>
+                          <li>HOA color and material requirements (strict)</li>
+                          <li>Single-story homes = easier, safer access</li>
+                          <li>Many homes impacted by 2024 hailstorm</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Sun City Roofing Considerations:</p>
+                        <p className="mb-3"><strong>Insurance Claims:</strong> Many Sun City homes qualified for insurance claims after March 2024 hailstorm. If your neighbors got new roofs, you likely have damage too.</p>
+                        <p className="mb-3"><strong>HOA Requirements:</strong> Must get architectural approval before replacement. We handle HOA paperwork. Common approved colors: Weathered Wood, Driftwood, Mission Brown.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Typical Investment:</p>
+                        <p className="text-accent-600 font-bold text-xl">$12,000-$18,000</p>
+                        <p className="text-sm">Single-story, 1,500-2,200 sq ft, simple roof lines (most Sun City homes)</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Berry Creek */}
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-blue-500">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">Berry Creek Country Club Area</h3>
+                    <div className="grid md:grid-cols-2 gap-4 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Neighborhood Profile:</p>
+                        <p className="mb-3">Upscale golf course community with homes built 1990s-2010s. Mix of custom and production homes. Tree-lined streets, mature landscaping, country club lifestyle. Higher property values.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Common Roofing Issues:</p>
+                        <ul className="list-disc pl-5 space-y-1">
+                          <li>Original roofs from 1990s-2000s now 20-30+ years old</li>
+                          <li>Golf ball hail damage from Georgetown's frequent storms</li>
+                          <li>Complex roof lines on custom homes</li>
+                          <li>Large oak trees = debris accumulation and moss</li>
+                          <li>Some homes have architectural features (turrets, dormers)</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Best Materials:</p>
+                        <p className="mb-3">Impact-resistant architectural shingles essential (high hail risk). Premium shingles for curb appeal match neighborhood. Algae-resistant for tree coverage. HOA-approved colors required.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Cost Range:</p>
+                        <p className="text-accent-600 font-bold text-xl">$16,000-$28,000</p>
+                        <p className="text-sm">Larger homes (2,500-3,500 sq ft), moderate to high complexity, premium materials</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Historic Downtown */}
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-green-500">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">Historic Downtown Georgetown</h3>
+                    <div className="grid md:grid-cols-2 gap-4 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Historic Character:</p>
+                        <p className="mb-3">Beautiful Victorian-era and early 1900s homes near Georgetown Square. Many homes on historic register. Preservation requirements, charm and character, strong community pride.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Roofing Challenges:</p>
+                        <ul className="list-disc pl-5 space-y-1">
+                          <li>Historic preservation guidelines (some streets)</li>
+                          <li>Original roofs 80-100+ years old (past multiple replacements)</li>
+                          <li>Complex Victorian-era roof lines (steep pitches, gables)</li>
+                          <li>Possible structural issues in older homes</li>
+                          <li>Decking often needs complete replacement</li>
+                          <li>Color restrictions to maintain historic character</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Historic-Appropriate Solutions:</p>
+                        <p className="mb-3">Architectural shingles in traditional colors (charcoal, slate, brown). Some homes require metal roofing to match original. Must work with Historic Review Board for some streets.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Investment Range:</p>
+                        <p className="text-accent-600 font-bold text-xl">$14,000-$26,000</p>
+                        <p className="text-sm">Plus $3,000-$6,000 for decking repairs (very common in historic homes)</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Wolf Ranch */}
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-purple-500">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">Wolf Ranch & New Master-Planned Communities</h3>
+                    <div className="grid md:grid-cols-2 gap-4 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Modern Development:</p>
+                        <p className="mb-3">Built 2005-present with modern amenities. Growing family-oriented community. New construction standards, energy-efficient designs, strong HOA guidelines, excellent schools nearby.</p>
+                        <p className="font-semibold text-primary-900 mb-2">New Community Roofing:</p>
+                        <ul className="list-disc pl-5 space-y-1">
+                          <li>Most roofs still under 10-15 year builder warranty</li>
+                          <li>Modern architectural shingles installed</li>
+                          <li>Proper ventilation and installation practices used</li>
+                          <li>First wave of replacements starting 2025-2030</li>
+                          <li>Many homes had hail damage in 2024 storm</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">When Replacement Needed:</p>
+                        <p className="mb-3">Impact-resistant shingles for hail protection. Ensure exact HOA color match before ordering. Insurance claims common after storms. Get neighbors together for neighborhood pricing.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Typical Costs:</p>
+                        <p className="text-accent-600 font-bold text-xl">$15,000-$24,000</p>
+                        <p className="text-sm">Standard 2,000-2,800 sq ft two-story homes, moderate complexity</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Westinghouse & Shell Rock */}
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-red-500">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">Westinghouse, Shell Rock & Established Neighborhoods</h3>
+                    <div className="grid md:grid-cols-2 gap-4 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Neighborhood Character:</p>
+                        <p className="mb-3">Established communities built 1980s-2000s. Mix of original and second owners. Mature trees and landscaping. More affordable than newer developments. Strong neighborhood feel.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Typical Roofing Situation:</p>
+                        <ul className="list-disc pl-5 space-y-1">
+                          <li>Roofs 20-40 years old (at or past replacement age)</li>
+                          <li>Mix of one-story and two-story homes</li>
+                          <li>Generally simpler roof lines than newer homes</li>
+                          <li>Some homes have had multiple replacements already</li>
+                          <li>Hail damage from Georgetown's severe storms</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Smart Choices:</p>
+                        <p className="mb-3">Upgrade to impact-resistant shingles (original roofs weren't). Standard architectural shingles in neutral colors. Good ROI on quality materials vs. cheap options.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Investment Range:</p>
+                        <p className="text-accent-600 font-bold text-xl">$13,000-$21,000</p>
+                        <p className="text-sm">1,800-2,500 sq ft homes, simpler roof lines = lower costs</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Lake Georgetown Estates */}
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-teal-500">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">Lake Georgetown Estates & Waterfront Properties</h3>
+                    <div className="grid md:grid-cols-2 gap-4 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Premium Location:</p>
+                        <p className="mb-3">Homes near Lake Georgetown with water views and access. Mix of ages from 1980s to new construction. Higher property values. Some luxury custom homes. Rural water district area.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Unique Considerations:</p>
+                        <ul className="list-disc pl-5 space-y-1">
+                          <li>Higher wind exposure near lake (need strong wind rating)</li>
+                          <li>Humidity from lake can accelerate algae/moss growth</li>
+                          <li>Some properties have limited access (narrow roads)</li>
+                          <li>Larger lots = more distance from neighbors during work</li>
+                          <li>Custom homes may have complex architecture</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Recommended Materials:</p>
+                        <p className="mb-3">Impact-resistant shingles with high wind rating (130+ mph). Algae-resistant crucial for lake humidity. Premium appearance to match property values.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Cost Range:</p>
+                        <p className="text-accent-600 font-bold text-xl">$17,000-$35,000+</p>
+                        <p className="text-sm">Varies widely: standard homes to luxury waterfront estates</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-8 bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
+                  <p className="text-primary-900 font-semibold mb-2">💡 Georgetown Roofing Pro Tip:</p>
+                  <p className="text-primary-700">
+                    Georgetown sits directly in "Hail Alley's" most dangerous zone. The March 2024 storm that damaged thousands of Georgetown roofs is just the latest in a pattern of severe hailstorms every 2-4 years. <strong>Impact-resistant shingles aren't optional here—they're essential.</strong> Sun City residents: Check with neighbors about storm damage before assuming your roof is fine. We offer free inspections to assess hail damage that's often invisible from the ground.
+                  </p>
+                </div>
+              </div>
+
+              {/* Georgetown Storm History */}
+              <div>
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Georgetown Storm History: Ground Zero for Texas Hailstorms
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  Georgetown has the unfortunate distinction of being one of Texas's most hail-prone cities. Understanding this history is crucial for protecting your investment:
+                </p>
+
+                <div className="grid md:grid-cols-2 gap-6 mb-8">
+                  <div className="bg-white rounded-lg shadow-md p-6">
+                    <h3 className="text-xl font-bold text-primary-900 mb-4 flex items-center gap-2">
+                      <span className="text-2xl">🌩️</span> Major Georgetown Hailstorms (2015-2025)
+                    </h3>
+                    <div className="space-y-4">
+                      <div className="border-l-4 border-red-600 pl-4">
+                        <p className="font-bold text-primary-900">March 2024 - Catastrophic Damage</p>
+                        <p className="text-sm text-primary-700">Baseball to SOFTBALL-sized hail in parts of Georgetown. Considered one of the worst Georgetown hailstorms in decades. <strong>Virtually every roof in the storm's path was totaled.</strong> Sun City Texas, Berry Creek, and Wolf Ranch heavily impacted. $400M+ in Georgetown-area damage alone.</p>
+                      </div>
+                      <div className="border-l-4 border-orange-500 pl-4">
+                        <p className="font-bold text-primary-900">April 2021 - Direct Hit</p>
+                        <p className="text-sm text-primary-700">Supercell tracked directly over Georgetown with baseball-sized hail. This was the storm that damaged the Georgetown Square's historic buildings. Thousands of roofs replaced. Storm total: $200M+ across Williamson County.</p>
+                      </div>
+                      <div className="border-l-4 border-yellow-500 pl-4">
+                        <p className="font-bold text-primary-900">May 2019 - Widespread Event</p>
+                        <p className="text-sm text-primary-700">Golf ball to baseball hail across Georgetown. Sun City Texas particularly hard-hit. Many homeowners got their first replacement roofs from this storm. Overwhelming insurance claims led to adjuster delays.</p>
+                      </div>
+                      <div className="border-l-4 border-blue-500 pl-4">
+                        <p className="font-bold text-primary-900">March 2016 - $1.4B Regional Disaster</p>
+                        <p className="text-sm text-primary-700">Part of the $1.4 billion hailstorm that devastated Central Texas. Georgetown received softball-sized hail in some areas. Entire neighborhoods needed roof replacements. Changed Georgetown's roofing landscape forever.</p>
+                      </div>
+                      <div className="border-l-4 border-purple-500 pl-4">
+                        <p className="font-bold text-primary-900">Pattern Recognition: Every 2-4 Years</p>
+                        <p className="text-sm text-primary-700">Georgetown experiences a major (roof-totaling) hailstorm approximately every 2-4 years. Minor hail events happen multiple times per year. If you have standard shingles, it's not "if" but "when" you'll need a claim.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-lg shadow-md p-6">
+                    <h3 className="text-xl font-bold text-primary-900 mb-4 flex items-center gap-2">
+                      <span className="text-2xl">📊</span> Georgetown Hail Statistics
+                    </h3>
+                    <div className="space-y-4">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Why Is Georgetown Hit So Hard?</p>
+                        <p className="text-sm text-primary-700 mb-2">Georgetown sits at the perfect latitude where warm, moist air from the Gulf of Mexico collides with cold, dry air from the north. The I-35 corridor creates a natural "hail highway." Storm systems frequently strengthen as they move north from Austin through Georgetown.</p>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Peak Hail Season: March - May</p>
+                        <p className="text-sm text-primary-700 mb-2">80% of Georgetown's damaging hail occurs in spring. April is statistically the most dangerous month.</p>
+                        <div className="bg-primary-50 p-3 rounded">
+                          <p className="text-xs font-semibold text-primary-900 mb-1">Monthly Risk Distribution:</p>
+                          <p className="text-xs text-primary-700">March: 25% • April: 35% • May: 20% • Other: 20%</p>
+                        </div>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Expected Hail Frequency in Georgetown:</p>
+                        <div className="space-y-2 text-sm">
+                          <div className="flex justify-between items-center">
+                            <span className="text-primary-700">Pea-sized (1/4") - Cosmetic only</span>
+                            <span className="font-bold text-primary-900">6-10x per year</span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span className="text-primary-700">Quarter-sized (1") - Minor damage</span>
+                            <span className="font-bold text-primary-900">3-5x per year</span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span className="text-primary-700">Golf ball (1.75") - Major damage</span>
+                            <span className="font-bold text-accent-600">1-2x per year</span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span className="text-primary-700">Baseball (2.75") - Roof totaled</span>
+                            <span className="font-bold text-red-600">Every 2-4 years</span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span className="text-primary-700">Softball (4") - Catastrophic</span>
+                            <span className="font-bold text-red-600">Every 5-10 years</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="bg-red-50 border-l-4 border-red-500 p-3 rounded">
+                        <p className="text-xs font-bold text-red-900 mb-1">⚠️ Georgetown Reality Check:</p>
+                        <p className="text-xs text-red-800">If you have standard (non-impact-resistant) shingles in Georgetown, expect to file an insurance claim every 8-12 years on average. Impact-resistant shingles significantly extend this timeline and save you deductible costs.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-accent-50 to-blue-50 rounded-lg p-6">
+                  <h3 className="text-xl font-bold text-primary-900 mb-4">Protecting Your Georgetown Home from Hail Damage</h3>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <p className="font-semibold text-primary-900 mb-2">✅ Before Storm Season (Do Now):</p>
+                      <ul className="text-sm text-primary-700 space-y-1">
+                        <li>• <strong>Install Class 4 impact-resistant shingles</strong> - Non-negotiable in Georgetown</li>
+                        <li>• Document current roof condition with photos (for future claims)</li>
+                        <li>• Review insurance policy - know your deductible and coverage</li>
+                        <li>• Trim tree branches away from roof (10+ feet clearance)</li>
+                        <li>• Sign up for Williamson County severe weather alerts</li>
+                        <li>• Save our number: (512) 763-5277 for post-storm inspections</li>
+                        <li>• Talk to neighbors about past storm damage patterns</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-primary-900 mb-2">⚠️ After a Georgetown Hailstorm:</p>
+                      <ul className="text-sm text-primary-700 space-y-1">
+                        <li>• <strong>Inspect within 1-2 weeks</strong> - damage may not be immediately visible</li>
+                        <li>• Check gutters for granule accumulation (sign of damage)</li>
+                        <li>• Look for dents on metal (mailbox, AC unit, vents)</li>
+                        <li>• Call us for FREE professional roof inspection - we climb up</li>
+                        <li>• <strong>Don't wait</strong> - after major Georgetown storms, we're booked weeks out</li>
+                        <li>• Document everything with photos from ground level</li>
+                        <li>• File insurance claim promptly (most policies: 1 year deadline)</li>
+                        <li>• Have us present at adjuster meeting (crucial for proper scope)</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Best Roofing Materials for Georgetown */}
+              <div>
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Best Roofing Materials for Georgetown (Hail Protection Essential)
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  In Georgetown, material selection isn't about style preferences—it's about survival. Here's what works in one of Texas's most hail-prone cities:
+                </p>
+
+                <div className="space-y-6">
+                  {/* #1 Recommendation */}
+                  <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg p-6 border-2 border-green-500">
+                    <div className="flex items-start gap-3 mb-4">
+                      <span className="text-3xl">🏆</span>
+                      <div>
+                        <h3 className="text-2xl font-bold text-primary-900">#1 ONLY Choice: Class 4 Impact-Resistant Shingles</h3>
+                        <p className="text-accent-600 font-semibold">Not Optional in Georgetown - This Is Insurance Protection</p>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-red-50 border-l-4 border-red-500 p-4 mb-6">
+                      <p className="font-bold text-red-900 mb-2">⚠️ Georgetown Reality: Standard Shingles WILL Fail</p>
+                      <p className="text-sm text-red-800">Installing standard (non-impact-resistant) shingles in Georgetown is financial negligence. You'll pay your $2,500-$5,000 deductible every 8-12 years, lose home protection during repairs, and deal with insurance claims repeatedly. Impact-resistant shingles are the ONLY smart choice.</p>
+                    </div>
+
+                    <div className="grid md:grid-cols-3 gap-6 mb-6">
+                      <div className="bg-white rounded p-4">
+                        <p className="font-bold text-primary-900 mb-2">Best: CertainTeed Landmark Pro IR</p>
+                        <ul className="text-sm text-primary-700 space-y-1">
+                          <li>• Class 4 UL 2218 impact rating</li>
+                          <li>• Survives baseball-sized hail</li>
+                          <li>• 130 mph wind resistance</li>
+                          <li>• Proven in Georgetown storms</li>
+                          <li>• 50-year warranty</li>
+                          <li>• 15-35% insurance discount</li>
+                        </ul>
+                        <p className="text-accent-600 font-bold mt-3">$14,500-$21,000</p>
+                        <p className="text-xs text-primary-600">(2,000 sq ft Georgetown home)</p>
+                      </div>
+                      <div className="bg-white rounded p-4">
+                        <p className="font-bold text-primary-900 mb-2">Excellent: GAF Timberline HDZ IR</p>
+                        <ul className="text-sm text-primary-700 space-y-1">
+                          <li>• Class 4 impact-rated</li>
+                          <li>• LayerLock technology</li>
+                          <li>• 130 mph wind warranty</li>
+                          <li>• Widely available</li>
+                          <li>• 50-year limited warranty</li>
+                          <li>• 10-35% insurance savings</li>
+                        </ul>
+                        <p className="text-accent-600 font-bold mt-3">$15,000-$22,000</p>
+                        <p className="text-xs text-primary-600">(2,000 sq ft Georgetown home)</p>
+                      </div>
+                      <div className="bg-white rounded p-4">
+                        <p className="font-bold text-primary-900 mb-2">Premium: Owens Corning Duration Storm</p>
+                        <ul className="text-sm text-primary-700 space-y-1">
+                          <li>• Class 4 UL 2218 rated</li>
+                          <li>• SureNail Technology</li>
+                          <li>• 130 mph wind resistance</li>
+                          <li>• TruDefinition color</li>
+                          <li>• 50-year non-prorated warranty</li>
+                          <li>• Maximum insurance discounts</li>
+                        </ul>
+                        <p className="text-accent-600 font-bold mt-3">$15,500-$23,000</p>
+                        <p className="text-xs text-primary-600">(2,000 sq ft Georgetown home)</p>
+                      </div>
+                    </div>
+
+                    <div className="bg-white rounded-lg p-4 border-l-4 border-green-600">
+                      <p className="font-bold text-primary-900 mb-2">💰 Impact-Resistant ROI in Georgetown (Real Numbers):</p>
+                      <div className="grid md:grid-cols-2 gap-4 text-sm text-primary-700">
+                        <div>
+                          <p className="font-semibold text-primary-900 mb-1">Standard Shingles Path (DON'T DO THIS):</p>
+                          <ul className="space-y-1">
+                            <li>• Initial cost: $11,000-$14,000 (seems cheaper)</li>
+                            <li>• Insurance: $3,000/year, no discount</li>
+                            <li>• File claim every 10 years: Pay $3,000 deductible each time</li>
+                            <li>• Over 30 years: $11k initial + $90k insurance + $9k deductibles (3 claims) = <strong className="text-red-600">$110,000 total</strong></li>
+                            <li>• Plus: Hassle of 3 roof replacements, temp loss of protection</li>
+                          </ul>
+                        </div>
+                        <div>
+                          <p className="font-semibold text-primary-900 mb-1">Impact-Resistant Path (SMART CHOICE):</p>
+                          <ul className="space-y-1">
+                            <li>• Initial cost: $15,000-$20,000 (pays for itself)</li>
+                            <li>• Insurance: $3,000/year, minus 20% ($600/year savings)</li>
+                            <li>• File claim every 20-30 years: Pay $3,000 deductible once (maybe)</li>
+                            <li>• Over 30 years: $17k initial + $72k insurance + $3k deductible (1 claim) = <strong className="text-green-600">$92,000 total</strong></li>
+                            <li>• Savings: <strong className="text-green-600">$18,000 + peace of mind + only 1 replacement</strong></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Metal Roofing */}
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-gray-600">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">Alternative: Standing Seam Metal Roofing</h3>
+                    <p className="text-primary-700 mb-4">Popular among Georgetown homeowners who never want to deal with hail claims again.</p>
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">✅ Why Georgetown Homeowners Choose Metal:</p>
+                        <ul className="text-sm text-primary-700 space-y-1">
+                          <li>• <strong>Ultimate hail resistance</strong> - may dent but never punctures</li>
+                          <li>• <strong>50-70 year lifespan</strong> - install once, never replace</li>
+                          <li>• <strong>Survives softball hail</strong> - proven in Georgetown's worst storms</li>
+                          <li>• 140+ mph wind rating (tornado resistant)</li>
+                          <li>• 20-30% cooling cost savings (reflects Texas heat)</li>
+                          <li>• Environmentally friendly (100% recyclable)</li>
+                          <li>• Adds significant home resale value</li>
+                          <li>• Never need to file hail claims again</li>
+                        </ul>
+                        <p className="text-accent-600 font-bold mt-4 text-xl">$25,000-$45,000</p>
+                        <p className="text-sm text-primary-600">(2,000 sq ft Georgetown home, standing seam)</p>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">⚠️ Considerations for Georgetown:</p>
+                        <ul className="text-sm text-primary-700 space-y-1">
+                          <li>• Higher upfront cost (2-3x impact shingles)</li>
+                          <li>• HOA restrictions in Sun City, Berry Creek (check first)</li>
+                          <li>• Limited color options vs shingles</li>
+                          <li>• Can be noisy during hailstorms (louder than shingles)</li>
+                          <li>• Requires specialized installation expertise</li>
+                          <li>• Best for simple roof lines (complex = expensive)</li>
+                        </ul>
+                        <p className="font-semibold text-primary-900 mt-4 mb-1">Best For:</p>
+                        <p className="text-sm text-primary-700">Homeowners planning to stay 20+ years, sick of filing claims, wanting ultimate protection, non-HOA areas or HOA-approved communities, simple roof lines, eco-conscious buyers.</p>
+                        <p className="font-semibold text-primary-900 mt-3 mb-1">ROI Timeline:</p>
+                        <p className="text-sm text-primary-700">If you file 2 insurance claims over 30 years ($6k in deductibles) plus save 20% on insurance ($600/year × 30 = $18k), metal roofing pays the difference in 20-25 years. Plus you never deal with roofing again.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Materials to Avoid */}
+                  <div className="bg-red-50 rounded-lg p-6 border-l-4 border-red-500">
+                    <h3 className="text-xl font-bold text-primary-900 mb-3">❌ Materials to ABSOLUTELY AVOID in Georgetown</h3>
+                    <div className="grid md:grid-cols-2 gap-4">
+                      <div>
+                        <p className="font-bold text-primary-900 mb-2">Standard 3-Tab or Basic Architectural Shingles</p>
+                        <p className="text-sm text-primary-700 mb-2"><strong>Why this is a mistake:</strong> Zero hail protection - will fail in first major Georgetown storm. Only 15-20 year lifespan before first claim. No insurance discounts. You'll pay $3k-$5k deductible every 8-12 years.</p>
+                        <p className="text-sm font-bold text-red-800">In Georgetown, these are only $2k-$3k cheaper than impact-resistant shingles. You'll lose that savings in your FIRST insurance deductible, then keep losing money with every future storm. Don't be penny-wise and pound-foolish.</p>
+                      </div>
+                      <div>
+                        <p className="font-bold text-primary-900 mb-2">Concrete or Clay Tile</p>
+                        <p className="text-sm text-primary-700"><strong>Why avoid in Georgetown:</strong> Tiles crack and break from Georgetown's baseball/softball hail. Very expensive to replace individual tiles ($500+ per tile). Heavy (requires structural reinforcement). Limited contractors who work with tile. Long lead times for replacement tiles during post-storm rush. Not worth the hassle in hail-prone Georgetown.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Color Guide */}
+                  <div className="bg-blue-50 rounded-lg p-6">
+                    <h3 className="text-xl font-bold text-primary-900 mb-4">🎨 Most Popular Georgetown Roof Colors</h3>
+                    <p className="text-sm text-primary-700 mb-4">Georgetown homeowners prefer earth tones and neutrals. Sun City and HOA communities have approved color lists:</p>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                      <div className="bg-white p-3 rounded text-center">
+                        <div className="w-full h-16 bg-amber-700 rounded mb-2"></div>
+                        <p className="font-semibold text-xs text-primary-900">Weathered Wood</p>
+                        <p className="text-xs text-primary-600">#1 in Sun City</p>
+                      </div>
+                      <div className="bg-white p-3 rounded text-center">
+                        <div className="w-full h-16 bg-stone-600 rounded mb-2"></div>
+                        <p className="font-semibold text-xs text-primary-900">Driftwood</p>
+                        <p className="text-xs text-primary-600">Berry Creek Favorite</p>
+                      </div>
+                      <div className="bg-white p-3 rounded text-center">
+                        <div className="w-full h-16 bg-amber-800 rounded mb-2"></div>
+                        <p className="font-semibold text-xs text-primary-900">Mission Brown</p>
+                        <p className="text-xs text-primary-600">Traditional</p>
+                      </div>
+                      <div className="bg-white p-3 rounded text-center">
+                        <div className="w-full h-16 bg-gray-500 rounded mb-2"></div>
+                        <p className="font-semibold text-xs text-primary-900">Georgetown Gray</p>
+                        <p className="text-xs text-primary-600">Namesake Color</p>
+                      </div>
+                      <div className="bg-white p-3 rounded text-center">
+                        <div className="w-full h-16 bg-slate-700 rounded mb-2"></div>
+                        <p className="font-semibold text-xs text-primary-900">Charcoal</p>
+                        <p className="text-xs text-primary-600">Modern Homes</p>
+                      </div>
+                      <div className="bg-white p-3 rounded text-center">
+                        <div className="w-full h-16 bg-gray-400 rounded mb-2"></div>
+                        <p className="font-semibold text-xs text-primary-900">Pewter Gray</p>
+                        <p className="text-xs text-primary-600">Contemporary</p>
+                      </div>
+                      <div className="bg-white p-3 rounded text-center">
+                        <div className="w-full h-16 bg-stone-300 rounded mb-2"></div>
+                        <p className="font-semibold text-xs text-primary-900">Oyster Gray</p>
+                        <p className="text-xs text-primary-600">Light Option</p>
+                      </div>
+                      <div className="bg-white p-3 rounded text-center">
+                        <div className="w-full h-16 bg-slate-800 rounded mb-2"></div>
+                        <p className="font-semibold text-xs text-primary-900">Colonial Slate</p>
+                        <p className="text-xs text-primary-600">Historic Downtown</p>
+                      </div>
+                    </div>
+                    <p className="text-xs text-primary-600 mt-4 text-center">Sun City & HOA communities: Always verify color approval before ordering. We handle HOA submissions.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Georgetown Roof Replacement Costs */}
+              <div>
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Georgetown Roof Replacement Costs: Complete Pricing Guide
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  Georgetown roof replacement costs are competitive with Round Rock, with Sun City Texas homes often on the lower end due to simpler designs:
+                </p>
+
+                <div className="space-y-4 mb-8">
+                  <div className="border-l-4 border-blue-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">1,500-2,000 sq ft Home (Most Sun City Homes)</p>
+                        <p className="text-sm text-primary-700">Typical: Single-story, 2-3 bed/2 bath, simple roof, 18-24 squares, easy access - Sun City standard</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$10,500-$16,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-green-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">2,000-2,500 sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: 3-4 bed/2-3 bath, moderate complexity, 24-28 squares - Wolf Ranch, Westinghouse standard</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$14,000-$21,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-purple-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">2,500-3,000 sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: 4-bed/3-bath two-story, increased complexity, 28-35 squares - Berry Creek, larger Wolf Ranch homes</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$17,000-$25,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-red-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">3,000-4,000 sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: 4-5 bed/3-4 bath, complex roof, 35-45 squares - Berry Creek custom homes, Lake Georgetown estates</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$21,000-$33,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-amber-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">4,000+ sq ft Luxury Home</p>
+                        <p className="text-sm text-primary-700">Typical: Luxury estates, highly complex roofs, 45+ squares - Lake Georgetown waterfront, Berry Creek luxury</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$30,000-$60,000+</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded mb-8">
+                  <p className="font-bold text-primary-900 mb-2">💡 Sun City Texas Homeowners: Important Pricing Notes</p>
+                  <p className="text-sm text-primary-700 mb-3">Sun City homes typically fall in the $10,500-$16,000 range due to:</p>
+                  <ul className="text-sm text-primary-700 space-y-1">
+                    <li>• Single-story construction (safer, faster installation = lower labor)</li>
+                    <li>• Simple roof lines (most are basic gable or hip roofs)</li>
+                    <li>• Smaller square footage (1,500-2,200 sq ft typical)</li>
+                    <li>• Easy access (wide streets, driveways, no obstacles)</li>
+                    <li>• Neighborhood pricing (we often work multiple homes = discounts)</li>
+                  </ul>
+                  <p className="text-sm text-primary-700 mt-3"><strong>After storms:</strong> When we're working 10+ homes in Sun City, we offer volume pricing. Ask neighbors if they're getting quotes too!</p>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-6 mb-8">
+                  <div className="bg-red-50 rounded-lg p-6 border-l-4 border-red-500">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">📈 What INCREASES Cost in Georgetown</h3>
+                    <ul className="space-y-2 text-sm text-primary-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+15-25%</span>
+                        <span><strong>Steep pitch roofs</strong> (safety equipment, slower work - some Berry Creek homes)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+15-30%</span>
+                        <span><strong>Complex roof lines</strong> (multiple valleys, dormers - Berry Creek custom homes)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+20-35%</span>
+                        <span><strong>Two-story homes</strong> (requires more safety setup - Wolf Ranch, newer developments)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+$2k-5k</span>
+                        <span><strong>Decking repairs</strong> (common in Historic Downtown, older Shell Rock/Westinghouse homes)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+100-200%</span>
+                        <span><strong>Metal roofing upgrade</strong> ($25k-$45k vs $14k-$21k for shingles)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+$400-800</span>
+                        <span><strong>Georgetown permits</strong> (required for all replacements, HOA fees separate)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+$500-1k</span>
+                        <span><strong>Tree management</strong> (trimming, protection - Berry Creek, Lake Georgetown)</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-green-50 rounded-lg p-6 border-l-4 border-green-500">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">📉 What DECREASES Cost in Georgetown</h3>
+                    <ul className="space-y-2 text-sm text-primary-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Single-story home</strong> (Most Sun City homes - easier access = 20-30% savings)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Simple gable or hip roof</strong> (Standard Sun City, Wolf Ranch production homes)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Low to moderate pitch</strong> (Faster installation, less safety equipment)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Good existing decking</strong> (Newer homes in Wolf Ranch, Sun City)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Insurance claim coverage</strong> (Pay deductible only - $1k-$3k total cost)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Neighborhood group pricing</strong> (Working multiple Georgetown homes = volume discounts)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Easy property access</strong> (Wide Georgetown streets, good driveway access)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-accent-50 to-blue-50 rounded-lg p-6">
+                  <h3 className="text-xl font-bold text-primary-900 mb-4">💡 6 Ways Georgetown Homeowners Save on Roof Replacement</h3>
+                  <div className="grid md:grid-cols-2 gap-4 text-sm text-primary-700">
+                    <div>
+                      <p className="font-bold text-primary-900 mb-1">1. File Insurance Claims (Most Important)</p>
+                      <p className="mb-3">Given Georgetown's hail frequency, MOST roof replacements should be insurance claims. If you have storm damage, insurance covers 100% minus deductible ($1k-$3k). We handle the entire claims process and adjuster meetings. This is how 80% of Georgetown roofs get replaced.</p>
+                      
+                      <p className="font-bold text-primary-900 mb-1">2. Coordinate with Neighbors (Sun City Especially)</p>
+                      <p className="mb-3">When we're replacing 5-10 roofs in one Sun City neighborhood, we offer group pricing. One dumpster delivery, one material order, one crew mobilization = 10-15% savings per home. After storms, organize your street!</p>
+                      
+                      <p className="font-bold text-primary-900 mb-1">3. Choose Impact-Resistant for Insurance Discounts</p>
+                      <p className="mb-3">Yes, $3k-$5k more upfront, but saves $400-$600/year on insurance (15-25% discount). Pays for itself in 6-10 years. Plus longer lifespan and survives Georgetown's hail. Essential investment here.</p>
+                    </div>
+                    <div>
+                      <p className="font-bold text-primary-900 mb-1">4. Bundle Services</p>
+                      <p className="mb-3">Replace gutters, install gutter guards, or add attic ventilation simultaneously for 10-15% savings vs doing separately. One mobilization = lower total cost.</p>
+                      
+                      <p className="font-bold text-primary-900 mb-1">5. Time It Right (If Not Insurance Claim)</p>
+                      <p className="mb-3">Fall/winter (October-February) are slower seasons. We may offer flexibility or small discounts. Avoid June-August when Georgetown's busiest after spring storms.</p>
+                      
+                      <p className="font-bold text-primary-900 mb-1">6. 0% Financing Available</p>
+                      <p className="mb-3">We offer 0% financing for 12-18 months through approved lenders. Spread the cost into manageable monthly payments. Especially helpful for Sun City retirees on fixed income. Ask about current promotions.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-6 bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
+                  <p className="text-primary-900 font-semibold mb-2">📞 Get Your Exact Georgetown Roof Replacement Cost</p>
+                  <p className="text-primary-700">
+                    These are estimates. Your actual cost depends on your specific home, neighborhood, and current conditions. We provide <strong>FREE inspections</strong> and detailed written quotes. Sun City homeowners: We're in your community weekly—ask your neighbors about us! Call <strong>(512) 763-5277</strong> or schedule online for your personalized Georgetown roof replacement estimate.
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+
           {/* FAQ Section - Full Width */}
           <div className="mt-16">
             <LocationFAQ city={location.city} />
