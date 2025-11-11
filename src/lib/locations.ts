@@ -91,6 +91,7 @@ export const LOCATIONS: LocationData[] = [
     zip: '78626',
     county: 'Williamson County',
     metroArea: 'Austin-Round Rock Metro',
+    heroImage: '/images/locations/georgetown-hero.jpg',
     neighborhoods: [
       'Sun City Texas',
       'Berry Creek',
@@ -122,6 +123,7 @@ export const LOCATIONS: LocationData[] = [
     zip: '78201',
     county: 'Bexar County',
     metroArea: 'Greater San Antonio',
+    heroImage: '/images/locations/san-antonio-hero.jpg',
     neighborhoods: [
       'Alamo Heights',
       'Stone Oak',
@@ -157,6 +159,7 @@ export const LOCATIONS: LocationData[] = [
     zip: '76541',
     county: 'Bell County',
     metroArea: 'Killeen-Temple Metro',
+    heroImage: '/images/locations/killeen-hero.jpg',
     neighborhoods: [
       'Fort Cavazos Area',
       'Clear Creek',
@@ -399,6 +402,7 @@ export const LOCATIONS: LocationData[] = [
     zip: '76522',
     county: 'Coryell County',
     metroArea: 'Killeen-Temple Metro',
+    heroImage: '/images/locations/copperas-cove-hero.jpg',
     neighborhoods: [
       'Fairview Heights',
       'Ogletree Gap',
