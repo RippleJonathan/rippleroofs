@@ -778,6 +778,644 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
             </div>
           )}
 
+          {/* Austin-specific deep content */}
+          {location.slug === 'austin' && (
+            <div className="space-y-16 mt-16">
+              {/* Austin Neighborhoods Deep Dive */}
+              <div>
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Austin Neighborhoods: Your Complete Roofing Guide by Area
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  Austin's diverse neighborhoods—from historic Hyde Park to luxury Westlake Hills—each have unique roofing considerations. Here's what homeowners need to know about roofing in Austin's most popular areas:
+                </p>
+
+                <div className="space-y-8">
+                  {/* Downtown Austin & High-Rises */}
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-accent-500">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">Downtown Austin & Urban Core</h3>
+                    <div className="grid md:grid-cols-2 gap-4 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Building Types:</p>
+                        <p className="mb-3">Mostly condos, townhomes, and commercial buildings. Flat roofs, modified bitumen, TPO, and EPDM dominate. Limited single-family homes with traditional pitched roofs.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Common Roofing Issues:</p>
+                        <ul className="list-disc pl-5 space-y-1">
+                          <li>Flat roof ponding and drainage problems</li>
+                          <li>Urban heat island effect (roofs 15-20°F hotter)</li>
+                          <li>AC unit vibration damage on flat roofs</li>
+                          <li>Limited access for repairs and replacements</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Best Solutions:</p>
+                        <p className="mb-3">TPO or PVC for flat roofs (reflective, energy-efficient). Metal standing seam for townhomes. Regular drainage maintenance critical.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Typical Costs:</p>
+                        <p className="text-accent-600 font-bold text-xl">$15,000-$35,000</p>
+                        <p className="text-sm">(Varies widely by building type and access)</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* South Congress & East Austin */}
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-blue-500">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">South Congress (SoCo) & East Austin</h3>
+                    <div className="grid md:grid-cols-2 gap-4 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Build Era & Style:</p>
+                        <p className="mb-3">1920s-1950s bungalows and cottages being renovated alongside new modern builds. Mix of historic and contemporary architecture. Many homes being flipped or renovated.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Common Issues:</p>
+                        <ul className="list-disc pl-5 space-y-1">
+                          <li>Aging roofs (30-40 years old) on original homes</li>
+                          <li>Historic district regulations in some areas</li>
+                          <li>Decking rot from old leaks</li>
+                          <li>Large trees causing debris and moisture</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Best Materials:</p>
+                        <p className="mb-3">Architectural shingles (designer colors for curb appeal). Metal roofing popular on renovations. Impact-resistant for hail protection.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Typical Costs:</p>
+                        <p className="text-accent-600 font-bold text-xl">$12,000-$22,000</p>
+                        <p className="text-sm">Plus $2,000-$5,000 for decking repairs (common on older homes)</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Hyde Park & North Loop */}
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-green-500">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">Hyde Park, North Loop & Allandale</h3>
+                    <div className="grid md:grid-cols-2 gap-4 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Character & Age:</p>
+                        <p className="mb-3">Historic neighborhoods with 1920s-1940s homes near UT campus. Mature tree canopy, charming architecture, strong neighborhood character. Many homes on historic register.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Roofing Considerations:</p>
+                        <ul className="list-disc pl-5 space-y-1">
+                          <li>Historic preservation requirements (some streets)</li>
+                          <li>Extensive tree coverage = algae and moss growth</li>
+                          <li>Smaller homes but complex roof lines</li>
+                          <li>Original decking often needs replacement</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Recommended Materials:</p>
+                        <p className="mb-3">Architectural shingles in traditional colors (to match neighborhood character). Algae-resistant shingles essential. Metal on some renovations if approved.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Investment Range:</p>
+                        <p className="text-accent-600 font-bold text-xl">$14,000-$25,000</p>
+                        <p className="text-sm">Higher costs due to tree management and historic considerations</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Westlake Hills & Tarrytown */}
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-purple-500">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">Westlake Hills, Tarrytown & Luxury Areas</h3>
+                    <div className="grid md:grid-cols-2 gap-4 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Premium Market:</p>
+                        <p className="mb-3">Austin's most exclusive neighborhoods with luxury homes ranging from $1M-$10M+. Large homes (4,000-8,000+ sq ft), complex architecture, premium materials expected.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Roofing Characteristics:</p>
+                        <ul className="list-disc pl-5 space-y-1">
+                          <li>Extremely complex roof lines with multiple levels</li>
+                          <li>Premium materials: designer shingles, slate, tile, copper</li>
+                          <li>Strict HOA architectural guidelines</li>
+                          <li>Lake views requiring precise color matching</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Top Material Choices:</p>
+                        <p className="mb-3">CertainTeed Grand Manor (luxury shingles). Standing seam metal in charcoal or copper. Concrete tile on Mediterranean styles. All Class 4 impact-rated.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Luxury Home Investment:</p>
+                        <p className="text-accent-600 font-bold text-xl">$40,000-$100,000+</p>
+                        <p className="text-sm">Premium materials, complex architecture, high-end finishes</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Mueller & New Developments */}
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-amber-500">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">Mueller, Domain Area & New Developments</h3>
+                    <div className="grid md:grid-cols-2 gap-4 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Modern Development:</p>
+                        <p className="mb-3">Built 2000s-present with modern construction standards. Energy-efficient designs, planned communities, strong HOAs, mixed residential-commercial.</p>
+                        <p className="font-semibold text-primary-900 mb-2">New Construction Roofing:</p>
+                        <ul className="list-disc pl-5 space-y-1">
+                          <li>Most homes still under builder warranty (10-20 years)</li>
+                          <li>Modern shingles with good ratings installed</li>
+                          <li>Proper ventilation and modern techniques used</li>
+                          <li>First replacements coming up (2025-2035)</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">When Replacement Needed:</p>
+                        <p className="mb-3">Impact-resistant architectural shingles. Metal roofing for modern aesthetics. Ensure HOA color approval before ordering.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Future Costs (2025-2035):</p>
+                        <p className="text-accent-600 font-bold text-xl">$18,000-$32,000</p>
+                        <p className="text-sm">These homes typically 2,500-3,500 sq ft with moderate complexity</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Zilker & Central Austin */}
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-red-500">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">Zilker, Barton Hills & Central Austin</h3>
+                    <div className="grid md:grid-cols-2 gap-4 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Neighborhood Vibe:</p>
+                        <p className="mb-3">Mid-century homes (1950s-1970s) near Zilker Park and Barton Springs. Mix of original owners and young professionals renovating. High property values despite older homes.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Roofing Challenges:</p>
+                        <ul className="list-disc pl-5 space-y-1">
+                          <li>Original roofs 40-50+ years old (past life expectancy)</li>
+                          <li>Ranch-style simple roof lines (lower cost)</li>
+                          <li>Flash flooding in low-lying areas</li>
+                          <li>Mature trees providing shade but dropping debris</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Smart Choices:</p>
+                        <p className="mb-3">Architectural shingles in earth tones. Algae-resistant essential. Impact-resistant for hail protection and insurance discounts. Good ventilation for Texas heat.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Typical Investment:</p>
+                        <p className="text-accent-600 font-bold text-xl">$15,000-$24,000</p>
+                        <p className="text-sm">Ranch homes = simpler roofs = lower costs</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-8 bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
+                  <p className="text-primary-900 font-semibold mb-2">💡 Austin Roofing Pro Tip:</p>
+                  <p className="text-primary-700">
+                    Austin's diverse neighborhoods mean roofing costs and requirements vary significantly. Historic districts may require approval, luxury areas demand premium materials, and newer developments have HOA restrictions. We help you navigate these requirements while getting the best roof for your specific Austin location. <strong>Schedule a free inspection to get a detailed quote for your neighborhood.</strong>
+                  </p>
+                </div>
+              </div>
+
+              {/* Austin Storm History & Hail Damage Patterns */}
+              <div>
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Austin Storm History: What Every Homeowner Should Know
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  Austin sits in "Hail Alley"—experiencing severe storms with large hail regularly. Understanding Austin's storm patterns helps you protect your investment and know when to file insurance claims.
+                </p>
+
+                <div className="grid md:grid-cols-2 gap-6 mb-8">
+                  <div className="bg-white rounded-lg shadow-md p-6">
+                    <h3 className="text-xl font-bold text-primary-900 mb-4 flex items-center gap-2">
+                      <span className="text-2xl">🌩️</span> Major Austin Hailstorms (2015-2025)
+                    </h3>
+                    <div className="space-y-4">
+                      <div className="border-l-4 border-red-600 pl-4">
+                        <p className="font-bold text-primary-900">March 2024 - Widespread Damage Event</p>
+                        <p className="text-sm text-primary-700">Golf ball to baseball-sized hail across North Austin, Pflugerville, and Round Rock. Downtown and Central Austin received quarter to golf ball hail. <strong>Estimated $300M+ in insured losses.</strong> Thousands of roofs damaged.</p>
+                      </div>
+                      <div className="border-l-4 border-orange-500 pl-4">
+                        <p className="font-bold text-primary-900">May 2022 - South Austin Storm</p>
+                        <p className="text-sm text-primary-700">Severe storms brought golf ball hail to South Austin, Zilker, and Barton Hills. Wind gusts to 70 mph caused additional damage. Widespread power outages. Many roofs totaled.</p>
+                      </div>
+                      <div className="border-l-4 border-yellow-500 pl-4">
+                        <p className="font-bold text-primary-900">April 2021 - Cedar Park to Georgetown</p>
+                        <p className="text-sm text-primary-700">Supercell storm tracked from Cedar Park through Round Rock to Georgetown. Baseball-sized hail in some areas. Over $200M in property damage including roofs, vehicles, windows.</p>
+                      </div>
+                      <div className="border-l-4 border-blue-500 pl-4">
+                        <p className="font-bold text-primary-900">March 2016 - $1.4 Billion Catastrophic Event</p>
+                        <p className="text-sm text-primary-700">One of Texas' costliest hailstorms ever. Softball-sized hail in some areas. Entire neighborhoods needed roof replacements. This storm changed insurance rates across Austin metro.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-lg shadow-md p-6">
+                    <h3 className="text-xl font-bold text-primary-900 mb-4 flex items-center gap-2">
+                      <span className="text-2xl">📊</span> Austin Hail Frequency & Patterns
+                    </h3>
+                    <div className="space-y-4">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Peak Hail Season: March - May</p>
+                        <p className="text-sm text-primary-700 mb-2">75% of Austin's damaging hail events occur during spring months when warm, moist Gulf air collides with cold fronts from the north.</p>
+                        <div className="bg-primary-50 p-3 rounded">
+                          <p className="text-xs font-semibold text-primary-900 mb-1">Monthly Risk:</p>
+                          <p className="text-xs text-primary-700">March: 25% • April: 30% • May: 20% • June-Feb: 25%</p>
+                        </div>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Geographic Hot Spots in Austin:</p>
+                        <ul className="text-sm text-primary-700 space-y-1">
+                          <li>• <strong>North Austin</strong> (Domain, Arboretum) - Highest hail frequency</li>
+                          <li>• <strong>Round Rock corridor</strong> - Storm tracks commonly pass through</li>
+                          <li>• <strong>East Austin</strong> - Moderate frequency, wind damage also common</li>
+                          <li>• <strong>South Austin</strong> - Lower frequency but not immune</li>
+                          <li>• <strong>West Austin/Hills</strong> - Elevation provides some protection</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Expected Hail Frequency:</p>
+                        <div className="space-y-2 text-sm">
+                          <div className="flex justify-between items-center">
+                            <span className="text-primary-700">Pea-sized (1/4") - Minor damage</span>
+                            <span className="font-bold text-primary-900">4-6x per year</span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span className="text-primary-700">Quarter-sized (1") - Noticeable</span>
+                            <span className="font-bold text-primary-900">2-3x per year</span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span className="text-primary-700">Golf ball (1.75") - Significant damage</span>
+                            <span className="font-bold text-accent-600">Every 2-3 years</span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span className="text-primary-700">Baseball (2.75") - Severe damage</span>
+                            <span className="font-bold text-red-600">Every 5-8 years</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-accent-50 to-blue-50 rounded-lg p-6">
+                  <h3 className="text-xl font-bold text-primary-900 mb-4">Protecting Your Austin Home from Storm Damage</h3>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <p className="font-semibold text-primary-900 mb-2">✅ Before Storm Season:</p>
+                      <ul className="text-sm text-primary-700 space-y-1">
+                        <li>• Install Class 4 impact-resistant shingles (10-35% insurance discount)</li>
+                        <li>• Trim tree branches within 10 feet of your roof</li>
+                        <li>• Document your roof's condition with photos (for future claims)</li>
+                        <li>• Review your homeowner's insurance policy and deductible</li>
+                        <li>• Sign up for severe weather alerts on your phone</li>
+                        <li>• Keep Ripple Roofing's number saved: (512) 763-5277</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-primary-900 mb-2">⚠️ After a Hailstorm:</p>
+                      <ul className="text-sm text-primary-700 space-y-1">
+                        <li>• Inspect for damage within 1-2 weeks (visible bruising appears gradually)</li>
+                        <li>• Document any damage with photos from ground level</li>
+                        <li>• Call us for a FREE professional inspection - we climb up and assess</li>
+                        <li>• File insurance claim if damage found (we help with this process)</li>
+                        <li>• Have a professional present at adjuster meeting (crucial for proper scope)</li>
+                        <li>• Don't wait - most policies require claims within 1 year of storm</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Best Roofing Materials for Austin */}
+              <div>
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Best Roofing Materials for Austin Homes
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  Austin's extreme heat, frequent hail, and intense UV exposure require specific roofing materials. Here's what performs best in our climate:
+                </p>
+
+                <div className="space-y-6">
+                  {/* #1 Recommendation */}
+                  <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg p-6 border-2 border-green-500">
+                    <div className="flex items-start gap-3 mb-4">
+                      <span className="text-3xl">🏆</span>
+                      <div>
+                        <h3 className="text-2xl font-bold text-primary-900">#1 Recommendation: Impact-Resistant Architectural Shingles</h3>
+                        <p className="text-accent-600 font-semibold">Best Value + Hail Protection for Austin Homeowners</p>
+                      </div>
+                    </div>
+                    
+                    <div className="grid md:grid-cols-3 gap-6 mb-6">
+                      <div className="bg-white rounded p-4">
+                        <p className="font-bold text-primary-900 mb-2">Top Product: CertainTeed Landmark Pro IR</p>
+                        <ul className="text-sm text-primary-700 space-y-1">
+                          <li>• Class 4 impact rating (highest)</li>
+                          <li>• Withstands baseball-sized hail</li>
+                          <li>• 130 mph wind resistance</li>
+                          <li>• Cool Roof Technology reflects heat</li>
+                          <li>• 50-year warranty</li>
+                          <li>• 20+ designer colors</li>
+                        </ul>
+                        <p className="text-accent-600 font-bold mt-3">$14,500-$21,000</p>
+                        <p className="text-xs text-primary-600">(2,000 sq ft home)</p>
+                      </div>
+                      <div className="bg-white rounded p-4">
+                        <p className="font-bold text-primary-900 mb-2">Runner-up: GAF Timberline HDZ IR</p>
+                        <ul className="text-sm text-primary-700 space-y-1">
+                          <li>• Class 4 impact rating</li>
+                          <li>• LayerLock technology</li>
+                          <li>• 130 mph wind warranty</li>
+                          <li>• Excellent heat resistance</li>
+                          <li>• 50-year limited warranty</li>
+                          <li>• Wide color selection</li>
+                        </ul>
+                        <p className="text-accent-600 font-bold mt-3">$15,000-$22,000</p>
+                        <p className="text-xs text-primary-600">(2,000 sq ft home)</p>
+                      </div>
+                      <div className="bg-white rounded p-4">
+                        <p className="font-bold text-primary-900 mb-2">Premium: Owens Corning Duration Storm</p>
+                        <ul className="text-sm text-primary-700 space-y-1">
+                          <li>• Class 4 UL 2218 rated</li>
+                          <li>• SureNail Technology</li>
+                          <li>• 130 mph wind resistance</li>
+                          <li>• TruDefinition color</li>
+                          <li>• 50-year non-prorated warranty</li>
+                          <li>• Austin's most popular colors</li>
+                        </ul>
+                        <p className="text-accent-600 font-bold mt-3">$15,500-$23,000</p>
+                        <p className="text-xs text-primary-600">(2,000 sq ft home)</p>
+                      </div>
+                    </div>
+
+                    <div className="bg-white rounded-lg p-4 border-l-4 border-green-600">
+                      <p className="font-bold text-primary-900 mb-2">💰 Why Impact-Resistant Shingles Are Worth It in Austin:</p>
+                      <div className="grid md:grid-cols-2 gap-4 text-sm text-primary-700">
+                        <div>
+                          <p className="font-semibold text-primary-900 mb-1">Insurance Savings:</p>
+                          <ul className="space-y-1">
+                            <li>• 10-35% discount on homeowner's insurance</li>
+                            <li>• Average Austin home insurance: $3,500/year</li>
+                            <li>• 15% discount = $525/year savings</li>
+                            <li>• Over 20 years = $10,500 total savings</li>
+                            <li>• Upgrade cost over standard: $3,000-$5,000</li>
+                            <li>• <strong>ROI: Pays for itself in 6-10 years!</strong></li>
+                          </ul>
+                        </div>
+                        <div>
+                          <p className="font-semibold text-primary-900 mb-1">Additional Benefits:</p>
+                          <ul className="space-y-1">
+                            <li>• Survives hailstorms that total standard roofs</li>
+                            <li>• Better heat reflection = lower cooling costs</li>
+                            <li>• Longer lifespan (50 years vs 20-25 years)</li>
+                            <li>• Higher home resale value</li>
+                            <li>• Peace of mind during storm season</li>
+                            <li>• Required by some Austin-area HOAs</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Metal Roofing Option */}
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-gray-600">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">Runner-Up: Standing Seam Metal Roofing</h3>
+                    <p className="text-primary-700 mb-4">Popular in Austin for modern homes, commercial buildings, and eco-conscious homeowners.</p>
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">✅ Pros for Austin Climate:</p>
+                        <ul className="text-sm text-primary-700 space-y-1">
+                          <li>• <strong>Exceptional hail resistance</strong> - dents but doesn't puncture</li>
+                          <li>• <strong>50-70 year lifespan</strong> - longest-lasting option</li>
+                          <li>• <strong>Reflects heat</strong> - 20-30% cooling cost savings</li>
+                          <li>• Fire-resistant (important for wildfires near Austin)</li>
+                          <li>• Environmentally friendly (100% recyclable)</li>
+                          <li>• Modern aesthetic popular in Mueller, East Austin</li>
+                          <li>• Withstands 140+ mph winds</li>
+                        </ul>
+                        <p className="text-accent-600 font-bold mt-4 text-xl">$25,000-$45,000</p>
+                        <p className="text-sm text-primary-600">(2,000 sq ft home, standing seam installation)</p>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">⚠️ Considerations:</p>
+                        <ul className="text-sm text-primary-700 space-y-1">
+                          <li>• Higher upfront cost (2-3x architectural shingles)</li>
+                          <li>• Some HOAs restrict metal roofing (especially in luxury neighborhoods)</li>
+                          <li>• Can be noisy during heavy rain/hail (usually not an issue with proper insulation)</li>
+                          <li>• Limited color options vs shingles</li>
+                          <li>• Requires specialized installation expertise</li>
+                          <li>• Not ideal for complex roof lines (installation challenges)</li>
+                        </ul>
+                        <p className="font-semibold text-primary-900 mt-4 mb-1">Best For:</p>
+                        <p className="text-sm text-primary-700">Modern homes, simple roof lines, eco-conscious homeowners, commercial buildings, and those planning to stay in home 20+ years.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Materials to Avoid */}
+                  <div className="bg-red-50 rounded-lg p-6 border-l-4 border-red-500">
+                    <h3 className="text-xl font-bold text-primary-900 mb-3">❌ Materials to AVOID in Austin</h3>
+                    <div className="grid md:grid-cols-2 gap-4">
+                      <div>
+                        <p className="font-bold text-primary-900 mb-2">3-Tab Shingles (Basic Shingles)</p>
+                        <p className="text-sm text-primary-700"><strong>Why avoid:</strong> Zero hail protection (fail in first major storm), only 15-20 year lifespan in Austin heat, no insurance discounts, minimal wind resistance, look cheap and hurt resale value. Only $1,000-$2,000 cheaper than architectural shingles—not worth the risk in Austin's hail zone.</p>
+                      </div>
+                      <div>
+                        <p className="font-bold text-primary-900 mb-2">Concrete & Clay Tile</p>
+                        <p className="text-sm text-primary-700"><strong>Why avoid in Austin:</strong> Very heavy (requires structural reinforcement = $$$), cracks and breaks from hail impacts, expensive to replace individual tiles, limited contractors who work with tile, overkill for Austin climate. Better suited for Florida or California. Not common in Austin neighborhoods.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Color Guide */}
+                  <div className="bg-blue-50 rounded-lg p-6">
+                    <h3 className="text-xl font-bold text-primary-900 mb-4">🎨 Most Popular Austin Roof Colors</h3>
+                    <p className="text-sm text-primary-700 mb-4">Austin homeowners tend toward earth tones and grays that complement Texas Hill Country aesthetics:</p>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                      <div className="bg-white p-3 rounded text-center">
+                        <div className="w-full h-16 bg-amber-700 rounded mb-2"></div>
+                        <p className="font-semibold text-xs text-primary-900">Weathered Wood</p>
+                        <p className="text-xs text-primary-600">#1 Most Popular</p>
+                      </div>
+                      <div className="bg-white p-3 rounded text-center">
+                        <div className="w-full h-16 bg-gray-400 rounded mb-2"></div>
+                        <p className="font-semibold text-xs text-primary-900">Pewter Gray</p>
+                        <p className="text-xs text-primary-600">Modern Homes</p>
+                      </div>
+                      <div className="bg-white p-3 rounded text-center">
+                        <div className="w-full h-16 bg-stone-600 rounded mb-2"></div>
+                        <p className="font-semibold text-xs text-primary-900">Driftwood</p>
+                        <p className="text-xs text-primary-600">Hill Country Style</p>
+                      </div>
+                      <div className="bg-white p-3 rounded text-center">
+                        <div className="w-full h-16 bg-slate-700 rounded mb-2"></div>
+                        <p className="font-semibold text-xs text-primary-900">Charcoal</p>
+                        <p className="text-xs text-primary-600">Contemporary</p>
+                      </div>
+                      <div className="bg-white p-3 rounded text-center">
+                        <div className="w-full h-16 bg-amber-800 rounded mb-2"></div>
+                        <p className="font-semibold text-xs text-primary-900">Mission Brown</p>
+                        <p className="text-xs text-primary-600">Traditional</p>
+                      </div>
+                      <div className="bg-white p-3 rounded text-center">
+                        <div className="w-full h-16 bg-gray-600 rounded mb-2"></div>
+                        <p className="font-semibold text-xs text-primary-900">Georgetown Gray</p>
+                        <p className="text-xs text-primary-600">Versatile</p>
+                      </div>
+                      <div className="bg-white p-3 rounded text-center">
+                        <div className="w-full h-16 bg-slate-800 rounded mb-2"></div>
+                        <p className="font-semibold text-xs text-primary-900">Onyx Black</p>
+                        <p className="text-xs text-primary-600">Bold Choice</p>
+                      </div>
+                      <div className="bg-white p-3 rounded text-center">
+                        <div className="w-full h-16 bg-stone-300 rounded mb-2"></div>
+                        <p className="font-semibold text-xs text-primary-900">Oyster Gray</p>
+                        <p className="text-xs text-primary-600">Light & Bright</p>
+                      </div>
+                    </div>
+                    <p className="text-xs text-primary-600 mt-4 text-center">Always check HOA requirements before ordering. We provide physical samples to view on your home.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Austin Roof Replacement Costs */}
+              <div>
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Austin Roof Replacement Costs: Complete Pricing Guide
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  Austin roof replacement costs vary based on home size, roof complexity, materials, and neighborhood. Here's what to expect:
+                </p>
+
+                <div className="space-y-4 mb-8">
+                  <div className="border-l-4 border-blue-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">1,500-2,000 sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: 3-bed/2-bath ranch or small two-story, simple roof, 18-24 squares, single story or simple two-story, minimal complexity</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$11,000-$16,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-green-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">2,000-2,500 sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: 3-4 bed/2-3 bath two-story, moderate complexity, 24-28 squares - most common Austin home size</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$15,000-$22,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-purple-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">2,500-3,000 sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: 4-bed/3-bath two-story, increased complexity, 28-35 squares, common in Mueller, suburbs</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$18,000-$26,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-red-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">3,000-4,000 sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: 4-5 bed/3-4 bath two-story, complex roof, 35-45 squares, common in Westlake, Tarrytown</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$22,000-$35,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-amber-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">4,000+ sq ft Luxury Home</p>
+                        <p className="text-sm text-primary-700">Typical: Luxury estates, highly complex roofs, 45+ squares, premium materials expected, Westlake Hills and luxury areas</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$35,000-$75,000+</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-6 mb-8">
+                  <div className="bg-red-50 rounded-lg p-6 border-l-4 border-red-500">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">📈 What INCREASES Cost</h3>
+                    <ul className="space-y-2 text-sm text-primary-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+15-25%</span>
+                        <span><strong>Steep pitch roofs</strong> (safety equipment, slower work, common in Hill Country-style homes)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+15-30%</span>
+                        <span><strong>Complex roof lines</strong> (multiple valleys, dormers, turrets - common in luxury neighborhoods)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+20-35%</span>
+                        <span><strong>Multiple stories</strong> (2-3 story homes require more safety setup and access challenges)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+$2k-5k</span>
+                        <span><strong>Decking repairs</strong> (common in Hyde Park, East Austin, and older South Austin homes)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+100-200%</span>
+                        <span><strong>Metal roofing upgrade</strong> ($25k-$45k vs $15k-$22k for shingles)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+$500-1k</span>
+                        <span><strong>Austin permitting</strong> (required for all roof replacements)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+$300-1k</span>
+                        <span><strong>Tree management</strong> (trimming limbs, protection - common in Hyde Park, Zilker)</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-green-50 rounded-lg p-6 border-l-4 border-green-500">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">📉 What DECREASES Cost</h3>
+                    <ul className="space-y-2 text-sm text-primary-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Simple gable or hip roof</strong> (ranch-style homes in Zilker, Barton Hills)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Low to moderate pitch</strong> (faster installation, less safety equipment needed)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Single story home</strong> (easier access = lower labor costs)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Good existing decking</strong> (newer Austin homes typically have solid decking)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Insurance claim coverage</strong> (you pay deductible only—typically $1k-$3k)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Referral from neighbor</strong> (we offer discounts when working multiple homes)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Easy property access</strong> (driveway for dumpster, no tight spaces)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-accent-50 to-blue-50 rounded-lg p-6">
+                  <h3 className="text-xl font-bold text-primary-900 mb-4">💡 6 Ways Austin Homeowners Save on Roof Replacement</h3>
+                  <div className="grid md:grid-cols-2 gap-4 text-sm text-primary-700">
+                    <div>
+                      <p className="font-bold text-primary-900 mb-1">1. File an Insurance Claim</p>
+                      <p className="mb-3">If you have storm damage, your insurance typically covers 100% minus your deductible ($1k-$3k). We handle the entire claims process and meet with adjusters. This is the #1 way Austin homeowners afford new roofs.</p>
+                      
+                      <p className="font-bold text-primary-900 mb-1">2. Choose Impact-Resistant Shingles</p>
+                      <p className="mb-3">Yes, they cost $3k-$5k more upfront, but you'll save $400-$600/year on insurance (15-20% discount). Plus they last longer and survive Austin's hailstorms. Break-even in 6-10 years.</p>
+                      
+                      <p className="font-bold text-primary-900 mb-1">3. Bundle Services for Discounts</p>
+                      <p className="mb-3">Replace gutters, install gutter guards, or add ventilation at the same time for 10-15% savings vs doing separately. One mobilization = lower overall cost.</p>
+                    </div>
+                    <div>
+                      <p className="font-bold text-primary-900 mb-1">4. Schedule During Off-Season</p>
+                      <p className="mb-3">Fall and winter (October-February) are slower. We may offer scheduling flexibility or small discounts. Avoid June-August when demand peaks after spring storms.</p>
+                      
+                      <p className="font-bold text-primary-900 mb-1">5. Take Advantage of Financing</p>
+                      <p className="mb-3">We offer 0% financing for 12-18 months through approved lenders. Spread the cost into manageable monthly payments. Ask about current promotions.</p>
+                      
+                      <p className="font-bold text-primary-900 mb-1">6. Maintain Your Roof Regularly</p>
+                      <p className="mb-3">Annual inspections ($0 with Ripple), cleaning gutters, trimming trees, and minor repairs can extend your roof's life 5-10 years, delaying expensive replacement.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-6 bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
+                  <p className="text-primary-900 font-semibold mb-2">📞 Get Your Exact Austin Roof Replacement Cost</p>
+                  <p className="text-primary-700">
+                    These ranges are estimates. Your actual cost depends on your specific home, neighborhood, materials, and current conditions. We provide free inspections and detailed written quotes with no obligation. Call <strong>(512) 763-5277</strong> or schedule online to get your personalized Austin roof replacement estimate.
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+
           {/* FAQ Section - Full Width */}
           <div className="mt-16">
             <LocationFAQ city={location.city} />
