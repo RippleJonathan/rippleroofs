@@ -792,6 +792,360 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
                 </>
               )}
 
+              {/* ROOF INSPECTION SPECIFIC CONTENT */}
+              {service.slug === 'roof-inspection' && (
+                <>
+                  {/* What We Inspect - 50-Point Checklist */}
+                  <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-2xl">
+                    <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                      Our Comprehensive 50-Point Inspection Checklist
+                    </h2>
+                    <p className="text-primary-700 mb-8 leading-relaxed">
+                      We don't just look at your shingles—we examine every component that affects your roof's performance and lifespan. 
+                      Here's what our certified inspectors evaluate:
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                      <div className="bg-white rounded-xl p-6">
+                        <h3 className="text-lg font-bold text-primary-900 mb-4 flex items-center gap-2">
+                          <span className="text-2xl">🏠</span> Roofing Materials
+                        </h3>
+                        <ul className="space-y-2 text-sm text-primary-700">
+                          <li>✓ Shingle condition & age</li>
+                          <li>✓ Granule loss assessment</li>
+                          <li>✓ Curling, cupping, or buckling</li>
+                          <li>✓ Missing or damaged shingles</li>
+                          <li>✓ Nail pops or exposed nails</li>
+                          <li>✓ Algae, moss, or lichen growth</li>
+                          <li>✓ Manufacturer defects (if visible)</li>
+                        </ul>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6">
+                        <h3 className="text-lg font-bold text-primary-900 mb-4 flex items-center gap-2">
+                          <span className="text-2xl">🔧</span> Flashing & Penetrations
+                        </h3>
+                        <ul className="space-y-2 text-sm text-primary-700">
+                          <li>✓ Chimney flashing condition</li>
+                          <li>✓ Vent pipe boots & seals</li>
+                          <li>✓ Skylight flashing & seals</li>
+                          <li>✓ Valley flashing integrity</li>
+                          <li>✓ Wall flashing (dormers, etc.)</li>
+                          <li>✓ Drip edge condition</li>
+                          <li>✓ Sealant/caulk deterioration</li>
+                        </ul>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6">
+                        <h3 className="text-lg font-bold text-primary-900 mb-4 flex items-center gap-2">
+                          <span className="text-2xl">🏗️</span> Structural Components
+                        </h3>
+                        <ul className="space-y-2 text-sm text-primary-700">
+                          <li>✓ Decking/sheathing condition</li>
+                          <li>✓ Sagging or uneven areas</li>
+                          <li>✓ Rafter visibility (if accessible)</li>
+                          <li>✓ Ridge line straightness</li>
+                          <li>✓ Fascia board condition</li>
+                          <li>✓ Soffit condition & ventilation</li>
+                          <li>✓ Overall structural integrity</li>
+                        </ul>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6">
+                        <h3 className="text-lg font-bold text-primary-900 mb-4 flex items-center gap-2">
+                          <span className="text-2xl">💨</span> Ventilation System
+                        </h3>
+                        <ul className="space-y-2 text-sm text-primary-700">
+                          <li>✓ Ridge vent condition</li>
+                          <li>✓ Soffit vent functionality</li>
+                          <li>✓ Gable vent condition</li>
+                          <li>✓ Attic ventilation adequacy</li>
+                          <li>✓ Turbine vent operation</li>
+                          <li>✓ Proper air flow balance</li>
+                          <li>✓ Temperature indicators</li>
+                        </ul>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6">
+                        <h3 className="text-lg font-bold text-primary-900 mb-4 flex items-center gap-2">
+                          <span className="text-2xl">💧</span> Gutters & Drainage
+                        </h3>
+                        <ul className="space-y-2 text-sm text-primary-700">
+                          <li>✓ Gutter condition & pitch</li>
+                          <li>✓ Downspout functionality</li>
+                          <li>✓ Clogging or debris buildup</li>
+                          <li>✓ Gutter attachment security</li>
+                          <li>✓ Water staining on fascia</li>
+                          <li>✓ Splash blocks & extensions</li>
+                          <li>✓ Drainage away from foundation</li>
+                        </ul>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6">
+                        <h3 className="text-lg font-bold text-primary-900 mb-4 flex items-center gap-2">
+                          <span className="text-2xl">🏚️</span> Interior Indicators
+                        </h3>
+                        <ul className="space-y-2 text-sm text-primary-700">
+                          <li>✓ Attic inspection (if accessible)</li>
+                          <li>✓ Water stains or leaks</li>
+                          <li>✓ Mold or mildew presence</li>
+                          <li>✓ Daylight penetration</li>
+                          <li>✓ Insulation condition</li>
+                          <li>✓ Condensation issues</li>
+                          <li>✓ Ceiling stains (from below)</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* When to Get an Inspection */}
+                  <div className="bg-gradient-to-br from-amber-50 to-orange-50 p-8 rounded-2xl">
+                    <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                      When Should You Get a Roof Inspection?
+                    </h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="bg-white rounded-xl p-6 border-l-4 border-amber-500">
+                        <h3 className="text-xl font-bold text-primary-900 mb-3">🏡 Buying or Selling a Home</h3>
+                        <p className="text-primary-700 mb-3">
+                          <strong>Pre-Purchase:</strong> Know exactly what you're getting. Our inspection reveals condition, remaining lifespan, 
+                          and repair costs—powerful negotiating information. Many buyers discover $5,000-$15,000 in needed repairs.
+                        </p>
+                        <p className="text-primary-700">
+                          <strong>Pre-Listing:</strong> Address issues before listing to avoid buyer objections or price reductions. A clean 
+                          inspection report is a great selling point.
+                        </p>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6 border-l-4 border-red-500">
+                        <h3 className="text-xl font-bold text-primary-900 mb-3">⛈️ After Major Storms</h3>
+                        <p className="text-primary-700 mb-3">
+                          <strong>FREE inspection after hail, wind, or severe storms.</strong> Central Texas gets major hail events every 2-3 years. 
+                          Damage isn't always visible from ground level—we document everything for insurance claims.
+                        </p>
+                        <p className="text-primary-700">
+                          <strong>Time sensitive:</strong> Most insurance policies require claims within 1 year of damage. Don't wait!
+                        </p>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6 border-l-4 border-blue-500">
+                        <h3 className="text-xl font-bold text-primary-900 mb-3">📅 Routine Maintenance</h3>
+                        <p className="text-primary-700">
+                          <strong>Annual or bi-annual inspections catch small problems before they become expensive.</strong> Recommended schedule: 
+                          Twice yearly (spring and fall) for roofs 10+ years old. Once yearly for newer roofs. Small repairs cost $300-$800; 
+                          ignored problems can lead to $5,000-$15,000 in water damage.
+                        </p>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6 border-l-4 border-green-500">
+                        <h3 className="text-xl font-bold text-primary-900 mb-3">🔍 Age Milestones</h3>
+                        <p className="text-primary-700">
+                          Get inspections at key ages: <strong>10 years</strong> (mid-life check), <strong>15 years</strong> (planning stage), 
+                          <strong>20+ years</strong> (annual inspections recommended). Helps you budget for eventual replacement and catch 
+                          age-related deterioration early.
+                        </p>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6 border-l-4 border-purple-500">
+                        <h3 className="text-xl font-bold text-primary-900 mb-3">💧 Visible Problems</h3>
+                        <p className="text-primary-700">
+                          <strong>Don't wait if you see:</strong> Water stains on ceilings, missing shingles, sagging areas, excessive granules 
+                          in gutters, daylight in attic, higher energy bills, or mold/mildew smells. Early detection saves money—minor leak 
+                          repairs cost $300-$800; water damage remediation costs $2,000-$10,000+.
+                        </p>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6 border-l-4 border-indigo-500">
+                        <h3 className="text-xl font-bold text-primary-900 mb-3">🛡️ Insurance Requirements</h3>
+                        <p className="text-primary-700">
+                          Some insurance companies require inspections for older roofs (15-20+ years) or after claims. We provide insurance-acceptable 
+                          reports with photos and condition ratings. Can also help with wind mitigation inspections for premium discounts.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* What You Receive - Detailed Report */}
+                  <div className="bg-gradient-to-br from-primary-50 to-accent-50 p-8 rounded-2xl">
+                    <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                      What You Receive: Your Detailed Inspection Report
+                    </h2>
+                    <div className="bg-white rounded-xl p-8">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        <div>
+                          <h3 className="text-xl font-bold text-primary-900 mb-4">📸 Comprehensive Photo Documentation</h3>
+                          <ul className="space-y-3 text-primary-700">
+                            <li className="flex items-start gap-2">
+                              <span className="text-accent-600 font-bold">•</span>
+                              <span>20-40 high-resolution photos of all roof components</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-accent-600 font-bold">•</span>
+                              <span>Close-up shots of any damage or concerns</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-accent-600 font-bold">•</span>
+                              <span>Drone photography for steep or complex roofs</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-accent-600 font-bold">•</span>
+                              <span>Labeled photos showing exact location of issues</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-accent-600 font-bold">•</span>
+                              <span>Before photos for future comparison</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div>
+                          <h3 className="text-xl font-bold text-primary-900 mb-4">📊 Condition Ratings & Analysis</h3>
+                          <ul className="space-y-3 text-primary-700">
+                            <li className="flex items-start gap-2">
+                              <span className="text-accent-600 font-bold">•</span>
+                              <span>Overall condition rating (1-10 scale)</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-accent-600 font-bold">•</span>
+                              <span>Component-by-component ratings</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-accent-600 font-bold">•</span>
+                              <span>Estimated remaining lifespan (years)</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-accent-600 font-bold">•</span>
+                              <span>Priority levels: Immediate, Near-Term, Monitor</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-accent-600 font-bold">•</span>
+                              <span>Warranty coverage check (if applicable)</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                          <h3 className="text-xl font-bold text-primary-900 mb-4">🔧 Repair Recommendations</h3>
+                          <ul className="space-y-3 text-primary-700">
+                            <li className="flex items-start gap-2">
+                              <span className="text-accent-600 font-bold">•</span>
+                              <span>Detailed description of each issue</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-accent-600 font-bold">•</span>
+                              <span>Why it matters (consequences if ignored)</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-accent-600 font-bold">•</span>
+                              <span>Estimated repair cost ranges</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-accent-600 font-bold">•</span>
+                              <span>Repair vs. replacement guidance</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-accent-600 font-bold">•</span>
+                              <span>Timeline recommendations (urgent vs. plan for)</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div>
+                          <h3 className="text-xl font-bold text-primary-900 mb-4">💰 Planning & Budget Information</h3>
+                          <ul className="space-y-3 text-primary-700">
+                            <li className="flex items-start gap-2">
+                              <span className="text-accent-600 font-bold">•</span>
+                              <span>Total estimated repair costs (if needed)</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-accent-600 font-bold">•</span>
+                              <span>Replacement cost estimate (for planning)</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-accent-600 font-bold">•</span>
+                              <span>ROI analysis (repair vs. replace)</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-accent-600 font-bold">•</span>
+                              <span>Insurance claim potential (if storm damage)</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-accent-600 font-bold">•</span>
+                              <span>Long-term maintenance recommendations</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div className="mt-8 bg-accent-50 border-2 border-accent-200 rounded-xl p-6">
+                        <p className="text-primary-700">
+                          <strong>📧 Delivered within 24 hours via email</strong> in easy-to-read PDF format. Perfect for your records, 
+                          sharing with insurance, or showing to potential home buyers. Keep for future reference!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Inspection Pricing */}
+                  <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl">
+                    <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                      Roof Inspection Pricing
+                    </h2>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                      <div className="bg-white rounded-xl p-6 border-2 border-green-500">
+                        <div className="text-center mb-4">
+                          <h3 className="text-2xl font-bold text-primary-900">FREE</h3>
+                          <p className="text-sm text-primary-600">Post-Storm Inspection</p>
+                        </div>
+                        <ul className="space-y-2 text-sm text-primary-700">
+                          <li>✓ After hail, wind, or severe weather</li>
+                          <li>✓ Full 50-point inspection</li>
+                          <li>✓ Photo documentation</li>
+                          <li>✓ Insurance claim assistance</li>
+                          <li>✓ No obligation</li>
+                        </ul>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6 border-2 border-blue-500">
+                        <div className="text-center mb-4">
+                          <h3 className="text-2xl font-bold text-primary-900">$150-$300</h3>
+                          <p className="text-sm text-primary-600">Standard Inspection</p>
+                        </div>
+                        <ul className="space-y-2 text-sm text-primary-700">
+                          <li>✓ Comprehensive 50-point inspection</li>
+                          <li>✓ Detailed photo report</li>
+                          <li>✓ Condition ratings</li>
+                          <li>✓ Repair recommendations</li>
+                          <li>✓ 24-hour turnaround</li>
+                          <li className="font-semibold text-accent-600">✓ Credit toward repairs if booked</li>
+                        </ul>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6 border-2 border-purple-500">
+                        <div className="text-center mb-4">
+                          <h3 className="text-2xl font-bold text-primary-900">$200-$400</h3>
+                          <p className="text-sm text-primary-600">Pre-Purchase Inspection</p>
+                        </div>
+                        <ul className="space-y-2 text-sm text-primary-700">
+                          <li>✓ Everything in Standard, plus:</li>
+                          <li>✓ Insurance-acceptable report</li>
+                          <li>✓ Estimated replacement cost</li>
+                          <li>✓ Lifespan analysis</li>
+                          <li>✓ Negotiation talking points</li>
+                          <li>✓ Available for realtor/buyer</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="mt-6 bg-white p-6 rounded-xl">
+                      <p className="text-primary-700 mb-2">
+                        <strong>Factors affecting price:</strong> Home size, roof complexity, accessibility, drone requirements. 
+                        Most standard homes: $150-$200.
+                      </p>
+                      <p className="text-primary-700">
+                        <strong>Annual Maintenance Program:</strong> Sign up for annual inspections at discounted rate ($99-$149). 
+                        Includes spring and fall inspections with priority scheduling.
+                      </p>
+                    </div>
+                  </div>
+                </>
+              )}
+
               {/* Service Areas */}
               <div className="bg-gradient-to-br from-primary-900 to-primary-800 rounded-2xl p-8 text-white">
                 <h2 className="text-2xl font-display font-bold mb-4">
@@ -984,6 +1338,65 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
                         </h3>
                         <p className="text-primary-600">
                           <strong>Call us immediately at (512) 763-5277—we offer 24/7 emergency service.</strong> For active leaks, we provide emergency tarping within 2-4 hours to stop water damage. Tarping typically costs $200-$500 and protects your home until permanent repairs can be made (usually within 1-2 days). We also help you document damage for insurance claims and coordinate with adjusters if needed.
+                        </p>
+                      </div>
+                    </>
+                  ) : service.slug === 'roof-inspection' ? (
+                    <>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          How much does a roof inspection cost?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>Post-storm inspections are FREE.</strong> Standard inspections cost <strong>$150-$300</strong> depending on home size and complexity. Pre-purchase inspections cost <strong>$200-$400</strong> and include insurance-acceptable reports with lifespan analysis. Most standard homes: $150-$200. If you book repairs based on our inspection, we credit the inspection fee toward the repair cost. Annual maintenance programs available at discounted rates ($99-$149).
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          How long does a roof inspection take?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>Most inspections are completed in 45-60 minutes.</strong> Simple roofs may take 30-45 minutes, while complex roofs with multiple levels, steep pitches, or extensive issues may take 60-90 minutes. We use drone photography for steep or hard-to-access areas, which speeds up the process. You receive your detailed photo report within 24 hours via email.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          What's included in your 50-point inspection?
+                        </h3>
+                        <p className="text-primary-600">
+                          We examine <strong>every component</strong>: shingles (condition, age, damage), flashing (chimney, vents, valleys, skylights), structural components (decking, sagging, fascia, soffit), ventilation system (ridge vents, soffits, attic airflow), gutters & drainage, and interior indicators (attic inspection, water stains, mold). You get 20-40 high-res photos, condition ratings (1-10 scale), remaining lifespan estimates, repair priorities (immediate/near-term/monitor), and cost estimates.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          Do I need an inspection before buying a home?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>Absolutely yes—it's one of the best investments you can make.</strong> Our pre-purchase inspections reveal the roof's true condition, remaining lifespan, and repair costs before you close. Many buyers discover $5,000-$15,000 in needed repairs that weren't disclosed. This gives you powerful negotiating leverage or the option to walk away. Cost: $200-$400. Potential savings: thousands. We provide insurance-acceptable reports that satisfy lender requirements.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          When should I get my roof inspected?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>Key times:</strong> (1) After major storms (FREE inspection), (2) When buying/selling a home, (3) Twice yearly for roofs 10+ years old (spring & fall), (4) Once yearly for newer roofs, (5) At age milestones (10, 15, 20 years), (6) If you see visible problems (leaks, missing shingles, sagging), (7) For insurance requirements. <Link href="/locations/round-rock" className="text-accent-600 hover:text-accent-700 font-semibold">Round Rock</Link>, <Link href="/locations/austin" className="text-accent-600 hover:text-accent-700 font-semibold">Austin</Link>, and <Link href="/locations/georgetown" className="text-accent-600 hover:text-accent-700 font-semibold">Georgetown</Link> get hail every 2-3 years—annual inspections recommended.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          Can you help with insurance claims?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>Yes! We provide complete insurance claim assistance.</strong> After storms, we offer FREE inspections, document all damage with detailed photos, help you understand your coverage, attend adjuster meetings with you, and ensure nothing is missed. Our reports are insurance-acceptable and include everything adjusters need. We've helped hundreds of homeowners successfully file claims. Most policies require claims within 1 year of damage—don't wait!
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          Will you try to sell me a new roof I don't need?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>No—we believe in honest assessments, not pressure sales.</strong> If your roof is in good condition, we'll tell you that and recommend when to schedule your next inspection. If minor repairs are needed, we'll recommend repair over replacement (it's better for you and builds trust). If replacement is truly needed, we'll explain why with photos and data. Our goal is to be your trusted roofing partner for years, not make a quick sale.
                         </p>
                       </div>
                     </>
