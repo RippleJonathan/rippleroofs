@@ -1,6 +1,6 @@
 'use client'
 
-import { FC, useState } from 'react'
+import { FC, useState, useEffect } from 'react'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { quoteFormSchema, type QuoteFormInput } from '@/lib/validations/quote'
@@ -16,15 +16,22 @@ export const QuoteForm: FC<QuoteFormProps> = ({ className = '' }) => {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
   const [errorMessage, setErrorMessage] = useState('')
+  const [formMountTime, setFormMountTime] = useState<number>(0)
 
   const {
     register,
     handleSubmit,
     formState: { errors },
     reset,
+    setValue,
   } = useForm<QuoteFormInput>({
     resolver: zodResolver(quoteFormSchema),
   })
+
+  // Track when form is mounted for timing check
+  useEffect(() => {
+    setFormMountTime(Date.now())
+  }, [])
 
   const onSubmit = async (data: QuoteFormInput) => {
     setIsSubmitting(true)
@@ -32,20 +39,35 @@ export const QuoteForm: FC<QuoteFormProps> = ({ className = '' }) => {
     setErrorMessage('')
 
     try {
+      // Timing check - block submissions faster than 3 seconds
+      const timeSinceMount = Date.now() - formMountTime
+      if (timeSinceMount < 3000) {
+        throw new Error('Please take a moment to review your information.')
+      }
+
+      // Add timestamp to submission
+      const submissionData = {
+        ...data,
+        _timestamp: Date.now(),
+      }
+
       const response = await fetch('/api/quote', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(data),
+        body: JSON.stringify(submissionData),
       })
 
+      const result = await response.json()
+
       if (!response.ok) {
-        throw new Error('Failed to submit form')
+        throw new Error(result.message || 'Failed to submit form')
       }
 
       setSubmitStatus('success')
       reset()
+      setFormMountTime(Date.now()) // Reset timing for next submission
       
       // Reset success message after 5 seconds
       setTimeout(() => {
@@ -108,6 +130,17 @@ export const QuoteForm: FC<QuoteFormProps> = ({ className = '' }) => {
           placeholder="John Smith"
           error={errors.name?.message}
           {...register('name')}
+        />
+      </div>
+
+      {/* Honeypot Field - Hidden from users, visible to bots */}
+      <div className="hidden" aria-hidden="true">
+        <Input
+          label="Website"
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+          {...register('_website')}
         />
       </div>
 

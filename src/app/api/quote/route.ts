@@ -3,13 +3,122 @@ import { resend, EMAIL_CONFIG, emailTemplates } from '@/lib/email'
 import { quoteFormSchema } from '@/lib/validations/quote'
 import type { QuoteFormData } from '@/types'
 
+// Simple in-memory rate limiting (for production, use Redis or similar)
+const rateLimitMap = new Map<string, { count: number; resetTime: number }>()
+
+// Rate limit: 3 submissions per IP per hour
+const RATE_LIMIT_MAX = 3
+const RATE_LIMIT_WINDOW = 60 * 60 * 1000 // 1 hour in milliseconds
+
+function checkRateLimit(ip: string): boolean {
+  const now = Date.now()
+  const record = rateLimitMap.get(ip)
+
+  if (!record || now > record.resetTime) {
+    // First submission or window expired
+    rateLimitMap.set(ip, { count: 1, resetTime: now + RATE_LIMIT_WINDOW })
+    return true
+  }
+
+  if (record.count >= RATE_LIMIT_MAX) {
+    return false // Rate limit exceeded
+  }
+
+  // Increment count
+  record.count++
+  return true
+}
+
+// Clean up old entries periodically
+setInterval(() => {
+  const now = Date.now()
+  for (const [ip, record] of rateLimitMap.entries()) {
+    if (now > record.resetTime) {
+      rateLimitMap.delete(ip)
+    }
+  }
+}, 5 * 60 * 1000) // Clean up every 5 minutes
+
 export async function POST(request: NextRequest) {
   try {
+    // Get IP address for rate limiting
+    const ip = request.headers.get('x-forwarded-for') || 
+               request.headers.get('x-real-ip') || 
+               'unknown'
+
+    // Check rate limit
+    if (!checkRateLimit(ip)) {
+      return NextResponse.json(
+        {
+          success: false,
+          message: 'Too many submission attempts. Please try again later or call us directly at (512) 763-5277.',
+          error: 'Rate limit exceeded',
+        },
+        { status: 429 }
+      )
+    }
+
     // Parse request body
     const body = await request.json()
 
+    // Honeypot check - if _website field has value, it's a bot
+    if (body._website && body._website.length > 0) {
+      console.log('🤖 Bot detected via honeypot:', { ip, data: body })
+      return NextResponse.json(
+        {
+          success: false,
+          message: 'Invalid submission detected.',
+          error: 'Spam detected',
+        },
+        { status: 400 }
+      )
+    }
+
+    // Timing check - reject submissions faster than 3 seconds
+    if (body._timestamp) {
+      const submissionTime = body._timestamp
+      const currentTime = Date.now()
+      const timeDiff = currentTime - submissionTime
+      
+      // If submission was "sent" from the future or too quickly, it's suspicious
+      if (timeDiff < 0 || timeDiff > 1000) { // Allow 1 second clock skew
+        console.log('⏱️ Suspicious timing detected:', { ip, timeDiff })
+        return NextResponse.json(
+          {
+            success: false,
+            message: 'Invalid submission timing.',
+            error: 'Timing validation failed',
+          },
+          { status: 400 }
+        )
+      }
+    }
+
     // Validate form data
     const validatedData = quoteFormSchema.parse(body)
+
+    // Additional spam detection - check for suspicious patterns
+    const suspiciousKeywords = [
+      'bitcoin', 'crypto', 'investment', 'casino', 'viagra',
+      'loan', 'credit card', 'click here', 'buy now',
+    ]
+    
+    const textToCheck = `${validatedData.name} ${validatedData.message || ''} ${validatedData.address}`.toLowerCase()
+    const hasSuspiciousContent = suspiciousKeywords.some(keyword => 
+      textToCheck.includes(keyword)
+    )
+
+    if (hasSuspiciousContent) {
+      console.log('🚫 Suspicious content detected:', { ip, data: validatedData })
+      return NextResponse.json(
+        {
+          success: false,
+          message: 'Invalid submission content.',
+          error: 'Content validation failed',
+        },
+        { status: 400 }
+      )
+    }
 
     // Prepare data for email template
     const emailData = {
