@@ -343,6 +343,441 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
             </div>
           </div>
 
+          {/* Location-Specific Deep Content - Round Rock */}
+          {location.slug === 'round-rock' && (
+            <div className="mt-16 space-y-12">
+              {/* Round Rock Neighborhoods Deep Dive */}
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Round Rock Neighborhoods: Roofing Considerations & Costs
+                </h2>
+                <p className="text-primary-700 mb-8 leading-relaxed">
+                  Round Rock's diverse neighborhoods each have unique architectural styles, HOA requirements, and roofing challenges. Here's what homeowners in each major area should know about roofing:
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏘️ Teravista & Walsh Ranch</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 2000s-2020s • <strong>Style:</strong> Contemporary ranch & two-story homes<br />
+                      <strong>Common Roof Type:</strong> Architectural shingles, some tile accents
+                    </p>
+                    <div className="bg-blue-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>HOA Considerations:</strong> Strict color matching required. Pre-approval needed for roof replacement. Many HOAs require impact-resistant shingles (Class 4 rated).</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Hail damage from severe storms, wind uplift on two-story homes, attic ventilation inadequacy in summer heat</p>
+                      <p><strong>Best Materials:</strong> GAF Timberline HDZ or CertainTeed Landmark Pro (impact-resistant) in Weathered Wood, Driftwood, or Pewter Gray</p>
+                      <p><strong>Typical Cost:</strong> $14,000-$22,000 for 2,500-3,500 sq ft homes</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏡 Heritage Center & Stone Oak</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1980s-1990s • <strong>Style:</strong> Traditional suburban ranch<br />
+                      <strong>Common Roof Type:</strong> 3-tab and architectural shingles
+                    </p>
+                    <div className="bg-amber-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Aging Roof Alert:</strong> Many homes in these established neighborhoods are approaching roof replacement age (25-30 years). Look for curling shingles, granule loss, and water stains in attic.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Original roofs nearing end of life, outdated ventilation, tree damage from mature oaks, decking deterioration</p>
+                      <p><strong>Best Materials:</strong> Upgrade to impact-resistant architectural shingles (CertainTeed Landmark Pro or GAF Timberline HDZ) for better durability and insurance discounts</p>
+                      <p><strong>Typical Cost:</strong> $12,000-$18,000 for 1,800-2,500 sq ft homes (budget extra $2k-$4k for decking repairs on older roofs)</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🌳 Forest Creek & Brushy Creek</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1990s-2000s • <strong>Style:</strong> Mix of ranch and two-story<br />
+                      <strong>Common Roof Type:</strong> Architectural shingles
+                    </p>
+                    <div className="bg-green-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Tree Considerations:</strong> Heavy tree coverage means more debris, moss growth potential, and risk of branch damage. Regular roof cleaning recommended every 2-3 years.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Tree debris accumulation, algae/moss growth on shaded roofs, gutters clogging with leaves, branch damage during storms</p>
+                      <p><strong>Best Materials:</strong> Algae-resistant shingles (CertainTeed StreakFighter or GAF StainGuard) in darker colors to hide staining. Consider gutter guards.</p>
+                      <p><strong>Typical Cost:</strong> $13,000-$20,000 for 2,200-3,000 sq ft homes (add $1,500-$3,000 for gutter guards)</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏘️ University Oaks & Cat Hollow</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1990s-2010s • <strong>Style:</strong> Family-oriented subdivisions<br />
+                      <strong>Common Roof Type:</strong> Architectural shingles, varied complexity
+                    </p>
+                    <div className="bg-purple-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Complexity Note:</strong> Many homes feature complex roof lines with multiple valleys, dormers, and hip/gable combinations increasing installation complexity and cost per square foot.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Valley deterioration (high water flow), flashing failures around dormers, ice dam potential on north-facing slopes</p>
+                      <p><strong>Best Materials:</strong> Premium architectural shingles with enhanced algae resistance. Ensure proper ice/water shield installation in valleys.</p>
+                      <p><strong>Typical Cost:</strong> $15,000-$24,000 for 2,500-3,500 sq ft homes (complex roofs add 15-25% vs simple gable roofs)</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🆕 Sonoma & Paloma Lake</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 2010s-2020s • <strong>Style:</strong> Modern suburban<br />
+                      <strong>Common Roof Type:</strong> High-performance architectural shingles
+                    </p>
+                    <div className="bg-green-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Good News:</strong> Most roofs still under builder warranty (10-20 years material). Check your warranty status before paying for repairs—many covered at no cost!</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Storm damage (newer roofs not yet weathered), builder-grade installation quality varies, warranty claim navigation</p>
+                      <p><strong>Best Approach:</strong> For storm damage, file insurance claim. For defects, contact builder warranty department first. We can inspect and document for both.</p>
+                      <p><strong>Future Cost:</strong> $16,000-$25,000 for 2,800-4,000 sq ft homes</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏙️ Downtown Round Rock</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1900s-1980s • <strong>Style:</strong> Historic homes<br />
+                      <strong>Common Roof Type:</strong> Mix of composition shingles, some metal
+                    </p>
+                    <div className="bg-amber-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Historic Considerations:</strong> Some homes have historic designation requiring specific materials/colors. Check with City of Round Rock Historic Preservation before roof replacement.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Outdated ventilation systems, undersized attic space, structural issues from age</p>
+                      <p><strong>Best Materials:</strong> Architectural shingles in traditional colors (Charcoal, Weathered Wood), or metal roofing for historic authenticity</p>
+                      <p><strong>Typical Cost:</strong> $10,000-$18,000 (potential structural work adds $2k-$8k)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Round Rock Storm History */}
+              <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Round Rock Storm History & Hail Damage Patterns
+                </h2>
+                <p className="text-primary-700 mb-8 leading-relaxed">
+                  Round Rock sits in "Hail Alley"—a corridor of Central Texas experiencing frequent severe hailstorms. Understanding local storm patterns helps homeowners make informed roofing decisions and recognize when to file insurance claims.
+                </p>
+                <div className="space-y-6">
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-red-700 mb-3">🌩️ Major Storm Events (2015-2025)</h3>
+                    <div className="space-y-4">
+                      <div className="border-l-4 border-red-500 pl-4">
+                        <p className="font-bold text-primary-900">March 2024 Hailstorm</p>
+                        <p className="text-sm text-primary-700">Baseball-sized hail (2.5-3") across Teravista, Walsh Ranch, and northeast Round Rock. Thousands of roofs damaged. Many homeowners received full roof replacements through insurance.</p>
+                      </div>
+                      <div className="border-l-4 border-orange-500 pl-4">
+                        <p className="font-bold text-primary-900">May 2022 Hail Event</p>
+                        <p className="text-sm text-primary-700">Golf ball-sized hail (1.75-2") impacted Forest Creek, Brushy Creek, and Heritage Center. Significant shingle damage, dented gutters, damaged AC units.</p>
+                      </div>
+                      <div className="border-l-4 border-amber-500 pl-4">
+                        <p className="font-bold text-primary-900">April 2021 Severe Storms</p>
+                        <p className="text-sm text-primary-700">Quarter to golf ball hail throughout Round Rock. Straight-line winds 60-70 mph caused additional wind damage, fallen trees, and power outages.</p>
+                      </div>
+                      <div className="border-l-4 border-yellow-500 pl-4">
+                        <p className="font-bold text-primary-900">March 2016 Hailstorm</p>
+                        <p className="text-sm text-primary-700">One of the worst hail events in Round Rock history. Tennis ball-sized hail (2.5-3") across entire city. Estimated $1+ billion in damages across Central Texas.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-4">📊 Round Rock Hail Frequency & Patterns</h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div>
+                        <p className="text-sm font-bold text-primary-900 mb-2">Peak Hail Season</p>
+                        <div className="space-y-2 text-sm text-primary-700">
+                          <p>• <strong>March-May:</strong> 70% of annual hail events</p>
+                          <p>• <strong>April:</strong> Highest risk month (peak severe weather)</p>
+                          <p>• <strong>Late evening (7pm-11pm):</strong> Most common timing</p>
+                          <p>• <strong>Northeast Round Rock:</strong> Slightly higher frequency due to storm patterns</p>
+                        </div>
+                      </div>
+                      <div>
+                        <p className="text-sm font-bold text-primary-900 mb-2">Hail Size Probabilities (Annual)</p>
+                        <div className="space-y-2 text-sm text-primary-700">
+                          <p>• <strong>Pea-sized (0.25"):</strong> 3-5 times per year (minor damage)</p>
+                          <p>• <strong>Quarter-sized (1"):</strong> 1-2 times per year (moderate damage)</p>
+                          <p>• <strong>Golf ball (1.75"):</strong> Every 2-3 years (major damage)</p>
+                          <p>• <strong>Baseball (2.75"+):</strong> Every 5-8 years (catastrophic damage)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-blue-50 border-2 border-blue-300 rounded-xl p-6">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🛡️ Protecting Your Round Rock Roof from Hail</h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-primary-700">
+                      <div>
+                        <p className="font-bold text-primary-900 mb-2">Before Storms:</p>
+                        <ul className="list-disc ml-5 space-y-1">
+                          <li>Install Class 4 impact-resistant shingles (UL 2218 rated)</li>
+                          <li>Trim trees near roof to prevent branch damage</li>
+                          <li>Ensure adequate homeowners insurance coverage</li>
+                          <li>Document roof condition with photos annually</li>
+                          <li>Know your deductible amount and policy details</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-bold text-primary-900 mb-2">After Storms:</p>
+                        <ul className="list-disc ml-5 space-y-1">
+                          <li>Schedule free inspection within 1-2 weeks</li>
+                          <li>Document damage with photos/video</li>
+                          <li>File insurance claim if damage found</li>
+                          <li>Have professional present at adjuster meeting</li>
+                          <li>Don't wait—most policies require claims within 1 year</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Best Roofing Materials for Round Rock */}
+              <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Best Roofing Materials for Round Rock's Climate
+                </h2>
+                <p className="text-primary-700 mb-8 leading-relaxed">
+                  Round Rock's extreme heat, frequent hail, high UV exposure, and occasional ice require roofing materials engineered for Texas conditions. Here's what works best:
+                </p>
+                <div className="space-y-6">
+                  <div className="bg-white rounded-xl p-6 shadow-md border-l-4 border-green-500">
+                    <div className="flex items-start justify-between mb-4">
+                      <div>
+                        <h3 className="text-xl font-bold text-primary-900">🏆 #1 Recommendation: Impact-Resistant Architectural Shingles</h3>
+                        <p className="text-sm text-green-700 font-semibold">Best overall value for Round Rock homeowners</p>
+                      </div>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div>
+                        <p className="text-sm font-bold text-primary-900 mb-2">Top Products:</p>
+                        <div className="space-y-2 text-sm text-primary-700">
+                          <p>• <strong>CertainTeed Landmark Pro:</strong> Class 4 impact rating, 50-year warranty, excellent hail protection, $14,000-$20,000 installed</p>
+                          <p>• <strong>GAF Timberline HDZ:</strong> Class 4 rated, LayerLock technology, industry-leading warranty, $14,500-$21,000 installed</p>
+                          <p>• <strong>Owens Corning Duration Storm:</strong> SureNail technology, Class 4 impact, 130 mph wind rating, $15,000-$21,500 installed</p>
+                        </div>
+                      </div>
+                      <div>
+                        <p className="text-sm font-bold text-primary-900 mb-2">Why This Is Best for Round Rock:</p>
+                        <div className="space-y-1 text-sm text-primary-700">
+                          <p>✓ Class 4 impact rating = maximum hail protection</p>
+                          <p>✓ 10-35% insurance discounts (ROI in 7-12 years)</p>
+                          <p>✓ Withstands baseball-sized hail impacts</p>
+                          <p>✓ 130 mph wind ratings (exceeds Texas requirements)</p>
+                          <p>✓ Heat-resistant for 100°F+ summer temps</p>
+                          <p>✓ 50-year warranties vs 25-year standard shingles</p>
+                          <p>✓ Available in 20+ colors for HOA compliance</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mt-4 bg-green-50 p-4 rounded">
+                      <p className="text-sm text-primary-700">
+                        <strong>💰 Insurance Savings Example:</strong> $300k home with $2,500 annual premium × 15% discount = $375/year savings × 15 years = $5,625 total savings. Impact-resistant upgrade costs $3,000-$5,000 extra—<strong>pays for itself!</strong>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🥈 Runner-Up: Metal Roofing (Standing Seam)</h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div>
+                        <p className="text-sm text-primary-700 mb-3">
+                          Premium option with 50+ year lifespan. Excellent for hail, heat, and energy efficiency. Higher upfront cost but lowest lifetime cost.
+                        </p>
+                        <p className="text-sm font-bold text-primary-900 mb-2">Best For:</p>
+                        <ul className="list-disc ml-5 text-sm text-primary-700 space-y-1">
+                          <li>Long-term homeowners (15+ years)</li>
+                          <li>Modern/contemporary home styles</li>
+                          <li>Homeowners prioritizing energy savings</li>
+                          <li>Properties with high tree coverage (no staining)</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="text-sm font-bold text-primary-900 mb-2">Round Rock Considerations:</p>
+                        <div className="space-y-1 text-sm text-primary-700">
+                          <p>• <strong>Cost:</strong> $24,000-$42,000 (2.5-3× shingles)</p>
+                          <p>• <strong>Lifespan:</strong> 50-70 years (last roof you'll need)</p>
+                          <p>• <strong>Energy Savings:</strong> 15-25% cooling cost reduction</p>
+                          <p>• <strong>Hail Resistance:</strong> Excellent (may dent but won't puncture)</p>
+                          <p>• <strong>HOA Approval:</strong> Many Round Rock HOAs restrict metal roofing</p>
+                          <p>• <strong>Insurance Discounts:</strong> 5-15% (less than Class 4 shingles)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">⚠️ Materials to AVOID in Round Rock</h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="bg-red-50 p-4 rounded">
+                        <p className="font-bold text-red-700 mb-2">❌ Standard 3-Tab Shingles</p>
+                        <p className="text-sm text-primary-700">
+                          <strong>Why avoid:</strong> No hail protection, 15-20 year lifespan in Texas heat, no insurance discounts, frequent damage claims. Only $1,000-$2,000 cheaper than architectural but costs more long-term.
+                        </p>
+                      </div>
+                      <div className="bg-red-50 p-4 rounded">
+                        <p className="font-bold text-red-700 mb-2">❌ Concrete/Clay Tile (Usually)</p>
+                        <p className="text-sm text-primary-700">
+                          <strong>Why avoid:</strong> Very heavy (may require $3k-$5k structural reinforcement), expensive ($30k-$50k+), individual tiles break from hail, limited contractors, lengthy repairs.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-accent-50 border-2 border-accent-300 rounded-xl p-6">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🎨 Popular Roof Colors in Round Rock (HOA-Approved)</h3>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm text-primary-700">
+                      <div>
+                        <p className="font-bold text-primary-900">Weathered Wood</p>
+                        <p className="text-xs">Warm brown-gray, complements brick, most popular</p>
+                      </div>
+                      <div>
+                        <p className="font-bold text-primary-900">Driftwood</p>
+                        <p className="text-xs">Light tan-gray, modern look, heat-reflective</p>
+                      </div>
+                      <div>
+                        <p className="font-bold text-primary-900">Pewter Gray</p>
+                        <p className="text-xs">Neutral gray, versatile, hides dirt well</p>
+                      </div>
+                      <div>
+                        <p className="font-bold text-primary-900">Georgetown Gray</p>
+                        <p className="text-xs">Medium gray, classic, HOA-favorite</p>
+                      </div>
+                      <div>
+                        <p className="font-bold text-primary-900">Charcoal</p>
+                        <p className="text-xs">Dark gray, bold statement, hides stains</p>
+                      </div>
+                      <div>
+                        <p className="font-bold text-primary-900">Mission Brown</p>
+                        <p className="text-xs">Traditional brown, timeless, earth-tone</p>
+                      </div>
+                      <div>
+                        <p className="font-bold text-primary-900">Colonial Slate</p>
+                        <p className="text-xs">Blue-gray blend, upscale look</p>
+                      </div>
+                      <div>
+                        <p className="font-bold text-primary-900">Oyster Gray</p>
+                        <p className="text-xs">Light neutral, coastal feel, popular in newer developments</p>
+                      </div>
+                    </div>
+                    <p className="text-xs text-primary-600 mt-4">
+                      <strong>HOA Tip:</strong> Always bring shingle samples to HOA for pre-approval. Some neighborhoods have specific approved color lists.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Round Rock Roofing Costs */}
+              <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Round Rock Roof Replacement Costs by Home Size
+                </h2>
+                <p className="text-primary-700 mb-8 leading-relaxed">
+                  Transparent pricing for Round Rock homeowners. Costs vary by home size, roof complexity, material choice, and any decking repairs needed. These ranges reflect typical Round Rock projects completed by Ripple Roofing.
+                </p>
+                <div className="space-y-6">
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-4">💵 Cost by Home Size (Impact-Resistant Architectural Shingles)</h3>
+                    <div className="space-y-4">
+                      <div className="border-l-4 border-blue-500 pl-4">
+                        <div className="flex justify-between items-start">
+                          <div>
+                            <p className="font-bold text-primary-900">1,500-2,000 sq ft Home</p>
+                            <p className="text-sm text-primary-700">Typical: 3-bed/2-bath ranch, simple gable roof, 18-22 squares</p>
+                          </div>
+                          <p className="text-xl font-bold text-accent-600">$10,500-$15,000</p>
+                        </div>
+                      </div>
+                      <div className="border-l-4 border-green-500 pl-4">
+                        <div className="flex justify-between items-start">
+                          <div>
+                            <p className="font-bold text-primary-900">2,000-2,500 sq ft Home</p>
+                            <p className="text-sm text-primary-700">Typical: 3-4 bed/2-3 bath, hip or gable roof, 22-28 squares</p>
+                          </div>
+                          <p className="text-xl font-bold text-accent-600">$14,000-$20,000</p>
+                        </div>
+                      </div>
+                      <div className="border-l-4 border-purple-500 pl-4">
+                        <div className="flex justify-between items-start">
+                          <div>
+                            <p className="font-bold text-primary-900">2,500-3,000 sq ft Home</p>
+                            <p className="text-sm text-primary-700">Typical: 4-bed/3-bath two-story, moderate complexity, 28-35 squares</p>
+                          </div>
+                          <p className="text-xl font-bold text-accent-600">$17,000-$24,000</p>
+                        </div>
+                      </div>
+                      <div className="border-l-4 border-red-500 pl-4">
+                        <div className="flex justify-between items-start">
+                          <div>
+                            <p className="font-bold text-primary-900">3,000-4,000 sq ft Home</p>
+                            <p className="text-sm text-primary-700">Typical: 4-5 bed/3-4 bath two-story, complex roof, 35-45 squares</p>
+                          </div>
+                          <p className="text-xl font-bold text-accent-600">$21,000-$32,000</p>
+                        </div>
+                      </div>
+                      <div className="border-l-4 border-amber-500 pl-4">
+                        <div className="flex justify-between items-start">
+                          <div>
+                            <p className="font-bold text-primary-900">4,000+ sq ft Home</p>
+                            <p className="text-sm text-primary-700">Typical: Luxury homes, highly complex roofs, 45+ squares</p>
+                          </div>
+                          <p className="text-xl font-bold text-accent-600">$30,000-$50,000+</p>
+                        </div>
+                      </div>
+                    </div>
+                    <p className="text-xs text-primary-600 mt-4">
+                      *Prices include: complete tear-off, disposal, underlayment, ice/water shield, shingle installation, flashing, vents, cleanup, and permits. Does not include decking repairs (if needed).
+                    </p>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-4">📊 Cost Factors That Affect Round Rock Roof Pricing</h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-primary-700">
+                      <div>
+                        <p className="font-bold text-primary-900 mb-2">Increases Cost:</p>
+                        <ul className="list-disc ml-5 space-y-1">
+                          <li><strong>Steep pitch (8:12 or steeper):</strong> +15-25% for safety equipment and labor</li>
+                          <li><strong>Complex roof (multiple valleys, dormers):</strong> +15-30% more material waste and labor</li>
+                          <li><strong>Multiple stories (3+ stories):</strong> +20-35% for equipment and safety</li>
+                          <li><strong>Decking repairs:</strong> +$75-$150 per sheet replaced ($1,500-$4,000 typical)</li>
+                          <li><strong>Premium materials (metal roofing):</strong> +100-200% vs shingles</li>
+                          <li><strong>Extensive tree coverage:</strong> +$300-$800 for extra cleanup/protection</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-bold text-primary-900 mb-2">Decreases Cost:</p>
+                        <ul className="list-disc ml-5 space-y-1">
+                          <li><strong>Simple gable roof:</strong> Baseline pricing, minimal waste</li>
+                          <li><strong>Low pitch (3:12-5:12):</strong> Easier access, faster installation</li>
+                          <li><strong>Single story:</strong> Reduced safety requirements</li>
+                          <li><strong>Good decking condition:</strong> No repair costs</li>
+                          <li><strong>Insurance claim:</strong> You pay deductible only ($2,500-$5,000 typical)</li>
+                          <li><strong>Referral discounts:</strong> Ask about our referral program</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-blue-50 border-2 border-blue-300 rounded-xl p-6">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">💡 Ways to Save on Round Rock Roof Replacement</h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-primary-700">
+                      <p>• <strong>File insurance claim after storms</strong> — pay deductible only vs full cost</p>
+                      <p>• <strong>Get impact-resistant shingles</strong> — insurance discounts recover upgrade cost in 7-12 years</p>
+                      <p>• <strong>Bundle with gutters</strong> — save 10-15% doing roof + gutters together</p>
+                      <p>• <strong>Schedule in fall/winter</strong> — spring/summer is peak season with higher demand</p>
+                      <p>• <strong>Ask about financing</strong> — 0% interest for 12-18 months (approved credit)</p>
+                      <p>• <strong>Maintain regularly</strong> — extend roof life 5-10 years with proper maintenance</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
           {/* FAQ Section - Full Width */}
           <div className="mt-16">
             <LocationFAQ city={location.city} />
