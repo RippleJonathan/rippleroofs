@@ -1362,6 +1362,409 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
                 </>
               )}
 
+              {/* GUTTER INSTALLATION SPECIFIC CONTENT */}
+              {service.slug === 'gutter-installation' && (
+                <>
+                  {/* Seamless vs Sectional Gutters */}
+                  <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-2xl">
+                    <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                      Seamless vs. Sectional Gutters: Why Seamless Wins
+                    </h2>
+                    <p className="text-primary-700 mb-8 leading-relaxed">
+                      Not all gutters are created equal. The difference between seamless and sectional gutters can mean thousands in prevented water damage. Here's what you need to know:
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="bg-white rounded-xl p-6 border-2 border-green-500">
+                        <h3 className="text-xl font-bold text-green-700 mb-4 flex items-center gap-2">
+                          <span className="text-2xl">✅</span> Seamless Gutters (Our Recommendation)
+                        </h3>
+                        <ul className="space-y-3 text-primary-700">
+                          <li className="flex items-start gap-2">
+                            <span className="text-green-600 font-bold">✓</span>
+                            <span><strong>Custom-fabricated on-site</strong> to exact length of your roofline</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-green-600 font-bold">✓</span>
+                            <span><strong>No seams except at corners</strong>—means virtually no leaks</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-green-600 font-bold">✓</span>
+                            <span><strong>Cleaner appearance</strong>—no visible joints every 10 feet</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-green-600 font-bold">✓</span>
+                            <span><strong>Less maintenance</strong>—fewer joints = fewer clogs</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-green-600 font-bold">✓</span>
+                            <span><strong>Longer lifespan</strong>—typically 20-25 years vs. 10-15 years</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-green-600 font-bold">✓</span>
+                            <span><strong>Better resale value</strong>—home buyers prefer seamless</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-green-600 font-bold">✓</span>
+                            <span><strong>20+ color options</strong> to match any home style</span>
+                          </li>
+                        </ul>
+                        <div className="mt-4 bg-green-50 p-4 rounded-lg">
+                          <p className="text-sm text-green-900">
+                            <strong>Cost difference:</strong> Only $1-3 more per linear foot than sectional, but saves you thousands in prevented water damage over the gutter's lifetime.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6 border-2 border-red-500">
+                        <h3 className="text-xl font-bold text-red-700 mb-4 flex items-center gap-2">
+                          <span className="text-2xl">❌</span> Sectional Gutters (Big Box Stores)
+                        </h3>
+                        <ul className="space-y-3 text-primary-700">
+                          <li className="flex items-start gap-2">
+                            <span className="text-red-600 font-bold">✗</span>
+                            <span><strong>Seams every 10 feet</strong>—prime spots for leaks</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-red-600 font-bold">✗</span>
+                            <span><strong>Visible joints</strong>—less attractive appearance</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-red-600 font-bold">✗</span>
+                            <span><strong>Frequent repairs</strong>—joints separate over time</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-red-600 font-bold">✗</span>
+                            <span><strong>Debris accumulation</strong> at seams causes clogs</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-red-600 font-bold">✗</span>
+                            <span><strong>Shorter lifespan</strong>—10-15 years typical</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-red-600 font-bold">✗</span>
+                            <span><strong>Limited color options</strong>—usually white or brown</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-red-600 font-bold">✗</span>
+                            <span><strong>DIY installation risks</strong>—improper pitch, leaks</span>
+                          </li>
+                        </ul>
+                        <div className="mt-4 bg-red-50 p-4 rounded-lg">
+                          <p className="text-sm text-red-900">
+                            <strong>Hidden costs:</strong> Lower upfront cost but higher lifetime cost due to repairs, resealing joints, and earlier replacement.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* 5-Inch vs 6-Inch Gutter Sizing */}
+                  <div className="bg-gradient-to-br from-amber-50 to-orange-50 p-8 rounded-2xl">
+                    <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                      5-Inch vs. 6-Inch Gutters: Which Size Do You Need?
+                    </h2>
+                    <p className="text-primary-700 mb-8 leading-relaxed">
+                      Gutter size matters! Undersized gutters overflow during heavy rainfall, while oversized gutters cost more without added benefit. Here's how to choose:
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                      <div className="bg-white rounded-xl p-6 border-l-4 border-blue-500">
+                        <h3 className="text-xl font-bold text-primary-900 mb-4">5-Inch Gutters (Standard)</h3>
+                        <p className="text-primary-700 mb-4">
+                          <strong>Best for:</strong> Most residential homes with average roof area and moderate rainfall
+                        </p>
+                        <div className="space-y-3 text-sm text-primary-700">
+                          <p><strong>Roof area:</strong> Up to 5,500 square feet</p>
+                          <p><strong>Rainfall capacity:</strong> Handles 2-3 inches per hour</p>
+                          <p><strong>Typical homes:</strong> 1,200-3,500 sq ft single-story or two-story</p>
+                          <p><strong>Cost:</strong> $6-$12 per linear foot installed</p>
+                          <p><strong>Appearance:</strong> Proportional on most homes—not too bulky</p>
+                        </div>
+                        <div className="mt-4 bg-blue-50 p-3 rounded">
+                          <p className="text-xs text-blue-900">
+                            <strong>✓ Recommended for:</strong> 80% of homes in Central Texas
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6 border-l-4 border-purple-500">
+                        <h3 className="text-xl font-bold text-primary-900 mb-4">6-Inch Gutters (High-Capacity)</h3>
+                        <p className="text-primary-700 mb-4">
+                          <strong>Best for:</strong> Large roofs, steep pitches, or areas with very heavy rainfall
+                        </p>
+                        <div className="space-y-3 text-sm text-primary-700">
+                          <p><strong>Roof area:</strong> Over 5,500 square feet</p>
+                          <p><strong>Rainfall capacity:</strong> Handles 3-5 inches per hour</p>
+                          <p><strong>Typical homes:</strong> 3,500+ sq ft, steep roofs, or multiple stories</p>
+                          <p><strong>Cost:</strong> $8-$15 per linear foot installed</p>
+                          <p><strong>Appearance:</strong> More visible but better proportion on large homes</p>
+                        </div>
+                        <div className="mt-4 bg-purple-50 p-3 rounded">
+                          <p className="text-xs text-purple-900">
+                            <strong>✓ Recommended for:</strong> Large homes, steep roof pitches (8:12+), areas with torrential rain
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="bg-white rounded-xl p-6">
+                      <h3 className="text-lg font-bold text-primary-900 mb-4">📐 Factors That Determine Gutter Size</h3>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-primary-700">
+                        <div>
+                          <p className="font-semibold text-primary-900 mb-2">✓ Roof square footage</p>
+                          <p>Larger roof = more water = larger gutters needed</p>
+                        </div>
+                        <div>
+                          <p className="font-semibold text-primary-900 mb-2">✓ Roof pitch (steepness)</p>
+                          <p>Steeper pitch = faster water flow = need more capacity</p>
+                        </div>
+                        <div>
+                          <p className="font-semibold text-primary-900 mb-2">✓ Local rainfall intensity</p>
+                          <p>Central Texas gets 2-3" per hour storms—need adequate capacity</p>
+                        </div>
+                        <div>
+                          <p className="font-semibold text-primary-900 mb-2">✓ Number of downspouts</p>
+                          <p>Proper downspout spacing can allow smaller gutter size</p>
+                        </div>
+                      </div>
+                      <p className="text-primary-700 mt-4">
+                        <strong>💡 Not sure which size you need?</strong> We'll measure your roof and recommend the right size during your free assessment—no guessing required!
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Color Options & Materials */}
+                  <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl">
+                    <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                      Gutter Materials & Color Options
+                    </h2>
+                    <div className="bg-white rounded-xl p-6 mb-6">
+                      <h3 className="text-xl font-bold text-primary-900 mb-4">Aluminum Gutters (Our Standard)</h3>
+                      <p className="text-primary-700 mb-4">
+                        <strong>Why we recommend aluminum:</strong> Best combination of durability, affordability, rust-resistance, and lightweight design. Won't rust like steel, won't crack like vinyl.
+                      </p>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                        <div className="border-l-4 border-accent-500 pl-4">
+                          <p className="font-semibold text-primary-900 mb-2">.027 Gauge (Standard)</p>
+                          <p className="text-sm text-primary-700">Most common thickness. Suitable for most residential applications. Cost-effective option. 20-year lifespan typical.</p>
+                        </div>
+                        <div className="border-l-4 border-accent-500 pl-4">
+                          <p className="font-semibold text-primary-900 mb-2">.032 Gauge (Heavy-Duty)</p>
+                          <p className="text-sm text-primary-700">20% thicker = more durable. Recommended for large homes or areas with heavy debris (trees). 25-year lifespan typical.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="bg-white rounded-xl p-6">
+                      <h3 className="text-xl font-bold text-primary-900 mb-4">20+ Color Options Available</h3>
+                      <p className="text-primary-700 mb-6">
+                        Choose a color that complements your home's exterior, trim, or roof. We bring samples to your appointment!
+                      </p>
+                      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                        {[
+                          { name: 'White', desc: 'Classic, matches any trim' },
+                          { name: 'Almond/Beige', desc: 'Warm neutral tone' },
+                          { name: 'Brown', desc: 'Earthy, traditional' },
+                          { name: 'Black', desc: 'Modern, bold contrast' },
+                          { name: 'Gray', desc: 'Contemporary neutral' },
+                          { name: 'Bronze', desc: 'Elegant metal tone' },
+                          { name: 'Copper', desc: 'Premium appearance' },
+                          { name: 'Custom Match', desc: 'Match your trim exactly' },
+                        ].map((color) => (
+                          <div key={color.name} className="bg-primary-50 p-3 rounded-lg text-center">
+                            <p className="font-semibold text-primary-900 text-sm">{color.name}</p>
+                            <p className="text-xs text-primary-600 mt-1">{color.desc}</p>
+                          </div>
+                        ))}
+                      </div>
+                      <p className="text-sm text-primary-600 mt-6">
+                        <strong>Pro tip:</strong> Most homes look best when gutters match trim color (windows, fascia) rather than roof color. This creates a cohesive look that doesn't draw attention to the gutters themselves.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Gutter Guards & Maintenance */}
+                  <div className="bg-gradient-to-br from-primary-50 to-accent-50 p-8 rounded-2xl">
+                    <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                      Should You Add Gutter Guards?
+                    </h2>
+                    <p className="text-primary-700 mb-8 leading-relaxed">
+                      Gutter guards (also called gutter covers or leaf guards) keep debris out, reducing cleaning frequency. But they're not right for every home. Here's when they make sense:
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="bg-white rounded-xl p-6">
+                        <h3 className="text-lg font-bold text-green-700 mb-4">✅ Get Gutter Guards If You Have:</h3>
+                        <ul className="space-y-2 text-primary-700">
+                          <li className="flex items-start gap-2">
+                            <span className="text-green-600">✓</span>
+                            <span><strong>Many trees</strong> dropping leaves, needles, or seeds</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-green-600">✓</span>
+                            <span><strong>Two-story home</strong> where gutter cleaning is dangerous</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-green-600">✓</span>
+                            <span><strong>Limited mobility</strong> and can't clean gutters yourself</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-green-600">✓</span>
+                            <span><strong>Frequent clogs</strong>—cleaning 3+ times per year</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-green-600">✓</span>
+                            <span><strong>Rental property</strong> where maintenance is expensive</span>
+                          </li>
+                        </ul>
+                        <div className="mt-4 bg-green-50 p-4 rounded">
+                          <p className="text-sm text-green-900">
+                            <strong>ROI:</strong> Guards cost $7-$15/linear foot but save $150-$300 per cleaning. Break-even in 2-4 years if you currently clean 2-3x annually.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6">
+                        <h3 className="text-lg font-bold text-amber-700 mb-4">⚠️ Skip Gutter Guards If You Have:</h3>
+                        <ul className="space-y-2 text-primary-700">
+                          <li className="flex items-start gap-2">
+                            <span className="text-amber-600">✓</span>
+                            <span><strong>Few or no trees</strong> nearby—guards are overkill</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-amber-600">✓</span>
+                            <span><strong>Single-story</strong> home where cleaning is easy/safe</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-amber-600">✓</span>
+                            <span><strong>Tight budget</strong>—clean 1-2x per year yourself</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-amber-600">✓</span>
+                            <span><strong>Steep roof pitch</strong>—some guards don't work well</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-amber-600">✓</span>
+                            <span><strong>Desert landscaping</strong> with minimal debris</span>
+                          </li>
+                        </ul>
+                        <div className="mt-4 bg-amber-50 p-4 rounded">
+                          <p className="text-sm text-amber-900">
+                            <strong>Reality check:</strong> Guards reduce maintenance but don't eliminate it. You'll still need occasional cleaning every 2-3 years.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="mt-6 bg-white rounded-xl p-6">
+                      <h3 className="text-lg font-bold text-primary-900 mb-4">Types of Gutter Guards We Install</h3>
+                      <div className="space-y-4">
+                        <div className="border-l-4 border-accent-500 pl-4">
+                          <p className="font-semibold text-primary-900">Micro-Mesh Guards ($10-$15/linear foot)</p>
+                          <p className="text-sm text-primary-700">Fine stainless steel mesh blocks even small debris. Best overall performance. Our top recommendation.</p>
+                        </div>
+                        <div className="border-l-4 border-blue-500 pl-4">
+                          <p className="font-semibold text-primary-900">Foam Inserts ($3-$5/linear foot)</p>
+                          <p className="text-sm text-primary-700">Budget-friendly option. Porous foam fits inside gutter. Needs replacement every 2-3 years.</p>
+                        </div>
+                        <div className="border-l-4 border-green-500 pl-4">
+                          <p className="font-semibold text-primary-900">Perforated Aluminum ($7-$10/linear foot)</p>
+                          <p className="text-sm text-primary-700">Solid cover with holes for water. Durable and effective. Good mid-range option.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Pricing Section */}
+                  <div className="bg-gradient-to-br from-accent-50 to-primary-50 p-8 rounded-2xl">
+                    <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                      Gutter Installation Pricing
+                    </h2>
+                    <p className="text-primary-700 mb-8 leading-relaxed">
+                      Transparent pricing so you know what to expect. Final quote depends on linear footage, gutter size, material gauge, and accessibility. Most homes: 120-200 linear feet of gutters.
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                      <div className="bg-white rounded-xl p-6 border-2 border-blue-500">
+                        <h3 className="text-xl font-bold text-primary-900 mb-4">5-Inch Seamless Gutters</h3>
+                        <div className="space-y-3 text-primary-700">
+                          <div className="flex justify-between items-center pb-2 border-b">
+                            <span>.027 gauge aluminum</span>
+                            <span className="font-bold text-accent-600">$6-$9/ft</span>
+                          </div>
+                          <div className="flex justify-between items-center pb-2 border-b">
+                            <span>.032 gauge aluminum (heavy-duty)</span>
+                            <span className="font-bold text-accent-600">$8-$11/ft</span>
+                          </div>
+                          <div className="flex justify-between items-center pb-2 border-b">
+                            <span>Typical home (150 linear feet)</span>
+                            <span className="font-bold text-accent-600">$900-$1,350</span>
+                          </div>
+                        </div>
+                        <p className="text-xs text-primary-600 mt-4">
+                          Includes: removal of old gutters, fascia repair if needed, seamless gutter fabrication, hidden hanger installation every 24", downspouts with extensions, cleanup
+                        </p>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6 border-2 border-purple-500">
+                        <h3 className="text-xl font-bold text-primary-900 mb-4">6-Inch Seamless Gutters</h3>
+                        <div className="space-y-3 text-primary-700">
+                          <div className="flex justify-between items-center pb-2 border-b">
+                            <span>.027 gauge aluminum</span>
+                            <span className="font-bold text-accent-600">$8-$12/ft</span>
+                          </div>
+                          <div className="flex justify-between items-center pb-2 border-b">
+                            <span>.032 gauge aluminum (heavy-duty)</span>
+                            <span className="font-bold text-accent-600">$10-$15/ft</span>
+                          </div>
+                          <div className="flex justify-between items-center pb-2 border-b">
+                            <span>Typical large home (200 linear feet)</span>
+                            <span className="font-bold text-accent-600">$1,600-$2,400</span>
+                          </div>
+                        </div>
+                        <p className="text-xs text-primary-600 mt-4">
+                          Includes: same as 5-inch plus larger capacity downspouts (3x4 inch) for better water flow
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="bg-white rounded-xl p-6">
+                      <h3 className="text-lg font-bold text-primary-900 mb-4">Add-On Services & Pricing</h3>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                        <div className="border-l-4 border-accent-500 pl-4">
+                          <p className="font-semibold text-primary-900">Gutter Guards</p>
+                          <p className="text-primary-700">Micro-mesh: $10-$15/ft • Perforated: $7-$10/ft • Foam: $3-$5/ft</p>
+                        </div>
+                        <div className="border-l-4 border-accent-500 pl-4">
+                          <p className="font-semibold text-primary-900">Downspout Extensions</p>
+                          <p className="text-primary-700">Underground drainage: $15-$25/downspout • Splash blocks: $10-$15 each</p>
+                        </div>
+                        <div className="border-l-4 border-accent-500 pl-4">
+                          <p className="font-semibold text-primary-900">Fascia Repair</p>
+                          <p className="text-primary-700">Minor repairs: $150-$300 • Fascia replacement: $8-$15/linear foot</p>
+                        </div>
+                        <div className="border-l-4 border-accent-500 pl-4">
+                          <p className="font-semibold text-primary-900">Old Gutter Removal</p>
+                          <p className="text-primary-700">Included in installation cost • Disposal and haul-away included</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="mt-6 bg-accent-50 border-2 border-accent-200 rounded-xl p-6">
+                      <h3 className="text-lg font-bold text-primary-900 mb-3">📊 What Affects Your Price?</h3>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-primary-700">
+                        <p>• <strong>Linear footage:</strong> More gutters = higher cost (measure roofline)</p>
+                        <p>• <strong>Home height:</strong> Two-story requires scaffolding (+15-25%)</p>
+                        <p>• <strong>Gutter size:</strong> 6-inch costs $2-3 more per foot than 5-inch</p>
+                        <p>• <strong>Material gauge:</strong> .032 thicker gauge costs $1-2 more per foot</p>
+                        <p>• <strong>Fascia condition:</strong> Repairs add $150-$500 typically</p>
+                        <p>• <strong>Accessibility:</strong> Steep yards or obstacles increase labor</p>
+                      </div>
+                      <p className="text-primary-700 mt-4">
+                        <strong>💡 Free quote:</strong> We measure and provide exact pricing during your free assessment—no guessing or surprise charges!
+                      </p>
+                    </div>
+                  </div>
+                </>
+              )}
+
               {/* Service Areas */}
               <div className="bg-gradient-to-br from-primary-900 to-primary-800 rounded-2xl p-8 text-white">
                 <h2 className="text-2xl font-display font-bold mb-4">
@@ -1672,6 +2075,73 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
                         </h3>
                         <p className="text-primary-600">
                           <strong>Call immediately for:</strong> Active water leaks, major storm damage with holes, trees fallen on roof, severe hail during storms, structural damage/sagging, or fire damage. <strong>Call same day for:</strong> Torn shingles with rain coming, flashing failure with seepage, sudden water stains after storms, loose gutters, wind damage to edges. <strong>When in doubt, call us at (512) 763-5277</strong>—we'll assess your situation for free over the phone.
+                        </p>
+                      </div>
+                    </>
+                  ) : service.slug === 'gutter-installation' ? (
+                    <>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          How much does gutter installation cost?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>5-inch seamless gutters: $6-$11 per linear foot installed.</strong> 6-inch gutters: $8-$15 per foot. Most homes have 120-200 linear feet of gutters. <strong>Typical costs:</strong> Average home (150 ft): $900-$1,650. Large home (200 ft): $1,600-$2,400. Price depends on size (5" vs 6"), gauge (.027 vs .032), home height, fascia repairs, and gutter guards (optional $7-$15/ft extra). Old gutter removal included. Free on-site measurement and quote!
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          Should I get seamless or sectional gutters?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>Seamless gutters are STRONGLY recommended.</strong> They're custom-fabricated on-site with no seams except at corners—meaning virtually no leaks. Sectional gutters have seams every 10 feet that leak, separate, and clog over time. Seamless cost only $1-3 more per foot but last 20-25 years vs. 10-15 years for sectional. They look better, require less maintenance, and prevent expensive water damage. The small upfront difference pays for itself many times over.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          Do I need 5-inch or 6-inch gutters?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>5-inch gutters work for 80% of homes</strong>—roof area up to 5,500 sq ft, handles 2-3 inches of rain per hour, proportional appearance. <strong>6-inch gutters needed for:</strong> Large roofs (5,500+ sq ft), steep roof pitches (8:12 or steeper), areas with torrential downpours. 6-inch costs $2-3 more per foot but prevents overflow on large roofs. We measure your roof and recommend the right size during free assessment—no guessing!
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          Are gutter guards worth the cost?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>Depends on your situation.</strong> Worth it if: You have many trees, two-story home (dangerous to clean), or clean gutters 3+ times per year. Guards cost $7-$15/ft but save $150-$300 per cleaning—break-even in 2-4 years. <strong>Skip guards if:</strong> Few trees nearby, single-story home (easy cleaning), or tight budget. Guards reduce maintenance but don't eliminate it—still need occasional cleaning every 2-3 years. We recommend micro-mesh guards ($10-$15/ft) for best performance.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          How long does gutter installation take?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>Most homes are completed in 1 day (6-8 hours).</strong> We bring our seamless gutter machine to your home and fabricate gutters on-site to exact measurements. <strong>Timeline:</strong> Small home (100-130 ft): 4-6 hours. Average home (130-180 ft): 6-8 hours. Large home (180-250 ft): 8-10 hours or 2 days. Two-story homes or complex rooflines may take longer. We remove old gutters, repair fascia if needed, install new seamless gutters, test drainage, and clean up—all in one visit!
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          What warranty do you offer on gutters?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>20-year material warranty</strong> on aluminum gutters (manufacturer warranty against defects, rust, cracking). <strong>10-year workmanship warranty</strong> on our installation (covers leaks, improper pitch, loose hangers). Hidden hanger system every 24 inches ensures gutters stay secure. We also offer optional annual maintenance programs ($99-$149) including cleaning, inspection, and minor repairs. Proper installation + quality materials = gutters that last 20-25 years.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          Can you match my home's exterior color?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>Yes! We offer 20+ color options</strong> including white, almond, brown, black, gray, bronze, copper, and custom colors. We bring samples to your appointment so you can see how colors look against your home in real lighting. <strong>Pro tip:</strong> Match your trim color (windows, fascia) rather than roof color for the most cohesive appearance. Most popular: White (classic), almond/beige (warm), and bronze (elegant). Color matching available for specialty homes.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          What happens to my old gutters?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>We remove and dispose of old gutters at no additional charge.</strong> Removal, haul-away, and disposal are included in installation price. If your fascia boards are damaged or rotted (common behind old gutters), we can repair or replace them: Minor repairs $150-$300, fascia replacement $8-$15/linear foot. We inspect fascia during free assessment and let you know what's needed before starting work.
                         </p>
                       </div>
                     </>
