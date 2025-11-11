@@ -1765,6 +1765,401 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
                 </>
               )}
 
+              {/* RESIDENTIAL ROOFING SPECIFIC CONTENT */}
+              {service.slug === 'residential-roofing' && (
+                <>
+                  {/* Roofing Material Options */}
+                  <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-2xl">
+                    <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                      Residential Roofing Material Options
+                    </h2>
+                    <p className="text-primary-700 mb-8 leading-relaxed">
+                      Choosing the right roofing material impacts your home's protection, appearance, energy efficiency, and long-term costs. Here's what we install in Central Texas:
+                    </p>
+                    <div className="space-y-6">
+                      {/* Architectural Shingles */}
+                      <div className="bg-white rounded-xl p-6 border-l-4 border-accent-500">
+                        <h3 className="text-xl font-bold text-primary-900 mb-3 flex items-center gap-2">
+                          <span className="text-2xl">🏠</span> Architectural Shingles (Most Popular)
+                        </h3>
+                        <p className="text-primary-700 mb-4">
+                          Premium laminated shingles with dimensional appearance. Best combination of cost, durability, and aesthetics. Available in 20+ colors.
+                        </p>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                          <div>
+                            <p className="font-semibold text-primary-900 mb-1">Cost</p>
+                            <p className="text-primary-700">$5,500-$12,000 (avg home)</p>
+                            <p className="text-xs text-primary-600">$350-$550/square installed</p>
+                          </div>
+                          <div>
+                            <p className="font-semibold text-primary-900 mb-1">Lifespan</p>
+                            <p className="text-primary-700">25-30 years typical</p>
+                            <p className="text-xs text-primary-600">Warranty: 25-30 years material</p>
+                          </div>
+                          <div>
+                            <p className="font-semibold text-primary-900 mb-1">Best For</p>
+                            <p className="text-primary-700">Most residential homes</p>
+                            <p className="text-xs text-primary-600">Budget-conscious homeowners</p>
+                          </div>
+                        </div>
+                        <div className="mt-4 bg-green-50 p-3 rounded">
+                          <p className="text-sm text-green-900">
+                            <strong>✓ Pros:</strong> Affordable, widely available, many color options, good warranties, suitable for most climates
+                          </p>
+                        </div>
+                        <div className="mt-2 bg-amber-50 p-3 rounded">
+                          <p className="text-sm text-amber-900">
+                            <strong>⚠ Cons:</strong> Not hail-resistant (unless impact-rated), shorter lifespan than metal/tile, heavier than standard shingles
+                          </p>
+                        </div>
+                      </div>
+
+                      {/* Impact-Resistant Shingles */}
+                      <div className="bg-white rounded-xl p-6 border-l-4 border-purple-500">
+                        <h3 className="text-xl font-bold text-primary-900 mb-3 flex items-center gap-2">
+                          <span className="text-2xl">🛡️</span> Impact-Resistant Shingles (Recommended for Central Texas)
+                        </h3>
+                        <p className="text-primary-700 mb-4">
+                          Class 4 (IR) shingles designed to withstand hail impact. Earns 10-35% annual insurance discounts. Essential for hail-prone areas like Round Rock, Georgetown, Austin.
+                        </p>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                          <div>
+                            <p className="font-semibold text-primary-900 mb-1">Cost</p>
+                            <p className="text-primary-700">$8,500-$15,000 (avg home)</p>
+                            <p className="text-xs text-primary-600">$500-$700/square installed</p>
+                          </div>
+                          <div>
+                            <p className="font-semibold text-primary-900 mb-1">Lifespan</p>
+                            <p className="text-primary-700">30-50 years typical</p>
+                            <p className="text-xs text-primary-600">Warranty: 30-50 years material</p>
+                          </div>
+                          <div>
+                            <p className="font-semibold text-primary-900 mb-1">Best For</p>
+                            <p className="text-primary-700">Hail-prone areas</p>
+                            <p className="text-xs text-primary-600">Insurance savings seekers</p>
+                          </div>
+                        </div>
+                        <div className="mt-4 bg-green-50 p-3 rounded">
+                          <p className="text-sm text-green-900">
+                            <strong>✓ Pros:</strong> Hail protection, insurance discounts (10-35%), longer warranties, premium appearance, ROI in 7-12 years from insurance savings
+                          </p>
+                        </div>
+                        <div className="mt-2 bg-purple-50 p-3 rounded border-2 border-purple-200">
+                          <p className="text-sm text-purple-900">
+                            <strong>💰 Insurance Savings Example:</strong> $3,000-$5,000 upgrade. Save $300-$600/year on insurance. Break-even in 7-10 years. Plus avoid future claims!
+                          </p>
+                        </div>
+                      </div>
+
+                      {/* Metal Roofing */}
+                      <div className="bg-white rounded-xl p-6 border-l-4 border-blue-500">
+                        <h3 className="text-xl font-bold text-primary-900 mb-3 flex items-center gap-2">
+                          <span className="text-2xl">🔩</span> Metal Roofing (Longest Lasting)
+                        </h3>
+                        <p className="text-primary-700 mb-4">
+                          Standing seam or metal shingle panels. Extremely durable, energy efficient, fire resistant. Best long-term investment but higher upfront cost.
+                        </p>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                          <div>
+                            <p className="font-semibold text-primary-900 mb-1">Cost</p>
+                            <p className="text-primary-700">$15,000-$30,000 (avg home)</p>
+                            <p className="text-xs text-primary-600">$700-$1,200/square installed</p>
+                          </div>
+                          <div>
+                            <p className="font-semibold text-primary-900 mb-1">Lifespan</p>
+                            <p className="text-primary-700">40-70 years typical</p>
+                            <p className="text-xs text-primary-600">Warranty: 30-50 years material</p>
+                          </div>
+                          <div>
+                            <p className="font-semibold text-primary-900 mb-1">Best For</p>
+                            <p className="text-primary-700">Long-term homeowners</p>
+                            <p className="text-xs text-primary-600">Premium home upgrades</p>
+                          </div>
+                        </div>
+                        <div className="mt-4 bg-green-50 p-3 rounded">
+                          <p className="text-sm text-green-900">
+                            <strong>✓ Pros:</strong> 40-70 year lifespan, excellent hail/wind resistance, energy efficient (reflects heat), fire resistant, low maintenance, increases home value
+                          </p>
+                        </div>
+                        <div className="mt-2 bg-amber-50 p-3 rounded">
+                          <p className="text-sm text-amber-900">
+                            <strong>⚠ Cons:</strong> Higher upfront cost, can be noisy in rain (unless insulated), limited installers, may not match traditional neighborhoods
+                          </p>
+                        </div>
+                      </div>
+
+                      {/* Tile Roofing */}
+                      <div className="bg-white rounded-xl p-6 border-l-4 border-orange-500">
+                        <h3 className="text-xl font-bold text-primary-900 mb-3 flex items-center gap-2">
+                          <span className="text-2xl">🏛️</span> Tile Roofing (Premium Aesthetic)
+                        </h3>
+                        <p className="text-primary-700 mb-4">
+                          Clay or concrete tiles for Mediterranean, Spanish, or contemporary homes. Extremely durable, fire resistant, distinctive appearance. Requires structural support.
+                        </p>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                          <div>
+                            <p className="font-semibold text-primary-900 mb-1">Cost</p>
+                            <p className="text-primary-700">$20,000-$40,000 (avg home)</p>
+                            <p className="text-xs text-primary-600">$800-$1,500/square installed</p>
+                          </div>
+                          <div>
+                            <p className="font-semibold text-primary-900 mb-1">Lifespan</p>
+                            <p className="text-primary-700">50-100 years typical</p>
+                            <p className="text-xs text-primary-600">Warranty: 50+ years material</p>
+                          </div>
+                          <div>
+                            <p className="font-semibold text-primary-900 mb-1">Best For</p>
+                            <p className="text-primary-700">Spanish/Mediterranean style</p>
+                            <p className="text-xs text-primary-600">Luxury homes</p>
+                          </div>
+                        </div>
+                        <div className="mt-4 bg-green-50 p-3 rounded">
+                          <p className="text-sm text-green-900">
+                            <strong>✓ Pros:</strong> 50-100 year lifespan, exceptional durability, fire resistant, energy efficient, distinctive appearance, low maintenance
+                          </p>
+                        </div>
+                        <div className="mt-2 bg-amber-50 p-3 rounded">
+                          <p className="text-sm text-amber-900">
+                            <strong>⚠ Cons:</strong> Highest upfront cost, very heavy (may require structural reinforcement $2k-$5k), limited contractors, individual tiles can break
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Common Roof Styles */}
+                  <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl">
+                    <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                      Common Residential Roof Styles We Install
+                    </h2>
+                    <p className="text-primary-700 mb-8 leading-relaxed">
+                      Your roof style affects cost, complexity, drainage, and aesthetics. Here are the most common residential roof types in Central Texas:
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="bg-white rounded-xl p-6">
+                        <h3 className="text-lg font-bold text-primary-900 mb-3">🏠 Gable Roof (Most Common)</h3>
+                        <p className="text-sm text-primary-700 mb-3">
+                          Triangular roof with two sloping sides meeting at a ridge. Simple, cost-effective, excellent drainage. Used on 60% of Central Texas homes.
+                        </p>
+                        <div className="grid grid-cols-2 gap-2 text-xs text-primary-700">
+                          <p><strong>Cost Factor:</strong> Standard (baseline)</p>
+                          <p><strong>Complexity:</strong> Simple</p>
+                          <p><strong>Drainage:</strong> Excellent</p>
+                          <p><strong>Attic Space:</strong> Good ventilation</p>
+                        </div>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6">
+                        <h3 className="text-lg font-bold text-primary-900 mb-3">🏘️ Hip Roof (Very Common)</h3>
+                        <p className="text-sm text-primary-700 mb-3">
+                          All four sides slope downward to walls. More stable in high winds, better for Central Texas storms. Slightly more expensive than gable.
+                        </p>
+                        <div className="grid grid-cols-2 gap-2 text-xs text-primary-700">
+                          <p><strong>Cost Factor:</strong> +10-15% vs gable</p>
+                          <p><strong>Complexity:</strong> Moderate</p>
+                          <p><strong>Drainage:</strong> Excellent</p>
+                          <p><strong>Wind Resistance:</strong> Superior</p>
+                        </div>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6">
+                        <h3 className="text-lg font-bold text-primary-900 mb-3">🏡 Combination Roof (Growing Trend)</h3>
+                        <p className="text-sm text-primary-700 mb-3">
+                          Mix of gable, hip, and other elements for visual interest. Common on larger or custom homes. More complex installation.
+                        </p>
+                        <div className="grid grid-cols-2 gap-2 text-xs text-primary-700">
+                          <p><strong>Cost Factor:</strong> +15-25% vs gable</p>
+                          <p><strong>Complexity:</strong> Complex</p>
+                          <p><strong>Drainage:</strong> Good (if designed right)</p>
+                          <p><strong>Appearance:</strong> Premium look</p>
+                        </div>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6">
+                        <h3 className="text-lg font-bold text-primary-900 mb-3">🏚️ Flat/Low-Slope Roof (Less Common)</h3>
+                        <p className="text-sm text-primary-700 mb-3">
+                          Nearly flat or very low pitch (less than 3:12). Requires different materials (TPO, EPDM, modified bitumen) and more maintenance.
+                        </p>
+                        <div className="grid grid-cols-2 gap-2 text-xs text-primary-700">
+                          <p><strong>Cost Factor:</strong> Varies by material</p>
+                          <p><strong>Complexity:</strong> Moderate</p>
+                          <p><strong>Drainage:</strong> Poor (needs drains)</p>
+                          <p><strong>Maintenance:</strong> Higher frequency</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Signs You Need a New Roof */}
+                  <div className="bg-gradient-to-br from-amber-50 to-orange-50 p-8 rounded-2xl">
+                    <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                      Signs You Need a New Residential Roof
+                    </h2>
+                    <p className="text-primary-700 mb-8 leading-relaxed">
+                      Not sure if you need roof replacement or just repairs? Here are clear indicators it's time for a new roof:
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="bg-white rounded-xl p-6 border-l-4 border-red-600">
+                        <h3 className="text-lg font-bold text-red-700 mb-4">🚨 Immediate Replacement Needed</h3>
+                        <ul className="space-y-2 text-sm text-primary-700">
+                          <li className="flex items-start gap-2">
+                            <span className="text-red-600 font-bold">•</span>
+                            <span><strong>Age 20+ years</strong> (near or past expected lifespan)</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-red-600 font-bold">•</span>
+                            <span><strong>Multiple leaks</strong> in different areas of roof</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-red-600 font-bold">•</span>
+                            <span><strong>Widespread shingle damage</strong> (30%+ of roof affected)</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-red-600 font-bold">•</span>
+                            <span><strong>Sagging roof deck</strong> (structural issue)</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-red-600 font-bold">•</span>
+                            <span><strong>Extensive granule loss</strong> (shingles look bald)</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-red-600 font-bold">•</span>
+                            <span><strong>Daylight through roof boards</strong> visible from attic</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-red-600 font-bold">•</span>
+                            <span><strong>Mold or water stains</strong> throughout attic</span>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6 border-l-4 border-amber-500">
+                        <h3 className="text-lg font-bold text-amber-700 mb-4">⚠️ Plan Replacement Soon (1-3 Years)</h3>
+                        <ul className="space-y-2 text-sm text-primary-700">
+                          <li className="flex items-start gap-2">
+                            <span className="text-amber-600 font-bold">•</span>
+                            <span><strong>Age 15-20 years</strong> (approaching end of life)</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-amber-600 font-bold">•</span>
+                            <span><strong>Curling or buckling shingles</strong> (losing adhesion)</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-amber-600 font-bold">•</span>
+                            <span><strong>Missing shingles</strong> after every major storm</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-amber-600 font-bold">•</span>
+                            <span><strong>Cracked or broken shingles</strong> throughout roof</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-amber-600 font-bold">•</span>
+                            <span><strong>Frequent repairs needed</strong> (3+ repairs in past 2 years)</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-amber-600 font-bold">•</span>
+                            <span><strong>Energy bills increasing</strong> (poor insulation/ventilation)</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-amber-600 font-bold">•</span>
+                            <span><strong>Neighbors replacing</strong> (similar age homes)</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="mt-6 bg-white rounded-xl p-6">
+                      <p className="text-primary-700 mb-3">
+                        <strong>💡 Not Sure?</strong> Schedule a free inspection. We'll give you an honest assessment with photos, remaining lifespan estimate, and clear recommendation whether to repair or replace. No pressure—just facts.
+                      </p>
+                      <p className="text-sm text-primary-600">
+                        <strong>Cost consideration:</strong> Replacing proactively (before catastrophic failure) typically costs 10-20% less than emergency replacement after major damage. Plus you avoid interior water damage ($5k-$20k in repairs).
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Pricing Guide */}
+                  <div className="bg-gradient-to-br from-primary-50 to-accent-50 p-8 rounded-2xl">
+                    <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                      Residential Roofing Cost Guide
+                    </h2>
+                    <p className="text-primary-700 mb-8 leading-relaxed">
+                      Residential roof costs vary by material, home size, roof complexity, and existing conditions. Here's what to expect in Central Texas:
+                    </p>
+                    <div className="grid grid-cols-1 gap-6 mb-6">
+                      <div className="bg-white rounded-xl p-6">
+                        <h3 className="text-xl font-bold text-primary-900 mb-4">💰 Average Home Pricing (1,800-2,200 sq ft home, ~20 squares)</h3>
+                        <div className="space-y-3">
+                          <div className="flex justify-between items-center pb-3 border-b">
+                            <span className="text-primary-700"><strong>Architectural Shingles</strong> (standard)</span>
+                            <span className="font-bold text-accent-600">$7,000-$11,000</span>
+                          </div>
+                          <div className="flex justify-between items-center pb-3 border-b">
+                            <span className="text-primary-700"><strong>Impact-Resistant Shingles</strong> (Class 4/IR)</span>
+                            <span className="font-bold text-accent-600">$10,000-$14,000</span>
+                          </div>
+                          <div className="flex justify-between items-center pb-3 border-b">
+                            <span className="text-primary-700"><strong>Premium Architectural</strong> (designer)</span>
+                            <span className="font-bold text-accent-600">$12,000-$16,000</span>
+                          </div>
+                          <div className="flex justify-between items-center pb-3 border-b">
+                            <span className="text-primary-700"><strong>Metal Roofing</strong> (standing seam)</span>
+                            <span className="font-bold text-accent-600">$18,000-$28,000</span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span className="text-primary-700"><strong>Tile Roofing</strong> (concrete or clay)</span>
+                            <span className="font-bold text-accent-600">$25,000-$40,000</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-6">
+                        <h3 className="text-lg font-bold text-primary-900 mb-4">📊 What's Included in Our Pricing</h3>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-primary-700">
+                          <div>
+                            <p className="font-semibold text-primary-900 mb-2">✓ Materials</p>
+                            <ul className="space-y-1 ml-4">
+                              <li>• Roofing material (shingles, metal, etc.)</li>
+                              <li>• Underlayment (synthetic or felt)</li>
+                              <li>• Ice & water shield (valleys, eaves)</li>
+                              <li>• Ridge cap shingles</li>
+                              <li>• Starter strips</li>
+                              <li>• Nails and fasteners</li>
+                              <li>• Flashing materials</li>
+                            </ul>
+                          </div>
+                          <div>
+                            <p className="font-semibold text-primary-900 mb-2">✓ Labor & Services</p>
+                            <ul className="space-y-1 ml-4">
+                              <li>• Complete tear-off of old roof</li>
+                              <li>• Decking repair/replacement as needed</li>
+                              <li>• Professional installation</li>
+                              <li>• Cleanup and disposal</li>
+                              <li>• Magnetic nail sweep</li>
+                              <li>• Final inspection</li>
+                              <li>• Warranty registration</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="bg-accent-50 border-2 border-accent-200 rounded-xl p-6">
+                      <h3 className="text-lg font-bold text-primary-900 mb-3">📈 Factors That Affect Your Price</h3>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-primary-700">
+                        <p>• <strong>Roof size:</strong> Measured in "squares" (100 sq ft each)</p>
+                        <p>• <strong>Roof pitch:</strong> Steeper = more labor and safety equipment</p>
+                        <p>• <strong>Roof complexity:</strong> Multiple levels, valleys, chimneys add cost</p>
+                        <p>• <strong>Decking condition:</strong> Rotten boards need replacement ($3-$5/sq ft)</p>
+                        <p>• <strong>Number of layers:</strong> Multiple layers add disposal costs</p>
+                        <p>• <strong>Access/terrain:</strong> Difficult access increases labor</p>
+                        <p>• <strong>Material choice:</strong> Premium materials cost more upfront</p>
+                        <p>• <strong>Permit fees:</strong> Varies by city ($100-$500 typically)</p>
+                      </div>
+                    </div>
+                  </div>
+                </>
+              )}
+
               {/* Service Areas */}
               <div className="bg-gradient-to-br from-primary-900 to-primary-800 rounded-2xl p-8 text-white">
                 <h2 className="text-2xl font-display font-bold mb-4">
@@ -2075,6 +2470,73 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
                         </h3>
                         <p className="text-primary-600">
                           <strong>Call immediately for:</strong> Active water leaks, major storm damage with holes, trees fallen on roof, severe hail during storms, structural damage/sagging, or fire damage. <strong>Call same day for:</strong> Torn shingles with rain coming, flashing failure with seepage, sudden water stains after storms, loose gutters, wind damage to edges. <strong>When in doubt, call us at (512) 763-5277</strong>—we'll assess your situation for free over the phone.
+                        </p>
+                      </div>
+                    </>
+                  ) : service.slug === 'residential-roofing' ? (
+                    <>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          How much does a residential roof replacement cost?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>Average home (1,800-2,200 sq ft): $7,000-$14,000 depending on material.</strong> Architectural shingles: $7k-$11k. Impact-resistant: $10k-$14k. Premium/designer: $12k-$16k. Metal: $18k-$28k. Tile: $25k-$40k. Price varies by home size, roof pitch/complexity, decking repairs, material choice, and number of layers. Most homes are 18-24 squares (1 square = 100 sq ft). Free detailed quote after inspection!
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          What's the best roofing material for Central Texas?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>Impact-resistant (Class 4/IR) architectural shingles are the best balance</strong> for most Central Texas homeowners. They handle extreme heat, resist hail damage, earn 10-35% insurance discounts, last 30-50 years, and cost only $3k-$5k more than standard shingles. Insurance savings recover the upgrade cost in 7-12 years. Metal roofing lasts longer (40-70 years) but costs 2-3x more upfront. Standard shingles work if budget-constrained, but you'll face more hail claims.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          How long does a residential roof last in Texas?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>Depends on material and maintenance:</strong> Standard architectural shingles: 20-25 years. Impact-resistant shingles: 30-40 years. Metal roofing: 40-70 years. Tile roofing: 50-100 years. <strong>Texas factors that reduce lifespan:</strong> Intense UV exposure, extreme heat (140°F+ attic temps), frequent hail storms, high winds. Proper ventilation, annual inspections, and prompt repairs extend lifespan significantly. Most homes in <Link href="/locations/round-rock" className="text-accent-600 hover:text-accent-700 font-semibold">Round Rock</Link>, <Link href="/locations/austin" className="text-accent-600 hover:text-accent-700 font-semibold">Austin</Link>, and <Link href="/locations/georgetown" className="text-accent-600 hover:text-accent-700 font-semibold">Georgetown</Link> need replacement every 20-30 years.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          Do I need to replace my roof or can it be repaired?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>Repair if:</strong> Damage is localized (less than 30%), roof is under 15 years old, no structural issues, repair costs less than 30% of replacement. <strong>Replace if:</strong> Age 20+ years, damage exceeds 30-40%, multiple repairs recently, structural concerns (sagging, water damage), insurance covering replacement, or planning to sell soon (adds value). We provide honest assessment—if repairs work, we'll tell you. If replacement is needed, we explain why with photos.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          How long does roof installation take?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>Most residential roofs: 1-3 days.</strong> Simple gable roof (1,500-2,000 sq ft): 1 day. Average complexity (2,000-2,500 sq ft): 2 days. Complex/large (2,500-3,500+ sq ft): 2-3 days. <strong>Timeline breakdown:</strong> Day 1: Tear-off, decking repairs, underlayment, start shingles. Day 2: Complete shingles, flashing, ridge caps, cleanup. Weather delays possible. Metal/tile roofs take longer (3-5 days). Two-story homes add time. We work until dark to minimize exposure.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          Will insurance cover my roof replacement?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>Insurance covers replacement if damage from covered events</strong> (hail, wind, falling trees, fire). You pay deductible ($2,500-$5,000 or 1-2% of dwelling coverage), insurance covers rest. <strong>What's NOT covered:</strong> Age/wear-and-tear, poor maintenance, cosmetic damage only. <strong>Age matters:</strong> Some policies depreciate roofs over 10-15 years. We provide FREE post-storm inspections, document damage with photos, help file claims, attend adjuster meetings. We've helped thousands of homeowners successfully navigate claims.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          What warranty do you offer on residential roofing?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>Dual warranty protection:</strong> (1) <strong>10-year workmanship warranty</strong> from Ripple Roofing—covers any installation defects, leaks from our work, or problems caused by our installation. (2) <strong>25-50 year material warranty</strong> from manufacturer (CertainTeed, Owens Corning, GAF)—covers defects in materials, premature failure, manufacturing issues. Impact-resistant shingles often have longer warranties (30-50 years). We register your warranty and provide copies. Proper maintenance required to keep warranties valid.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
+                        <h3 className="text-xl font-bold text-primary-900 mb-2">
+                          Can I stay in my home during roof replacement?
+                        </h3>
+                        <p className="text-primary-600">
+                          <strong>Yes, absolutely!</strong> Most homeowners stay during installation. <strong>What to expect:</strong> Noise (hammering, walking on roof) from 8 AM - 5 PM. Vibrations throughout house. Keep garage clear for equipment. Protect valuables from vibration (move photos, fragile items). Keep children and pets indoors. We work efficiently to minimize disruption. Bedrooms are usable but noisy during day. We'll notify you before starting each section. Kitchen, bathrooms fully functional throughout.
                         </p>
                       </div>
                     </>
