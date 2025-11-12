@@ -75,14 +75,29 @@ export async function POST(request: NextRequest) {
     }
 
     // Timing check - reject submissions faster than 3 seconds
+    // This compares form mount time to submission time
     if (body._timestamp) {
-      const submissionTime = body._timestamp
+      const formMountTime = body._timestamp
       const currentTime = Date.now()
-      const timeDiff = currentTime - submissionTime
+      const timeDiff = currentTime - formMountTime
       
-      // If submission was "sent" from the future or too quickly, it's suspicious
-      if (timeDiff < 0 || timeDiff > 1000) { // Allow 1 second clock skew
-        console.log('⏱️ Suspicious timing detected:', { ip, timeDiff })
+      // If form was filled out too quickly (< 3 seconds), it's likely a bot
+      // Allow reasonable buffer for legitimate fast users
+      if (timeDiff < 2000) { // 2 seconds minimum
+        console.log('⏱️ Suspicious timing detected (too fast):', { ip, timeDiff })
+        return NextResponse.json(
+          {
+            success: false,
+            message: 'Please take a moment to review your information.',
+            error: 'Timing validation failed',
+          },
+          { status: 400 }
+        )
+      }
+      
+      // If timestamp is from the future or way too old (> 1 hour), reject it
+      if (timeDiff < 0 || timeDiff > 3600000) {
+        console.log('⏱️ Suspicious timing detected (invalid timestamp):', { ip, timeDiff })
         return NextResponse.json(
           {
             success: false,

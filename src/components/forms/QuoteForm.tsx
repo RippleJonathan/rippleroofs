@@ -10,9 +10,10 @@ import { Select } from '@/components/ui/Select'
 
 interface QuoteFormProps {
   className?: string
+  prefillAddress?: string // Auto-fill address based on location page
 }
 
-export const QuoteForm: FC<QuoteFormProps> = ({ className = '' }) => {
+export const QuoteForm: FC<QuoteFormProps> = ({ className = '', prefillAddress }) => {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
   const [errorMessage, setErrorMessage] = useState('')
@@ -26,12 +27,20 @@ export const QuoteForm: FC<QuoteFormProps> = ({ className = '' }) => {
     setValue,
   } = useForm<QuoteFormInput>({
     resolver: zodResolver(quoteFormSchema),
+    defaultValues: {
+      address: prefillAddress || '',
+    },
   })
 
   // Track when form is mounted for timing check
   useEffect(() => {
     setFormMountTime(Date.now())
-  }, [])
+    
+    // Update address if prefillAddress changes
+    if (prefillAddress) {
+      setValue('address', prefillAddress)
+    }
+  }, [prefillAddress, setValue])
 
   const onSubmit = async (data: QuoteFormInput) => {
     setIsSubmitting(true)
@@ -39,16 +48,10 @@ export const QuoteForm: FC<QuoteFormProps> = ({ className = '' }) => {
     setErrorMessage('')
 
     try {
-      // Timing check - block submissions faster than 3 seconds
-      const timeSinceMount = Date.now() - formMountTime
-      if (timeSinceMount < 3000) {
-        throw new Error('Please take a moment to review your information.')
-      }
-
-      // Add timestamp to submission
+      // Add timestamp for spam detection (tracks when form was mounted)
       const submissionData = {
         ...data,
-        _timestamp: Date.now(),
+        _timestamp: formMountTime,
       }
 
       const response = await fetch('/api/quote', {

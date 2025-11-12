@@ -6,6 +6,8 @@ import { Footer } from '@/components/layout/Footer'
 import { FooterReviews } from '@/components/layout/FooterReviews'
 import { FloatingCallButton } from '@/components/ui/FloatingCallButton'
 import { EmergencyBanner } from '@/components/ui/EmergencyBanner'
+import { ExitIntentPopup } from '@/components/ui/ExitIntentPopup'
+import { StickyMobileBar } from '@/components/ui/StickyMobileBar'
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -81,6 +83,8 @@ export default function RootLayout({
         <FooterReviews />
         <Footer />
         <FloatingCallButton />
+        <StickyMobileBar />
+        <ExitIntentPopup />
       </body>
     </html>
   )
