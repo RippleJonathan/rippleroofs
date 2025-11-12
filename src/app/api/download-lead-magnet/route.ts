@@ -1,8 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
@@ -28,9 +26,24 @@ export async function POST(request: NextRequest) {
     // Generate download URL (the thank you page will handle the actual PDF generation)
     const downloadUrl = `${process.env.NEXT_PUBLIC_SITE_URL || 'https://rippleroofing.com'}/resources/${slug}/thank-you`;
 
+    // Check if Resend API key is configured
+    if (!process.env.RESEND_API_KEY) {
+      console.error('RESEND_API_KEY is not configured - skipping email, redirecting to thank you page');
+      // Still allow download by returning success
+      return NextResponse.json({ 
+        success: true, 
+        message: 'Download ready',
+        skipEmail: true 
+      });
+    }
+
+    const resend = new Resend(process.env.RESEND_API_KEY);
+
     // Send email with Resend
+    // Note: Using onboarding@resend.dev until rippleroofing.com domain is verified in Resend
+    // To use info@rippleroofing.com, verify domain at https://resend.com/domains
     const { data, error } = await resend.emails.send({
-      from: 'Ripple Roofing <info@rippleroofing.com>',
+      from: 'Ripple Roofing <onboarding@resend.dev>',
       to: [email],
       replyTo: 'info@rippleroofing.com',
       subject: `Your Free Download: ${title}`,
@@ -148,26 +161,31 @@ export async function POST(request: NextRequest) {
     if (error) {
       console.error('Resend error:', error);
       return NextResponse.json(
-        { error: 'Failed to send email' },
+        { error: 'Failed to send email. Please contact us at (512) 566-5511 for immediate assistance.' },
         { status: 500 }
       );
     }
 
-    // Also send internal notification email
-    await resend.emails.send({
-      from: 'Ripple Roofing <info@rippleroofing.com>',
-      to: ['info@rippleroofing.com'], // Replace with your actual email
-      subject: `New Lead Magnet Download: ${title}`,
-      html: `
-        <h2>New Lead Magnet Download</h2>
-        <p><strong>Resource:</strong> ${title}</p>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        ${phone ? `<p><strong>Phone:</strong> ${phone}</p>` : ''}
-        ${address ? `<p><strong>Address:</strong> ${address}</p>` : ''}
-        <p><strong>Time:</strong> ${new Date().toLocaleString('en-US', { timeZone: 'America/Chicago' })}</p>
-      `,
-    });
+    // Also send internal notification email (don't fail if this one fails)
+    try {
+      await resend.emails.send({
+        from: 'Ripple Roofing <onboarding@resend.dev>',
+        to: ['info@rippleroofing.com'],
+        subject: `New Lead Magnet Download: ${title}`,
+        html: `
+          <h2>New Lead Magnet Download</h2>
+          <p><strong>Resource:</strong> ${title}</p>
+          <p><strong>Name:</strong> ${name}</p>
+          <p><strong>Email:</strong> ${email}</p>
+          ${phone ? `<p><strong>Phone:</strong> ${phone}</p>` : ''}
+          ${address ? `<p><strong>Address:</strong> ${address}</p>` : ''}
+          <p><strong>Time:</strong> ${new Date().toLocaleString('en-US', { timeZone: 'America/Chicago' })}</p>
+        `,
+      });
+    } catch (notificationError) {
+      // Log but don't fail the request if internal notification fails
+      console.error('Internal notification error (non-critical):', notificationError);
+    }
 
     return NextResponse.json({ success: true, data });
   } catch (error) {
