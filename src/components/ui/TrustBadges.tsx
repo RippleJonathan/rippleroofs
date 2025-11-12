@@ -73,9 +73,9 @@ export const TrustBadges: FC = () => {
               <div className="mb-3 group-hover:text-accent-700 transition-colors">
                 {badge.icon}
               </div>
-              <h3 className="font-bold text-sm text-primary-900 mb-1">
+              <div className="font-bold text-sm text-primary-900 mb-1">
                 {badge.title}
-              </h3>
+              </div>
               <p className="text-xs text-primary-600">
                 {badge.description}
               </p>

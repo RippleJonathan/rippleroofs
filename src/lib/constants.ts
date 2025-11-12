@@ -18,7 +18,7 @@ export const SITE_CONFIG = {
   social: {
     facebook: 'https://facebook.com/rippleroofs',
     instagram: '',
-    linkedin: '',
+    linkedin: 'https://www.linkedin.com/company/ripple-roofing',
     twitter: '',
     youtube: '',
   },

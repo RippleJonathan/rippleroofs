@@ -57,6 +57,8 @@ export const Navbar: FC = () => {
                 fill
                 className="object-contain transition-opacity duration-200 group-hover:opacity-80"
                 priority
+                quality={75}
+                sizes="(max-width: 768px) 180px, 192px"
               />
             </Link>
 

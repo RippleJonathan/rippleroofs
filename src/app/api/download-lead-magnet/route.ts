@@ -24,7 +24,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Generate download URL (the thank you page will handle the actual PDF generation)
-    const downloadUrl = `${process.env.NEXT_PUBLIC_SITE_URL || 'https://rippleroofing.com'}/resources/${slug}/thank-you`;
+    const downloadUrl = `${process.env.NEXT_PUBLIC_SITE_URL || 'https://rippleroofs.com'}/resources/${slug}/thank-you`;
 
     // Check if Resend API key is configured
     if (!process.env.RESEND_API_KEY) {
@@ -40,12 +40,12 @@ export async function POST(request: NextRequest) {
     const resend = new Resend(process.env.RESEND_API_KEY);
 
     // Send email with Resend
-    // Note: Using onboarding@resend.dev until rippleroofing.com domain is verified in Resend
-    // To use info@rippleroofing.com, verify domain at https://resend.com/domains
+    // Note: Using onboarding@resend.dev until rippleroofs.com domain is verified in Resend
+    // To use info@rippleroofs.com, verify domain at https://resend.com/domains
     const { data, error } = await resend.emails.send({
       from: 'Ripple Roofing <onboarding@resend.dev>',
       to: [email],
-      replyTo: 'info@rippleroofing.com',
+      replyTo: 'info@rippleroofs.com',
       subject: `Your Free Download: ${title}`,
       html: `
         <!DOCTYPE html>
@@ -146,7 +146,7 @@ export async function POST(request: NextRequest) {
               <p style="margin: 0 0 10px 0;"><strong>Ripple Roofing</strong></p>
               <p style="margin: 0 0 10px 0;">
                 <a href="tel:+15125665511" style="color: #2563EB; text-decoration: none;">(512) 566-5511</a> • 
-                <a href="https://rippleroofing.com" style="color: #2563EB; text-decoration: none;">rippleroofing.com</a>
+                <a href="https://rippleroofs.com" style="color: #2563EB; text-decoration: none;">rippleroofs.com</a>
               </p>
               <p style="margin: 10px 0 0 0; font-size: 12px;">
                 You're receiving this because you requested a free resource from Ripple Roofing.<br>

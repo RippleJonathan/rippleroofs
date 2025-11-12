@@ -46,17 +46,17 @@ Resend requires you to verify your sending domain:
 
 1. In Resend dashboard, go to **Domains**
 2. Click **Add Domain**
-3. Enter: `rippleroofing.com`
+3. Enter: `rippleroofs.com`
 4. Add the provided DNS records to your domain:
    - TXT record for domain verification
    - CNAME records for DKIM
    - MX records (optional, for receiving)
 5. Wait for DNS propagation (can take up to 48 hours)
-6. Once verified, emails will be sent from `info@rippleroofing.com`
+6. Once verified, emails will be sent from `info@rippleroofs.com`
 
 ### Alternative: Use Resend's Test Domain (Development Only)
 
-For testing, Resend provides a test domain. Emails will be sent from `onboarding@resend.dev` instead of `info@rippleroofing.com`. This works immediately but should only be used for development.
+For testing, Resend provides a test domain. Emails will be sent from `onboarding@resend.dev` instead of `info@rippleroofs.com`. This works immediately but should only be used for development.
 
 ## 🔄 How the System Works
 
@@ -71,7 +71,7 @@ For testing, Resend provides a test domain. Emails will be sent from `onboarding
 4. API endpoint `/api/download-lead-magnet` processes submission:
    - Validates form data
    - Sends confirmation email to user with download link
-   - Sends internal notification to `info@rippleroofing.com`
+   - Sends internal notification to `info@rippleroofs.com`
 5. User is redirected to thank you page
 6. Thank you page auto-downloads the PDF
 7. User receives email with download link (backup)
@@ -91,7 +91,7 @@ This ensures the system works even if email is not configured yet.
 
 ### User Confirmation Email
 - **Subject**: "Your Free Download: [Resource Title]"
-- **From**: `Ripple Roofing <info@rippleroofing.com>`
+- **From**: `Ripple Roofing <info@rippleroofs.com>`
 - **Contains**:
   - Personalized greeting
   - Download button
@@ -101,7 +101,7 @@ This ensures the system works even if email is not configured yet.
 
 ### Internal Notification Email
 - **Subject**: "New Lead Magnet Download: [Resource Title]"
-- **To**: `info@rippleroofing.com`
+- **To**: `info@rippleroofs.com`
 - **Contains**:
   - Resource downloaded
   - Name, Email, Phone, Address
@@ -120,13 +120,13 @@ This ensures the system works even if email is not configured yet.
 8. ✅ If RESEND_API_KEY is set, check email inbox
 
 ### Production Testing (Vercel)
-1. ⏳ Visit https://rippleroofing.com/resources/roof-inspection-checklist
+1. ⏳ Visit https://rippleroofs.com/resources/roof-inspection-checklist
 2. ⏳ Fill out form with real data
 3. ⏳ Submit form
 4. ⏳ Verify redirect to thank you page
 5. ⏳ Verify PDF auto-downloads
 6. ⏳ Check email inbox for confirmation (if RESEND_API_KEY is configured)
-7. ⏳ Check info@rippleroofing.com for internal notification
+7. ⏳ Check info@rippleroofs.com for internal notification
 8. ⏳ Test on mobile device
 9. ⏳ Test all 4 lead magnets
 

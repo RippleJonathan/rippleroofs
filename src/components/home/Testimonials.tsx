@@ -215,13 +215,21 @@ export const Testimonials: FC = () => {
                 <button
                   key={index}
                   onClick={() => goToReview(index)}
-                  className={`w-3 h-3 rounded-full transition-all ${
+                  className={`w-12 h-12 rounded-full transition-all flex items-center justify-center ${
                     index === currentIndex
-                      ? 'bg-accent-500 w-8'
-                      : 'bg-primary-300 hover:bg-primary-400'
+                      ? 'bg-accent-100 hover:bg-accent-200'
+                      : 'bg-primary-100 hover:bg-primary-200'
                   }`}
                   aria-label={`Go to review ${index + 1}`}
-                />
+                >
+                  <span 
+                    className={`rounded-full transition-all ${
+                      index === currentIndex
+                        ? 'bg-accent-500 w-8 h-3'
+                        : 'bg-primary-400 w-3 h-3'
+                    }`}
+                  />
+                </button>
               ))}
             </div>
           )}

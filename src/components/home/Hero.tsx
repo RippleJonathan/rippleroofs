@@ -16,7 +16,8 @@ export const Hero: FC = () => {
           fill
           priority
           className="object-cover"
-          quality={90}
+          quality={75}
+          sizes="100vw"
         />
         {/* Gradient Overlay with Blue Accent */}
         <div className="absolute inset-0 bg-gradient-to-r from-primary-900/95 via-primary-900/85 to-accent-900/30" />
