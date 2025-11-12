@@ -95,13 +95,23 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
             <p className="text-lg text-primary-200 mb-8">
               CertainTeed Shingle Master Certified • Certified & Insured • 24/7 Emergency Service
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 mb-6">
               <Button variant="primary" size="lg" href="#quote">
-                Get Free Quote
+                🎯 Schedule FREE Inspection Today
               </Button>
               <Button variant="secondary" size="lg" href={`tel:${SITE_CONFIG.phoneRaw}`}>
-                Call {SITE_CONFIG.phone}
+                📞 Call {SITE_CONFIG.phone}
               </Button>
+            </div>
+            {/* Quick Trust Badges */}
+            <div className="flex flex-wrap items-center gap-4 text-sm text-primary-200">
+              <span>⭐ 4.9/5 Stars</span>
+              <span className="hidden sm:inline">•</span>
+              <span>✓ CertainTeed Master</span>
+              <span className="hidden sm:inline">•</span>
+              <span>🛡️ Fully Insured</span>
+              <span className="hidden sm:inline">•</span>
+              <span>🚀 Same-Day Available</span>
             </div>
           </div>
         </Container>
@@ -120,8 +130,12 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
               <div className="text-sm text-white/90">Emergency Service</div>
             </div>
             <div>
-              <div className="text-3xl font-bold mb-1">100%</div>
-              <div className="text-sm text-white/90">Certified & Insured</div>
+              <div className="text-3xl font-bold mb-1">267+</div>
+              <div className="text-sm text-white/90">Happy Customers</div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold mb-1">$200</div>
+              <div className="text-sm text-white/90">FREE Inspection Value</div>
             </div>
             <div>
               <div className="text-3xl font-bold mb-1">A+</div>
@@ -299,12 +313,12 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
                 {/* Quote Form */}
                 <div id="quote" className="bg-white rounded-2xl shadow-xl p-6 border-2 border-accent-100">
                   <h3 className="text-2xl font-display font-bold text-primary-900 mb-2">
-                    Get Your Free {location.city} Quote
+                    🎯 Schedule FREE {location.city} Inspection
                   </h3>
                   <p className="text-primary-600 text-sm mb-6">
-                    Serving {location.city} with pride. Fill out the form below for a free inspection.
+                    <span className="font-semibold">$200 Value</span> • Same-day appointments available
                   </p>
-                  <QuoteForm />
+                  <QuoteForm prefillAddress={`${location.city}, TX`} />
                 </div>
 
                 {/* Contact Card */}

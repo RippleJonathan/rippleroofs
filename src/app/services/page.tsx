@@ -34,7 +34,7 @@ const ServicesPage: FC = () => {
               for residential and commercial properties throughout Round Rock, Austin, and surrounding areas.
             </p>
             <Button variant="primary" size="lg" href="/contact">
-              Get Free Quote
+              📞 Get FREE Inspection ($200 Value)
             </Button>
           </div>
         </Container>

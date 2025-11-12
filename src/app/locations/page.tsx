@@ -34,7 +34,7 @@ const LocationsPage: FC = () => {
               We're proud to be your local roofing experts.
             </p>
             <Button variant="primary" size="lg" href="/contact">
-              Get Free Quote
+              🎯 Schedule FREE Inspection Today
             </Button>
           </div>
         </Container>

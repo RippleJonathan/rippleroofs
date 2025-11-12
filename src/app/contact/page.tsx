@@ -21,10 +21,10 @@ const ContactPage: FC = () => {
         <Container>
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-display font-bold mb-4">
-              Get Your Free Roofing Quote
+              🎯 Get My FREE Inspection ($200 Value)
             </h1>
             <p className="text-xl text-primary-100">
-              Expert roofing services across Central Texas. Fill out the form below or call us directly for immediate assistance.
+              Expert roofing services across Central Texas. Same-day scheduling available. Fill out the form or call us directly.
             </p>
           </div>
         </Container>

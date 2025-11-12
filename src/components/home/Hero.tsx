@@ -37,17 +37,26 @@ export const Hero: FC = () => {
             Residential, commercial, and emergency services available 24/7.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 animate-fade-up" style={{ animationDelay: '0.2s' }}>
-            <Link href="/contact">
-              <Button variant="primary" size="lg" className="w-full sm:w-auto">
-                Get Free Inspection
-              </Button>
-            </Link>
-            <a href={`tel:${SITE_CONFIG.phoneRaw}`}>
-              <Button variant="outline" size="lg" className="w-full sm:w-auto border-white text-white hover:bg-white hover:text-primary-900">
-                Call {SITE_CONFIG.phone}
-              </Button>
-            </a>
+          <div className="animate-fade-up" style={{ animationDelay: '0.2s' }}>
+            <div className="flex flex-col sm:flex-row gap-4 mb-4">
+              <Link href="/contact">
+                <Button variant="primary" size="lg" className="w-full sm:w-auto">
+                  🎯 Get My FREE Inspection ($200 Value)
+                </Button>
+              </Link>
+              <a href={`tel:${SITE_CONFIG.phoneRaw}`}>
+                <Button variant="outline" size="lg" className="w-full sm:w-auto border-white text-white hover:bg-white hover:text-primary-900">
+                  📞 Call Now: {SITE_CONFIG.phone}
+                </Button>
+              </a>
+            </div>
+            <div className="flex flex-wrap gap-3 text-sm text-primary-100">
+              <span className="flex items-center gap-1">⭐ 4.9/5 (267+ reviews)</span>
+              <span>•</span>
+              <span className="flex items-center gap-1">✓ CertainTeed Master™</span>
+              <span>•</span>
+              <span className="flex items-center gap-1">🛡️ Fully Insured</span>
+            </div>
           </div>
 
           {/* Trust Indicators */}
@@ -56,13 +65,13 @@ export const Hero: FC = () => {
               <svg className="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span className="text-sm font-semibold">CertainTeed Certified</span>
+              <span className="text-sm font-semibold">267+ Happy Customers</span>
             </div>
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
               <svg className="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span className="text-sm font-semibold">Fully Insured</span>
+              <span className="text-sm font-semibold">Top 1% Certified Master</span>
             </div>
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
               <svg className="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">

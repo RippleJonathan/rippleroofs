@@ -7,6 +7,7 @@ import { quoteFormSchema, type QuoteFormInput } from '@/lib/validations/quote'
 import { Button } from '@/components/ui/Button'
 import { Input } from '@/components/ui/Input'
 import { Select } from '@/components/ui/Select'
+import { TrustBadgeBar } from '@/components/ui/TrustBadgeBar'
 
 interface QuoteFormProps {
   className?: string
@@ -88,6 +89,9 @@ export const QuoteForm: FC<QuoteFormProps> = ({ className = '', prefillAddress }
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className={`space-y-6 ${className}`}>
+      {/* Trust Badges - Build Confidence */}
+      <TrustBadgeBar variant="compact" className="mb-6" />
+
       {/* Success Message */}
       {submitStatus === 'success' && (
         <div className="p-4 bg-green-50 border border-green-200 rounded-lg">
@@ -242,12 +246,16 @@ export const QuoteForm: FC<QuoteFormProps> = ({ className = '', prefillAddress }
             Submitting...
           </span>
         ) : (
-          'Get Your Free Quote'
+          '🎯 Get My FREE Inspection ($200 Value)'
         )}
       </Button>
 
       <p className="text-sm text-primary-600 text-center">
-        We respect your privacy. Your information will never be shared.
+        ✓ No obligation • ✓ Same-day scheduling available • ✓ Your privacy protected
+      </p>
+      
+      <p className="text-xs text-center text-primary-500">
+        Or call us now: <a href="tel:512-763-5277" className="text-accent-600 font-bold hover:text-accent-700">(512) 763-5277</a>
       </p>
     </form>
   )

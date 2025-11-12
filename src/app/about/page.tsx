@@ -371,11 +371,11 @@ const AboutPage: FC = () => {
               Ready to Work With Central Texas's Premier Roofing Company?
             </h2>
             <p className="text-xl text-white/90 mb-8">
-              Experience the Ripple Roofing difference. Contact us today for a free inspection and detailed quote.
+              Experience the Ripple Roofing difference. Contact us today for your FREE $200 inspection.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Button variant="secondary" size="lg" href="/contact">
-                Get Free Quote
+                🎯 Get FREE Inspection
               </Button>
               <Button 
                 variant="outline" 
@@ -383,6 +383,7 @@ const AboutPage: FC = () => {
                 href="tel:5127635277"
                 className="border-white text-white hover:bg-white hover:text-accent-600"
               >
+                📞 Call Now: (512) 763-5277
                 Call {SITE_CONFIG.phone}
               </Button>
             </div>

@@ -258,12 +258,12 @@ export default function ProjectsPage() {
                   <div className="flex flex-col sm:flex-row gap-3">
                     <Link href="/contact" className="flex-1">
                       <Button variant="primary" size="lg" className="w-full">
-                        Get Free Quote
+                        🎯 Get FREE Inspection
                       </Button>
                     </Link>
                     <a href={`tel:${SITE_CONFIG.phoneRaw}`} className="flex-1">
                       <Button variant="outline" size="lg" className="w-full">
-                        Call {SITE_CONFIG.phone}
+                        📞 Call Now
                       </Button>
                     </a>
                   </div>

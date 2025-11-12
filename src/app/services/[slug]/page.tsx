@@ -90,13 +90,27 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
             <p className="text-xl text-primary-100 mb-8">
               Serving Round Rock, Austin, Georgetown, and surrounding areas with premium roofing solutions.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 mb-6">
               <Button variant="primary" size="lg" href="#quote">
-                Get Free Quote
+                📞 Get FREE Inspection ($200 Value)
               </Button>
               <Button variant="secondary" size="lg" href="tel:5127635277">
-                Call (512) 763-5277
+                Call Now: (512) 763-5277
               </Button>
+            </div>
+            {/* Quick Trust Badges */}
+            <div className="flex flex-wrap items-center gap-4 text-sm text-primary-200">
+              <span className="flex items-center gap-1">
+                <span className="text-accent-400">⭐</span> 4.9/5 Stars (267+ Reviews)
+              </span>
+              <span className="hidden sm:inline">•</span>
+              <span className="flex items-center gap-1">
+                <span className="text-accent-400">✓</span> CertainTeed Certified
+              </span>
+              <span className="hidden sm:inline">•</span>
+              <span className="flex items-center gap-1">
+                <span className="text-accent-400">🛡️</span> Fully Licensed & Insured
+              </span>
             </div>
           </div>
         </Container>
@@ -111,16 +125,16 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
               <div className="text-sm text-primary-600">Emergency Service</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-accent-600 mb-1">100%</div>
-              <div className="text-sm text-primary-600">Certified & Insured</div>
+              <div className="text-3xl font-bold text-accent-600 mb-1">267+</div>
+              <div className="text-sm text-primary-600">Happy Customers</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-accent-600 mb-1">Free</div>
-              <div className="text-sm text-primary-600">Inspections & Quotes</div>
+              <div className="text-3xl font-bold text-accent-600 mb-1">$200</div>
+              <div className="text-sm text-primary-600">FREE Inspection Value</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-accent-600 mb-1">A+</div>
-              <div className="text-sm text-primary-600">CertainTeed Certified</div>
+              <div className="text-3xl font-bold text-accent-600 mb-1">Top 1%</div>
+              <div className="text-sm text-primary-600">CertainTeed Master™</div>
             </div>
           </div>
         </Container>
@@ -3756,10 +3770,10 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
               <div className="sticky top-24 space-y-6">
                 <div className="bg-white rounded-2xl shadow-xl p-6 border-2 border-accent-100">
                   <h3 className="text-2xl font-display font-bold text-primary-900 mb-2">
-                    Get Your Free Quote
+                    🎯 Get My FREE Inspection
                   </h3>
                   <p className="text-primary-600 text-sm mb-6">
-                    Fill out the form below and we'll contact you within 24 hours.
+                    <span className="font-semibold">$200 Value</span> • Same-day scheduling available
                   </p>
                   <QuoteForm />
                 </div>
