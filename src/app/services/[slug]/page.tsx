@@ -109,7 +109,7 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
               </span>
               <span className="hidden sm:inline">•</span>
               <span className="flex items-center gap-1">
-                <span className="text-accent-400">🛡️</span> Fully Licensed & Insured
+                <span className="text-accent-400">🛡️</span> Certified & Insured
               </span>
             </div>
           </div>

@@ -106,7 +106,7 @@ export const SERVICES: Service[] = [
     title: 'Commercial Roofing',
     slug: 'commercial-roofing',
     shortDescription: 'Professional commercial roofing for businesses—flat roofing systems, TPO, EPDM, metal, and preventative maintenance plans.',
-    description: 'Your commercial roof protects your business, inventory, equipment, and livelihood. Ripple Roofing & Construction provides comprehensive commercial roofing services for businesses throughout Central Texas—from flat roof installations to ongoing maintenance programs. We specialize in flat roofing systems (TPO, EPDM, modified bitumen), metal roofing, and commercial roof coatings. Whether you own retail space, office buildings, warehouses, apartment complexes, or industrial facilities in Round Rock, Austin, Georgetown, or surrounding areas, we minimize business disruption while delivering quality work. We work after-hours or weekends when needed, provide detailed warranties, and offer preventative maintenance plans that extend roof life and prevent costly emergency repairs. Fully licensed, insured, and experienced with all commercial roofing systems.',
+    description: 'Your commercial roof protects your business, inventory, equipment, and livelihood. Ripple Roofing & Construction provides comprehensive commercial roofing services for businesses throughout Central Texas—from flat roof installations to ongoing maintenance programs. We specialize in flat roofing systems (TPO, EPDM, modified bitumen), metal roofing, and commercial roof coatings. Whether you own retail space, office buildings, warehouses, apartment complexes, or industrial facilities in Round Rock, Austin, Georgetown, or surrounding areas, we minimize business disruption while delivering quality work. We work after-hours or weekends when needed, provide detailed warranties, and offer preventative maintenance plans that extend roof life and prevent costly emergency repairs. Fully certified, insured, and experienced with all commercial roofing systems.',
     icon: '🏢',
     image: '/images/services/commercial-roofing.jpg',
     process: [
@@ -125,7 +125,7 @@ export const SERVICES: Service[] = [
       'Detailed proposals with transparent pricing',
       'Preventative maintenance programs',
       'Emergency repair response—24/7 availability',
-      'Fully licensed and insured for commercial work',
+      'Fully certified and insured for commercial work',
       '10-year workmanship warranty',
       'Manufacturer warranties: 10-30 years',
       'Serving Central Texas businesses',

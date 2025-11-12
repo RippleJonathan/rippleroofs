@@ -20,6 +20,7 @@ export const ExitIntentPopup: FC = () => {
   const [hasShown, setHasShown] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
+  const [formMountTime] = useState(() => Date.now()) // Track when form component mounts
 
   const {
     register,
@@ -83,7 +84,7 @@ export const ExitIntentPopup: FC = () => {
           service: 'Other',
           message: `Exit-intent popup lead - Customer requested callback. Phone: ${data.phone}`,
           _website: data._website,
-          _timestamp: Date.now(),
+          _timestamp: formMountTime, // Use form mount time, not submission time
         }),
       })
 

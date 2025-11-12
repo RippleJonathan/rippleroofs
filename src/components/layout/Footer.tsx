@@ -27,16 +27,6 @@ export const Footer: FC = () => {
                 Premium roofing services in Central Texas. CertainTeed Shingle Master certified with 24/7 emergency service.
               </p>
               
-              {/* CertainTeed Badge */}
-              <div className="relative h-20 w-32">
-                <Image
-                  src="/images/certainteed-shingle-master.webp"
-                  alt="CertainTeed Shingle Master"
-                  fill
-                  className="object-contain object-left"
-                />
-              </div>
-              
               <div className="flex space-x-4">
                 {SITE_CONFIG.social.facebook && (
                   <a

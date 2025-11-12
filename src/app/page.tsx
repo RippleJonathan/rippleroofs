@@ -9,7 +9,7 @@ import { WhyChooseUs } from '@/components/home/WhyChooseUs'
 import { SITE_CONFIG } from '@/lib/constants'
 
 export const metadata = {
-  title: 'Home',
+  title: 'Professional Roofing Services Austin & San Antonio | Certified Roofing Experts',
   description: 'CertainTeed Shingle Master certified roofing experts serving Austin Metro, San Antonio, and Central Texas. Residential, commercial, and 24/7 emergency roofing services. Fully insured.',
 }
 

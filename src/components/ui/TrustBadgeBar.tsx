@@ -59,7 +59,7 @@ export const TrustBadgeBar: FC<TrustBadgeBarProps> = ({ variant = 'default', cla
               🛡️
             </div>
             <div>
-              <div className="text-lg font-bold text-primary-900">Fully Licensed & Insured</div>
+              <div className="text-lg font-bold text-primary-900">Certified & Insured</div>
               <div className="text-sm text-primary-600">$2M Liability Coverage</div>
               <div className="text-xs text-primary-500 mt-1">Workers' Comp Included</div>
             </div>
@@ -102,8 +102,8 @@ export const TrustBadgeBar: FC<TrustBadgeBarProps> = ({ variant = 'default', cla
             <span className="text-accent-600 text-xl">🛡️</span>
           </div>
           <div>
-            <div className="text-sm font-bold text-primary-900">Fully Insured</div>
-            <div className="text-xs text-primary-600">Licensed & Bonded</div>
+            <div className="text-sm font-bold text-primary-900">Certified</div>
+            <div className="text-xs text-primary-600">Fully Insured</div>
           </div>
         </div>
 

@@ -1215,55 +1215,6 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
                       </div>
                     </div>
                   </div>
-
-                  {/* Color Guide */}
-                  <div className="bg-blue-50 rounded-lg p-6">
-                    <h3 className="text-xl font-bold text-primary-900 mb-4">🎨 Most Popular Austin Roof Colors</h3>
-                    <p className="text-sm text-primary-700 mb-4">Austin homeowners tend toward earth tones and grays that complement Texas Hill Country aesthetics:</p>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                      <div className="bg-white p-3 rounded text-center">
-                        <div className="w-full h-16 bg-amber-700 rounded mb-2"></div>
-                        <p className="font-semibold text-xs text-primary-900">Weathered Wood</p>
-                        <p className="text-xs text-primary-600">#1 Most Popular</p>
-                      </div>
-                      <div className="bg-white p-3 rounded text-center">
-                        <div className="w-full h-16 bg-gray-400 rounded mb-2"></div>
-                        <p className="font-semibold text-xs text-primary-900">Pewter Gray</p>
-                        <p className="text-xs text-primary-600">Modern Homes</p>
-                      </div>
-                      <div className="bg-white p-3 rounded text-center">
-                        <div className="w-full h-16 bg-stone-600 rounded mb-2"></div>
-                        <p className="font-semibold text-xs text-primary-900">Driftwood</p>
-                        <p className="text-xs text-primary-600">Hill Country Style</p>
-                      </div>
-                      <div className="bg-white p-3 rounded text-center">
-                        <div className="w-full h-16 bg-slate-700 rounded mb-2"></div>
-                        <p className="font-semibold text-xs text-primary-900">Charcoal</p>
-                        <p className="text-xs text-primary-600">Contemporary</p>
-                      </div>
-                      <div className="bg-white p-3 rounded text-center">
-                        <div className="w-full h-16 bg-amber-800 rounded mb-2"></div>
-                        <p className="font-semibold text-xs text-primary-900">Mission Brown</p>
-                        <p className="text-xs text-primary-600">Traditional</p>
-                      </div>
-                      <div className="bg-white p-3 rounded text-center">
-                        <div className="w-full h-16 bg-gray-600 rounded mb-2"></div>
-                        <p className="font-semibold text-xs text-primary-900">Georgetown Gray</p>
-                        <p className="text-xs text-primary-600">Versatile</p>
-                      </div>
-                      <div className="bg-white p-3 rounded text-center">
-                        <div className="w-full h-16 bg-slate-800 rounded mb-2"></div>
-                        <p className="font-semibold text-xs text-primary-900">Onyx Black</p>
-                        <p className="text-xs text-primary-600">Bold Choice</p>
-                      </div>
-                      <div className="bg-white p-3 rounded text-center">
-                        <div className="w-full h-16 bg-stone-300 rounded mb-2"></div>
-                        <p className="font-semibold text-xs text-primary-900">Oyster Gray</p>
-                        <p className="text-xs text-primary-600">Light & Bright</p>
-                      </div>
-                    </div>
-                    <p className="text-xs text-primary-600 mt-4 text-center">Always check HOA requirements before ordering. We provide physical samples to view on your home.</p>
-                  </div>
                 </div>
               </div>
 
@@ -1876,55 +1827,6 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
                         <p className="text-sm text-primary-700"><strong>Why avoid in Georgetown:</strong> Tiles crack and break from Georgetown's baseball/softball hail. Very expensive to replace individual tiles ($500+ per tile). Heavy (requires structural reinforcement). Limited contractors who work with tile. Long lead times for replacement tiles during post-storm rush. Not worth the hassle in hail-prone Georgetown.</p>
                       </div>
                     </div>
-                  </div>
-
-                  {/* Color Guide */}
-                  <div className="bg-blue-50 rounded-lg p-6">
-                    <h3 className="text-xl font-bold text-primary-900 mb-4">🎨 Most Popular Georgetown Roof Colors</h3>
-                    <p className="text-sm text-primary-700 mb-4">Georgetown homeowners prefer earth tones and neutrals. Sun City and HOA communities have approved color lists:</p>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                      <div className="bg-white p-3 rounded text-center">
-                        <div className="w-full h-16 bg-amber-700 rounded mb-2"></div>
-                        <p className="font-semibold text-xs text-primary-900">Weathered Wood</p>
-                        <p className="text-xs text-primary-600">#1 in Sun City</p>
-                      </div>
-                      <div className="bg-white p-3 rounded text-center">
-                        <div className="w-full h-16 bg-stone-600 rounded mb-2"></div>
-                        <p className="font-semibold text-xs text-primary-900">Driftwood</p>
-                        <p className="text-xs text-primary-600">Berry Creek Favorite</p>
-                      </div>
-                      <div className="bg-white p-3 rounded text-center">
-                        <div className="w-full h-16 bg-amber-800 rounded mb-2"></div>
-                        <p className="font-semibold text-xs text-primary-900">Mission Brown</p>
-                        <p className="text-xs text-primary-600">Traditional</p>
-                      </div>
-                      <div className="bg-white p-3 rounded text-center">
-                        <div className="w-full h-16 bg-gray-500 rounded mb-2"></div>
-                        <p className="font-semibold text-xs text-primary-900">Georgetown Gray</p>
-                        <p className="text-xs text-primary-600">Namesake Color</p>
-                      </div>
-                      <div className="bg-white p-3 rounded text-center">
-                        <div className="w-full h-16 bg-slate-700 rounded mb-2"></div>
-                        <p className="font-semibold text-xs text-primary-900">Charcoal</p>
-                        <p className="text-xs text-primary-600">Modern Homes</p>
-                      </div>
-                      <div className="bg-white p-3 rounded text-center">
-                        <div className="w-full h-16 bg-gray-400 rounded mb-2"></div>
-                        <p className="font-semibold text-xs text-primary-900">Pewter Gray</p>
-                        <p className="text-xs text-primary-600">Contemporary</p>
-                      </div>
-                      <div className="bg-white p-3 rounded text-center">
-                        <div className="w-full h-16 bg-stone-300 rounded mb-2"></div>
-                        <p className="font-semibold text-xs text-primary-900">Oyster Gray</p>
-                        <p className="text-xs text-primary-600">Light Option</p>
-                      </div>
-                      <div className="bg-white p-3 rounded text-center">
-                        <div className="w-full h-16 bg-slate-800 rounded mb-2"></div>
-                        <p className="font-semibold text-xs text-primary-900">Colonial Slate</p>
-                        <p className="text-xs text-primary-600">Historic Downtown</p>
-                      </div>
-                    </div>
-                    <p className="text-xs text-primary-600 mt-4 text-center">Sun City & HOA communities: Always verify color approval before ordering. We handle HOA submissions.</p>
                   </div>
                 </div>
               </div>
@@ -2548,55 +2450,6 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
                       </div>
                     </div>
                   </div>
-
-                  {/* Color Guide */}
-                  <div className="bg-blue-50 rounded-lg p-6">
-                    <h3 className="text-xl font-bold text-primary-900 mb-4">🎨 Most Popular Pflugerville Roof Colors</h3>
-                    <p className="text-sm text-primary-700 mb-4">Pflugerville homeowners prefer neutral earth tones that complement Texas homes. HOA communities have approved lists:</p>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                      <div className="bg-white p-3 rounded text-center">
-                        <div className="w-full h-16 bg-amber-700 rounded mb-2"></div>
-                        <p className="font-semibold text-xs text-primary-900">Weathered Wood</p>
-                        <p className="text-xs text-primary-600">#1 in Pflugerville</p>
-                      </div>
-                      <div className="bg-white p-3 rounded text-center">
-                        <div className="w-full h-16 bg-stone-600 rounded mb-2"></div>
-                        <p className="font-semibold text-xs text-primary-900">Driftwood</p>
-                        <p className="text-xs text-primary-600">Blackhawk Favorite</p>
-                      </div>
-                      <div className="bg-white p-3 rounded text-center">
-                        <div className="w-full h-16 bg-gray-500 rounded mb-2"></div>
-                        <p className="font-semibold text-xs text-primary-900">Georgetown Gray</p>
-                        <p className="text-xs text-primary-600">Modern Homes</p>
-                      </div>
-                      <div className="bg-white p-3 rounded text-center">
-                        <div className="w-full h-16 bg-slate-700 rounded mb-2"></div>
-                        <p className="font-semibold text-xs text-primary-900">Charcoal</p>
-                        <p className="text-xs text-primary-600">Contemporary</p>
-                      </div>
-                      <div className="bg-white p-3 rounded text-center">
-                        <div className="w-full h-16 bg-gray-400 rounded mb-2"></div>
-                        <p className="font-semibold text-xs text-primary-900">Pewter Gray</p>
-                        <p className="text-xs text-primary-600">Versatile</p>
-                      </div>
-                      <div className="bg-white p-3 rounded text-center">
-                        <div className="w-full h-16 bg-amber-800 rounded mb-2"></div>
-                        <p className="font-semibold text-xs text-primary-900">Mission Brown</p>
-                        <p className="text-xs text-primary-600">Traditional</p>
-                      </div>
-                      <div className="bg-white p-3 rounded text-center">
-                        <div className="w-full h-16 bg-stone-300 rounded mb-2"></div>
-                        <p className="font-semibold text-xs text-primary-900">Oyster Gray</p>
-                        <p className="text-xs text-primary-600">Light Option</p>
-                      </div>
-                      <div className="bg-white p-3 rounded text-center">
-                        <div className="w-full h-16 bg-slate-800 rounded mb-2"></div>
-                        <p className="font-semibold text-xs text-primary-900">Onyx Black</p>
-                        <p className="text-xs text-primary-600">Bold Choice</p>
-                      </div>
-                    </div>
-                    <p className="text-xs text-primary-600 mt-4 text-center">HOA communities: Always verify approved colors before ordering. We handle HOA submissions and approvals.</p>
-                  </div>
                 </div>
               </div>
 
@@ -3202,55 +3055,6 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
                         <p className="text-sm text-primary-700"><strong>Why avoid:</strong> Tiles crack and shatter from Cedar Park's hail. Very expensive to replace broken tiles ($300-$500 each). Heavy (requires structural upgrades). Not common in Cedar Park, hard to match. Long material lead times. More complex insurance claims. Not worth the hassle in hail-prone area.</p>
                       </div>
                     </div>
-                  </div>
-
-                  {/* Color Guide */}
-                  <div className="bg-blue-50 rounded-lg p-6">
-                    <h3 className="text-xl font-bold text-primary-900 mb-4">🎨 Most Popular Cedar Park Roof Colors</h3>
-                    <p className="text-sm text-primary-700 mb-4">Cedar Park homeowners prefer earth tones. Avery Ranch has specific HOA-approved colors:</p>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                      <div className="bg-white p-3 rounded text-center">
-                        <div className="w-full h-16 bg-amber-700 rounded mb-2"></div>
-                        <p className="font-semibold text-xs text-primary-900">Weathered Wood</p>
-                        <p className="text-xs text-primary-600">#1 in Avery Ranch</p>
-                      </div>
-                      <div className="bg-white p-3 rounded text-center">
-                        <div className="w-full h-16 bg-stone-600 rounded mb-2"></div>
-                        <p className="font-semibold text-xs text-primary-900">Driftwood</p>
-                        <p className="text-xs text-primary-600">Buttercup Creek</p>
-                      </div>
-                      <div className="bg-white p-3 rounded text-center">
-                        <div className="w-full h-16 bg-gray-500 rounded mb-2"></div>
-                        <p className="font-semibold text-xs text-primary-900">Georgetown Gray</p>
-                        <p className="text-xs text-primary-600">Modern Homes</p>
-                      </div>
-                      <div className="bg-white p-3 rounded text-center">
-                        <div className="w-full h-16 bg-slate-700 rounded mb-2"></div>
-                        <p className="font-semibold text-xs text-primary-900">Charcoal</p>
-                        <p className="text-xs text-primary-600">Whitestone Popular</p>
-                      </div>
-                      <div className="bg-white p-3 rounded text-center">
-                        <div className="w-full h-16 bg-gray-400 rounded mb-2"></div>
-                        <p className="font-semibold text-xs text-primary-900">Pewter Gray</p>
-                        <p className="text-xs text-primary-600">Versatile Choice</p>
-                      </div>
-                      <div className="bg-white p-3 rounded text-center">
-                        <div className="w-full h-16 bg-amber-800 rounded mb-2"></div>
-                        <p className="font-semibold text-xs text-primary-900">Mission Brown</p>
-                        <p className="text-xs text-primary-600">Traditional</p>
-                      </div>
-                      <div className="bg-white p-3 rounded text-center">
-                        <div className="w-full h-16 bg-stone-300 rounded mb-2"></div>
-                        <p className="font-semibold text-xs text-primary-900">Oyster Gray</p>
-                        <p className="text-xs text-primary-600">Light Option</p>
-                      </div>
-                      <div className="bg-white p-3 rounded text-center">
-                        <div className="w-full h-16 bg-slate-800 rounded mb-2"></div>
-                        <p className="font-semibold text-xs text-primary-900">Onyx Black</p>
-                        <p className="text-xs text-primary-600">Contemporary</p>
-                      </div>
-                    </div>
-                    <p className="text-xs text-primary-600 mt-4 text-center">HOA communities (especially Avery Ranch): Always verify approved colors before ordering. We handle all HOA submissions and architectural approvals.</p>
                   </div>
                 </div>
               </div>
@@ -3872,55 +3676,6 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
                         <p className="text-sm text-primary-700"><strong>Why avoid in Leander:</strong> Tiles crack and shatter from Leander's frequent baseball/softball hail. Expensive individual tile replacements ($300-$500 each, dozens damaged per storm). Very heavy (requires structural reinforcement). Not common in Leander, hard to match. Long lead times for materials. Complex insurance claims. Simply not worth the headaches in hail-prone area.</p>
                       </div>
                     </div>
-                  </div>
-
-                  {/* Color Guide */}
-                  <div className="bg-blue-50 rounded-lg p-6">
-                    <h3 className="text-xl font-bold text-primary-900 mb-4">🎨 Most Popular Leander Roof Colors</h3>
-                    <p className="text-sm text-primary-700 mb-4">Leander homeowners favor earth tones and contemporary grays. HOA communities have approved color lists:</p>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                      <div className="bg-white p-3 rounded text-center">
-                        <div className="w-full h-16 bg-amber-700 rounded mb-2"></div>
-                        <p className="font-semibold text-xs text-primary-900">Weathered Wood</p>
-                        <p className="text-xs text-primary-600">#1 in Crystal Falls</p>
-                      </div>
-                      <div className="bg-white p-3 rounded text-center">
-                        <div className="w-full h-16 bg-stone-600 rounded mb-2"></div>
-                        <p className="font-semibold text-xs text-primary-900">Driftwood</p>
-                        <p className="text-xs text-primary-600">Mason Hills fave</p>
-                      </div>
-                      <div className="bg-white p-3 rounded text-center">
-                        <div className="w-full h-16 bg-gray-500 rounded mb-2"></div>
-                        <p className="font-semibold text-xs text-primary-900">Georgetown Gray</p>
-                        <p className="text-xs text-primary-600">Modern Summerlyn</p>
-                      </div>
-                      <div className="bg-white p-3 rounded text-center">
-                        <div className="w-full h-16 bg-slate-700 rounded mb-2"></div>
-                        <p className="font-semibold text-xs text-primary-900">Charcoal</p>
-                        <p className="text-xs text-primary-600">Travisso popular</p>
-                      </div>
-                      <div className="bg-white p-3 rounded text-center">
-                        <div className="w-full h-16 bg-gray-400 rounded mb-2"></div>
-                        <p className="font-semibold text-xs text-primary-900">Pewter Gray</p>
-                        <p className="text-xs text-primary-600">Contemporary</p>
-                      </div>
-                      <div className="bg-white p-3 rounded text-center">
-                        <div className="w-full h-16 bg-amber-800 rounded mb-2"></div>
-                        <p className="font-semibold text-xs text-primary-900">Mission Brown</p>
-                        <p className="text-xs text-primary-600">Traditional</p>
-                      </div>
-                      <div className="bg-white p-3 rounded text-center">
-                        <div className="w-full h-16 bg-stone-300 rounded mb-2"></div>
-                        <p className="font-semibold text-xs text-primary-900">Oyster Gray</p>
-                        <p className="text-xs text-primary-600">Light Option</p>
-                      </div>
-                      <div className="bg-white p-3 rounded text-center">
-                        <div className="w-full h-16 bg-slate-800 rounded mb-2"></div>
-                        <p className="font-semibold text-xs text-primary-900">Onyx Black</p>
-                        <p className="text-xs text-primary-600">Bold Modern</p>
-                      </div>
-                    </div>
-                    <p className="text-xs text-primary-600 mt-4 text-center">HOA communities (Crystal Falls, Summerlyn, Travisso): MUST verify approved colors before ordering. We handle all HOA submissions and approvals.</p>
                   </div>
                 </div>
               </div>
