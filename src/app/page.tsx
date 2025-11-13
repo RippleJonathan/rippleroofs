@@ -6,6 +6,7 @@ import { ProjectGalleryPreview } from '@/components/home/ProjectGalleryPreview'
 import { CTASection } from '@/components/home/CTASection'
 import { TrustBadges } from '@/components/ui/TrustBadges'
 import { WhyChooseUs } from '@/components/home/WhyChooseUs'
+import { FreeResourcesSection } from '@/components/home/FreeResourcesSection'
 import { SITE_CONFIG } from '@/lib/constants'
 
 export const metadata = {
@@ -190,6 +191,7 @@ export default function Home() {
       <TrustBadges />
       <TrustBar />
       <ServicesGrid />
+      <FreeResourcesSection />
       <WhyChooseUs />
       <Testimonials />
       <ProjectGalleryPreview />

@@ -15,9 +15,9 @@ export const Footer: FC = () => {
       {/* Main Footer */}
       <div className="section-spacing">
         <Container>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
             {/* Company Info */}
-            <div className="space-y-4">
+            <div className="space-y-4 lg:col-span-1">
               <div className="relative h-12 w-40 mb-4">
                 <Image
                   src="/images/logo.png"
@@ -106,6 +106,57 @@ export const Footer: FC = () => {
                     className="text-primary-200 hover:text-accent-500 transition-colors duration-200 text-sm"
                   >
                     Gutter Installation
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* Free Resources */}
+            <div>
+              <h4 className="text-lg font-display font-bold mb-4">Free Resources</h4>
+              <ul className="space-y-2">
+                <li>
+                  <Link
+                    href="/resources/roof-inspection-checklist"
+                    className="text-primary-200 hover:text-accent-500 transition-colors duration-200 text-sm flex items-center gap-1"
+                  >
+                    <span>📋</span>
+                    <span>Inspection Checklist</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/resources/storm-damage-insurance-guide"
+                    className="text-primary-200 hover:text-accent-500 transition-colors duration-200 text-sm flex items-center gap-1"
+                  >
+                    <span>⛈️</span>
+                    <span>Insurance Guide</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/resources/material-comparison-chart"
+                    className="text-primary-200 hover:text-accent-500 transition-colors duration-200 text-sm flex items-center gap-1"
+                  >
+                    <span>📊</span>
+                    <span>Material Comparison</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/resources/seasonal-maintenance-calendar"
+                    className="text-primary-200 hover:text-accent-500 transition-colors duration-200 text-sm flex items-center gap-1"
+                  >
+                    <span>📅</span>
+                    <span>Maintenance Calendar</span>
+                  </Link>
+                </li>
+                <li className="pt-2">
+                  <Link
+                    href="/blog"
+                    className="text-accent-400 hover:text-accent-300 transition-colors duration-200 text-sm font-semibold"
+                  >
+                    📰 Read Our Blog →
                   </Link>
                 </li>
               </ul>

@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { Container } from '@/components/layout/Container'
 import { QuoteForm } from '@/components/forms/QuoteForm'
 import { Button } from '@/components/ui/Button'
+import { ServiceLeadMagnetCTA } from '@/components/services/ServiceLeadMagnetCTA'
 import { SERVICES } from '@/lib/constants'
 
 interface ServicePageProps {
@@ -3807,6 +3808,9 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
           </div>
         </Container>
       </section>
+
+      {/* Contextual Lead Magnet CTA */}
+      <ServiceLeadMagnetCTA serviceSlug={service.slug} />
 
       {/* Enhanced Service Schema */}
       <script
