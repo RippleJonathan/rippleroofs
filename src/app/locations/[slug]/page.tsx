@@ -3847,6 +3847,1169 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
             </div>
           )}
 
+          {/* Location-Specific Deep Content - San Antonio */}
+          {location.slug === 'san-antonio' && (
+            <div className="mt-16 space-y-12">
+              {/* San Antonio Neighborhoods Deep Dive */}
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  San Antonio Neighborhoods: Roofing Considerations & Costs
+                </h2>
+                <p className="text-primary-700 mb-8 leading-relaxed">
+                  San Antonio's diverse neighborhoods range from historic districts with century-old homes to modern master-planned communities. Here's what homeowners in each major area should know about roofing:
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏘️ Stone Oak & The Dominion</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1980s-2020s • <strong>Style:</strong> Luxury estates, Hill Country contemporary<br />
+                      <strong>Common Roof Type:</strong> Spanish tile, architectural shingles, some metal
+                    </p>
+                    <div className="bg-blue-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>HOA Considerations:</strong> The Dominion has strict architectural controls requiring approval for all exterior changes. Stone Oak varies by subdivision. Many mandate specific materials and colors that match community aesthetic.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Tile roof damage from hail, underlayment failure in extreme heat, oak tree debris and moss, complex roof geometry on custom homes</p>
+                      <p><strong>Best Materials:</strong> S-tile or barrel tile for Spanish style, premium impact-resistant shingles (CertainTeed Grand Manor, GAF Timberline HDZ) for traditional, standing seam metal for modern</p>
+                      <p><strong>Typical Cost:</strong> $25,000-$65,000+ for 3,500-6,000+ sq ft luxury homes (tile roofs significantly higher)</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏡 Alamo Heights & Terrell Hills</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1920s-1960s (many) • <strong>Style:</strong> Historic homes, Spanish colonial, ranch<br />
+                      <strong>Common Roof Type:</strong> Clay tile, composition shingles, some slate
+                    </p>
+                    <div className="bg-amber-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Historic Home Alert:</strong> Many homes feature original clay tile or architectural details requiring specialized expertise. Historic district requirements may apply. Matching materials can be costly but necessary.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Aging tile roofs (100+ years possible), wood decking deterioration, outdated ventilation, tree damage from mature oaks, termite damage in older homes</p>
+                      <p><strong>Best Materials:</strong> Clay tile replacement to maintain character, high-end architectural shingles if transitioning from tile, proper underlayment critical in San Antonio heat</p>
+                      <p><strong>Typical Cost:</strong> $18,000-$40,000 for 2,500-4,000 sq ft homes (add $5k-$15k for extensive decking repairs on historic homes)</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🌳 Medical Center & Shavano Park</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1970s-2000s • <strong>Style:</strong> Professional community, varied styles<br />
+                      <strong>Common Roof Type:</strong> Architectural shingles, some tile
+                    </p>
+                    <div className="bg-green-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Professional Focus:</strong> Many medical professionals and UTSA faculty live here. Schedules often require flexible timing for inspections and work. We accommodate evening/weekend appointments.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> UV damage from intense San Antonio sun, wind damage on hilltop properties, algae growth in shaded areas, hail damage from spring storms</p>
+                      <p><strong>Best Materials:</strong> Impact-resistant architectural shingles with high wind ratings (Class 4, 130 mph), algae-resistant formulas for longevity, IR-reflective colors to reduce cooling costs</p>
+                      <p><strong>Typical Cost:</strong> $16,000-$28,000 for 2,200-3,500 sq ft homes</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏘️ King William & Southtown</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1880s-1920s • <strong>Style:</strong> Victorian, historic architecture<br />
+                      <strong>Common Roof Type:</strong> Composition shingles, metal (standing seam), some slate
+                    </p>
+                    <div className="bg-purple-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Historic District Rules:</strong> King William Historic District has specific requirements. HDRC approval may be needed for material/color changes. We navigate these processes regularly for downtown San Antonio properties.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Narrow lot access challenges, steep Victorian roof pitches, wood decking often needs replacement, termite damage common, matching historic character while meeting code</p>
+                      <p><strong>Best Materials:</strong> Standing seam metal to replicate historic appearance, premium architectural shingles in period-appropriate colors, proper ventilation upgrades critical</p>
+                      <p><strong>Typical Cost:</strong> $20,000-$45,000 for 2,000-3,500 sq ft Victorian homes (access challenges and historic requirements increase costs)</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🆕 Northwest San Antonio</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 2000s-2020s • <strong>Style:</strong> Modern suburban developments<br />
+                      <strong>Common Roof Type:</strong> Architectural shingles, increasing metal popularity
+                    </p>
+                    <div className="bg-green-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Growth Area:</strong> Rapid development northwest of Loop 1604 brings new roofing opportunities. Many homes still under builder warranty. Check warranty status before paying for repairs!</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Hail damage on newer roofs, builder-grade materials nearing end of life (20-25 years), attic ventilation inadequate for San Antonio heat, wind damage from exposed hilltops</p>
+                      <p><strong>Best Materials:</strong> Impact-resistant shingles (GAF Timberline HDZ, CertainTeed Landmark Pro), proper ventilation systems, consider metal for longevity in harsh climate</p>
+                      <p><strong>Typical Cost:</strong> $15,000-$30,000 for 2,200-3,800 sq ft homes</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🌆 Downtown & Monte Vista</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1920s-1940s • <strong>Style:</strong> Bungalows, Spanish Revival, Tudor<br />
+                      <strong>Common Roof Type:</strong> Composition shingles, tile, metal
+                    </p>
+                    <div className="bg-blue-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Urban Challenges:</strong> Tight access, parking restrictions, historic preservation requirements, mature tree coverage. We coordinate with city parking permits and HOD requirements as needed.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Narrow street access, lack of driveway space for materials/dumpsters, tree debris and damage, aging wood decking, termite concerns, historic character preservation</p>
+                      <p><strong>Best Materials:</strong> Period-appropriate materials respecting architectural style, high-quality underlayment, proper wood decking repairs/replacement, algae-resistant shingles under tree canopy</p>
+                      <p><strong>Typical Cost:</strong> $16,000-$32,000 for 1,800-3,000 sq ft historic homes (access challenges can add 10-15% to standard costs)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* San Antonio Weather & Storm History */}
+              <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  San Antonio Weather & Roofing: What Every Homeowner Should Know
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  San Antonio's climate is exceptionally harsh on roofs. Understanding local weather patterns helps you protect your investment and know when to act:
+                </p>
+
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div>
+                    <h3 className="text-xl font-bold text-primary-900 mb-4">🌡️ Extreme Heat & UV Exposure</h3>
+                    <div className="bg-white rounded-lg p-6 shadow-md mb-4">
+                      <p className="text-sm text-primary-700 mb-3">
+                        San Antonio averages <strong>100+ days per year above 90°F</strong>, with summer temperatures regularly exceeding 100°F for weeks at a time. This is among the hottest climates in Texas.
+                      </p>
+                      <div className="bg-red-50 p-4 rounded mb-3">
+                        <p className="font-bold text-red-900 text-sm mb-2">How Heat Damages Your Roof:</p>
+                        <ul className="text-xs text-primary-700 space-y-1">
+                          <li>• <strong>Shingle deterioration:</strong> Asphalt shingles dry out, crack, and lose granules faster in San Antonio than cooler climates</li>
+                          <li>• <strong>Underlayment failure:</strong> Roofing felt degrades rapidly under attic temperatures reaching 150-170°F</li>
+                          <li>• <strong>Adhesive failure:</strong> Extreme heat can cause shingle sealant strips to fail, leading to wind blow-off</li>
+                          <li>• <strong>Attic damage:</strong> Poor ventilation + SA heat = warped decking, damaged insulation, AC overwork</li>
+                        </ul>
+                      </div>
+                      <p className="text-sm font-semibold text-primary-900">What This Means For You:</p>
+                      <p className="text-sm text-primary-700">San Antonio roofs typically last 15-20 years vs 25-30 in cooler climates. Light-colored, IR-reflective shingles reduce attic temps by 20-30°F and extend roof life. Proper attic ventilation is CRITICAL—not optional.</p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-bold text-primary-900 mb-4">⚡ Severe Storms & Hail</h3>
+                    <div className="bg-white rounded-lg p-6 shadow-md mb-4">
+                      <p className="text-sm text-primary-700 mb-3">
+                        San Antonio sits in "Hail Alley" and experiences frequent severe weather, particularly <strong>March-May</strong>. Recent major events include April 2021 (baseball-sized hail), April 2016, and May 2019 storms.
+                      </p>
+                      <div className="bg-amber-50 p-4 rounded mb-3">
+                        <p className="font-bold text-primary-900 text-sm mb-2">San Antonio Hail Statistics:</p>
+                        <div className="text-xs text-primary-700 space-y-1">
+                          <div className="flex justify-between items-center border-b border-primary-200 pb-1">
+                            <span>Pea/dime (0.25"-0.75") - Cosmetic</span>
+                            <span className="font-bold text-amber-600">Multiple times/year</span>
+                          </div>
+                          <div className="flex justify-between items-center border-b border-primary-200 pb-1">
+                            <span>Quarter/half dollar (1"-1.25") - Damage likely</span>
+                            <span className="font-bold text-orange-600">1-2x per year</span>
+                          </div>
+                          <div className="flex justify-between items-center border-b border-primary-200 pb-1">
+                            <span>Golf ball (1.75") - Severe damage</span>
+                            <span className="font-bold text-red-600">Every 2-3 years</span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span>Baseball+ (2.75"+) - Roof totaled</span>
+                            <span className="font-bold text-red-600">Every 3-5 years</span>
+                          </div>
+                        </div>
+                      </div>
+                      <p className="text-sm font-semibold text-primary-900">What This Means For You:</p>
+                      <p className="text-sm text-primary-700">Impact-resistant (Class 4) shingles are ESSENTIAL in San Antonio. Insurance companies offer 20-35% discounts because they know SA gets hail. IR shingles survive storms standard shingles cannot. After major storms, get FREE inspection immediately—insurance claims must be filed within timeframes (typically 1 year).</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-white rounded-lg p-6 shadow-lg mt-6">
+                  <h3 className="text-xl font-bold text-primary-900 mb-4">🌪️ Recent Major Storm Events in San Antonio</h3>
+                  <div className="space-y-3 text-sm text-primary-700">
+                    <div className="border-l-4 border-red-500 pl-4">
+                      <p className="font-bold text-primary-900">April 12, 2023 – North/Northwest San Antonio Hailstorm</p>
+                      <p>Baseball-sized hail (2.75") devastated Stone Oak, Shavano Park, and northwest neighborhoods. Estimated 30-40% of roofs damaged. Thousands of insurance claims filed. If you live in these areas and haven't had roof inspected since, you may have covered damage.</p>
+                    </div>
+                    <div className="border-l-4 border-orange-500 pl-4">
+                      <p className="font-bold text-primary-900">April 12, 2021 – Hill Country Severe Storms</p>
+                      <p>Multiple rounds of golf ball to baseball-sized hail hit northwestern suburbs. The Dominion, far northwest communities hit hardest. Wind gusts 70+ mph caused additional blow-off damage.</p>
+                    </div>
+                    <div className="border-l-4 border-amber-500 pl-4">
+                      <p className="font-bold text-primary-900">May 2019 – Widespread San Antonio Hail</p>
+                      <p>Large hail impacted multiple quadrants of San Antonio. Downtown to Stone Oak received quarter to golf ball-sized hail. Significant roof damage across Bexar County.</p>
+                    </div>
+                    <div className="border-l-4 border-yellow-500 pl-4">
+                      <p className="font-bold text-primary-900">April 2016 – San Antonio Supercell</p>
+                      <p>Baseball-sized hail north of Loop 1604. Some of the largest hail ever recorded in Bexar County. Entire neighborhoods required roof replacement.</p>
+                    </div>
+                  </div>
+                  <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded mt-4">
+                    <p className="text-xs font-bold text-red-900 mb-1">⚠️ San Antonio Homeowners: After ANY significant storm with hail...</p>
+                    <p className="text-xs text-primary-700">Get a FREE professional inspection even if you don't see visible damage. Hail damage may not be obvious from ground level. Waiting too long means missing insurance claim deadlines. We provide free storm inspections with documentation for insurance—no obligation. Stone Oak, The Dominion, and northwest neighborhoods especially vulnerable to hail.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* San Antonio Roof Replacement Cost Guide */}
+              <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  San Antonio Roof Replacement Costs: Complete Pricing Guide
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  San Antonio roof replacement costs vary significantly based on home size, neighborhood, architectural style, and material choice. Here's what you can expect:
+                </p>
+
+                <div className="space-y-4 mb-8">
+                  <div className="border-l-4 border-blue-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">1,400-1,800 sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: Older SA ranch, bungalow, 2-3 bed/1-2 bath, simple roof, 16-22 squares - Monte Vista, Terrell Hills smaller homes</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$10,000-$16,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-green-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">1,800-2,400 sq ft Home (Most Common)</p>
+                        <p className="text-sm text-primary-700">Typical: Standard SA two-story, 3-4 bed/2-3 bath, moderate complexity, 22-28 squares - Medical Center, Shavano, northwest communities</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$14,000-$22,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-purple-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">2,400-3,200 sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: Larger SA family home, 4-5 bed/3 bath, increased complexity, 28-38 squares - Alamo Heights, Stone Oak</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$18,000-$30,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-red-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">3,200-4,500 sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: Large SA estate, 5+ bed/4+ bath, complex roof, 38-55 squares - The Dominion, Stone Oak luxury, Alamo Heights estates</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$25,000-$45,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-amber-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">4,500+ sq ft Luxury Home</p>
+                        <p className="text-sm text-primary-700">Typical: The Dominion estates, custom luxury, highly complex, 55+ squares, premium materials - tile, slate, specialty shingles</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$40,000-$85,000+</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-purple-50 border-l-4 border-purple-500 p-6 rounded mb-8">
+                  <p className="font-bold text-primary-900 mb-2">🏛️ Spanish Tile & Clay Tile Roofing (Common in San Antonio)</p>
+                  <p className="text-sm text-primary-700 mb-3">San Antonio's Spanish colonial heritage means many homes feature tile roofs. Costs are significantly higher than shingles:</p>
+                  <ul className="text-sm text-primary-700 space-y-1">
+                    <li>• <strong>Concrete S-Tile:</strong> $18,000-$35,000 (2,000 sq ft) • Durable, heavy, HOA-compliant in many neighborhoods</li>
+                    <li>• <strong>Clay Barrel Tile:</strong> $25,000-$55,000 (2,000 sq ft) • Traditional, premium, 50-100 year lifespan</li>
+                    <li>• <strong>Lightweight Synthetic Tile:</strong> $15,000-$28,000 (2,000 sq ft) • Authentic look, half the weight, growing popularity</li>
+                    <li>• <strong>Tile Repairs (vs Full Replacement):</strong> $1,500-$8,000 • Replace broken tiles, re-bed ridges, underlayment repairs</li>
+                  </ul>
+                  <p className="text-xs text-primary-700 mt-3"><strong>Note:</strong> Alamo Heights, The Dominion, and historic districts often REQUIRE tile or tile-appearance roofing. We specialize in both traditional tile installation and repairs. Many tile roofs only need underlayment replacement ($8k-$15k) rather than full tile replacement—we assess honestly.</p>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-6 mb-8">
+                  <div className="bg-red-50 rounded-lg p-6 border-l-4 border-red-500">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">📈 What INCREASES Cost in San Antonio</h3>
+                    <ul className="space-y-2 text-sm text-primary-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+100-200%</span>
+                        <span><strong>Tile roofing</strong> (Spanish/clay tile standard in many SA neighborhoods)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+20-35%</span>
+                        <span><strong>Complex roof lines</strong> (The Dominion customs, historic homes with turrets/valleys)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+15-25%</span>
+                        <span><strong>Steep pitch roofs</strong> (Victorian homes, Hill Country estates on slopes)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+$3k-8k</span>
+                        <span><strong>Decking repairs</strong> (common in Alamo Heights, Monte Vista, King William older homes)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+10-15%</span>
+                        <span><strong>Access challenges</strong> (downtown, King William narrow lots, parking restrictions)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+$500-1.5k</span>
+                        <span><strong>Historic district approvals</strong> (King William, Monte Vista preservation requirements)</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-green-50 rounded-lg p-6 border-l-4 border-green-500">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">📉 What DECREASES Cost in San Antonio</h3>
+                    <ul className="space-y-2 text-sm text-primary-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Simple gable or hip roof</strong> (many northwest SA neighborhoods)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Single-story ranch</strong> (safer, faster installation, popular in SA)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Good existing decking</strong> (newer northwest developments, well-maintained homes)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Insurance claim coverage</strong> (pay deductible only - typically $2k-$4k SA, rest covered)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Neighborhood group pricing</strong> (coordinate with neighbors after hail storms for 10-15% off)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Easy property access</strong> (wide streets, good driveways, no parking restrictions)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-accent-50 to-blue-50 rounded-lg p-6">
+                  <h3 className="text-xl font-bold text-primary-900 mb-4">💡 6 Ways San Antonio Homeowners Save on Roof Replacement</h3>
+                  <div className="grid md:grid-cols-2 gap-4 text-sm text-primary-700">
+                    <div>
+                      <p className="font-bold text-primary-900 mb-1">1. File Insurance Claims After Hailstorms (CRITICAL)</p>
+                      <p className="mb-3">San Antonio gets roof-damaging hail every 2-3 years. April 2023 damaged tens of thousands of SA roofs (Stone Oak, northwest especially). If your neighbors filed claims, you should too. Insurance covers 100% minus deductible ($2k-$4k). We handle entire process including adjuster meetings. Don't leave money on table!</p>
+                      
+                      <p className="font-bold text-primary-900 mb-1">2. Coordinate with Neighbors (MASSIVE Savings)</p>
+                      <p className="mb-3">After hailstorms, entire Stone Oak/Shavano Park/northwest blocks need roofs. When we work 8-12 homes in same neighborhood, we offer 10-15% group discounts ($2k-$5k per home savings). One material delivery, one crew = lower costs. Join neighborhood groups after storms!</p>
+                      
+                      <p className="font-bold text-primary-900 mb-1">3. Impact-Resistant Shingles = Long-Term Savings</p>
+                      <p className="mb-3">$3k-$5k more upfront, but SA insurance companies give 20-35% discounts ($600-$900/year savings). Pays for itself in 4-6 years. Plus survives SA's frequent hail = fewer future claims. Over 30 years: $18,000-$27,000 in insurance savings. Essential in San Antonio.</p>
+                    </div>
+                    <div>
+                      <p className="font-bold text-primary-900 mb-1">4. Consider Tile Repair vs Full Replacement</p>
+                      <p className="mb-3">If you have tile roof, often only underlayment needs replacement ($8k-$15k) not tiles ($25k-$55k). We assess honestly—many contractors push full replacement unnecessarily. Tile repair extends life 15-20 years for fraction of cost.</p>
+                      
+                      <p className="font-bold text-primary-900 mb-1">5. Light-Colored Materials Save on Cooling</p>
+                      <p className="mb-3">SA's extreme heat means light/reflective roofing reduces attic temps 20-30°F, cutting AC costs 10-20% ($200-$400/year). Over roof's lifetime: $4,000-$8,000 saved. Cool roof coatings or IR-reflective shingles pay for themselves.</p>
+                      
+                      <p className="font-bold text-primary-900 mb-1">6. Take Advantage of 0% Financing</p>
+                      <p className="mb-3">We offer 0% financing 12-18 months through approved lenders. Spread $20k-$35k SA roof into $1,200-$2,000/month payments. No interest if paid within promo period. Popular for Stone Oak/Dominion luxury homes.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-6 bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
+                  <p className="text-primary-900 font-semibold mb-2">📞 Get Your Exact San Antonio Roof Replacement Cost</p>
+                  <p className="text-primary-700">
+                    These are estimates. Your actual cost depends on your specific home, neighborhood (Stone Oak, Alamo Heights, etc.), materials (shingle vs tile), and current conditions. We provide <strong>FREE inspections</strong> and detailed written quotes with no obligation. <strong>The Dominion & Alamo Heights homeowners: We handle ALL HOA/historic district approvals!</strong> Call <strong>(512) 763-5277</strong> or schedule online for your personalized San Antonio roof replacement estimate.
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Location-Specific Deep Content - Killeen */}
+          {location.slug === 'killeen' && (
+            <div className="mt-16 space-y-12">
+              {/* Killeen Neighborhoods Deep Dive */}
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Killeen Neighborhoods: Roofing for Military & Civilian Families
+                </h2>
+                <p className="text-primary-700 mb-8 leading-relaxed">
+                  Killeen is home to Fort Cavazos (formerly Fort Hood), one of the world's largest military installations. Our community serves active duty military, veterans, and civilian families with diverse housing needs:
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🪖 Fort Cavazos Area (West Killeen)</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1960s-2000s • <strong>Style:</strong> Ranch, military-family affordable<br />
+                      <strong>Common Roof Type:</strong> Composition shingles, simple gable/hip roofs
+                    </p>
+                    <div className="bg-blue-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Military Family Focus:</strong> We understand PCS schedules, deployment timelines, and VA loan requirements. Flexible scheduling for active duty. Military & veteran discounts available. Fast turnaround for families PCSing.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Aging roofs from 1980s-1990s construction, hail damage from Central Texas storms, wind damage, rental property wear and tear</p>
+                      <p><strong>Best Materials:</strong> Impact-resistant architectural shingles (CertainTeed Landmark Pro, GAF Timberline HDZ), cost-effective durability for military housing timeline</p>
+                      <p><strong>Typical Cost:</strong> $11,000-$17,000 for 1,400-2,200 sq ft military-family homes</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏘️ Clear Creek & Marlboro Heights</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1980s-2000s • <strong>Style:</strong> Suburban family neighborhoods<br />
+                      <strong>Common Roof Type:</strong> Architectural shingles
+                    </p>
+                    <div className="bg-green-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Family-Friendly Areas:</strong> Established neighborhoods with good schools, parks, family amenities. Mix of military and civilian homeowners. Strong community feel.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Hail damage from spring storms, UV deterioration from Texas heat, wind uplift, tree debris from mature landscaping</p>
+                      <p><strong>Best Materials:</strong> Impact-resistant shingles for insurance discounts, algae-resistant for longevity, proper ventilation for heat management</p>
+                      <p><strong>Typical Cost:</strong> $13,000-$19,000 for 1,800-2,500 sq ft family homes</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🌳 Skyline & Bridgewood</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1970s-1990s • <strong>Style:</strong> Established Killeen neighborhoods<br />
+                      <strong>Common Roof Type:</strong> Mix of 3-tab and architectural shingles
+                    </p>
+                    <div className="bg-amber-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Aging Roof Alert:</strong> Many homes in these neighborhoods have original or second roofs approaching replacement age. Look for curling, granule loss, attic water stains.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Aging roofs nearing end of life, outdated ventilation systems, decking deterioration, storm damage accumulation</p>
+                      <p><strong>Best Materials:</strong> Upgrade to modern impact-resistant architectural shingles, proper synthetic underlayment, enhanced ventilation</p>
+                      <p><strong>Typical Cost:</strong> $12,000-$18,000 for 1,600-2,300 sq ft homes (budget $2k-$4k extra for decking repairs on older roofs)</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏡 Stonetree & Woodland Hills</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 2000s-2010s • <strong>Style:</strong> Modern Killeen developments<br />
+                      <strong>Common Roof Type:</strong> Architectural shingles, more complex designs
+                    </p>
+                    <div className="bg-purple-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Newer Construction:</strong> Many homes have roofs 10-20 years old—prime time for storm damage inspections. Some still under builder warranty for defects.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Hail damage on mid-life roofs, builder-grade materials showing age, ventilation inadequacy, wind damage</p>
+                      <p><strong>Best Materials:</strong> Impact-resistant upgrades essential for insurance benefits, proper ventilation critical for Killeen heat</p>
+                      <p><strong>Typical Cost:</strong> $14,000-$22,000 for 2,000-2,800 sq ft homes</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏘️ Brookhaven & Inspiration Hills</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1990s-2000s • <strong>Style:</strong> Mid-tier Killeen housing<br />
+                      <strong>Common Roof Type:</strong> Architectural shingles
+                    </p>
+                    <div className="bg-green-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Mixed Community:</strong> Balance of military and civilian homeowners. Good value housing with solid construction. Active HOAs in some sections.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Standard Central Texas challenges—hail, wind, heat deterioration, occasional tree damage</p>
+                      <p><strong>Best Materials:</strong> Quality architectural shingles with impact resistance, proper underlayment, efficient ventilation systems</p>
+                      <p><strong>Typical Cost:</strong> $13,000-$20,000 for 1,800-2,600 sq ft homes</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏘️ Rental Properties & Investment Homes</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Focus:</strong> High military rental market in Killeen<br />
+                      <strong>Common Needs:</strong> Cost-effective, durable solutions
+                    </p>
+                    <div className="bg-blue-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Landlord/Investor Services:</strong> We work with many Killeen property investors. Volume pricing for multiple properties. Fast turnaround to minimize vacancy. Tenant-friendly scheduling.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Deferred maintenance, multiple families wearing roof faster, storm damage going unreported by tenants</p>
+                      <p><strong>Best Materials:</strong> Balance of cost and durability—quality architectural shingles, proper installation, extended warranties protect investment</p>
+                      <p><strong>Typical Cost:</strong> $10,000-$18,000 for typical 1,400-2,200 sq ft Killeen rentals</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Killeen Military-Specific Considerations */}
+              <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  🇺🇸 Roofing Services for Fort Cavazos Military Families
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  We're honored to serve those who serve. Our team understands the unique needs of military families and provides specialized services:
+                </p>
+
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-xl font-bold text-primary-900 mb-4">⏰ Flexible Scheduling for Military Life</h3>
+                    <ul className="space-y-3 text-sm text-primary-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <div>
+                          <p className="font-semibold text-primary-900">PCS Timeline Accommodation</p>
+                          <p>Moving? We expedite inspections and installations to meet PCS dates. Rush service available for last-minute orders.</p>
+                        </div>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <div>
+                          <p className="font-semibold text-primary-900">Deployment-Friendly Communication</p>
+                          <p>Family members can handle everything. Clear documentation, photos, video updates. Email/text preferred communication.</p>
+                        </div>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <div>
+                          <p className="font-semibold text-primary-900">Weekend & Evening Appointments</p>
+                          <p>Work schedules at Fort Cavazos vary. We offer flexible appointment times including weekends.</p>
+                        </div>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <div>
+                          <p className="font-semibold text-primary-900">Fast Emergency Response</p>
+                          <p>Can't wait for leak repairs when family is alone during deployment. 24/7 emergency service.</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-xl font-bold text-primary-900 mb-4">💰 Financial Options for Military Families</h3>
+                    <ul className="space-y-3 text-sm text-primary-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <div>
+                          <p className="font-semibold text-primary-900">Military & Veteran Discounts</p>
+                          <p>Active duty, reserves, veterans, and military spouses receive special pricing. Thank you for your service.</p>
+                        </div>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <div>
+                          <p className="font-semibold text-primary-900">VA Loan Requirements Expertise</p>
+                          <p>Understand VA appraisal requirements. Ensure roof meets VA standards for home purchases/refinances.</p>
+                        </div>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <div>
+                          <p className="font-semibold text-primary-900">0% Financing Available</p>
+                          <p>Flexible payment plans through approved lenders. Spread costs over 12-18 months interest-free.</p>
+                        </div>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <div>
+                          <p className="font-semibold text-primary-900">Insurance Claim Assistance</p>
+                          <p>Many military families new to Texas homeownership. We guide through entire insurance claim process.</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="mt-6 bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
+                  <p className="font-bold text-primary-900 mb-2">🎖️ Fort Cavazos Families: We Understand Your Unique Needs</p>
+                  <p className="text-sm text-primary-700">
+                    Whether you're active duty at Fort Cavazos, a military spouse, a veteran who settled in Killeen, or a civilian supporting the installation—we're here to help. We've worked with hundreds of military families and understand the challenges of frequent moves, deployments, and military life. <strong>Military discount + flexible scheduling + fast turnaround = stress-free roofing.</strong> Thank you for your service to our country.
+                  </p>
+                </div>
+              </div>
+
+              {/* Killeen Weather & Storm History */}
+              <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Killeen Weather & Roofing: Central Texas Storm Challenges
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  Killeen sits in the heart of Central Texas "Tornado Alley" and "Hail Alley." Understanding local weather patterns protects your investment:
+                </p>
+
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div>
+                    <h3 className="text-xl font-bold text-primary-900 mb-4">⚡ Severe Storms & Hail</h3>
+                    <div className="bg-white rounded-lg p-6 shadow-md mb-4">
+                      <p className="text-sm text-primary-700 mb-3">
+                        Killeen experiences frequent severe weather, particularly <strong>March-June</strong>. Bell County is consistently ranked among Texas's top counties for hail events.
+                      </p>
+                      <div className="bg-amber-50 p-4 rounded mb-3">
+                        <p className="font-bold text-primary-900 text-sm mb-2">Killeen Hail Statistics:</p>
+                        <div className="text-xs text-primary-700 space-y-1">
+                          <div className="flex justify-between items-center border-b border-primary-200 pb-1">
+                            <span>Quarter-sized (1") - Damage likely</span>
+                            <span className="font-bold text-orange-600">2-3x per year</span>
+                          </div>
+                          <div className="flex justify-between items-center border-b border-primary-200 pb-1">
+                            <span>Golf ball (1.75") - Severe damage</span>
+                            <span className="font-bold text-red-600">Every 1-2 years</span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span>Baseball+ (2.75"+) - Roof totaled</span>
+                            <span className="font-bold text-red-600">Every 3-5 years</span>
+                          </div>
+                        </div>
+                      </div>
+                      <p className="text-sm font-semibold text-primary-900">What This Means For You:</p>
+                      <p className="text-sm text-primary-700">Impact-resistant (Class 4) shingles ESSENTIAL in Killeen. Insurance companies give 15-35% discounts. After storms, get FREE inspection—insurance claims must be filed within 1 year. Killeen roofs average 15-20 year lifespan due to frequent hail.</p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-bold text-primary-900 mb-4">🌡️ Extreme Heat & UV</h3>
+                    <div className="bg-white rounded-lg p-6 shadow-md mb-4">
+                      <p className="text-sm text-primary-700 mb-3">
+                        Killeen regularly exceeds <strong>100°F in summer</strong> with intense UV exposure. This accelerates roof deterioration significantly.
+                      </p>
+                      <div className="bg-red-50 p-4 rounded mb-3">
+                        <p className="font-bold text-red-900 text-sm mb-2">How Heat Damages Killeen Roofs:</p>
+                        <ul className="text-xs text-primary-700 space-y-1">
+                          <li>• Shingles dry out, crack, lose granules faster</li>
+                          <li>• Attic temps reach 150-170°F without proper ventilation</li>
+                          <li>• Adhesive strips fail leading to wind blow-off</li>
+                          <li>• Decking warps, insulation damaged</li>
+                        </ul>
+                      </div>
+                      <p className="text-sm font-semibold text-primary-900">What This Means For You:</p>
+                      <p className="text-sm text-primary-700">Proper attic ventilation is CRITICAL in Killeen. Ridge vents, soffit vents, attic fans extend roof life 5-10 years. Light-colored shingles reduce attic temps 20-30°F. Without ventilation, roofs fail prematurely.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-white rounded-lg p-6 shadow-lg mt-6">
+                  <h3 className="text-xl font-bold text-primary-900 mb-4">🌪️ Recent Major Storm Events in Killeen</h3>
+                  <div className="space-y-3 text-sm text-primary-700">
+                    <div className="border-l-4 border-red-500 pl-4">
+                      <p className="font-bold text-primary-900">April 2024 – Bell County Supercell</p>
+                      <p>Golf ball to baseball-sized hail devastated northwest Killeen and Harker Heights. Thousands of roofs damaged. One of worst storms in recent Bell County history.</p>
+                    </div>
+                    <div className="border-l-4 border-orange-500 pl-4">
+                      <p className="font-bold text-primary-900">March 2022 – Killeen Tornado & Hail</p>
+                      <p>EF1 tornado touched down in Killeen causing wind and hail damage. Multiple neighborhoods impacted. Large hail across Bell County.</p>
+                    </div>
+                    <div className="border-l-4 border-amber-500 pl-4">
+                      <p className="font-bold text-primary-900">May 2019 – Memorial Day Weekend Storms</p>
+                      <p>Severe storms with large hail and damaging winds. Widespread roof damage across Killeen, Harker Heights, Copperas Cove.</p>
+                    </div>
+                  </div>
+                  <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded mt-4">
+                    <p className="text-xs font-bold text-red-900 mb-1">⚠️ Killeen Homeowners: After storms with hail...</p>
+                    <p className="text-xs text-primary-700">Get FREE professional inspection even if you don't see damage. Hail damage invisible from ground. Missing claim deadlines means paying out-of-pocket. We provide free storm inspections with insurance documentation. Fort Cavazos families: Don't wait—schedule during duty hours!</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Killeen Roof Replacement Cost Guide */}
+              <div className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Killeen Roof Replacement Costs: Complete Pricing Guide
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  Killeen roof replacement costs are generally affordable compared to Austin/San Antonio, reflecting the local market and home sizes:
+                </p>
+
+                <div className="space-y-4 mb-8">
+                  <div className="border-l-4 border-blue-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">1,200-1,600 sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: Smaller Killeen ranch, 2-3 bed/1-2 bath, simple roof, 14-18 squares - older Fort Cavazos area homes</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$9,000-$14,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-green-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">1,600-2,000 sq ft Home (Most Common)</p>
+                        <p className="text-sm text-primary-700">Typical: Standard Killeen family home, 3-4 bed/2 bath, moderate complexity, 18-24 squares - Clear Creek, Marlboro Heights</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$11,000-$17,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-purple-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">2,000-2,500 sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: Larger Killeen two-story, 4 bed/2-3 bath, increased complexity, 24-30 squares - Stonetree, Woodland Hills</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$14,000-$21,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-red-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">2,500-3,200 sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: Larger Killeen family home, 4-5 bed/3 bath, complex roof, 30-38 squares - newer Stonetree, Bridgewood</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$17,000-$27,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-amber-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">3,200+ sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: Large Killeen estate, 5+ bed/3-4 bath, highly complex, 38+ squares - custom homes, premium neighborhoods</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$22,000-$40,000+</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded mb-8">
+                  <p className="font-bold text-primary-900 mb-2">🪖 Military Families & Investors: Important Cost Notes</p>
+                  <p className="text-sm text-primary-700 mb-3">Killeen's military community creates unique market dynamics:</p>
+                  <ul className="text-sm text-primary-700 space-y-1">
+                    <li>• <strong>Rental Property ROI:</strong> Many Killeen homes are rentals. Balance cost vs durability—cheap roof = frequent repairs. Quality shingles last longer = better investment.</li>
+                    <li>• <strong>PCS Timeline Considerations:</strong> Need roof done before moving? Expedite fees may apply ($500-$1,000) but we accommodate military schedules.</li>
+                    <li>• <strong>VA Loan Requirements:</strong> VA appraisers strict about roof condition. Must have 2+ years remaining life, no visible damage. We ensure compliance.</li>
+                    <li>• <strong>Insurance Claim Savings:</strong> Most cost-effective option. Pay deductible ($2k-$3k), insurance covers rest. Don't skip claims after hail!</li>
+                  </ul>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-6 mb-8">
+                  <div className="bg-red-50 rounded-lg p-6 border-l-4 border-red-500">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">📈 What INCREASES Cost in Killeen</h3>
+                    <ul className="space-y-2 text-sm text-primary-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+20-30%</span>
+                        <span><strong>Two-story homes</strong> (safety equipment, slower work)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+15-25%</span>
+                        <span><strong>Complex roof lines</strong> (valleys, dormers, multiple planes)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+$2k-5k</span>
+                        <span><strong>Decking repairs</strong> (common in 1970s-1990s Killeen homes)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+$500-1k</span>
+                        <span><strong>PCS rush service</strong> (expedited timeline for moving families)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+100-150%</span>
+                        <span><strong>Metal roofing upgrade</strong> ($20k-$35k vs $12k-$18k shingles)</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-green-50 rounded-lg p-6 border-l-4 border-green-500">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">📉 What DECREASES Cost in Killeen</h3>
+                    <ul className="space-y-2 text-sm text-primary-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Simple gable or hip roof</strong> (most Killeen homes)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Single-story ranch</strong> (faster, safer, common near Fort Cavazos)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Good existing decking</strong> (newer Stonetree, Woodland Hills homes)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Insurance claim coverage</strong> (pay deductible only—$2k-$3k typically)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Military & veteran discount</strong> (thank you for your service!)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Multiple properties discount</strong> (rental investors with 3+ Killeen properties)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-accent-50 to-blue-50 rounded-lg p-6">
+                  <h3 className="text-xl font-bold text-primary-900 mb-4">💡 5 Ways Killeen Homeowners Save on Roof Replacement</h3>
+                  <div className="grid md:grid-cols-2 gap-4 text-sm text-primary-700">
+                    <div>
+                      <p className="font-bold text-primary-900 mb-1">1. File Insurance Claims After Hail (CRITICAL)</p>
+                      <p className="mb-3">Killeen gets major hail every 2-3 years. April 2024 damaged thousands of Bell County roofs. If neighbors filed claims, you should too. Insurance covers 100% minus deductible. We handle entire process. Active duty? We coordinate around your schedule!</p>
+                      
+                      <p className="font-bold text-primary-900 mb-1">2. Impact-Resistant = Insurance Savings</p>
+                      <p className="mb-3">$3k-$4k more upfront, but saves $400-$700/year on Killeen insurance (15-30% discount). Pays for itself in 5-7 years. Over 30 years: $12,000-$21,000 savings. Plus survives Killeen's frequent hail better.</p>
+                      
+                      <p className="font-bold text-primary-900 mb-1">3. Military & Veteran Discounts</p>
+                      <p className="mb-3">Active duty, reserves, veterans, military spouses receive special pricing. Our way of saying thank you. Combine with insurance claim for maximum savings.</p>
+                    </div>
+                    <div>
+                      <p className="font-bold text-primary-900 mb-1">4. Investor Volume Pricing</p>
+                      <p className="mb-3">Own 3+ Killeen rental properties? We offer 10-15% volume discounts. Schedule back-to-back reduces mobilization costs. Popular with Fort Cavazos area landlords.</p>
+                      
+                      <p className="font-bold text-primary-900 mb-1">5. 0% Financing Available</p>
+                      <p className="mb-3">Spread $12k-$20k Killeen roof over 12-18 months interest-free through approved lenders. Makes quality roofing affordable. No prepayment penalty.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-6 bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
+                  <p className="text-primary-900 font-semibold mb-2">📞 Get Your Exact Killeen Roof Replacement Cost</p>
+                  <p className="text-primary-700">
+                    These are estimates. Your actual cost depends on your specific home, neighborhood, materials, and condition. We provide <strong>FREE inspections</strong> and detailed written quotes with no obligation. <strong>Fort Cavazos military families: We work around deployments, PCS timelines, and duty schedules!</strong> Call <strong>(512) 763-5277</strong> or schedule online for your personalized Killeen roof replacement estimate.
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Location-Specific Deep Content - Temple */}
+          {location.slug === 'temple' && (
+            <div className="mt-16 space-y-12">
+              {/* Temple Neighborhoods Deep Dive */}
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Temple Neighborhoods: Roofing Considerations & Costs
+                </h2>
+                <p className="text-primary-700 mb-8 leading-relaxed">
+                  Temple is Central Texas's medical hub, home to Baylor Scott & White Health and a growing residential community. Each neighborhood has unique roofing needs:
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏥 Medical Center Area</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1970s-2000s • <strong>Style:</strong> Professional community housing<br />
+                      <strong>Common Roof Type:</strong> Architectural shingles, mix of styles
+                    </p>
+                    <div className="bg-blue-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Healthcare Professional Focus:</strong> Many doctors, nurses, medical staff live near Baylor Scott & White. We understand busy schedules—evening/weekend appointments available. Flexible communication via text/email.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Aging roofs from 1980s-1990s construction, hail damage from Central Texas storms, tree damage from mature landscaping, UV deterioration</p>
+                      <p><strong>Best Materials:</strong> Impact-resistant architectural shingles (CertainTeed Landmark Pro, GAF Timberline HDZ), proper ventilation for Temple heat, algae-resistant for longevity</p>
+                      <p><strong>Typical Cost:</strong> $13,000-$20,000 for 1,800-2,600 sq ft homes</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏘️ Westwood & Wildflower Country Club</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1990s-2010s • <strong>Style:</strong> Upscale Temple residential<br />
+                      <strong>Common Roof Type:</strong> Premium architectural shingles, some tile accents
+                    </p>
+                    <div className="bg-green-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Premium Neighborhoods:</strong> Wildflower Country Club and Westwood represent Temple's upscale housing. Homeowners expect quality workmanship and premium materials. We deliver both.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Golf course homes face wind exposure, hail damage, UV deterioration, some HOA requirements for materials/colors</p>
+                      <p><strong>Best Materials:</strong> Premium impact-resistant shingles, designer colors, upgraded warranties, proper underlayment for longevity</p>
+                      <p><strong>Typical Cost:</strong> $16,000-$28,000 for 2,200-3,500 sq ft homes</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏡 Southwood & Morgan's Point</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1980s-2000s • <strong>Style:</strong> Established Temple subdivisions<br />
+                      <strong>Common Roof Type:</strong> Architectural shingles
+                    </p>
+                    <div className="bg-amber-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Established Areas:</strong> Many homes have original or second roofs approaching replacement age. Regular inspections recommended for roofs 15+ years old.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Aging roofs, hail damage accumulation, wind damage, tree debris, outdated ventilation systems</p>
+                      <p><strong>Best Materials:</strong> Modern impact-resistant architectural shingles, upgraded synthetic underlayment, enhanced ventilation</p>
+                      <p><strong>Typical Cost:</strong> $13,000-$21,000 for 1,800-2,800 sq ft homes (budget extra $2k-$4k for decking repairs)</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🌳 Prairie Dell & Woodland Hills</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1990s-2010s • <strong>Style:</strong> Family-oriented neighborhoods<br />
+                      <strong>Common Roof Type:</strong> Architectural shingles, varied complexity
+                    </p>
+                    <div className="bg-purple-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Family Communities:</strong> Good schools, parks, family amenities. Mix of young families and established homeowners. Active community involvement.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Standard Central Texas challenges—hail, wind, heat, occasional tree damage from mature landscaping</p>
+                      <p><strong>Best Materials:</strong> Quality architectural shingles with impact resistance, proper installation standards, efficient ventilation</p>
+                      <p><strong>Typical Cost:</strong> $14,000-$22,000 for 2,000-2,800 sq ft family homes</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏘️ North Temple</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 2000s-2020s • <strong>Style:</strong> Newer Temple development<br />
+                      <strong>Common Roof Type:</strong> Modern architectural shingles
+                    </p>
+                    <div className="bg-green-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Growth Area:</strong> North Temple expanding with new construction. Many homes 10-20 years old—prime for storm damage inspections. Some still under builder warranty.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Hail damage on mid-life roofs, builder-grade materials showing age, wind damage, ventilation concerns</p>
+                      <p><strong>Best Materials:</strong> Impact-resistant upgrades for insurance benefits, proper ventilation critical for Temple heat</p>
+                      <p><strong>Typical Cost:</strong> $14,000-$23,000 for 2,000-3,000 sq ft homes</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏡 Downtown Temple & Historic Areas</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1920s-1960s • <strong>Style:</strong> Historic Temple homes<br />
+                      <strong>Common Roof Type:</strong> Composition shingles, some metal
+                    </p>
+                    <div className="bg-blue-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Historic Charm:</strong> Downtown Temple features charming older homes near railroad district. Access can be challenging with narrow streets. We coordinate logistics carefully.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Wood decking deterioration, outdated ventilation, tree damage, access challenges, aging roof structures</p>
+                      <p><strong>Best Materials:</strong> Quality architectural shingles, proper decking repairs/replacement, modern underlayment, enhanced ventilation</p>
+                      <p><strong>Typical Cost:</strong> $12,000-$20,000 for 1,500-2,400 sq ft homes (access challenges may add 5-10%)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Temple Weather & Storm History */}
+              <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Temple Weather & Roofing: Central Texas Storm Patterns
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  Temple sits in the heart of Central Texas severe weather territory. Understanding local patterns protects your investment:
+                </p>
+
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div>
+                    <h3 className="text-xl font-bold text-primary-900 mb-4">⚡ Severe Storms & Hail</h3>
+                    <div className="bg-white rounded-lg p-6 shadow-md mb-4">
+                      <p className="text-sm text-primary-700 mb-3">
+                        Temple experiences frequent severe weather, particularly <strong>March-June</strong>. Bell County consistently ranks among Texas's top counties for hail frequency and intensity.
+                      </p>
+                      <div className="bg-amber-50 p-4 rounded mb-3">
+                        <p className="font-bold text-primary-900 text-sm mb-2">Temple Hail Statistics:</p>
+                        <div className="text-xs text-primary-700 space-y-1">
+                          <div className="flex justify-between items-center border-b border-primary-200 pb-1">
+                            <span>Quarter-sized (1") - Damage likely</span>
+                            <span className="font-bold text-orange-600">2-3x per year</span>
+                          </div>
+                          <div className="flex justify-between items-center border-b border-primary-200 pb-1">
+                            <span>Golf ball (1.75") - Severe damage</span>
+                            <span className="font-bold text-red-600">Every 1-2 years</span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span>Baseball+ (2.75"+) - Roof totaled</span>
+                            <span className="font-bold text-red-600">Every 3-5 years</span>
+                          </div>
+                        </div>
+                      </div>
+                      <p className="text-sm font-semibold text-primary-900">What This Means For You:</p>
+                      <p className="text-sm text-primary-700">Impact-resistant (Class 4) shingles are ESSENTIAL in Temple. Insurance companies give 15-35% discounts. After storms, get FREE inspection—insurance claims must be filed within deadlines (typically 1 year). Temple roofs average 15-20 year lifespan due to frequent severe weather.</p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-bold text-primary-900 mb-4">🌡️ Extreme Heat & UV Exposure</h3>
+                    <div className="bg-white rounded-lg p-6 shadow-md mb-4">
+                      <p className="text-sm text-primary-700 mb-3">
+                        Temple regularly exceeds <strong>100°F in summer</strong> with intense UV exposure year-round. This accelerates roof deterioration significantly.
+                      </p>
+                      <div className="bg-red-50 p-4 rounded mb-3">
+                        <p className="font-bold text-red-900 text-sm mb-2">How Heat Damages Temple Roofs:</p>
+                        <ul className="text-xs text-primary-700 space-y-1">
+                          <li>• Shingles dry out, crack, lose granules faster</li>
+                          <li>• Attic temps reach 150-170°F damaging decking/insulation</li>
+                          <li>• Adhesive strips fail causing wind blow-off</li>
+                          <li>• Underlayment deteriorates prematurely</li>
+                        </ul>
+                      </div>
+                      <p className="text-sm font-semibold text-primary-900">What This Means For You:</p>
+                      <p className="text-sm text-primary-700">Proper attic ventilation CRITICAL in Temple. Ridge vents, soffit vents, attic fans extend roof life 5-10 years. Light-colored shingles reduce attic temps 20-30°F, cutting cooling costs 10-20%. Without ventilation, roofs fail prematurely even with quality materials.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-white rounded-lg p-6 shadow-lg mt-6">
+                  <h3 className="text-xl font-bold text-primary-900 mb-4">🌪️ Recent Major Storm Events in Temple/Bell County</h3>
+                  <div className="space-y-3 text-sm text-primary-700">
+                    <div className="border-l-4 border-red-500 pl-4">
+                      <p className="font-bold text-primary-900">April 2024 – Bell County Supercell</p>
+                      <p>Golf ball to baseball-sized hail devastated Temple, Belton, and surrounding Bell County. One of the worst storms in recent history. Thousands of roofs damaged. If you haven't had roof inspected since, you may have covered damage.</p>
+                    </div>
+                    <div className="border-l-4 border-orange-500 pl-4">
+                      <p className="font-bold text-primary-900">March 2022 – Temple Severe Storms</p>
+                      <p>Multiple rounds of large hail and damaging winds. Temple downtown to north Temple impacted. Widespread roof damage across residential areas.</p>
+                    </div>
+                    <div className="border-l-4 border-amber-500 pl-4">
+                      <p className="font-bold text-primary-900">May 2019 – Memorial Day Weekend Storms</p>
+                      <p>Severe storms with large hail and winds. Bell County hit hard including Temple, Belton, Killeen. Significant roof damage throughout area.</p>
+                    </div>
+                    <div className="border-l-4 border-yellow-500 pl-4">
+                      <p className="font-bold text-primary-900">April 2016 – Bell County Hailstorm</p>
+                      <p>Baseball-sized hail in parts of Bell County. Temple neighborhoods experienced varying degrees of damage. Large-scale insurance claim event.</p>
+                    </div>
+                  </div>
+                  <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded mt-4">
+                    <p className="text-xs font-bold text-red-900 mb-1">⚠️ Temple Homeowners: After storms with hail...</p>
+                    <p className="text-xs text-primary-700">Get FREE professional inspection even if you don't see damage. Hail damage often invisible from ground level. Missing insurance claim deadlines means paying out-of-pocket for replacement. We provide free storm inspections with documentation for insurance—no obligation. Medical Center, Wildflower, Westwood residents especially should inspect after major storms.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Temple Roof Replacement Cost Guide */}
+              <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Temple Roof Replacement Costs: Complete Pricing Guide
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  Temple roof replacement costs reflect the local market, home sizes, and Bell County construction standards:
+                </p>
+
+                <div className="space-y-4 mb-8">
+                  <div className="border-l-4 border-blue-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">1,400-1,800 sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: Smaller Temple ranch, 2-3 bed/1-2 bath, simple roof, 16-20 squares - older downtown, Southwood areas</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$10,000-$15,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-green-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">1,800-2,200 sq ft Home (Most Common)</p>
+                        <p className="text-sm text-primary-700">Typical: Standard Temple family home, 3-4 bed/2 bath, moderate complexity, 20-26 squares - Prairie Dell, Morgan's Point</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$12,000-$18,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-purple-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">2,200-2,800 sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: Larger Temple two-story, 4 bed/2-3 bath, increased complexity, 26-34 squares - Westwood, Woodland Hills</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$15,000-$23,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-red-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">2,800-3,500 sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: Large Temple family home, 4-5 bed/3 bath, complex roof, 34-42 squares - Wildflower Country Club, premium Westwood</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$18,000-$30,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-amber-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">3,500+ sq ft Luxury Home</p>
+                        <p className="text-sm text-primary-700">Typical: Temple estate, 5+ bed/3-4 bath, highly complex, 42+ squares - Wildflower Country Club estates, custom builds</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$25,000-$50,000+</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded mb-8">
+                  <p className="font-bold text-primary-900 mb-2">🏥 Medical Professionals & Healthcare Workers: Cost Considerations</p>
+                  <p className="text-sm text-primary-700 mb-3">Temple's status as medical hub creates unique considerations:</p>
+                  <ul className="text-sm text-primary-700 space-y-1">
+                    <li>• <strong>Busy Schedules:</strong> We accommodate evening/weekend inspections and consultations. Text/email communication preferred by many healthcare professionals.</li>
+                    <li>• <strong>Quality Expectations:</strong> Medical professionals understand importance of proper workmanship. We deliver hospital-grade attention to detail.</li>
+                    <li>• <strong>Timeline Flexibility:</strong> Understand unpredictable medical schedules. Flexible installation dates around on-call schedules.</li>
+                    <li>• <strong>Investment Properties:</strong> Many medical professionals own rental properties. We offer volume pricing for multiple properties.</li>
+                  </ul>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-6 mb-8">
+                  <div className="bg-red-50 rounded-lg p-6 border-l-4 border-red-500">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">📈 What INCREASES Cost in Temple</h3>
+                    <ul className="space-y-2 text-sm text-primary-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+20-30%</span>
+                        <span><strong>Two-story homes</strong> (safety equipment, slower work, common in Westwood/Wildflower)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+15-25%</span>
+                        <span><strong>Complex roof lines</strong> (valleys, dormers, hip/gable combinations)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+$2k-5k</span>
+                        <span><strong>Decking repairs</strong> (common in 1970s-1990s Temple neighborhoods)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+15-20%</span>
+                        <span><strong>Steep pitch roofs</strong> (safety requirements, slower installation)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+100-150%</span>
+                        <span><strong>Metal roofing upgrade</strong> ($20k-$35k vs $13k-$19k shingles)</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-green-50 rounded-lg p-6 border-l-4 border-green-500">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">📉 What DECREASES Cost in Temple</h3>
+                    <ul className="space-y-2 text-sm text-primary-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Simple gable or hip roof</strong> (many Temple homes, faster installation)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Single-story ranch</strong> (safer, faster, common in older Temple)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Good existing decking</strong> (newer North Temple, Westwood homes)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Insurance claim coverage</strong> (pay deductible only—$2k-$3k typical)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Neighborhood group pricing</strong> (coordinate after storms for 10-15% off)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Easy property access</strong> (wide Temple streets, good driveways)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-accent-50 to-blue-50 rounded-lg p-6">
+                  <h3 className="text-xl font-bold text-primary-900 mb-4">💡 6 Ways Temple Homeowners Save on Roof Replacement</h3>
+                  <div className="grid md:grid-cols-2 gap-4 text-sm text-primary-700">
+                    <div>
+                      <p className="font-bold text-primary-900 mb-1">1. File Insurance Claims After Hail (CRITICAL)</p>
+                      <p className="mb-3">Temple gets major hail every 2-3 years. April 2024 damaged thousands of Bell County roofs. If neighbors filed claims, you should too. Insurance covers 100% minus deductible ($2k-$3k). We handle entire process including adjuster meetings, scope negotiations. Don't leave money on table!</p>
+                      
+                      <p className="font-bold text-primary-900 mb-1">2. Coordinate with Neighbors (MASSIVE Savings)</p>
+                      <p className="mb-3">After hailstorms, entire Temple blocks need roofs. When we work 8-12 homes in same neighborhood, we offer 10-15% group discounts ($1,500-$3,000 per home savings). One material delivery, one crew mobilization = lower costs. Organize with neighbors!</p>
+                      
+                      <p className="font-bold text-primary-900 mb-1">3. Impact-Resistant Shingles = Long-Term Savings</p>
+                      <p className="mb-3">$3k-$5k more upfront, but Temple insurance companies give 15-30% discounts ($400-$700/year savings). Pays for itself in 5-7 years. Plus survives Temple's frequent hail = fewer future claims. Over 30 years: $12,000-$21,000 in insurance savings.</p>
+                    </div>
+                    <div>
+                      <p className="font-bold text-primary-900 mb-1">4. Bundle Multiple Services</p>
+                      <p className="mb-3">Replace gutters, install gutter guards, upgrade ventilation simultaneously for 10-15% savings vs separate projects. One crew, one mobilization = lower total cost.</p>
+                      
+                      <p className="font-bold text-primary-900 mb-1">5. Light-Colored Materials Save on Cooling</p>
+                      <p className="mb-3">Temple's heat means light/reflective roofing reduces attic temps 20-30°F, cutting AC costs 10-20% ($150-$350/year). Over roof's lifetime: $3,000-$7,000 saved. IR-reflective shingles pay for themselves.</p>
+                      
+                      <p className="font-bold text-primary-900 mb-1">6. Take Advantage of 0% Financing</p>
+                      <p className="mb-3">We offer 0% financing 12-18 months through approved lenders. Spread $13k-$22k Temple roof into $800-$1,300/month payments. No interest if paid within promo period. Popular with medical professionals managing cash flow.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-6 bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
+                  <p className="text-primary-900 font-semibold mb-2">📞 Get Your Exact Temple Roof Replacement Cost</p>
+                  <p className="text-primary-700">
+                    These are estimates. Your actual cost depends on your specific home, neighborhood (Wildflower, Westwood, etc.), materials, and current conditions. We provide <strong>FREE inspections</strong> and detailed written quotes with no obligation. <strong>Medical Center professionals: We accommodate busy healthcare schedules with evening/weekend appointments!</strong> Call <strong>(512) 763-5277</strong> or schedule online for your personalized Temple roof replacement estimate.
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+
           {/* FAQ Section - Full Width */}
           <div className="mt-16">
             <LocationFAQ city={location.city} />
