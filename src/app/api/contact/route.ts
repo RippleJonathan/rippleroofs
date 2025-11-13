@@ -20,6 +20,15 @@ export async function POST(request: NextRequest) {
     // Generate email template
     const emailContent = emailTemplates.contactForm(validatedData);
     
+    // Check if Resend is configured
+    if (!resend) {
+      console.error('RESEND_API_KEY is not configured');
+      return NextResponse.json(
+        { error: 'Email service not configured. Please call us directly at (512) 763-5277.' },
+        { status: 500 }
+      );
+    }
+    
     // Send email
     const { data, error } = await resend.emails.send({
       from: EMAIL_CONFIG.from,

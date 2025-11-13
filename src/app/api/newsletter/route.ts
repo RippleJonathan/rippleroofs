@@ -15,6 +15,15 @@ export async function POST(request: NextRequest) {
     // Validate input
     const validatedData = newsletterSchema.parse(body);
     
+    // Check if Resend is configured
+    if (!resend) {
+      console.error('RESEND_API_KEY is not configured');
+      return NextResponse.json(
+        { error: 'Email service not configured.' },
+        { status: 500 }
+      );
+    }
+    
     // Send notification to you
     const notificationContent = emailTemplates.newsletterNotification(validatedData);
     
