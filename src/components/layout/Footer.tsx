@@ -29,9 +29,6 @@ export const Footer: FC = () => {
               <p className="text-primary-200 text-sm leading-relaxed">
                 At Ripple Roofing & Construction, our mission is to deliver high-quality roofing and construction services with integrity and reliability. We strive to enhance the value and safety of our clients' properties through skilled craftsmanship and transparent communication.
               </p>
-              <p className="text-primary-200 text-sm leading-relaxed">
-                We envision being Central Texas's most trusted roofing partner—known for our unwavering commitment to excellence, our dedication to customer satisfaction, and our ability to transform homes and businesses with superior roofing solutions.
-              </p>
               
               <div className="flex space-x-3 pt-2">
                 {SITE_CONFIG.social.facebook && (
