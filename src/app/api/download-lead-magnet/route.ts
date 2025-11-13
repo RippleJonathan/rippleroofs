@@ -137,7 +137,7 @@ export async function POST(request: NextRequest) {
               </ul>
               
               <p><strong>Ready to talk?</strong><br>
-              Call us at <a href="tel:+15125665511" style="color: #2563EB;">(512) 566-5511</a><br>
+              Call us at <a href="tel:+15127635277" style="color: #2563EB;">(512) 763-5277</a><br>
               Or reply to this email anytime.</p>
               
               <div class="divider"></div>
@@ -151,7 +151,7 @@ export async function POST(request: NextRequest) {
             <div class="footer">
               <p style="margin: 0 0 10px 0;"><strong>Ripple Roofing</strong></p>
               <p style="margin: 0 0 10px 0;">
-                <a href="tel:+15125665511" style="color: #2563EB; text-decoration: none;">(512) 566-5511</a> • 
+                <a href="tel:+15127635277" style="color: #2563EB; text-decoration: none;">(512) 763-5277</a> • 
                 <a href="https://rippleroofs.com" style="color: #2563EB; text-decoration: none;">rippleroofs.com</a>
               </p>
               <p style="margin: 10px 0 0 0; font-size: 12px;">
@@ -168,7 +168,7 @@ export async function POST(request: NextRequest) {
       console.error('Resend error:', error);
       console.error('Resend error details:', JSON.stringify(error, null, 2));
       return NextResponse.json(
-        { error: 'Failed to send email. Please contact us at (512) 566-5511 for immediate assistance.' },
+        { error: 'Failed to send email. Please contact us at (512) 763-5277 for immediate assistance.' },
         { status: 500 }
       );
     }
@@ -199,8 +199,17 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ success: true, data });
   } catch (error) {
     console.error('Lead magnet API error:', error);
+    console.error('Error details:', JSON.stringify(error, null, 2));
+    
+    // Log the full error object for debugging
+    if (error instanceof Error) {
+      console.error('Error name:', error.name);
+      console.error('Error message:', error.message);
+      console.error('Error stack:', error.stack);
+    }
+    
     return NextResponse.json(
-      { error: 'Internal server error' },
+      { error: 'Internal server error. Please call us at (512) 763-5277 for immediate assistance.' },
       { status: 500 }
     );
   }

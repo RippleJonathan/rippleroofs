@@ -67,7 +67,7 @@ export default function LeadMagnetForm({ slug, title }: LeadMagnetFormProps) {
       router.push(`/resources/${slug}/thank-you`);
     } catch (err) {
       console.error('Form submission error:', err);
-      setError('Something went wrong. Please try again or call us at (512) 566-5511');
+      setError('Something went wrong. Please try again or call us at (512) 763-5277');
       setIsSubmitting(false);
     }
   };
