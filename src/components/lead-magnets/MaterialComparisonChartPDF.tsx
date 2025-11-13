@@ -422,5 +422,6 @@ export function generateMaterialComparisonChartPDF() {
   doc.setTextColor(200, 220, 255);
   doc.text('Ripple Roofing & Construction - CertainTeed Shingle Master Certified', 105, yPos + 65, { align: 'center' });
   
-  return doc;
+  // Save the PDF
+  doc.save('Ripple-Roofing-Material-Comparison-Chart.pdf');
 }

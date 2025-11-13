@@ -461,5 +461,6 @@ export function generateStormDamageInsuranceGuidePDF() {
   doc.setTextColor(255, 200, 200);
   doc.text('Ripple Roofing & Construction - Serving Central Texas Since 2010', 105, yPos + 65, { align: 'center' });
   
-  return doc;
+  // Save the PDF
+  doc.save('Ripple-Roofing-Storm-Damage-Insurance-Guide.pdf');
 }

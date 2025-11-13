@@ -337,5 +337,6 @@ export function generateRoofInspectionChecklistPDF() {
   doc.setTextColor(200, 200, 200);
   doc.text('Serving Austin, Round Rock, Georgetown, Cedar Park, and Central Texas', 105, yPos + 45, { align: 'center' });
   
-  return doc;
+  // Save the PDF
+  doc.save('Ripple-Roofing-Inspection-Checklist.pdf');
 }
