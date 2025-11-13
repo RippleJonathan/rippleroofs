@@ -165,7 +165,7 @@ export async function POST(request: NextRequest) {
     const { data, error } = await resend.emails.send({
       from: 'Ripple Roofing <info@rippleroofs.com>',
       to: EMAIL_CONFIG.to,
-      replyTo: validatedData.email,
+      replyTo: validatedData.email === 'noemail@callback.requested' ? EMAIL_CONFIG.replyTo : validatedData.email,
       subject: emailContent.subject,
       html: emailContent.html,
     })

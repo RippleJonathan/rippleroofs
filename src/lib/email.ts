@@ -129,7 +129,7 @@ export const emailTemplates = {
               
               <div class="field">
                 <span class="label">Email:</span>
-                <div class="value"><a href="mailto:${data.email}">${data.email}</a></div>
+                <div class="value">${data.email === 'noemail@callback.requested' ? '<em>Callback Only - No Email Provided</em>' : `<a href="mailto:${data.email}">${data.email}</a>`}</div>
               </div>
               
               <div class="field">
@@ -158,7 +158,7 @@ export const emailTemplates = {
               
               <div style="text-align: center; margin-top: 30px;">
                 <a href="tel:${data.phone}" class="button">📞 Call ${data.name}</a>
-                <a href="mailto:${data.email}" class="button">📧 Send Email</a>
+                ${data.email !== 'noemail@callback.requested' ? `<a href="mailto:${data.email}" class="button">📧 Send Email</a>` : ''}
               </div>
             </div>
             <div class="footer">
