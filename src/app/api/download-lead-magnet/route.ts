@@ -46,10 +46,9 @@ export async function POST(request: NextRequest) {
     console.log('Sending email to:', email);
 
     // Send email with Resend
-    // Note: Using onboarding@resend.dev until rippleroofs.com domain is verified in Resend
-    // To use info@rippleroofs.com, verify domain at https://resend.com/domains
+    // Using info@rippleroofs.com - domain is verified in Resend
     const { data, error } = await resend.emails.send({
-      from: 'Ripple Roofing <onboarding@resend.dev>',
+      from: 'Ripple Roofing <info@rippleroofs.com>',
       to: [email],
       replyTo: 'info@rippleroofs.com',
       subject: `Your Free Download: ${title}`,
@@ -178,8 +177,8 @@ export async function POST(request: NextRequest) {
     // Also send internal notification email (don't fail if this one fails)
     try {
       await resend.emails.send({
-        from: 'Ripple Roofing <onboarding@resend.dev>',
-        to: ['info@rippleroofs.com'],
+        from: 'Ripple Roofing <info@rippleroofs.com>',
+        to: ['jonathan@rippleroofs.com'],
         subject: `New Lead Magnet Download: ${title}`,
         html: `
           <h2>New Lead Magnet Download</h2>
