@@ -49,6 +49,9 @@ export const quoteFormSchema = z.object({
     .min(5, 'Email must be at least 5 characters')
     .max(255, 'Email must be less than 255 characters')
     .refine(email => {
+      // Allow special placeholder for exit popup
+      if (email === 'noemail@callback.requested') return true;
+      
       // Block obviously fake email patterns
       const suspiciousEmailPatterns = [
         /^[a-z]{20,}@/i, // 20+ random letters before @
@@ -66,8 +69,19 @@ export const quoteFormSchema = z.object({
     .string()
     .min(5, 'Address must be at least 5 characters')
     .max(255, 'Address must be less than 255 characters')
-    .regex(addressRegex, 'Please enter a valid address (must include street number)')
-    .refine(addr => !isSuspiciousString(addr), {
+    .refine(addr => {
+      // Allow special placeholder for exit popup
+      if (addr === 'Callback Requested - Address TBD') return true;
+      // Otherwise must match address regex
+      return addressRegex.test(addr);
+    }, {
+      message: 'Please enter a valid address (must include street number)',
+    })
+    .refine(addr => {
+      // Allow special placeholder for exit popup
+      if (addr === 'Callback Requested - Address TBD') return true;
+      return !isSuspiciousString(addr);
+    }, {
       message: 'Please enter a valid address',
     }),
   

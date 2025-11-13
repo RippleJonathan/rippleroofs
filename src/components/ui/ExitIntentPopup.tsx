@@ -80,8 +80,8 @@ export const ExitIntentPopup: FC = () => {
         body: JSON.stringify({
           name: data.name,
           phone: data.phone,
-          email: 'exitintent@rippleroofs.com', // Placeholder since email not collected
-          address: 'To be determined during call',
+          email: 'noemail@callback.requested', // Placeholder since email not collected
+          address: 'Callback Requested - Address TBD',
           service: 'Other',
           message: `Exit-intent popup lead - Customer requested callback. Phone: ${data.phone}`,
           _website: data._website,
