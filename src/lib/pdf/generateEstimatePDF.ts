@@ -577,7 +577,7 @@ export async function generateEstimatePDF(data: EstimatePDFData): Promise<Blob> 
   })
 
   // Footer on last page - Styled and prominent
-  const pageCount = doc.getNumberOfPages()
+  const pageCount = (doc as any).getNumberOfPages()
   doc.setPage(pageCount)
   
   yPos = pageHeight - 70
