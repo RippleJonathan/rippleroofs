@@ -17,10 +17,12 @@ export const SITE_CONFIG = {
   certifications: ['CertainTeed Shingle Master', 'Fully Insured'],
   social: {
     facebook: 'https://facebook.com/rippleroofs',
-    instagram: '',
+    instagram: '', // Coming soon
     linkedin: 'https://www.linkedin.com/company/ripple-roofing',
     twitter: '',
-    youtube: '',
+    youtube: '', // Coming soon
+    tiktok: '', // Coming soon
+    googleBusiness: 'https://g.page/r/YOUR_GOOGLE_BUSINESS_ID', // TODO: Add your Google Business Profile URL
   },
 }
 

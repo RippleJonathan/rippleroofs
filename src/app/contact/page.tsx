@@ -2,6 +2,7 @@ import { FC } from 'react'
 import { Metadata } from 'next'
 import { Container } from '@/components/layout/Container'
 import { QuoteForm } from '@/components/forms/QuoteForm'
+import { ServiceAreasMap } from '@/components/contact/ServiceAreasMap'
 import { SITE_CONFIG } from '@/lib/constants'
 
 export const metadata: Metadata = {
@@ -200,6 +201,9 @@ const ContactPage: FC = () => {
           </div>
         </Container>
       </section>
+
+      {/* Service Areas Map Section */}
+      <ServiceAreasMap />
     </main>
   )
 }
