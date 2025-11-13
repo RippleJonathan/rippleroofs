@@ -8,6 +8,7 @@ import Link from 'next/link'
 import { BlogPostCard } from '@/components/blog/BlogPostCard'
 import { SocialShare } from '@/components/blog/SocialShare'
 import { getBlurDataURL } from '@/lib/image-blur'
+import { BlogSidebar } from '@/components/blog/BlogSidebar'
 
 interface BlogPostPageProps {
   params: {
@@ -173,20 +174,22 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
       {/* Article Content */}
       <section className="py-16 bg-white">
         <Container>
-          <div className="max-w-4xl mx-auto">
-            {/* Social Share Buttons */}
-            <div className="mb-8 pb-8 border-b border-primary-200">
-              <SocialShare 
-                url={`${process.env.NEXT_PUBLIC_SITE_URL || 'https://rippleroofs.com'}/blog/${params.slug}`}
-                title={post.title}
-                description={post.description}
-              />
-            </div>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+            {/* Main Content */}
+            <div className="lg:col-span-2">
+              {/* Social Share Buttons */}
+              <div className="mb-8 pb-8 border-b border-primary-200">
+                <SocialShare 
+                  url={`${process.env.NEXT_PUBLIC_SITE_URL || 'https://rippleroofs.com'}/blog/${params.slug}`}
+                  title={post.title}
+                  description={post.description}
+                />
+              </div>
 
-            {/* MDX Content */}
-            <article className="prose prose-lg max-w-none prose-headings:font-display prose-headings:text-primary-900 prose-p:text-primary-700 prose-a:text-accent-600 hover:prose-a:text-accent-700 prose-strong:text-primary-900 prose-ul:text-primary-700 prose-ol:text-primary-700">
-              <MDXRemote source={post.content} />
-            </article>
+              {/* MDX Content */}
+              <article className="prose prose-lg max-w-none prose-headings:font-display prose-headings:text-primary-900 prose-p:text-primary-700 prose-a:text-accent-600 hover:prose-a:text-accent-700 prose-strong:text-primary-900 prose-ul:text-primary-700 prose-ol:text-primary-700">
+                <MDXRemote source={post.content} />
+              </article>
 
             {/* Tags */}
             {post.tags.length > 0 && (
@@ -203,6 +206,14 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                 </div>
               </div>
             )}
+            </div>
+            
+            {/* Sidebar */}
+            <div className="lg:col-span-1">
+              <div className="sticky top-24">
+                <BlogSidebar />
+              </div>
+            </div>
           </div>
         </Container>
       </section>

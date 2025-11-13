@@ -24,6 +24,24 @@ export async function POST(request: NextRequest) {
       );
     }
     
+    // Add to Resend Audience (Newsletter list)
+    // This requires creating an audience in Resend dashboard first
+    try {
+      if (process.env.RESEND_AUDIENCE_ID) {
+        await resend.contacts.create({
+          email: validatedData.email,
+          audienceId: process.env.RESEND_AUDIENCE_ID,
+        });
+      }
+    } catch (audienceError: any) {
+      // If contact already exists, that's fine - continue
+      if (audienceError?.message?.includes('already exists')) {
+        console.log('Contact already in audience:', validatedData.email);
+      } else {
+        console.error('Audience add error (non-critical):', audienceError);
+      }
+    }
+    
     // Send notification to you
     const notificationContent = emailTemplates.newsletterNotification(validatedData);
     
