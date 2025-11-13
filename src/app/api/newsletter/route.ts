@@ -28,7 +28,7 @@ export async function POST(request: NextRequest) {
     const notificationContent = emailTemplates.newsletterNotification(validatedData);
     
     const notificationResult = await resend.emails.send({
-      from: EMAIL_CONFIG.from,
+      from: 'Ripple Roofing <info@rippleroofs.com>',
       to: EMAIL_CONFIG.to,
       subject: notificationContent.subject,
       html: notificationContent.html,
@@ -42,7 +42,7 @@ export async function POST(request: NextRequest) {
     const welcomeContent = emailTemplates.newsletterWelcome(validatedData);
     
     const welcomeResult = await resend.emails.send({
-      from: EMAIL_CONFIG.from,
+      from: 'Ripple Roofing <info@rippleroofs.com>',
       to: validatedData.email,
       replyTo: EMAIL_CONFIG.replyTo,
       subject: welcomeContent.subject,
