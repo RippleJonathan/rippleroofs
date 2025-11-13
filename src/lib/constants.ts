@@ -22,7 +22,7 @@ export const SITE_CONFIG = {
     twitter: '',
     youtube: '', // Coming soon
     tiktok: '', // Coming soon
-    googleBusiness: 'https://g.page/r/YOUR_GOOGLE_BUSINESS_ID', // TODO: Add your Google Business Profile URL
+    googleBusiness: 'https://share.google/SsBLQ1RNm8ZQ7rFrk',
   },
 }
 
