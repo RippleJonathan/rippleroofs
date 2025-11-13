@@ -1,10 +1,10 @@
 import { Resend } from 'resend';
 
-if (!process.env.RESEND_API_KEY) {
-  throw new Error('RESEND_API_KEY is not defined in environment variables');
-}
-
-export const resend = new Resend(process.env.RESEND_API_KEY);
+// Initialize Resend instance - will be null if API key not configured
+// This allows the app to build even if RESEND_API_KEY is not set
+export const resend = process.env.RESEND_API_KEY 
+  ? new Resend(process.env.RESEND_API_KEY)
+  : null;
 
 // Email configuration
 export const EMAIL_CONFIG = {
