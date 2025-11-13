@@ -6,8 +6,11 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const { name, email, phone, address, slug, title } = body;
 
+    console.log('Lead magnet request received:', { name, email, slug, title });
+
     // Validate required fields
     if (!name || !email || !slug || !title) {
+      console.error('Missing required fields:', { name: !!name, email: !!email, slug: !!slug, title: !!title });
       return NextResponse.json(
         { error: 'Missing required fields' },
         { status: 400 }
@@ -37,7 +40,10 @@ export async function POST(request: NextRequest) {
       });
     }
 
+    console.log('Resend API key found, initializing...');
     const resend = new Resend(process.env.RESEND_API_KEY);
+
+    console.log('Sending email to:', email);
 
     // Send email with Resend
     // Note: Using onboarding@resend.dev until rippleroofs.com domain is verified in Resend
@@ -160,17 +166,20 @@ export async function POST(request: NextRequest) {
 
     if (error) {
       console.error('Resend error:', error);
+      console.error('Resend error details:', JSON.stringify(error, null, 2));
       return NextResponse.json(
         { error: 'Failed to send email. Please contact us at (512) 566-5511 for immediate assistance.' },
         { status: 500 }
       );
     }
 
+    console.log('Email sent successfully:', data);
+
     // Also send internal notification email (don't fail if this one fails)
     try {
       await resend.emails.send({
         from: 'Ripple Roofing <onboarding@resend.dev>',
-        to: ['info@rippleroofing.com'],
+        to: ['info@rippleroofs.com'],
         subject: `New Lead Magnet Download: ${title}`,
         html: `
           <h2>New Lead Magnet Download</h2>
