@@ -52,7 +52,7 @@ export const Hero: FC = () => {
               </a>
             </div>
             <div className="flex flex-wrap gap-3 text-sm text-primary-100">
-              <span className="flex items-center gap-1">⭐ 4.9/5 (267+ reviews)</span>
+              <span className="flex items-center gap-1">⭐ 5.0 Star Rating</span>
               <span>•</span>
               <span className="flex items-center gap-1">✓ CertainTeed Master™</span>
               <span>•</span>
@@ -66,7 +66,7 @@ export const Hero: FC = () => {
               <svg className="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span className="text-sm font-semibold">267+ Happy Customers</span>
+              <span className="text-sm font-semibold">5-Star Rated Service</span>
             </div>
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
               <svg className="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">

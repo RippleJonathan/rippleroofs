@@ -101,7 +101,7 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
             {/* Quick Trust Badges */}
             <div className="flex flex-wrap items-center gap-4 text-sm text-primary-200">
               <span className="flex items-center gap-1">
-                <span className="text-accent-400">⭐</span> 4.9/5 Stars (267+ Reviews)
+                <span className="text-accent-400">⭐</span> 5.0 Star Rating
               </span>
               <span className="hidden sm:inline">•</span>
               <span className="flex items-center gap-1">
@@ -125,8 +125,8 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
               <div className="text-sm text-primary-600">Emergency Service</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-accent-600 mb-1">267+</div>
-              <div className="text-sm text-primary-600">Happy Customers</div>
+              <div className="text-3xl font-bold text-accent-600 mb-1">5.0★</div>
+              <div className="text-sm text-primary-600">Google Rating</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-accent-600 mb-1">$200</div>
