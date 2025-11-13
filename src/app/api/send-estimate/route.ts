@@ -35,7 +35,7 @@ export async function POST(request: NextRequest) {
 
     // Send email to customer
     const { data, error } = await resend.emails.send({
-      from: 'Ripple Roofing <estimates@rippleroofs.com>',
+      from: 'Ripple Roofing <sales@rippleroofs.com>',
       to: [customerEmail],
       cc: ['jonathan@rippleroofs.com'],
       subject: `Your Roof Estimate - ${packageName}`,
@@ -188,7 +188,7 @@ export async function POST(request: NextRequest) {
   <div class="footer">
     <p><strong>Ripple Roofing & Construction</strong></p>
     <p>Professional Roofing Solutions</p>
-    <p>📧 estimates@rippleroofs.com | 📞 (512) 763-5277</p>
+    <p>📧 sales@rippleroofs.com | 📞 (512) 763-5277</p>
     <p style="font-size: 12px; margin-top: 15px;">
       © ${new Date().getFullYear()} Ripple Roofing & Construction. All rights reserved.
     </p>

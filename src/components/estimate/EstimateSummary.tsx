@@ -355,7 +355,7 @@ export function EstimateSummary({
                   Call Us Now: (512) 763-5277
                 </a>
                 <a
-                  href="mailto:estimates@rippleroofs.com"
+                  href="mailto:sales@rippleroofs.com"
                   className="group px-8 py-4 bg-gradient-to-r from-primary-600 to-primary-700 text-white font-bold text-lg rounded-xl hover:from-primary-700 hover:to-primary-800 transition-all shadow-lg hover:shadow-xl flex items-center gap-3"
                 >
                   <svg className="w-6 h-6 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -469,8 +469,8 @@ export function EstimateSummary({
                   </svg>
                   <div>
                     <p className="text-primary-200">Email</p>
-                    <a href="mailto:estimates@rippleroofs.com" className="text-white hover:text-accent-400 transition-colors font-medium">
-                      estimates@rippleroofs.com
+                    <a href="mailto:sales@rippleroofs.com" className="text-white hover:text-accent-400 transition-colors font-medium">
+                      sales@rippleroofs.com
                     </a>
                   </div>
                 </li>

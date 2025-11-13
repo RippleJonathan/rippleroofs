@@ -82,7 +82,7 @@ export async function generateEstimatePDF(data: EstimatePDFData): Promise<Blob> 
   doc.setFont('helvetica', 'normal')
   doc.text('Professional Roofing Estimate', pageWidth / 2, 32, { align: 'center' })
   doc.setFontSize(9)
-  doc.text('estimates@rippleroofs.com | (512) 763-5277', pageWidth / 2, 42, { align: 'center' })
+  doc.text('sales@rippleroofs.com | (512) 763-5277', pageWidth / 2, 42, { align: 'center' })
 
   yPos = 60
 
@@ -681,7 +681,7 @@ export async function generateEstimatePDF(data: EstimatePDFData): Promise<Blob> 
   doc.text('|', pageWidth / 2 + 19, contactY + 5.5, { align: 'center' })
   
   doc.setTextColor(...primaryColor)
-  doc.textWithLink('estimates@rippleroofs.com', pageWidth / 2 + 23, contactY + 5.5, { url: 'mailto:estimates@rippleroofs.com' })
+  doc.textWithLink('sales@rippleroofs.com', pageWidth / 2 + 23, contactY + 5.5, { url: 'mailto:sales@rippleroofs.com' })
   
   doc.setFontSize(7)
   doc.setTextColor(120, 120, 120)

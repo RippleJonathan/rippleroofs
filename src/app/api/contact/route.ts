@@ -31,7 +31,7 @@ export async function POST(request: NextRequest) {
     
     // Send email
     const { data, error } = await resend.emails.send({
-      from: 'Ripple Roofing <info@rippleroofs.com>',
+      from: 'Ripple Roofing <sales@rippleroofs.com>',
       to: EMAIL_CONFIG.to,
       replyTo: validatedData.email,
       subject: emailContent.subject,
