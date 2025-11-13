@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
+// Lead magnet download API endpoint
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
