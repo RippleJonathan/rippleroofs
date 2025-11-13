@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/Button'
 import { Input } from '@/components/ui/Input'
 import { Select } from '@/components/ui/Select'
 import { TrustBadgeBar } from '@/components/ui/TrustBadgeBar'
+import { trackContactSubmission } from '@/lib/analytics'
 
 interface QuoteFormProps {
   className?: string
@@ -68,6 +69,9 @@ export const QuoteForm: FC<QuoteFormProps> = ({ className = '', prefillAddress }
       if (!response.ok) {
         throw new Error(result.message || 'Failed to submit form')
       }
+
+      // Track successful contact form submission
+      trackContactSubmission('quote_form')
 
       setSubmitStatus('success')
       reset()

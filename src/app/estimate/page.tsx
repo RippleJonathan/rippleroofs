@@ -12,6 +12,7 @@ import { calculateRoofMeasurement } from '@/lib/estimate/calculations'
 import { DEFAULT_PITCH, DEFAULT_WASTE_FACTOR, PITCH_MULTIPLIERS } from '@/types/estimate'
 import { ROOFING_PACKAGES } from '@/types/packages'
 import { generateEstimatePDF } from '@/lib/pdf/generateEstimatePDF'
+import { trackEstimateSubmission } from '@/lib/analytics'
 
 export default function EstimatePage() {
   const [step, setStep] = useState<'address' | 'draw' | 'measure' | 'package' | 'summary'>('address')
@@ -102,6 +103,9 @@ export default function EstimatePage() {
         const errorData = await response.json()
         throw new Error(errorData.error || 'Failed to send email')
       }
+
+      // Track successful estimate submission
+      trackEstimateSubmission('estimate_page')
 
       // Move to summary step
       setStep('summary')

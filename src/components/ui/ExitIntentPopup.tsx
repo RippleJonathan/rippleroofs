@@ -6,6 +6,7 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import { Button } from './Button'
 import { Input } from './Input'
+import { trackContactSubmission } from '@/lib/analytics'
 
 const quickLeadSchema = z.object({
   name: z.string().min(2, 'Name is required'),
@@ -91,6 +92,9 @@ export const ExitIntentPopup: FC = () => {
       if (!response.ok) {
         throw new Error('Failed to submit')
       }
+
+      // Track successful exit popup submission
+      trackContactSubmission('exit_popup')
 
       setSubmitStatus('success')
       reset()

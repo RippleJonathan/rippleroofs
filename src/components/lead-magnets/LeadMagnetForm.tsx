@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import { trackLeadMagnetSubmission } from '@/lib/analytics';
 
 interface LeadMagnetFormProps {
   slug: string;
@@ -62,6 +63,9 @@ export default function LeadMagnetForm({ slug, title }: LeadMagnetFormProps) {
       if (!response.ok) {
         throw new Error('Failed to submit form');
       }
+
+      // Track successful form submission
+      trackLeadMagnetSubmission(title, slug);
 
       // Redirect to thank you page
       router.push(`/resources/${slug}/thank-you`);

@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { CheckCircle, Download, ArrowRight, Phone } from 'lucide-react';
+import { trackPdfDownload, trackPhoneClick } from '@/lib/analytics';
 import { generateRoofInspectionChecklistPDF } from '@/components/lead-magnets/RoofInspectionChecklistPDF';
 import { generateStormDamageInsuranceGuidePDF } from '@/components/lead-magnets/StormDamageInsuranceGuidePDF';
 import { generateMaterialComparisonChartPDF } from '@/components/lead-magnets/MaterialComparisonChartPDF';
@@ -79,6 +80,8 @@ export default function ThankYouPage() {
     if (generator) {
       try {
         generator();
+        // Track successful PDF download
+        trackPdfDownload(content.title, slug);
       } catch (error) {
         console.error('PDF generation error:', error);
         alert('There was an error generating your PDF. Please contact us at (512) 763-5277 and we\'ll send it to you directly.');
@@ -141,7 +144,11 @@ export default function ThankYouPage() {
               </button>
               <p className="text-sm text-gray-500 mt-4">
                 Didn't receive the email? Check your spam folder or{' '}
-                <a href="tel:+15127635277" className="text-blue-600 hover:underline">
+                <a 
+                  href="tel:+15127635277" 
+                  className="text-blue-600 hover:underline"
+                  onClick={() => trackPhoneClick('thank_you_page')}
+                >
                   call us at (512) 763-5277
                 </a>
               </p>
@@ -207,6 +214,7 @@ export default function ThankYouPage() {
                 <a
                   href="tel:+15127635277"
                   className="inline-flex items-center justify-center gap-2 bg-white text-blue-600 font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors duration-200"
+                  onClick={() => trackPhoneClick('thank_you_cta')}
                 >
                   <Phone className="w-5 h-5" />
                   Call (512) 763-5277
