@@ -3,6 +3,20 @@ import Link from 'next/link';
 import { Download, CheckCircle } from 'lucide-react';
 import { Container } from '@/components/layout/Container';
 
+const FEATURED_TOOL = {
+  title: 'Interactive Material Comparison Tool',
+  description: 'Compare all roofing materials side-by-side with our interactive tool. Filter by budget, climate needs, and durability to find your perfect match.',
+  slug: 'material-comparison-tool',
+  icon: '🔧',
+  benefits: [
+    'Interactive filtering by budget & climate',
+    'Compare 8 materials side-by-side',
+    'Texas hail & heat ratings',
+    'Real-time cost calculations',
+  ],
+  isInteractive: true,
+};
+
 const LEAD_MAGNETS = [
   {
     title: 'Roof Inspection Checklist',
@@ -68,6 +82,50 @@ export const FreeResourcesSection: FC = () => {
               Download our expert guides and make informed decisions about your roof. 
               No obligation, no sales calls—just valuable information to help you.
             </p>
+          </div>
+
+          {/* Featured Interactive Tool */}
+          <div className="mb-12">
+            <div className="bg-gradient-to-br from-accent-500 to-accent-600 rounded-2xl shadow-xl p-8 md:p-12 text-white relative overflow-hidden">
+              {/* Background Pattern */}
+              <div className="absolute inset-0 opacity-10">
+                <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '40px 40px' }}></div>
+              </div>
+              
+              <div className="relative z-10">
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="text-6xl">{FEATURED_TOOL.icon}</span>
+                  <div>
+                    <div className="inline-block bg-white/20 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full mb-2">
+                      ✨ NEW INTERACTIVE TOOL
+                    </div>
+                    <h3 className="text-3xl md:text-4xl font-bold">
+                      {FEATURED_TOOL.title}
+                    </h3>
+                  </div>
+                </div>
+                
+                <p className="text-xl text-white/90 mb-6 max-w-3xl">
+                  {FEATURED_TOOL.description}
+                </p>
+
+                <div className="grid md:grid-cols-2 gap-4 mb-8">
+                  {FEATURED_TOOL.benefits.map((benefit, idx) => (
+                    <div key={idx} className="flex items-start gap-3">
+                      <CheckCircle className="w-6 h-6 text-white flex-shrink-0 mt-0.5" />
+                      <span className="text-white/90 font-medium">{benefit}</span>
+                    </div>
+                  ))}
+                </div>
+
+                <Link
+                  href={`/resources/${FEATURED_TOOL.slug}`}
+                  className="inline-flex items-center justify-center gap-2 bg-white text-accent-600 hover:bg-primary-50 font-bold py-4 px-8 rounded-lg transition-colors text-lg shadow-lg"
+                >
+                  Try Interactive Tool Now →
+                </Link>
+              </div>
+            </div>
           </div>
 
           {/* Resource Cards Grid */}

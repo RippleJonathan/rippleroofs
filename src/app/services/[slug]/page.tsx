@@ -280,10 +280,32 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
                     <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
                       Roofing Materials for Central Texas Climate
                     </h2>
-                    <p className="text-primary-700 mb-8">
+                    <p className="text-primary-700 mb-6">
                       Central Texas presents unique challenges: intense UV exposure, severe hailstorms, high winds, and temperature extremes. 
                       We recommend materials specifically rated for these conditions:
                     </p>
+                    
+                    {/* Material Comparison Tool CTA */}
+                    <div className="bg-gradient-to-r from-accent-500 to-accent-600 rounded-xl p-6 mb-8 text-white">
+                      <div className="flex flex-col md:flex-row items-start md:items-center gap-4">
+                        <div className="flex-1">
+                          <div className="flex items-center gap-2 mb-2">
+                            <span className="text-3xl">🔧</span>
+                            <h3 className="text-xl font-bold">Compare All Materials Side-by-Side</h3>
+                          </div>
+                          <p className="text-white/90">
+                            Use our interactive tool to filter by budget, climate rating, and hail resistance. Compare costs, lifespan, and warranties instantly.
+                          </p>
+                        </div>
+                        <Link
+                          href="/resources/material-comparison-tool"
+                          className="inline-flex items-center justify-center gap-2 bg-white text-accent-600 hover:bg-primary-50 font-bold py-3 px-6 rounded-lg transition-colors whitespace-nowrap"
+                        >
+                          Try Interactive Tool →
+                        </Link>
+                      </div>
+                    </div>
+
                     <div className="space-y-8">
                       {/* Impact-Resistant Shingles */}
                       <div className="bg-gradient-to-r from-accent-50 to-primary-50 rounded-2xl p-8 border-2 border-accent-200">

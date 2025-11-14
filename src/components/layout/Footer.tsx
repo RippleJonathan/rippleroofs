@@ -289,9 +289,20 @@ export const Footer: FC = () => {
       <div className="border-t border-primary-800">
         <Container>
           <div className="py-6 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-primary-300 text-sm">
-              © {currentYear} {SITE_CONFIG.name}. All rights reserved.
-            </p>
+            <div className="flex flex-col md:flex-row items-center gap-4">
+              <p className="text-primary-300 text-sm">
+                © {currentYear} {SITE_CONFIG.name}. All rights reserved.
+              </p>
+              <div className="flex gap-4 text-sm">
+                <Link href="/privacy" className="text-primary-300 hover:text-accent-400 transition-colors">
+                  Privacy Policy
+                </Link>
+                <span className="text-primary-600">•</span>
+                <Link href="/terms" className="text-primary-300 hover:text-accent-400 transition-colors">
+                  Terms of Service
+                </Link>
+              </div>
+            </div>
             <div className="flex flex-wrap justify-center gap-4 text-sm">
               <span className="text-primary-300">
                 {SITE_CONFIG.certifications.join(' • ')}
