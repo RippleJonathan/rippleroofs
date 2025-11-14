@@ -105,13 +105,27 @@ const PrivacyPolicy: FC = () => {
               We use cookies and similar tracking technologies to improve your experience:
             </p>
             <ul className="list-disc pl-6 text-primary-700 space-y-2 mb-4">
-              <li><strong>Essential Cookies:</strong> Required for website functionality</li>
-              <li><strong>Analytics Cookies:</strong> Help us understand how visitors use our website (Google Analytics)</li>
-              <li><strong>Marketing Cookies:</strong> Used to deliver relevant ads and track campaign effectiveness</li>
+              <li><strong>Essential Cookies:</strong> Required for website functionality (form submissions, session management)</li>
+              <li><strong>Analytics Cookies:</strong> Help us understand how visitors use our website (Google Analytics, page views, time on site)</li>
+              <li><strong>Marketing Cookies:</strong> Used to deliver relevant ads and track campaign effectiveness (Facebook Pixel, Google Ads)</li>
+              <li><strong>Preference Cookies:</strong> Remember your settings and preferences for future visits</li>
+            </ul>
+            <p className="text-primary-700 mb-4">
+              You can control cookies through your browser settings. However, disabling cookies may affect 
+              website functionality. Most browsers allow you to:
+            </p>
+            <ul className="list-disc pl-6 text-primary-700 space-y-2 mb-4">
+              <li>View and delete cookies stored on your device</li>
+              <li>Block third-party cookies</li>
+              <li>Block cookies from specific sites</li>
+              <li>Block all cookies (may affect site functionality)</li>
+              <li>Delete all cookies when you close your browser</li>
             </ul>
             <p className="text-primary-700">
-              You can control cookies through your browser settings. However, disabling cookies may affect 
-              website functionality.
+              For more information about cookies and how to manage them, visit{' '}
+              <a href="https://www.allaboutcookies.org" target="_blank" rel="noopener noreferrer" className="text-accent-600 hover:text-accent-700 font-semibold">
+                www.allaboutcookies.org
+              </a>.
             </p>
           </section>
 
@@ -122,6 +136,75 @@ const PrivacyPolicy: FC = () => {
               information from unauthorized access, disclosure, alteration, or destruction. However, no internet 
               transmission or electronic storage is 100% secure. While we strive to protect your information, 
               we cannot guarantee absolute security.
+            </p>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-primary-900 mb-4">Data Retention</h2>
+            <p className="text-primary-700 mb-4">
+              We retain your personal information only as long as necessary to fulfill the purposes outlined 
+              in this Privacy Policy, unless a longer retention period is required or permitted by law.
+            </p>
+            <ul className="list-disc pl-6 text-primary-700 space-y-2">
+              <li><strong>Customer Project Records:</strong> Retained for 7-10 years for warranty, legal, and tax purposes</li>
+              <li><strong>Quote/Estimate Requests:</strong> Retained for 3 years or until you request deletion</li>
+              <li><strong>Marketing Communications:</strong> Retained until you unsubscribe</li>
+              <li><strong>Website Analytics:</strong> Aggregated data retained indefinitely (not personally identifiable)</li>
+              <li><strong>Payment Information:</strong> Processed securely by third parties; we do not store credit card numbers</li>
+            </ul>
+            <p className="text-primary-700 mt-4">
+              After the retention period expires, we securely delete or anonymize your personal information.
+            </p>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-primary-900 mb-4">California Privacy Rights (CCPA)</h2>
+            <p className="text-primary-700 mb-4">
+              If you are a California resident, you have specific rights under the California Consumer Privacy Act (CCPA):
+            </p>
+            <ul className="list-disc pl-6 text-primary-700 space-y-2 mb-4">
+              <li><strong>Right to Know:</strong> Request disclosure of personal information we collect, use, disclose, or sell</li>
+              <li><strong>Right to Delete:</strong> Request deletion of your personal information (subject to legal exceptions)</li>
+              <li><strong>Right to Opt-Out:</strong> Opt-out of the sale of personal information (we do NOT sell personal information)</li>
+              <li><strong>Right to Non-Discrimination:</strong> We will not discriminate against you for exercising your privacy rights</li>
+            </ul>
+            <p className="text-primary-700">
+              To exercise these rights, contact us at <a href={`mailto:${SITE_CONFIG.email}`} className="text-accent-600 hover:text-accent-700 font-semibold">{SITE_CONFIG.email}</a> or call <a href={`tel:${SITE_CONFIG.phoneRaw}`} className="text-accent-600 hover:text-accent-700 font-semibold">{SITE_CONFIG.phone}</a>. 
+              We will verify your identity and respond within 45 days.
+            </p>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-primary-900 mb-4">Texas-Specific Privacy Information</h2>
+            <p className="text-primary-700 mb-4">
+              As a Texas-based business, we comply with all applicable Texas privacy laws and regulations:
+            </p>
+            <ul className="list-disc pl-6 text-primary-700 space-y-2">
+              <li><strong>Texas Business and Commerce Code:</strong> We protect consumer information per Chapter 521</li>
+              <li><strong>Data Breach Notification:</strong> We will notify you promptly of any data breach affecting your information</li>
+              <li><strong>Biometric Information:</strong> We do not collect or use biometric information</li>
+              <li><strong>Local Business:</strong> Your data is managed by our Texas-based team in Round Rock, TX</li>
+            </ul>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-primary-900 mb-4">Do Not Track Signals</h2>
+            <p className="text-primary-700">
+              Some web browsers have "Do Not Track" features that send a signal to websites you visit, 
+              requesting that your browsing not be tracked. Our website does not currently respond to 
+              Do Not Track signals, as there is no industry standard for how to respond to such signals. 
+              However, you can control cookies and tracking through your browser settings as described above.
+            </p>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-primary-900 mb-4">International Users</h2>
+            <p className="text-primary-700">
+              Our services are directed to users in the United States, specifically Central Texas. If you 
+              access our website from outside the United States, please be aware that your information may 
+              be transferred to, stored, and processed in the United States where our servers are located 
+              and our central database is operated. By using our website, you consent to the transfer of 
+              your information to the United States.
             </p>
           </section>
 

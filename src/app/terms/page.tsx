@@ -105,34 +105,45 @@ const TermsOfService: FC = () => {
             
             <h3 className="text-2xl font-bold text-primary-800 mb-3">Workmanship Warranty</h3>
             <p className="text-primary-700 mb-4">
-              We provide a 10-year workmanship warranty on all roof installations, covering defects in our 
-              labor and installation. This warranty covers:
+              We provide a <strong>10-year workmanship warranty</strong> on all roof installations, covering 
+              defects in our labor and installation. This warranty covers:
             </p>
             <ul className="list-disc pl-6 text-primary-700 space-y-2 mb-6">
               <li>Installation defects and workmanship errors</li>
               <li>Leaks resulting from improper installation</li>
-              <li>Flashing and penetration failures</li>
+              <li>Flashing and penetration failures due to installation</li>
+              <li>Improper fastening or attachment issues</li>
             </ul>
 
             <h3 className="text-2xl font-bold text-primary-800 mb-3">Manufacturer Warranties</h3>
             <p className="text-primary-700 mb-4">
               Roofing materials are covered by manufacturer warranties (typically 25-50 years for shingles, 
               longer for metal and tile). Manufacturer warranties cover material defects but not improper 
-              installation (covered by our workmanship warranty).
+              installation (covered by our workmanship warranty). We register all manufacturer warranties 
+              on your behalf and provide you with documentation.
             </p>
 
             <h3 className="text-2xl font-bold text-primary-800 mb-3">Warranty Exclusions</h3>
             <p className="text-primary-700 mb-4">
               Warranties do not cover:
             </p>
-            <ul className="list-disc pl-6 text-primary-700 space-y-2">
-              <li>Normal wear and tear</li>
-              <li>Damage from severe weather events (hurricanes, tornadoes, hail beyond material ratings)</li>
-              <li>Damage from lack of maintenance</li>
-              <li>Modifications or repairs by other contractors</li>
+            <ul className="list-disc pl-6 text-primary-700 space-y-2 mb-4">
+              <li>Normal wear and tear over time</li>
+              <li>Damage from severe weather events exceeding material ratings (tornadoes, hurricanes, extreme hail)</li>
+              <li>Damage from lack of maintenance or failure to perform recommended inspections</li>
+              <li>Modifications or repairs by other contractors without our approval</li>
               <li>Structural failures not caused by our work</li>
-              <li>Consequential damages (interior damage, mold, etc.)</li>
+              <li>Consequential damages (interior damage, mold, personal property)</li>
+              <li>Damage from acts of God, fire, vandalism, or accidents</li>
+              <li>Algae, moss, or fungal growth (aesthetic only—does not affect performance)</li>
             </ul>
+
+            <h3 className="text-2xl font-bold text-primary-800 mb-3">Warranty Transfer</h3>
+            <p className="text-primary-700">
+              Our workmanship warranty may be transferred to a new homeowner if you sell your property. 
+              Transfer must be requested in writing within 30 days of sale. Some manufacturer warranties 
+              are also transferable—we provide documentation for warranty transfers.
+            </p>
           </section>
 
           <section className="mb-12">
@@ -170,28 +181,137 @@ const TermsOfService: FC = () => {
 
           <section className="mb-12">
             <h2 className="text-3xl font-bold text-primary-900 mb-4">Limitation of Liability</h2>
-            <p className="text-primary-700">
-              To the maximum extent permitted by law, our liability is limited to the amount you paid for 
-              our services. We are not liable for indirect, incidental, consequential, or punitive damages, 
-              including lost profits, business interruption, or property damage not caused by our negligence.
+            <p className="text-primary-700 mb-4">
+              To the maximum extent permitted by Texas law, our total liability for any claims arising from 
+              our services is limited to the amount you paid for those services. We are not liable for:
             </p>
+            <ul className="list-disc pl-6 text-primary-700 space-y-2 mb-4">
+              <li><strong>Indirect Damages:</strong> Lost profits, business interruption, loss of data, or opportunity costs</li>
+              <li><strong>Consequential Damages:</strong> Interior water damage, mold remediation, temporary housing, or personal property damage not directly caused by our negligence</li>
+              <li><strong>Punitive Damages:</strong> Except where prohibited by law</li>
+              <li><strong>Acts of God:</strong> Tornadoes, hurricanes, floods, earthquakes, or other natural disasters beyond our control</li>
+              <li><strong>Third-Party Actions:</strong> Damage caused by other contractors, utility companies, or unauthorized persons</li>
+            </ul>
+            <p className="text-primary-700 mb-4">
+              We maintain comprehensive general liability insurance and workers' compensation coverage as 
+              required by Texas law. You may request certificates of insurance at any time.
+            </p>
+            <p className="text-primary-700">
+              <strong>Insurance Coverage:</strong> General Liability ($1,000,000 per occurrence / $2,000,000 aggregate), 
+              Workers' Compensation (Texas statutory limits), and Commercial Auto Liability. All policies 
+              are current and verified.
+            </p>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-primary-900 mb-4">Force Majeure</h2>
+            <p className="text-primary-700">
+              We are not liable for delays or failure to perform our obligations due to circumstances beyond 
+              our reasonable control, including but not limited to: severe weather conditions, natural disasters, 
+              acts of God, government restrictions, material shortages, labor disputes, pandemics, or other 
+              emergencies. In such cases, we will notify you promptly and reschedule work as soon as reasonably 
+              possible. You will not be charged for delays caused by force majeure events.
+            </p>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-primary-900 mb-4">Permits and Code Compliance</h2>
+            <p className="text-primary-700 mb-4">
+              We obtain all necessary permits for work we perform and ensure compliance with applicable 
+              building codes in your jurisdiction. Permit costs are included in your project estimate unless 
+              otherwise specified. We coordinate all required inspections and provide you with copies of:
+            </p>
+            <ul className="list-disc pl-6 text-primary-700 space-y-2">
+              <li>Building permits</li>
+              <li>Inspection certificates</li>
+              <li>Certificate of completion (if required)</li>
+              <li>Warranty registration documentation</li>
+            </ul>
             <p className="text-primary-700 mt-4">
-              We maintain comprehensive general liability insurance and workers' compensation coverage. You 
-              may request proof of insurance at any time.
+              You are responsible for obtaining HOA approvals if applicable. We can assist with HOA 
+              documentation and provide specifications for your submission.
+            </p>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-primary-900 mb-4">Subcontractors and Third Parties</h2>
+            <p className="text-primary-700">
+              We may use qualified subcontractors for specialized portions of your project (e.g., HVAC work, 
+              electrical, structural engineering). All subcontractors are licensed, insured, and supervised 
+              by our project managers. We remain fully responsible for the quality of all work performed, 
+              whether by our employees or subcontractors. You will be notified if subcontractors will be 
+              working on your property.
             </p>
           </section>
 
           <section className="mb-12">
             <h2 className="text-3xl font-bold text-primary-900 mb-4">Dispute Resolution</h2>
             <p className="text-primary-700 mb-4">
-              We are committed to resolving any disputes amicably. If a dispute arises:
+              We are committed to resolving any disputes amicably and professionally. If a dispute arises:
             </p>
-            <ol className="list-decimal pl-6 text-primary-700 space-y-2">
-              <li>Contact us immediately to discuss the issue</li>
-              <li>We will investigate and respond within 3 business days</li>
-              <li>If unresolved, we agree to mediation before pursuing litigation</li>
-              <li>Any legal proceedings will be governed by Texas law and held in Williamson County, Texas</li>
+            <ol className="list-decimal pl-6 text-primary-700 space-y-3 mb-4">
+              <li>
+                <strong>Direct Communication:</strong> Contact us immediately at <a href={`tel:${SITE_CONFIG.phoneRaw}`} className="text-accent-600 hover:text-accent-700 font-semibold">{SITE_CONFIG.phone}</a> or <a href={`mailto:${SITE_CONFIG.email}`} className="text-accent-600 hover:text-accent-700 font-semibold">{SITE_CONFIG.email}</a> to discuss the issue. 
+                Most disputes are resolved through open communication.
+              </li>
+              <li>
+                <strong>Investigation:</strong> We will investigate your concern thoroughly and respond 
+                within 3 business days with our findings and proposed resolution.
+              </li>
+              <li>
+                <strong>Mediation:</strong> If direct communication does not resolve the dispute, both 
+                parties agree to participate in good-faith mediation before pursuing litigation. We will 
+                share the cost of mediation equally.
+              </li>
+              <li>
+                <strong>Arbitration Option:</strong> Either party may request binding arbitration through 
+                the American Arbitration Association (AAA) under its Construction Industry Arbitration Rules. 
+                Arbitration will be conducted in Williamson County, Texas.
+              </li>
+              <li>
+                <strong>Litigation:</strong> If mediation and arbitration are unsuccessful or declined, any 
+                legal proceedings will be governed by Texas law and held in Williamson County, Texas. You 
+                agree to the exclusive jurisdiction of the courts in Williamson County.
+              </li>
             </ol>
+            <p className="text-primary-700">
+              <strong>Attorney's Fees:</strong> In any legal proceeding, the prevailing party shall be 
+              entitled to reasonable attorney's fees and costs as permitted by Texas law.
+            </p>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-primary-900 mb-4">Indemnification</h2>
+            <p className="text-primary-700">
+              You agree to indemnify and hold harmless Ripple Roofing & Construction, its owners, employees, 
+              and agents from any claims, damages, losses, or expenses (including attorney's fees) arising from:
+            </p>
+            <ul className="list-disc pl-6 text-primary-700 space-y-2 mt-4">
+              <li>Your breach of these Terms</li>
+              <li>Your violation of any law or regulation</li>
+              <li>Your violation of third-party rights</li>
+              <li>Inaccurate information you provide about your property</li>
+              <li>Your failure to obtain required HOA or other approvals</li>
+              <li>Accidents or injuries caused by your failure to secure pets or provide safe access</li>
+            </ul>
+            <p className="text-primary-700 mt-4">
+              This indemnification does not apply to claims arising from our negligence or willful misconduct.
+            </p>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-primary-900 mb-4">Texas Construction Law Compliance</h2>
+            <p className="text-primary-700 mb-4">
+              We comply with all Texas construction laws and regulations, including:
+            </p>
+            <ul className="list-disc pl-6 text-primary-700 space-y-2">
+              <li><strong>Mechanic's Lien Rights:</strong> We reserve our rights under Texas Property Code Chapter 53 for unpaid work</li>
+              <li><strong>Retainage:</strong> Retainage requirements comply with Texas Property Code §28.001</li>
+              <li><strong>Payment Terms:</strong> All payment terms comply with Texas prompt payment statutes</li>
+              <li><strong>Licensing:</strong> We maintain all required state and local licenses</li>
+              <li><strong>Insurance:</strong> We carry insurance as required by Texas law</li>
+              <li><strong>Notices:</strong> We provide all notices required by Texas law (mechanic's lien notices, substantial completion, etc.)</li>
+            </ul>
           </section>
 
           <section className="mb-12">
