@@ -422,4 +422,202 @@ export const LOCATIONS: LocationData[] = [
     population: '35,000+',
     weatherNote: 'Copperas Cove experiences severe Central Texas weather including large hail, strong winds, extreme summer heat, occasional tornadoes, and intense thunderstorms typical of the region.'
   },
+  {
+    slug: 'hutto',
+    city: 'Hutto',
+    state: 'TX',
+    zip: '78634',
+    county: 'Williamson County',
+    metroArea: 'Austin-Round Rock Metro',
+    heroImage: '/images/locations/hutto-hero.jpg',
+    neighborhoods: [
+      'Star Ranch',
+      'Riverwalk',
+      'The Enclave',
+      'McCoy Creek',
+      'Brushy Creek',
+      'Landmark',
+      'Vista Ridge',
+      'Country Estates'
+    ],
+    landmarks: [
+      'Hutto Co-Op',
+      'Hutto High School Hippo Stadium',
+      'Fritz Park',
+      'Veteran\'s Park',
+      'Hutto Lake Park',
+      'Historic Downtown Hutto'
+    ],
+    description: 'Hutto is one of the fastest-growing cities in Texas, transforming from a small railroad town into a thriving suburban community. Known for its unique Hippo mascot and family-friendly atmosphere, Hutto offers new developments, excellent schools, and easy access to Austin. We serve Hutto\'s growing community with reliable roofing expertise.',
+    population: '35,000+',
+    weatherNote: 'Hutto experiences typical Central Texas severe weather including devastating hailstorms, intense summer heat exceeding 100°F, occasional tornadoes, flash flooding, and damaging thunderstorms with high winds.'
+  },
+  {
+    slug: 'manor',
+    city: 'Manor',
+    state: 'TX',
+    zip: '78653',
+    county: 'Travis County',
+    metroArea: 'Austin-Round Rock Metro',
+    heroImage: '/images/locations/manor-hero.jpg',
+    neighborhoods: [
+      'ShadowGlen',
+      'Presidential Meadows',
+      'Stonewater',
+      'Whispering Hollow',
+      'Greenlawn Village',
+      'Historic Downtown Manor'
+    ],
+    landmarks: [
+      'Manor Commons',
+      'ShadowGlen Golf Club',
+      'Manor Downs',
+      'Presidential Meadows Park',
+      'Manor City Park'
+    ],
+    description: 'Manor is a rapidly expanding community east of Austin, offering affordable housing and small-town charm with big-city convenience. With major developments like ShadowGlen and excellent schools, Manor attracts families and young professionals. We provide expert roofing services throughout Manor and surrounding areas.',
+    population: '20,000+',
+    weatherNote: 'Manor faces Central Texas weather challenges including severe hailstorms, extreme summer temperatures, high UV exposure, occasional tornadoes, flash flooding, and powerful thunderstorms.'
+  },
+  {
+    slug: 'jarrell',
+    city: 'Jarrell',
+    state: 'TX',
+    zip: '76537',
+    county: 'Williamson County',
+    metroArea: 'Austin-Round Rock Metro',
+    heroImage: '/images/locations/jarrell-hero.jpg',
+    neighborhoods: [
+      'Heritage Oaks',
+      'Sonterra',
+      'Oak Meadow',
+      'Country Estates',
+      'Historic Downtown Jarrell'
+    ],
+    landmarks: [
+      'Jarrell Memorial Park',
+      'Downtown Jarrell',
+      'Jarrell ISD Complex',
+      'Gateway Church Jarrell'
+    ],
+    description: 'Jarrell is a close-knit community north of Round Rock, known for its strong community spirit and resilience. With growing residential developments and excellent schools, Jarrell offers families affordable living with easy access to Austin Metro. We proudly serve Jarrell with dedicated local roofing expertise.',
+    population: '2,000+',
+    weatherNote: 'Jarrell is located in severe tornado alley and experiences some of Texas\'s most dangerous weather including devastating tornadoes, massive hailstorms, extreme heat, flash flooding, and powerful thunderstorms requiring durable roofing.'
+  },
+  {
+    slug: 'liberty-hill',
+    city: 'Liberty Hill',
+    state: 'TX',
+    zip: '78642',
+    county: 'Williamson County',
+    metroArea: 'Austin-Round Rock Metro',
+    heroImage: '/images/locations/liberty-hill-hero.jpg',
+    neighborhoods: [
+      'Goodnight Ranch',
+      'Winn Ridge',
+      'Hidden River',
+      'Crystal Knoll',
+      'Spanish Oaks',
+      'Historic Downtown'
+    ],
+    landmarks: [
+      'Liberty Hill City Park',
+      'Lake Grelle',
+      'Downtown Liberty Hill',
+      'Liberty Hill Sports Complex',
+      'Veterans Memorial'
+    ],
+    description: 'Liberty Hill is a charming Hill Country community northwest of Austin, offering rural beauty with modern amenities. Known for excellent schools, new developments like Goodnight Ranch, and small-town values, Liberty Hill attracts families seeking space and quality of life. We serve Liberty Hill with expert roofing services.',
+    population: '5,000+',
+    weatherNote: 'Liberty Hill\'s Hill Country location brings severe weather including large hail, flash flooding from heavy rainfall, extreme summer heat, damaging winds, and occasional severe thunderstorms and tornadoes.'
+  },
+  {
+    slug: 'buda',
+    city: 'Buda',
+    state: 'TX',
+    zip: '78610',
+    county: 'Hays County',
+    metroArea: 'Austin-San Marcos Corridor',
+    heroImage: '/images/locations/buda-hero.jpg',
+    neighborhoods: [
+      'Garlic Creek',
+      'Sunfield',
+      'Stonefield',
+      'Green Meadows',
+      'Tailwind',
+      'Historic Downtown Buda',
+      'Laureate Park'
+    ],
+    landmarks: [
+      'Buda Mill & Grain Co.',
+      'Historic Main Street',
+      'Buda City Park',
+      'Cabela\'s',
+      'Onion Creek Greenbelt',
+      'Stagecoach Park'
+    ],
+    description: 'Buda is a fast-growing city south of Austin, blending historic small-town character with modern suburban growth. Known as the "Outdoor Capital of Texas," Buda offers residents excellent parks, shopping at Cabela\'s, and easy I-35 access to Austin and San Antonio. We serve Buda with reliable roofing expertise.',
+    population: '20,000+',
+    weatherNote: 'Buda experiences Central Texas severe weather including damaging hailstorms, flash flooding (particularly near Onion Creek), extreme summer heat, high humidity, and powerful thunderstorms with high winds.'
+  },
+  {
+    slug: 'kyle',
+    city: 'Kyle',
+    state: 'TX',
+    zip: '78640',
+    county: 'Hays County',
+    metroArea: 'Austin-San Marcos Corridor',
+    heroImage: '/images/locations/kyle-hero.jpg',
+    neighborhoods: [
+      'Plum Creek',
+      'Kohlers Crossing',
+      'Waterleaf',
+      'Gregg Manor',
+      'Hometown Kyle',
+      'Elm Grove',
+      'Overland',
+      'Blanco Vista'
+    ],
+    landmarks: [
+      'Lake Kyle',
+      'Kyle Marketplace',
+      'Steeplechase Park',
+      'Gregg-Clarke Park',
+      'Katherine Fleischer Park',
+      'EmilyAnn Theatre'
+    ],
+    description: 'Kyle is one of the fastest-growing cities in America, strategically located between Austin and San Antonio on I-35. With major developments like Plum Creek and excellent amenities, Kyle attracts families seeking affordable new homes, top-rated schools, and convenient commutes. We provide expert roofing services throughout Kyle.',
+    population: '55,000+',
+    weatherNote: 'Kyle faces intense Central Texas weather including severe hailstorms, flash flooding risks, extreme summer temperatures often exceeding 100°F, high humidity, and dangerous thunderstorms with lightning and wind.'
+  },
+  {
+    slug: 'dripping-springs',
+    city: 'Dripping Springs',
+    state: 'TX',
+    zip: '78620',
+    county: 'Hays County',
+    metroArea: 'Austin Metro - Hill Country',
+    heroImage: '/images/locations/dripping-springs-hero.jpg',
+    neighborhoods: [
+      'Caliterra',
+      'Belterra',
+      'Headwaters',
+      'Driftwood Estates',
+      'Sawyer Ranch',
+      'Flintrock Falls',
+      'Vintage Oaks'
+    ],
+    landmarks: [
+      'Hamilton Pool Preserve',
+      'Jester King Brewery',
+      'Treaty Oak Distilling',
+      'Driftwood Estate Winery',
+      'Downtown Dripping Springs',
+      'Pedernales Falls State Park',
+      'Jacob\'s Well Natural Area'
+    ],
+    description: 'Dripping Springs is known as the "Gateway to the Hill Country," offering scenic beauty, award-winning wineries and breweries, and luxury developments. Located west of Austin, this charming community attracts professionals seeking Hill Country lifestyle with Austin access. We serve Dripping Springs with premium roofing services.',
+    population: '5,000+',
+    weatherNote: 'Dripping Springs\' Hill Country location brings unique weather challenges including flash flooding in limestone terrain, severe hailstorms, extreme heat and drought, damaging winds, and occasional ice storms in winter.'
+  },
 ]
