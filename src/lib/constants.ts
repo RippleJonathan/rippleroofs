@@ -67,8 +67,19 @@ export const NAV_LINKS: NavLink[] = [
     ]
   },
   { href: '/projects', label: 'Projects' },
+  { 
+    href: '/resources', 
+    label: 'Resources',
+    children: [
+      { href: '/resources/material-comparison-tool', label: 'Material Comparison Tool' },
+      { href: '/resources/roof-inspection-checklist', label: 'Free Roof Inspection Checklist' },
+      { href: '/resources/storm-damage-insurance-guide', label: 'Insurance Claim Guide' },
+      { href: '/resources/material-comparison-chart', label: 'Material Comparison Chart' },
+      { href: '/resources/seasonal-maintenance-calendar', label: 'Seasonal Maintenance Calendar' },
+      { href: '/blog', label: 'Roofing Blog' },
+    ]
+  },
   { href: '/about', label: 'About' },
-  { href: '/blog', label: 'Blog' },
   { href: '/financing', label: 'Financing' },
   { href: '/faq', label: 'FAQ' },
   { href: '/contact', label: 'Contact' },

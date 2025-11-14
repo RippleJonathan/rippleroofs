@@ -430,11 +430,11 @@ export function EstimateSummary({
                   </a>
                 </li>
                 <li>
-                  <a href="/portfolio" className="text-primary-200 hover:text-white transition-colors text-sm flex items-center gap-2">
+                  <a href="/projects" className="text-primary-200 hover:text-white transition-colors text-sm flex items-center gap-2">
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
-                    Portfolio
+                    Projects
                   </a>
                 </li>
                 <li>
@@ -492,8 +492,8 @@ export function EstimateSummary({
             <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-300">
               <p>&copy; {new Date().getFullYear()} Ripple Roofing & Construction. All rights reserved.</p>
               <div className="flex gap-6">
-                <a href="/privacy" className="hover:text-white transition-colors">Privacy Policy</a>
-                <a href="/terms" className="hover:text-white transition-colors">Terms of Service</a>
+                <a href="/contact" className="hover:text-white transition-colors">Contact Us</a>
+                <a href="/faq" className="hover:text-white transition-colors">FAQ</a>
               </div>
             </div>
           </div>
