@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/Button'
 import { ServiceLeadMagnetCTA } from '@/components/services/ServiceLeadMagnetCTA'
 import { SERVICES } from '@/lib/constants'
 import ServiceSchema from '@/components/seo/ServiceSchema'
+import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
 
 interface ServicePageProps {
   params: {
@@ -72,6 +73,13 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
         serviceName={service.title}
         description={service.shortDescription}
         slug={params.slug}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: '/' },
+          { name: 'Services', url: '/services' },
+          { name: service.title, url: `/services/${params.slug}` },
+        ]}
       />
 
       {/* Hero Section */}

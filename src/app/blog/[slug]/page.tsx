@@ -10,6 +10,7 @@ import { SocialShare } from '@/components/blog/SocialShare'
 import { getBlurDataURL } from '@/lib/image-blur'
 import { BlogSidebar } from '@/components/blog/BlogSidebar'
 import ArticleSchema from '@/components/seo/ArticleSchema'
+import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
 
 interface BlogPostPageProps {
   params: {
@@ -79,6 +80,13 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
         category={post.category}
         tags={post.tags}
         slug={params.slug}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: '/' },
+          { name: 'Blog', url: '/blog' },
+          { name: post.title, url: `/blog/${params.slug}` },
+        ]}
       />
 
       {/* Hero Section */}
