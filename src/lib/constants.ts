@@ -17,12 +17,13 @@ export const SITE_CONFIG = {
   certifications: ['CertainTeed Shingle Master', 'Fully Insured'],
   social: {
     facebook: 'https://facebook.com/rippleroofs',
-    instagram: '', // Coming soon
+    instagram: 'https://www.instagram.com/ripple_roofing/',
     linkedin: 'https://www.linkedin.com/company/ripple-roofing',
     twitter: '',
     youtube: '', // Coming soon
     tiktok: '', // Coming soon
     googleBusiness: 'https://share.google/SsBLQ1RNm8ZQ7rFrk',
+    nextdoor: 'https://nextdoor.com/pages/ripple-roofing-construction?utm_campaign=1763133725160&share_action_id=e429fede-3025-4ae2-aff7-761adab1bbc7',
   },
 }
 
