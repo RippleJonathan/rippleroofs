@@ -107,7 +107,7 @@ export default function Home() {
     priceRange: '$$-$$$',
     aggregateRating: {
       '@type': 'AggregateRating',
-      ratingValue: '4.9',
+      ratingValue: '5.0',
       reviewCount: '267',
       bestRating: '5',
       worstRating: '1',
