@@ -5010,6 +5010,1422 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
             </div>
           )}
 
+          {/* Location-Specific Deep Content - Waco */}
+          {location.slug === 'waco' && (
+            <div className="mt-16 space-y-12">
+              {/* Waco Neighborhoods Deep Dive */}
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Waco Neighborhoods: Roofing Considerations & Costs
+                </h2>
+                <p className="text-primary-700 mb-8 leading-relaxed">
+                  Waco has experienced tremendous growth and revitalization, from Magnolia Market to Baylor University. Each neighborhood has unique roofing needs:
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏘️ Woodway & Hewitt</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1970s-2010s • <strong>Style:</strong> Upscale Waco suburbs<br />
+                      <strong>Common Roof Type:</strong> Premium architectural shingles, some tile
+                    </p>
+                    <div className="bg-blue-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Premium Communities:</strong> Woodway and Hewitt represent Waco's most affluent neighborhoods. Strict HOA requirements in many areas. Quality expectations high.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Hail damage from frequent McLennan County storms, wind damage on exposed hilltop properties, UV deterioration from Texas sun</p>
+                      <p><strong>Best Materials:</strong> Premium impact-resistant shingles (CertainTeed Grand Manor, GAF Timberline HDZ), designer colors, enhanced warranties</p>
+                      <p><strong>Typical Cost:</strong> $17,000-$32,000 for 2,400-4,000 sq ft homes</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🎓 Baylor University Area</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1920s-1960s (many) • <strong>Style:</strong> Historic homes, student rentals<br />
+                      <strong>Common Roof Type:</strong> Composition shingles, some older structures
+                    </p>
+                    <div className="bg-green-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>University Community:</strong> Mix of owner-occupied homes, student rentals, and investment properties. High turnover requires durable solutions. Rental property owners: We offer volume pricing!</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Aging roofs on historic homes, deferred maintenance on rentals, tree damage from mature landscaping, accessibility challenges</p>
+                      <p><strong>Best Materials:</strong> Balance cost and durability—quality architectural shingles, proper installation, extended warranties for investment properties</p>
+                      <p><strong>Typical Cost:</strong> $11,000-$19,000 for 1,500-2,400 sq ft homes</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🌳 West Waco & Sanger Heights</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1950s-1980s • <strong>Style:</strong> Established Waco neighborhoods<br />
+                      <strong>Common Roof Type:</strong> Mix of 3-tab and architectural shingles
+                    </p>
+                    <div className="bg-amber-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Aging Homes Alert:</strong> Many homes approaching or past roof replacement age. Look for curling shingles, granule loss, water stains in attic. Regular inspections critical.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Original roofs nearing end of life, outdated ventilation, decking deterioration, storm damage accumulation</p>
+                      <p><strong>Best Materials:</strong> Upgrade to modern impact-resistant architectural shingles, synthetic underlayment, proper ventilation systems</p>
+                      <p><strong>Typical Cost:</strong> $12,000-$19,000 for 1,600-2,400 sq ft homes (budget $2k-$5k for decking repairs)</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏡 Mountainview & Castle Heights</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1960s-1990s • <strong>Style:</strong> Mid-century Waco residential<br />
+                      <strong>Common Roof Type:</strong> Architectural shingles
+                    </p>
+                    <div className="bg-purple-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Family Neighborhoods:</strong> Established communities with mature trees, good schools, strong neighborhood associations. Pride of ownership shows.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Hail damage from Waco's frequent storms, tree debris and damage, wind uplift, aging materials</p>
+                      <p><strong>Best Materials:</strong> Impact-resistant shingles essential for Waco's hail frequency, algae-resistant formulas for tree-covered areas</p>
+                      <p><strong>Typical Cost:</strong> $13,000-$21,000 for 1,800-2,600 sq ft homes</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏘️ Cameron Park</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1910s-1940s • <strong>Style:</strong> Historic Waco neighborhood<br />
+                      <strong>Common Roof Type:</strong> Composition shingles, some historic materials
+                    </p>
+                    <div className="bg-blue-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Historic Character:</strong> Cameron Park features beautiful historic homes with unique architecture. Steep streets, river proximity, mature landscaping create special considerations.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Wood decking deterioration, steep roof pitches, access challenges on hillside streets, tree damage, humidity from Brazos River</p>
+                      <p><strong>Best Materials:</strong> Quality architectural shingles respecting historic character, proper decking repairs, enhanced underlayment, algae resistance</p>
+                      <p><strong>Typical Cost:</strong> $14,000-$24,000 for 1,800-3,000 sq ft homes (steep pitch adds 15-20%)</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🆕 North Waco Development</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 2000s-2020s • <strong>Style:</strong> Modern Waco growth<br />
+                      <strong>Common Roof Type:</strong> Architectural shingles, contemporary designs
+                    </p>
+                    <div className="bg-green-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Growth Area:</strong> Waco's northern expansion brings new construction. Many homes 10-20 years old—prime for storm damage assessment. Builder warranties may still apply.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Hail damage on mid-life roofs, builder-grade materials showing age, wind damage, ventilation concerns</p>
+                      <p><strong>Best Materials:</strong> Impact-resistant upgrades for insurance savings, proper ventilation critical for Waco heat</p>
+                      <p><strong>Typical Cost:</strong> $14,000-$24,000 for 2,000-3,200 sq ft homes</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Waco Weather & Storm History */}
+              <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Waco Weather & Roofing: Severe Storm Capital
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  Waco sits at the intersection of "Tornado Alley" and "Hail Alley," making it one of Texas's most challenging climates for roofing:
+                </p>
+
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div>
+                    <h3 className="text-xl font-bold text-primary-900 mb-4">⚡ Extreme Hail & Tornado Activity</h3>
+                    <div className="bg-white rounded-lg p-6 shadow-md mb-4">
+                      <p className="text-sm text-primary-700 mb-3">
+                        McLennan County experiences some of <strong>Texas's most frequent and severe hailstorms</strong>. Waco averages multiple significant hail events annually, with baseball-sized hail every 2-4 years.
+                      </p>
+                      <div className="bg-amber-50 p-4 rounded mb-3">
+                        <p className="font-bold text-primary-900 text-sm mb-2">Waco Hail Statistics:</p>
+                        <div className="text-xs text-primary-700 space-y-1">
+                          <div className="flex justify-between items-center border-b border-primary-200 pb-1">
+                            <span>Quarter-sized (1") - Damage likely</span>
+                            <span className="font-bold text-orange-600">3-4x per year</span>
+                          </div>
+                          <div className="flex justify-between items-center border-b border-primary-200 pb-1">
+                            <span>Golf ball (1.75") - Severe damage</span>
+                            <span className="font-bold text-red-600">2-3x per year</span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span>Baseball+ (2.75"+) - Roof totaled</span>
+                            <span className="font-bold text-red-600">Every 2-4 years</span>
+                          </div>
+                        </div>
+                      </div>
+                      <p className="text-sm font-semibold text-primary-900">What This Means For You:</p>
+                      <p className="text-sm text-primary-700">Impact-resistant (Class 4) shingles are ABSOLUTELY ESSENTIAL in Waco. Insurance companies give 25-40% discounts because they know Waco's hail frequency. Standard shingles won't survive—plan on replacement every 10-15 years. IR shingles last 20-25 years and save thousands on insurance.</p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-bold text-primary-900 mb-4">🌪️ Tornado & Wind Damage</h3>
+                    <div className="bg-white rounded-lg p-6 shadow-md mb-4">
+                      <p className="text-sm text-primary-700 mb-3">
+                        Waco averages <strong>1-2 tornadoes per year in McLennan County</strong>, with numerous near-misses. The devastating 1953 F5 tornado remains one of Texas's deadliest. Wind damage occurs frequently.
+                      </p>
+                      <div className="bg-red-50 p-4 rounded mb-3">
+                        <p className="font-bold text-red-900 text-sm mb-2">Waco Tornado/Wind Risk:</p>
+                        <ul className="text-xs text-primary-700 space-y-1">
+                          <li>• Located in highest-risk tornado zone in Texas</li>
+                          <li>• Wind gusts regularly exceed 70 mph during storms</li>
+                          <li>• Straight-line winds cause blow-off damage annually</li>
+                          <li>• Proper installation and high wind-rated shingles critical</li>
+                        </ul>
+                      </div>
+                      <p className="text-sm font-semibold text-primary-900">What This Means For You:</p>
+                      <p className="text-sm text-primary-700">Shingles must be rated for 130+ mph winds. Proper nailing patterns, starter strips, and underlayment essential. After wind events, inspect for lifted/missing shingles immediately. Small wind damage becomes big leaks during next rain.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-white rounded-lg p-6 shadow-lg mt-6">
+                  <h3 className="text-xl font-bold text-primary-900 mb-4">🌪️ Recent Major Storm Events in Waco</h3>
+                  <div className="space-y-3 text-sm text-primary-700">
+                    <div className="border-l-4 border-red-500 pl-4">
+                      <p className="font-bold text-primary-900">May 2024 – McLennan County Supercell</p>
+                      <p>Baseball to softball-sized hail devastated Waco metro. One of worst storms in decades. Estimated 40-50% of Waco roofs damaged. Thousands of insurance claims. If you haven't inspected since, you likely have covered damage.</p>
+                    </div>
+                    <div className="border-l-4 border-orange-500 pl-4">
+                      <p className="font-bold text-primary-900">April 2022 – Waco Hailstorm</p>
+                      <p>Golf ball to baseball-sized hail across Waco. Woodway and north Waco hit especially hard. Widespread roof, vehicle, and property damage.</p>
+                    </div>
+                    <div className="border-l-4 border-amber-500 pl-4">
+                      <p className="font-bold text-primary-900">March 2021 – McLennan County Tornado</p>
+                      <p>EF2 tornado touched down south of Waco. Multiple homes damaged or destroyed. Hail and wind damage widespread across county.</p>
+                    </div>
+                    <div className="border-l-4 border-yellow-500 pl-4">
+                      <p className="font-bold text-primary-900">May 2015 – Waco Floods & Storms</p>
+                      <p>Historic flooding combined with severe storms. Significant roof damage from hail and wind. Insurance claims in thousands.</p>
+                    </div>
+                  </div>
+                  <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded mt-4">
+                    <p className="text-xs font-bold text-red-900 mb-1">⚠️ Waco Homeowners: After ANY storm with hail or high winds...</p>
+                    <p className="text-xs text-primary-700">Get FREE professional inspection immediately. Waco's severe weather means damage is likely even if not visible from ground. Insurance claims must be filed within deadlines (typically 1 year). We provide free storm inspections with documentation—no obligation. Magnolia Market area, Woodway, Hewitt, and all Waco neighborhoods should inspect after major events.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Waco Roof Replacement Cost Guide */}
+              <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Waco Roof Replacement Costs: Complete Pricing Guide
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  Waco roof replacement costs reflect local market rates, home sizes, and McLennan County's unique severe weather considerations:
+                </p>
+
+                <div className="space-y-4 mb-8">
+                  <div className="border-l-4 border-blue-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">1,400-1,800 sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: Smaller Waco ranch, 2-3 bed/1-2 bath, simple roof, 16-20 squares - Baylor area, older neighborhoods</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$10,000-$16,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-green-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">1,800-2,400 sq ft Home (Most Common)</p>
+                        <p className="text-sm text-primary-700">Typical: Standard Waco family home, 3-4 bed/2 bath, moderate complexity, 20-28 squares - Sanger Heights, West Waco</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$13,000-$20,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-purple-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">2,400-3,000 sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: Larger Waco two-story, 4 bed/2-3 bath, increased complexity, 28-36 squares - Mountainview, North Waco</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$16,000-$26,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-red-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">3,000-4,000 sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: Large Waco estate, 4-5 bed/3-4 bath, complex roof, 36-48 squares - Woodway, Hewitt, Cameron Park estates</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$20,000-$35,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-amber-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">4,000+ sq ft Luxury Home</p>
+                        <p className="text-sm text-primary-700">Typical: Woodway/Hewitt estates, custom builds, highly complex, 48+ squares, premium materials</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$28,000-$60,000+</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-purple-50 border-l-4 border-purple-500 p-6 rounded mb-8">
+                  <p className="font-bold text-primary-900 mb-2">🏘️ Magnolia Market Impact on Waco Roofing Market</p>
+                  <p className="text-sm text-primary-700 mb-3">Chip & Joanna Gaines' Magnolia empire transformed Waco's housing market:</p>
+                  <ul className="text-sm text-primary-700 space-y-1">
+                    <li>• <strong>Historic Home Renovations:</strong> Fixer Upper popularized older Waco homes. Many need roof upgrades/replacements as part of renovation.</li>
+                    <li>• <strong>Property Value Increases:</strong> Home values up 30-50% in popular areas. Homeowners investing in quality roofing to match property improvements.</li>
+                    <li>• <strong>Rental Property Boom:</strong> Magnolia tourism creates strong short-term rental market. Investors want durable, attractive roofing.</li>
+                    <li>• <strong>Quality Expectations:</strong> Magnolia aesthetic means attention to detail. We match that standard with every Waco installation.</li>
+                  </ul>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-6 mb-8">
+                  <div className="bg-red-50 rounded-lg p-6 border-l-4 border-red-500">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">📈 What INCREASES Cost in Waco</h3>
+                    <ul className="space-y-2 text-sm text-primary-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+20-30%</span>
+                        <span><strong>Two-story homes</strong> (safety equipment, common in Woodway/Hewitt)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+15-25%</span>
+                        <span><strong>Complex roof lines</strong> (Fixer Upper-style renovations often complex)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+15-25%</span>
+                        <span><strong>Steep pitch roofs</strong> (Cameron Park hillside homes, Victorian styles)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+$3k-7k</span>
+                        <span><strong>Decking repairs</strong> (very common in historic Waco homes)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+10-15%</span>
+                        <span><strong>Access challenges</strong> (Cameron Park steep streets, Baylor area narrow lots)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+100-150%</span>
+                        <span><strong>Metal roofing upgrade</strong> ($22k-$38k vs $14k-$21k shingles)</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-green-50 rounded-lg p-6 border-l-4 border-green-500">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">📉 What DECREASES Cost in Waco</h3>
+                    <ul className="space-y-2 text-sm text-primary-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Simple gable or hip roof</strong> (many Waco homes, faster installation)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Single-story ranch</strong> (safer, faster, common in older Waco)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Good existing decking</strong> (newer north Waco developments)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Insurance claim coverage</strong> (VERY common in Waco—pay deductible only)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Neighborhood group pricing</strong> (after hail storms—HUGE in Waco!)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Multiple properties discount</strong> (Baylor area landlords, Magnolia rental investors)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-accent-50 to-blue-50 rounded-lg p-6">
+                  <h3 className="text-xl font-bold text-primary-900 mb-4">💡 6 Ways Waco Homeowners Save on Roof Replacement</h3>
+                  <div className="grid md:grid-cols-2 gap-4 text-sm text-primary-700">
+                    <div>
+                      <p className="font-bold text-primary-900 mb-1">1. File Insurance Claims After Hail (ABSOLUTELY CRITICAL)</p>
+                      <p className="mb-3">Waco gets MAJOR hail 2-3x per year. May 2024 damaged 40-50% of Waco roofs. If neighbors filed claims, you should too. Insurance covers 100% minus deductible ($2k-$4k). We handle entire process. This is THE way most Waco homeowners afford quality roofs!</p>
+                      
+                      <p className="font-bold text-primary-900 mb-1">2. Coordinate with Neighbors (MASSIVE Waco Savings)</p>
+                      <p className="mb-3">After major hail, entire Waco neighborhoods need roofs simultaneously. When we work 10-15 homes, we offer 10-20% group discounts ($2k-$4k per home). Woodway, Hewitt, North Waco perfect for this. Organize on Nextdoor/Facebook after storms!</p>
+                      
+                      <p className="font-bold text-primary-900 mb-1">3. Impact-Resistant Shingles = ESSENTIAL Investment</p>
+                      <p className="mb-3">$3k-$5k more upfront BUT... Waco insurance gives 25-40% discounts ($700-$1,200/year savings). Pays for itself in 3-5 years. Plus survives Waco's frequent hail = fewer claims. Over 30 years: $21,000-$36,000 savings. Non-negotiable in Waco!</p>
+                    </div>
+                    <div>
+                      <p className="font-bold text-primary-900 mb-1">4. Historic Home Tax Credits</p>
+                      <p className="mb-3">Renovating historic Waco home? May qualify for tax credits on roofing improvements. Consult tax professional—can save thousands. Cameron Park, downtown Waco especially applicable.</p>
+                      
+                      <p className="font-bold text-primary-900 mb-1">5. Rental Property Volume Pricing</p>
+                      <p className="mb-3">Baylor area landlords, Magnolia rental investors: Own 3+ Waco properties? We offer 10-15% volume discounts. Schedule all properties = maximize savings. Popular with student rental owners.</p>
+                      
+                      <p className="font-bold text-primary-900 mb-1">6. 0% Financing Available</p>
+                      <p className="mb-3">Spread $14k-$26k Waco roof over 12-18 months interest-free through approved lenders. Makes quality roofing affordable. Combine with insurance claim for minimal out-of-pocket. No prepayment penalty.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-6 bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
+                  <p className="text-primary-900 font-semibold mb-2">📞 Get Your Exact Waco Roof Replacement Cost</p>
+                  <p className="text-primary-700">
+                    These are estimates. Your actual cost depends on your specific home, neighborhood (Woodway, Hewitt, Magnolia area, etc.), materials, and current conditions. We provide <strong>FREE inspections</strong> and detailed written quotes with no obligation. <strong>Fixer Upper fans & historic home renovators: We match Magnolia-quality standards!</strong> Call <strong>(512) 763-5277</strong> or schedule online for your personalized Waco roof replacement estimate.
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Location-Specific Deep Content - San Marcos */}
+          {location.slug === 'san-marcos' && (
+            <div className="mt-16 space-y-12">
+              {/* San Marcos Neighborhoods Deep Dive */}
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  San Marcos Neighborhoods: Roofing Between Austin & San Antonio
+                </h2>
+                <p className="text-primary-700 mb-8 leading-relaxed">
+                  San Marcos sits perfectly between Austin and San Antonio, offering crystal-clear springs, Texas State University, and diverse housing from student rentals to Hill Country estates:
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🎓 Texas State University Area</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1960s-2000s • <strong>Style:</strong> Student housing, older homes<br />
+                      <strong>Common Roof Type:</strong> Composition shingles, budget to mid-range
+                    </p>
+                    <div className="bg-blue-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Student Housing Market:</strong> High concentration of rental properties near campus. Landlords need cost-effective, durable solutions. We offer volume pricing for property investors with multiple San Marcos rentals.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Deferred maintenance on rentals, hail damage, aging roofs, high turnover wear-and-tear</p>
+                      <p><strong>Best Materials:</strong> Balance cost and durability—quality architectural shingles, proper installation, warranties that protect investment</p>
+                      <p><strong>Typical Cost:</strong> $10,000-$17,000 for 1,400-2,200 sq ft rental properties</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏘️ Purgatory Creek & The Heights</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1990s-2010s • <strong>Style:</strong> Modern San Marcos residential<br />
+                      <strong>Common Roof Type:</strong> Architectural shingles
+                    </p>
+                    <div className="bg-green-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Family Communities:</strong> These neighborhoods represent San Marcos's growth beyond student housing. Young families, professionals, quality schools. Pride of ownership shows.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Hail damage from Central Texas storms, flash flooding concerns (San Marcos River drainage), wind damage, UV deterioration</p>
+                      <p><strong>Best Materials:</strong> Impact-resistant architectural shingles essential, proper ventilation for Hill Country heat, algae resistance</p>
+                      <p><strong>Typical Cost:</strong> $13,000-$21,000 for 1,800-2,600 sq ft family homes</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏡 Old Town San Marcos</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1920s-1960s • <strong>Style:</strong> Historic downtown area<br />
+                      <strong>Common Roof Type:</strong> Mix of composition and older materials
+                    </p>
+                    <div className="bg-amber-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Historic Charm:</strong> Downtown San Marcos features charming older homes. Many approaching roof replacement age. Access can be tight on older streets near the square.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Aging roofs, wood decking deterioration, tree damage from mature oaks, humidity from river proximity, access challenges</p>
+                      <p><strong>Best Materials:</strong> Quality architectural shingles, proper decking repairs, synthetic underlayment, enhanced ventilation</p>
+                      <p><strong>Typical Cost:</strong> $11,000-$19,000 for 1,500-2,400 sq ft homes (access may add 5-10%)</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🌳 Blanco Gardens & Encino Park</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1970s-2000s • <strong>Style:</strong> Established San Marcos neighborhoods<br />
+                      <strong>Common Roof Type:</strong> Architectural shingles
+                    </p>
+                    <div className="bg-purple-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Established Areas:</strong> Mix of original homeowners and new families. Many homes have roofs 15-25 years old—prime for replacement consideration. Active community associations.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Hail damage accumulation, wind uplift, tree debris, aging materials, storm damage</p>
+                      <p><strong>Best Materials:</strong> Modern impact-resistant shingles for insurance savings, proper installation standards, efficient ventilation</p>
+                      <p><strong>Typical Cost:</strong> $12,000-$20,000 for 1,600-2,500 sq ft homes</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏘️ Mission Hills & Quail Creek</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1990s-2010s • <strong>Style:</strong> Upper-tier San Marcos housing<br />
+                      <strong>Common Roof Type:</strong> Premium architectural shingles
+                    </p>
+                    <div className="bg-green-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Quality Communities:</strong> San Marcos's more upscale neighborhoods. Larger homes, professional families, quality construction standards. Some HOA requirements for materials/colors.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Hail damage from severe weather, complex roof designs, wind damage, UV deterioration</p>
+                      <p><strong>Best Materials:</strong> Premium impact-resistant shingles, designer colors, enhanced warranties, proper underlayment</p>
+                      <p><strong>Typical Cost:</strong> $15,000-$26,000 for 2,000-3,200 sq ft homes</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🌊 River-Adjacent Properties</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Location:</strong> Near San Marcos River<br />
+                      <strong>Special Considerations:</strong> Humidity, flooding risk
+                    </p>
+                    <div className="bg-blue-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>River Life:</strong> Living near the famous San Marcos River is amazing but creates roofing challenges. Higher humidity, occasional flooding concerns, mature tree coverage common.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Humidity accelerates deterioration, algae/moss growth, tree debris, flooding risk for lowest areas</p>
+                      <p><strong>Best Materials:</strong> Algae-resistant shingles essential, proper ventilation to combat humidity, quality underlayment, consider metal for longevity</p>
+                      <p><strong>Typical Cost:</strong> $12,000-$22,000 for varied home sizes (access challenges near river may add cost)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* San Marcos Weather & Flash Flooding */}
+              <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  San Marcos Weather & Roofing: Hill Country Challenges
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  San Marcos sits in the Hill Country where flash flooding combines with severe storms to create unique roofing challenges:
+                </p>
+
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div>
+                    <h3 className="text-xl font-bold text-primary-900 mb-4">⚡ Hail & Severe Storms</h3>
+                    <div className="bg-white rounded-lg p-6 shadow-md mb-4">
+                      <p className="text-sm text-primary-700 mb-3">
+                        San Marcos experiences frequent severe weather between Austin and San Antonio storm tracks. <strong>March-June</strong> brings multiple hail events annually.
+                      </p>
+                      <div className="bg-amber-50 p-4 rounded mb-3">
+                        <p className="font-bold text-primary-900 text-sm mb-2">San Marcos Hail Statistics:</p>
+                        <div className="text-xs text-primary-700 space-y-1">
+                          <div className="flex justify-between items-center border-b border-primary-200 pb-1">
+                            <span>Quarter-sized (1") - Damage likely</span>
+                            <span className="font-bold text-orange-600">2-3x per year</span>
+                          </div>
+                          <div className="flex justify-between items-center border-b border-primary-200 pb-1">
+                            <span>Golf ball (1.75") - Severe damage</span>
+                            <span className="font-bold text-red-600">Every 1-2 years</span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span>Baseball+ (2.75"+) - Roof totaled</span>
+                            <span className="font-bold text-red-600">Every 3-5 years</span>
+                          </div>
+                        </div>
+                      </div>
+                      <p className="text-sm font-semibold text-primary-900">What This Means For You:</p>
+                      <p className="text-sm text-primary-700">Impact-resistant (Class 4) shingles ESSENTIAL in San Marcos. Insurance companies give 20-35% discounts. San Marcos roofs average 15-20 year lifespan. After storms, get FREE inspection—insurance claims must be filed within 1 year.</p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-bold text-primary-900 mb-4">🌊 Flash Flooding & Heavy Rains</h3>
+                    <div className="bg-white rounded-lg p-6 shadow-md mb-4">
+                      <p className="text-sm text-primary-700 mb-3">
+                        San Marcos is <strong>notorious for flash flooding</strong>. The San Marcos River, Blanco River, and numerous creeks create dangerous flood conditions during heavy rains.
+                      </p>
+                      <div className="bg-red-50 p-4 rounded mb-3">
+                        <p className="font-bold text-red-900 text-sm mb-2">Flooding Impact on Roofing:</p>
+                        <ul className="text-xs text-primary-700 space-y-1">
+                          <li>• Heavy rains test roof drainage systems severely</li>
+                          <li>• Valleys and gutters must handle massive water flow</li>
+                          <li>• Poor drainage causes water intrusion and leaks</li>
+                          <li>• High humidity after floods accelerates deterioration</li>
+                        </ul>
+                      </div>
+                      <p className="text-sm font-semibold text-primary-900">What This Means For You:</p>
+                      <p className="text-sm text-primary-700">Proper valley installation, quality underlayment, and efficient gutter systems CRITICAL in San Marcos. One heavy rain event can expose poor workmanship. We ensure your roof handles Hill Country downpours.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-white rounded-lg p-6 shadow-lg mt-6">
+                  <h3 className="text-xl font-bold text-primary-900 mb-4">🌊 Recent Major Storm/Flood Events in San Marcos</h3>
+                  <div className="space-y-3 text-sm text-primary-700">
+                    <div className="border-l-4 border-red-500 pl-4">
+                      <p className="font-bold text-primary-900">October 2015 – Halloween Floods</p>
+                      <p>Historic flooding devastated San Marcos. Blanco River at record levels. Hundreds of homes damaged or destroyed. One of worst flood events in Texas history. Demonstrated importance of proper roof drainage.</p>
+                    </div>
+                    <div className="border-l-4 border-orange-500 pl-4">
+                      <p className="font-bold text-primary-900">May 2015 – Memorial Day Floods</p>
+                      <p>Catastrophic flooding in San Marcos and Wimberley. Unprecedented rainfall. Multiple fatalities. Roofs that survived showed importance of quality installation and drainage.</p>
+                    </div>
+                    <div className="border-l-4 border-amber-500 pl-4">
+                      <p className="font-bold text-primary-900">April 2024 – Hays County Hailstorm</p>
+                      <p>Golf ball to baseball-sized hail across San Marcos. Significant roof damage throughout city. Thousands of insurance claims filed.</p>
+                    </div>
+                  </div>
+                  <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded mt-4">
+                    <p className="text-xs font-bold text-red-900 mb-1">⚠️ San Marcos Homeowners: After storms or heavy rains...</p>
+                    <p className="text-xs text-primary-700">Check for water intrusion immediately. San Marcos's flash flood risk means proper roof drainage critical. After hail, get FREE professional inspection. River-adjacent properties especially vulnerable—inspect after any major weather event. We provide free storm inspections with insurance documentation.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* San Marcos Roof Replacement Cost Guide */}
+              <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  San Marcos Roof Replacement Costs: Complete Pricing Guide
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  San Marcos roof replacement costs reflect the I-35 corridor market between Austin and San Antonio:
+                </p>
+
+                <div className="space-y-4 mb-8">
+                  <div className="border-l-4 border-blue-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">1,200-1,600 sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: Smaller San Marcos home, 2-3 bed/1-2 bath, simple roof, 14-18 squares - Texas State area, Old Town</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$9,000-$14,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-green-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">1,600-2,000 sq ft Home (Most Common)</p>
+                        <p className="text-sm text-primary-700">Typical: Standard San Marcos family home, 3-4 bed/2 bath, moderate complexity, 18-24 squares - Blanco Gardens, Encino Park</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$11,000-$17,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-purple-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">2,000-2,600 sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: Larger San Marcos two-story, 4 bed/2-3 bath, increased complexity, 24-32 squares - Purgatory Creek, The Heights</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$14,000-$22,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-red-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">2,600-3,400 sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: Large San Marcos estate, 4-5 bed/3 bath, complex roof, 32-42 squares - Mission Hills, Quail Creek</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$18,000-$30,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-amber-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">3,400+ sq ft Luxury Home</p>
+                        <p className="text-sm text-primary-700">Typical: Premium San Marcos estates, custom builds, 42+ squares, high-end materials</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$24,000-$50,000+</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded mb-8">
+                  <p className="font-bold text-primary-900 mb-2">🎓 Texas State Students & Rental Property Investors</p>
+                  <p className="text-sm text-primary-700 mb-3">San Marcos's student housing market creates unique opportunities:</p>
+                  <ul className="text-sm text-primary-700 space-y-1">
+                    <li>• <strong>Volume Pricing:</strong> Own multiple rental properties near Texas State? We offer 10-15% discounts for 3+ properties.</li>
+                    <li>• <strong>Summer Scheduling:</strong> Best time for rental maintenance is May-August between semesters. We prioritize landlord projects during these months.</li>
+                    <li>• <strong>Tenant-Friendly:</strong> Minimal disruption. Work around lease schedules. Professional communication with tenants.</li>
+                    <li>• <strong>Cost-Effective Durability:</strong> We recommend materials that balance upfront cost with longevity—best ROI for rental properties.</li>
+                  </ul>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-6 mb-8">
+                  <div className="bg-red-50 rounded-lg p-6 border-l-4 border-red-500">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">📈 What INCREASES Cost in San Marcos</h3>
+                    <ul className="space-y-2 text-sm text-primary-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+20-30%</span>
+                        <span><strong>Two-story homes</strong> (safety equipment, common in newer developments)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+15-25%</span>
+                        <span><strong>Complex roof lines</strong> (Mission Hills, Quail Creek custom homes)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+$2k-4k</span>
+                        <span><strong>Decking repairs</strong> (common in Old Town, Texas State area older homes)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+10-15%</span>
+                        <span><strong>River-adjacent access challenges</strong> (narrow streets, parking restrictions)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+100-150%</span>
+                        <span><strong>Metal roofing upgrade</strong> ($19k-$32k vs $12k-$18k shingles)</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-green-50 rounded-lg p-6 border-l-4 border-green-500">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">📉 What DECREASES Cost in San Marcos</h3>
+                    <ul className="space-y-2 text-sm text-primary-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Simple gable or hip roof</strong> (many San Marcos homes)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Single-story ranch</strong> (faster, safer, common in older areas)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Good existing decking</strong> (newer Purgatory Creek, The Heights)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Insurance claim coverage</strong> (pay deductible only—$2k-$3k typical)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Multiple properties discount</strong> (Texas State rental investors—10-15% off)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Neighborhood group pricing</strong> (coordinate after hail storms)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="mt-6 bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
+                  <p className="text-primary-900 font-semibold mb-2">📞 Get Your Exact San Marcos Roof Replacement Cost</p>
+                  <p className="text-primary-700">
+                    These are estimates. Your actual cost depends on your specific home, neighborhood, materials, and current conditions. We provide <strong>FREE inspections</strong> and detailed written quotes with no obligation. <strong>Texas State rental property investors: Ask about our volume pricing!</strong> Call <strong>(512) 763-5277</strong> or schedule online for your personalized San Marcos roof replacement estimate.
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Location-Specific Deep Content - New Braunfels */}
+          {location.slug === 'new-braunfels' && (
+            <div className="mt-16 space-y-12">
+              {/* New Braunfels Neighborhoods Deep Dive */}
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  New Braunfels Neighborhoods: Hill Country Roofing Excellence
+                </h2>
+                <p className="text-primary-700 mb-8 leading-relaxed">
+                  New Braunfels combines German heritage with modern growth, from historic Gruene to new Hill Country developments. River proximity and tourism create unique roofing considerations:
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏛️ Historic Gruene District</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1870s-1920s • <strong>Style:</strong> Historic German architecture<br />
+                      <strong>Common Roof Type:</strong> Metal, composition, some original materials
+                    </p>
+                    <div className="bg-blue-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Historic Preservation:</strong> Gruene is a designated historic district. Some properties have preservation requirements. We navigate historic guidelines while ensuring modern performance standards.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Aging wood structures, metal roof rust/deterioration, humidity from Guadalupe River, tourist traffic wear on properties, tree damage</p>
+                      <p><strong>Best Materials:</strong> Standing seam metal for historic character, quality composition shingles where appropriate, proper ventilation critical for old structures</p>
+                      <p><strong>Typical Cost:</strong> $14,000-$28,000 for varied sizes (historic requirements can add 10-20%)</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏘️ Veramendi & Vintage Oaks</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 2010s-2020s • <strong>Style:</strong> Modern master-planned communities<br />
+                      <strong>Common Roof Type:</strong> Premium architectural shingles, some metal
+                    </p>
+                    <div className="bg-green-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Luxury Communities:</strong> These represent New Braunfels's premium growth. Strict HOA requirements, quality expectations high, larger homes with complex roof lines.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Hail damage on newer roofs, HOA compliance requirements, complex architectural designs, wind exposure on hilltops</p>
+                      <p><strong>Best Materials:</strong> Premium impact-resistant shingles (CertainTeed Grand Manor, GAF Timberline HDZ), designer colors, enhanced warranties, HOA-approved materials</p>
+                      <p><strong>Typical Cost:</strong> $18,000-$38,000 for 2,400-4,500 sq ft luxury homes</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🌊 River Properties (Guadalupe/Comal)</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Location:</strong> Adjacent to rivers<br />
+                      <strong>Special Considerations:</strong> Humidity, tourism, rental properties
+                    </p>
+                    <div className="bg-amber-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Tourism Impact:</strong> Many river properties are vacation rentals for tubing season. High turnover, constant use, humidity exposure. Durability critical for investment ROI.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Humidity accelerates deterioration, algae/moss growth, tree coverage from river corridor, rental property wear, access challenges</p>
+                      <p><strong>Best Materials:</strong> Algae-resistant shingles ESSENTIAL, metal roofing for longevity, proper ventilation to combat humidity, quality underlayment</p>
+                      <p><strong>Typical Cost:</strong> $12,000-$26,000 for varied sizes (access challenges may add 10-15%)</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏡 Westpointe & Klein Road</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1990s-2010s • <strong>Style:</strong> Established New Braunfels residential<br />
+                      <strong>Common Roof Type:</strong> Architectural shingles
+                    </p>
+                    <div className="bg-purple-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Family Neighborhoods:</strong> Mix of original owners and young families. Many homes approaching roof replacement age. Good schools, strong community ties.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Hail damage from Hill Country storms, wind damage, UV deterioration, aging materials on 15-25 year old roofs</p>
+                      <p><strong>Best Materials:</strong> Impact-resistant architectural shingles, proper ventilation for Hill Country heat, algae resistance</p>
+                      <p><strong>Typical Cost:</strong> $14,000-$23,000 for 1,900-2,800 sq ft homes</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏘️ Sattler & Canyon Lake Area</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1970s-2010s • <strong>Style:</strong> Hill Country lake properties<br />
+                      <strong>Common Roof Type:</strong> Mix of metal, shingles
+                    </p>
+                    <div className="bg-blue-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Lake Living:</strong> Canyon Lake area properties range from weekend cabins to full-time residences. Wind exposure, tree coverage, seasonal use patterns affect roofing needs.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Wind damage on exposed hilltops, tree damage from heavy oak coverage, deferred maintenance on seasonal properties, humidity</p>
+                      <p><strong>Best Materials:</strong> Metal roofing popular for longevity, impact-resistant shingles, high wind ratings essential (130+ mph), algae resistance</p>
+                      <p><strong>Typical Cost:</strong> $13,000-$28,000 for varied sizes (terrain challenges may increase costs)</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏘️ Garden Ridge</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1980s-2000s • <strong>Style:</strong> Hill Country suburban<br />
+                      <strong>Common Roof Type:</strong> Architectural shingles
+                    </p>
+                    <div className="bg-green-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Established Community:</strong> Garden Ridge offers New Braunfels convenience with suburban feel. Many homes have roofs 15-25 years old approaching replacement consideration.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Hail damage accumulation, wind uplift, UV deterioration, tree debris, aging roofing materials</p>
+                      <p><strong>Best Materials:</strong> Modern impact-resistant shingles for insurance savings, proper installation standards, efficient ventilation systems</p>
+                      <p><strong>Typical Cost:</strong> $13,000-$22,000 for 1,800-2,700 sq ft homes</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* New Braunfels Weather & Hill Country Storms */}
+              <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  New Braunfels Weather & Roofing: Hill Country Storm Challenges
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  New Braunfels sits in the Texas Hill Country where flash flooding combines with severe hail to create significant roofing challenges:
+                </p>
+
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div>
+                    <h3 className="text-xl font-bold text-primary-900 mb-4">⚡ Severe Hail & Wind</h3>
+                    <div className="bg-white rounded-lg p-6 shadow-md mb-4">
+                      <p className="text-sm text-primary-700 mb-3">
+                        Comal County experiences frequent severe weather with <strong>large hail events 2-3 times per year</strong>. Hill Country topography can intensify storms.
+                      </p>
+                      <div className="bg-amber-50 p-4 rounded mb-3">
+                        <p className="font-bold text-primary-900 text-sm mb-2">New Braunfels Hail Statistics:</p>
+                        <div className="text-xs text-primary-700 space-y-1">
+                          <div className="flex justify-between items-center border-b border-primary-200 pb-1">
+                            <span>Quarter-sized (1") - Damage likely</span>
+                            <span className="font-bold text-orange-600">2-3x per year</span>
+                          </div>
+                          <div className="flex justify-between items-center border-b border-primary-200 pb-1">
+                            <span>Golf ball (1.75") - Severe damage</span>
+                            <span className="font-bold text-red-600">Every 1-2 years</span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span>Baseball+ (2.75"+) - Roof totaled</span>
+                            <span className="font-bold text-red-600">Every 3-5 years</span>
+                          </div>
+                        </div>
+                      </div>
+                      <p className="text-sm font-semibold text-primary-900">What This Means For You:</p>
+                      <p className="text-sm text-primary-700">Impact-resistant (Class 4) shingles CRITICAL in New Braunfels. Insurance companies give 20-35% discounts. Hilltop properties especially exposed to wind—proper installation with 130+ mph wind ratings essential. After storms, get FREE inspection immediately.</p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-bold text-primary-900 mb-4">🌊 Flash Flooding & Heavy Rains</h3>
+                    <div className="bg-white rounded-lg p-6 shadow-md mb-4">
+                      <p className="text-sm text-primary-700 mb-3">
+                        New Braunfels is extremely vulnerable to <strong>flash flooding</strong>. The Guadalupe and Comal Rivers can rise rapidly during heavy rains, creating dangerous conditions.
+                      </p>
+                      <div className="bg-red-50 p-4 rounded mb-3">
+                        <p className="font-bold text-red-900 text-sm mb-2">Flooding Impact on Roofing:</p>
+                        <ul className="text-xs text-primary-700 space-y-1">
+                          <li>• Hill Country downpours test roof drainage severely</li>
+                          <li>• High humidity after floods accelerates deterioration</li>
+                          <li>• River-adjacent properties face constant humidity exposure</li>
+                          <li>• Proper valley installation and gutters CRITICAL</li>
+                        </ul>
+                      </div>
+                      <p className="text-sm font-semibold text-primary-900">What This Means For You:</p>
+                      <p className="text-sm text-primary-700">Quality underlayment, proper valley flashing, efficient gutter systems essential in New Braunfels. River properties need algae-resistant materials and enhanced ventilation to combat humidity. One heavy rain exposes poor workmanship.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-white rounded-lg p-6 shadow-lg mt-6">
+                  <h3 className="text-xl font-bold text-primary-900 mb-4">🌊 Recent Major Storm/Flood Events in New Braunfels</h3>
+                  <div className="space-y-3 text-sm text-primary-700">
+                    <div className="border-l-4 border-red-500 pl-4">
+                      <p className="font-bold text-primary-900">October 2015 – Historic Flooding</p>
+                      <p>Guadalupe River at historic levels. Gruene underwater. Hundreds of properties damaged. Demonstrated importance of proper roof drainage and flood preparation in river communities.</p>
+                    </div>
+                    <div className="border-l-4 border-orange-500 pl-4">
+                      <p className="font-bold text-primary-900">May 2015 – Memorial Day Floods</p>
+                      <p>Catastrophic flooding in Hill Country. New Braunfels evacuations. Multiple fatalities downstream. Worst flooding event in modern history for area.</p>
+                    </div>
+                    <div className="border-l-4 border-amber-500 pl-4">
+                      <p className="font-bold text-primary-900">April 2024 – Comal County Hailstorm</p>
+                      <p>Golf ball to baseball-sized hail across New Braunfels. Veramendi, Vintage Oaks, and north New Braunfels hit hard. Thousands of insurance claims filed.</p>
+                    </div>
+                  </div>
+                  <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded mt-4">
+                    <p className="text-xs font-bold text-red-900 mb-1">⚠️ New Braunfels Homeowners: After heavy rains or hail...</p>
+                    <p className="text-xs text-primary-700">River properties: Check for water intrusion after every major rain. Hail damage: Get FREE professional inspection—insurance claims must be filed within deadlines. Gruene historic properties and vacation rentals especially vulnerable. We provide free storm inspections with insurance documentation.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* New Braunfels Roof Replacement Cost Guide */}
+              <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  New Braunfels Roof Replacement Costs: Complete Pricing Guide
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  New Braunfels roof replacement costs reflect the Hill Country market between Austin and San Antonio with tourism/vacation rental considerations:
+                </p>
+
+                <div className="space-y-4 mb-8">
+                  <div className="border-l-4 border-blue-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">1,400-1,800 sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: Smaller New Braunfels home, 2-3 bed/1-2 bath, simple roof, 16-20 squares - older areas, river cabins</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$10,000-$16,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-green-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">1,800-2,400 sq ft Home (Most Common)</p>
+                        <p className="text-sm text-primary-700">Typical: Standard NB family home, 3-4 bed/2 bath, moderate complexity, 20-28 squares - Westpointe, Klein Road, Garden Ridge</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$13,000-$21,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-purple-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">2,400-3,200 sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: Larger NB two-story, 4 bed/2-3 bath, increased complexity, 28-38 squares - newer developments, Sattler</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$17,000-$28,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-red-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">3,200-4,500 sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: Large NB estate, 4-5 bed/3-4 bath, complex roof, 38-55 squares - Veramendi, Vintage Oaks</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$22,000-$40,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-amber-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">4,500+ sq ft Luxury Home</p>
+                        <p className="text-sm text-primary-700">Typical: Veramendi/Vintage Oaks estates, Canyon Lake customs, 55+ squares, premium materials</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$35,000-$75,000+</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-purple-50 border-l-4 border-purple-500 p-6 rounded mb-8">
+                  <p className="font-bold text-primary-900 mb-2">🏖️ Vacation Rental & Tourism Property Considerations</p>
+                  <p className="text-sm text-primary-700 mb-3">New Braunfels's tourism economy creates unique roofing needs:</p>
+                  <ul className="text-sm text-primary-700 space-y-1">
+                    <li>• <strong>Rental ROI:</strong> Quality roof protects investment. Cheap roof = frequent repairs = lost rental income. We recommend materials balancing cost with longevity.</li>
+                    <li>• <strong>Off-Season Scheduling:</strong> Best time for vacation rental maintenance is October-March (slower tourism). We prioritize rental property projects during off-season.</li>
+                    <li>• <strong>Guest Experience:</strong> Professional appearance matters. Quality roofing enhances property photos and guest satisfaction for Airbnb/VRBO.</li>
+                    <li>• <strong>Multiple Properties:</strong> Own several Gruene/river rental properties? Volume pricing available—10-15% discount for 3+ properties.</li>
+                  </ul>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-6 mb-8">
+                  <div className="bg-red-50 rounded-lg p-6 border-l-4 border-red-500">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">📈 What INCREASES Cost in New Braunfels</h3>
+                    <ul className="space-y-2 text-sm text-primary-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+20-30%</span>
+                        <span><strong>Two-story homes</strong> (common in Veramendi, Vintage Oaks)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+15-25%</span>
+                        <span><strong>Complex roof lines</strong> (Hill Country architectural styles)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+15-25%</span>
+                        <span><strong>Steep pitch roofs</strong> (hilltop properties, custom designs)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+10-20%</span>
+                        <span><strong>Historic requirements</strong> (Gruene district preservation standards)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+10-15%</span>
+                        <span><strong>Access challenges</strong> (river properties, Canyon Lake hillsides, Gruene narrow streets)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+100-150%</span>
+                        <span><strong>Metal roofing</strong> ($22k-$40k vs $14k-$22k shingles—popular in Hill Country)</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-green-50 rounded-lg p-6 border-l-4 border-green-500">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">📉 What DECREASES Cost in New Braunfels</h3>
+                    <ul className="space-y-2 text-sm text-primary-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Simple gable or hip roof</strong> (many Garden Ridge, Westpointe homes)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Single-story ranch</strong> (faster, safer, common in older NB)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Good existing decking</strong> (newer Veramendi, Vintage Oaks)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Insurance claim coverage</strong> (pay deductible only—$2k-$4k typical)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Multiple properties discount</strong> (river rental investors—10-15% off for 3+)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Neighborhood group pricing</strong> (after hail storms in Veramendi/Vintage Oaks)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="mt-6 bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
+                  <p className="text-primary-900 font-semibold mb-2">📞 Get Your Exact New Braunfels Roof Replacement Cost</p>
+                  <p className="text-primary-700">
+                    These are estimates. Your actual cost depends on your specific home, neighborhood (Gruene, Veramendi, river properties, etc.), materials, and current conditions. We provide <strong>FREE inspections</strong> and detailed written quotes with no obligation. <strong>Vacation rental investors & Gruene historic properties: We handle ALL special requirements!</strong> Call <strong>(512) 763-5277</strong> or schedule online for your personalized New Braunfels roof replacement estimate.
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Location-Specific Deep Content - Copperas Cove */}
+          {location.slug === 'copperas-cove' && (
+            <div className="mt-16 space-y-12">
+              {/* Copperas Cove Neighborhoods Deep Dive */}
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Copperas Cove Neighborhoods: Military Community Roofing Excellence
+                </h2>
+                <p className="text-primary-700 mb-8 leading-relaxed">
+                  Copperas Cove is a tight-knit military community adjacent to Fort Cavazos (formerly Fort Hood). With 35,000 residents, it offers more affordable housing than Killeen while maintaining strong military connections. We understand the unique needs of military families:
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏘️ West Range</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1990s-2000s • <strong>Style:</strong> Fort Cavazos-adjacent residential<br />
+                      <strong>Common Roof Type:</strong> Architectural shingles
+                    </p>
+                    <div className="bg-blue-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Military Convenience:</strong> Closest Copperas Cove neighborhood to Fort Cavazos gates. Popular with active-duty families for easy commute. High turnover from PCS cycles.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Hail damage from Bell County storms, wind uplift, roof age 15-25 years on many homes, delayed maintenance</p>
+                      <p><strong>Best Materials:</strong> Impact-resistant shingles for insurance savings, quality installation to last through multiple military families, proper ventilation</p>
+                      <p><strong>Typical Cost:</strong> $12,000-$19,000 for 1,700-2,400 sq ft homes</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏡 Fairview Heights</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1980s-1990s • <strong>Style:</strong> Established Copperas Cove<br />
+                      <strong>Common Roof Type:</strong> Architectural shingles, some older 3-tab
+                    </p>
+                    <div className="bg-green-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Established Community:</strong> Central Copperas Cove location with good schools. Mix of military families and civilian long-term residents. Many original roofs nearing replacement.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Aging roof materials (20-30 year old roofs common), hail damage accumulation, granule loss from Central Texas heat, wind damage</p>
+                      <p><strong>Best Materials:</strong> Modern impact-resistant shingles upgrade from old 3-tab, proper underlayment, efficient attic ventilation for longevity</p>
+                      <p><strong>Typical Cost:</strong> $11,000-$18,000 for 1,600-2,300 sq ft homes</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏘️ Ogletree Gap</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1990s-2010s • <strong>Style:</strong> Family-oriented Copperas Cove<br />
+                      <strong>Common Roof Type:</strong> Architectural shingles
+                    </p>
+                    <div className="bg-purple-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Community Pride:</strong> Named for Ogletree Gap Music Festival. Strong community identity with active HOA. Well-maintained homes with family focus.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Hail damage from Bell County severe weather, roof age considerations, HOA appearance standards, wind damage</p>
+                      <p><strong>Best Materials:</strong> Quality architectural shingles meeting HOA requirements, impact-resistant for insurance discounts, professional appearance</p>
+                      <p><strong>Typical Cost:</strong> $13,000-$20,000 for 1,800-2,500 sq ft homes</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏡 Clawson</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1980s-2000s • <strong>Style:</strong> Residential Copperas Cove<br />
+                      <strong>Common Roof Type:</strong> Mix of architectural and 3-tab shingles
+                    </p>
+                    <div className="bg-amber-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Affordable Option:</strong> More budget-friendly area of Copperas Cove. Popular with junior enlisted families, young couples, first-time buyers. Value-conscious market.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Deferred maintenance from budget constraints, older roofing materials, hail damage, limited attic ventilation on older homes</p>
+                      <p><strong>Best Materials:</strong> Cost-effective quality shingles, proper installation more important than premium materials, impact resistance for insurance savings</p>
+                      <p><strong>Typical Cost:</strong> $10,000-$16,000 for 1,500-2,100 sq ft homes</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">⛳ Country Club Estates</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1990s-2010s • <strong>Style:</strong> Upper-tier Copperas Cove<br />
+                      <strong>Common Roof Type:</strong> Premium architectural shingles
+                    </p>
+                    <div className="bg-blue-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Premium Copperas Cove:</strong> Near Copperas Cove Country Club. Larger homes, better finishes, higher-ranking military officers and professionals. Quality expectations high.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Hail damage on larger roofs increases cost, complex roof lines, wind exposure, maintaining property values</p>
+                      <p><strong>Best Materials:</strong> Premium impact-resistant shingles (GAF Timberline HDZ, Owens Corning Duration), enhanced warranties, quality craftsmanship</p>
+                      <p><strong>Typical Cost:</strong> $16,000-$26,000 for 2,200-3,200 sq ft homes</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏘️ South Mountain</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1970s-1990s • <strong>Style:</strong> Established Copperas Cove<br />
+                      <strong>Common Roof Type:</strong> Mix of architectural shingles, older composition
+                    </p>
+                    <div className="bg-green-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Established Area:</strong> Older section of Copperas Cove with character. Mix of long-term civilian residents and military retirees. Many homes need roof updates.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Aging roofs (25-35 years on some homes), outdated materials, tree damage, deferred maintenance, limited ventilation systems</p>
+                      <p><strong>Best Materials:</strong> Modern shingle upgrade from old materials, proper ventilation retrofit, impact resistance, quality underlayment</p>
+                      <p><strong>Typical Cost:</strong> $11,000-$17,000 for 1,600-2,300 sq ft homes</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Copperas Cove Military Family Services */}
+              <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  🇺🇸 Fort Cavazos Military Family Roofing Services
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  As a Copperas Cove roofing company serving Fort Cavazos families, we understand military life's unique challenges. We're here to serve those who serve:
+                </p>
+
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="bg-white rounded-lg p-6 shadow-md">
+                    <h3 className="text-xl font-bold text-primary-900 mb-4">📅 Flexible Scheduling for Military Families</h3>
+                    <ul className="space-y-3 text-sm text-primary-700">
+                      <li className="flex items-start gap-3">
+                        <span className="text-2xl">🚚</span>
+                        <div>
+                          <strong className="text-primary-900">PCS Timeline Accommodation:</strong> Moving soon? We expedite projects to meet your PCS dates. Need it done before final inspection? We prioritize military timelines.
+                        </div>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-2xl">✈️</span>
+                        <div>
+                          <strong className="text-primary-900">Deployment-Friendly:</strong> Deployed spouse? We communicate via text/email, work with family/POA, provide detailed documentation. We respect OPSEC.
+                        </div>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-2xl">📱</span>
+                        <div>
+                          <strong className="text-primary-900">Weekend Availability:</strong> We know military schedules. Weekend inspections/consultations available. Early morning or evening appointments no problem.
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-white rounded-lg p-6 shadow-md">
+                    <h3 className="text-xl font-bold text-primary-900 mb-4">💰 Financial Options for Military Families</h3>
+                    <ul className="space-y-3 text-sm text-primary-700">
+                      <li className="flex items-start gap-3">
+                        <span className="text-2xl">🎖️</span>
+                        <div>
+                          <strong className="text-primary-900">Military & Veteran Discounts:</strong> Active duty, veterans, and military retirees receive special pricing. Thank you for your service—we're honored to serve you.
+                        </div>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-2xl">💳</span>
+                        <div>
+                          <strong className="text-primary-900">Flexible Financing:</strong> 0% financing available. $0 down payment options. We work with military budgets and understand BAH constraints.
+                        </div>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-2xl">🏠</span>
+                        <div>
+                          <strong className="text-primary-900">VA Loan Requirements:</strong> Selling your home? We understand VA appraisal requirements. We document all work to meet VA standards for next buyer.
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded mt-6">
+                  <p className="text-sm text-primary-700">
+                    <strong className="text-primary-900">🎖️ Why Copperas Cove Military Families Choose Ripple Roofs:</strong> We're local to the Fort Cavazos community. We understand PCS stress, deployment challenges, and military family budgets. We've worked with hundreds of military families in Copperas Cove. Your service matters—we're here to serve you with honesty, quality, and respect. Call <strong>(512) 763-5277</strong> or text anytime.
+                  </p>
+                </div>
+              </div>
+
+              {/* Copperas Cove Weather & Storms */}
+              <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Copperas Cove Weather & Roofing: Central Texas Storm Challenges
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  Copperas Cove shares Bell County's severe weather patterns with frequent hail, high winds, and extreme heat:
+                </p>
+
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div>
+                    <h3 className="text-xl font-bold text-primary-900 mb-4">⚡ Severe Hail & Wind</h3>
+                    <div className="bg-white rounded-lg p-6 shadow-md mb-4">
+                      <p className="text-sm text-primary-700 mb-3">
+                        Bell County (Copperas Cove, Killeen, Temple) experiences <strong>frequent large hail events</strong> with storms producing damaging hail 2-3 times per year.
+                      </p>
+                      <div className="bg-amber-50 p-4 rounded mb-3">
+                        <p className="font-bold text-primary-900 text-sm mb-2">Copperas Cove Hail Statistics:</p>
+                        <div className="text-xs text-primary-700 space-y-1">
+                          <div className="flex justify-between items-center border-b border-primary-200 pb-1">
+                            <span>Quarter-sized (1") - Damage likely</span>
+                            <span className="font-bold text-orange-600">2-3x per year</span>
+                          </div>
+                          <div className="flex justify-between items-center border-b border-primary-200 pb-1">
+                            <span>Golf ball (1.75") - Severe damage</span>
+                            <span className="font-bold text-red-600">Every 1-2 years</span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span>Baseball+ (2.75"+) - Roof totaled</span>
+                            <span className="font-bold text-red-600">Every 3-5 years</span>
+                          </div>
+                        </div>
+                      </div>
+                      <p className="text-sm font-semibold text-primary-900">What This Means For You:</p>
+                      <p className="text-sm text-primary-700">Impact-resistant (Class 4) shingles critical in Copperas Cove. Insurance companies offer 20-35% premium discounts. After hail storms, get FREE professional inspection—insurance claims must be filed within deadlines. We provide free storm inspections with insurance documentation.</p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-bold text-primary-900 mb-4">☀️ Extreme Heat & UV</h3>
+                    <div className="bg-white rounded-lg p-6 shadow-md mb-4">
+                      <p className="text-sm text-primary-700 mb-3">
+                        Copperas Cove experiences <strong>extreme summer heat</strong> with 100°F+ temperatures common June-September. Central Texas sun is brutal on roofing materials.
+                      </p>
+                      <div className="bg-orange-50 p-4 rounded mb-3">
+                        <p className="font-bold text-primary-900 text-sm mb-2">Heat Impact on Roofs:</p>
+                        <ul className="text-xs text-primary-700 space-y-1">
+                          <li>• Shingle granule loss accelerates in extreme heat</li>
+                          <li>• Attic temperatures reach 140-160°F without ventilation</li>
+                          <li>• Poor ventilation shortens roof life by 5-10 years</li>
+                          <li>• High energy bills from inadequate insulation</li>
+                        </ul>
+                      </div>
+                      <p className="text-sm font-semibold text-primary-900">What This Means For You:</p>
+                      <p className="text-sm text-primary-700">Proper attic ventilation ESSENTIAL in Copperas Cove. We install ridge vents, ensure adequate intake ventilation, check insulation. Quality shingles with good granule adhesion last longer. Light-colored roofs reflect more heat—reduces cooling costs.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-white rounded-lg p-6 shadow-lg mt-6">
+                  <h3 className="text-xl font-bold text-primary-900 mb-4">🌪️ Recent Major Storm Events in Bell County</h3>
+                  <div className="space-y-3 text-sm text-primary-700">
+                    <div className="border-l-4 border-red-500 pl-4">
+                      <p className="font-bold text-primary-900">April 2024 – Bell County Supercell</p>
+                      <p>Golf ball to baseball-sized hail across Bell County. Copperas Cove, Killeen, and Temple all hit. Thousands of roofs damaged. Insurance claims continue for months.</p>
+                    </div>
+                    <div className="border-l-4 border-orange-500 pl-4">
+                      <p className="font-bold text-primary-900">March 2022 – Central Texas Hailstorm</p>
+                      <p>Large hail event across Bell County. Significant roof damage in Copperas Cove's West Range and Fairview Heights areas. Wind gusts to 60+ mph caused additional damage.</p>
+                    </div>
+                    <div className="border-l-4 border-amber-500 pl-4">
+                      <p className="font-bold text-primary-900">May 2021 – Severe Weather Outbreak</p>
+                      <p>Multiple days of severe storms. Hail, wind, heavy rain. Copperas Cove experienced flooding in low-lying areas plus roof damage from sustained winds.</p>
+                    </div>
+                  </div>
+                  <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded mt-4">
+                    <p className="text-xs font-bold text-red-900 mb-1">⚠️ Copperas Cove Homeowners: After severe weather...</p>
+                    <p className="text-xs text-primary-700">Get FREE professional inspection immediately. Insurance companies require timely claims. We document damage, work with adjusters, handle the insurance process. Military families: We understand deployment/PCS complications—we'll work with family/POA. Call <strong>(512) 763-5277</strong> for free storm damage inspection.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Copperas Cove Roof Replacement Cost Guide */}
+              <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Copperas Cove Roof Replacement Costs: Complete Pricing Guide
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  Copperas Cove roof replacement costs are generally more affordable than Killeen/Harker Heights, reflecting the community's budget-conscious military family market:
+                </p>
+
+                <div className="space-y-4 mb-8">
+                  <div className="border-l-4 border-blue-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">1,300-1,700 sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: Smaller Copperas Cove home, 2-3 bed/1-2 bath, simple roof, 14-18 squares - Clawson, South Mountain</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$9,000-$14,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-green-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">1,700-2,200 sq ft Home (Most Common)</p>
+                        <p className="text-sm text-primary-700">Typical: Standard Copperas Cove home, 3 bed/2 bath, moderate complexity, 18-24 squares - Fairview Heights, West Range</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$12,000-$18,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-purple-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">2,200-2,800 sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: Larger Copperas Cove two-story, 4 bed/2-3 bath, increased complexity, 24-32 squares - Ogletree Gap</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$15,000-$23,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-red-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">2,800-3,500 sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: Larger Copperas Cove estate, 4-5 bed/3 bath, complex roof, 32-42 squares - Country Club Estates</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$19,000-$30,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-amber-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">3,500+ sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: Premium Country Club area, custom designs, 42+ squares, premium materials</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$27,000-$50,000+</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-6 mb-8">
+                  <div className="bg-red-50 rounded-lg p-6 border-l-4 border-red-500">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">📈 What INCREASES Cost in Copperas Cove</h3>
+                    <ul className="space-y-2 text-sm text-primary-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+20-30%</span>
+                        <span><strong>Two-story homes</strong> (require scaffolding, more time)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+15-20%</span>
+                        <span><strong>Complex roof lines</strong> (multiple valleys, dormers, hips)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+15-25%</span>
+                        <span><strong>Steep pitch roofs</strong> (safety equipment, slower work)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+20-40%</span>
+                        <span><strong>Decking replacement</strong> ($2-3 per sq ft additional if needed)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+$500-$1,500</span>
+                        <span><strong>Multiple layers removal</strong> (older Copperas Cove homes may have 2-3 layers)</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-green-50 rounded-lg p-6 border-l-4 border-green-500">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">📉 What DECREASES Cost in Copperas Cove</h3>
+                    <ul className="space-y-2 text-sm text-primary-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Simple gable or hip roof</strong> (most Copperas Cove homes)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Single-story ranch</strong> (faster, safer, lower cost)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Good existing decking</strong> (newer West Range, Ogletree Gap)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Insurance claim approval</strong> (pay deductible only—typically $2k-$3k)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Military/veteran discount</strong> (active duty, veterans, retirees)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Neighborhood storm pricing</strong> (multiple homes after hail events)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded mb-8">
+                  <p className="font-bold text-primary-900 mb-2">🎖️ Special Considerations for Copperas Cove Military Families</p>
+                  <ul className="text-sm text-primary-700 space-y-2">
+                    <li>• <strong>PCS Timelines:</strong> Moving in 2-3 months? We expedite projects to meet your timeline. Need it done before final walkthrough? We prioritize military families.</li>
+                    <li>• <strong>VA Loan Requirements:</strong> Selling your home with VA financing? We provide all documentation to meet VA appraisal standards for next buyer.</li>
+                    <li>• <strong>Deployment Support:</strong> Deployed spouse? We communicate with family/POA, provide photos/updates, handle everything professionally while you're serving.</li>
+                    <li>• <strong>BAH Budget:</strong> We understand military budgets. Financing options available. We work with you to find quality solutions within your constraints.</li>
+                    <li>• <strong>Military Discount:</strong> Active duty, veterans, retirees receive special pricing. It's our way of saying thank you for your service.</li>
+                  </ul>
+                </div>
+
+                <div className="mt-6 bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
+                  <p className="text-primary-900 font-semibold mb-2">📞 Get Your Exact Copperas Cove Roof Replacement Cost</p>
+                  <p className="text-primary-700">
+                    These are estimates. Your actual cost depends on your specific home, neighborhood (West Range, Fairview Heights, Country Club Estates, etc.), materials, and current conditions. We provide <strong>FREE inspections</strong> and detailed written quotes with no obligation. <strong>Military families: We understand your unique needs and honor your service!</strong> Call <strong>(512) 763-5277</strong> or schedule online for your personalized Copperas Cove roof replacement estimate.
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+
           {/* FAQ Section - Full Width */}
           <div className="mt-16">
             <LocationFAQ city={location.city} />
