@@ -8,6 +8,7 @@ import { QuoteForm } from '@/components/forms/QuoteForm'
 import { Button } from '@/components/ui/Button'
 import { ServiceLeadMagnetCTA } from '@/components/services/ServiceLeadMagnetCTA'
 import { SERVICES } from '@/lib/constants'
+import ServiceSchema from '@/components/seo/ServiceSchema'
 
 interface ServicePageProps {
   params: {
@@ -66,6 +67,13 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
 
   return (
     <main className="min-h-screen bg-white">
+      {/* Schema Markup */}
+      <ServiceSchema
+        serviceName={service.title}
+        description={service.shortDescription}
+        slug={params.slug}
+      />
+
       {/* Hero Section */}
       <section className="relative h-[400px] md:h-[500px] bg-primary-900">
         <div className="absolute inset-0 z-0">

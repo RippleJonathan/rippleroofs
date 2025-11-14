@@ -9,6 +9,7 @@ import { FloatingCallButton } from '@/components/ui/FloatingCallButton'
 import { EmergencyBanner } from '@/components/ui/EmergencyBanner'
 import { ExitIntentPopup } from '@/components/ui/ExitIntentPopup'
 import { StickyMobileBar } from '@/components/ui/StickyMobileBar'
+import LocalBusinessSchema from '@/components/seo/LocalBusinessSchema'
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -82,6 +83,9 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://lh3.googleusercontent.com" />
       </head>
       <body className="font-sans">
+        {/* Local Business Schema */}
+        <LocalBusinessSchema />
+        
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-3F0FNPXXC5"

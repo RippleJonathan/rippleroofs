@@ -9,6 +9,7 @@ import { BlogPostCard } from '@/components/blog/BlogPostCard'
 import { SocialShare } from '@/components/blog/SocialShare'
 import { getBlurDataURL } from '@/lib/image-blur'
 import { BlogSidebar } from '@/components/blog/BlogSidebar'
+import ArticleSchema from '@/components/seo/ArticleSchema'
 
 interface BlogPostPageProps {
   params: {
@@ -65,33 +66,19 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
   }
 
   const relatedPosts = getRelatedPosts(params.slug, 3)
-  const articleSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
-    headline: post.title,
-    description: post.description,
-    image: post.image,
-    datePublished: post.date,
-    author: {
-      '@type': 'Person',
-      name: post.author,
-    },
-    publisher: {
-      '@type': 'Organization',
-      name: 'Ripple Roofing & Construction',
-      logo: {
-        '@type': 'ImageObject',
-        url: `${process.env.NEXT_PUBLIC_SITE_URL}/logo.png`,
-      },
-    },
-  }
 
   return (
     <>
       {/* Schema Markup */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      <ArticleSchema
+        title={post.title}
+        description={post.description}
+        image={post.image}
+        datePublished={post.date}
+        author={post.author}
+        category={post.category}
+        tags={post.tags}
+        slug={params.slug}
       />
 
       {/* Hero Section */}
