@@ -59,14 +59,24 @@ export function getPostBySlug(slug: string): BlogPost | null {
     const { data, content } = matter(fileContents)
     const stats = readingTime(content)
 
+    // Ensure valid date - default to current date if invalid
+    let postDate = data.date || new Date().toISOString().split('T')[0]
+    // Validate date format
+    if (isNaN(Date.parse(postDate))) {
+      postDate = new Date().toISOString().split('T')[0]
+    }
+
+    // Generate placeholder image path if no image provided
+    const imageUrl = data.image || generatePlaceholderImagePath(slug, data.title || slug)
+
     return {
       slug,
       title: data.title || '',
       description: data.description || '',
-      date: data.date || '',
+      date: postDate,
       author: data.author || 'Ripple Roofing Team',
       category: data.category || 'General',
-      image: data.image || '/images/blog/default.jpg',
+      image: imageUrl,
       tags: data.tags || [],
       content,
       readingTime: stats.text,
@@ -74,6 +84,12 @@ export function getPostBySlug(slug: string): BlogPost | null {
   } catch (error) {
     return null
   }
+}
+
+// Generate placeholder image path (SVG will be generated on demand)
+function generatePlaceholderImagePath(slug: string, title: string): string {
+  // Return path to placeholder image generator API route
+  return `/api/blog-placeholder/${slug}`
 }
 
 // Get all blog posts (sorted by date, newest first)
