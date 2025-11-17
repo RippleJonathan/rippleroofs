@@ -1,0 +1,36 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#be123c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f43f5e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#grad4)"/>
+  
+  <!-- Hill Country landscape -->
+  <path d="M 0 480 Q 150 420 300 480 Q 450 380 600 480 Q 750 420 900 480 Q 1050 400 1200 480 L 1200 630 L 0 630 Z" fill="rgba(0,0,0,0.15)"/>
+  <path d="M 0 510 Q 200 450 400 510 Q 600 430 800 510 Q 1000 460 1200 510 L 1200 630 L 0 630 Z" fill="rgba(0,0,0,0.1)"/>
+  
+  <!-- Main Title -->
+  <text x="600" y="220" font-family="Arial, sans-serif" font-size="68" font-weight="bold" fill="white" text-anchor="middle">
+    Bee Cave Roofing Contractors
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="290" font-family="Arial, sans-serif" font-size="36" fill="rgba(255,255,255,0.9)" text-anchor="middle">
+    Premium Home Roofing Services
+  </text>
+  
+  <!-- Year -->
+  <text x="600" y="350" font-family="Arial, sans-serif" font-size="32" fill="rgba(255,255,255,0.85)" text-anchor="middle">
+    2025
+  </text>
+  
+  <!-- Bottom text -->
+  <text x="600" y="500" font-family="Arial, sans-serif" font-size="28" fill="rgba(255,255,255,0.8)" text-anchor="middle">
+    Ripple Roofs | Bee Cave's Premium Roofing Experts
+  </text>
+</svg>
