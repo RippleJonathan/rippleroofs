@@ -66,6 +66,8 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
     notFound()
   }
 
+  const isPDR = service.slug === 'paintless-dent-repair'
+
   return (
     <main className="min-h-screen bg-white">
       {/* Schema Markup */}
@@ -102,14 +104,17 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
               {service.icon} {service.title}
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-4">
-              Expert {service.title} in Central Texas
+              {isPDR ? 'Professional Paintless Dent Repair in Central Texas' : `Expert ${service.title} in Central Texas`}
             </h1>
             <p className="text-xl text-primary-100 mb-8">
-              Serving Round Rock, Austin, Georgetown, and surrounding areas with premium roofing solutions.
+              {isPDR 
+                ? 'Mobile PDR service for hail damage and dents—we come to you in Round Rock, Austin, Georgetown, and surrounding areas.'
+                : 'Serving Round Rock, Austin, Georgetown, and surrounding areas with premium roofing solutions.'
+              }
             </p>
             <div className="flex flex-wrap gap-4 mb-6">
               <Button variant="primary" size="lg" href="#quote">
-                📞 Get FREE Inspection ($200 Value)
+                {isPDR ? '📞 Get FREE Assessment' : '📞 Get FREE Inspection ($200 Value)'}
               </Button>
               <Button variant="secondary" size="lg" href="tel:5127635277">
                 Call Now: (512) 763-5277
@@ -121,10 +126,14 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
                 <span className="text-accent-400">⭐</span> 5.0 Star Rating
               </span>
               <span className="hidden sm:inline">•</span>
-              <span className="flex items-center gap-1">
-                <span className="text-accent-400">✓</span> CertainTeed Certified
-              </span>
-              <span className="hidden sm:inline">•</span>
+              {!isPDR && (
+                <>
+                  <span className="flex items-center gap-1">
+                    <span className="text-accent-400">✓</span> CertainTeed Certified
+                  </span>
+                  <span className="hidden sm:inline">•</span>
+                </>
+              )}
               <span className="flex items-center gap-1">
                 <span className="text-accent-400">🛡️</span> Certified & Insured
               </span>
@@ -136,24 +145,45 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
       {/* Trust Indicators */}
       <section className="py-8 bg-primary-50 border-y border-primary-100">
         <Container>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div>
-              <div className="text-3xl font-bold text-accent-600 mb-1">24/7</div>
-              <div className="text-sm text-primary-600">Emergency Service</div>
+          {isPDR ? (
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+              <div>
+                <div className="text-3xl font-bold text-accent-600 mb-1">Mobile</div>
+                <div className="text-sm text-primary-600">We Come to You</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-accent-600 mb-1">5.0★</div>
+                <div className="text-sm text-primary-600">Google Rating</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-accent-600 mb-1">FREE</div>
+                <div className="text-sm text-primary-600">Damage Assessment</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-accent-600 mb-1">Lifetime</div>
+                <div className="text-sm text-primary-600">Warranty on Repairs</div>
+              </div>
             </div>
-            <div>
-              <div className="text-3xl font-bold text-accent-600 mb-1">5.0★</div>
-              <div className="text-sm text-primary-600">Google Rating</div>
+          ) : (
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+              <div>
+                <div className="text-3xl font-bold text-accent-600 mb-1">24/7</div>
+                <div className="text-sm text-primary-600">Emergency Service</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-accent-600 mb-1">5.0★</div>
+                <div className="text-sm text-primary-600">Google Rating</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-accent-600 mb-1">$200</div>
+                <div className="text-sm text-primary-600">FREE Inspection Value</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-accent-600 mb-1">Top 1%</div>
+                <div className="text-sm text-primary-600">CertainTeed Master™</div>
+              </div>
             </div>
-            <div>
-              <div className="text-3xl font-bold text-accent-600 mb-1">$200</div>
-              <div className="text-sm text-primary-600">FREE Inspection Value</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-accent-600 mb-1">Top 1%</div>
-              <div className="text-sm text-primary-600">CertainTeed Master™</div>
-            </div>
-          </div>
+          )}
         </Container>
       </section>
 
@@ -170,11 +200,13 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
                 </h2>
                 <div className="prose prose-lg max-w-none text-primary-700">
                   <p>{service.description}</p>
-                  <p className="mt-4">
-                    At Ripple Roofing & Construction, we understand the unique challenges that Central Texas weather presents to your roof. 
-                    From intense summer heat to severe storms, our {service.title.toLowerCase()} services are designed to protect your 
-                    property year-round.
-                  </p>
+                  {!isPDR && (
+                    <p className="mt-4">
+                      At Ripple Roofing & Construction, we understand the unique challenges that Central Texas weather presents to your roof. 
+                      From intense summer heat to severe storms, our {service.title.toLowerCase()} services are designed to protect your 
+                      property year-round.
+                    </p>
+                  )}
                 </div>
               </div>
 
@@ -3809,12 +3841,12 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
               <div className="sticky top-24 space-y-6">
                 <div className="bg-white rounded-2xl shadow-xl p-6 border-2 border-accent-100">
                   <h3 className="text-2xl font-display font-bold text-primary-900 mb-2">
-                    🎯 Get My FREE Inspection
+                    {isPDR ? '🚗 Get My FREE Assessment' : '🎯 Get My FREE Inspection'}
                   </h3>
                   <p className="text-primary-600 text-sm mb-6">
-                    <span className="font-semibold">$200 Value</span> • Same-day scheduling available
+                    {isPDR ? 'Same-day scheduling available' : '$200 Value • Same-day scheduling available'}
                   </p>
-                  <QuoteForm />
+                  <QuoteForm serviceType={isPDR ? 'pdr' : 'roofing'} />
                 </div>
 
                 {/* Contact Card */}

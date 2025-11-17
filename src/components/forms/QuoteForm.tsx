@@ -13,9 +13,10 @@ import { trackContactSubmission } from '@/lib/analytics'
 interface QuoteFormProps {
   className?: string
   prefillAddress?: string // Auto-fill address based on location page
+  serviceType?: 'roofing' | 'pdr' // Service type for conditional trust badges
 }
 
-export const QuoteForm: FC<QuoteFormProps> = ({ className = '', prefillAddress }) => {
+export const QuoteForm: FC<QuoteFormProps> = ({ className = '', prefillAddress, serviceType = 'roofing' }) => {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
   const [errorMessage, setErrorMessage] = useState('')
@@ -94,7 +95,7 @@ export const QuoteForm: FC<QuoteFormProps> = ({ className = '', prefillAddress }
   return (
     <form onSubmit={handleSubmit(onSubmit)} className={`space-y-6 ${className}`}>
       {/* Trust Badges - Build Confidence */}
-      <TrustBadgeBar variant="compact" className="mb-6" />
+      <TrustBadgeBar variant="compact" serviceType={serviceType} className="mb-6" />
 
       {/* Success Message */}
       {submitStatus === 'success' && (
@@ -249,6 +250,8 @@ export const QuoteForm: FC<QuoteFormProps> = ({ className = '', prefillAddress }
             </svg>
             Submitting...
           </span>
+        ) : serviceType === 'pdr' ? (
+          '🚗 Get FREE Assessment'
         ) : (
           '🎯 Get My FREE Inspection ($200 Value)'
         )}
