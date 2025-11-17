@@ -74,6 +74,7 @@ export const NAV_LINKS: NavLink[] = [
     href: '/resources', 
     label: 'Resources',
     children: [
+      { href: '/calculators', label: 'Roofing Calculators' },
       { href: '/resources/material-comparison-tool', label: 'Material Comparison Tool' },
       { href: '/resources/roof-inspection-checklist', label: 'Free Roof Inspection Checklist' },
       { href: '/resources/storm-damage-insurance-guide', label: 'Insurance Claim Guide' },
