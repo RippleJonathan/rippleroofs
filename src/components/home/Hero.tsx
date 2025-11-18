@@ -3,7 +3,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Container } from '@/components/layout/Container'
 import { Button } from '@/components/ui/Button'
-import { CertainTeedBadge } from '@/components/ui/CertainTeedBadge'
 import { SITE_CONFIG } from '@/lib/constants'
 
 export const Hero: FC = () => {
@@ -88,7 +87,14 @@ export const Hero: FC = () => {
 
           {/* CertainTeed Badge - Right Side */}
           <div className="hidden lg:flex justify-end pt-8 animate-fade-up" style={{ animationDelay: '0.4s' }}>
-            <CertainTeedBadge variant="default" />
+            <div className="relative w-32 h-32">
+              <Image
+                src="/images/certainteed-shingle-master.webp"
+                alt="CertainTeed Shingle Master Certified"
+                fill
+                className="object-contain"
+              />
+            </div>
           </div>
         </div>
       </Container>
