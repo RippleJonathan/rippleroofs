@@ -7,6 +7,7 @@ import { CTASection } from '@/components/home/CTASection'
 import { TrustBadges } from '@/components/ui/TrustBadges'
 import { WhyChooseUs } from '@/components/home/WhyChooseUs'
 import { FreeResourcesSection } from '@/components/home/FreeResourcesSection'
+import { FeaturedIn } from '@/components/home/FeaturedIn'
 import { SITE_CONFIG } from '@/lib/constants'
 
 export const metadata = {
@@ -190,6 +191,7 @@ export default function Home() {
       <Hero />
       <TrustBadges />
       <TrustBar />
+      <FeaturedIn />
       <ServicesGrid />
       <FreeResourcesSection />
       <WhyChooseUs />
