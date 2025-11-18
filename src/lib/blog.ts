@@ -4,6 +4,7 @@ import matter from 'gray-matter'
 import readingTime from 'reading-time'
 
 const postsDirectory = path.join(process.cwd(), 'content/blog')
+const blogImagesDirectory = path.join(process.cwd(), 'public/images/blog')
 
 export interface BlogPost {
   slug: string
@@ -66,8 +67,17 @@ export function getPostBySlug(slug: string): BlogPost | null {
       postDate = new Date().toISOString().split('T')[0]
     }
 
-    // Generate placeholder image path if no image provided
-    const imageUrl = data.image || generatePlaceholderImagePath(slug, data.title || slug)
+    // Smart image handling with fuzzy matching
+    let imageUrl = data.image || ''
+    
+    if (imageUrl) {
+      // Try to find the best matching image file
+      const matchedImage = findBestMatchingImage(imageUrl)
+      imageUrl = matchedImage || generatePlaceholderImagePath(slug, data.title || slug)
+    } else {
+      // No image specified, use placeholder
+      imageUrl = generatePlaceholderImagePath(slug, data.title || slug)
+    }
 
     return {
       slug,
@@ -90,6 +100,95 @@ export function getPostBySlug(slug: string): BlogPost | null {
 function generatePlaceholderImagePath(slug: string, title: string): string {
   // Return path to placeholder image generator API route
   return `/api/blog-placeholder/${slug}`
+}
+
+// Find best matching image file using fuzzy matching
+function findBestMatchingImage(requestedPath: string): string | null {
+  if (!requestedPath || !requestedPath.startsWith('/images/blog/')) {
+    return null
+  }
+
+  // Extract just the filename from the path
+  const requestedFilename = path.basename(requestedPath)
+  
+  try {
+    // Check if exact file exists first
+    const exactPath = path.join(process.cwd(), 'public', requestedPath)
+    if (fs.existsSync(exactPath)) {
+      return requestedPath
+    }
+
+    // If not, try fuzzy matching in blog images directory
+    if (!fs.existsSync(blogImagesDirectory)) {
+      return null
+    }
+
+    const allFiles = getAllFilesRecursive(blogImagesDirectory)
+    
+    // Extract slug/keywords from requested filename (remove extension)
+    const requestedSlug = requestedFilename.replace(/\.(jpg|jpeg|png|webp|gif)$/i, '')
+    const requestedWords = requestedSlug.toLowerCase().split(/[-_\s]+/)
+    
+    let bestMatch: { file: string; score: number } | null = null
+    
+    for (const file of allFiles) {
+      const filename = path.basename(file)
+      const fileSlug = filename.replace(/\.(jpg|jpeg|png|webp|gif)$/i, '')
+      const fileWords = fileSlug.toLowerCase().split(/[-_\s]+/)
+      
+      // Calculate similarity score (number of matching words)
+      let score = 0
+      for (const word of requestedWords) {
+        if (word.length > 2 && fileWords.some(fw => fw.includes(word) || word.includes(fw))) {
+          score++
+        }
+      }
+      
+      // Exact match (case insensitive)
+      if (fileSlug.toLowerCase() === requestedSlug.toLowerCase()) {
+        score += 100
+      }
+      
+      // Very close match (one word difference)
+      if (score > 0 && (!bestMatch || score > bestMatch.score)) {
+        bestMatch = { file, score }
+      }
+    }
+    
+    // Return best match if score is reasonable
+    if (bestMatch && bestMatch.score >= 2) {
+      const relativePath = '/images/blog/' + path.relative(blogImagesDirectory, bestMatch.file).replace(/\\/g, '/')
+      return relativePath
+    }
+  } catch (error) {
+    console.error('Error in fuzzy image matching:', error)
+  }
+  
+  return null
+}
+
+// Recursively get all image files in a directory
+function getAllFilesRecursive(dir: string): string[] {
+  const files: string[] = []
+  
+  try {
+    const items = fs.readdirSync(dir)
+    
+    for (const item of items) {
+      const fullPath = path.join(dir, item)
+      const stat = fs.statSync(fullPath)
+      
+      if (stat.isDirectory()) {
+        files.push(...getAllFilesRecursive(fullPath))
+      } else if (/\.(jpg|jpeg|png|webp|gif)$/i.test(item)) {
+        files.push(fullPath)
+      }
+    }
+  } catch (error) {
+    // Directory doesn't exist or can't be read
+  }
+  
+  return files
 }
 
 // Get all blog posts (sorted by date, newest first)
