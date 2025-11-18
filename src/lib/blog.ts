@@ -86,7 +86,11 @@ export function getPostBySlug(slug: string): BlogPost | null {
     const fullPath = path.join(postsDirectory, `${slug}.mdx`)
     const fileContents = fs.readFileSync(fullPath, 'utf8')
     const { data, content } = matter(fileContents)
-    const stats = readingTime(content)
+    
+    // Explicitly ensure frontmatter is stripped (redundant safety check)
+    const cleanContent = content.replace(/^---[\s\S]*?---\s*/, '').trim()
+    
+    const stats = readingTime(cleanContent)
 
     // Ensure valid date - default to current date if invalid
     let postDate = data.date || new Date().toISOString().split('T')[0]
@@ -110,13 +114,13 @@ export function getPostBySlug(slug: string): BlogPost | null {
     return {
       slug,
       title: data.title || '',
-      description: data.description || extractFirstParagraph(content) || data.excerpt || '',
+      description: data.description || extractFirstParagraph(cleanContent) || data.excerpt || '',
       date: postDate,
       author: data.author || 'Ripple Roofing Team',
       category: data.category || 'General',
       image: imageUrl,
       tags: data.tags || [],
-      content,
+      content: cleanContent,
       readingTime: stats.text,
     }
   } catch (error) {
