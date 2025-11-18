@@ -38,6 +38,34 @@ function ensureBlogDirectory() {
   }
 }
 
+// Extract first paragraph from content for description fallback
+function extractFirstParagraph(content: string): string {
+  // Remove frontmatter if present
+  const contentWithoutFrontmatter = content.replace(/^---[\s\S]*?---/, '').trim()
+  
+  // Find first paragraph (text before first heading or double newline)
+  const paragraphMatch = contentWithoutFrontmatter.match(/^([\s\S]*?)(?:\n\n|^#+\s)/m)
+  
+  if (paragraphMatch) {
+    // Clean up markdown syntax and extract plain text
+    let text = paragraphMatch[1]
+      .replace(/\!\[[^\]]*\]\([^\)]*\)/g, '') // Remove images
+      .replace(/\[[^\]]*\]\([^\)]*\)/g, '') // Remove links
+      .replace(/[\*_`]/g, '') // Remove markdown formatting
+      .replace(/\n+/g, ' ') // Convert newlines to spaces
+      .trim()
+    
+    // Limit to ~150 characters for RSS description
+    if (text.length > 160) {
+      text = text.substring(0, 160).trim() + '...'
+    }
+    
+    return text
+  }
+  
+  return ''
+}
+
 // Get all blog post slugs
 export function getAllPostSlugs(): string[] {
   ensureBlogDirectory()
@@ -82,7 +110,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
     return {
       slug,
       title: data.title || '',
-      description: data.description || data.excerpt || '',
+      description: data.description || extractFirstParagraph(content) || data.excerpt || '',
       date: postDate,
       author: data.author || 'Ripple Roofing Team',
       category: data.category || 'General',
