@@ -281,8 +281,14 @@ export const Footer: FC = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   <span className="text-primary-200">
-                    {SITE_CONFIG.hours}
+                    Mon-Fri: 8AM - 6PM
                   </span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 mr-2 flex-shrink-0 mt-0.5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
+                  </svg>
+                  <span className="text-accent-300 font-semibold">24/7 Emergency</span>
                 </li>
               </ul>
 
@@ -292,6 +298,141 @@ export const Footer: FC = () => {
                     Get Free Inspection
                   </button>
                 </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Service Areas Section - Additional Row */}
+          <div className="border-t border-primary-800 mt-8 pt-8">
+            <h3 className="text-lg font-display font-bold mb-6 text-white">Service Areas</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Austin Metro */}
+              <div>
+                <h4 className="font-semibold text-accent-400 mb-3">Austin Metro</h4>
+                <ul className="space-y-2 text-sm">
+                  <li>
+                    <Link
+                      href="/locations/austin"
+                      className="text-primary-200 hover:text-accent-500 transition-colors duration-200"
+                    >
+                      Austin
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/locations/round-rock"
+                      className="text-primary-200 hover:text-accent-500 transition-colors duration-200"
+                    >
+                      Round Rock
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/locations/pflugerville"
+                      className="text-primary-200 hover:text-accent-500 transition-colors duration-200"
+                    >
+                      Pflugerville
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/locations/cedar-park"
+                      className="text-primary-200 hover:text-accent-500 transition-colors duration-200"
+                    >
+                      Cedar Park
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/locations/leander"
+                      className="text-primary-200 hover:text-accent-500 transition-colors duration-200"
+                    >
+                      Leander
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/locations/georgetown"
+                      className="text-primary-200 hover:text-accent-500 transition-colors duration-200"
+                    >
+                      Georgetown
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Central Texas */}
+              <div>
+                <h4 className="font-semibold text-accent-400 mb-3">Central Texas</h4>
+                <ul className="space-y-2 text-sm">
+                  <li>
+                    <Link
+                      href="/locations/san-marcos"
+                      className="text-primary-200 hover:text-accent-500 transition-colors duration-200"
+                    >
+                      San Marcos
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/locations/new-braunfels"
+                      className="text-primary-200 hover:text-accent-500 transition-colors duration-200"
+                    >
+                      New Braunfels
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/locations/temple"
+                      className="text-primary-200 hover:text-accent-500 transition-colors duration-200"
+                    >
+                      Temple
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/locations/killeen"
+                      className="text-primary-200 hover:text-accent-500 transition-colors duration-200"
+                    >
+                      Killeen
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/locations/copperas-cove"
+                      className="text-primary-200 hover:text-accent-500 transition-colors duration-200"
+                    >
+                      Copperas Cove
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/locations/waco"
+                      className="text-primary-200 hover:text-accent-500 transition-colors duration-200"
+                    >
+                      Waco
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+              {/* San Antonio Area */}
+              <div>
+                <h4 className="font-semibold text-accent-400 mb-3">San Antonio Expansion</h4>
+                <ul className="space-y-2 text-sm">
+                  <li>
+                    <Link
+                      href="/locations/san-antonio"
+                      className="text-primary-200 hover:text-accent-500 transition-colors duration-200"
+                    >
+                      San Antonio
+                    </Link>
+                  </li>
+                  <li className="text-primary-300 text-xs pt-2 border-t border-primary-700">
+                    Stone Oak • Alamo Heights<br />
+                    Medical Center & Surrounding Areas
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
