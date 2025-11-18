@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" 
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ripple Roofing & Construction - Roofing Blog</title>
+    <link>http://localhost:3000/blog</link>
+    <description>Expert roofing tips, maintenance guides, and industry insights from Central Texas roofing professionals</description>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 18 Nov 2025 14:30:37 GMT</lastBuildDate>
+    <atom:link href="http://localhost:3000/blog/rss.xml" rel="self" type="application/rss+xml"/>
+    <image>
+      <url>http://localhost:3000/logo.png</url>
+      <title>Ripple Roofing & Construction</title>
+      <link>http://localhost:3000</link>
+    </image>
+    
+    <item>
+      <title><![CDATA[]]></title>
+      <link>http://localhost:3000/blog/best-roofing-materials-round-rock</link>
+      <guid isPermaLink="true">http://localhost:3000/blog/best-roofing-materials-round-rock</guid>
+      <description><![CDATA[]]></description>
+      <pubDate>Tue, 18 Nov 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Ripple Roofing Team</dc:creator>
+      <category>General</category>
+      
+      <enclosure url="http://localhost:3000/api/blog-placeholder/best-roofing-materials-round-rock" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[]]></title>
+      <link>http://localhost:3000/blog/class-4-shingles-insurance-discounts-texas</link>
+      <guid isPermaLink="true">http://localhost:3000/blog/class-4-shingles-insurance-discounts-texas</guid>
+      <description><![CDATA[]]></description>
+      <pubDate>Tue, 18 Nov 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Ripple Roofing Team</dc:creator>
+      <category>General</category>
+      
+      <enclosure url="http://localhost:3000/api/blog-placeholder/class-4-shingles-insurance-discounts-texas" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[]]></title>
+      <link>http://localhost:3000/blog/spring-hail-season-prep-austin</link>
+      <guid isPermaLink="true">http://localhost:3000/blog/spring-hail-season-prep-austin</guid>
+      <description><![CDATA[]]></description>
+      <pubDate>Tue, 18 Nov 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Ripple Roofing Team</dc:creator>
+      <category>General</category>
+      
+      <enclosure url="http://localhost:3000/api/blog-placeholder/spring-hail-season-prep-austin" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[Roof Replacement vs Repair Guide: When to Replace or Repair Your Roof (2025)]]></title>
+      <link>http://localhost:3000/blog/roof-replacement-vs-repair-guide</link>
+      <guid isPermaLink="true">http://localhost:3000/blog/roof-replacement-vs-repair-guide</guid>
+      <description><![CDATA[Complete decision framework for roof replacement vs repair: cost analysis, age factors, damage assessment, ROI calculations, and when repair makes sense vs full replacement.]]></description>
+      <pubDate>Mon, 17 Nov 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Ripple Roofing Team</dc:creator>
+      <category>Roof Replacement</category>
+      <category>Roof Replacement</category><category>Roof Repair</category><category>Cost Analysis</category><category>Decision Guide</category><category>ROI</category><category>Investment</category>
+      <enclosure url="http://localhost:3000/images/blog/roof-replacement-vs-repair-guide.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[Roof Ventilation Guide for Texas: Complete System Design & Benefits (2025)]]></title>
+      <link>http://localhost:3000/blog/roof-ventilation-guide-texas</link>
+      <guid isPermaLink="true">http://localhost:3000/blog/roof-ventilation-guide-texas</guid>
+      <description><![CDATA[Comprehensive guide to roof ventilation in Texas heat: proper airflow requirements, types of vents, energy savings, moisture control, and extending roof lifespan.]]></description>
+      <pubDate>Sun, 16 Nov 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Ripple Roofing Team</dc:creator>
+      <category>Energy Efficiency</category>
+      <category>Roof Ventilation</category><category>Texas</category><category>Energy Efficiency</category><category>Attic Ventilation</category><category>Cooling Costs</category><category>Roof Lifespan</category>
+      <enclosure url="http://localhost:3000/images/blog/roof-ventilation-guide-texas.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[DIY Roof Inspection Checklist: Complete Guide for Texas Homeowners (2025)]]></title>
+      <link>http://localhost:3000/blog/diy-roof-inspection-checklist</link>
+      <guid isPermaLink="true">http://localhost:3000/blog/diy-roof-inspection-checklist</guid>
+      <description><![CDATA[Comprehensive DIY roof inspection guide with safety tips, seasonal checklists, what to look for, and when to call professionals. Includes downloadable inspection checklist.]]></description>
+      <pubDate>Sat, 15 Nov 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Ripple Roofing Team</dc:creator>
+      <category>Maintenance</category>
+      <category>Roof Inspection</category><category>DIY</category><category>Maintenance</category><category>Roof Care</category><category>Preventive Maintenance</category><category>Texas</category>
+      <enclosure url="http://localhost:3000/images/blog/diy-roof-inspection-checklist.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[Best Roofing Materials for Texas Heat: Complete 2025 Guide to Staying Cool]]></title>
+      <link>http://localhost:3000/blog/best-roofing-materials-texas-heat</link>
+      <guid isPermaLink="true">http://localhost:3000/blog/best-roofing-materials-texas-heat</guid>
+      <description><![CDATA[Texas heat punishes roofs. Discover which roofing materials reflect heat, reduce cooling costs by 30%, and last longest in 100°F+ temperatures—metal, tile, cool shingles compared.]]></description>
+      <pubDate>Fri, 14 Nov 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Ripple Roofing Team</dc:creator>
+      <category>Materials & Energy</category>
+      <category>Texas Heat</category><category>Roofing Materials</category><category>Energy Efficiency</category><category>Cool Roofs</category><category>Metal Roofing</category><category>Reflective Shingles</category>
+      <enclosure url="http://localhost:3000/images/blog/best-roofing-materials-texas-heat/hero-texas-heat-roof.png" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[How to Choose a Roofing Contractor in Austin: Complete 2025 Guide to Avoiding Scams]]></title>
+      <link>http://localhost:3000/blog/choosing-roofing-contractor-austin</link>
+      <guid isPermaLink="true">http://localhost:3000/blog/choosing-roofing-contractor-austin</guid>
+      <description><![CDATA[Austin homeowners: avoid storm chasers and find legitimate roofing contractors. Learn red flags, license verification, contract essentials, and questions that separate pros from scammers.]]></description>
+      <pubDate>Fri, 14 Nov 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Ripple Roofing Team</dc:creator>
+      <category>Contractor Selection</category>
+      <category>Roofing Contractors</category><category>Austin</category><category>Storm Chasers</category><category>Contractor Scams</category><category>Home Improvement</category><category>Hiring Guide</category>
+      <enclosure url="http://localhost:3000/images/blog/choosing-roofing-contractor-austin/hero-choosing-contractor.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[Emergency Roof Repair After a Storm: Complete Action Guide for Austin Homeowners]]></title>
+      <link>http://localhost:3000/blog/emergency-roof-repair-storm</link>
+      <guid isPermaLink="true">http://localhost:3000/blog/emergency-roof-repair-storm</guid>
+      <description><![CDATA[Storm damage your Austin roof? Take immediate action: safety first, emergency tarping, document damage, contact insurance within 24 hours. Complete step-by-step guide to protect your home and maximize insurance claim.]]></description>
+      <pubDate>Fri, 14 Nov 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Ripple Roofing Team</dc:creator>
+      <category>Emergency Repair</category>
+      <category>Emergency Repair</category><category>Storm Damage</category><category>Roof Tarping</category><category>Insurance Claims</category><category>Austin Storms</category><category>Hail Damage</category>
+      <enclosure url="http://localhost:3000/images/blog/emergency-roof-repair-storm/hero-storm-damage-repair.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[Metal vs Shingle Roofing in Austin: Complete 2025 Homeowner Comparison Guide]]></title>
+      <link>http://localhost:3000/blog/metal-vs-shingle-roofing-austin</link>
+      <guid isPermaLink="true">http://localhost:3000/blog/metal-vs-shingle-roofing-austin</guid>
+      <description><![CDATA[Austin homeowners: compare metal and asphalt shingle roofing costs, lifespan, energy savings, hail resistance, and resale value. Data-driven decision guide with ROI analysis.]]></description>
+      <pubDate>Fri, 14 Nov 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Ripple Roofing Team</dc:creator>
+      <category>Materials & Energy</category>
+      <category>Metal Roofing</category><category>Asphalt Shingles</category><category>Austin</category><category>Roof Comparison</category><category>Energy Savings</category><category>ROI Analysis</category>
+      <enclosure url="http://localhost:3000/images/blog/metal-vs-shingle-roofing-austin/hero-metal-shingle-comparison.png" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[Texas Roof Warranty Guide: Understanding 30-Year vs 50-Year Coverage (2025)]]></title>
+      <link>http://localhost:3000/blog/roof-warranty-guide-texas</link>
+      <guid isPermaLink="true">http://localhost:3000/blog/roof-warranty-guide-texas</guid>
+      <description><![CDATA[Decode roofing warranties in Texas. Learn what 30-year vs 50-year warranties actually cover, common exclusions, prorated vs non-prorated, and how to maximize your warranty protection.]]></description>
+      <pubDate>Fri, 14 Nov 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Ripple Roofing Team</dc:creator>
+      <category>Warranties & Protection</category>
+      <category>Roof Warranty</category><category>Texas</category><category>Warranty Coverage</category><category>Roofing Protection</category><category>Homeowner Guide</category>
+      <enclosure url="http://localhost:3000/images/blog/spring-hail-season-prep/roof-warranty-guide-texas.png" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[Solar Panel Roof Requirements Austin: Complete Guide for Texas Homeowners (2025)]]></title>
+      <link>http://localhost:3000/blog/solar-panel-roof-requirements-austin</link>
+      <guid isPermaLink="true">http://localhost:3000/blog/solar-panel-roof-requirements-austin</guid>
+      <description><![CDATA[Planning solar panels in Austin? Learn critical roof requirements: structure capacity, best materials, age considerations, orientation, and costs. Essential guide before solar installation.]]></description>
+      <pubDate>Fri, 14 Nov 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Ripple Roofing Team</dc:creator>
+      <category>Solar & Energy</category>
+      <category>Solar Panels</category><category>Austin</category><category>Roof Requirements</category><category>Solar Roofing</category><category>Energy Efficiency</category><category>Green Energy</category>
+      <enclosure url="http://localhost:3000/images/blog/solar-panel-roof-requirements-austin.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[Cedar Park Neighborhood Roofing Guide: Best Materials & Costs by HOA]]></title>
+      <link>http://localhost:3000/blog/cedar-park-neighborhoods-roofing-guide</link>
+      <guid isPermaLink="true">http://localhost:3000/blog/cedar-park-neighborhoods-roofing-guide</guid>
+      <description><![CDATA[Complete roofing guide for Cedar Park neighborhoods. Learn which materials work best in Buttercup Creek, Anderson Mill, Carriage Hills, and more. HOA requirements included.]]></description>
+      <pubDate>Wed, 12 Nov 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Ripple Roofing Team</dc:creator>
+      <category>Location Guides</category>
+      <category>Cedar Park</category><category>Neighborhoods</category><category>HOA</category><category>Local</category><category>Materials</category>
+      <enclosure url="http://localhost:3000/images/blog/cedar-park-neighborhoods.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[Commercial Roofing in Central Texas: Complete Guide for Business Owners]]></title>
+      <link>http://localhost:3000/blog/commercial-roofing-central-texas-guide</link>
+      <guid isPermaLink="true">http://localhost:3000/blog/commercial-roofing-central-texas-guide</guid>
+      <description><![CDATA[Comprehensive guide to commercial roofing systems, maintenance, costs, and best practices for Austin, San Antonio, and Central Texas businesses. Expert advice from certified contractors.]]></description>
+      <pubDate>Wed, 12 Nov 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Ripple Roofing Team</dc:creator>
+      <category>Commercial Roofing</category>
+      <category>Commercial Roofing</category><category>Business</category><category>TPO Roofing</category><category>Flat Roofs</category><category>Austin</category><category>San Antonio</category><category>Maintenance</category>
+      <enclosure url="http://localhost:3000/images/blog/commercial-roofing-central-texas.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[How to File a Roof Insurance Claim in Texas: Complete Step-by-Step Guide]]></title>
+      <link>http://localhost:3000/blog/roof-insurance-claim-guide-texas</link>
+      <guid isPermaLink="true">http://localhost:3000/blog/roof-insurance-claim-guide-texas</guid>
+      <description><![CDATA[Comprehensive guide to filing roof insurance claims in Texas after storm damage. Learn documentation requirements, adjuster tips, common denials, and how to maximize your coverage.]]></description>
+      <pubDate>Wed, 12 Nov 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Ripple Roofing Team</dc:creator>
+      <category>Insurance & Claims</category>
+      <category>Insurance Claims</category><category>Storm Damage</category><category>Hail Damage</category><category>Austin</category><category>Texas</category><category>Homeowners Insurance</category>
+      <enclosure url="http://localhost:3000/images/blog/roof-insurance-claim-texas.png" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[How Much Does a New Roof Cost in Austin & Central Texas? 2025 Pricing Guide]]></title>
+      <link>http://localhost:3000/blog/roof-replacement-cost-austin-texas-2025</link>
+      <guid isPermaLink="true">http://localhost:3000/blog/roof-replacement-cost-austin-texas-2025</guid>
+      <description><![CDATA[Complete 2025 pricing guide for roof replacement costs in Austin, San Antonio, and Central Texas. Real prices by home size, material type, and comprehensive cost breakdowns.]]></description>
+      <pubDate>Wed, 12 Nov 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Ripple Roofing Team</dc:creator>
+      <category>Cost Guides</category>
+      <category>Roof Cost</category><category>Pricing</category><category>Austin</category><category>San Antonio</category><category>Roof Replacement</category><category>Budget</category>
+      <enclosure url="http://localhost:3000/images/blog/roof-replacement-cost-austin-texas-2025.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[Winter Roofing in Texas: Can You Replace Your Roof in December, January & February?]]></title>
+      <link>http://localhost:3000/blog/winter-roofing-texas-guide</link>
+      <guid isPermaLink="true">http://localhost:3000/blog/winter-roofing-texas-guide</guid>
+      <description><![CDATA[Complete guide to winter roof replacement in Texas. Learn about benefits, challenges, cost savings, and why winter is actually ideal for roofing in Central Texas.]]></description>
+      <pubDate>Wed, 12 Nov 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Ripple Roofing Team</dc:creator>
+      <category>Seasonal Guides</category>
+      <category>Winter Roofing</category><category>Seasonal</category><category>Best Time</category><category>Austin</category><category>Cost Savings</category>
+      <enclosure url="http://localhost:3000/images/blog/winter-roofing-texas.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[Ultimate Austin Roofing Guide: Complete 2025 Resource for Every Neighborhood]]></title>
+      <link>http://localhost:3000/blog/austin-roofing-guide</link>
+      <guid isPermaLink="true">http://localhost:3000/blog/austin-roofing-guide</guid>
+      <description><![CDATA[]]></description>
+      <pubDate>Mon, 10 Nov 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Ripple Roofing & Construction</dc:creator>
+      <category>locations</category>
+      <category>Austin</category><category>roofing guide</category><category>roof replacement</category><category>Austin neighborhoods</category><category>local roofing</category>
+      <enclosure url="http://localhost:3000/api/blog-placeholder/austin-roofing-guide" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[Austin Storm Damage: Complete Guide to Insurance Claims & Emergency Repairs]]></title>
+      <link>http://localhost:3000/blog/austin-storm-damage-guide</link>
+      <guid isPermaLink="true">http://localhost:3000/blog/austin-storm-damage-guide</guid>
+      <description><![CDATA[Step-by-step guide to handling storm damage in Austin, TX. Learn how to file insurance claims, get emergency repairs, and avoid contractor scams.]]></description>
+      <pubDate>Mon, 10 Nov 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Jonathan - Ripple Roofing & Construction</dc:creator>
+      <category>Storm Damage</category>
+      <category>Austin</category><category>Storm Damage</category><category>Insurance Claims</category><category>Emergency Repairs</category>
+      <enclosure url="http://localhost:3000/images/blog/austin-storm-damage.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[Best Roofing Materials for Cedar Park, TX: Complete 2025 Guide]]></title>
+      <link>http://localhost:3000/blog/best-roofing-materials-cedar-park</link>
+      <guid isPermaLink="true">http://localhost:3000/blog/best-roofing-materials-cedar-park</guid>
+      <description><![CDATA[Compare roofing materials for Cedar Park homes. Learn which options handle Hill Country heat, hail, and winds best. Expert recommendations with cost breakdowns.]]></description>
+      <pubDate>Mon, 10 Nov 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Jonathan - Ripple Roofing & Construction</dc:creator>
+      <category>Roofing Materials</category>
+      <category>Cedar Park</category><category>Roofing Materials</category><category>Roof Replacement</category><category>Material Comparison</category>
+      <enclosure url="http://localhost:3000/api/blog-placeholder/best-roofing-materials-cedar-park" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[Best Roofing Materials for Georgetown, TX: Complete 2025 Guide]]></title>
+      <link>http://localhost:3000/blog/best-roofing-materials-georgetown</link>
+      <guid isPermaLink="true">http://localhost:3000/blog/best-roofing-materials-georgetown</guid>
+      <description><![CDATA[Expert comparison of roofing materials for Georgetown homes, including historic district requirements, hail resistance, and energy efficiency options.]]></description>
+      <pubDate>Mon, 10 Nov 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Jonathan - Ripple Roofing & Construction</dc:creator>
+      <category>Roofing Materials</category>
+      <category>Georgetown</category><category>Roofing Materials</category><category>Historic District</category><category>Impact Resistant</category>
+      <enclosure url="http://localhost:3000/images/blog/georgetown-roofing-materials.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[Georgetown Roofing Guide 2025: Historic Homes to New Development]]></title>
+      <link>http://localhost:3000/blog/georgetown-roofing-guide</link>
+      <guid isPermaLink="true">http://localhost:3000/blog/georgetown-roofing-guide</guid>
+      <description><![CDATA[]]></description>
+      <pubDate>Mon, 10 Nov 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Ripple Roofing & Construction</dc:creator>
+      <category>locations</category>
+      <category>Georgetown</category><category>roofing guide</category><category>historic homes</category><category>Sun City</category><category>Wolf Ranch</category>
+      <enclosure url="http://localhost:3000/api/blog-placeholder/georgetown-roofing-guide" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[Leander Storm Damage: Insurance Claims & Emergency Repair Guide]]></title>
+      <link>http://localhost:3000/blog/leander-storm-damage-guide</link>
+      <guid isPermaLink="true">http://localhost:3000/blog/leander-storm-damage-guide</guid>
+      <description><![CDATA[Complete guide to handling storm damage in Leander, TX. Learn how to file insurance claims, get emergency repairs, and navigate the recovery process after hail and wind damage.]]></description>
+      <pubDate>Mon, 10 Nov 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Jonathan - Ripple Roofing & Construction</dc:creator>
+      <category>Storm Damage</category>
+      <category>Leander</category><category>Storm Damage</category><category>Insurance Claims</category><category>Emergency Repairs</category><category>Hail Damage</category>
+      <enclosure url="http://localhost:3000/api/blog-placeholder/leander-storm-damage-guide" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[Complete Round Rock Roofing Guide: Everything Homeowners Need to Know in 2025]]></title>
+      <link>http://localhost:3000/blog/round-rock-roofing-guide</link>
+      <guid isPermaLink="true">http://localhost:3000/blog/round-rock-roofing-guide</guid>
+      <description><![CDATA[]]></description>
+      <pubDate>Mon, 10 Nov 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Ripple Roofing & Construction</dc:creator>
+      <category>locations</category>
+      <category>Round Rock</category><category>roofing guide</category><category>storm damage</category><category>roof replacement</category><category>local roofing</category>
+      <enclosure url="http://localhost:3000/api/blog-placeholder/round-rock-roofing-guide" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[Top 5 Roofing Problems in Austin, TX (And How to Solve Them)]]></title>
+      <link>http://localhost:3000/blog/top-5-roofing-problems-austin</link>
+      <guid isPermaLink="true">http://localhost:3000/blog/top-5-roofing-problems-austin</guid>
+      <description><![CDATA[Discover the most common roofing issues Austin homeowners face, from hail damage to oak tree hazards. Expert solutions from local roofing contractors.]]></description>
+      <pubDate>Mon, 10 Nov 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Jonathan - Ripple Roofing & Construction</dc:creator>
+      <category>Maintenance</category>
+      <category>Austin</category><category>Roof Repair</category><category>Storm Damage</category><category>Oak Trees</category>
+      <enclosure url="http://localhost:3000/images/blog/austin-roofing-problems.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[Top 5 Roofing Problems in Georgetown, TX (And How to Fix Them)]]></title>
+      <link>http://localhost:3000/blog/top-5-roofing-problems-georgetown</link>
+      <guid isPermaLink="true">http://localhost:3000/blog/top-5-roofing-problems-georgetown</guid>
+      <description><![CDATA[Discover the most common roofing issues Georgetown homeowners face, from hail damage to historic district requirements. Expert solutions from local contractors.]]></description>
+      <pubDate>Mon, 10 Nov 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Jonathan - Ripple Roofing & Construction</dc:creator>
+      <category>Maintenance</category>
+      <category>Georgetown</category><category>Roof Repair</category><category>Historic District</category><category>Storm Damage</category>
+      <enclosure url="http://localhost:3000/images/blog/georgetown-roofing-problems.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[Top 5 Roofing Problems in Pflugerville, TX (And How to Fix Them)]]></title>
+      <link>http://localhost:3000/blog/top-5-roofing-problems-pflugerville</link>
+      <guid isPermaLink="true">http://localhost:3000/blog/top-5-roofing-problems-pflugerville</guid>
+      <description><![CDATA[Discover the most common roofing issues Pflugerville homeowners face, from hail damage to heat stress. Expert solutions and prevention tips from local roofing professionals.]]></description>
+      <pubDate>Mon, 10 Nov 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Jonathan - Ripple Roofing & Construction</dc:creator>
+      <category>Maintenance</category>
+      <category>Pflugerville</category><category>Roof Repair</category><category>Maintenance</category><category>Common Problems</category>
+      <enclosure url="http://localhost:3000/api/blog-placeholder/top-5-roofing-problems-pflugerville" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[Top 5 Roofing Problems in Round Rock, TX (And How to Fix Them)]]></title>
+      <link>http://localhost:3000/blog/top-5-roofing-problems-round-rock</link>
+      <guid isPermaLink="true">http://localhost:3000/blog/top-5-roofing-problems-round-rock</guid>
+      <description><![CDATA[Discover the most common roofing issues Round Rock homeowners face, from hail damage to heat stress. Learn how to identify problems early and protect your investment.]]></description>
+      <pubDate>Mon, 10 Nov 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Jonathan - Ripple Roofing & Construction</dc:creator>
+      <category>Maintenance</category>
+      <category>Round Rock</category><category>Roof Repair</category><category>Storm Damage</category><category>Local Tips</category>
+      <enclosure url="http://localhost:3000/images/blog/round-rock-roofing.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[Bee Cave Roofing Contractors: Premium Home Roofing Services 2025]]></title>
+      <link>http://localhost:3000/blog/bee-cave-roofing-guide</link>
+      <guid isPermaLink="true">http://localhost:3000/blog/bee-cave-roofing-guide</guid>
+      <description><![CDATA[]]></description>
+      <pubDate>Mon, 20 Jan 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Ripple Roofs Team</dc:creator>
+      <category>General</category>
+      <category>Bee Cave</category><category>Premium Roofing</category><category>Hill Country</category><category>Contractors</category>
+      <enclosure url="http://localhost:3000/images/blog/bee-cave-roofing-guide.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[Lakeway Roofing Guide: Luxury Home Roofing Specialists 2025]]></title>
+      <link>http://localhost:3000/blog/lakeway-roofing-guide</link>
+      <guid isPermaLink="true">http://localhost:3000/blog/lakeway-roofing-guide</guid>
+      <description><![CDATA[]]></description>
+      <pubDate>Mon, 20 Jan 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Ripple Roofs Team</dc:creator>
+      <category>General</category>
+      <category>Lakeway</category><category>Luxury Roofing</category><category>Premium Contractors</category><category>Costs</category>
+      <enclosure url="http://localhost:3000/images/blog/lakeway-roofing-guide.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[Leander Roofing Guide: Neighborhoods, Costs & Top Contractors 2025]]></title>
+      <link>http://localhost:3000/blog/leander-roofing-guide</link>
+      <guid isPermaLink="true">http://localhost:3000/blog/leander-roofing-guide</guid>
+      <description><![CDATA[]]></description>
+      <pubDate>Sun, 19 Jan 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Ripple Roofs Team</dc:creator>
+      <category>General</category>
+      <category>Leander</category><category>Roofing Guide</category><category>Local Contractors</category><category>Costs</category>
+      <enclosure url="http://localhost:3000/images/blog/leander-roofing-guide.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[Pflugerville Roofing Guide: Best Contractors & Costs 2025]]></title>
+      <link>http://localhost:3000/blog/pflugerville-roofing-guide</link>
+      <guid isPermaLink="true">http://localhost:3000/blog/pflugerville-roofing-guide</guid>
+      <description><![CDATA[]]></description>
+      <pubDate>Sat, 18 Jan 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Ripple Roofs Team</dc:creator>
+      <category>General</category>
+      <category>Pflugerville</category><category>Roofing Guide</category><category>Local Contractors</category><category>Costs</category>
+      <enclosure url="http://localhost:3000/images/blog/pflugerville-roofing-guide.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[Roof Replacement Cost Calculator Austin: Estimate Your Project 2025]]></title>
+      <link>http://localhost:3000/blog/roof-replacement-cost-calculator-austin</link>
+      <guid isPermaLink="true">http://localhost:3000/blog/roof-replacement-cost-calculator-austin</guid>
+      <description><![CDATA[]]></description>
+      <pubDate>Fri, 17 Jan 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Ripple Roofs Team</dc:creator>
+      <category>General</category>
+      <category>Cost Guide</category><category>Austin</category><category>Roof Replacement</category><category>Calculator</category>
+      <enclosure url="http://localhost:3000/images/blog/roof-replacement-cost-austin-texas-2025.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[Emergency Roof Leak Repair Austin: 24/7 Service & What to Do Now]]></title>
+      <link>http://localhost:3000/blog/emergency-roof-leak-repair-austin</link>
+      <guid isPermaLink="true">http://localhost:3000/blog/emergency-roof-leak-repair-austin</guid>
+      <description><![CDATA[]]></description>
+      <pubDate>Thu, 16 Jan 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Ripple Roofs Team</dc:creator>
+      <category>General</category>
+      <category>Emergency Repair</category><category>Roof Leak</category><category>Austin</category><category>Storm Damage</category>
+      <enclosure url="http://localhost:3000/images/blog/austin-storm-damage.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[Roofing Financing Options Austin TX: 0% APR & Payment Plans 2025]]></title>
+      <link>http://localhost:3000/blog/roofing-financing-options-austin-tx</link>
+      <guid isPermaLink="true">http://localhost:3000/blog/roofing-financing-options-austin-tx</guid>
+      <description><![CDATA[]]></description>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Ripple Roofs Team</dc:creator>
+      <category>General</category>
+      <category>Financing</category><category>Austin</category><category>Roof Replacement</category><category>Payment Plans</category>
+      <enclosure url="http://localhost:3000/images/blog/austin-roofing-problems.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[5 Signs You Need a Roof Replacement in Central Texas]]></title>
+      <link>http://localhost:3000/blog/5-signs-roof-replacement-texas</link>
+      <guid isPermaLink="true">http://localhost:3000/blog/5-signs-roof-replacement-texas</guid>
+      <description><![CDATA[Learn the telltale signs that indicate it's time for a new roof. From age to storm damage, discover when repair isn't enough and replacement is necessary.]]></description>
+      <pubDate>Thu, 07 Nov 2024 00:00:00 GMT</pubDate>
+      <dc:creator>Ripple Roofing Team</dc:creator>
+      <category>Roof Maintenance</category>
+      <category>Roof Replacement</category><category>Maintenance Tips</category><category>Homeowner Guide</category>
+      <enclosure url="http://localhost:3000/images/blog/roof-replacement-signs.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[How to Prepare Your Roof for Texas Storm Season]]></title>
+      <link>http://localhost:3000/blog/texas-storm-season-preparation</link>
+      <guid isPermaLink="true">http://localhost:3000/blog/texas-storm-season-preparation</guid>
+      <description><![CDATA[Protect your home before severe weather strikes. Essential maintenance tasks and preparation steps every Texas homeowner should take for storm season.]]></description>
+      <pubDate>Tue, 05 Nov 2024 00:00:00 GMT</pubDate>
+      <dc:creator>Ripple Roofing Team</dc:creator>
+      <category>Storm Preparation</category>
+      <category>Storm Season</category><category>Maintenance</category><category>Prevention</category><category>Texas Weather</category>
+      <enclosure url="http://localhost:3000/images/blog/storm-preparation.jpg" type="image/jpeg"/>
+    </item>
+  </channel>
+</rss>
