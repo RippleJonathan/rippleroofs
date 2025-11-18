@@ -82,7 +82,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
     return {
       slug,
       title: data.title || '',
-      description: data.description || '',
+      description: data.description || data.excerpt || '',
       date: postDate,
       author: data.author || 'Ripple Roofing Team',
       category: data.category || 'General',
