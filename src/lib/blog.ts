@@ -103,9 +103,16 @@ export function getPostBySlug(slug: string): BlogPost | null {
     let imageUrl = data.image || ''
     
     if (imageUrl) {
-      // Try to find the best matching image file
-      const matchedImage = findBestMatchingImage(imageUrl)
-      imageUrl = matchedImage || generatePlaceholderImagePath(slug, data.title || slug)
+      // Check if exact file exists first (most common case)
+      const exactPath = path.join(process.cwd(), 'public', imageUrl)
+      if (fs.existsSync(exactPath)) {
+        // Exact file exists, use it directly
+        // (no need for fuzzy matching)
+      } else {
+        // Try fuzzy matching as fallback
+        const matchedImage = findBestMatchingImage(imageUrl)
+        imageUrl = matchedImage || generatePlaceholderImagePath(slug, data.title || slug)
+      }
     } else {
       // No image specified, use placeholder
       imageUrl = generatePlaceholderImagePath(slug, data.title || slug)
