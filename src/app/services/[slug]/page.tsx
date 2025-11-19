@@ -3816,6 +3816,72 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
                 </div>
               </div>
 
+              {/* Related Resources Section */}
+              {service.slug === 'roof-replacement' && (
+                <div className="bg-primary-50 rounded-2xl p-8 border-2 border-primary-100">
+                  <h2 className="text-2xl font-display font-bold text-primary-900 mb-4">
+                    📚 Helpful Roof Replacement Guides
+                  </h2>
+                  <p className="text-primary-700 mb-6">
+                    Learn more about roof replacement costs, materials, and what to expect:
+                  </p>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <Link href="/blog/roof-replacement-cost-austin-texas-2025" className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow border border-primary-200">
+                      <h3 className="font-bold text-primary-900 mb-2">💰 2025 Roof Replacement Costs</h3>
+                      <p className="text-sm text-primary-600">Complete pricing guide for Austin & Central Texas homes</p>
+                    </Link>
+                    <Link href="/blog/round-rock-roofing-guide" className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow border border-primary-200">
+                      <h3 className="font-bold text-primary-900 mb-2">📍 Round Rock Roofing Guide</h3>
+                      <p className="text-sm text-primary-600">Everything Round Rock homeowners need to know</p>
+                    </Link>
+                    <Link href="/blog/class-4-shingles-insurance-discounts-texas" className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow border border-primary-200">
+                      <h3 className="font-bold text-primary-900 mb-2">💵 Class 4 Insurance Discounts</h3>
+                      <p className="text-sm text-primary-600">Save 20-35% on insurance with impact-resistant shingles</p>
+                    </Link>
+                    <Link href="/blog/roof-replacement-vs-repair-guide" className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow border border-primary-200">
+                      <h3 className="font-bold text-primary-900 mb-2">🔧 Replace vs. Repair Guide</h3>
+                      <p className="text-sm text-primary-600">When to repair and when to replace your roof</p>
+                    </Link>
+                  </div>
+                </div>
+              )}
+
+              {service.slug === 'roof-inspection' && (
+                <div className="bg-primary-50 rounded-2xl p-8 border-2 border-primary-100">
+                  <h2 className="text-2xl font-display font-bold text-primary-900 mb-4">
+                    📚 Inspection & Maintenance Resources
+                  </h2>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <Link href="/blog/diy-roof-inspection-checklist" className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow border border-primary-200">
+                      <h3 className="font-bold text-primary-900 mb-2">✅ DIY Inspection Checklist</h3>
+                      <p className="text-sm text-primary-600">What to look for when checking your roof</p>
+                    </Link>
+                    <Link href="/blog/5-signs-roof-replacement-texas" className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow border border-primary-200">
+                      <h3 className="font-bold text-primary-900 mb-2">⚠️ 5 Signs You Need Replacement</h3>
+                      <p className="text-sm text-primary-600">Know when it's time for a new roof</p>
+                    </Link>
+                  </div>
+                </div>
+              )}
+
+              {service.slug === 'emergency-services' && (
+                <div className="bg-primary-50 rounded-2xl p-8 border-2 border-primary-100">
+                  <h2 className="text-2xl font-display font-bold text-primary-900 mb-4">
+                    📚 Storm Damage Resources
+                  </h2>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <Link href="/blog/austin-storm-damage-guide" className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow border border-primary-200">
+                      <h3 className="font-bold text-primary-900 mb-2">🌪️ Austin Storm Damage Guide</h3>
+                      <p className="text-sm text-primary-600">Insurance claims & emergency repair process</p>
+                    </Link>
+                    <Link href="/blog/roof-insurance-claim-guide-texas" className="block p-4 bg-white rounded-lg hover:shadow-md transition-shadow border border-primary-200">
+                      <h3 className="font-bold text-primary-900 mb-2">📋 Insurance Claim Guide</h3>
+                      <p className="text-sm text-primary-600">Step-by-step Texas insurance claim process</p>
+                    </Link>
+                  </div>
+                </div>
+              )}
+
               {/* CTA Section */}
               <div className="bg-accent-50 rounded-2xl p-8 border-2 border-accent-200">
                 <h2 className="text-2xl font-display font-bold text-primary-900 mb-4">
