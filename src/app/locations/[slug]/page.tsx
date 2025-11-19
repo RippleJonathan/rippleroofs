@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/Button'
 import { LocationFAQ } from '@/components/location/LocationFAQ'
 import { LOCATIONS, type LocationData } from '@/lib/locations'
 import { SERVICES, SITE_CONFIG } from '@/lib/constants'
+import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
 
 interface LocationPageProps {
   params: {
@@ -66,6 +67,15 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
 
   return (
     <main className="min-h-screen bg-white">
+      {/* Schema Markup */}
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: '/' },
+          { name: 'Locations', url: '/locations' },
+          { name: `${location.city}, ${location.state}`, url: `/locations/${params.slug}` },
+        ]}
+      />
+
       {/* Hero Section */}
       <section className="relative h-[500px] bg-primary-900">
         <div className="absolute inset-0 z-0">
