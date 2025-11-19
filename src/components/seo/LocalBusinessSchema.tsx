@@ -1,3 +1,5 @@
+import { BUSINESS_RATING } from '@/constants/business';
+
 export default function LocalBusinessSchema() {
   const schema = {
     '@context': 'https://schema.org',
@@ -77,10 +79,10 @@ export default function LocalBusinessSchema() {
     ],
     aggregateRating: {
       '@type': 'AggregateRating',
-      ratingValue: '5.0',
-      reviewCount: '87',
-      bestRating: '5',
-      worstRating: '1',
+      ratingValue: BUSINESS_RATING.ratingValue,
+      reviewCount: BUSINESS_RATING.reviewCount,
+      bestRating: BUSINESS_RATING.bestRating,
+      worstRating: BUSINESS_RATING.worstRating,
     },
     areaServed: [
       {
