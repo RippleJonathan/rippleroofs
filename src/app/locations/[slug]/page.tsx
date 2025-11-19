@@ -6577,6 +6577,12 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
             "@type": "LocalBusiness",
             "name": `Ripple Roofing & Construction - ${location.city}`,
             "image": "https://rippleroofs.com/images/logo.png",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": location.city,
+              "addressRegion": location.state,
+              "addressCountry": "US"
+            },
             "aggregateRating": {
               "@type": "AggregateRating",
               "ratingValue": "4.9",

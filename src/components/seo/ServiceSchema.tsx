@@ -38,13 +38,6 @@ export default function ServiceSchema({
         longitude: '-97.6789',
       },
       priceRange: '$$$',
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: '5.0',
-        reviewCount: '87',
-        bestRating: '5',
-        worstRating: '1',
-      },
       sameAs: [
         'https://www.facebook.com/rippleroofs',
         'https://www.instagram.com/ripple_roofing/',
