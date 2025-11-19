@@ -10,6 +10,7 @@ import { LocationFAQ } from '@/components/location/LocationFAQ'
 import { LOCATIONS, type LocationData } from '@/lib/locations'
 import { SERVICES, SITE_CONFIG } from '@/lib/constants'
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
+import { LOCATION_BLOG_POSTS, GENERIC_LOCATION_POSTS } from '@/lib/location-blog-mapping'
 
 interface LocationPageProps {
   params: {
@@ -315,6 +316,89 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
                   only materials rated for Texas's demanding climate.
                 </p>
               </div>
+
+              {/* Related Blog Resources */}
+              {(LOCATION_BLOG_POSTS[location.slug] || GENERIC_LOCATION_POSTS.length > 0) && (
+                <div>
+                  <h2 className="text-3xl font-display font-bold text-primary-900 mb-2">
+                    {location.city} Roofing Resources
+                  </h2>
+                  <p className="text-primary-600 mb-6">
+                    Expert guides and advice for {location.city} homeowners
+                  </p>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    {/* Location-specific blog posts */}
+                    {LOCATION_BLOG_POSTS[location.slug]?.map((post) => (
+                      <Link
+                        key={post.slug}
+                        href={`/blog/${post.slug}`}
+                        className="group bg-white rounded-xl shadow-md hover:shadow-xl transition-all p-6 border border-primary-100 hover:border-accent-500"
+                      >
+                        <div className="flex items-start justify-between mb-3">
+                          <span className="inline-block px-3 py-1 bg-accent-100 text-accent-700 text-xs font-semibold rounded-full">
+                            {post.category}
+                          </span>
+                          <svg 
+                            className="w-5 h-5 text-primary-400 group-hover:text-accent-600 group-hover:translate-x-1 transition-all" 
+                            fill="none" 
+                            viewBox="0 0 24 24" 
+                            stroke="currentColor"
+                          >
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                          </svg>
+                        </div>
+                        <h3 className="text-lg font-bold text-primary-900 mb-2 group-hover:text-accent-600 transition-colors">
+                          {post.title}
+                        </h3>
+                        <p className="text-sm text-primary-600 leading-relaxed">
+                          {post.description}
+                        </p>
+                      </Link>
+                    ))}
+                    
+                    {/* Generic helpful posts */}
+                    {GENERIC_LOCATION_POSTS.slice(0, 2).map((post) => (
+                      <Link
+                        key={post.slug}
+                        href={`/blog/${post.slug}`}
+                        className="group bg-white rounded-xl shadow-md hover:shadow-xl transition-all p-6 border border-primary-100 hover:border-accent-500"
+                      >
+                        <div className="flex items-start justify-between mb-3">
+                          <span className="inline-block px-3 py-1 bg-primary-100 text-primary-700 text-xs font-semibold rounded-full">
+                            {post.category}
+                          </span>
+                          <svg 
+                            className="w-5 h-5 text-primary-400 group-hover:text-accent-600 group-hover:translate-x-1 transition-all" 
+                            fill="none" 
+                            viewBox="0 0 24 24" 
+                            stroke="currentColor"
+                          >
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                          </svg>
+                        </div>
+                        <h3 className="text-lg font-bold text-primary-900 mb-2 group-hover:text-accent-600 transition-colors">
+                          {post.title}
+                        </h3>
+                        <p className="text-sm text-primary-600 leading-relaxed">
+                          {post.description}
+                        </p>
+                      </Link>
+                    ))}
+                  </div>
+                  
+                  <div className="mt-6 text-center">
+                    <Link 
+                      href="/blog"
+                      className="inline-flex items-center gap-2 text-accent-600 hover:text-accent-700 font-semibold"
+                    >
+                      View All Roofing Guides
+                      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
+                    </Link>
+                  </div>
+                </div>
+              )}
             </div>
 
             {/* Sidebar */}
