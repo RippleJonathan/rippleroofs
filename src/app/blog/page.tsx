@@ -7,6 +7,9 @@ import { BlogCategories } from '@/components/blog/BlogCategories'
 export const metadata: Metadata = {
   title: 'Roofing Blog & Resources',
   description: 'Expert roofing tips, maintenance guides, and industry insights from Central Texas roofing professionals. Learn about roof repairs, replacements, and more.',
+  alternates: {
+    canonical: 'https://rippleroofs.com/blog'
+  },
   openGraph: {
     title: 'Roofing Blog - Ripple Roofing & Construction',
     description: 'Expert roofing advice and resources for Texas homeowners',
