@@ -296,6 +296,475 @@ If you want immediate impact, write these first:
 
 ---
 
+## 🏗️ METAL ROOFING CONTENT STRATEGY (HIGH-MARGIN JOBS)
+
+### Why Metal Roofing Content Matters
+
+**Average Job Value:**
+- Asphalt shingles: $8,000-$15,000
+- Metal roofing: $20,000-$45,000 (2-3x higher)
+
+**Lead Quality:**
+- Metal buyers research extensively (more qualified)
+- Higher income demographic
+- Long-term investment mindset
+- Less price-sensitive
+
+**Current Assets:**
+✅ Metal vs Shingle Roofing Austin (comprehensive comparison)
+✅ Metal Roofing San Antonio (complete guide)
+
+**Gap Analysis:** Missing location-specific metal content for your core markets
+
+---
+
+### 🎯 Priority Metal Roofing Blog Posts
+
+#### Round Rock Metal Roofing Series
+
+**41. "Metal Roofing Round Rock: 2025 Complete Guide & Local Cost Analysis"**
+- **Target:** "metal roofing round rock" / "metal roof round rock tx"
+- **Search Intent:** Commercial (ready to buy/research)
+- **Content:**
+  - Round Rock-specific pricing (1,500 sq ft, 2,000 sq ft, 2,500 sq ft homes)
+  - HOA considerations (Teravista, Star Ranch, Heritage Grande metal restrictions)
+  - Local climate performance (hail damage data from 2024 storms)
+  - Energy savings in Round Rock heat (actual kWh reduction)
+  - Round Rock permit requirements and timeline
+  - Standing seam vs metal shingles vs corrugated (what works in Round Rock)
+  - Color choices for Texas sun (heat absorption data)
+  - Metal vs shingles lifetime cost comparison (30-year ROI)
+  - Local contractor certification (why Shingle Master matters for metal)
+  - Before/after photos of Round Rock metal projects
+- **CTAs:** Free metal roofing estimate, metal vs shingle calculator
+- **Internal Links:** Metal packages page, residential roofing, Round Rock location page
+- **Schema:** Article + FAQPage
+- **Target Length:** 2,500+ words
+
+**42. "Standing Seam Metal Roofing Round Rock: Is It Worth the Investment?"**
+- **Target:** "standing seam metal roof round rock" / "standing seam cost round rock"
+- **Search Intent:** Bottom-funnel (evaluating premium option)
+- **Content:**
+  - Standing seam vs exposed fastener cost breakdown
+  - Why standing seam lasts 50+ years (vs 30-40 for exposed)
+  - Expansion/contraction handling (critical in Texas heat)
+  - Oil canning prevention (professional installation matters)
+  - Best colors for Round Rock (heat reflection data)
+  - Hidden fastener advantages (no leak points)
+  - Round Rock homes where standing seam shines (modern, Hill Country, farmhouse)
+  - ROI calculation (upfront premium vs lifetime savings)
+  - Insurance discounts for metal roofing in Round Rock
+  - Warranty comparison (manufacturer + workmanship)
+- **CTAs:** Schedule metal roof consultation, view metal portfolio
+- **Internal Links:** Metal package, estimate tool, financing page
+- **Target Length:** 1,800+ words
+
+**43. "Round Rock Metal Roof Cost 2025: What You'll Actually Pay (Real Quotes)"**
+- **Target:** "metal roof cost round rock" / "metal roofing prices round rock"
+- **Search Intent:** High commercial intent (price shopping)
+- **Content:**
+  - Transparent pricing breakdown by home size
+  - Cost per square foot installed (Round Rock market rates)
+  - What affects price (pitch, complexity, current roof removal, decking repairs)
+  - Metal types cost comparison (steel vs aluminum vs copper)
+  - Standing seam: $1,200-$1,800/square installed
+  - Metal shingles: $1,000-$1,500/square installed
+  - Corrugated: $800-$1,200/square installed
+  - Financing options ($0 down, 0% APR for 12 months)
+  - Hidden costs to watch for (underlayment, flashing, ventilation)
+  - Cost vs value (why metal adds resale value)
+  - When to DIY vs hire pro (never for metal—too technical)
+  - Seasonal pricing (winter discounts)
+- **CTAs:** Get instant estimate, apply for financing
+- **Internal Links:** Financing page, estimate calculator, metal packages
+- **Target Length:** 2,000+ words
+
+**44. "Metal Roofing HOA Requirements Round Rock: Teravista, Star Ranch & More"**
+- **Target:** "metal roofing hoa round rock" / "teravista metal roof" / "star ranch metal roofing"
+- **Search Intent:** Research (HOA concerns blocking decision)
+- **Content:**
+  - HOA-friendly metal roofing options
+  - Which Round Rock neighborhoods allow metal (research-based)
+  - Stone-coated metal shingles (looks like traditional, performs like metal)
+  - Color restrictions by HOA (earth tones, architectural compatibility)
+  - How to get HOA approval (application process, required documentation)
+  - Case studies: Metal roofs approved in Round Rock HOAs
+  - Alternative solutions if metal prohibited (Class 4 shingles)
+  - Appeal process if initially denied
+- **CTAs:** Free HOA compatibility consultation
+- **Internal Links:** Round Rock location page, metal packages, shingle packages
+- **Target Length:** 1,500+ words
+
+#### Austin Metal Roofing Series
+
+**45. "Metal Roofing Austin: Complete 2025 Cost, Benefits & Neighborhood Guide"**
+- **Target:** "metal roofing austin" / "metal roof austin tx" / "austin metal roofer"
+- **Search Intent:** Commercial (ready to hire/research)
+- **Content:**
+  - Austin-specific climate challenges (urban heat island, hail alley)
+  - Metal roofing costs by Austin neighborhood (Tarrytown, Hyde Park, Westlake, Circle C)
+  - Energy savings in Austin heat (Austin Energy rebates available?)
+  - Modern aesthetic fit (where metal roofing looks best in Austin)
+  - Standing seam vs metal tile vs corrugated
+  - Austin building code requirements
+  - Historical district considerations (Hyde Park, Travis Heights)
+  - Metal roofing colors for Austin (solar reflectance index data)
+  - Noise concerns (insulation solutions for Austin homes)
+  - Lifetime cost vs asphalt shingles (30-year comparison)
+  - Top metal roofing contractors Austin (positioning without naming competitors)
+- **CTAs:** Free estimate, metal vs shingle calculator
+- **Internal Links:** Austin location page, metal packages, energy efficiency content
+- **Target Length:** 2,500+ words
+
+**46. "Standing Seam Metal Roofing Austin: Investment Guide for Modern Homes"**
+- **Target:** "standing seam metal roof austin" / "standing seam cost austin"
+- **Search Intent:** Bottom-funnel (premium buyer)
+- **Content:**
+  - Why Austin homeowners choose standing seam (modern aesthetic, energy efficiency)
+  - Cost breakdown for Austin homes (by square footage)
+  - Best neighborhoods for standing seam (modern builds, renovations)
+  - Color choices for Austin sun (cool roof technology)
+  - Installation timeline and living through it
+  - Warranty expectations (manufacturer + installer)
+  - Austin Energy efficiency incentives
+  - ROI for Austin climate (cooling cost savings data)
+  - Finding qualified Austin metal roofers (certifications matter)
+- **CTAs:** Schedule consultation, view Austin metal projects
+- **Internal Links:** Metal packages, Austin location, portfolio
+- **Target Length:** 1,800+ words
+
+#### Georgetown Metal Roofing Series
+
+**47. "Metal Roofing Georgetown TX: Heat-Resistant Solutions for Extreme Summers"**
+- **Target:** "metal roofing georgetown tx" / "metal roof georgetown"
+- **Search Intent:** Commercial (Georgetown gets HOT)
+- **Content:**
+  - Georgetown temperature extremes (I-35 corridor heat)
+  - Metal roofing energy savings in Georgetown (AC cost reduction)
+  - Best metal colors for heat reflection (white, light gray, tan)
+  - Cool metal roofing technology (ENERGY STAR rated)
+  - Georgetown home styles that suit metal (Hill Country, modern, farmhouse)
+  - Cost for typical Georgetown homes
+  - Metal vs tile comparison (both good for heat)
+  - Lake Georgetown area considerations (wind, exposure)
+  - Georgetown permit process
+  - Lifetime cost analysis (ROI in extreme heat)
+- **CTAs:** Free estimate, energy savings calculator
+- **Internal Links:** Georgetown location, metal packages
+- **Target Length:** 1,800+ words
+
+#### Cedar Park Metal Roofing Series
+
+**48. "Metal Roofing Cedar Park: Hail-Resistant Solutions for Storm Alley"**
+- **Target:** "metal roofing cedar park" / "metal roof cedar park tx"
+- **Search Intent:** Commercial (hail damage concerns)
+- **Content:**
+  - Cedar Park hail history (frequent hail zone)
+  - Metal roofing hail performance (dents vs fails)
+  - Insurance discounts for metal roofing in Cedar Park
+  - Dent-resistant metal options (thicker gauge, aluminum)
+  - Cost vs Class 4 shingles (comparison)
+  - Which neighborhoods get most hail (data-driven)
+  - Metal roofing after hail damage (insurance claim process)
+  - Lifetime cost in high-hail areas (fewer replacements = savings)
+  - Cedar Park HOA metal restrictions (Avery Ranch, etc.)
+- **CTAs:** Free hail damage inspection, metal estimate
+- **Internal Links:** Cedar Park location, storm damage hub, metal packages
+- **Target Length:** 1,800+ words
+
+#### Leander Metal Roofing Series
+
+**49. "Metal Roofing Leander TX: New Construction & Retrofit Guide"**
+- **Target:** "metal roofing leander" / "metal roof leander tx"
+- **Search Intent:** Commercial (new builds, upgrades)
+- **Content:**
+  - Metal roofing for new Leander construction (builder vs custom)
+  - Upgrading builder-grade to metal (when to do it)
+  - Leander new home subdivisions and metal compatibility
+  - Cost comparison: install during build vs retrofit
+  - Modern farmhouse trend in Leander (metal roofing aesthetic fit)
+  - Energy efficiency for new Leander homes
+  - Metal roofing warranty for new construction
+  - Financing options for new homeowners
+- **CTAs:** New construction quote, builder partnerships
+- **Internal Links:** Leander location, metal packages, financing
+- **Target Length:** 1,500+ words
+
+---
+
+### 🔥 Technical Deep-Dive Metal Posts (Establish Authority)
+
+**50. "Metal Roofing in Texas Heat: Complete Performance & Energy Savings Guide"**
+- **Target:** "metal roofing texas heat" / "metal roof energy savings texas"
+- **Search Intent:** Research (concerned about heat performance)
+- **Content:**
+  - Thermal emissivity explained (why metal stays cooler)
+  - Cool metal roofing technology (reflective coatings)
+  - Energy savings data (real Texas case studies)
+  - Color choices and solar reflectance index (SRI)
+  - Radiant barrier underlayment (boosts performance)
+  - Attic temperature comparison (metal vs shingles)
+  - AC load reduction (kWh savings)
+  - Payback period for energy savings
+  - ENERGY STAR metal roofing options
+  - Summer installation considerations
+- **CTAs:** Energy savings calculator, free estimate
+- **Internal Links:** Energy efficiency content, metal packages
+- **Target Length:** 2,200+ words
+
+**51. "Metal Roofing Hail Damage Texas: What Happens & How to Handle Insurance"**
+- **Target:** "metal roofing hail damage" / "metal roof hail damage insurance"
+- **Search Intent:** Problem-solving (existing damage or prevention)
+- **Content:**
+  - How metal roofing performs in hail (dents vs failures)
+  - Cosmetic vs functional damage (when to claim)
+  - Insurance coverage for metal roofs (Texas policies)
+  - Claim process for metal roofing (documentation needed)
+  - Repairing vs replacing metal after hail
+  - Paintless dent repair for metal roofs
+  - Preventing hail damage (thicker gauge, aluminum)
+  - Impact-resistant metal options
+  - Insurance discounts for metal roofing
+  - When to upgrade from shingles to metal after storm
+- **CTAs:** Free hail damage inspection, insurance claim assistance
+- **Internal Links:** Storm damage hub, metal packages, insurance content
+- **Target Length:** 2,000+ words
+
+**52. "Standing Seam vs Exposed Fastener Metal Roofing: Complete Texas Comparison"**
+- **Target:** "standing seam vs exposed fastener" / "metal roofing types texas"
+- **Search Intent:** Research (deciding between metal types)
+- **Content:**
+  - Standing seam mechanics (hidden clips, expansion allowance)
+  - Exposed fastener mechanics (screws through panels)
+  - Lifespan comparison (50+ years vs 30-40 years)
+  - Cost difference ($400-600/square premium for standing seam)
+  - Leak potential (fasteners = weak points)
+  - Aesthetic differences (clean lines vs industrial)
+  - Best applications (standing seam = homes, exposed = barns/commercial)
+  - Installation complexity (standing seam requires expertise)
+  - Warranty differences
+  - ROI analysis (is standing seam worth it?)
+- **CTAs:** Metal roofing consultation, estimate
+- **Internal Links:** Metal packages, technical resources
+- **Target Length:** 2,000+ words
+
+**53. "Metal Roofing Colors Texas: Heat Reflection, Fading & Aesthetic Guide"**
+- **Target:** "best metal roof color texas" / "metal roofing colors heat"
+- **Search Intent:** Research (color selection concerns)
+- **Content:**
+  - Solar reflectance index (SRI) by color
+  - Heat absorption data (white vs dark colors)
+  - Energy savings by color choice
+  - Fading resistance (Kynar 500 vs cheaper coatings)
+  - Popular colors in Central Texas (regional aesthetics)
+  - HOA-friendly colors
+  - Resale value by color (neutrals vs bold)
+  - Color warranty (paint fade guarantees)
+  - Cool roof technology coatings
+  - Before/after color examples (Texas homes)
+- **CTAs:** Color visualizer tool, estimate
+- **Internal Links:** Metal packages, design resources
+- **Target Length:** 1,800+ words
+
+**54. "Metal Roofing Lifespan Texas: How Long Will Your Metal Roof Last?"**
+- **Target:** "metal roof lifespan texas" / "how long does metal roof last"
+- **Search Intent:** Research (ROI evaluation)
+- **Content:**
+  - Expected lifespan by metal type (steel, aluminum, copper, zinc)
+  - Texas climate impact on lifespan (heat, UV, hail)
+  - Standing seam: 50-70 years
+  - Metal shingles: 40-60 years
+  - Exposed fastener: 30-40 years
+  - Factors affecting lifespan (installation quality, maintenance, coating)
+  - Warranty vs actual lifespan
+  - Lifetime cost comparison (metal vs 2-3 asphalt roofs)
+  - Maintenance to maximize lifespan
+  - When to replace metal roofing (rare)
+- **CTAs:** Lifetime cost calculator, estimate
+- **Internal Links:** Metal packages, warranty info
+- **Target Length:** 1,800+ words
+
+**55. "Metal Roofing Installation Texas: What to Expect & How to Avoid Bad Contractors"**
+- **Target:** "metal roofing installation texas" / "metal roofing contractor texas"
+- **Search Intent:** Commercial (ready to hire, vetting contractors)
+- **Content:**
+  - Metal roofing installation process (step-by-step)
+  - Timeline expectations (3-7 days)
+  - Living through installation (noise, access, disruption)
+  - Contractor qualifications needed (certifications)
+  - Red flags (storm chasers, no metal experience)
+  - Questions to ask contractors
+  - Common installation mistakes (over-tightening, wrong fasteners, no expansion)
+  - Quality checks (what good installation looks like)
+  - Warranty importance (workmanship + materials)
+  - Cost of bad installation (repairs, early failure)
+- **CTAs:** Free consultation, verify our certifications
+- **Internal Links:** About us, certifications, portfolio
+- **Target Length:** 2,200+ words
+
+---
+
+### 🏘️ Neighborhood-Specific Metal Posts (Hyperlocal SEO)
+
+**56. "Avery Ranch Metal Roofing: HOA Guidelines & Modern Home Solutions"**
+- **Target:** "avery ranch metal roofing" / "metal roof avery ranch"
+- **Content:** HOA requirements, approved colors/styles, modern aesthetic fit
+
+**57. "Teravista Metal Roofing: What Round Rock Homeowners Should Know"**
+- **Target:** "teravista metal roofing"
+- **Content:** HOA restrictions, stone-coated alternatives, cost for typical Teravista homes
+
+**58. "Lakeway Metal Roofing: Premium Solutions for Lake Travis Homes"**
+- **Target:** "lakeway metal roofing" / "metal roof lakeway tx"
+- **Content:** Wind resistance, premium market positioning, Hill Country aesthetic
+
+---
+
+### 📊 Metal Roofing Content Hub Page
+
+**NEW: Create `/hubs/metal-roofing` Content Hub**
+
+Similar to your Austin/Materials/Storm hubs, create a dedicated **Metal Roofing Hub** page:
+
+**Structure:**
+- Hero: "Central Texas Metal Roofing Resource Center"
+- Section 1: Cost & Pricing (filter metal cost posts)
+- Section 2: Location Guides (filter metal + location posts)
+- Section 3: Types & Comparison (standing seam, exposed fastener, etc.)
+- Section 4: Performance & Benefits (energy, hail, lifespan)
+- CTAs: Metal estimate, schedule consultation, view metal portfolio
+- Internal links: All metal posts, metal packages, projects
+
+**SEO Value:**
+- Ranks for "metal roofing central texas", "metal roofing guide"
+- Establishes topical authority
+- Hub for all metal content
+- Internal linking powerhouse
+
+---
+
+### 📅 Metal Roofing Content Calendar (Next 90 Days)
+
+**Month 1:**
+- Week 1: Metal Roofing Round Rock (complete guide) [Priority #1]
+- Week 2: Metal Roofing Austin (complete guide)
+- Week 3: Standing Seam Metal Roofing Round Rock
+- Week 4: Round Rock Metal Roof Cost 2025
+
+**Month 2:**
+- Week 1: Metal Roofing in Texas Heat (technical authority)
+- Week 2: Metal Roofing Cedar Park (hail focus)
+- Week 3: Standing Seam vs Exposed Fastener (comparison)
+- Week 4: Metal Roofing Georgetown (heat focus)
+
+**Month 3:**
+- Week 1: Metal Roofing Hail Damage Texas
+- Week 2: Metal Roofing Colors Texas
+- Week 3: Metal Roofing Installation Texas
+- Week 4: Metal Roofing Lifespan Texas
+
+**Month 4:**
+- Create Metal Roofing Hub page
+- Hyperlocal posts (Avery Ranch, Teravista, Lakeway)
+
+---
+
+### 🎯 Metal Roofing Keyword Strategy
+
+**High-Volume Head Terms** (Competitive but high value):
+- "metal roofing round rock" (500-1000/mo)
+- "metal roofing austin" (1000-2500/mo)
+- "metal roof cost" (2500-5000/mo)
+- "standing seam metal roof" (5000-10000/mo)
+
+**Money Keywords** (High Commercial Intent):
+- "metal roofing cost [city]"
+- "metal roofing contractors [city]"
+- "standing seam metal roof [city]"
+- "metal roof estimate [city]"
+- "metal roofing companies [city]"
+
+**Long-Tail Keywords** (Easier to rank, qualified traffic):
+- "is metal roofing worth it in texas"
+- "metal roofing energy savings texas"
+- "standing seam vs exposed fastener metal roof"
+- "best metal roof color for texas heat"
+- "metal roofing hail damage insurance claim"
+- "metal roofing hoa requirements round rock"
+
+**Informational Keywords** (Top-of-funnel, builds authority):
+- "how long does metal roof last texas"
+- "metal roofing pros and cons texas"
+- "metal roof vs shingles texas"
+- "metal roofing types comparison"
+
+---
+
+### 💰 Expected ROI from Metal Roofing Content
+
+**Conservative Projections (12 months):**
+- 15 metal roofing blog posts published
+- Ranking top 5 for 25-40 metal + location keywords
+- 200-400 monthly organic visits to metal content
+- 10-20 metal roofing leads per month
+- Close rate: 20-30% (qualified, high-intent leads)
+- 2-6 metal roofing jobs per month from content
+- Average metal job: $30,000
+- Monthly revenue from metal content: $60,000-$180,000
+- Annual revenue: $720,000-$2,160,000
+
+**Investment:**
+- Content creation: 15 posts × $300-500 (if outsourced) = $4,500-$7,500
+- OR: Your time writing (15 posts × 4 hours = 60 hours)
+- ROI: 96x to 288x return (if outsourced)
+
+---
+
+### ✅ Metal Roofing Content Checklist
+
+Before publishing each metal post:
+- [ ] Target metal + location keyword in title & H1
+- [ ] Include real cost data (transparent pricing)
+- [ ] Compare metal types (standing seam, exposed, shingles)
+- [ ] Address common objections (cost, noise, denting)
+- [ ] Emphasize energy savings (kWh reduction)
+- [ ] Include lifetime ROI calculation
+- [ ] Link to metal packages page
+- [ ] Link to relevant location pages
+- [ ] Add CTAs for estimate + consultation
+- [ ] Include local photos (Texas homes with metal)
+- [ ] Address HOA concerns (where relevant)
+- [ ] Schema markup (Article + FAQPage if applicable)
+- [ ] 1,800+ words minimum
+- [ ] Mobile-friendly formatting
+
+---
+
+## 🚀 PRIORITY ACTION PLAN: Metal Content
+
+**This Week:**
+1. Write "Metal Roofing Round Rock" complete guide
+2. Update homepage to mention metal roofing prominently
+3. Create metal roofing service page (if doesn't exist)
+
+**Next 2 Weeks:**
+4. Write "Standing Seam Metal Roofing Round Rock"
+5. Write "Round Rock Metal Roof Cost 2025"
+6. Create metal roofing photo gallery (portfolio page)
+
+**Next 30 Days:**
+7. Write 3 more location metal posts (Austin, Cedar Park, Georgetown)
+8. Create Metal Roofing Hub page
+9. Add metal CTAs to existing blog posts
+
+**Success Metrics:**
+- Track rankings for "metal roofing [city]" keywords
+- Monitor metal estimate form submissions
+- Measure metal content traffic growth
+- Track metal job close rate from organic leads
+
+---
+
 ## 💡 Pro Tips for Maximum Impact
 
 ### Internal Linking
