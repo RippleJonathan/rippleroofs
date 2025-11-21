@@ -765,6 +765,451 @@ Before publishing each metal post:
 
 ---
 
+## 🏆 STONE-COATED STEEL METAL ROOFING STRATEGY (Premium Niche)
+
+### Why Stone-Coated Steel Metal Roofing Matters
+
+**Market Position:**
+Stone-coated steel metal roofing is the **"best of both worlds"** product that solves the #1 objection to metal roofing: aesthetics. It looks like traditional tile or shingles but performs like metal.
+
+**Search Volume & Competition Analysis:**
+
+**National Keywords:**
+- "stone coated steel roofing" - 1,000-2,500/month (medium competition)
+- "stone coated metal roof" - 500-1,000/month (low-medium competition)
+- "stone coated steel shingles" - 200-500/month (low competition)
+- "decra roofing" - 500-1,000/month (brand-specific)
+- "metro tiles roofing" - 200-500/month (brand-specific)
+
+**Local Keywords (Round Rock/Austin/Central Texas):**
+- "stone coated metal roof [city]" - 10-50/month each (very low competition)
+- "stone coated steel roofing [city]" - 10-30/month each (virtually no competition)
+- "decra roofing [city]" - 5-20/month (brand searches)
+
+**Why This Is a GOLDMINE:**
+1. **Low Competition** - Very few contractors target this specifically
+2. **High Intent** - Searchers already know what they want (bottom-funnel)
+3. **Premium Price Point** - $12-18/sf (similar to standing seam)
+4. **HOA Solution** - Solves metal restriction problem
+5. **Wealthy Demographic** - Homeowners researching premium options
+
+**Market Opportunity:**
+- Virtually ZERO local content for "stone coated metal roof round rock"
+- Only 2-3 competitors even mention it in Central Texas
+- Easy to dominate this niche with focused content
+- Can rank #1-3 within 30-60 days
+
+### Stone-Coated Steel Blog Post Strategy
+
+#### Priority #1: Foundational Guide
+
+**59. "Stone-Coated Steel Metal Roofing: Complete Texas Guide, Costs & Benefits"**
+- **Target:** "stone coated steel roofing", "stone coated metal roof"
+- **Search Intent:** Research/Commercial (evaluating premium option)
+- **Content Structure:**
+  - What is stone-coated steel roofing (steel + stone granule coating)
+  - How it's different from standing seam and asphalt shingles
+  - Major brands: Decra, Metro Tiles, Boral, Gerard
+  - Lifespan: 40-60 years (longer than shingles, competitive with standing seam)
+  - Cost: $12-18/sf installed (similar to standing seam)
+  - Pros: Traditional aesthetic, HOA-friendly, quieter than bare metal, Class 4 hail rating
+  - Cons: More expensive than asphalt, heavier than standing seam, limited installers
+  - Texas climate performance (heat, hail, wind)
+  - Energy savings (stone coating reflects heat)
+  - Installation process and timeline
+  - Warranty expectations (50-year material, 30-year coating)
+  - Maintenance requirements (minimal)
+  - Best home styles (Mediterranean, Spanish, Tuscan, traditional)
+  - ROI analysis vs asphalt and standing seam
+  - Finding qualified installers (must be trained on stone-coated systems)
+  - 10-12 detailed FAQs
+- **CTAs:** Free estimate, material comparison tool, portfolio
+- **Internal Links:** Metal hub, metal packages, cost comparison content
+- **Target Length:** 2,500-3,000 words
+- **Schema:** Article + FAQPage
+
+**Expected Impact:**
+- Rank #1-3 for "stone coated steel roofing" (national)
+- Rank #1-2 for all local variations
+- 100-200 monthly visits within 90 days
+- 3-6 qualified leads/month (high close rate)
+- 1-2 jobs/month = $30k-60k monthly revenue
+
+#### Priority #2: Location-Specific Deep Dive
+
+**60. "Stone-Coated Metal Roofing Round Rock: HOA-Approved Metal Alternative"**
+- **Target:** "stone coated metal roof round rock", "decra roofing round rock"
+- **Search Intent:** Bottom-funnel (solving HOA restriction problem)
+- **Content:**
+  - WHY stone-coated metal is perfect for Round Rock HOAs
+  - Heritage Grande approved options (specific to neighborhood)
+  - Winding Creek architectural guidelines (stone-coated fits)
+  - Forest Creek traditional style compatibility
+  - Cost for typical Round Rock homes (by size)
+  - Available profiles: Tile, shake, shingle appearance
+  - Colors approved by most Round Rock HOAs
+  - Energy savings in Round Rock summer heat
+  - Hail performance (Round Rock's frequent storms)
+  - Local installation timeline
+  - Round Rock permit requirements
+  - Case studies: Round Rock homes with stone-coated metal
+  - How to get HOA approval (step-by-step process)
+  - Comparison to Class 4 shingles (cost vs performance)
+  - Financing options for Round Rock homeowners
+  - Finding certified installers in Williamson County
+- **CTAs:** Free HOA compatibility consultation, estimate
+- **Internal Links:** Round Rock location, metal hub, HOA content
+- **Target Length:** 2,000-2,500 words
+
+**Expected Impact:**
+- Rank #1 for "stone coated metal roof round rock" (virtually no competition)
+- Capture HOA-restricted homeowners who want metal
+- 20-40 monthly visits
+- 2-4 leads/month (very qualified)
+- Higher close rate (solving specific pain point)
+
+#### Priority #3: Brand-Specific Content
+
+**61. "Decra Roofing Texas: Stone-Coated Steel Metal Tile Guide & Costs"**
+- **Target:** "decra roofing texas", "decra metal roof", "decra tile roofing"
+- **Search Intent:** Brand research (bottom-funnel)
+- **Content:**
+  - Decra history and reputation (New Zealand company, 60+ years)
+  - Decra product lines: Villa Tile, Shake, Shingle
+  - Why Decra is premium choice (thickest steel, best coating)
+  - Decra vs competitors (Gerard, Metro Tiles, Boral)
+  - Cost: $14-20/sf installed in Texas
+  - Texas-specific performance data
+  - Decra warranty: 50-year material, 30-year coating
+  - Decra-certified installers in Central Texas
+  - Decra colors and profiles available
+  - Installation requirements (must use certified contractor)
+  - Real Texas Decra projects (before/after)
+  - Decra financing options
+  - How to verify authentic Decra (avoid knockoffs)
+  - Decra maintenance (minimal)
+- **CTAs:** Free Decra estimate, view Decra portfolio
+- **Internal Links:** Stone-coated content, metal hub
+- **Target Length:** 1,800-2,200 words
+
+**Expected Impact:**
+- Rank top 5 for "decra roofing texas"
+- Capture brand-loyal searchers
+- 30-60 monthly visits
+- Very high close rate (already sold on product)
+
+**62. "Metro Tiles Roofing: Stone-Coated Steel Metal Tile for Texas Homes"**
+- Similar structure to Decra post
+- Target: "metro tiles roofing", "metro roof tiles"
+- Focus on Metro Tiles' unique benefits (lighter weight, more color options)
+
+**63. "Gerard Roofing Texas: Stone-Coated Steel Shake & Tile Guide"**
+- Similar structure
+- Target: "gerard roofing texas", "gerard stone coated steel"
+- Focus on Gerard's shake profiles (wood shake appearance)
+
+#### Priority #4: Comparison Posts (High Commercial Intent)
+
+**64. "Stone-Coated Metal Roof vs Tile: Texas Homeowner Comparison"**
+- **Target:** "stone coated metal vs tile", "metal tile vs concrete tile"
+- **Search Intent:** Comparison shopping (ready to decide)
+- **Content:**
+  - Side-by-side comparison table
+  - Weight: Stone-coated 1.5 lbs/sf vs concrete tile 9-12 lbs/sf (structural advantage)
+  - Cost: Stone-coated $12-18/sf vs tile $15-25/sf (comparable or cheaper)
+  - Lifespan: Stone-coated 40-60 years vs tile 50-100 years
+  - Hail resistance: Stone-coated excellent vs tile cracks/breaks
+  - Installation: Stone-coated 4-6 days vs tile 7-10 days
+  - Maintenance: Stone-coated minimal vs tile replace broken tiles
+  - Energy efficiency: Stone-coated good vs tile excellent (thermal mass)
+  - Aesthetics: Stone-coated mimics tile vs tile authentic
+  - Resale value: Both premium
+  - When to choose stone-coated vs tile
+  - Cost over 30 years (lifetime analysis)
+- **CTAs:** Material comparison tool, estimate
+- **Internal Links:** Tile content (if exists), metal hub, stone-coated guide
+- **Target Length:** 2,000 words
+
+**65. "Stone-Coated Metal Roof vs Standing Seam: Which Metal Is Best?"**
+- **Target:** "stone coated metal vs standing seam"
+- **Content:**
+  - Both are metal, both last 40-70 years
+  - Stone-coated: Traditional look, heavier, quieter, more expensive
+  - Standing seam: Modern look, lighter, louder, similar cost
+  - HOA considerations (stone-coated more flexible)
+  - Installation complexity (both require expertise)
+  - Maintenance (standing seam slight edge)
+  - When to choose each option
+- **Target Length:** 1,800 words
+
+**66. "Stone-Coated Metal Roof vs Asphalt Shingles: Worth the Premium?"**
+- **Target:** "stone coated metal vs shingles"
+- **Content:**
+  - Upfront cost: Stone-coated 2-3x more
+  - Lifespan: Stone-coated 40-60 years vs shingles 20-30 years
+  - Lifetime cost: Stone-coated cheaper over 30+ years
+  - Energy savings: Stone-coated 15-25% cooling reduction
+  - Hail resistance: Stone-coated Class 4 (superior)
+  - ROI analysis with Texas-specific numbers
+  - When premium is worth it (long-term ownership)
+- **Target Length:** 2,000 words
+
+#### Priority #5: Technical Deep-Dive (Authority Building)
+
+**67. "How Stone-Coated Steel Roofing Is Made: Manufacturing Process Explained"**
+- **Target:** "stone coated steel roofing manufacturing", "how is stone coated metal made"
+- **Content:**
+  - Steel substrate (Galvalume or Zincalume)
+  - Acrylic base coat application
+  - Stone granule embedment (basalt rock chips)
+  - Acrylic overglaze (seals granules)
+  - Baking/curing process
+  - Quality control testing (impact, wind, UV)
+  - Why this process creates superior product
+  - Comparison to asphalt shingle manufacturing
+  - Environmental benefits (recyclable steel core)
+- **Target Length:** 1,500-2,000 words
+- **Link Worthy:** Educational content other sites will reference
+
+**68. "Stone-Coated Steel Roof Installation Guide: What Contractors Need to Know"**
+- **Target:** "stone coated steel roofing installation", "how to install stone coated metal"
+- **Content:**
+  - Certification requirements (brand-specific training)
+  - Substrate preparation (solid decking required)
+  - Underlayment requirements (high-temp synthetic)
+  - Panel layout and cutting (avoid granule loss)
+  - Fastening techniques (different from shingles and standing seam)
+  - Flashing details (critical for waterproofing)
+  - Ridge and hip cap installation
+  - Valley treatments
+  - Common installation mistakes (and how to avoid)
+  - Quality control checklist
+  - Timeline expectations
+  - Tools required (specialized cutting tools)
+- **Target Length:** 2,200-2,500 words
+- **Dual Audience:** Homeowners vetting contractors + contractors seeking knowledge
+
+**69. "Stone-Coated Steel Roof Warranty Guide: What's Really Covered"**
+- **Target:** "stone coated metal roof warranty"
+- **Content:**
+  - Material warranty (50 years typical)
+  - Coating warranty (30 years typical)
+  - What's covered: Manufacturing defects, corrosion, coating adhesion
+  - What's NOT covered: Hail dents (cosmetic), improper installation, acts of God
+  - Transferability (usually yes, with conditions)
+  - Prorated vs non-prorated
+  - Workmanship warranty (separate, from contractor)
+  - How to file warranty claim
+  - Warranty registration importance (30-60 days)
+  - Comparing warranties: Decra vs Gerard vs Metro Tiles
+- **Target Length:** 1,600-2,000 words
+
+#### Priority #6: Visual/Educational Content
+
+**70. "Stone-Coated Metal Roof Colors: Complete Visual Guide for Texas"**
+- **Target:** "stone coated metal roof colors"
+- **Content:**
+  - Available color families (earth tones, grays, reds, blues)
+  - Decra color palette (12-15 options)
+  - Gerard color options
+  - Metro Tiles colors
+  - Best colors for Texas heat (lighter = cooler)
+  - HOA-friendly colors (neutrals, earth tones)
+  - Color fade warranties (30 years typical)
+  - Matching existing home colors
+  - Popular color trends in Central Texas
+  - Before/after color examples (Texas homes)
+  - Color selection process (samples, visualizers)
+- **Visual Heavy:** Photo gallery of each color on real homes
+- **Target Length:** 1,200-1,500 words
+
+**71. "Stone-Coated Metal Roof Profiles: Tile vs Shake vs Shingle Styles"**
+- **Target:** "stone coated metal roof profiles", "stone coated metal styles"
+- **Content:**
+  - Tile profile (Mediterranean, Spanish, Tuscan)
+  - Shake profile (cedar shake appearance)
+  - Shingle profile (dimensional shingle look)
+  - Smooth vs textured finishes
+  - Best profile for home style
+  - Cost differences by profile
+  - Installation complexity by profile
+  - Weight differences
+  - Popular profiles in Central Texas
+- **Visual Heavy:** Side-by-side profile comparisons
+- **Target Length:** 1,500-1,800 words
+
+### Stone-Coated Steel Content Hub Integration
+
+**Update Metal Roofing Hub** (`/hubs/metal-roofing`) to include:
+- New section: "Stone-Coated Steel Resources"
+- Filter stone-coated posts separately
+- Highlight HOA-friendly benefit
+- Link to brand-specific guides
+
+**OR Create Separate Hub:** `/hubs/stone-coated-metal-roofing`
+- Smaller niche, more focused
+- All stone-coated content in one place
+- Better for topical authority on this specific product
+
+### Stone-Coated Steel Keyword Strategy
+
+**Money Keywords (High Commercial Intent):**
+- "stone coated steel roofing [city]" - Easy to rank #1
+- "stone coated metal roof cost [city]" - High intent
+- "decra roofing [city]" - Brand loyal buyers
+- "stone coated steel roofing contractors [city]" - Ready to hire
+- "hoa approved metal roofing [city]" - Solving pain point
+
+**Informational Keywords (Top of Funnel):**
+- "what is stone coated steel roofing"
+- "stone coated metal vs standing seam"
+- "stone coated metal roof pros and cons"
+- "how long does stone coated metal roof last"
+- "stone coated metal roof hail damage"
+
+**Brand Keywords (Bottom Funnel):**
+- "decra roofing texas"
+- "metro tiles roofing central texas"
+- "gerard roofing round rock"
+- "[brand] certified installer [city]"
+
+### Content Calendar: Stone-Coated Steel Focus
+
+**Month 1:**
+- Week 1: Stone-Coated Steel Metal Roofing (foundational guide) ⭐ START HERE
+- Week 2: Stone-Coated Metal Roofing Round Rock (local + HOA focus)
+- Week 3: Stone-Coated Metal vs Tile (comparison)
+- Week 4: Stone-Coated Metal vs Standing Seam (comparison)
+
+**Month 2:**
+- Week 1: Decra Roofing Texas (brand-specific)
+- Week 2: Stone-Coated Metal Roof Colors (visual guide)
+- Week 3: Stone-Coated Metal vs Asphalt Shingles (ROI focus)
+- Week 4: Stone-Coated Steel Roof Warranty Guide
+
+**Month 3:**
+- Week 1: Metro Tiles Roofing (brand-specific)
+- Week 2: Stone-Coated Metal Roof Profiles (visual guide)
+- Week 3: Stone-Coated Steel Roof Installation Guide (technical)
+- Week 4: Gerard Roofing Texas (brand-specific)
+
+### Expected ROI: Stone-Coated Steel Content
+
+**Conservative Projections (6-12 months):**
+- 10-12 stone-coated steel blog posts published
+- Ranking #1-5 for 20-30 stone-coated keywords
+- 150-300 monthly organic visits to stone-coated content
+- 5-10 stone-coated metal roofing leads per month
+- Close rate: 30-40% (very qualified, niche leads)
+- 2-4 stone-coated jobs per month
+- Average job: $35,000 (premium product)
+- Monthly revenue: $70,000-$140,000
+- Annual revenue: $840,000-$1,680,000
+
+**Why Higher Close Rate Than General Metal:**
+1. **Solved Their Problem** - HOA restrictions, aesthetic concerns addressed
+2. **Bottom-Funnel Traffic** - Already researched extensively
+3. **Premium Mindset** - Not price shopping, seeking quality
+4. **Limited Competition** - Few contractors even offer stone-coated
+5. **Educational Authority** - Your content positioned you as expert
+
+**Investment vs Return:**
+- Content creation: 12 posts × $400 (if outsourced) = $4,800
+- OR: Your time (12 posts × 4 hours = 48 hours)
+- **ROI: 175x to 350x return** (if outsourced)
+
+### Competitive Advantage: Stone-Coated Steel
+
+**Why You Can DOMINATE This Niche:**
+
+1. **Zero Local Competition**
+   - Search "stone coated metal roof round rock" → only generic national results
+   - No local contractors have dedicated content
+   - Easy #1 rankings within 60 days
+
+2. **Solves HOA Problem**
+   - Heritage Grande, Winding Creek, Forest Creek restrict standing seam
+   - Stone-coated looks traditional, performs like metal
+   - Homeowners desperate for this solution
+
+3. **Premium Price Point**
+   - $12-18/sf (similar to standing seam)
+   - Higher margins than asphalt
+   - Attracts wealthier demographic
+
+4. **Brand Loyalty**
+   - Decra/Gerard buyers already sold on product
+   - Just need qualified installer
+   - Extremely high close rate
+
+5. **Long Sales Cycle**
+   - Stone-coated buyers research 3-6 months
+   - Your content educates them entire journey
+   - They call YOU when ready to buy
+
+### Quick Start Action Plan: Stone-Coated Steel
+
+**This Week:**
+1. Write "Stone-Coated Steel Metal Roofing Texas" foundational guide (2,500 words)
+2. Add stone-coated section to Metal Roofing Hub page
+3. Create portfolio page with stone-coated examples (if you have them)
+
+**Next 2 Weeks:**
+4. Write "Stone-Coated Metal Roofing Round Rock" (HOA focus)
+5. Write "Stone-Coated Metal vs Tile" comparison
+6. Reach out to Decra/Gerard for dealer/installer certification (if not already)
+
+**Next 30 Days:**
+7. Write 3 brand-specific posts (Decra, Metro, Gerard)
+8. Create stone-coated color visualizer or gallery
+9. Add stone-coated CTAs to existing metal content
+
+**Within 90 Days:**
+10. Complete 8-10 stone-coated posts
+11. Dominate all stone-coated + local keywords
+12. Position as THE stone-coated expert in Central Texas
+
+### Success Metrics to Track
+
+**Rankings:**
+- "stone coated steel roofing" (target top 5 nationally)
+- "stone coated metal roof [city]" (target #1 all cities)
+- "decra roofing [city]" (target #1-3)
+- "hoa approved metal roofing [city]" (target #1)
+
+**Traffic:**
+- Stone-coated content visits
+- Time on page (measure engagement)
+- Bounce rate (should be low for qualified traffic)
+
+**Leads:**
+- Form submissions mentioning stone-coated
+- Phone calls asking about Decra/Gerard/Metro
+- HOA approval consultations requested
+
+**Revenue:**
+- Stone-coated jobs closed
+- Average job value
+- Close rate from stone-coated leads
+
+### Bottom Line: Stone-Coated Steel Opportunity
+
+This is a **MASSIVE untapped opportunity** with:
+- ✅ Low competition (virtually zero local content)
+- ✅ High intent (searchers know what they want)
+- ✅ Premium pricing ($35k average job)
+- ✅ Solves specific problem (HOA restrictions)
+- ✅ Easy to rank (niche keywords)
+- ✅ High close rate (educated buyers)
+
+**If you write 8-10 stone-coated posts in next 90 days, you'll own this market in Central Texas.**
+
+The search volume is lower than general "metal roofing," but the **quality of leads is exponentially higher**. These are homeowners who've already decided on metal, already decided on stone-coated specifically, and just need a qualified installer.
+
+**That's YOU.**
+
+---
+
 ## 💡 Pro Tips for Maximum Impact
 
 ### Internal Linking
