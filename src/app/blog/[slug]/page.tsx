@@ -1,11 +1,11 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { Container } from '@/components/layout/Container'
-import { getAllPostSlugs, getPostBySlug, getRelatedPosts } from '@/lib/blog'
+import { getAllPostSlugs, getPostBySlug, getAllPosts } from '@/lib/blog'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import Image from 'next/image'
 import Link from 'next/link'
-import { BlogPostCard } from '@/components/blog/BlogPostCard'
+import { RelatedPosts } from '@/components/blog/RelatedPosts'
 import { SocialShare } from '@/components/blog/SocialShare'
 import { getBlurDataURL } from '@/lib/image-blur'
 import { BlogSidebar } from '@/components/blog/BlogSidebar'
@@ -69,7 +69,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
     notFound()
   }
 
-  const relatedPosts = getRelatedPosts(params.slug, 3)
+  const allPosts = getAllPosts()
 
   return (
     <>
@@ -217,22 +217,11 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
       </section>
 
       {/* Related Posts */}
-      {relatedPosts.length > 0 && (
-        <section className="py-16 bg-primary-50">
-          <Container>
-            <div className="max-w-7xl mx-auto">
-              <h2 className="text-3xl font-display font-bold text-primary-900 mb-8">
-                Related Articles
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                {relatedPosts.map((relatedPost) => (
-                  <BlogPostCard key={relatedPost.slug} post={relatedPost} />
-                ))}
-              </div>
-            </div>
-          </Container>
-        </section>
-      )}
+      <RelatedPosts 
+        currentPost={post}
+        allPosts={allPosts}
+        maxPosts={4}
+      />
 
       {/* CTA Section */}
       <section className="py-16 bg-gradient-to-r from-primary-900 to-primary-800 text-white">
