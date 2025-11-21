@@ -6,6 +6,8 @@ import { MDXRemote } from 'next-mdx-remote/rsc'
 import Image from 'next/image'
 import Link from 'next/link'
 import { RelatedPosts } from '@/components/blog/RelatedPosts'
+import { TableOfContents } from '@/components/blog/TableOfContents'
+import { BackToTop } from '@/components/blog/BackToTop'
 import { SocialShare } from '@/components/blog/SocialShare'
 import { getBlurDataURL } from '@/lib/image-blur'
 import { BlogSidebar } from '@/components/blog/BlogSidebar'
@@ -172,9 +174,9 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
       {/* Article Content */}
       <section className="py-16 bg-white">
         <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
             {/* Main Content */}
-            <div className="lg:col-span-2">
+            <div className="lg:col-span-3">
               {/* Social Share Buttons */}
               <div className="mb-8 pb-8 border-b border-primary-200">
                 <SocialShare 
@@ -185,7 +187,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
               </div>
 
               {/* MDX Content */}
-              <article className="prose prose-lg max-w-none prose-headings:font-display prose-headings:text-primary-900 prose-p:text-primary-700 prose-a:text-accent-600 hover:prose-a:text-accent-700 prose-strong:text-primary-900 prose-ul:text-primary-700 prose-ol:text-primary-700">
+              <article className="prose prose-lg max-w-none prose-headings:font-display prose-headings:text-primary-900 prose-p:text-primary-700 prose-a:text-accent-600 hover:prose-a:text-accent-700 prose-strong:text-primary-900 prose-ul:text-primary-700 prose-ol:text-primary-700 prose-headings:scroll-mt-24">
                 <MDXRemote source={post.content} />
               </article>
 
@@ -206,15 +208,17 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
             )}
             </div>
             
-            {/* Sidebar */}
-            <div className="lg:col-span-1">
-              <div className="sticky top-24">
-                <BlogSidebar />
-              </div>
+            {/* Sidebar with TOC */}
+            <div className="lg:col-span-1 hidden lg:block">
+              <TableOfContents content={post.content} />
             </div>
           </div>
         </Container>
       </section>
+
+      {/* Mobile TOC + Back to Top */}
+      <TableOfContents content={post.content} className="lg:hidden" />
+      <BackToTop />
 
       {/* Related Posts */}
       <RelatedPosts 
