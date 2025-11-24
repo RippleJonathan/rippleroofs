@@ -20,6 +20,80 @@ const nextConfig = {
   // Enable strict mode for better development warnings
   reactStrictMode: true,
   
+  // Redirects for old site URLs
+  async redirects() {
+    return [
+      // Old "about-2" pages
+      {
+        source: '/about-2',
+        destination: '/about',
+        permanent: true,
+      },
+      // Old residential roofing pages
+      {
+        source: '/residential-roofing-2',
+        destination: '/services/residential-roofing',
+        permanent: true,
+      },
+      // Old tag pages (redirect to blog)
+      {
+        source: '/tag/:slug*',
+        destination: '/blog',
+        permanent: true,
+      },
+      // Old blog post redirects (examples - add specific ones as needed)
+      {
+        source: '/roofing-repairs-vs-replacement-when-to-choose-which-option',
+        destination: '/blog',
+        permanent: true,
+      },
+      // Old homepage variations
+      {
+        source: '/homepage',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/service',
+        destination: '/services',
+        permanent: true,
+      },
+      // Old Elementor pages
+      {
+        source: '/elementor-hf/:slug*',
+        destination: '/',
+        permanent: true,
+      },
+      // Remove trailing slashes and redirect to non-trailing
+      {
+        source: '/contact/',
+        destination: '/contact',
+        permanent: true,
+      },
+      // Old blog category redirects with URL-encoded characters
+      {
+        source: '/blog/category/solar-&-energy',
+        destination: '/blog',
+        permanent: true,
+      },
+      {
+        source: '/blog/category/warranties-&-protection',
+        destination: '/blog',
+        permanent: true,
+      },
+      {
+        source: '/blog/category/materials-&-energy',
+        destination: '/blog',
+        permanent: true,
+      },
+      {
+        source: '/blog/category/insurance-&-claims',
+        destination: '/blog',
+        permanent: true,
+      },
+    ]
+  },
+  
   // Security Headers
   async headers() {
     return [
