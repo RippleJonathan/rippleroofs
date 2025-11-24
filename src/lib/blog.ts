@@ -6,6 +6,25 @@ import readingTime from 'reading-time'
 const postsDirectory = path.join(process.cwd(), 'content/blog')
 const blogImagesDirectory = path.join(process.cwd(), 'public/images/blog')
 
+export interface ComparisonTable {
+  about: string
+  columns: string[]
+  rows: { [key: string]: string }[]
+}
+
+export interface HowToStep {
+  name: string
+  text: string
+  image?: string
+}
+
+export interface HowToGuide {
+  name: string
+  description: string
+  totalTime?: string
+  steps: HowToStep[]
+}
+
 export interface BlogPost {
   slug: string
   title: string
@@ -17,6 +36,8 @@ export interface BlogPost {
   tags: string[]
   content: string
   readingTime: string
+  comparisonTable?: ComparisonTable
+  howTo?: HowToGuide
 }
 
 export interface BlogPostMetadata {
@@ -129,6 +150,8 @@ export function getPostBySlug(slug: string): BlogPost | null {
       tags: data.tags || [],
       content: cleanContent,
       readingTime: stats.text,
+      comparisonTable: data.comparisonTable,
+      howTo: data.howTo,
     }
   } catch (error) {
     return null

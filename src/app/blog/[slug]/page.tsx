@@ -13,6 +13,10 @@ import { getBlurDataURL } from '@/lib/image-blur'
 import { BlogSidebar } from '@/components/blog/BlogSidebar'
 import ArticleSchema from '@/components/seo/ArticleSchema'
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
+import FAQSchema from '@/components/seo/FAQSchema'
+import TableSchema from '@/components/seo/TableSchema'
+import HowToSchema from '@/components/seo/HowToSchema'
+import { extractFAQs } from '@/lib/extractFAQs'
 
 interface BlogPostPageProps {
   params: {
@@ -72,6 +76,9 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
   }
 
   const allPosts = getAllPosts()
+  
+  // Extract FAQs from content for structured data
+  const faqs = extractFAQs(post.content)
 
   return (
     <>
@@ -93,6 +100,22 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
           { name: post.title, url: `/blog/${params.slug}` },
         ]}
       />
+      {faqs.length > 0 && <FAQSchema faqs={faqs} />}
+      {post.comparisonTable && (
+        <TableSchema
+          about={post.comparisonTable.about}
+          columns={post.comparisonTable.columns}
+          rows={post.comparisonTable.rows}
+        />
+      )}
+      {post.howTo && (
+        <HowToSchema
+          name={post.howTo.name}
+          description={post.howTo.description}
+          totalTime={post.howTo.totalTime}
+          steps={post.howTo.steps}
+        />
+      )}
 
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-primary-900 to-primary-800 text-white py-12">
