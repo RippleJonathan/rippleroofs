@@ -7,11 +7,11 @@ import { Button } from '@/components/ui/Button'
 import { SERVICES, SITE_CONFIG } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Roofing Services in Central Texas | Ripple Roofing',
-  description: `Comprehensive roofing services in Round Rock, Austin, and Central Texas. From repairs to replacements, we do it all. Call ${SITE_CONFIG.phone} for free inspection.`,
-  keywords: 'roofing services, Round Rock roofer, Austin roofing, Central Texas roofing, roof repair, roof replacement',
+  title: 'Roofing Services Round Rock TX | Repair, Replacement & Emergency | Free Inspections',
+  description: `Expert roof repair, replacement, storm damage & emergency services in Round Rock & Central Texas. CertainTeed certified. Free inspections. Call ${SITE_CONFIG.phone} today.`,
+  keywords: 'roofing services, Round Rock roofer, Austin roofing, Central Texas roofing, roof repair, roof replacement, emergency roofing',
   openGraph: {
-    title: 'Professional Roofing Services | Ripple Roofing',
+    title: 'Expert Roofing Services in Round Rock & Central Texas',
     description: 'Comprehensive roofing solutions for residential and commercial properties in Central Texas.',
   },
   alternates: {

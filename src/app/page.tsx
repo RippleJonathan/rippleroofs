@@ -11,8 +11,8 @@ import { FeaturedIn } from '@/components/home/FeaturedIn'
 import { SITE_CONFIG } from '@/lib/constants'
 
 export const metadata = {
-  title: 'Professional Roofing Services Austin & San Antonio | Certified Roofing Experts',
-  description: 'CertainTeed Shingle Master certified roofing experts serving Austin Metro, San Antonio, and Central Texas. Residential, commercial, and 24/7 emergency roofing services. Fully insured.',
+  title: 'Roofing Contractor Round Rock TX | 24/7 Service | CertainTeed Certified',
+  description: 'Round Rock\'s trusted roofing contractor. CertainTeed Shingle Master certified serving Round Rock, Austin, Georgetown & Central Texas. 24/7 emergency service, residential & commercial. Free inspections.',
   alternates: {
     canonical: 'https://rippleroofs.com'
   },
