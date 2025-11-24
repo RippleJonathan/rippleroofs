@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { Container } from './Container'
 import { SITE_CONFIG, NAV_LINKS } from '@/lib/constants'
 import { trackPhoneClick } from '@/lib/analytics'
+import { ContentHubs } from '@/components/blog/ContentHubs'
 
 export const Footer: FC = () => {
   const currentYear = new Date().getFullYear()
@@ -15,9 +16,9 @@ export const Footer: FC = () => {
       {/* Main Footer */}
       <div className="section-spacing">
         <Container>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
             {/* Company Info */}
-            <div className="space-y-4 lg:col-span-1">
+            <div className="space-y-4 lg:col-span-2">
               <div className="relative h-12 w-40 mb-4">
                 <Image
                   src="/images/logo.png"
@@ -239,6 +240,9 @@ export const Footer: FC = () => {
                 </li>
               </ul>
             </div>
+
+            {/* Content Hubs */}
+            <ContentHubs variant="footer" />
 
             {/* Contact Info */}
             <div>
