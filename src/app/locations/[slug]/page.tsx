@@ -6520,6 +6520,914 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
             </div>
           )}
 
+          {/* Leander-specific deep content */}
+          {location.slug === 'leander' && (
+            <div className="space-y-16 mt-16">
+              {/* Leander Introduction */}
+              <div className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Expert Roofing Services in Leander, Texas
+                </h2>
+                <p className="text-lg text-primary-700 leading-relaxed mb-6">
+                  Leander represents one of the fastest-growing cities in America, transforming from a quiet Hill Country town into a thriving Austin suburb with award-winning schools, major employers like Quarry Lake, and master-planned communities that attract families seeking the Texas dream. As your local Leander roofing contractor, we've grown alongside this community—protecting new developments, established neighborhoods, and everything in between.
+                </p>
+                <p className="text-lg text-primary-700 leading-relaxed">
+                  Whether you're in Bryson, Crystal Falls, or the historic Old Town Leander near the train depot, we understand Leander's unique roofing challenges: strict HOA requirements, modern building codes, severe Central Texas hail, and the need for quality that protects your investment in one of Texas' hottest real estate markets. CertainTeed Shingle Master certification means we deliver the excellence Leander homeowners expect.
+                </p>
+              </div>
+
+              {/* Leander Neighborhoods */}
+              <div>
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Leander Neighborhoods: Roofing Guide by Community
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  Leander's explosive growth created diverse neighborhoods—from 2010s-2020s master-planned communities to established 1990s-2000s subdivisions. Each has distinct roofing characteristics:
+                </p>
+
+                <div className="space-y-6">
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-indigo-600">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">🏘️ Bryson & Crystal Falls</h3>
+                    <div className="grid md:grid-cols-2 gap-6 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Leander's Signature Communities:</p>
+                        <p className="mb-3">Bryson and Crystal Falls represent Leander's modern vision: master-planned, family-oriented, amenity-rich. Built 2010s-2020s with strict development standards. Resort-style pools, fitness centers, trails, events. Top-rated Leander ISD schools. Young professional families, dual-income households. Property values appreciate as Leander grows.</p>
+                        <p className="font-semibold text-primary-900 mb-2">New Construction Roofing:</p>
+                        <ul className="list-disc pl-5 space-y-1 text-sm">
+                          <li>Modern architectural shingles (10-15 years old now)</li>
+                          <li>Approaching first replacement for 2010s homes</li>
+                          <li>Strict HOA color and material approval required</li>
+                          <li>Builder-grade shingles may not be impact-resistant</li>
+                          <li>2024 hail damage across many Leander communities</li>
+                          <li>Quality upgrade opportunity at replacement time</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Smart Upgrades:</p>
+                        <p className="text-sm mb-3">Replace builder-grade with impact-resistant architectural shingles (GAF Timberline HDZ, CertainTeed Landmark Pro). Popular HOA-approved colors: Weathered Wood, Driftwood, Pewter Gray. Ensure Class 4 rating for hail protection—essential in Leander. Transferable warranties add resale value in hot market.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Investment Range:</p>
+                        <p className="text-accent-600 font-bold text-xl">$15,000-$24,000</p>
+                        <p className="text-sm">Typical 2,200-3,000 sq ft homes, modern two-story layouts. HOA approval adds 1-2 weeks to timeline. Quality installation protects major real estate investment.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-purple-600">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">🌳 Mason Hills & Highlands</h3>
+                    <div className="grid md:grid-cols-2 gap-6 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Established Leander:</p>
+                        <p className="mb-3">Mason Hills and the Highlands represent Leander's pre-boom growth from the 2000s. More mature trees, established neighbors, slightly older homes (15-25 years). Less intensive HOAs than newer communities. Strong sense of community. Close to HEB, shopping, 183A toll. Easy Austin commute.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Typical Roofing Needs:</p>
+                        <ul className="list-disc pl-5 space-y-1 text-sm">
+                          <li>Roofs 15-25 years old (replacement timeframe)</li>
+                          <li>Original builder shingles reaching end of life</li>
+                          <li>May have hail damage from past storms (undetected)</li>
+                          <li>Tree debris from maturing oak and cedar trees</li>
+                          <li>Simple to moderate roof complexity</li>
+                          <li>Standard ranch and two-story homes</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Value-Smart Replacement:</p>
+                        <p className="text-sm mb-3">Upgrade to impact-resistant architectural shingles for better hail protection. Standard Leander colors (Weathered Wood, Driftwood, Mission Brown). Focus on quality installation and proper ventilation for Texas heat. Good value vs. luxury aesthetics—these are family homes, not estates.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Fair Pricing:</p>
+                        <p className="text-accent-600 font-bold text-xl">$13,000-$20,000</p>
+                        <p className="text-sm">Typical 1,800-2,500 sq ft homes, good access, straightforward roof lines. Budget $1k-$2k for possible decking repairs on 20+ year old homes.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-blue-600">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">🚂 Old Town Leander & Historic District</h3>
+                    <div className="grid md:grid-cols-2 gap-6 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Historic Leander Charm:</p>
+                        <p className="mb-3">Old Town Leander near the historic train depot preserves the city's railroad heritage. Homes from 1900s-1970s, including Victorian cottages, Texas farmhouses, and mid-century ranch homes. Walkable downtown with restaurants, events, farmer's market. Smaller lots, mature trees, tight-knit community. Gentrifying as Leander grows.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Historic Roofing Challenges:</p>
+                        <ul className="list-disc pl-5 space-y-1 text-sm">
+                          <li>Older homes with multiple past roof replacements</li>
+                          <li>Complex Victorian/farmhouse roof lines (steep, gables)</li>
+                          <li>Decking may need replacement (common on 60+ year homes)</li>
+                          <li>Some historic preservation considerations</li>
+                          <li>Narrow streets can complicate material delivery</li>
+                          <li>Large trees create debris and shade (algae concerns)</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Heritage-Appropriate Options:</p>
+                        <p className="text-sm mb-3">Architectural shingles in traditional colors (charcoal, slate, weathered wood). Some homes suit metal roofing for historic authenticity. Must preserve character while upgrading to modern protection. Algae-resistant shingles essential under tree canopy.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Investment:</p>
+                        <p className="text-accent-600 font-bold text-xl">$11,000-$19,000</p>
+                        <p className="text-sm">Smaller footprints but complex roof lines. Add $2k-$5k for decking work (very common on 50+ year homes). Historic preservation adds planning time but preserves Leander's heritage.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-green-600">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">🏡 Northline & Block House Creek</h3>
+                    <div className="grid md:grid-cols-2 gap-6 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Leander's Middle Ground:</p>
+                        <p className="mb-3">Northline, Block House Creek, and similar neighborhoods represent Leander's steady growth from 1990s-2000s. Established but not historic. Mix of original owners and young families buying in. Near Leander ISD schools, parks, shopping. Affordable Leander entry point. Quiet suburban living with Austin proximity.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Common Roofing Situation:</p>
+                        <ul className="list-disc pl-5 space-y-1 text-sm">
+                          <li>Roofs 20-30 years old (due for replacement)</li>
+                          <li>Original three-tab shingles common (basic builder spec)</li>
+                          <li>Simple ranch-style roof lines (easier, lower cost)</li>
+                          <li>Hail damage likely from past Leander storms</li>
+                          <li>Good maintenance by long-term owners</li>
+                          <li>Budget-conscious middle-income families</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Best Value Approach:</p>
+                        <p className="text-sm mb-3">Upgrade to architectural shingles with impact resistance (big improvement over old three-tab). Standard colors work well. Quality installation and proper ventilation more important than premium brands. Solid protection at fair price for middle-market homes.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Honest Pricing:</p>
+                        <p className="text-accent-600 font-bold text-xl">$12,000-$18,000</p>
+                        <p className="text-sm">Typical 1,600-2,300 sq ft ranch homes, simple roof lines, good access. May need some decking repair on 25+ year old homes. Financing available for qualified buyers.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-8 bg-indigo-50 border-l-4 border-indigo-600 p-6 rounded">
+                  <p className="text-primary-900 font-semibold mb-2">🏘️ Leander HOA Pro Tip:</p>
+                  <p className="text-primary-700">
+                    Many Leander master-planned communities have strict HOA architectural review boards. <strong>We handle the HOA approval process for you</strong>—submitting color samples, material specs, and installation timeline. We know which colors get approved quickly (Weathered Wood, Driftwood, Pewter Gray are safe bets). Expect 1-3 weeks for HOA review before we can start work. Plan ahead when scheduling your Leander roof replacement.
+                  </p>
+                </div>
+              </div>
+
+              {/* Leander Weather */}
+              <div className="bg-gradient-to-br from-red-50 to-pink-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Leander Weather & Hail: What Homeowners Must Know
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  Leander sits in Williamson County's "Hail Alley," experiencing severe thunderstorms with large hail, damaging winds, and torrential rain. As Leander has grown, so has awareness of the area's challenging weather—every homeowner needs a roof built for Central Texas storms.
+                </p>
+
+                <div className="grid md:grid-cols-2 gap-6 mb-8">
+                  <div className="bg-white rounded-lg p-6 shadow-md">
+                    <h3 className="text-xl font-bold text-primary-900 mb-4">🌩️ Leander Hail Reality</h3>
+                    <div className="space-y-4">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Peak Hail Season: March - May</p>
+                        <p className="text-sm text-primary-700">Leander's location northwest of Austin puts it directly in the path of spring supercells moving northeast from the Hill Country. When storms form west of I-35 and intensify, Leander gets hit hard. April is statistically the worst month.</p>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Expected Hail Frequency:</p>
+                        <div className="space-y-2 text-sm">
+                          <div className="flex justify-between items-center">
+                            <span className="text-primary-700">Pea/marble (¼"-½")</span>
+                            <span className="font-bold">6-9x/year</span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span className="text-primary-700">Quarter-sized (1")</span>
+                            <span className="font-bold">3-5x/year</span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span className="text-primary-700">Golf ball (1.75")</span>
+                            <span className="font-bold text-accent-600">Every 2-3 years</span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span className="text-primary-700">Baseball+ (2.75"+)</span>
+                            <span className="font-bold text-red-600">Every 3-5 years</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="bg-red-50 p-3 rounded">
+                        <p className="text-xs text-red-900 font-bold">March 2024 Hailstorm</p>
+                        <p className="text-xs text-red-800">Golf to baseball-sized hail pummeled Leander neighborhoods. Crystal Falls, Bryson, Mason Hills all reported extensive damage. Hundreds of roofs replaced via insurance claims. Many Leander homeowners learned their builder-grade shingles weren't impact-resistant.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-lg p-6 shadow-md">
+                    <h3 className="text-xl font-bold text-primary-900 mb-4">💨 High Winds & Severe Weather</h3>
+                    <div className="space-y-4">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Williamson County Wind Events:</p>
+                        <p className="text-sm text-primary-700 mb-2">Leander experiences frequent high winds from severe thunderstorms. Straight-line winds of 60-80 mph are common during spring/summer storms. These winds can lift shingles, damage flashing, and compromise roof integrity even without hail.</p>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Wind Damage Signs After Leander Storms:</p>
+                        <ul className="text-sm text-primary-700 space-y-1">
+                          <li>• Missing shingles or exposed underlayment</li>
+                          <li>• Lifted shingle edges (wind got underneath)</li>
+                          <li>• Damaged ridge caps along roof peak</li>
+                          <li>• Flashing torn or bent around chimneys/vents</li>
+                          <li>• Granule accumulation in gutters (wind abrasion)</li>
+                          <li>• Debris impact damage from tree branches</li>
+                        </ul>
+                      </div>
+                      <div className="bg-blue-50 p-3 rounded">
+                        <p className="text-xs font-bold text-primary-900">Wind-Rated Shingles:</p>
+                        <p className="text-xs text-primary-700">We install shingles rated for 130 mph winds using 6-nail high-wind installation pattern. CertainTeed Landmark Pro and GAF Timberline HDZ exceed Leander's wind requirements. Proper installation matters more than shingle brand.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-purple-50 to-indigo-50 rounded-lg p-6">
+                  <h3 className="text-xl font-bold text-primary-900 mb-4">Protecting Your Leander Roof Investment</h3>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <p className="font-semibold text-primary-900 mb-2">✅ Before Storm Season:</p>
+                      <ul className="text-sm text-primary-700 space-y-1">
+                        <li>• <strong>Install Class 4 impact-resistant shingles</strong> (non-negotiable in Leander)</li>
+                        <li>• Verify 130 mph wind rating minimum</li>
+                        <li>• Trim tree branches 10+ feet from roof</li>
+                        <li>• Clean gutters for proper water drainage</li>
+                        <li>• Document roof condition with photos (insurance baseline)</li>
+                        <li>• Review insurance policy—know your coverage</li>
+                        <li>• Sign up for Williamson County weather alerts</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-primary-900 mb-2">⚠️ After Leander Storms:</p>
+                      <ul className="text-sm text-primary-700 space-y-1">
+                        <li>• <strong>FREE inspection</strong>—call us within 1-2 weeks</li>
+                        <li>• Check gutters for shingle granules (damage indicator)</li>
+                        <li>• Look for dents on mailbox, AC unit, vents (hail test)</li>
+                        <li>• Walk around home checking for missing/damaged shingles</li>
+                        <li>• Take photos/videos of any visible damage</li>
+                        <li>• Call (512) 763-5277 for professional assessment</li>
+                        <li>• We help navigate insurance claims process</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-6 bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded">
+                  <p className="text-primary-900 font-semibold mb-2">⚡ Leander's Rapid Growth = New Homeowner Education</p>
+                  <p className="text-primary-700 text-sm">
+                    Many families moving to Leander from other states don't realize Central Texas' severe hail risk. If you bought a new construction home in Bryson, Crystal Falls, or other master-planned communities, <strong>ask your builder if they installed impact-resistant shingles</strong>. Many use standard builder-grade shingles to save costs. The March 2024 hailstorm taught many new Leander homeowners this lesson the hard way. When your roof needs replacement, upgrade to Class 4—it's essential here.
+                  </p>
+                </div>
+              </div>
+
+              {/* Leander Pricing */}
+              <div className="bg-indigo-50 rounded-2xl p-8 border-l-4 border-indigo-600">
+                <h2 className="text-2xl font-display font-bold text-primary-900 mb-4">
+                  Leander Roof Replacement Costs: Transparent Pricing
+                </h2>
+                <p className="text-primary-700 mb-6">
+                  Honest pricing for Leander homeowners. Costs reflect home size, roof complexity, and HOA requirements:
+                </p>
+                <div className="space-y-4">
+                  <div className="flex justify-between items-start border-b border-indigo-200 pb-3">
+                    <div>
+                      <p className="font-bold text-primary-900">1,400-1,900 sq ft Home</p>
+                      <p className="text-sm text-primary-600">Smaller Old Town Leander homes, starter homes</p>
+                    </div>
+                    <p className="text-xl font-bold text-accent-600">$10,500-$15,000</p>
+                  </div>
+                  <div className="flex justify-between items-start border-b border-indigo-200 pb-3">
+                    <div>
+                      <p className="font-bold text-primary-900">1,900-2,300 sq ft Home</p>
+                      <p className="text-sm text-primary-600">Mason Hills, Northline, Block House Creek typical</p>
+                    </div>
+                    <p className="text-xl font-bold text-accent-600">$13,000-$19,000</p>
+                  </div>
+                  <div className="flex justify-between items-start border-b border-indigo-200 pb-3">
+                    <div>
+                      <p className="font-bold text-primary-900">2,300-2,800 sq ft Home</p>
+                      <p className="text-sm text-primary-600">Most common Bryson/Crystal Falls size</p>
+                    </div>
+                    <p className="text-xl font-bold text-accent-600">$16,000-$23,000</p>
+                  </div>
+                  <div className="flex justify-between items-start border-b border-indigo-200 pb-3">
+                    <div>
+                      <p className="font-bold text-primary-900">2,800-3,500 sq ft Home</p>
+                      <p className="text-sm text-primary-600">Larger master-planned community homes</p>
+                    </div>
+                    <p className="text-xl font-bold text-accent-600">$19,000-$28,000</p>
+                  </div>
+                  <div className="flex justify-between items-start">
+                    <div>
+                      <p className="font-bold text-primary-900">3,500+ sq ft Estate</p>
+                      <p className="text-sm text-primary-600">Luxury Leander properties, complex roof lines</p>
+                    </div>
+                    <p className="text-xl font-bold text-accent-600">$24,000-$38,000+</p>
+                  </div>
+                </div>
+                <div className="mt-6 bg-white p-4 rounded-lg border-l-4 border-indigo-600">
+                  <p className="text-sm text-primary-700 mb-3">
+                    <strong>Includes:</strong> Complete tear-off, disposal, CertainTeed or GAF impact-resistant architectural shingles, synthetic underlayment, ice/water shield, new ridge vents, pipe boots, flashing, valley metal, cleanup, warranty registration, HOA approval handling.
+                  </p>
+                  <p className="text-sm text-primary-700">
+                    <strong>HOA Timeline:</strong> Add 1-3 weeks for architectural review board approval in master-planned communities. We handle all submissions and follow-up.
+                  </p>
+                </div>
+              </div>
+
+              {/* Leander Call to Action */}
+              <div className="bg-gradient-to-br from-accent-500 to-blue-600 rounded-2xl p-8 text-white">
+                <h2 className="text-3xl font-display font-bold mb-4">
+                  Ready to Protect Your Leander Home?
+                </h2>
+                <p className="text-xl mb-6 text-white/90">
+                  Free inspection. Transparent pricing. HOA approval handling. CertainTeed Shingle Master quality. That's the Leander roofing experience you deserve.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <a href="tel:5127635277" className="bg-white text-accent-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition text-center">
+                    Call (512) 763-5277
+                  </a>
+                  <a href="/contact" className="bg-accent-700 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-accent-800 transition text-center border-2 border-white">
+                    Get Free Estimate
+                  </a>
+                </div>
+                <p className="text-sm text-white/80 mt-4">
+                  Serving Bryson, Crystal Falls, Mason Hills, Old Town Leander, and all Williamson County communities.
+                </p>
+              </div>
+            </div>
+          )}
+
+          {/* Temple-specific deep content */}
+          {location.slug === 'temple' && (
+            <div className="space-y-16 mt-16">
+              {/* Temple Introduction */}
+              <div className="bg-gradient-to-br from-green-50 to-teal-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Trusted Roofing Contractor in Temple, Texas
+                </h2>
+                <p className="text-lg text-primary-700 leading-relaxed mb-6">
+                  Temple sits at the heart of Bell County, serving as a regional hub for healthcare, military families from Fort Cavazos, and proud Texas communities. As your local Temple roofing experts, we understand the unique needs of this area—from military families on deployment schedules to healthcare professionals working at Baylor Scott & White, to homeowners building equity in Central Texas' most resilient city.
+                </p>
+                <p className="text-lg text-primary-700 leading-relaxed">
+                  Whether you're in Downtown Temple's historic neighborhoods, Wildflower Country Club's master-planned luxury, or affordable communities near Fort Cavazos, we deliver CertainTeed Shingle Master quality with pricing that respects military and first responder budgets. We're honored to serve those who serve us.
+                </p>
+              </div>
+
+              {/* Temple Neighborhoods */}
+              <div>
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Temple Neighborhoods: Roofing Considerations by Area
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  Temple communities range from historic downtown districts to modern military-family neighborhoods. Each has distinct roofing needs:
+                </p>
+
+                <div className="space-y-6">
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-green-600">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">🏛️ Downtown Temple & Historic Districts</h3>
+                    <div className="grid md:grid-cols-2 gap-6 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Heritage & Character:</p>
+                        <p className="mb-3">Temple's historic core features beautiful 1900s-1950s homes near Scott & White Hospital, Central Texas College, and downtown. Craftsman bungalows, Victorian architecture, and Texas farmhouses preserve Temple's railroad heritage. Many homes on National Register. Walkable to restaurants, cultural sites, Temple Railroad & Heritage Museum.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Historic Roofing Challenges:</p>
+                        <ul className="list-disc pl-5 space-y-1 text-sm">
+                          <li>Century-old homes with complex roof lines</li>
+                          <li>Multiple past replacements (track record matters)</li>
+                          <li>Decking often 2x6 tongue-and-groove vs. modern plywood</li>
+                          <li>Preservation standards for designated homes</li>
+                          <li>Steep pitches and ornate gables on Victorian styles</li>
+                          <li>Large trees cause debris, shade, algae growth</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Heritage-Appropriate Materials:</p>
+                        <p className="text-sm mb-3">Architectural shingles in traditional colors (charcoal, slate, weathered wood). Metal roofing appropriate for some historic styles. Must coordinate with Temple Historic Landmark Commission for designated properties. Preserve character while upgrading to modern protection standards.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Investment Range:</p>
+                        <p className="text-accent-600 font-bold text-xl">$12,000-$22,000</p>
+                        <p className="text-sm">Smaller historic footprints but complex roof lines. Add $3k-$7k for decking replacement (very common on 70+ year old homes). Historic preservation adds planning time.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-blue-600">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">🪖 Fort Cavazos Area & Military Communities</h3>
+                    <div className="grid md:grid-cols-2 gap-6 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Serving Those Who Serve:</p>
+                        <p className="mb-3">Neighborhoods surrounding Fort Cavazos (formerly Fort Hood) house military families, contractors, and veterans. Affordable homes near base for convenience. High turnover due to PCS moves. Mix of 1970s-2000s construction. Strong military community pride and patriotism.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Military Family Roofing Needs:</p>
+                        <ul className="list-disc pl-5 space-y-1 text-sm">
+                          <li>Deployment-friendly timelines (flexible scheduling)</li>
+                          <li>FHA/VA loan roof certification requirements</li>
+                          <li>Quality matters for resale when PCS orders arrive</li>
+                          <li>Budget-conscious pricing (military pay realities)</li>
+                          <li>Common hail damage from Central Texas storms</li>
+                          <li>Transferable warranties valuable for PCS families</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Smart Military Value:</p>
+                        <p className="text-sm mb-3">Impact-resistant architectural shingles provide best value. Quality installation ensures VA/FHA inspection pass. Transferable manufacturer warranties protect investment through PCS moves. We work with deployment schedules and offer military discounts. Fast timelines when orders come through.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Military-Friendly Pricing:</p>
+                        <p className="text-accent-600 font-bold text-xl">$11,000-$18,000</p>
+                        <p className="text-sm">Most Fort Cavazos-area homes 1,400-2,200 sq ft, simple ranch styles. <span className="font-bold">Ask about military/veteran discounts.</span> Financing available through USAA partnerships.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-purple-600">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">🏌️ Wildflower Country Club & West Temple</h3>
+                    <div className="grid md:grid-cols-2 gap-6 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Premium Temple Living:</p>
+                        <p className="mb-3">Wildflower Country Club and West Temple feature Temple's most upscale neighborhoods. Golf course living, gated entries, larger estates. Homes built 1990s-2020s with modern standards. Scott & White executives, business owners, retirees. HOA oversight ensures property value protection.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Luxury Roofing Expectations:</p>
+                        <ul className="list-disc pl-5 space-y-1 text-sm">
+                          <li>Premium architectural or designer shingles required</li>
+                          <li>HOA color and material approval process</li>
+                          <li>Larger homes (2,500-4,000+ sq ft) = bigger projects</li>
+                          <li>Complex roof lines (multiple levels, dormers, turrets)</li>
+                          <li>Quality expectations match property values</li>
+                          <li>Impact resistance essential for hail protection</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Premium Materials:</p>
+                        <p className="text-sm mb-3">CertainTeed Landmark Premium or Grand Manor. GAF Timberline UHDZ or Camelot II designer shingles. Popular colors: Weathered Wood, Pewter Gray, Charcoal. Some homes upgrade to stone-coated steel or tile for ultimate durability and curb appeal. All materials must meet HOA standards.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Investment for Quality:</p>
+                        <p className="text-accent-600 font-bold text-xl">$18,000-$35,000+</p>
+                        <p className="text-sm">Larger homes, premium materials, complex architecture. Stone-coated steel adds $8k-$15k but lasts 50+ years. Quality installation protects significant property investment.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-orange-600">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">🏡 Midtown Temple & Family Neighborhoods</h3>
+                    <div className="grid md:grid-cols-2 gap-6 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Temple's Heartbeat:</p>
+                        <p className="mb-3">Established neighborhoods between downtown and west Temple. Built 1960s-1990s. Mix of original owners and young families buying starter homes. Near Temple ISD schools, shopping, Scott & White employment. Quiet streets, mature trees, strong community. Affordable Temple real estate with solid equity building.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Common Roofing Situation:</p>
+                        <ul className="list-disc pl-5 space-y-1 text-sm">
+                          <li>Roofs 20-35 years old (replacement time)</li>
+                          <li>Simple ranch and traditional two-story homes</li>
+                          <li>Many have had 1-2 previous replacements</li>
+                          <li>Hail damage common from Temple storms</li>
+                          <li>Original three-tab shingles due for upgrade</li>
+                          <li>Budget matters for middle-income families</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Best Value Solutions:</p>
+                        <p className="text-sm mb-3">Upgrade to architectural shingles with impact resistance. Standard colors (Weathered Wood, Driftwood, Mission Brown). Quality installation more important than premium brands. Proper ventilation extends life. Focus on functional durability vs. luxury aesthetics.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Fair Pricing:</p>
+                        <p className="text-accent-600 font-bold text-xl">$11,000-$17,000</p>
+                        <p className="text-sm">Typical 1,500-2,200 sq ft homes, simple to moderate roof complexity. Budget $1k-$3k for potential decking repairs on older homes. Financing available for qualified buyers.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-8 bg-green-50 border-l-4 border-green-600 p-6 rounded">
+                  <p className="text-primary-900 font-semibold mb-2">🪖 Military & First Responder Appreciation:</p>
+                  <p className="text-primary-700">
+                    We're honored to serve Fort Cavazos military families, veterans, and Temple's first responders. Ask about our military discount and deployment-friendly scheduling. We understand PCS timelines, VA/FHA loan requirements, and the value of a transferable warranty when orders come through. Thank you for your service—let us serve you with the quality roofing Temple's heroes deserve.
+                  </p>
+                </div>
+              </div>
+
+              {/* Temple Weather */}
+              <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Temple Weather & Hail: Central Texas Storm Reality
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  Temple sits squarely in Central Texas "Hail Alley," experiencing severe thunderstorms with large hail, high winds, and torrential rain regularly. Bell County's location makes it a prime target for spring supercells.
+                </p>
+
+                <div className="grid md:grid-cols-2 gap-6 mb-8">
+                  <div className="bg-white rounded-lg p-6 shadow-md">
+                    <h3 className="text-xl font-bold text-primary-900 mb-4">🌩️ Temple Hail Patterns</h3>
+                    <div className="space-y-4">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Peak Season: March - June</p>
+                        <p className="text-sm text-primary-700">Temple's hail season runs longer than southern neighbors due to Bell County's position. Warm Gulf moisture meets cold northern air masses = explosive storms. April-May are statistically most dangerous.</p>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Expected Hail Frequency:</p>
+                        <div className="space-y-2 text-sm">
+                          <div className="flex justify-between items-center">
+                            <span className="text-primary-700">Pea/nickel (¼"-½")</span>
+                            <span className="font-bold">6-10x/year</span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span className="text-primary-700">Quarter-sized (1")</span>
+                            <span className="font-bold">3-5x/year</span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span className="text-primary-700">Golf ball (1.75")</span>
+                            <span className="font-bold text-accent-600">Every 2-3 years</span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span className="text-primary-700">Baseball+ (2.75"+)</span>
+                            <span className="font-bold text-red-600">Every 3-5 years</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="bg-red-50 p-3 rounded">
+                        <p className="text-xs text-red-900 font-bold">Recent Event: April 2024</p>
+                        <p className="text-xs text-red-800">Softball-sized hail hit western Bell County. Extensive damage to roofs, vehicles, crops. Many Temple homeowners filed insurance claims for total roof replacement.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-lg p-6 shadow-md">
+                    <h3 className="text-xl font-bold text-primary-900 mb-4">🌪️ High Winds & Tornadoes</h3>
+                    <div className="space-y-4">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Bell County Tornado Risk:</p>
+                        <p className="text-sm text-primary-700 mb-2">Temple sits in Tornado Alley's southern reach. Central Texas sees 2-4 tornadoes per year in the region. Most are EF0-EF2, but EF3+ events occur. High straight-line winds (70-90 mph) more common than tornadoes but equally damaging to roofs.</p>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Wind Damage Signs:</p>
+                        <ul className="text-sm text-primary-700 space-y-1">
+                          <li>• Missing or lifted shingles after storms</li>
+                          <li>• Exposed nail lines from wind uplift</li>
+                          <li>• Damaged flashing around chimneys/vents</li>
+                          <li>• Granule loss along roof edges</li>
+                          <li>• Bent or dented metal roof components</li>
+                        </ul>
+                      </div>
+                      <div className="bg-orange-50 p-3 rounded">
+                        <p className="text-xs font-bold text-primary-900">Wind Protection:</p>
+                        <p className="text-xs text-primary-700">Architectural shingles with SureStart or LayerLock technology resist 130 mph winds. Proper installation with 6-nail pattern critical. We use high-wind installation standards on every Temple roof.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-blue-50 to-green-50 rounded-lg p-6">
+                  <h3 className="text-xl font-bold text-primary-900 mb-4">Protecting Your Temple Roof from Severe Weather</h3>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <p className="font-semibold text-primary-900 mb-2">✅ Preventive Steps:</p>
+                      <ul className="text-sm text-primary-700 space-y-1">
+                        <li>• <strong>Install Class 4 impact-resistant shingles</strong> (essential in Temple)</li>
+                        <li>• Ensure 130 mph wind rating minimum</li>
+                        <li>• Trim tree branches 10+ feet from roof</li>
+                        <li>• Document pre-storm roof condition (photos)</li>
+                        <li>• Review insurance: wind/hail coverage, deductible</li>
+                        <li>• Sign up for Bell County weather alerts</li>
+                        <li>• Keep our number handy: (512) 763-5277</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-primary-900 mb-2">⚠️ After Temple Storms:</p>
+                      <ul className="text-sm text-primary-700 space-y-1">
+                        <li>• <strong>FREE inspection</strong>—call within 1-2 weeks</li>
+                        <li>• Check for granules in gutters (hail damage sign)</li>
+                        <li>• Look for dents on metal (mailbox, AC, vents)</li>
+                        <li>• Inspect attic for leaks or wet insulation</li>
+                        <li>• Document any damage with photos/video</li>
+                        <li>• We handle insurance claims process with you</li>
+                        <li>• Don't delay—TX has 1-year claim deadline</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Temple Pricing */}
+              <div className="bg-green-50 rounded-2xl p-8 border-l-4 border-green-600">
+                <h2 className="text-2xl font-display font-bold text-primary-900 mb-4">
+                  Temple Roof Replacement Costs: Honest Pricing
+                </h2>
+                <p className="text-primary-700 mb-6">
+                  Transparent pricing for Temple homeowners. Military/veteran discounts available. Costs vary by home size and neighborhood:
+                </p>
+                <div className="space-y-4">
+                  <div className="flex justify-between items-start border-b border-green-200 pb-3">
+                    <div>
+                      <p className="font-bold text-primary-900">1,200-1,800 sq ft Home</p>
+                      <p className="text-sm text-primary-600">Smaller Fort Cavazos-area homes, downtown bungalows</p>
+                    </div>
+                    <p className="text-xl font-bold text-accent-600">$9,500-$14,000</p>
+                  </div>
+                  <div className="flex justify-between items-start border-b border-green-200 pb-3">
+                    <div>
+                      <p className="font-bold text-primary-900">1,800-2,200 sq ft Home</p>
+                      <p className="text-sm text-primary-600">Most common Temple home size, military communities</p>
+                    </div>
+                    <p className="text-xl font-bold text-accent-600">$12,000-$18,000</p>
+                  </div>
+                  <div className="flex justify-between items-start border-b border-green-200 pb-3">
+                    <div>
+                      <p className="font-bold text-primary-900">2,200-2,800 sq ft Home</p>
+                      <p className="text-sm text-primary-600">Midtown Temple, larger family homes</p>
+                    </div>
+                    <p className="text-xl font-bold text-accent-600">$15,000-$22,000</p>
+                  </div>
+                  <div className="flex justify-between items-start border-b border-green-200 pb-3">
+                    <div>
+                      <p className="font-bold text-primary-900">2,800-3,500 sq ft Home</p>
+                      <p className="text-sm text-primary-600">West Temple, Wildflower area</p>
+                    </div>
+                    <p className="text-xl font-bold text-accent-600">$18,000-$28,000</p>
+                  </div>
+                  <div className="flex justify-between items-start">
+                    <div>
+                      <p className="font-bold text-primary-900">3,500+ sq ft Estate</p>
+                      <p className="text-sm text-primary-600">Luxury Temple properties, complex architecture</p>
+                    </div>
+                    <p className="text-xl font-bold text-accent-600">$24,000-$40,000+</p>
+                  </div>
+                </div>
+                <div className="mt-6 bg-white p-4 rounded-lg border-l-4 border-green-600">
+                  <p className="text-sm text-primary-700">
+                    <strong>All prices include:</strong> Complete tear-off, haul-off, impact-resistant architectural shingles, synthetic underlayment, ice/water shield, new vents, flashing, cleanup, warranty registration.
+                  </p>
+                  <p className="text-sm text-accent-600 font-bold mt-2">
+                    🪖 Military/Veteran Discount: Ask about special pricing for Fort Cavazos families and all who've served.
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* San Marcos-specific deep content */}
+          {location.slug === 'san-marcos' && (
+            <div className="space-y-16 mt-16">
+              {/* San Marcos Introduction */}
+              <div className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Expert Roofing Services in San Marcos, Texas
+                </h2>
+                <p className="text-lg text-primary-700 leading-relaxed mb-6">
+                  San Marcos sits perfectly between Austin and San Antonio, offering crystal-clear springs, Texas State University, and a growing residential community. As your local San Marcos roofing contractor, we understand the unique challenges of roofing in Hays County—from severe hail and flash flooding near the San Marcos River to the intense Texas heat and humidity that test every roof.
+                </p>
+                <p className="text-lg text-primary-700 leading-relaxed">
+                  Whether you're in The Heights near Texas State, Purgatory Creek's master-planned community, or Old Town San Marcos with its historic charm, we bring CertainTeed Shingle Master expertise to every San Marcos roofing project. Our team knows San Marcos neighborhoods inside out and delivers the quality roofing services this vibrant university town deserves.
+                </p>
+              </div>
+
+              {/* San Marcos Neighborhoods */}
+              <div>
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  San Marcos Neighborhoods: Your Roofing Guide by Area
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  San Marcos neighborhoods range from historic downtown bungalows to new master-planned communities. Each area has unique roofing considerations:
+                </p>
+
+                <div className="space-y-6">
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-purple-500">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">The Heights & Texas State Area</h3>
+                    <div className="grid md:grid-cols-2 gap-6 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Neighborhood Character:</p>
+                        <p className="mb-3">Close to Texas State University campus. Mix of student rentals, young professionals, and long-term residents. Mostly 1940s-1980s homes with character. Tree-lined streets, walkable to downtown, growing property values as San Marcos gentrifies.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Common Roofing Issues:</p>
+                        <ul className="list-disc pl-5 space-y-1 text-sm">
+                          <li>Older roofs (30-50+ years on some historic homes)</li>
+                          <li>Deferred maintenance on rental properties</li>
+                          <li>Large oak trees causing debris and shade (algae growth)</li>
+                          <li>Flash flooding in low-lying areas near campus</li>
+                          <li>Mix of roof types (composition, some metal, old tile)</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Best Roofing Solutions:</p>
+                        <p className="text-sm mb-3">Architectural shingles with algae resistance for tree coverage. Impact-resistant essential for hail protection. Metal roofing popular on renovations. Proper ventilation crucial for heat/humidity.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Typical Investment:</p>
+                        <p className="text-accent-600 font-bold text-xl">$11,000-$18,000</p>
+                        <p className="text-sm">Most homes 1,400-2,200 sq ft, simple to moderate roof lines. Add $2k-$5k for decking repairs (common on older homes).</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-blue-500">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">Purgatory Creek & Planned Developments</h3>
+                    <div className="grid md:grid-cols-2 gap-6 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Modern San Marcos Living:</p>
+                        <p className="mb-3">Master-planned community built 2000s-2020s. Family-oriented subdivision with amenities, pools, trails. New construction standards, HOA oversight, excellent schools. Growing rapidly as Austin metro expands south.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Roofing Characteristics:</p>
+                        <ul className="list-disc pl-5 space-y-1 text-sm">
+                          <li>Newer roofs (10-20 years old) approaching first replacement</li>
+                          <li>Modern architectural shingles per builder specs</li>
+                          <li>HOA color and material approval required</li>
+                          <li>2024 hailstorm caused damage throughout development</li>
+                          <li>Standard two-story homes, moderate complexity</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Recommended Materials:</p>
+                        <p className="text-sm mb-3">Impact-resistant architectural shingles (GAF Timberline HDZ, CertainTeed Landmark Pro). Popular colors: Weathered Wood, Driftwood, Mission Brown (HOA-approved). Ensure proper hail protection—San Marcos gets frequent storms.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Cost Range:</p>
+                        <p className="text-accent-600 font-bold text-xl">$14,000-$22,000</p>
+                        <p className="text-sm">Typical 2,000-2,800 sq ft homes, good access, simple to moderate complexity.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-green-500">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">Old Town San Marcos & Downtown</h3>
+                    <div className="grid md:grid-cols-2 gap-6 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Historic Charm:</p>
+                        <p className="mb-3">San Marcos' original downtown area. Beautiful 1900s-1950s homes, Craftsman bungalows, Victorian architecture. Some homes on historic register. Walking distance to San Marcos Square, antique shops, restaurants. Character and charm attract buyers seeking older homes.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Old Town Roofing Challenges:</p>
+                        <ul className="list-disc pl-5 space-y-1 text-sm">
+                          <li>Historic preservation requirements on some streets</li>
+                          <li>Original roofs 70-100+ years old (multiple replacements)</li>
+                          <li>Complex Victorian-era roof lines (steep, gables, dormers)</li>
+                          <li>Structural issues common in century-old homes</li>
+                          <li>Decking often needs complete replacement</li>
+                          <li>Color restrictions to maintain neighborhood character</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Historic-Appropriate Options:</p>
+                        <p className="text-sm mb-3">Architectural shingles in traditional colors (charcoal, slate gray, dark brown). Metal roofing on some homes for authenticity. Must work with city historic preservation office for designated homes. Maintain character while upgrading protection.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Investment Range:</p>
+                        <p className="text-accent-600 font-bold text-xl">$13,000-$24,000</p>
+                        <p className="text-sm">Plus $3k-$6k for decking repairs (very common). Smaller homes but complex roof lines increase cost. Historic considerations add time/planning.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-red-500">
+                    <h3 className="text-2xl font-bold text-primary-900 mb-3">Blanco Gardens & Encino Park</h3>
+                    <div className="grid md:grid-cols-2 gap-6 text-primary-700">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Established San Marcos:</p>
+                        <p className="mb-3">Mid-century neighborhoods built 1960s-1990s. Mix of original owners and young families buying first homes. Affordable San Marcos real estate. Mature trees, quiet streets, strong community feel. Easy access to I-35 for Austin/San Antonio commuters.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Typical Roofing Situation:</p>
+                        <ul className="list-disc pl-5 space-y-1 text-sm">
+                          <li>Roofs 25-40 years old (at replacement age)</li>
+                          <li>Simple ranch-style roof lines (lower complexity)</li>
+                          <li>Many homes have had 1-2 replacements already</li>
+                          <li>Flash flood concerns in low areas near Blanco River</li>
+                          <li>Hail damage from San Marcos storms</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Smart Investment:</p>
+                        <p className="text-sm mb-3">Upgrade to impact-resistant shingles (older roofs weren't). Standard architectural in neutral colors. Good value materials—these are starter/mid-tier homes. Focus on quality installation and proper ventilation.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Cost Expectations:</p>
+                        <p className="text-accent-600 font-bold text-xl">$12,000-$19,000</p>
+                        <p className="text-sm">Typical 1,600-2,400 sq ft ranch homes, simple roof lines = reasonable costs. Budget potential for decking work on 40+ year old homes.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-8 bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
+                  <p className="text-primary-900 font-semibold mb-2">💡 San Marcos Neighborhood Roofing Pro Tip:</p>
+                  <p className="text-primary-700">
+                    San Marcos' proximity to the San Marcos River and Blanco River means flash flooding is a real concern in low-lying neighborhoods. When replacing your roof, ensure proper drainage, well-sealed valleys, and quality underlayment. Flash floods can test even new roofs if water pools or backs up. We assess drainage during every San Marcos inspection to prevent future water damage.
+                  </p>
+                </div>
+              </div>
+
+              {/* San Marcos Weather & Hail */}
+              <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  San Marcos Weather: What Every Homeowner Should Know
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  San Marcos sits in "Hail Alley" like the rest of Central Texas, experiencing severe storms with large hail regularly. Add flash flooding concerns from heavy rains near the rivers, and San Marcos roofs face unique challenges.
+                </p>
+
+                <div className="grid md:grid-cols-2 gap-6 mb-8">
+                  <div className="bg-white rounded-lg p-6 shadow-md">
+                    <h3 className="text-xl font-bold text-primary-900 mb-4">🌩️ San Marcos Hail Season</h3>
+                    <div className="space-y-4">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Peak Danger: March - May</p>
+                        <p className="text-sm text-primary-700">75% of San Marcos' damaging hail occurs in spring when warm Gulf air collides with cold northern fronts. April is statistically the most dangerous month.</p>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Expected Hail Frequency:</p>
+                        <div className="space-y-2 text-sm">
+                          <div className="flex justify-between items-center">
+                            <span className="text-primary-700">Pea-sized (1/4")</span>
+                            <span className="font-bold">5-8x/year</span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span className="text-primary-700">Quarter-sized (1")</span>
+                            <span className="font-bold">2-4x/year</span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span className="text-primary-700">Golf ball (1.75")</span>
+                            <span className="font-bold text-accent-600">Every 2-3 years</span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span className="text-primary-700">Baseball (2.75")</span>
+                            <span className="font-bold text-red-600">Every 4-6 years</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="bg-red-50 p-3 rounded">
+                        <p className="text-xs text-red-900 font-bold">Recent Damage: March 2024 hailstorm</p>
+                        <p className="text-xs text-red-800">Golf to baseball-sized hail across San Marcos. Hundreds of roofs damaged. Many homeowners got insurance-covered replacements.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-lg p-6 shadow-md">
+                    <h3 className="text-xl font-bold text-primary-900 mb-4">💧 San Marcos Flash Flooding</h3>
+                    <div className="space-y-4">
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">River City Concerns:</p>
+                        <p className="text-sm text-primary-700 mb-2">San Marcos sits at the confluence of the San Marcos River and Blanco River. Flash flooding from heavy rains is common, especially near:</p>
+                        <ul className="text-sm text-primary-700 space-y-1">
+                          <li>• Blanco Gardens (Blanco River proximity)</li>
+                          <li>• Purgatory Creek (creek drainage)</li>
+                          <li>• Downtown/Old Town (low elevation)</li>
+                          <li>• Rio Vista Park area</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-primary-900 mb-2">Roofing Implications:</p>
+                        <ul className="text-sm text-primary-700 space-y-1">
+                          <li>• Proper drainage critical (valleys, gutters)</li>
+                          <li>• Quality underlayment prevents water infiltration</li>
+                          <li>• Flash floods test roof edge sealing</li>
+                          <li>• High humidity promotes algae/moss growth</li>
+                        </ul>
+                      </div>
+                      <div className="bg-blue-50 p-3 rounded">
+                        <p className="text-xs font-bold text-primary-900">Pro Tip:</p>
+                        <p className="text-xs text-primary-700">Algae-resistant shingles essential in humid San Marcos. Choose StreakFighter or StainGuard technology to prevent black streaks common near the rivers.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-accent-50 to-blue-50 rounded-lg p-6">
+                  <h3 className="text-xl font-bold text-primary-900 mb-4">Protecting Your San Marcos Roof</h3>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <p className="font-semibold text-primary-900 mb-2">✅ Before Storm Season:</p>
+                      <ul className="text-sm text-primary-700 space-y-1">
+                        <li>• Install Class 4 impact-resistant shingles</li>
+                        <li>• Trim trees away from roof (10+ feet)</li>
+                        <li>• Clean gutters and ensure proper drainage</li>
+                        <li>• Document roof condition with photos</li>
+                        <li>• Review insurance coverage and deductible</li>
+                        <li>• Sign up for Hays County weather alerts</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-primary-900 mb-2">⚠️ After San Marcos Storms:</p>
+                      <ul className="text-sm text-primary-700 space-y-1">
+                        <li>• Schedule FREE inspection within 1-2 weeks</li>
+                        <li>• Check for granule loss in gutters</li>
+                        <li>• Look for dents on metal (AC, vents, mailbox)</li>
+                        <li>• Document any visible damage with photos</li>
+                        <li>• File insurance claim if damage found</li>
+                        <li>• Call (512) 763-5277 for expert assessment</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* San Marcos Pricing */}
+              <div className="bg-blue-50 rounded-2xl p-8 border-l-4 border-blue-500">
+                <h2 className="text-2xl font-display font-bold text-primary-900 mb-4">
+                  San Marcos Roof Replacement Costs
+                </h2>
+                <p className="text-primary-700 mb-6">
+                  Transparent pricing for San Marcos homeowners. Costs vary by home size, roof complexity, and neighborhood:
+                </p>
+                <div className="space-y-4">
+                  <div className="flex justify-between items-start border-b border-blue-200 pb-3">
+                    <div>
+                      <p className="font-bold text-primary-900">1,400-2,000 sq ft Home</p>
+                      <p className="text-sm text-primary-600">Simple roof, The Heights/Blanco Gardens typical</p>
+                    </div>
+                    <p className="text-xl font-bold text-accent-600">$10,000-$15,000</p>
+                  </div>
+                  <div className="flex justify-between items-start border-b border-blue-200 pb-3">
+                    <div>
+                      <p className="font-bold text-primary-900">2,000-2,500 sq ft Home</p>
+                      <p className="text-sm text-primary-600">Most common San Marcos home size</p>
+                    </div>
+                    <p className="text-xl font-bold text-accent-600">$14,000-$20,000</p>
+                  </div>
+                  <div className="flex justify-between items-start border-b border-blue-200 pb-3">
+                    <div>
+                      <p className="font-bold text-primary-900">2,500-3,000 sq ft Home</p>
+                      <p className="text-sm text-primary-600">Larger Purgatory Creek homes</p>
+                    </div>
+                    <p className="text-xl font-bold text-accent-600">$17,000-$24,000</p>
+                  </div>
+                  <div className="flex justify-between items-start">
+                    <div>
+                      <p className="font-bold text-primary-900">3,000+ sq ft Home</p>
+                      <p className="text-sm text-primary-600">Luxury San Marcos properties</p>
+                    </div>
+                    <p className="text-xl font-bold text-accent-600">$21,000-$32,000+</p>
+                  </div>
+                </div>
+                <p className="text-sm text-primary-600 mt-6">
+                  All prices include complete tear-off, disposal, impact-resistant shingles, underlayment, ice/water shield, vents, flashing, and cleanup. Historic homes may require additional decking work.
+                </p>
+              </div>
+            </div>
+          )}
+
           {/* FAQ Section - Full Width */}
           <div className="mt-16">
             <LocationFAQ city={location.city} />
