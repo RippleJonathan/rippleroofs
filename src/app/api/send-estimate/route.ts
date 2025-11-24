@@ -1,6 +1,10 @@
 import { Resend } from 'resend'
 import { NextRequest, NextResponse } from 'next/server'
 
+// Configure runtime for larger payloads
+export const runtime = 'nodejs'
+export const maxDuration = 60 // 60 seconds max execution time
+
 export async function POST(request: NextRequest) {
   try {
     // Check if API key is configured

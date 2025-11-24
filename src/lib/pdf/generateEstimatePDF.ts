@@ -11,19 +11,30 @@ interface EstimatePDFData {
   package: RoofingPackage
 }
 
-// Helper function to load image as base64
-async function loadImageAsBase64(url: string): Promise<string> {
+// Helper function to load image as base64 with compression
+async function loadImageAsBase64(url: string, maxWidth: number = 800, quality: number = 0.7): Promise<string> {
   return new Promise((resolve, reject) => {
     const img = new Image()
     img.crossOrigin = 'anonymous'
     img.onload = () => {
       const canvas = document.createElement('canvas')
-      canvas.width = img.width
-      canvas.height = img.height
+      
+      // Calculate scaled dimensions
+      let width = img.width
+      let height = img.height
+      
+      if (width > maxWidth) {
+        height = (height * maxWidth) / width
+        width = maxWidth
+      }
+      
+      canvas.width = width
+      canvas.height = height
       const ctx = canvas.getContext('2d')
       if (ctx) {
-        ctx.drawImage(img, 0, 0)
-        resolve(canvas.toDataURL('image/png'))
+        ctx.drawImage(img, 0, 0, width, height)
+        // Use JPEG with compression for smaller file size
+        resolve(canvas.toDataURL('image/jpeg', quality))
       } else {
         reject(new Error('Could not get canvas context'))
       }
@@ -64,10 +75,10 @@ export async function generateEstimatePDF(data: EstimatePDFData): Promise<Blob> 
   doc.setFillColor(...accentColor)
   doc.rect(0, 47, pageWidth, 3, 'F')
   
-  // Add logo (centered at top)
+  // Add logo (centered at top) - compressed for smaller PDF size
   try {
-    const logoBase64 = await loadImageAsBase64('https://www.rippleroofs.com/images/logo.png')
-    doc.addImage(logoBase64, 'PNG', pageWidth / 2 - 20, 8, 40, 15)
+    const logoBase64 = await loadImageAsBase64('https://www.rippleroofs.com/images/logo.png', 400, 0.8)
+    doc.addImage(logoBase64, 'JPEG', pageWidth / 2 - 20, 8, 40, 15)
   } catch (error) {
     console.log('Logo not loaded, using text fallback')
     // Fallback to text if logo doesn't load

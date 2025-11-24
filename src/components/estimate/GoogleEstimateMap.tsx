@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Address, PolygonPoint } from '@/types/estimate'
 import { calculatePolygonArea } from '@/lib/estimate/calculations'
+import { loadGoogleMaps } from '@/lib/loadGoogleMaps'
 
 interface GoogleEstimateMapProps {
   address: Address
@@ -31,20 +32,8 @@ export function GoogleEstimateMap({ address, onAreaCalculated }: GoogleEstimateM
 
     const initMap = async () => {
       try {
-        // Load Google Maps if not already loaded
-        if (!window.google?.maps?.drawing || !window.google?.maps?.geometry) {
-          const script = document.createElement('script')
-          const apiKey = process.env.NEXT_PUBLIC_GOOGLE_PLACES_API_KEY
-          script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=drawing,geometry`
-          script.async = true
-          script.defer = true
-          
-          await new Promise<void>((resolve, reject) => {
-            script.onload = () => resolve()
-            script.onerror = () => reject(new Error('Failed to load Google Maps'))
-            document.head.appendChild(script)
-          })
-        }
+        // Load Google Maps using centralized loader
+        await loadGoogleMaps()
 
         // Initialize map with satellite view
         const map = new google.maps.Map(mapContainerRef.current!, {

@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react'
 import { Address } from '@/types/estimate'
-import { loadGoogleMapsScript } from '@/lib/googleMaps'
+import { loadGoogleMaps } from '@/lib/loadGoogleMaps'
 
 interface AddressSearchProps {
   onAddressSelect: (address: Address) => void
@@ -17,7 +17,7 @@ export function AddressSearch({ onAddressSelect }: AddressSearchProps) {
   useEffect(() => {
     const init = async () => {
       try {
-        await loadGoogleMapsScript()
+        await loadGoogleMaps()
         initAutocomplete()
       } catch (err) {
         console.error('Error loading Google Maps:', err)
