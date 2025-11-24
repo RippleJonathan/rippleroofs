@@ -1,15 +1,25 @@
 import type { Metadata } from 'next'
 import { Inter, Space_Grotesk } from 'next/font/google'
 import Script from 'next/script'
+import dynamic from 'next/dynamic'
 import './globals.css'
 import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
-import { FooterReviews } from '@/components/layout/FooterReviews'
 import { FloatingCallButton } from '@/components/ui/FloatingCallButton'
 import { EmergencyBanner } from '@/components/ui/EmergencyBanner'
-import { ExitIntentPopup } from '@/components/ui/ExitIntentPopup'
 import { StickyMobileBar } from '@/components/ui/StickyMobileBar'
 import LocalBusinessSchema from '@/components/seo/LocalBusinessSchema'
+
+// Lazy load below-the-fold components for better initial load performance
+const FooterReviews = dynamic(() => import('@/components/layout/FooterReviews').then(mod => ({ default: mod.FooterReviews })), {
+  loading: () => <div className="h-96 bg-gray-50" />, // Prevent layout shift
+  ssr: true
+})
+
+const ExitIntentPopup = dynamic(() => import('@/components/ui/ExitIntentPopup').then(mod => ({ default: mod.ExitIntentPopup })), {
+  ssr: false, // Client-side only
+  loading: () => null
+})
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -79,19 +89,39 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
       <head>
+        {/* Preconnect to external domains */}
         <link rel="preconnect" href="https://lh3.googleusercontent.com" />
         <link rel="dns-prefetch" href="https://lh3.googleusercontent.com" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        
+        {/* Preload critical font files */}
+        <link
+          rel="preload"
+          href="/_next/static/media/[font-hash].woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        
+        {/* Preload LCP image for faster render */}
+        <link
+          rel="preload"
+          as="image"
+          href="/images/hero/hero-bg.jpg"
+          fetchPriority="high"
+        />
       </head>
       <body className="font-sans">
         {/* Local Business Schema */}
         <LocalBusinessSchema />
         
-        {/* Google Analytics */}
+        {/* Google Analytics - Deferred for better performance */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-3F0FNPXXC5"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}

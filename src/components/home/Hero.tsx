@@ -15,9 +15,10 @@ export const Hero: FC = () => {
           alt="Modern roofing excellence"
           fill
           priority
+          fetchPriority="high"
           className="object-cover"
-          quality={75}
-          sizes="100vw"
+          quality={85}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
         />
         {/* Gradient Overlay with Blue Accent */}
         <div className="absolute inset-0 bg-gradient-to-r from-primary-900/95 via-primary-900/85 to-accent-900/30" />

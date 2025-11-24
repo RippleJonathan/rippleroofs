@@ -1,14 +1,28 @@
+import dynamic from 'next/dynamic'
 import { Hero } from '@/components/home/Hero'
 import { TrustBar } from '@/components/home/TrustBar'
 import { ServicesGrid } from '@/components/home/ServicesGrid'
-import { Testimonials } from '@/components/home/Testimonials'
-import { ProjectGalleryPreview } from '@/components/home/ProjectGalleryPreview'
 import { CTASection } from '@/components/home/CTASection'
 import { TrustBadges } from '@/components/ui/TrustBadges'
 import { WhyChooseUs } from '@/components/home/WhyChooseUs'
-import { FreeResourcesSection } from '@/components/home/FreeResourcesSection'
 import { FeaturedIn } from '@/components/home/FeaturedIn'
 import { SITE_CONFIG } from '@/lib/constants'
+
+// Lazy load below-the-fold components for better mobile performance
+const Testimonials = dynamic(() => import('@/components/home/Testimonials').then(mod => ({ default: mod.Testimonials })), {
+  loading: () => <div className="h-96 bg-gray-50" />,
+  ssr: true
+})
+
+const ProjectGalleryPreview = dynamic(() => import('@/components/home/ProjectGalleryPreview').then(mod => ({ default: mod.ProjectGalleryPreview })), {
+  loading: () => <div className="h-64 bg-gray-50" />,
+  ssr: true
+})
+
+const FreeResourcesSection = dynamic(() => import('@/components/home/FreeResourcesSection').then(mod => ({ default: mod.FreeResourcesSection })), {
+  loading: () => <div className="h-96 bg-gray-50" />,
+  ssr: true
+})
 
 export const metadata = {
   title: 'Roofing Contractor Round Rock TX | 24/7 Service | CertainTeed Certified',
