@@ -358,6 +358,30 @@ export const Footer: FC = () => {
                       Georgetown
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      href="/locations/hutto"
+                      className="text-primary-200 hover:text-accent-500 transition-colors duration-200"
+                    >
+                      Hutto
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/locations/manor"
+                      className="text-primary-200 hover:text-accent-500 transition-colors duration-200"
+                    >
+                      Manor
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/locations/jarrell"
+                      className="text-primary-200 hover:text-accent-500 transition-colors duration-200"
+                    >
+                      Jarrell
+                    </Link>
+                  </li>
                 </ul>
               </div>
 

@@ -5794,6 +5794,870 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
             </div>
           )}
 
+          {/* Location-Specific Deep Content - Hutto */}
+          {location.slug === 'hutto' && (
+            <div className="mt-16 space-y-12">
+              {/* Hutto Introduction */}
+              <div className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Expert Roofing Services in Hutto, Texas: Fastest-Growing City
+                </h2>
+                <p className="text-lg text-primary-700 leading-relaxed mb-6">
+                  Hutto represents one of the most explosive growth stories in Texas—transforming from a quiet railroad town of 630 residents in 1990 to a thriving suburban city of 35,000+ today. This rapid expansion brings new construction, modern developments like Star Ranch and Riverwalk, and families drawn by Dell Technologies proximity, excellent Hutto ISD schools, and affordable Austin-area living. As your local Hutto roofing contractor, we understand the unique needs of this fast-growing community.
+                </p>
+                <p className="text-lg text-primary-700 leading-relaxed">
+                  Whether you're in Star Ranch's master-planned neighborhoods, The Enclave's newer developments, or historic downtown Hutto, we deliver CertainTeed Shingle Master quality with transparent pricing that respects your investment. We're growing alongside Hutto—protecting new builds, first-time homebuyer roofs, and everything in between. <strong>From tech workers commuting to Dell to families discovering Hutto's small-town charm, we're your neighbors serving neighbors.</strong>
+                </p>
+              </div>
+
+              {/* Hutto Neighborhoods Deep Dive */}
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Hutto Neighborhoods: Roofing for Texas's Fastest Growth
+                </h2>
+                <p className="text-primary-700 mb-8 leading-relaxed">
+                  Hutto's explosive growth has created distinct neighborhoods—from massive master-planned Star Ranch to historic downtown. Each area has unique roofing considerations:
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏘️ Star Ranch</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 2010s-2020s • <strong>Style:</strong> Modern master-planned community<br />
+                      <strong>Common Roof Type:</strong> Architectural shingles, some premium impact-resistant
+                    </p>
+                    <div className="bg-blue-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Hutto's Flagship:</strong> Star Ranch is Hutto's largest development with 3,000+ homes planned. Award-winning community with resort-style amenities, top-rated schools, and strong property values. Popular with Dell/Samsung tech workers and young families.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> New construction roofs (5-15 years old), hail damage from Central Texas storms, builder-grade materials aging, HOA appearance standards</p>
+                      <p><strong>Best Materials:</strong> Impact-resistant shingles for insurance savings (20-35% discount), HOA-compliant colors (earth tones), quality installation to maximize builder warranty</p>
+                      <p><strong>Typical Cost:</strong> $14,000-$24,000 for 2,000-3,000 sq ft homes</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🌊 Riverwalk</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 2010s-2020s • <strong>Style:</strong> Family-oriented development<br />
+                      <strong>Common Roof Type:</strong> Architectural shingles
+                    </p>
+                    <div className="bg-green-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Growing Community:</strong> Riverwalk offers newer construction with family amenities, good schools, and convenient access to SH 130. Popular with first-time homebuyers and young professionals commuting to Dell/Samsung.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Newer roofs (5-10 years old) experiencing first hail damage, wind uplift concerns, maintaining builder warranties</p>
+                      <p><strong>Best Materials:</strong> Upgrade to impact-resistant when replacement needed, proper ventilation for Texas heat, quality underlayment</p>
+                      <p><strong>Typical Cost:</strong> $13,000-$21,000 for 1,800-2,600 sq ft homes</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏡 The Enclave & McCoy Creek</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 2000s-2010s • <strong>Style:</strong> Suburban family neighborhoods<br />
+                      <strong>Common Roof Type:</strong> Architectural shingles
+                    </p>
+                    <div className="bg-purple-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Established Hutto:</strong> These neighborhoods represent Hutto's earlier growth phase. More mature than Star Ranch/Riverwalk, with established landscaping and stable property values. Mix of original owners and second owners.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Roofs 15-25 years old approaching replacement, hail damage accumulation, aging builder-grade materials, tree debris from mature landscaping</p>
+                      <p><strong>Best Materials:</strong> Modern impact-resistant shingles upgrade from original 3-tab, improved ventilation systems, quality installation</p>
+                      <p><strong>Typical Cost:</strong> $12,000-$19,000 for 1,700-2,400 sq ft homes</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏛️ Historic Downtown Hutto</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1900s-1970s • <strong>Style:</strong> Historic/traditional<br />
+                      <strong>Common Roof Type:</strong> Mix of 3-tab and architectural shingles
+                    </p>
+                    <div className="bg-amber-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Small-Town Charm:</strong> Original Hutto with historic character, older homes on larger lots. Mix of long-time residents and young buyers attracted to affordability and renovation opportunities. Downtown revitalization underway.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Older roofs (20-50+ years), outdated 3-tab shingles, inadequate ventilation, decking replacement needs, charming but aging construction</p>
+                      <p><strong>Best Materials:</strong> Major upgrade to modern architectural or impact shingles, improved attic ventilation retrofit, proper flashing installation</p>
+                      <p><strong>Typical Cost:</strong> $11,000-$18,000 for 1,400-2,200 sq ft homes (+ $1k-$3k for decking repair common)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Hutto Weather & Storm History */}
+              <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Hutto Weather & Roofing: Central Texas Storm Challenges
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  Hutto sits in Central Texas "Hail Alley" with frequent severe weather impacting roofs:
+                </p>
+
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div>
+                    <h3 className="text-xl font-bold text-primary-900 mb-4">⚡ Severe Hail & Wind</h3>
+                    <div className="bg-white rounded-lg p-6 shadow-md mb-4">
+                      <p className="text-sm text-primary-700 mb-3">
+                        Hutto experiences <strong>frequent large hail events</strong>, particularly March-May when severe thunderstorms develop along the I-35 corridor.
+                      </p>
+                      <div className="bg-amber-50 p-4 rounded mb-3">
+                        <p className="font-bold text-primary-900 text-sm mb-2">Hutto Hail Statistics:</p>
+                        <div className="text-xs text-primary-700 space-y-1">
+                          <div className="flex justify-between items-center border-b border-primary-200 pb-1">
+                            <span>Quarter-sized (1") - Damage likely</span>
+                            <span className="font-bold text-orange-600">2-4x per year</span>
+                          </div>
+                          <div className="flex justify-between items-center border-b border-primary-200 pb-1">
+                            <span>Golf ball (1.75") - Severe damage</span>
+                            <span className="font-bold text-red-600">Every 1-2 years</span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span>Baseball+ (2.75"+) - Roof totaled</span>
+                            <span className="font-bold text-red-600">Every 3-5 years</span>
+                          </div>
+                        </div>
+                      </div>
+                      <p className="text-sm font-semibold text-primary-900">What This Means For You:</p>
+                      <p className="text-sm text-primary-700">Impact-resistant (Class 4) shingles ESSENTIAL in Hutto. Insurance companies offer 20-35% premium discounts. After storms, get FREE professional inspection—insurance claims must be filed within 1 year. Hutto roofs average 15-20 year lifespan due to frequent hail.</p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-bold text-primary-900 mb-4">🌡️ Extreme Heat & UV</h3>
+                    <div className="bg-white rounded-lg p-6 shadow-md mb-4">
+                      <p className="text-sm text-primary-700 mb-3">
+                        Hutto regularly exceeds <strong>100°F in summer</strong> with intense UV exposure accelerating roof deterioration.
+                      </p>
+                      <div className="bg-orange-50 p-4 rounded mb-3">
+                        <p className="font-bold text-primary-900 text-sm mb-2">Heat Impact on Roofs:</p>
+                        <ul className="text-xs text-primary-700 space-y-1">
+                          <li>• Shingle granules deteriorate faster in Hutto heat</li>
+                          <li>• UV radiation breaks down asphalt compounds</li>
+                          <li>• Poor attic ventilation = 140-160°F attic temps</li>
+                          <li>• Adhesive strips fail prematurely without proper installation</li>
+                          <li>• Metal roofs expand/contract with temperature swings</li>
+                        </ul>
+                      </div>
+                      <p className="text-sm font-semibold text-primary-900">Protection Strategy:</p>
+                      <p className="text-sm text-primary-700">Proper attic ventilation CRITICAL in Hutto. Ridge vents + soffit vents reduce attic temps 20-30°F, extending roof life 5-10 years. Reflective shingles help. Quality materials with UV-resistant formulations essential for Central Texas sun.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-white rounded-lg p-6 shadow-lg mt-6">
+                  <h3 className="text-xl font-bold text-primary-900 mb-4">🌩️ Recent Major Storm Events in Hutto</h3>
+                  <div className="space-y-3 text-sm text-primary-700">
+                    <div className="border-l-4 border-red-500 pl-4">
+                      <p className="font-bold text-primary-900">March 2024 – I-35 Corridor Hailstorm</p>
+                      <p>Golf ball to baseball-sized hail tracked along I-35 through Hutto, Round Rock, and Georgetown. Star Ranch and Riverwalk neighborhoods received significant damage. Thousands of Hutto insurance claims filed.</p>
+                    </div>
+                    <div className="border-l-4 border-orange-500 pl-4">
+                      <p className="font-bold text-primary-900">May 2022 – Williamson County Severe Weather</p>
+                      <p>Multiple rounds of severe storms. Hutto received golf ball hail and 60+ mph winds. Widespread roof damage across The Enclave and McCoy Creek areas.</p>
+                    </div>
+                    <div className="border-l-4 border-amber-500 pl-4">
+                      <p className="font-bold text-primary-900">April 2021 – Spring Supercell</p>
+                      <p>Rotating supercell produced large hail and damaging winds through Hutto. This storm created the first major claims wave in newer Star Ranch neighborhoods.</p>
+                    </div>
+                    <div className="border-l-4 border-yellow-500 pl-4">
+                      <p className="font-bold text-primary-900">March 2016 – $1.4 Billion Regional Catastrophe</p>
+                      <p>Historic hailstorm devastated all of Central Texas. Hutto received baseball-sized hail. Entire neighborhoods required roof replacement. Defined roofing industry in Williamson County.</p>
+                    </div>
+                  </div>
+                  <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded mt-4">
+                    <p className="text-xs font-bold text-red-900 mb-1">⚠️ Hutto Homeowners: After ANY significant storm with hail...</p>
+                    <p className="text-xs text-primary-700">Get FREE professional inspection immediately. Hail damage often invisible from ground level. Insurance claim deadlines strict (typically 1 year from storm date). We provide free storm inspections with documentation for insurance—no obligation. Star Ranch, Riverwalk especially vulnerable to hail damage.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Hutto Roof Replacement Cost Guide */}
+              <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Hutto Roof Replacement Costs: Complete Pricing Guide
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  Hutto roof replacement costs reflect modern construction and competitive Austin-area market rates:
+                </p>
+
+                <div className="space-y-4 mb-8">
+                  <div className="border-l-4 border-blue-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">1,400-1,800 sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: Smaller Hutto home, 2-3 bed/2 bath, simple roof, 16-20 squares - Historic Downtown, older McCoy Creek</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$10,000-$16,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-green-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">1,800-2,400 sq ft Home (Most Common)</p>
+                        <p className="text-sm text-primary-700">Typical: Standard Hutto family home, 3-4 bed/2-3 bath, moderate complexity, 20-28 squares - The Enclave, Riverwalk</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$13,000-$20,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-purple-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">2,400-3,000 sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: Larger Hutto two-story, 4 bed/3 bath, increased complexity, 28-36 squares - Star Ranch premium lots</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$16,000-$26,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-red-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">3,000-4,000 sq ft Home</p>
+                        <p className="text-sm text-primary-700">Typical: Large Hutto estate, 4-5 bed/3-4 bath, complex roof, 36-48 squares - Star Ranch luxury homes</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$20,000-$35,000</p>
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-amber-500 pl-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="font-bold text-primary-900">4,000+ sq ft Luxury Home</p>
+                        <p className="text-sm text-primary-700">Typical: Premium Hutto custom builds, 48+ squares, high-end materials - Star Ranch executive homes</p>
+                      </div>
+                      <p className="text-xl font-bold text-accent-600">$28,000-$50,000+</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded mb-8">
+                  <p className="font-bold text-primary-900 mb-2">💡 Hutto-Specific Cost Factors</p>
+                  <ul className="text-sm text-primary-700 space-y-2">
+                    <li>• <strong>HOA Approvals:</strong> Star Ranch and newer developments have HOA requirements. Color selection must be pre-approved (earth tones typically accepted). We handle paperwork.</li>
+                    <li>• <strong>New Construction:</strong> Many Hutto homes still have original builder roofs (5-15 years old). First replacement often covered by insurance if hail damaged.</li>
+                    <li>• <strong>Tech Worker Schedules:</strong> Dell/Samsung employees need flexible scheduling. We work around your commute and offer weekend/evening consultations.</li>
+                    <li>• <strong>First-Time Homebuyers:</strong> Many Hutto residents are first-time buyers. We educate throughout the process with transparent pricing.</li>
+                  </ul>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-6 mb-8">
+                  <div className="bg-red-50 rounded-lg p-6 border-l-4 border-red-500">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">📈 What INCREASES Cost in Hutto</h3>
+                    <ul className="space-y-2 text-sm text-primary-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+20-30%</span>
+                        <span><strong>Two-story homes</strong> (common in Star Ranch, Riverwalk)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+15-25%</span>
+                        <span><strong>Complex roof lines</strong> (Star Ranch custom homes with architectural features)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+$1k-3k</span>
+                        <span><strong>Decking repairs</strong> (older Historic Downtown homes commonly need this)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+10-15%</span>
+                        <span><strong>Steep pitch roofs</strong> (8/12 or greater, safety equipment required)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+$2k-5k</span>
+                        <span><strong>Premium materials</strong> (upgraded impact shingles, designer colors, enhanced warranties)</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="bg-green-50 rounded-lg p-6 border-l-4 border-green-500">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">📉 What DECREASES Cost in Hutto</h3>
+                    <ul className="space-y-2 text-sm text-primary-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Single-story ranch</strong> (safer, faster, common in older Hutto)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Good existing decking</strong> (newer Star Ranch, Riverwalk homes)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Insurance claim coverage</strong> (pay deductible only—$1.5k-$3k typical)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Neighborhood group pricing</strong> (coordinate with neighbors after hail storms—10-15% discount)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Easy property access</strong> (wide Hutto streets, good driveways in new developments)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="mt-6 bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
+                  <p className="text-primary-900 font-semibold mb-2">📞 Get Your Exact Hutto Roof Replacement Cost</p>
+                  <p className="text-primary-700">
+                    These are estimates. Your actual cost depends on your specific home, neighborhood (Star Ranch, Riverwalk, The Enclave, etc.), materials, and current conditions. We provide <strong>FREE inspections</strong> and detailed written quotes with no obligation. <strong>Hutto homeowners: We work with your schedule—Dell/Samsung employees welcome to call during lunch breaks!</strong> Call <strong>(512) 763-5277</strong> or schedule online for your personalized Hutto roof replacement estimate.
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Location-Specific Deep Content - Manor */}
+          {location.slug === 'manor' && (
+            <div className="mt-16 space-y-12">
+              {/* Manor Introduction */}
+              <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Manor, Texas Roofing Services: East Austin's Affordable Growth Corridor
+                </h2>
+                <p className="text-lg text-primary-700 leading-relaxed mb-6">
+                  Manor represents East Austin's most dynamic affordable housing market—a rapidly expanding community where families and young professionals discover spacious homes, excellent Manor ISD schools, and easy Austin access at prices 20-30% below comparable West Austin properties. The 2010s brought explosive growth with ShadowGlen's master-planned development adding 3,000+ modern homes, Presidential Meadows attracting first-time buyers, and Dell/Samsung employees seeking value near their campuses. As your local Manor roofing contractor, we understand this community's unique needs.
+                </p>
+                <p className="text-lg text-primary-700 leading-relaxed">
+                  Manor's roofing market reflects its growth timeline: newer developments like ShadowGlen feature 10-15 year old roofs approaching first replacement, established neighborhoods need upgrades after 20+ years, and East Austin's hail corridor means frequent storm damage claims. Whether you're in ShadowGlen, Presidential Meadows, Stonewater, or Historic Downtown Manor, we're CertainTeed Shingle Master certified contractors providing transparent pricing, quality materials, and workmanship that protects your investment.
+                </p>
+              </div>
+
+              {/* Manor Neighborhoods Deep Dive */}
+              <div>
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Manor Neighborhoods: Your Complete Roofing Guide by Area
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  Manor's growth story is written in its neighborhoods—from ShadowGlen's championship golf course community to historic downtown's century-old structures. Each area has distinct roofing needs based on home age, construction quality, and typical property values. Here's your neighborhood-by-neighborhood Manor roofing guide:
+                </p>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏌️ ShadowGlen</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 2005-2020s • <strong>Style:</strong> Master-planned golf course community<br />
+                      <strong>Common Roof Type:</strong> Architectural shingles, some premium impact-resistant
+                    </p>
+                    <div className="bg-green-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Manor's Flagship:</strong> ShadowGlen is Manor's crown jewel—a Greg Norman-designed golf course community with 3,000+ homes, resort-style amenities, and Manor's highest property values ($300k-$500k+). Popular with Dell/Samsung professionals and Austin commuters seeking value.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Roofing Issues:</strong></p>
+                      <ul className="list-disc list-inside space-y-1 text-xs">
+                        <li>10-20 year old roofs hitting first replacement cycle</li>
+                        <li>Hail damage from East Austin corridor storms (2016, 2022, 2024)</li>
+                        <li>HOA architectural standards requiring approvals</li>
+                        <li>Two-story homes common (increased labor/safety costs)</li>
+                        <li>Premium materials expected (property value protection)</li>
+                      </ul>
+                      <p className="mt-3 font-semibold text-accent-600">Typical Cost: $14,000-$26,000</p>
+                      <p className="text-xs">(2,000-3,200 sq ft homes, architectural shingles, HOA-approved colors)</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏡 Presidential Meadows</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 2000s-2010s • <strong>Style:</strong> Family-oriented suburban<br />
+                      <strong>Common Roof Type:</strong> Architectural shingles, standard grades
+                    </p>
+                    <div className="bg-blue-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>First-Time Buyer Haven:</strong> Presidential Meadows attracted young families with affordable 3-4 bedroom homes ($250k-$350k), Manor ISD schools, and easy Highway 290 access. Many homes now need first major roof replacement.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Roofing Issues:</strong></p>
+                      <ul className="list-disc list-inside space-y-1 text-xs">
+                        <li>Original builder roofs (15-20 years old) nearing end of life</li>
+                        <li>First-time homeowners needing education on replacement process</li>
+                        <li>Insurance claims from multiple hailstorms</li>
+                        <li>Budget-conscious buyers seeking value</li>
+                        <li>Single-story ranch style (cost advantage)</li>
+                      </ul>
+                      <p className="mt-3 font-semibold text-accent-600">Typical Cost: $12,000-$20,000</p>
+                      <p className="text-xs">(1,700-2,400 sq ft homes, quality architectural shingles)</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🌳 Stonewater & Whispering Hollow</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1990s-2000s • <strong>Style:</strong> Established suburban neighborhoods<br />
+                      <strong>Common Roof Type:</strong> Mix of architectural and older 3-tab shingles
+                    </p>
+                    <div className="bg-purple-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Mature Manor:</strong> These neighborhoods represent Manor's pre-boom development. Mature trees, larger lots, mix of original owners and second buyers. Properties showing age but well-maintained.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Roofing Issues:</strong></p>
+                      <ul className="list-disc list-inside space-y-1 text-xs">
+                        <li>20-30+ year old roofs needing complete replacement</li>
+                        <li>Outdated 3-tab shingles (upgrading to architectural)</li>
+                        <li>Decking repairs more common (age-related deterioration)</li>
+                        <li>Mature trees = debris accumulation, moss/algae growth</li>
+                        <li>Multiple hail events over decades</li>
+                      </ul>
+                      <p className="mt-3 font-semibold text-accent-600">Typical Cost: $11,000-$19,000</p>
+                      <p className="text-xs">(1,600-2,300 sq ft, includes potential decking repairs $1k-$3k)</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏛️ Historic Downtown Manor</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1900s-1980s • <strong>Style:</strong> Historic homes, varied construction<br />
+                      <strong>Common Roof Type:</strong> Mixed—3-tab, architectural, some metal
+                    </p>
+                    <div className="bg-amber-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Original Manor:</strong> Historic downtown preserves Manor's railroad heritage. Larger lots, century-old structures, renovation opportunities. Mix of long-time residents and young buyers seeking character homes.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Roofing Issues:</strong></p>
+                      <ul className="list-disc list-inside space-y-1 text-xs">
+                        <li>Very old roofs (20-50+ years) needing full replacement</li>
+                        <li>Decking repairs almost always required</li>
+                        <li>Structural considerations (older framing, settling)</li>
+                        <li>Upgrading from outdated materials</li>
+                        <li>Variety of roof pitches and complexity</li>
+                      </ul>
+                      <p className="mt-3 font-semibold text-accent-600">Typical Cost: $10,000-$18,000</p>
+                      <p className="text-xs">(1,400-2,100 sq ft, budget for decking repairs $2k-$4k)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Manor Weather & Storm History */}
+              <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Manor Storm History: East Austin Hail Corridor
+                </h2>
+                <p className="text-lg text-primary-700 mb-8 leading-relaxed">
+                  Manor sits squarely in East Austin's notorious hail corridor—where I-35's updrafts and Texas Hill Country weather systems collide to produce devastating hailstorms. Manor homeowners should expect quarter-sized hail 2-4 times yearly, golf ball hail every 1-2 years, and catastrophic baseball+ hail every 3-5 years. Understanding Manor's storm patterns helps you protect your investment:
+                </p>
+
+                <div className="grid md:grid-cols-3 gap-4 mb-8">
+                  <div className="bg-white p-4 rounded-lg shadow">
+                    <p className="text-xs font-bold text-primary-900 mb-2">Quarter-Sized (1")</p>
+                    <p className="text-2xl font-bold text-orange-600">2-4x/year</p>
+                    <p className="text-xs text-primary-600 mt-1">Minor damage, granule loss</p>
+                  </div>
+                  <div className="bg-white p-4 rounded-lg shadow">
+                    <p className="text-xs font-bold text-primary-900 mb-2">Golf Ball (1.75")</p>
+                    <p className="text-2xl font-bold text-red-600">Every 1-2 years</p>
+                    <p className="text-xs text-primary-600 mt-1">Significant damage, claims</p>
+                  </div>
+                  <div className="bg-white p-4 rounded-lg shadow">
+                    <p className="text-xs font-bold text-primary-900 mb-2">Baseball+ (2.75"+)</p>
+                    <p className="text-2xl font-bold text-red-800">Every 3-5 years</p>
+                    <p className="text-xs text-primary-600 mt-1">Catastrophic, full replacement</p>
+                  </div>
+                </div>
+
+                <h3 className="text-2xl font-display font-bold text-primary-900 mb-4">Major Manor Storm Events</h3>
+                <div className="space-y-4">
+                  <div className="bg-white rounded-lg p-4 border-l-4 border-red-600">
+                    <p className="font-bold text-primary-900">🌩️ March 2024 - East Austin Corridor Hailstorm</p>
+                    <p className="text-sm text-primary-700 mt-1">Golf/baseball-sized hail swept Manor, ShadowGlen, and surrounding areas. Thousands of Manor insurance claims filed. Many 2010s-era ShadowGlen roofs replaced.</p>
+                  </div>
+                  <div className="bg-white rounded-lg p-4 border-l-4 border-orange-600">
+                    <p className="font-bold text-primary-900">⛈️ May 2022 - Travis County Severe Weather</p>
+                    <p className="text-sm text-primary-700 mt-1">Golf ball hail + 60+ mph winds hit Manor hard. Presidential Meadows and Stonewater neighborhoods saw extensive damage. Many roofs 15-20 years old finally replaced.</p>
+                  </div>
+                  <div className="bg-white rounded-lg p-4 border-l-4 border-yellow-600">
+                    <p className="font-bold text-primary-900">🌪️ April 2021 - Spring Supercell</p>
+                    <p className="text-sm text-primary-700 mt-1">Major hail event across Manor. First major claims wave in ShadowGlen's newer sections. Insurance companies overwhelmed with East Austin claims.</p>
+                  </div>
+                  <div className="bg-white rounded-lg p-4 border-l-4 border-red-800">
+                    <p className="font-bold text-primary-900">💥 March 2016 - Historic $1.4 Billion Catastrophe</p>
+                    <p className="text-sm text-primary-700 mt-1">Baseball/softball-sized hail devastated Manor and surrounding areas. Entire neighborhoods replaced roofs. Defined modern roofing industry in Travis County. Manor still recovering insurance-wise.</p>
+                  </div>
+                </div>
+
+                <div className="mt-8 bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
+                  <p className="font-bold text-primary-900 mb-2">☀️ Heat & UV Impact in Manor</p>
+                  <p className="text-sm text-primary-700">
+                    Beyond hail, Manor's East Austin location means intense summer sun exposure. Regular 100°F+ temperatures, minimal shade in newer developments, and high UV radiation break down asphalt shingles faster than West Austin properties. Attic temperatures in Manor homes regularly hit 140-160°F without proper ventilation. Proper ridge vents, soffit venting, and radiant barriers extend roof life 5-10 years in Manor's climate.
+                  </p>
+                </div>
+              </div>
+
+              {/* Manor Pricing Guide */}
+              <div>
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Manor Roof Replacement Cost Guide (2025)
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  Manor roof replacement costs reflect East Austin's affordable housing market while maintaining quality standards. Here's what Manor homeowners can expect:
+                </p>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+                  <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-lg">
+                    <p className="text-sm font-semibold text-primary-900 mb-2">Small Homes</p>
+                    <p className="text-xs text-primary-700 mb-3">1,400-1,800 sq ft<br />Historic Downtown, older areas</p>
+                    <p className="text-xl font-bold text-accent-600">$10,000-$16,000</p>
+                  </div>
+                  <div className="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-lg">
+                    <p className="text-sm font-semibold text-primary-900 mb-2">Medium Homes</p>
+                    <p className="text-xs text-primary-700 mb-3">1,800-2,400 sq ft<br />Presidential Meadows, Stonewater</p>
+                    <p className="text-xl font-bold text-accent-600">$13,000-$21,000</p>
+                  </div>
+                  <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-lg">
+                    <p className="text-sm font-semibold text-primary-900 mb-2">Large Homes</p>
+                    <p className="text-xs text-primary-700 mb-3">2,400-3,200 sq ft<br />ShadowGlen, newer developments</p>
+                    <p className="text-xl font-bold text-accent-600">$16,000-$28,000</p>
+                  </div>
+                  <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-lg">
+                    <p className="text-sm font-semibold text-primary-900 mb-2">Very Large Homes</p>
+                    <p className="text-xs text-primary-700 mb-3">3,200-4,000 sq ft<br />ShadowGlen golf course estates</p>
+                    <p className="text-xl font-bold text-accent-600">$21,000-$36,000</p>
+                  </div>
+                  <div className="bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-lg">
+                    <p className="text-sm font-semibold text-primary-900 mb-2">Estate Homes</p>
+                    <p className="text-xs text-primary-700 mb-3">4,000+ sq ft<br />Custom ShadowGlen properties</p>
+                    <p className="text-xl font-bold text-accent-600">$28,000-$50,000+</p>
+                  </div>
+                </div>
+
+                <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded mb-8">
+                  <p className="font-bold text-primary-900 mb-2">💡 Manor-Specific Cost Factors</p>
+                  <ul className="text-sm text-primary-700 space-y-2">
+                    <li>• <strong>Affordability Focus:</strong> Manor buyers are budget-conscious. We offer transparent pricing, financing options, and value-focused material selections without sacrificing quality.</li>
+                    <li>• <strong>First-Time Homeowners:</strong> Many Manor residents are first-time buyers. We educate throughout the process, explain insurance claims, and provide clear written estimates.</li>
+                    <li>• <strong>Dell/Samsung Commuters:</strong> Many Manor residents work in Round Rock tech corridor. We schedule around your commute—early morning, evening, or weekend consultations.</li>
+                    <li>• <strong>HOA Requirements:</strong> ShadowGlen has architectural standards. We handle approvals, ensure color compliance (earth tones typically required), and manage paperwork.</li>
+                  </ul>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-6 mb-8">
+                  <div className="bg-red-50 rounded-lg p-6 border-l-4 border-red-500">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">📈 What INCREASES Cost in Manor</h3>
+                    <ul className="space-y-2 text-sm text-primary-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+20-30%</span>
+                        <span><strong>Two-story homes</strong> (common in ShadowGlen)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+15-25%</span>
+                        <span><strong>Complex roof lines</strong> (ShadowGlen custom homes)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+$2k-4k</span>
+                        <span><strong>Decking repairs</strong> (common in older Stonewater, Historic Downtown)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+10-15%</span>
+                        <span><strong>Steep pitch roofs</strong> (safety equipment required)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+$3k-6k</span>
+                        <span><strong>Premium impact-resistant shingles</strong> (Class 4, insurance discounts)</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-green-50 rounded-lg p-6 border-l-4 border-green-500">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">📉 What DECREASES Cost in Manor</h3>
+                    <ul className="space-y-2 text-sm text-primary-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Single-story ranch</strong> (safer, faster, common in Presidential Meadows)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Good existing decking</strong> (newer ShadowGlen homes)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Insurance claim coverage</strong> (pay deductible only, typically $1.5k-$3k)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Neighborhood group pricing</strong> (10-15% discount when multiple neighbors replace after storms)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Simple roof design</strong> (basic gables, few penetrations)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="mt-6 bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
+                  <p className="text-primary-900 font-semibold mb-2">📞 Get Your Exact Manor Roof Replacement Cost</p>
+                  <p className="text-primary-700">
+                    These are estimates. Your actual cost depends on your specific home, neighborhood (ShadowGlen, Presidential Meadows, Stonewater, etc.), materials, and current conditions. We provide <strong>FREE inspections</strong> and detailed written quotes with no obligation. <strong>Manor homeowners: We understand budget constraints and offer flexible financing!</strong> Call <strong>(512) 763-5277</strong> or schedule online for your personalized Manor roof replacement estimate.
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Location-Specific Deep Content - Jarrell */}
+          {location.slug === 'jarrell' && (
+            <div className="mt-16 space-y-12">
+              {/* Jarrell Introduction */}
+              <div className="bg-gradient-to-br from-slate-50 to-gray-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Jarrell, Texas Roofing Services: Resilient Community in Tornado Alley
+                </h2>
+                <p className="text-lg text-primary-700 leading-relaxed mb-6">
+                  Jarrell's story is one of resilience, community, and remembrance. Forever marked by the devastating F5 tornado of May 27, 1997—one of the deadliest in Texas history—Jarrell has rebuilt itself into a close-knit community of 2,000+ residents who understand the critical importance of durable, weather-resistant construction. Located north of Round Rock along I-35, Jarrell offers affordable family living, excellent Jarrell ISD schools, and quick Austin Metro access while maintaining small-town character. As your local Jarrell roofing contractor, we honor this community's history with quality work built to withstand severe weather.
+                </p>
+                <p className="text-lg text-primary-700 leading-relaxed">
+                  Jarrell's roofing considerations are shaped by its location in severe tornado alley and I-35 hail corridor. Heritage Oaks and newer developments feature modern construction with proper wind ratings, while historic downtown properties may need structural upgrades. The 1997 tornado memorial serves as a constant reminder: roofing in Jarrell isn't just about curb appeal—it's about life safety and protecting families from nature's fury. We take that responsibility seriously with CertainTeed Shingle Master certified installations and impact-resistant materials.
+                </p>
+              </div>
+
+              {/* Jarrell Neighborhoods Deep Dive */}
+              <div>
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Jarrell Neighborhoods: Your Complete Roofing Guide by Area
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  Jarrell's neighborhoods tell the story of rebuilding and growth after tragedy. From newer Heritage Oaks developments to historic downtown properties predating the 1997 tornado, each area requires specialized roofing knowledge:
+                </p>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🌳 Heritage Oaks</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 2000s-2010s • <strong>Style:</strong> Post-tornado modern development<br />
+                      <strong>Common Roof Type:</strong> Architectural shingles, wind-rated
+                    </p>
+                    <div className="bg-blue-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Jarrell's Growth:</strong> Heritage Oaks represents Jarrell's post-1997 development. Built to modern wind standards with proper hurricane straps, sealed decking, and impact-resistant materials. Popular with families seeking affordable homes ($200k-$300k) with Austin Metro access.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Roofing Issues:</strong></p>
+                      <ul className="list-disc list-inside space-y-1 text-xs">
+                        <li>15-20 year old roofs approaching first replacement</li>
+                        <li>Hail damage from I-35 corridor storms</li>
+                        <li>Wind uplift concerns (tornado alley awareness)</li>
+                        <li>Homeowners prioritize durability over aesthetics</li>
+                        <li>Insurance discounts for impact-resistant upgrades</li>
+                      </ul>
+                      <p className="mt-3 font-semibold text-accent-600">Typical Cost: $12,000-$20,000</p>
+                      <p className="text-xs">(1,700-2,400 sq ft homes, wind-rated architectural shingles)</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏡 Sonterra & Oak Meadow</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 2010s-2020s • <strong>Style:</strong> Newer family neighborhoods<br />
+                      <strong>Common Roof Type:</strong> Modern architectural shingles
+                    </p>
+                    <div className="bg-green-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Recent Growth:</strong> These neighborhoods reflect Jarrell's I-35 corridor growth. Newer construction, young families, first-time buyers. Homes built to latest codes with proper wind bracing and sealed roof decks.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Roofing Issues:</strong></p>
+                      <ul className="list-disc list-inside space-y-1 text-xs">
+                        <li>Newer roofs (5-15 years) in good condition</li>
+                        <li>First hail damage claims (2022, 2024 storms)</li>
+                        <li>Builder-grade materials may need upgrading</li>
+                        <li>Young homeowners learning maintenance</li>
+                        <li>Warranty coverage still active on some homes</li>
+                      </ul>
+                      <p className="mt-3 font-semibold text-accent-600">Typical Cost: $13,000-$21,000</p>
+                      <p className="text-xs">(1,800-2,500 sq ft, premium architectural shingles recommended)</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏛️ Historic Downtown Jarrell</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> Pre-1997 survivors, post-1997 rebuilds • <strong>Style:</strong> Mixed historic<br />
+                      <strong>Common Roof Type:</strong> Varied—architectural, 3-tab, metal
+                    </p>
+                    <div className="bg-amber-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Jarrell's Heart:</strong> Historic downtown includes structures that survived the 1997 tornado plus rebuilt properties. Mix of long-time residents (many who lost homes in '97) and newcomers. Community pride runs deep—quality work expected.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Roofing Issues:</strong></p>
+                      <ul className="list-disc list-inside space-y-1 text-xs">
+                        <li>Post-1997 roofs now 20-28 years old (replacement needed)</li>
+                        <li>Pre-1997 survivors may lack modern wind bracing</li>
+                        <li>Structural upgrades often required for safety</li>
+                        <li>Emotional weight of tornado anniversary (May 27)</li>
+                        <li>Community expects contractors who understand history</li>
+                      </ul>
+                      <p className="mt-3 font-semibold text-accent-600">Typical Cost: $11,000-$19,000</p>
+                      <p className="text-xs">(1,600-2,300 sq ft, may include structural upgrades $1k-$3k)</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🌾 Country Estates</h3>
+                    <p className="text-sm text-primary-700 mb-3">
+                      <strong>Built:</strong> 1990s-2020s • <strong>Style:</strong> Rural acreage properties<br />
+                      <strong>Common Roof Type:</strong> Mix of shingles and metal roofing
+                    </p>
+                    <div className="bg-purple-50 p-3 rounded mb-3">
+                      <p className="text-xs text-primary-700"><strong>Jarrell's Outskirts:</strong> Larger properties on 1-10+ acres. Mix of ages and styles. Many owners prefer metal roofing for durability and longevity. Agricultural/ranch influence—practical, long-lasting solutions valued.</p>
+                    </div>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Roofing Issues:</strong></p>
+                      <ul className="list-disc list-inside space-y-1 text-xs">
+                        <li>Varied roof ages and conditions</li>
+                        <li>Interest in metal roofing (50+ year lifespan)</li>
+                        <li>Outbuildings/barns also need roofing (bundled pricing)</li>
+                        <li>Hail and wind damage in exposed locations</li>
+                        <li>Budget-conscious rural homeowners</li>
+                      </ul>
+                      <p className="mt-3 font-semibold text-accent-600">Typical Cost: $10,000-$18,000 (shingle) or $18,000-$35,000 (metal)</p>
+                      <p className="text-xs">(1,400-2,200 sq ft homes, metal roofing popular for longevity)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Jarrell Weather & Storm History */}
+              <div className="bg-gradient-to-br from-red-50 to-rose-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Jarrell Storm History: Honoring May 27, 1997
+                </h2>
+                <p className="text-lg text-primary-700 mb-8 leading-relaxed">
+                  We cannot discuss Jarrell roofing without acknowledging the tragedy that shaped this community. On May 27, 1997, an F5 tornado—the most powerful rating possible—devastated Jarrell, killing 27 people and completely obliterating the Double Creek Estates subdivision. Wind speeds exceeded 260 mph. Homes weren't just damaged—they were swept away to bare concrete slabs. Vehicles were thrown hundreds of yards. The Jarrell Memorial Park honors those lost and serves as a permanent reminder of nature's power.
+                </p>
+
+                <div className="bg-white border-l-4 border-black p-6 rounded mb-8">
+                  <p className="font-bold text-primary-900 mb-2">🕊️ May 27, 1997 - The Jarrell Tornado</p>
+                  <ul className="text-sm text-primary-700 space-y-2">
+                    <li>• <strong>Rating:</strong> F5 (winds 261-318 mph, highest possible)</li>
+                    <li>• <strong>Deaths:</strong> 27 fatalities (entire families lost)</li>
+                    <li>• <strong>Damage:</strong> Double Creek Estates completely destroyed—homes swept to slabs</li>
+                    <li>• <strong>Path:</strong> 13 miles long, up to 3/4 mile wide</li>
+                    <li>• <strong>Legacy:</strong> Changed Texas building codes, tornado warning systems, and community preparedness</li>
+                    <li>• <strong>Memorial:</strong> Jarrell Memorial Park at 400 Melody Lane honors the victims</li>
+                  </ul>
+                  <p className="text-sm text-primary-700 mt-4 italic">
+                    Every Jarrell resident knows someone affected. Every May 27, the community gathers to remember. As roofing contractors, we honor their memory with work that prioritizes life safety and structural integrity above all else.
+                  </p>
+                </div>
+
+                <h3 className="text-2xl font-display font-bold text-primary-900 mb-4">Modern Storm Threats in Jarrell</h3>
+                <p className="text-primary-700 mb-6">
+                  While F5 tornadoes are exceedingly rare, Jarrell remains in severe tornado alley. The community also faces frequent hail, damaging winds, and extreme weather:
+                </p>
+
+                <div className="space-y-4">
+                  <div className="bg-white rounded-lg p-4 border-l-4 border-red-600">
+                    <p className="font-bold text-primary-900">🌪️ March 2022 - Williamson County Tornado Warning</p>
+                    <p className="text-sm text-primary-700 mt-1">Tornado touched down near Jarrell, bringing back 1997 memories. Community sheltered in place. No major damage but psychological impact significant. Reinforced need for storm-rated roofing.</p>
+                  </div>
+                  <div className="bg-white rounded-lg p-4 border-l-4 border-orange-600">
+                    <p className="font-bold text-primary-900">⛈️ May 2022 - I-35 Corridor Hailstorm</p>
+                    <p className="text-sm text-primary-700 mt-1">Golf ball hail hammered Jarrell and I-35 corridor. Heritage Oaks and newer developments saw widespread roof damage. Hundreds of insurance claims filed.</p>
+                  </div>
+                  <div className="bg-white rounded-lg p-4 border-l-4 border-yellow-600">
+                    <p className="font-bold text-primary-900">💨 April 2021 - Severe Wind Event</p>
+                    <p className="text-sm text-primary-700 mt-1">70+ mph straight-line winds. Older roofs in historic downtown lost shingles. Reinforced importance of proper wind ratings and hurricane straps in Jarrell construction.</p>
+                  </div>
+                </div>
+
+                <div className="mt-8 bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
+                  <p className="font-bold text-primary-900 mb-2">🏗️ Jarrell Roofing Standards After 1997</p>
+                  <p className="text-sm text-primary-700">
+                    Post-1997 construction in Jarrell follows enhanced building codes including: <strong>Hurricane straps/clips on every rafter</strong> (not just corners), <strong>sealed roof decking</strong> (reduces wind uplift), <strong>impact-resistant shingles</strong> (Class 4 rating), <strong>proper ventilation</strong> (prevents moisture damage), and <strong>wind-rated materials</strong> (110+ mph minimum). When we roof in Jarrell, we exceed these standards because we understand what's at stake. Your family's safety depends on quality work—not the cheapest bid.
+                  </p>
+                </div>
+              </div>
+
+              {/* Jarrell Pricing Guide */}
+              <div>
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
+                  Jarrell Roof Replacement Cost Guide (2025)
+                </h2>
+                <p className="text-lg text-primary-700 mb-8">
+                  Jarrell roof replacement costs reflect small-town affordability with big-city quality standards. Given Jarrell's tornado history, we never compromise on structural integrity:
+                </p>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+                  <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-lg">
+                    <p className="text-sm font-semibold text-primary-900 mb-2">Small Homes</p>
+                    <p className="text-xs text-primary-700 mb-3">1,400-1,800 sq ft<br />Older properties, Country Estates</p>
+                    <p className="text-xl font-bold text-accent-600">$10,000-$16,000</p>
+                  </div>
+                  <div className="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-lg">
+                    <p className="text-sm font-semibold text-primary-900 mb-2">Medium Homes</p>
+                    <p className="text-xs text-primary-700 mb-3">1,800-2,400 sq ft<br />Heritage Oaks, Historic Downtown</p>
+                    <p className="text-xl font-bold text-accent-600">$13,000-$21,000</p>
+                  </div>
+                  <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-lg">
+                    <p className="text-sm font-semibold text-primary-900 mb-2">Large Homes</p>
+                    <p className="text-xs text-primary-700 mb-3">2,400-3,000 sq ft<br />Sonterra, Oak Meadow</p>
+                    <p className="text-xl font-bold text-accent-600">$16,000-$26,000</p>
+                  </div>
+                  <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-lg">
+                    <p className="text-sm font-semibold text-primary-900 mb-2">Country Estates</p>
+                    <p className="text-xs text-primary-700 mb-3">1,500-2,500 sq ft<br />Rural properties, metal roofing</p>
+                    <p className="text-xl font-bold text-accent-600">$18,000-$35,000</p>
+                  </div>
+                </div>
+
+                <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded mb-8">
+                  <p className="font-bold text-primary-900 mb-2">💡 Jarrell-Specific Cost Factors</p>
+                  <ul className="text-sm text-primary-700 space-y-2">
+                    <li>• <strong>Safety First:</strong> Jarrell residents prioritize durability over aesthetics. We recommend impact-resistant Class 4 shingles and proper wind bracing—even if it costs more.</li>
+                    <li>• <strong>1997 Legacy:</strong> Many homeowners lost everything in the tornado. We treat every job with respect, understanding the emotional weight of protecting your rebuilt home.</li>
+                    <li>• <strong>Small Town Values:</strong> Jarrell is a tight-knit community. Word-of-mouth matters. We provide honest assessments, fair pricing, and quality work that reflects our reputation.</li>
+                    <li>• <strong>Memorial Day Sensitivity:</strong> We avoid scheduling work on May 27 (1997 tornado anniversary). The community gathers to remember—we respect that.</li>
+                  </ul>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-6 mb-8">
+                  <div className="bg-red-50 rounded-lg p-6 border-l-4 border-red-500">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">📈 What INCREASES Cost in Jarrell</h3>
+                    <ul className="space-y-2 text-sm text-primary-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+$3k-6k</span>
+                        <span><strong>Impact-resistant Class 4 shingles</strong> (HIGHLY recommended in Jarrell, 20-35% insurance discount)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+$1k-2k</span>
+                        <span><strong>Hurricane straps/clips</strong> (structural upgrades for older homes)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+$2k-4k</span>
+                        <span><strong>Decking repairs</strong> (older Historic Downtown properties)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-600 font-bold">+$8k-17k</span>
+                        <span><strong>Metal roofing upgrade</strong> (50+ year lifespan, popular in Country Estates)</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-green-50 rounded-lg p-6 border-l-4 border-green-500">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">📉 What DECREASES Cost in Jarrell</h3>
+                    <ul className="space-y-2 text-sm text-primary-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Single-story homes</strong> (common in Jarrell, safer/faster)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Simple roof lines</strong> (basic gables, practical construction)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Insurance claims</strong> (pay deductible only $1.5k-$3k after hail damage)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600 font-bold">✓</span>
+                        <span><strong>Good existing structure</strong> (post-1997 homes built to modern codes)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="mt-6 bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
+                  <p className="text-primary-900 font-semibold mb-2">📞 Get Your Exact Jarrell Roof Replacement Cost</p>
+                  <p className="text-primary-700">
+                    These are estimates. Your actual cost depends on your specific home, neighborhood, materials, and structural needs. We provide <strong>FREE inspections</strong> and detailed written quotes with no obligation. <strong>Jarrell homeowners: We understand your community's history and prioritize safety above all else.</strong> Call <strong>(512) 763-5277</strong> or schedule online for your personalized Jarrell roof replacement estimate.
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+
           {/* Location-Specific Deep Content - New Braunfels */}
           {location.slug === 'new-braunfels' && (
             <div className="mt-16 space-y-12">
