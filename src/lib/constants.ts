@@ -40,6 +40,7 @@ export const NAV_LINKS: NavLink[] = [
       { href: '/services/roof-repairs', label: 'Roof Repairs' },
       { href: '/services/emergency-services', label: 'Emergency Services' },
       { href: '/services/roof-inspection', label: 'Roof Inspection' },
+      { href: '/services/stone-coated-steel-roofing', label: 'Stone-Coated Steel Roofing' },
       { href: '/services/gutter-installation', label: 'Gutter Installation' },
       { href: '/services/storm-damage-restoration', label: 'Storm Damage Restoration' },
       { href: '/services/insurance-claim-documentation', label: 'Insurance Claim Documentation' },
