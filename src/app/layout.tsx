@@ -95,21 +95,14 @@ export default function RootLayout({
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         
-        {/* Preload critical font files */}
-        <link
-          rel="preload"
-          href="/_next/static/media/[font-hash].woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-        
-        {/* Preload LCP image for faster render */}
+        {/* Preload LCP image for faster render - CRITICAL */}
         <link
           rel="preload"
           as="image"
           href="/images/hero/hero-bg.jpg"
           fetchPriority="high"
+          // @ts-ignore - Next.js handles image optimization
+          imageSrcSet="/images/hero/hero-bg.jpg"
         />
       </head>
       <body className="font-sans">
