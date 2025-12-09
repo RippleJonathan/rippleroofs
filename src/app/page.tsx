@@ -1,4 +1,4 @@
-import dynamic from 'next/dynamic'
+﻿import dynamic from 'next/dynamic'
 import { Hero } from '@/components/home/Hero'
 import { TrustBar } from '@/components/home/TrustBar'
 import { ServicesGrid } from '@/components/home/ServicesGrid'
@@ -25,7 +25,7 @@ const FreeResourcesSection = dynamic(() => import('@/components/home/FreeResourc
 })
 
 export const metadata = {
-  title: 'Roofing Contractor Round Rock TX | 24/7 Service | CertainTeed Certified',
+  title: 'Round Rock Roofing | CertainTeed Certified | 24/7 Service',
   description: 'Round Rock\'s trusted roofing contractor. CertainTeed Shingle Master certified serving Round Rock, Austin, Georgetown & Central Texas. 24/7 emergency service, residential & commercial. Free inspections.',
   alternates: {
     canonical: 'https://rippleroofs.com'
@@ -218,3 +218,5 @@ export default function Home() {
     </>
   )
 }
+
+
