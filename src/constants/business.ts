@@ -8,7 +8,7 @@ export const BUSINESS_INFO = {
   phone: '(512) 763-5277',
   email: 'info@rippleroofs.com',
   address: {
-    street: '1234 Main St', // Update with actual address if needed
+    street: '1000 Heritage Center Circle, #165',
     city: 'Round Rock',
     state: 'TX',
     zip: '78664',

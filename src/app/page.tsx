@@ -59,7 +59,7 @@ export default function Home() {
     email: SITE_CONFIG.email,
     address: {
       '@type': 'PostalAddress',
-      streetAddress: '1000 Heritage Center Circle',
+      streetAddress: '1000 Heritage Center Circle, #165',
       addressLocality: SITE_CONFIG.city,
       addressRegion: SITE_CONFIG.state,
       postalCode: SITE_CONFIG.zip,

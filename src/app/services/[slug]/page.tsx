@@ -3969,7 +3969,7 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
               "logo": "https://rippleroofs.com/logo.png",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "1000 Heritage Center Circle",
+                "streetAddress": "1000 Heritage Center Circle, #165",
                 "addressLocality": "Round Rock",
                 "addressRegion": "TX",
                 "postalCode": "78664",

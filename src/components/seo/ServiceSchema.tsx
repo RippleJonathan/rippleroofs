@@ -1,4 +1,4 @@
-interface ServiceSchemaProps {
+﻿interface ServiceSchemaProps {
   serviceName: string;
   description: string;
   slug: string;
@@ -26,7 +26,7 @@ export default function ServiceSchema({
       image: 'https://rippleroofs.com/images/logo.png',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: '1000 Heritage Center Circle',
+        streetAddress: '1000 Heritage Center Circle, #165',
         addressLocality: 'Round Rock',
         addressRegion: 'TX',
         postalCode: '78664',

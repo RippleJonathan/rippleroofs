@@ -1,4 +1,4 @@
-import { BUSINESS_RATING } from '@/constants/business';
+﻿import { BUSINESS_RATING } from '@/constants/business';
 
 export default function LocalBusinessSchema() {
   const schema = {
@@ -21,7 +21,7 @@ export default function LocalBusinessSchema() {
     priceRange: '$$$',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: '1000 Heritage Center Circle',
+      streetAddress: '1000 Heritage Center Circle, #165',
       addressLocality: 'Round Rock',
       addressRegion: 'TX',
       postalCode: '78664',
