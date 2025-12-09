@@ -4,7 +4,7 @@
 export const SITE_CONFIG = {
   name: 'Ripple Roofing & Construction',
   description: 'Premium Roofing Services in Central Texas',
-  url: process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000',
+  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://rippleroofs.com',
   phone: '(512) 763-5277',
   phoneRaw: '5127635277',
   email: 'info@rippleroofs.com',

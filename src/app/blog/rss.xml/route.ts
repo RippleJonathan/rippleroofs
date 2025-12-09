@@ -3,7 +3,7 @@ import { SITE_CONFIG } from '@/lib/constants'
 
 export async function GET() {
   const posts = getAllPosts()
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://rippleroofs.com'
   
   // Use a safe title without special characters for XML elements
   const safeTitle = 'Ripple Roofing and Construction - Roofing Blog'

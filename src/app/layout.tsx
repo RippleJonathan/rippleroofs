@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   keywords: ['roofing austin', 'roofing round rock', 'roof repair texas', 'roof replacement austin', 'roofing company central texas', 'residential roofing', 'commercial roofing', 'emergency roof repair', 'CertainTeed shingle master'],
   authors: [{ name: 'Ripple Roofing & Construction' }],
   creator: 'Ripple Roofing & Construction',
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://rippleroofs.com'),
   icons: {
     icon: '/favicon.ico',
   },
