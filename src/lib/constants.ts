@@ -283,9 +283,9 @@ export const SERVICES: Service[] = [
     id: '7',
     title: 'Gutter Installation',
     slug: 'gutter-installation',
-    shortDescription: 'Professional seamless gutter installationâ€”5" and 6" systems that protect your foundation.',
-    description: 'Your gutters are your home\'s first line of defense against water damage. Professional gutter installation protects your foundation, prevents basement flooding, eliminates soil erosion, and preserves your landscaping. We install seamless aluminum gutters custom-fabricated on-site to fit your home perfectlyâ€”no leaky seams every 10 feet like sectional gutters. Choose from 5-inch standard systems (most homes) or 6-inch high-capacity systems (large roofs, heavy rainfall areas). We serve Round Rock, Austin, Georgetown, and all Central Texas with 20+ color options to match any home. Our gutters come with a 20-year material warranty and 10-year workmanship warranty. Typical installation completed in 1 day!',
-    icon: 'ðŸ’§',
+    shortDescription: 'Professional seamless gutter installationâ€"5" and 6" systems that protect your foundation.',
+    description: 'Your gutters are your home\'s first line of defense against water damage. Professional gutter installation protects your foundation, prevents basement flooding, eliminates soil erosion, and preserves your landscaping. We install seamless aluminum gutters custom-fabricated on-site to fit your home perfectlyâ€"no leaky seams every 10 feet like sectional gutters. Choose from 5-inch standard systems (most homes) or 6-inch high-capacity systems (large roofs, heavy rainfall areas). We serve Round Rock, Austin, Georgetown, and all Central Texas with 20+ color options to match any home. Our gutters come with a 20-year material warranty and 10-year workmanship warranty. Typical installation completed in 1 day!',
+    icon: '💧',
     image: '/images/services/gutter-installation.jpg',
     process: [
       { step: 1, title: 'Free Assessment & Measurement', description: 'We measure your roofline, evaluate drainage needs, assess downspout placement for optimal water flow, check fascia condition, and identify problem areas. You choose gutter size (5" or 6"), color (20+ options), and optional gutter guards.' },
