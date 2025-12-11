@@ -568,22 +568,22 @@ export const SERVICE_TYPES = [
 // Trust Bar / Value Propositions
 export const VALUE_PROPS = [
   {
-    icon: 'âœ“',
+    icon: '✅',
     title: 'CertainTeed Shingle Master',
     description: 'Certified Excellence',
   },
   {
-    icon: 'ï¿½ï¸',
+    icon: '🛡️',
     title: 'Fully Insured',
     description: 'Your protection guaranteed',
   },
   {
-    icon: 'ðŸš¨',
+    icon: '🚨',
     title: '24/7 Emergency Service',
     description: 'Always here when you need us',
   },
   {
-    icon: 'ðŸŒŸ',
+    icon: '📍',
     title: 'Central Texas Experts',
     description: 'Serving the Austin Metro',
   },
