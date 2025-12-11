@@ -254,8 +254,8 @@ export const SERVICES: Service[] = [
     title: 'Roof Inspection & Assessment',
     slug: 'roof-inspection',
     shortDescription: 'Comprehensive 50-point roof inspections with detailed photo reports.',
-    description: 'Knowledge is power when it comes to your roof. Our comprehensive roof inspections provide you with a complete understanding of your roof\'s conditionâ€”whether you\'re buying a home, selling a property, concerned about storm damage, or simply want peace of mind. As CertainTeed Shingle Master certified contractors, we conduct thorough 50-point inspections of every roof component. You receive a detailed photo report with condition ratings, remaining lifespan estimates, and prioritized repair recommendations. We serve homeowners in Round Rock, Austin, Georgetown, and all Central Texas. Most inspections are completed in 45-60 minutes. Free inspections after major storms!',
-    icon: 'ðŸ”',
+    description: 'Knowledge is power when it comes to your roof. Our comprehensive roof inspections provide you with a complete understanding of your roof\'s conditionâ€"whether you\'re buying a home, selling a property, concerned about storm damage, or simply want peace of mind. As CertainTeed Shingle Master certified contractors, we conduct thorough 50-point inspections of every roof component. You receive a detailed photo report with condition ratings, remaining lifespan estimates, and prioritized repair recommendations. We serve homeowners in Round Rock, Austin, Georgetown, and all Central Texas. Most inspections are completed in 45-60 minutes. Free inspections after major storms!',
+    icon: '🔍',
     image: '/images/services/roof-inspection.jpg',
     process: [
       { step: 1, title: 'Schedule Your Inspection', description: 'Quick online booking or call (512) 763-5277. We offer flexible scheduling including evenings and weekends. Free inspections after major storms or for insurance claims.' },
