@@ -101,7 +101,7 @@ export const SERVICES: Service[] = [
     slug: 'residential-roofing',
     shortDescription: 'Complete residential roofing servicesâ€”installation, repair, replacement, and maintenance for Central Texas homes.',
     description: 'Your home is your family\'s sanctuary and your largest investment. Ripple Roofing & Construction provides comprehensive residential roofing services for homeowners throughout Central Texasâ€”from simple repairs to complete roof replacements. As CertainTeed Shingle Master certified contractors, we offer expert installation of all roofing types: architectural shingles, impact-resistant shingles, metal roofing, tile, and specialty materials. We serve Round Rock, Austin, Georgetown, and surrounding communities with honest assessments, quality craftsmanship, and warranties that protect your investment. Whether you need emergency storm repairs, routine maintenance, or a brand new roof, we treat your home like our own. Free inspections, transparent pricing, and 10-year workmanship warranty on all installations.',
-    icon: 'ðŸ ',
+    icon: '🏠',
     image: '/images/services/residential-roofing.jpg',
     process: [
       { step: 1, title: 'Free Roof Inspection & Assessment', description: 'We thoroughly inspect your roof\'s condition, identify any issues, document with photos, and assess remaining lifespan. Whether you need minor repairs or full replacement, we provide honest recommendations. Free inspections after major storms!' },
@@ -131,7 +131,7 @@ export const SERVICES: Service[] = [
     slug: 'commercial-roofing',
     shortDescription: 'Professional commercial roofing for businessesâ€”flat roofing systems, TPO, EPDM, metal, and preventative maintenance plans.',
     description: 'Your commercial roof protects your business, inventory, equipment, and livelihood. Ripple Roofing & Construction provides comprehensive commercial roofing services for businesses throughout Central Texasâ€”from flat roof installations to ongoing maintenance programs. We specialize in flat roofing systems (TPO, EPDM, modified bitumen), metal roofing, and commercial roof coatings. Whether you own retail space, office buildings, warehouses, apartment complexes, or industrial facilities in Round Rock, Austin, Georgetown, or surrounding areas, we minimize business disruption while delivering quality work. We work after-hours or weekends when needed, provide detailed warranties, and offer preventative maintenance plans that extend roof life and prevent costly emergency repairs. Fully certified, insured, and experienced with all commercial roofing systems.',
-    icon: 'ðŸ¢',
+    icon: '🏢',
     image: '/images/services/commercial-roofing.jpg',
     process: [
       { step: 1, title: 'Free Commercial Roof Assessment', description: 'We conduct a thorough inspection of your commercial roof, identify issues, assess remaining lifespan, document with photos/measurements, and provide written evaluation. We work around your business hours and provide detailed reports within 24-48 hours.' },
@@ -161,7 +161,7 @@ export const SERVICES: Service[] = [
     slug: 'roof-replacement',
     shortDescription: 'Expert roof replacement services in Central Texas. From material selection to installation, we guide you through every step with transparency and craftsmanship.',
     description: 'When it\'s time for a new roof, Ripple Roofing & Construction guides you through the process with expertise and transparency. As a CertainTeed Shingle Master certified contractor, we offer premium roofing materials specifically chosen for Central Texas\'s challenging climateâ€”intense heat, severe storms, and hail. Whether your roof has reached the end of its lifespan, sustained storm damage, or you\'re upgrading for energy efficiency and curb appeal, we provide comprehensive roof replacement services with industry-leading warranties. Serving Round Rock, Austin, Georgetown, and all of Central Texas, we\'ve helped thousands of homeowners protect their most valuable investment with quality craftsmanship and honest service.',
-    icon: 'ðŸ”„',
+    icon: '🔨',
     image: '/images/services/roof-replacement.jpg',
     process: [
       { step: 1, title: 'Free Comprehensive Inspection', description: 'We conduct a thorough 50-point inspection of your existing roof, identifying all issues, potential concerns, and underlying problems. We document everything with photos and provide a detailed written report.' },
@@ -193,7 +193,7 @@ export const SERVICES: Service[] = [
     slug: 'roof-repairs',
     shortDescription: 'Fast, reliable roof repairs that stop leaks and prevent costly damage.',
     description: 'Don\'t let a small roof problem become a big expense. Our expert roof repair services in Round Rock, Austin, and Georgetown address everything from minor leaks and missing shingles to storm damage and flashing issues. As a CertainTeed Shingle Master certified contractor, we use premium materials and proven techniques to restore your roof\'s integrity. Most repairs are completed in just a few hours, with same-day service available. We provide honest assessmentsâ€”if repair isn\'t the best option, we\'ll tell you. Our 10-year workmanship warranty backs every repair we make.',
-    icon: 'ðŸ”§',
+    icon: '🛠️',
     image: '/images/services/roof-repairs.jpg',
     process: [
       { step: 1, title: 'Free Inspection & Diagnosis', description: 'Thorough evaluation to identify all issues, not just visible damage. We check for underlying problems that could worsen. Honest assessment of whether repair or replacement is more cost-effective.' },
@@ -224,7 +224,7 @@ export const SERVICES: Service[] = [
     slug: 'emergency-services',
     shortDescription: '24/7 emergency roofing responseâ€”we\'re there when you need us most.',
     description: 'Roof emergencies don\'t wait for business hours. When storms hit, trees fall, or sudden leaks threaten your home, we respond immediatelyâ€”24 hours a day, 7 days a week, 365 days a year. Our emergency roofing services serve Round Rock, Austin, Georgetown, and all Central Texas with rapid response times (typically 2-4 hours). We provide emergency tarping to stop water intrusion, assess damage for insurance claims, and coordinate permanent repairs. Whether it\'s 2 PM or 2 AM, our certified crews are ready to protect your home and minimize damage. Call (512) 763-5277 anytime for immediate emergency assistance.',
-    icon: 'ðŸš¨',
+    icon: '🚨',
     image: '/images/services/emergency-services.jpg',
     process: [
       { step: 1, title: '24/7 Emergency Call & Dispatch', description: 'Call (512) 763-5277 anytime. We answer immediatelyâ€”no voicemail, no waiting. Our dispatcher gathers essential information and sends the nearest crew. Average response time: 2-4 hours depending on location and weather conditions.' },
@@ -315,7 +315,7 @@ export const SERVICES: Service[] = [
     slug: 'storm-damage-restoration',
     shortDescription: 'Expert storm damage assessment and restorationâ€”we handle insurance claims, emergency repairs, and complete restoration.',
     description: 'Central Texas storms bring hail, high winds, fallen trees, and flying debris that can devastate your roof. Storm damage restoration requires specialized expertiseâ€”identifying hidden damage that untrained eyes miss, documenting everything for insurance claims, working with adjusters to maximize coverage, and executing repairs to full manufacturer warranty standards. We respond within 2 hours for emergency tarping and immediate protection, conduct comprehensive damage assessments using drones and thermal imaging, handle all insurance paperwork and adjuster meetings, and restore your roof to better-than-before condition. We serve Round Rock, Austin, Georgetown, and all Central Texas. Our storm specialists have documented over 2,000 insurance claims and recovered millions in rightful coverage for homeowners. Most insurance claims cover 100% of roof replacement minus deductibleâ€”we ensure you get what you deserve.',
-    icon: 'â›ˆï¸',
+    icon: '⛈️',
     image: '/images/services/storm-damage.jpg',
     process: [
       { step: 1, title: 'Emergency Response & Immediate Protection', description: 'We respond within 2 hours for emergency situations. Our crew performs emergency tarping to prevent interior water damage, documents all damage with photos and video, secures loose materials, identifies safety hazards, and provides immediate stability. Available 24/7 for storm emergencies.' },
@@ -345,7 +345,7 @@ export const SERVICES: Service[] = [
     slug: 'insurance-claim-documentation',
     shortDescription: 'Professional roof damage documentation and adjuster supportâ€”we help homeowners present accurate information for their insurance claims.',
     description: 'After a storm damages your roof, your insurance company needs accurate documentation to process your claim. We provide professional damage inspection, detailed documentation with photos and measurements, and expert support during the adjuster\'s visitâ€”all at no cost to you. Our role is simple: document roof damage thoroughly and work cooperatively with your insurance adjuster to ensure all damage is properly identified and noted. YOU remain in control of your claimâ€”we simply provide the roofing expertise. We don\'t file claims, negotiate settlements, or act as public adjusters (which requires a special license in Texas). We DO inspect your roof professionally, document every damaged area with photos and measurements, attend the adjuster meeting to point out damage and answer technical questions, provide accurate repair estimates, and ensure nothing is missed. This helps homeowners present complete, accurate information to their insurance company. Free damage inspections for Round Rock, Austin, Georgetown, and all Central Texas after major storms.',
-    icon: 'ðŸ“‹',
+    icon: '📋',
     image: '/images/services/insurance-documentation.jpg',
     process: [
       { step: 1, title: 'Free Professional Roof Inspection', description: 'After a storm, we conduct a comprehensive roof inspection at no cost. We check for hail impacts, wind damage, missing shingles, damaged flashing, gutter damage, and hidden issues. We document everything with photos, measurements, and detailed notes. This inspection helps you understand what damage exists before calling your insurance company.' },
@@ -375,7 +375,7 @@ export const SERVICES: Service[] = [
     slug: 'roof-maintenance',
     shortDescription: 'Preventative maintenance programs to extend your roof\'s lifespan, catch problems early, and avoid costly emergency repairs.',
     description: 'Regular roof maintenance is like changing your car\'s oilâ€”it prevents expensive problems and extends the life of your investment. Our comprehensive maintenance plans include bi-annual professional inspections, seasonal cleaning and debris removal, minor repairs before they become major issues, and detailed photo reports after every visit. We catch small problems like loose shingles, damaged flashing, or clogged gutters before they cause leaks and interior damage. Most homeowners save 3-5 times their maintenance cost by avoiding emergency repairs and premature roof replacement. Our plans keep your manufacturer warranty valid (many require regular inspections), give you priority scheduling for repairs, and provide peace of mind that your roof is professionally monitored year-round. Perfect for homeowners who want to protect their investment, maintain their warranty, and avoid surprise roofing emergencies. Available in Round Rock, Austin, Georgetown, and throughout Central Texas with flexible scheduling.',
-    icon: 'ðŸ”§',
+    icon: '🔧',
     image: '/images/services/maintenance.jpg',
     process: [
       { step: 1, title: 'Initial Comprehensive Inspection', description: 'We start with a thorough baseline inspection of your entire roofing system. We check all shingles for damage or deterioration, inspect flashing around chimneys and vents, examine gutters and downspouts, look for signs of moisture or leaks, check attic ventilation, document current condition with photos, and create your roof\'s maintenance file. This establishes the starting point for ongoing monitoring.' },
@@ -405,7 +405,7 @@ export const SERVICES: Service[] = [
     slug: 'siding-installation',
     shortDescription: 'Complete siding services including installation, repair, and replacement for fiber cement, vinyl, and wood siding systems.',
     description: 'Your home\'s siding is the first line of defense against Texas weatherâ€”protecting your structure from rain, wind, heat, and hail. We install and repair all major siding types including James Hardie fiber cement (the gold standard for durability), vinyl siding (low maintenance and affordable), wood siding (classic beauty), and composite materials. Whether you need storm damage repairs, full siding replacement, or new construction installation, we deliver professional craftsmanship with manufacturer-certified techniques. Damaged siding isn\'t just an eyesoreâ€”it can lead to water infiltration, mold growth, structural damage, and massive repair bills. We inspect for hidden damage, address moisture issues, replace rotted sections, and ensure proper installation with weather-resistant barriers and flashing. Most insurance policies cover storm-damaged siding (hail, wind, fallen trees). We provide detailed documentation to support your claim and work directly with adjusters. Serving Round Rock, Austin, Georgetown, and Central Texas with complete siding solutions that protect your home and enhance curb appeal.',
-    icon: 'ðŸ ',
+    icon: '🏠',
     image: '/images/services/siding.jpg',
     process: [
       { step: 1, title: 'Comprehensive Siding Assessment', description: 'We inspect your entire exterior to assess siding conditionâ€”checking for storm damage (hail dents, cracks, holes), moisture intrusion and rot, loose or missing panels, faded or damaged areas, and structural issues behind siding. We use moisture meters to detect hidden water damage and thermal imaging for insulation problems. You receive a detailed report with photos and recommendations.' },
@@ -435,7 +435,7 @@ export const SERVICES: Service[] = [
     slug: 'attic-ventilation',
     shortDescription: 'Professional attic ventilation and insulation services to reduce energy costs, prevent roof damage, and improve home comfort.',
     description: 'Your attic is critical to your roof\'s health and your home\'s energy efficiency. In Texas, attics can reach 150-160Â°F in summerâ€”that extreme heat radiates into your living space, overworks your AC, and dramatically shortens your roof\'s lifespan by baking shingles from below. Proper attic ventilation and insulation solve this problem. We install ridge vents, soffit vents, powered attic fans, and other ventilation systems that create continuous airflow, removing hot air in summer and moisture in winter. Combined with proper insulation (spray foam, blown-in cellulose, or fiberglass batts), you can reduce cooling costs by 15-30%, extend your roof\'s life by 5-10 years, prevent ice dams and moisture damage, eliminate hot/cold rooms, and improve overall home comfort. Most homeowners see ROI within 3-5 years through energy savings alone. We conduct thermal imaging inspections to identify hot spots and inadequate insulation, recommend optimal ventilation ratios (1 sq ft per 150 sq ft of attic space), and install solutions that meet or exceed building codes. Serving Round Rock, Austin, Georgetown, and Central Texas with attic solutions that protect your roof and cut energy bills.',
-    icon: 'ðŸŒ¬ï¸',
+    icon: '🌬️',
     image: '/images/services/ventilation.jpg',
     process: [
       { step: 1, title: 'Attic Inspection & Thermal Analysis', description: 'We conduct a comprehensive attic assessment using thermal imaging to identify hot spots, inadequate insulation areas, and ventilation problems. We measure current insulation R-value, check for moisture or mold issues, calculate ventilation ratios (intake vs exhaust), inspect existing vents for blockages, look for air leaks and gaps, and document attic temperature differentials. You receive a detailed report showing problem areas and improvement opportunities.' },
@@ -465,7 +465,7 @@ export const SERVICES: Service[] = [
     slug: 'pergolas',
     shortDescription: 'Custom pergola design and construction to enhance your outdoor living space with shade, style, and increased property value.',
     description: 'Transform your backyard into an outdoor oasis with a custom-built pergola. At Ripple Roofing & Construction, we design and build beautiful, durable pergolas that provide shade, define outdoor living areas, support climbing plants, and dramatically increase your home\'s value and curb appeal. Whether you envision a cozy patio retreat, an elegant entertaining space, or a stunning poolside structure, our craftsmanship delivers. We work with premium materials including pressure-treated lumber, cedar, composite materials, and aluminumâ€”each selected for Central Texas\'s challenging climate (intense sun, high humidity, occasional storms). Every pergola is custom-designed to your specifications: size, style (traditional, modern, rustic, contemporary), roof style (open lattice, louvered, solid), and integrated features (lighting, fans, privacy screens, built-in seating). Serving Round Rock, Austin, Georgetown, and throughout Central Texas, we handle design, permits, foundation work, construction, and finishing. Most projects completed in 3-5 days. Includes detailed 3D design mockups so you see exactly what you\'re getting before we build.',
-    icon: 'ðŸŒ¿',
+    icon: '🌿',
     image: '/images/services/pergola-1.jpg',
     process: [
       { step: 1, title: 'Free Consultation & Site Assessment', description: 'We visit your property to understand your vision, assess the installation site, evaluate sunlight patterns and wind exposure, discuss how you\'ll use the space (dining, lounging, entertaining, gardening), review existing landscaping and structures, and take measurements and photos. We help you determine optimal size, location, and orientation for your pergola. Free consultation includes design ideas and preliminary budget discussion.' },
@@ -496,7 +496,7 @@ export const SERVICES: Service[] = [
     slug: 'paintless-dent-repair',
     shortDescription: 'Professional paintless dent repair for hail damageâ€”restore your vehicle without repainting. Powered by Paintless Perfection.',
     description: 'Hail storms in Central Texas can devastate vehicles. Paintless Dent Repair (PDR) is the gold-standard solution for removing hail dents, door dings, and minor body damage without affecting your vehicle\'s original paint or factory finish. Our PDR specialists at Paintless Perfection use precision tools and expert techniques to massage dents out from behind panels, preserving your car\'s value and eliminating the need for expensive body shop work. PDR is faster (same-day service often available), more affordable (typically 50-70% less than traditional repair), and maintains your vehicle\'s factory paint (no color matching issues or diminished resale value). Perfect for hail damage (dozens to hundreds of dents), door dings and parking lot damage, minor collision dents, and creases from shopping carts or sports equipment. We work directly with insurance companies, provide mobile service (we come to you in Round Rock, Austin, Georgetown, Central Texas), and offer free estimates. Most insurance policies cover hail damage PDR with minimal out-of-pocket cost. Get your vehicle looking new againâ€”often in just a few hours!',
-    icon: 'ðŸš—',
+    icon: '🚗',
     image: '/images/services/pdr.jpg',
     process: [
       { step: 1, title: 'Free Damage Assessment & Estimate', description: 'We inspect your vehicle to assess all dent damageâ€”counting individual dents (hail storms can cause 50-200+ dents), measuring dent depth and size, checking paint condition (PDR requires intact paint), identifying any dents too severe for PDR (we\'ll tell you honestly), and documenting damage with photos for insurance. You receive a detailed written estimate within 15 minutes. Free assessments at our shop or your location (mobile service available).' },
@@ -526,7 +526,7 @@ export const SERVICES: Service[] = [
     slug: 'stone-coated-steel-roofing',
     shortDescription: 'Premium stone-coated steel roofingâ€”the ultimate combination of metal durability and architectural beauty with 50+ year lifespan.',
     description: 'Stone-coated steel roofing represents the pinnacle of residential roofing technologyâ€”combining the legendary durability of metal with the classic beauty of traditional shingles or tile. These premium roofing systems feature steel panels coated with stone granules, delivering unmatched performance in Central Texas\'s challenging climate. With a 50+ year lifespan (2-3 times longer than asphalt shingles), Class 4 hail impact resistance, 120+ mph wind ratings, energy-efficient reflective surfaces, and fire-resistant construction (Class A rating), stone-coated steel is the investment-grade choice for discerning homeowners. Perfect for luxury neighborhoods in Round Rock, Georgetown, Leander, and Austin where HOA architectural standards demand both beauty and performance. While the initial investment is higher ($18,000-$35,000+ depending on home size), the lifetime value is extraordinaryâ€”you\'ll never need another roof replacement. We\'re certified installers of premium stone-coated steel systems, providing expert installation with comprehensive warranties that protect your investment for decades.',
-    icon: 'ðŸ”ï¸',
+    icon: '🏔️',
     image: '/images/services/stone-coated-steel.jpg',
     process: [
       { step: 1, title: 'Comprehensive Home Assessment', description: 'We begin with a thorough evaluation of your home and roofing needs. Our team inspects your current roof structure and condition, assesses roof pitch and complexity (stone-coated steel works on slopes 2:12 to 12:12), evaluates your home\'s architectural style for best profile match, discusses your long-term plans (planning to stay 15+ years makes this investment ideal), reviews your neighborhood\'s HOA requirements and architectural guidelines, and provides honest guidance on whether stone-coated steel is right for your specific situation. Free consultation with no pressureâ€”we help you make the best decision.' },

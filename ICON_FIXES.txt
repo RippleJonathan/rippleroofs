@@ -1,0 +1,67 @@
+ICON REPLACEMENTS FOR src/lib/constants.ts
+==============================================
+
+Use VS Code Find & Replace (Ctrl+H) - Copy each pair below:
+
+Line 104 - Residential Roofing:
+FIND:    icon: 'ðŸ ',
+REPLACE: icon: '🏠',
+
+Line 134 - Commercial Roofing:
+FIND:    icon: 'ðŸ¢',
+REPLACE: icon: '🏢',
+
+Line 164 - Roof Replacement:
+FIND:    icon: 'ðŸ"„',
+REPLACE: icon: '🔨',
+
+Line 196 - Roof Repairs:
+FIND:    icon: 'ðŸ"§',
+REPLACE: icon: '🛠️',
+
+Line 227 - Emergency Services:
+FIND:    icon: 'ðŸš¨',
+REPLACE: icon: '🚨',
+
+Line 318 - Storm Damage:
+FIND:    icon: 'â›ˆï¸',
+REPLACE: icon: '⛈️',
+
+Line 348 - Insurance Documentation:
+FIND:    icon: 'ðŸ"‹',
+REPLACE: icon: '📋',
+
+Line 378 - Roof Maintenance:
+FIND:    icon: 'ðŸ"§',
+REPLACE: icon: '🔧',
+
+Line 408 - Siding:
+FIND:    icon: 'ðŸ ',
+REPLACE: icon: '🏠',
+
+Line 438 - Attic Ventilation:
+FIND:    icon: 'ðŸŒ¬ï¸',
+REPLACE: icon: '🌬️',
+
+Line 468 - Pergola:
+FIND:    icon: 'ðŸŒ¿',
+REPLACE: icon: '🌿',
+
+Line 499 - PDR:
+FIND:    icon: 'ðŸš—',
+REPLACE: icon: '🚗',
+
+Line 529 - Stone-Coated Steel:
+FIND:    icon: 'ðŸ"ï¸',
+REPLACE: icon: '🏔️',
+
+==============================================
+INSTRUCTIONS:
+1. Open src/lib/constants.ts in VS Code
+2. Press Ctrl+H to open Find & Replace
+3. Copy the FIND text, paste into Find box
+4. Copy the REPLACE text, paste into Replace box
+5. Click "Replace All" for each pair
+6. Save file (Ctrl+S)
+7. Run: npm run dev
+8. Check http://localhost:3000/services
