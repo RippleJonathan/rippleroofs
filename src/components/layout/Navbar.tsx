@@ -20,30 +20,26 @@ export const Navbar: FC = () => {
       <div className="bg-primary-900 text-white">
         <Container>
           <div className="flex items-center justify-between h-12 text-sm">
-            <div className="flex items-center gap-6">
-              <div className="flex items-center gap-3">
-                <div className="flex flex-col gap-1">
-                  <a
-                    href={`tel:${SITE_CONFIG.phoneRaw}`}
-                    className="flex items-center gap-2 hover:text-accent-400 transition-colors"
-                    onClick={() => trackPhoneClick('header')}
-                  >
-                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
-                    <span className="font-semibold">{SITE_CONFIG.phone}</span>
-                  </a>
-                  <a
-                    href="sms:+15127635277"
-                    className="flex md:hidden items-center gap-1 text-xs hover:text-accent-400 transition-colors"
-                  >
-                    <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5z" />
-                    </svg>
-                    <span>Text</span>
-                  </a>
-                </div>
-              </div>
+            <div className="flex items-center gap-2 md:gap-6">
+              <a
+                href={`tel:${SITE_CONFIG.phoneRaw}`}
+                className="flex items-center gap-2 hover:text-accent-400 transition-colors"
+                onClick={() => trackPhoneClick('header')}
+              >
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                <span className="font-semibold">{SITE_CONFIG.phone}</span>
+              </a>
+              <a
+                href="sms:+15127635277"
+                className="md:hidden flex items-center gap-1.5 px-3 py-1.5 bg-white/10 hover:bg-white/20 rounded-full transition-colors"
+              >
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5z" />
+                </svg>
+                <span className="text-sm font-medium">Text</span>
+              </a>
               <div className="hidden md:flex items-center gap-2 text-white/80">
                 <svg className="w-4 h-4 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
