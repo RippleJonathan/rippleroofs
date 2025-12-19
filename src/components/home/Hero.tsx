@@ -7,7 +7,7 @@ import { SITE_CONFIG } from '@/lib/constants'
 
 export const Hero: FC = () => {
   return (
-    <section className="relative min-h-[70vh] md:min-h-[85vh] lg:min-h-[90vh] flex items-center justify-center bg-gradient-to-br from-primary-950 via-primary-900 to-primary-800 overflow-hidden pt-8 md:pt-0">
+    <section className="relative min-h-[70vh] md:min-h-[85vh] lg:min-h-[90vh] flex items-center justify-center bg-gradient-to-br from-primary-950 via-primary-900 to-primary-800 overflow-hidden pt-32 md:pt-0">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image

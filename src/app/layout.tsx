@@ -125,7 +125,7 @@ export default function RootLayout({
         
         <EmergencyBanner />
         <Navbar />
-        <main>{children}</main>
+        <main className="relative">{children}</main>
         <FooterReviews />
         <Footer />
         <FloatingCallButton />
