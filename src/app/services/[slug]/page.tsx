@@ -143,7 +143,7 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
       </section>
 
       {/* Trust Indicators */}
-      <section className="py-8 bg-primary-50 border-y border-primary-100">
+      <section className="py-8 md:py-8 pt-12 bg-primary-50 border-y border-primary-100">
         <Container>
           {isPDR ? (
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">

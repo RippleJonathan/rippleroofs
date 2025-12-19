@@ -129,7 +129,7 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
       </section>
 
       {/* Trust Bar */}
-      <section className="py-8 bg-gradient-to-r from-accent-500 to-accent-600 text-white">
+      <section className="py-8 md:py-8 pt-12 bg-gradient-to-r from-accent-500 to-accent-600 text-white">
         <Container>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
