@@ -1,10 +1,19 @@
 'use client'
 
 import { FC, useState, useEffect } from 'react'
+import { usePathname } from 'next/navigation'
 import { SITE_CONFIG } from '@/lib/constants'
+import { BUSINESS_INFO_TEXAS, BUSINESS_INFO_ARIZONA } from '@/constants/business'
 
 export const FloatingCallButton: FC = () => {
   const [isVisible, setIsVisible] = useState(false)
+  const pathname = usePathname()
+  
+  // Determine which office based on pathname
+  const isArizona = pathname?.startsWith('/arizona')
+  const businessInfo = isArizona ? BUSINESS_INFO_ARIZONA : BUSINESS_INFO_TEXAS
+  const phone = businessInfo.phone
+  const phoneRaw = phone.replace(/\D/g, '')
 
   useEffect(() => {
     // Show button after scrolling down a bit
@@ -24,13 +33,15 @@ export const FloatingCallButton: FC = () => {
     <>
       {/* Desktop Call Button - Shows on scroll */}
       <a
-        href={`tel:${SITE_CONFIG.phoneRaw}`}
-        className={`hidden md:flex fixed bottom-8 right-8 z-50 bg-accent-500 hover:bg-accent-600 text-white rounded-full shadow-2xl transition-all duration-500 hover:scale-105 active:scale-95 items-center gap-3 group ${
+        href={`tel:${phoneRaw}`}
+        className={`hidden md:flex fixed bottom-8 right-8 z-50 ${
+          isArizona ? 'bg-blue-600 hover:bg-blue-700' : 'bg-accent-500 hover:bg-accent-600'
+        } text-white rounded-full shadow-2xl transition-all duration-500 hover:scale-105 active:scale-95 items-center gap-3 group ${
           isVisible
             ? 'opacity-100 translate-y-0'
             : 'opacity-0 translate-y-20 pointer-events-none'
         }`}
-        aria-label="Call Ripple Roofing"
+        aria-label={`Call ${businessInfo.name}`}
       >
         <div className="relative pl-5 pr-6 py-4">
           <div className="flex items-center gap-3">
@@ -50,13 +61,15 @@ export const FloatingCallButton: FC = () => {
               </svg>
               
               {/* Pulsing ring animation */}
-              <span className="absolute -inset-1 inline-flex rounded-full bg-accent-400 opacity-75 animate-ping" />
+              <span className={`absolute -inset-1 inline-flex rounded-full opacity-75 animate-ping ${
+                isArizona ? 'bg-blue-400' : 'bg-accent-400'
+              }`} />
             </div>
             
             <div className="flex flex-col items-start">
               <span className="text-xs font-medium opacity-90">Call Now</span>
               <span className="text-lg font-bold tracking-wide">
-                {SITE_CONFIG.phone}
+                {phone}
               </span>
             </div>
           </div>

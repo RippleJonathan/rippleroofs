@@ -6,6 +6,8 @@ import Image from 'next/image'
 import { Container } from './Container'
 import { SITE_CONFIG, NAV_LINKS } from '@/lib/constants'
 import { trackPhoneClick } from '@/lib/analytics'
+import { BUSINESS_INFO_TEXAS, BUSINESS_INFO_ARIZONA } from '@/constants/business'
+import { ROCLicenseInline } from '@/components/ROCLicenseBadge'
 
 export const Footer: FC = () => {
   const currentYear = new Date().getFullYear()
@@ -27,7 +29,7 @@ export const Footer: FC = () => {
                 />
               </div>
               <p className="text-primary-200 text-sm leading-relaxed">
-                At Ripple Roofing & Construction, our mission is to deliver high-quality roofing and construction services with integrity and reliability. We strive to enhance the value and safety of our clients' properties through skilled craftsmanship and transparent communication.
+                High-quality roofing and construction services with integrity and reliability. Enhancing property value and safety through skilled craftsmanship.
               </p>
               
               <div className="flex space-x-3 pt-2">
@@ -240,64 +242,99 @@ export const Footer: FC = () => {
               </ul>
             </div>
 
-            {/* Contact Info */}
-            <div>
-              <h4 className="text-lg font-display font-bold mb-4">Contact Us</h4>
-              <ul className="space-y-3 text-sm">
-                <li>
-                  <a
-                    href={`tel:${SITE_CONFIG.phoneRaw}`}
-                    className="text-primary-200 hover:text-accent-500 transition-colors duration-200 flex items-start"
-                    onClick={() => trackPhoneClick('footer')}
-                  >
-                    <svg className="w-5 h-5 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            {/* Contact Info - Both Offices */}
+            <div className="lg:col-span-2">
+              <h4 className="text-lg font-display font-bold mb-4">Our Offices</h4>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Texas Office */}
+                <div>
+                  <h5 className="font-semibold text-accent-400 mb-3 flex items-center gap-2">
+                    <span>🇺🇸</span>
+                    <span>Texas Office</span>
+                  </h5>
+                <ul className="space-y-3 text-sm">
+                  <li>
+                    <a
+                      href={`tel:${BUSINESS_INFO_TEXAS.phoneRaw}`}
+                      className="text-primary-200 hover:text-accent-500 transition-colors duration-200 flex items-start"
+                      onClick={() => trackPhoneClick('footer-texas')}
+                    >
+                      <svg className="w-5 h-5 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                      </svg>
+                      <span>{BUSINESS_INFO_TEXAS.phone}</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href={`mailto:${SITE_CONFIG.email}`}
+                      className="text-primary-200 hover:text-accent-500 transition-colors duration-200 flex items-start"
+                    >
+                      <svg className="w-5 h-5 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                      </svg>
+                      <span>{SITE_CONFIG.email}</span>
+                    </a>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 mr-2 flex-shrink-0 mt-0.5 text-primary-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
-                    <span>{SITE_CONFIG.phone}</span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href={`mailto:${SITE_CONFIG.email}`}
-                    className="text-primary-200 hover:text-accent-500 transition-colors duration-200 flex items-start"
-                  >
-                    <svg className="w-5 h-5 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                    <span>{SITE_CONFIG.email}</span>
-                  </a>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 mr-2 flex-shrink-0 mt-0.5 text-primary-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
-                  <span className="text-primary-200">
-                    {SITE_CONFIG.address}
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 mr-2 flex-shrink-0 mt-0.5 text-primary-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  <span className="text-primary-200">
-                    Mon-Fri: 8AM - 6PM
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-5 h-5 mr-2 flex-shrink-0 mt-0.5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-accent-300 font-semibold">24/7 Emergency</span>
-                </li>
-              </ul>
+                    <span className="text-primary-200">
+                      {BUSINESS_INFO_TEXAS.address.street}<br />
+                      {BUSINESS_INFO_TEXAS.address.city}, {BUSINESS_INFO_TEXAS.address.state} {BUSINESS_INFO_TEXAS.address.zip}
+                    </span>
+                  </li>
+                </ul>
+              </div>
 
-              <div className="mt-6">
-                <Link href="/contact">
-                  <button className="btn btn-primary btn-sm w-full">
-                    Get Free Inspection
-                  </button>
-                </Link>
+                {/* Arizona Office */}
+                <div>
+                  <h5 className="font-semibold text-accent-400 mb-3 flex items-center gap-2">
+                    <span>🌵</span>
+                    <span>Arizona Office</span>
+                  </h5>
+                <ul className="space-y-3 text-sm">
+                  <li>
+                    <a
+                      href={`tel:${BUSINESS_INFO_ARIZONA.phoneRaw}`}
+                      className="text-primary-200 hover:text-accent-500 transition-colors duration-200 flex items-start"
+                      onClick={() => trackPhoneClick('footer-arizona')}
+                    >
+                      <svg className="w-5 h-5 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                      </svg>
+                      <span>{BUSINESS_INFO_ARIZONA.phone}</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href={`mailto:${BUSINESS_INFO_ARIZONA.email}`}
+                      className="text-primary-200 hover:text-accent-500 transition-colors duration-200 flex items-start"
+                    >
+                      <svg className="w-5 h-5 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                      </svg>
+                      <span>{BUSINESS_INFO_ARIZONA.email}</span>
+                    </a>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 mr-2 flex-shrink-0 mt-0.5 text-primary-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    <span className="text-primary-200">
+                      {BUSINESS_INFO_ARIZONA.address.street}<br />
+                      {BUSINESS_INFO_ARIZONA.address.city}, {BUSINESS_INFO_ARIZONA.address.state} {BUSINESS_INFO_ARIZONA.address.zip}
+                    </span>
+                  </li>
+                  <li>
+                    <ROCLicenseInline />
+                  </li>
+                </ul>
+              </div>
               </div>
             </div>
           </div>
@@ -305,157 +342,58 @@ export const Footer: FC = () => {
           {/* Service Areas Section - Additional Row */}
           <div className="border-t border-primary-800 mt-8 pt-8">
             <h3 className="text-lg font-display font-bold mb-6 text-white">Service Areas</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-sm">
               {/* Austin Metro */}
               <div>
-                <h4 className="font-semibold text-accent-400 mb-3">Austin Metro</h4>
-                <ul className="space-y-2 text-sm">
-                  <li>
-                    <Link
-                      href="/locations/austin"
-                      className="text-primary-200 hover:text-accent-500 transition-colors duration-200"
-                    >
-                      Austin
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/locations/round-rock"
-                      className="text-primary-200 hover:text-accent-500 transition-colors duration-200"
-                    >
-                      Round Rock
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/locations/pflugerville"
-                      className="text-primary-200 hover:text-accent-500 transition-colors duration-200"
-                    >
-                      Pflugerville
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/locations/cedar-park"
-                      className="text-primary-200 hover:text-accent-500 transition-colors duration-200"
-                    >
-                      Cedar Park
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/locations/leander"
-                      className="text-primary-200 hover:text-accent-500 transition-colors duration-200"
-                    >
-                      Leander
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/locations/georgetown"
-                      className="text-primary-200 hover:text-accent-500 transition-colors duration-200"
-                    >
-                      Georgetown
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/locations/hutto"
-                      className="text-primary-200 hover:text-accent-500 transition-colors duration-200"
-                    >
-                      Hutto
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/locations/manor"
-                      className="text-primary-200 hover:text-accent-500 transition-colors duration-200"
-                    >
-                      Manor
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/locations/jarrell"
-                      className="text-primary-200 hover:text-accent-500 transition-colors duration-200"
-                    >
-                      Jarrell
-                    </Link>
-                  </li>
+                <h4 className="font-semibold text-accent-400 mb-2">Austin Metro</h4>
+                <ul className="space-y-1.5">
+                  <li><Link href="/locations/austin" className="text-primary-200 hover:text-accent-500 transition-colors">Austin</Link></li>
+                  <li><Link href="/locations/round-rock" className="text-primary-200 hover:text-accent-500 transition-colors">Round Rock</Link></li>
+                  <li><Link href="/locations/pflugerville" className="text-primary-200 hover:text-accent-500 transition-colors">Pflugerville</Link></li>
+                  <li><Link href="/locations/cedar-park" className="text-primary-200 hover:text-accent-500 transition-colors">Cedar Park</Link></li>
+                  <li><Link href="/locations/georgetown" className="text-primary-200 hover:text-accent-500 transition-colors">Georgetown</Link></li>
+                  <li><Link href="/locations/leander" className="text-primary-200 hover:text-accent-500 transition-colors">Leander</Link></li>
+                  <li><Link href="/locations/hutto" className="text-primary-200 hover:text-accent-500 transition-colors">Hutto</Link></li>
+                  <li><Link href="/locations/manor" className="text-primary-200 hover:text-accent-500 transition-colors">Manor</Link></li>
+                  <li><Link href="/locations/jarrell" className="text-primary-200 hover:text-accent-500 transition-colors">Jarrell</Link></li>
                 </ul>
               </div>
 
               {/* Central Texas */}
               <div>
-                <h4 className="font-semibold text-accent-400 mb-3">Central Texas</h4>
-                <ul className="space-y-2 text-sm">
-                  <li>
-                    <Link
-                      href="/locations/san-marcos"
-                      className="text-primary-200 hover:text-accent-500 transition-colors duration-200"
-                    >
-                      San Marcos
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/locations/new-braunfels"
-                      className="text-primary-200 hover:text-accent-500 transition-colors duration-200"
-                    >
-                      New Braunfels
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/locations/temple"
-                      className="text-primary-200 hover:text-accent-500 transition-colors duration-200"
-                    >
-                      Temple
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/locations/killeen"
-                      className="text-primary-200 hover:text-accent-500 transition-colors duration-200"
-                    >
-                      Killeen
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/locations/copperas-cove"
-                      className="text-primary-200 hover:text-accent-500 transition-colors duration-200"
-                    >
-                      Copperas Cove
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/locations/waco"
-                      className="text-primary-200 hover:text-accent-500 transition-colors duration-200"
-                    >
-                      Waco
-                    </Link>
-                  </li>
+                <h4 className="font-semibold text-accent-400 mb-2">Central TX</h4>
+                <ul className="space-y-1.5">
+                  <li><Link href="/locations/san-marcos" className="text-primary-200 hover:text-accent-500 transition-colors">San Marcos</Link></li>
+                  <li><Link href="/locations/new-braunfels" className="text-primary-200 hover:text-accent-500 transition-colors">New Braunfels</Link></li>
+                  <li><Link href="/locations/temple" className="text-primary-200 hover:text-accent-500 transition-colors">Temple</Link></li>
+                  <li><Link href="/locations/killeen" className="text-primary-200 hover:text-accent-500 transition-colors">Killeen</Link></li>
+                  <li><Link href="/locations/waco" className="text-primary-200 hover:text-accent-500 transition-colors">Waco</Link></li>
                 </ul>
               </div>
 
-              {/* San Antonio Area */}
+              {/* San Antonio */}
               <div>
-                <h4 className="font-semibold text-accent-400 mb-3">San Antonio Expansion</h4>
-                <ul className="space-y-2 text-sm">
-                  <li>
-                    <Link
-                      href="/locations/san-antonio"
-                      className="text-primary-200 hover:text-accent-500 transition-colors duration-200"
-                    >
-                      San Antonio
-                    </Link>
-                  </li>
-                  <li className="text-primary-300 text-xs pt-2 border-t border-primary-700">
-                    Stone Oak • Alamo Heights<br />
-                    Medical Center & Surrounding Areas
-                  </li>
+                <h4 className="font-semibold text-accent-400 mb-2">San Antonio</h4>
+                <ul className="space-y-1.5">
+                  <li><Link href="/locations/san-antonio" className="text-primary-200 hover:text-accent-500 transition-colors">San Antonio</Link></li>
+                  <li className="text-primary-300 text-xs pt-1">Stone Oak<br/>Alamo Heights<br/>Medical Center</li>
+                </ul>
+              </div>
+
+              {/* Arizona */}
+              <div>
+                <h4 className="font-semibold text-accent-400 mb-2">Arizona</h4>
+                <ul className="space-y-1.5">
+                  <li><Link href="/arizona/phoenix" className="text-primary-200 hover:text-accent-500 transition-colors">Phoenix</Link></li>
+                  <li><Link href="/arizona/scottsdale" className="text-primary-200 hover:text-accent-500 transition-colors">Scottsdale</Link></li>
+                  <li><Link href="/arizona/mesa" className="text-primary-200 hover:text-accent-500 transition-colors">Mesa</Link></li>
+                  <li><Link href="/arizona/tempe" className="text-primary-200 hover:text-accent-500 transition-colors">Tempe</Link></li>
+                  <li><Link href="/arizona/chandler" className="text-primary-200 hover:text-accent-500 transition-colors">Chandler</Link></li>
+                  <li><Link href="/arizona/gilbert" className="text-primary-200 hover:text-accent-500 transition-colors">Gilbert</Link></li>
+                  <li><Link href="/arizona/glendale" className="text-primary-200 hover:text-accent-500 transition-colors">Glendale</Link></li>
+                  <li><Link href="/arizona/peoria" className="text-primary-200 hover:text-accent-500 transition-colors">Peoria</Link></li>
+                  <li><Link href="/arizona/surprise" className="text-primary-200 hover:text-accent-500 transition-colors">Surprise</Link></li>
+                  <li><Link href="/arizona/avondale" className="text-primary-200 hover:text-accent-500 transition-colors">Avondale</Link></li>
                 </ul>
               </div>
             </div>

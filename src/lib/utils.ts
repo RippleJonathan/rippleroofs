@@ -28,6 +28,20 @@ export function formatPhoneLink(phone: string): string {
 }
 
 /**
+ * Get cookie value by name
+ */
+export function getCookie(name: string): string | null {
+  if (typeof document === 'undefined') return null
+  
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) {
+    return parts.pop()?.split(';').shift() || null
+  }
+  return null
+}
+
+/**
  * Validate email format
  */
 export function isValidEmail(email: string): boolean {

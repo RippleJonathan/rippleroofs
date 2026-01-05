@@ -1,18 +1,29 @@
 'use client'
 
-import { FC, useState } from 'react'
+import { FC, useState, useMemo } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { Container } from './Container'
 import { Button } from '@/components/ui/Button'
-import { SITE_CONFIG, NAV_LINKS } from '@/lib/constants'
+import { SITE_CONFIG, getNavLinks } from '@/lib/constants'
 import { cn } from '@/lib/utils'
 import { trackPhoneClick } from '@/lib/analytics'
+import { getBusinessInfo } from '@/constants/business'
+import { StateSelector } from '@/components/StateSelector'
+import { ROCLicenseBadge } from '@/components/ROCLicenseBadge'
 
 export const Navbar: FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const pathname = usePathname()
+  
+  // Detect current state from pathname
+  const currentState = useMemo(() => {
+    return pathname?.startsWith('/arizona') ? 'AZ' : 'TX'
+  }, [pathname])
+  
+  const businessInfo = getBusinessInfo(currentState)
+  const navLinks = useMemo(() => getNavLinks(pathname), [pathname])
 
   return (
     <nav className="sticky top-0 z-50 bg-white shadow-sm">
@@ -21,15 +32,18 @@ export const Navbar: FC = () => {
         <Container>
           <div className="flex items-center justify-between h-12 text-sm">
             <div className="flex items-center gap-2 md:gap-6">
+              {currentState === 'AZ' && (
+                <ROCLicenseBadge />
+              )}
               <a
-                href={`tel:${SITE_CONFIG.phoneRaw}`}
+                href={`tel:${businessInfo.phoneRaw}`}
                 className="flex items-center gap-2 hover:text-accent-400 transition-colors"
                 onClick={() => trackPhoneClick('header')}
               >
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                <span className="font-semibold">{SITE_CONFIG.phone}</span>
+                <span className="font-semibold">{businessInfo.phone}</span>
               </a>
               <a
                 href="sms:+15127635277"
@@ -48,6 +62,7 @@ export const Navbar: FC = () => {
               </div>
             </div>
             <div className="flex items-center gap-4">
+              <StateSelector />
               {/* Social Media Links */}
               <div className="hidden lg:flex items-center gap-3">
                 {SITE_CONFIG.social.facebook && (
@@ -145,7 +160,7 @@ export const Navbar: FC = () => {
 
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center space-x-8">
-              {NAV_LINKS.map((link) => (
+              {navLinks.map((link) => (
                 <div key={link.href} className="relative group">
                   <Link
                     href={link.href}
@@ -206,7 +221,7 @@ export const Navbar: FC = () => {
           {mobileMenuOpen && (
             <div className="lg:hidden py-4 border-t border-primary-100 max-h-[calc(100vh-12rem)] overflow-y-auto">
               <div className="flex flex-col space-y-4">
-                {NAV_LINKS.map((link) => (
+                {navLinks.map((link) => (
                   <div key={link.href}>
                     <Link
                       href={link.href}
@@ -239,7 +254,10 @@ export const Navbar: FC = () => {
                 ))}
                 
                 <div className="pt-4">
-                  <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
+                  <Link 
+                    href={currentState === 'AZ' ? '/contact?state=AZ' : '/contact'} 
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
                     <Button variant="primary" size="lg" className="w-full">
                       Get Free Inspection
                     </Button>

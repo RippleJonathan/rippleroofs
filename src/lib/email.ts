@@ -8,8 +8,8 @@ export const resend = process.env.RESEND_API_KEY
 
 // Email configuration
 export const EMAIL_CONFIG = {
-  // Temporary sender - change to noreply@rippleroofs.com after domain verification
-  from: 'onboarding@resend.dev',
+  // Sender email using verified domain
+  from: 'noreply@rippleroofs.com',
   
   // Your email where you'll receive notifications
   to: 'jonathan@rippleroofs.com',

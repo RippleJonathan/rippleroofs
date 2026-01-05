@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { trackLeadMagnetSubmission } from '@/lib/analytics';
 
@@ -19,6 +19,7 @@ export default function LeadMagnetForm({ slug, title }: LeadMagnetFormProps) {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState('');
+  const [formMountTime] = useState(() => Date.now()); // Track when form was mounted
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({
@@ -57,11 +58,14 @@ export default function LeadMagnetForm({ slug, title }: LeadMagnetFormProps) {
           ...formData,
           slug,
           title,
+          _timestamp: formMountTime, // Include form mount time for timing validation
         }),
       });
 
+      const responseData = await response.json();
+
       if (!response.ok) {
-        throw new Error('Failed to submit form');
+        throw new Error(responseData.message || 'Failed to submit form');
       }
 
       // Track successful form submission
@@ -71,7 +75,8 @@ export default function LeadMagnetForm({ slug, title }: LeadMagnetFormProps) {
       router.push(`/resources/${slug}/thank-you`);
     } catch (err) {
       console.error('Form submission error:', err);
-      setError('Something went wrong. Please try again or call us at (512) 763-5277');
+      const errorMessage = err instanceof Error ? err.message : 'Something went wrong. Please try again or call us at (512) 763-5277';
+      setError(errorMessage);
       setIsSubmitting(false);
     }
   };
@@ -83,6 +88,19 @@ export default function LeadMagnetForm({ slug, title }: LeadMagnetFormProps) {
           {error}
         </div>
       )}
+
+      {/* Honeypot field - hidden from humans, visible to bots */}
+      <div className="hidden" aria-hidden="true">
+        <label htmlFor="website">Website</label>
+        <input
+          type="text"
+          id="website"
+          name="website"
+          tabIndex={-1}
+          autoComplete="off"
+          onChange={() => {}} // Prevent React warning
+        />
+      </div>
 
       <div>
         <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">

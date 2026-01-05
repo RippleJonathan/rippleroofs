@@ -1,31 +1,91 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
+import { 
+  leadMagnetFormSchema, 
+  detectSpamContent, 
+  validateFormTiming, 
+  checkRateLimit 
+} from '@/lib/validations/lead-magnet';
 
-// Lead magnet download API endpoint
+// Lead magnet download API endpoint with comprehensive spam protection
 export async function POST(request: NextRequest) {
   try {
+    // Get IP address for rate limiting
+    const ip = request.headers.get('x-forwarded-for') || 
+               request.headers.get('x-real-ip') || 
+               'unknown';
+
+    // Check rate limit first (3 submissions per hour per IP)
+    if (!checkRateLimit(ip)) {
+      console.log('🚦 Rate limit exceeded:', { ip });
+      return NextResponse.json(
+        { error: 'Too many submission attempts. Please try again later or call us at (512) 763-5277.' },
+        { status: 429 }
+      );
+    }
+
     const body = await request.json();
-    const { name, email, phone, address, slug, title } = body;
+    const { name, email, phone, address, slug, title, _website, _timestamp } = body;
 
-    console.log('Lead magnet request received:', { name, email, slug, title });
+    console.log('Lead magnet request received:', { name, email, slug, title, ip });
 
-    // Validate required fields
-    if (!name || !email || !slug || !title) {
-      console.error('Missing required fields:', { name: !!name, email: !!email, slug: !!slug, title: !!title });
+    // SPAM PROTECTION LAYER 1: Honeypot field check
+    // If _website field has any value, it's a bot (humans never see this field)
+    if (_website && _website.length > 0) {
+      console.log('🤖 Bot detected via honeypot:', { ip, name, email });
       return NextResponse.json(
-        { error: 'Missing required fields' },
+        { error: 'Invalid submission detected.' },
         { status: 400 }
       );
     }
 
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
+    // SPAM PROTECTION LAYER 2: Timing validation
+    // Reject submissions that are too fast (< 2 seconds) or have invalid timestamps
+    const timingCheck = validateFormTiming(_timestamp);
+    if (!timingCheck.valid) {
+      console.log('⏱️ Timing validation failed:', { ip, name, email, reason: timingCheck.reason });
       return NextResponse.json(
-        { error: 'Invalid email address' },
+        { error: timingCheck.reason || 'Invalid submission timing.' },
         { status: 400 }
       );
     }
+
+    // SPAM PROTECTION LAYER 3: Validate form data with enhanced validation
+    // This includes checks for random strings, spam patterns, disposable emails, etc.
+    let validatedData;
+    try {
+      validatedData = leadMagnetFormSchema.parse({
+        name,
+        email,
+        phone: phone || undefined,
+        address: address || undefined,
+        slug,
+        title,
+        _website,
+        _timestamp,
+      });
+    } catch (validationError) {
+      console.log('❌ Validation failed:', { ip, name, email, error: validationError });
+      return NextResponse.json(
+        { error: 'Please check your information and try again.' },
+        { status: 400 }
+      );
+    }
+
+    // SPAM PROTECTION LAYER 4: Content spam detection
+    // Check for spam keywords in name, address, or any other text fields
+    const textToCheck = `${validatedData.name} ${validatedData.address || ''}`;
+    if (detectSpamContent(textToCheck)) {
+      console.log('🚫 Spam content detected:', { ip, name, email });
+      return NextResponse.json(
+        { error: 'Invalid submission content.' },
+        { status: 400 }
+      );
+    }
+
+    console.log('✅ All spam checks passed for:', { name, email, ip });
+
+    console.log('✅ All spam checks passed for:', { name, email, ip });
 
     // Generate download URL (the thank you page will handle the actual PDF generation)
     const downloadUrl = `${process.env.NEXT_PUBLIC_SITE_URL || 'https://rippleroofs.com'}/resources/${slug}/thank-you`;
@@ -50,9 +110,9 @@ export async function POST(request: NextRequest) {
     // Using sales@rippleroofs.com - domain is verified in Resend
     const { data, error } = await resend.emails.send({
       from: 'Ripple Roofing <sales@rippleroofs.com>',
-      to: [email],
+      to: [validatedData.email],
       replyTo: 'sales@rippleroofs.com',
-      subject: `Your Free Download: ${title}`,
+      subject: `Your Free Download: ${validatedData.title}`,
       html: `
         <!DOCTYPE html>
         <html>
@@ -114,9 +174,9 @@ export async function POST(request: NextRequest) {
             </div>
             
             <div class="content">
-              <h2 style="color: #1f2937; margin-top: 0;">Hi ${name},</h2>
+              <h2 style="color: #1f2937; margin-top: 0;">Hi ${validatedData.name},</h2>
               
-              <p>Thank you for downloading <strong>${title}</strong>!</p>
+              <p>Thank you for downloading <strong>${validatedData.title}</strong>!</p>
               
               <p>We've put together this comprehensive guide to help you make informed decisions about your roof. Click the button below to access your download:</p>
               
@@ -180,14 +240,14 @@ export async function POST(request: NextRequest) {
       await resend.emails.send({
         from: 'Ripple Roofing <sales@rippleroofs.com>',
         to: ['jonathan@rippleroofs.com'],
-        subject: `New Lead Magnet Download: ${title}`,
+        subject: `New Lead Magnet Download: ${validatedData.title}`,
         html: `
           <h2>New Lead Magnet Download</h2>
-          <p><strong>Resource:</strong> ${title}</p>
-          <p><strong>Name:</strong> ${name}</p>
-          <p><strong>Email:</strong> ${email}</p>
-          ${phone ? `<p><strong>Phone:</strong> ${phone}</p>` : ''}
-          ${address ? `<p><strong>Address:</strong> ${address}</p>` : ''}
+          <p><strong>Resource:</strong> ${validatedData.title}</p>
+          <p><strong>Name:</strong> ${validatedData.name}</p>
+          <p><strong>Email:</strong> ${validatedData.email}</p>
+          ${validatedData.phone ? `<p><strong>Phone:</strong> ${validatedData.phone}</p>` : ''}
+          ${validatedData.address ? `<p><strong>Address:</strong> ${validatedData.address}</p>` : ''}
           <p><strong>Time:</strong> ${new Date().toLocaleString('en-US', { timeZone: 'America/Chicago' })}</p>
         `,
       });

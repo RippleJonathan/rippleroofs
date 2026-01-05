@@ -93,6 +93,65 @@ export const NAV_LINKS: NavLink[] = [
   { href: '/contact', label: 'Contact' },
 ]
 
+// Arizona-specific Navigation Links
+export const ARIZONA_NAV_LINKS: NavLink[] = [
+  { href: '/arizona', label: 'Home' },
+  { 
+    href: '/arizona/services', 
+    label: 'Services',
+    children: [
+      { href: '/arizona/services/tile-roof-repair', label: 'Tile Roof Repair & Underlayment' },
+      { href: '/arizona/services/foam-roof-coating', label: 'Foam Roof Coating' },
+      { href: '/arizona/services/monsoon-damage-repair', label: 'Monsoon Damage Repair' },
+      { href: '/arizona/services/roof-replacement', label: 'Roof Replacement' },
+      { href: '/services/residential-roofing', label: 'Residential Roofing' },
+      { href: '/services/commercial-roofing', label: 'Commercial Roofing' },
+      { href: '/services/emergency-services', label: 'Emergency Services' },
+      { href: '/services/roof-inspection', label: 'Roof Inspection' },
+    ]
+  },
+  {
+    href: '/arizona#service-areas',
+    label: 'Locations',
+    children: [
+      { href: '/arizona/scottsdale', label: 'Scottsdale' },
+      { href: '/arizona/phoenix', label: 'Phoenix' },
+      { href: '/arizona/tempe', label: 'Tempe' },
+      { href: '/arizona/mesa', label: 'Mesa' },
+      { href: '/arizona/chandler', label: 'Chandler' },
+      { href: '/arizona/gilbert', label: 'Gilbert' },
+      { href: '/arizona/glendale', label: 'Glendale' },
+      { href: '/arizona/peoria', label: 'Peoria' },
+      { href: '/arizona/surprise', label: 'Surprise' },
+      { href: '/arizona/avondale', label: 'Avondale' },
+    ]
+  },
+  { href: '/projects', label: 'Projects' },
+  { 
+    href: '/resources', 
+    label: 'Resources',
+    children: [
+      { href: '/calculators', label: 'Roofing Calculators' },
+      { href: '/resources/material-comparison-tool', label: 'Material Comparison Tool' },
+      { href: '/resources/roof-inspection-checklist', label: 'Free Roof Inspection Checklist' },
+      { href: '/resources/storm-damage-insurance-guide', label: 'Insurance Claim Guide' },
+      { href: '/blog', label: 'Roofing Blog' },
+    ]
+  },
+  { href: '/about', label: 'About' },
+  { href: '/financing', label: 'Financing' },
+  { href: '/faq', label: 'FAQ' },
+  { href: '/contact?state=AZ', label: 'Contact' },
+]
+
+// Helper function to get navigation links based on current state
+export function getNavLinks(pathname: string | null): NavLink[] {
+  if (pathname?.startsWith('/arizona')) {
+    return ARIZONA_NAV_LINKS;
+  }
+  return NAV_LINKS;
+}
+
 // Services Data
 export const SERVICES: Service[] = [
   {

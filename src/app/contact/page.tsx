@@ -1,31 +1,102 @@
-import { FC } from 'react'
-import { Metadata } from 'next'
+'use client'
+
+import { FC, useState, useEffect } from 'react'
+import { usePathname, useSearchParams } from 'next/navigation'
 import { Container } from '@/components/layout/Container'
 import { QuoteForm } from '@/components/forms/QuoteForm'
+import { ArizonaQuoteForm } from '@/components/forms/ArizonaQuoteForm'
 import { ServiceAreasMap } from '@/components/contact/ServiceAreasMap'
 import { SITE_CONFIG } from '@/lib/constants'
-
-export const metadata: Metadata = {
-  title: 'Contact Us - Get a Free Quote',
-  description: `Contact ${SITE_CONFIG.name} for a free roofing inspection and quote. Call ${SITE_CONFIG.phone} or fill out our form. Serving Central Texas with 24/7 emergency service.`,
-  openGraph: {
-    title: 'Contact Us - Get a Free Quote',
-    description: `Contact ${SITE_CONFIG.name} for a free roofing inspection and quote. Call ${SITE_CONFIG.phone} or fill out our form.`,
-  },
-}
+import { BUSINESS_INFO_TEXAS, BUSINESS_INFO_ARIZONA } from '@/constants/business'
+import { getCookie } from '@/lib/utils'
 
 const ContactPage: FC = () => {
+  const pathname = usePathname()
+  const searchParams = useSearchParams()
+  const [selectedState, setSelectedState] = useState<'TX' | 'AZ'>('TX')
+
+  useEffect(() => {
+    // Check URL params first (highest priority)
+    const stateParam = searchParams.get('state')
+    if (stateParam === 'AZ' || stateParam === 'az') {
+      setSelectedState('AZ')
+      return
+    }
+    if (stateParam === 'TX' || stateParam === 'tx') {
+      setSelectedState('TX')
+      return
+    }
+    
+    // Check referrer (second priority - what page did they come from?)
+    if (typeof document !== 'undefined') {
+      const referrer = document.referrer
+      if (referrer.includes('/arizona')) {
+        setSelectedState('AZ')
+        return
+      }
+      // If referrer is from main site (not /arizona), default to Texas
+      if (referrer && !referrer.includes('/arizona')) {
+        setSelectedState('TX')
+        return
+      }
+    }
+    
+    // Check cookie (third priority)
+    const preferredState = getCookie('preferred_state')
+    if (preferredState === 'AZ') {
+      setSelectedState('AZ')
+      return
+    }
+    if (preferredState === 'TX') {
+      setSelectedState('TX')
+      return
+    }
+    
+    // Default to Texas if no state detected (fallback)
+    setSelectedState('TX')
+  }, [searchParams])
+
+  const businessInfo = selectedState === 'AZ' ? BUSINESS_INFO_ARIZONA : BUSINESS_INFO_TEXAS
+  const isArizona = selectedState === 'AZ'
+
   return (
     <main className="min-h-screen bg-gradient-to-b from-white to-primary-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary-900 to-primary-800 text-white py-16">
+      <section className={`bg-gradient-to-r ${isArizona ? 'from-blue-900 to-blue-800' : 'from-primary-900 to-primary-800'} text-white py-16`}>
         <Container>
           <div className="max-w-3xl">
+            {/* State Selector */}
+            <div className="flex gap-2 mb-6">
+              <button
+                onClick={() => setSelectedState('TX')}
+                className={`px-4 py-2 rounded-lg font-semibold transition-all ${
+                  selectedState === 'TX'
+                    ? 'bg-white text-blue-900'
+                    : 'bg-white/10 text-white hover:bg-white/20'
+                }`}
+              >
+                🇺🇸 Texas Office
+              </button>
+              <button
+                onClick={() => setSelectedState('AZ')}
+                className={`px-4 py-2 rounded-lg font-semibold transition-all ${
+                  selectedState === 'AZ'
+                    ? 'bg-white text-blue-900'
+                    : 'bg-white/10 text-white hover:bg-white/20'
+                }`}
+              >
+                🌵 Arizona Office
+              </button>
+            </div>
+
             <h1 className="text-4xl md:text-5xl font-display font-bold mb-4">
               🎯 Get My FREE Inspection ($200 Value)
             </h1>
             <p className="text-xl text-primary-100">
-              Expert roofing services across Central Texas. Same-day scheduling available. Fill out the form or call us directly.
+              {isArizona 
+                ? 'Expert tile, foam, and shingle roofing across Phoenix metro. Same-day scheduling available.'
+                : 'Expert roofing services across Central Texas. Same-day scheduling available. Fill out the form or call us directly.'
+              }
             </p>
           </div>
         </Container>
@@ -44,27 +115,27 @@ const ContactPage: FC = () => {
                 <p className="text-primary-600 mb-8">
                   Fill out the form below and we'll get back to you within 24 hours with a detailed quote for your roofing project.
                 </p>
-                <QuoteForm />
+                {isArizona ? <ArizonaQuoteForm /> : <QuoteForm />}
               </div>
             </div>
 
             {/* Contact Information Sidebar */}
             <div className="space-y-6">
               {/* Phone */}
-              <div className="bg-white rounded-2xl shadow-lg p-6 border-2 border-accent-500">
+              <div className={`bg-white rounded-2xl shadow-lg p-6 border-2 ${isArizona ? 'border-blue-500' : 'border-accent-500'}`}>
                 <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-accent-100 rounded-full flex items-center justify-center">
-                    <svg className="w-6 h-6 text-accent-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <div className={`flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center ${isArizona ? 'bg-blue-100' : 'bg-accent-100'}`}>
+                    <svg className={`w-6 h-6 ${isArizona ? 'text-blue-600' : 'text-accent-600'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
                   </div>
                   <div>
                     <h3 className="font-display font-bold text-primary-900 mb-1">Call Us</h3>
                     <a
-                      href={`tel:${SITE_CONFIG.phone.replace(/\D/g, '')}`}
-                      className="text-accent-600 hover:text-accent-700 font-bold text-lg transition-colors"
+                      href={`tel:${businessInfo.phone.replace(/\D/g, '')}`}
+                      className={`font-bold text-lg transition-colors ${isArizona ? 'text-blue-600 hover:text-blue-700' : 'text-accent-600 hover:text-accent-700'}`}
                     >
-                      {SITE_CONFIG.phone}
+                      {businessInfo.phone}
                     </a>
                     <p className="text-sm text-primary-600 mt-1">24/7 Emergency Service</p>
                   </div>
@@ -82,10 +153,10 @@ const ContactPage: FC = () => {
                   <div>
                     <h3 className="font-display font-bold text-primary-900 mb-1">Email Us</h3>
                     <a
-                      href={`mailto:${SITE_CONFIG.email}`}
+                      href={`mailto:${businessInfo.email}`}
                       className="text-accent-600 hover:text-accent-700 transition-colors break-all"
                     >
-                      {SITE_CONFIG.email}
+                      {businessInfo.email}
                     </a>
                   </div>
                 </div>
@@ -103,22 +174,46 @@ const ContactPage: FC = () => {
                   <div>
                     <h3 className="font-display font-bold text-primary-900 mb-1">Visit Us</h3>
                     <address className="text-primary-600 not-italic">
-                      {SITE_CONFIG.address}
+                      {businessInfo.address.street}<br />
+                      {businessInfo.address.city}, {businessInfo.address.state} {businessInfo.address.zip}
                     </address>
                   </div>
                 </div>
               </div>
 
+              {/* License Badge (Arizona only) */}
+              {isArizona && (
+                <div className="bg-gradient-to-br from-blue-900 to-blue-800 rounded-2xl shadow-lg p-6 text-white">
+                  <h3 className="font-display font-bold mb-3 flex items-center">
+                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    ROC Licensed
+                  </h3>
+                  <p className="text-blue-100 text-sm mb-2">
+                    Arizona ROC #362945
+                  </p>
+                  <a 
+                    href="https://roc.az.gov/verify-license"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs text-blue-200 hover:text-white underline"
+                  >
+                    Verify License →
+                  </a>
+                </div>
+              )}
+
               {/* Service Areas */}
-              <div className="bg-gradient-to-br from-primary-900 to-primary-800 rounded-2xl shadow-lg p-6 text-white">
+              <div className={`rounded-2xl shadow-lg p-6 text-white ${isArizona ? 'bg-gradient-to-br from-blue-900 to-blue-800' : 'bg-gradient-to-br from-primary-900 to-primary-800'}`}>
                 <h3 className="font-display font-bold mb-3 flex items-center">
                   <svg className="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
                   </svg>
                   Service Areas
                 </h3>
-                <p className="text-primary-100 text-sm">
-                  We proudly serve {SITE_CONFIG.serviceArea}.
+                <p className={`text-sm ${isArizona ? 'text-blue-100' : 'text-primary-100'}`}>
+                  We proudly serve {isArizona ? 'Phoenix and surrounding metro areas' : SITE_CONFIG.serviceArea}.
                 </p>
               </div>
 
@@ -183,7 +278,10 @@ const ContactPage: FC = () => {
                 </div>
                 <h3 className="font-display font-bold text-primary-900 mb-2">Quality Guaranteed</h3>
                 <p className="text-primary-600 text-sm">
-                  CertainTeed Shingle Master certified with comprehensive warranties on all work.
+                  {isArizona 
+                    ? 'ROC licensed (#362945) with comprehensive warranties on all work and premium materials.'
+                    : 'CertainTeed Shingle Master certified with comprehensive warranties on all work.'
+                  }
                 </p>
               </div>
               <div className="text-center">
@@ -203,7 +301,7 @@ const ContactPage: FC = () => {
       </section>
 
       {/* Service Areas Map Section */}
-      <ServiceAreasMap />
+      <ServiceAreasMap state={selectedState} />
     </main>
   )
 }

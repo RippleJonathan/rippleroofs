@@ -1,6 +1,7 @@
 'use client'
 
 import { FC, useEffect, useState } from 'react'
+import { usePathname, useSearchParams } from 'next/navigation'
 import { Container } from './Container'
 
 interface GoogleReview {
@@ -12,10 +13,15 @@ interface GoogleReview {
 }
 
 export const FooterReviews: FC = () => {
+  const pathname = usePathname()
+  const searchParams = useSearchParams()
   const [reviews, setReviews] = useState<GoogleReview[]>([])
   const [rating, setRating] = useState<number>(0)
   const [totalReviews, setTotalReviews] = useState<number>(0)
   const [loading, setLoading] = useState(true)
+  
+  // Check both pathname and query params for Arizona
+  const isArizona = pathname?.startsWith('/arizona') || searchParams.get('state') === 'AZ'
 
   useEffect(() => {
     async function loadReviews() {
@@ -45,7 +51,7 @@ export const FooterReviews: FC = () => {
       <Container>
         <div className="text-center mb-8">
           <h3 className="text-2xl font-display font-bold text-primary-900 mb-2">
-            Trusted by Central Texas Homeowners
+            {isArizona ? 'Trusted by Phoenix Metro Homeowners' : 'Trusted by Central Texas Homeowners'}
           </h3>
           <div className="flex items-center justify-center gap-2 mb-1">
             <div className="flex gap-1">

@@ -256,7 +256,7 @@ export default function LeadMagnetPage({
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-gray-900 mb-12">
-              Trusted by Central Texas Homeowners
+              Trusted by Homeowners Across Texas & Arizona
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-sm">
