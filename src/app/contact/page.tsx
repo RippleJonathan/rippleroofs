@@ -1,6 +1,6 @@
 'use client'
 
-import { FC, useState, useEffect } from 'react'
+import { FC, useState, useEffect, Suspense } from 'react'
 import { usePathname, useSearchParams } from 'next/navigation'
 import { Container } from '@/components/layout/Container'
 import { QuoteForm } from '@/components/forms/QuoteForm'
@@ -10,7 +10,7 @@ import { SITE_CONFIG } from '@/lib/constants'
 import { BUSINESS_INFO_TEXAS, BUSINESS_INFO_ARIZONA } from '@/constants/business'
 import { getCookie } from '@/lib/utils'
 
-const ContactPage: FC = () => {
+const ContactPageContent: FC = () => {
   const pathname = usePathname()
   const searchParams = useSearchParams()
   const [selectedState, setSelectedState] = useState<'TX' | 'AZ'>('TX')
@@ -303,6 +303,21 @@ const ContactPage: FC = () => {
       {/* Service Areas Map Section */}
       <ServiceAreasMap state={selectedState} />
     </main>
+  )
+}
+
+const ContactPage: FC = () => {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-gradient-to-b from-white to-primary-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-accent-600 mb-4"></div>
+          <p className="text-primary-600">Loading contact form...</p>
+        </div>
+      </div>
+    }>
+      <ContactPageContent />
+    </Suspense>
   )
 }
 
