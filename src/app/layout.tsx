@@ -39,7 +39,8 @@ export const metadata: Metadata = {
     default: 'Ripple Roofing & Construction - Premium Roofing Services in Central Texas',
     template: '%s | Ripple Roofing & Construction'
   },
-  description: 'CertainTeed Shingle Master certified roofing experts serving Austin Metro, San Antonio, and Central Texas. Residential, commercial, and 24/7 emergency services. Fully insured. Get your free inspection today.',
+  description: 'Expert roofers in Central Texas. CertainTeed Shingle Master certified. Residential, commercial & emergency services. Fully insured. Free inspections.',
+  // 149 chars — within Google\'s display window
   keywords: ['roofing austin', 'roofing round rock', 'roof repair texas', 'roof replacement austin', 'roofing company central texas', 'residential roofing', 'commercial roofing', 'emergency roof repair', 'CertainTeed shingle master'],
   authors: [{ name: 'Ripple Roofing & Construction' }],
   creator: 'Ripple Roofing & Construction',

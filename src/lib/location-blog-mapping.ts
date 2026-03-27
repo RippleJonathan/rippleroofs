@@ -112,6 +112,40 @@ export const LOCATION_BLOG_POSTS: Record<string, Array<{
       slug: 'leander-storm-damage-guide',
       category: 'Storm Damage'
     },
+    {
+      title: 'Leander Storm Damage Assessment',
+      description: 'How to safely identify and document hail and wind damage on your Leander roof after severe weather.',
+      slug: 'leander-storm-damage-assessment',
+      category: 'Storm Damage'
+    },
+  ],
+  'san-marcos': [
+    {
+      title: 'Insurance Claims After Storm Damage',
+      description: 'Step-by-step guide to filing a Texas roof insurance claim and maximizing your settlement.',
+      slug: 'roof-insurance-claim-guide-texas',
+      category: 'Insurance'
+    },
+    {
+      title: 'Best Roofing Materials for Texas Heat',
+      description: 'Expert comparison of roofing materials optimized for Texas heat, humidity, and hail.',
+      slug: 'best-roofing-materials-texas-heat',
+      category: 'Materials'
+    },
+  ],
+  'temple': [
+    {
+      title: 'Roof Replacement vs Repair Guide',
+      description: 'When to repair your roof vs replace it entirely—complete guide with cost comparisons.',
+      slug: 'roof-replacement-vs-repair-guide',
+      category: 'Guidance'
+    },
+    {
+      title: 'Texas Storm Season Preparation',
+      description: 'How to prepare your home and roof for Texas storm season to minimize storm damage.',
+      slug: 'texas-storm-season-preparation',
+      category: 'Storm Preparation'
+    },
   ],
   'lakeway': [
     {

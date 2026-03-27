@@ -35,11 +35,13 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
   }
 
   const title = `${service.title} in Central Texas | Ripple Roofing`
+  const isPDR = service.slug === 'paintless-dent-repair'
   const description = `Expert ${service.title.toLowerCase()} services in Round Rock, Austin, and Central Texas. ${service.shortDescription} Call (512) 763-5277 for free inspection.`
 
   return {
-    title,
+    title: { absolute: title },
     description,
+    ...(isPDR ? { robots: { index: false, follow: false } } : {}),
     keywords: `${service.title}, Round Rock roofing, Austin roofing, Central Texas roofer, ${service.title.toLowerCase()} services`,
     openGraph: {
       title,
@@ -143,7 +145,7 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
       </section>
 
       {/* Trust Indicators */}
-      <section className="pt-16 pb-8 md:py-8 bg-primary-50 border-y border-primary-100">
+      <section className="py-8 bg-primary-50 border-y border-primary-100">
         <Container>
           {isPDR ? (
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">

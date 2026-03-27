@@ -7,11 +7,14 @@ import { Button } from '@/components/ui/Button'
 import { SITE_CONFIG } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Free Roofing Calculators - Cost Estimator & ROI Calculator | Central Texas',
-  description: 'Calculate your roof size, estimate replacement costs, and analyze energy savings ROI. Free interactive roofing calculators for Central Texas homeowners.',
+  title: { absolute: 'Roof Replacement Cost Calculator | Central Texas | Ripple Roofing' },
+  description: 'Free roofing calculators for Central Texas homeowners. Estimate replacement costs, measure roof size, and calculate energy savings ROI—no email required.',
+  alternates: {
+    canonical: 'https://rippleroofs.com/calculators',
+  },
   openGraph: {
-    title: 'Free Roofing Calculators - Ripple Roofing',
-    description: 'Estimate your roof replacement cost and calculate energy savings',
+    title: 'Free Roof Replacement Cost Calculator | Ripple Roofing',
+    description: 'Instantly estimate your roof replacement cost, size, and energy savings ROI. Built for Central Texas homeowners.',
   },
 }
 

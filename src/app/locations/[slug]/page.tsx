@@ -35,11 +35,11 @@ export async function generateMetadata({ params }: LocationPageProps): Promise<M
     }
   }
 
-  const title = `Roofing Company in ${location.city}, ${location.state} | Ripple Roofing`
-  const description = `Premier roofing services in ${location.city}, ${location.state}. Serving ${location.neighborhoods.slice(0, 3).join(', ')} and surrounding areas. CertainTeed certified. Call ${SITE_CONFIG.phone} for free inspection.`
+  const title = `${location.city} Roofing Contractor | ${location.state} | Ripple Roofing`
+  const description = `Top-rated roofing contractor in ${location.city}, ${location.state}. Serving ${location.neighborhoods.slice(0, 3).join(', ')} & surrounding areas. CertainTeed certified. Free inspections. Call ${SITE_CONFIG.phone}.`
 
   return {
-    title,
+    title: { absolute: title },
     description,
     keywords: `${location.city} roofer, roofing company ${location.city} ${location.state}, roof repair ${location.city}, roof replacement ${location.city}, ${location.city} roofing contractor`,
     openGraph: {
