@@ -1,35 +1,25 @@
-import { NextRequest, NextResponse } from 'next/server'
-import { getPostBySlug } from '@/lib/blog'
+import { ImageResponse } from 'next/og'
+import { NextRequest } from 'next/server'
+
+export const runtime = 'edge'
 
 export async function GET(
   request: NextRequest,
   { params }: { params: { slug: string } }
 ) {
   const { slug } = params
-  
-  // Get post to extract title
-  const post = getPostBySlug(slug)
-  const title = post?.title || slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())
-  
-  // Generate SVG placeholder with title
-  const svg = generateBlogPlaceholderSVG(title)
-  
-  return new NextResponse(svg, {
-    headers: {
-      'Content-Type': 'image/svg+xml',
-      'Cache-Control': 'public, max-age=31536000, immutable',
-    },
-  })
-}
 
-function generateBlogPlaceholderSVG(title: string): string {
-  // Wrap text to fit in image (max 40 chars per line)
+  // Derive a readable title from the slug (edge runtime has no fs access)
+  const title = slug
+    .replace(/-/g, ' ')
+    .replace(/\b\w/g, (l) => l.toUpperCase())
+
+  // Word-wrap title into lines of ~30 chars
   const words = title.split(' ')
   const lines: string[] = []
   let currentLine = ''
-  
-  words.forEach(word => {
-    if ((currentLine + word).length > 35) {
+  words.forEach((word) => {
+    if ((currentLine + word).length > 30) {
       if (currentLine) lines.push(currentLine.trim())
       currentLine = word + ' '
     } else {
@@ -37,60 +27,73 @@ function generateBlogPlaceholderSVG(title: string): string {
     }
   })
   if (currentLine) lines.push(currentLine.trim())
-  
-  // Limit to 3 lines
   const displayLines = lines.slice(0, 3)
-  if (lines.length > 3) {
-    displayLines[2] = displayLines[2].substring(0, 32) + '...'
-  }
-  
-  // Calculate positions for centered text
-  const startY = 280 - (displayLines.length * 35)
-  
-  return `<?xml version="1.0" encoding="UTF-8"?>
-<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1e3a5f;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
-    </linearGradient>
-  </defs>
-  
-  <!-- Background -->
-  <rect width="1200" height="630" fill="url(#grad)"/>
-  
-  <!-- Pattern overlay -->
-  <g opacity="0.1">
-    <circle cx="100" cy="100" r="200" fill="#ffffff" />
-    <circle cx="1100" cy="530" r="200" fill="#ffffff" />
-  </g>
-  
-  <!-- Icon/Logo area -->
-  <rect x="80" y="80" width="120" height="120" rx="20" fill="#f97316" opacity="0.9"/>
-  <text x="140" y="165" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="#ffffff" text-anchor="middle">R</text>
-  
-  <!-- Title -->
-  ${displayLines.map((line, index) => `
-  <text x="80" y="${startY + (index * 70)}" font-family="Arial, sans-serif" font-size="54" font-weight="bold" fill="#ffffff">
-    ${escapeXml(line)}
-  </text>`).join('')}
-  
-  <!-- Ripple Roofing branding -->
-  <text x="80" y="550" font-family="Arial, sans-serif" font-size="28" fill="#f97316" font-weight="600">
-    Ripple Roofing & Construction
-  </text>
-</svg>`
-}
 
-function escapeXml(unsafe: string): string {
-  return unsafe.replace(/[<>&'"]/g, (c) => {
-    switch (c) {
-      case '<': return '&lt;'
-      case '>': return '&gt;'
-      case '&': return '&amp;'
-      case "'": return '&apos;'
-      case '"': return '&quot;'
-      default: return c
-    }
-  })
+  return new ImageResponse(
+    (
+      <div
+        style={{
+          width: '1200px',
+          height: '630px',
+          background: 'linear-gradient(135deg, #1e3a5f 0%, #0f172a 100%)',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'flex-end',
+          alignItems: 'flex-start',
+          padding: '80px',
+          fontFamily: 'sans-serif',
+        }}
+      >
+        {/* Logo badge */}
+        <div
+          style={{
+            position: 'absolute',
+            top: '80px',
+            left: '80px',
+            width: '100px',
+            height: '100px',
+            borderRadius: '16px',
+            background: '#f97316',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            fontSize: '60px',
+            fontWeight: 'bold',
+            color: '#ffffff',
+          }}
+        >
+          R
+        </div>
+
+        {/* Title lines */}
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            marginBottom: '40px',
+          }}
+        >
+          {displayLines.map((line, i) => (
+            <span
+              key={i}
+              style={{
+                fontSize: '56px',
+                fontWeight: 'bold',
+                color: '#ffffff',
+                lineHeight: 1.2,
+              }}
+            >
+              {line}
+            </span>
+          ))}
+        </div>
+
+        {/* Branding */}
+        <span style={{ fontSize: '26px', color: '#f97316', fontWeight: '600' }}>
+          Ripple Roofing &amp; Construction
+        </span>
+      </div>
+    ),
+    { width: 1200, height: 630 }
+  )
 }
