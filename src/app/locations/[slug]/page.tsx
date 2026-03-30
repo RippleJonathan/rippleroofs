@@ -35,8 +35,8 @@ export async function generateMetadata({ params }: LocationPageProps): Promise<M
     }
   }
 
-  const title = `${location.city} Roofing Contractor | ${location.state} | Ripple Roofing`
-  const description = `Top-rated roofing contractor in ${location.city}, ${location.state}. Serving ${location.neighborhoods.slice(0, 3).join(', ')} & surrounding areas. CertainTeed certified. Free inspections. Call ${SITE_CONFIG.phone}.`
+  const title = `${location.city} Roofing | Free Inspection | CertainTeed Certified`
+  const description = `Top-rated roofing contractor in ${location.city}, TX. Residential, commercial & emergency services. CertainTeed Shingle Master certified. Free inspections — call ${SITE_CONFIG.phone}.`
 
   return {
     title: { absolute: title },

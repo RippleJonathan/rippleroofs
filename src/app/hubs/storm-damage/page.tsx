@@ -215,6 +215,127 @@ export default function StormDamageHub() {
         </Container>
       </section>
 
+      {/* Editorial Content — Unique standalone resource for Google indexing */}
+      <section className="py-16 bg-white">
+        <Container>
+          <div className="max-w-4xl mx-auto">
+
+            {/* Stats block */}
+            <div className="mb-14">
+              <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">Texas Storm Damage: What Every Homeowner Should Know</h2>
+              <p className="text-lg text-gray-700 mb-6">
+                Central Texas sits in the heart of Tornado Alley, directly in the path of the severe weather systems that sweep north from the Gulf of Mexico each spring and fall. The Austin-Round Rock metro averages more than <strong>60 days of thunderstorm activity per year</strong>, with hail being the single largest cause of residential roof damage in Texas. In 2023, Texas homeowners filed over <strong>$3.5 billion in hail-damage insurance claims</strong> — more than any other state.
+              </p>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 bg-gray-50 rounded-2xl p-6">
+                <div className="text-center">
+                  <p className="text-4xl font-display font-bold text-primary-700">60+</p>
+                  <p className="text-sm text-gray-600 mt-1">thunderstorm days per year in Central TX</p>
+                </div>
+                <div className="text-center">
+                  <p className="text-4xl font-display font-bold text-primary-700">$3.5B</p>
+                  <p className="text-sm text-gray-600 mt-1">in TX hail-damage claims annually</p>
+                </div>
+                <div className="text-center">
+                  <p className="text-4xl font-display font-bold text-primary-700">72 hrs</p>
+                  <p className="text-sm text-gray-600 mt-1">recommended window to inspect after a storm</p>
+                </div>
+                <div className="text-center">
+                  <p className="text-4xl font-display font-bold text-primary-700">1 yr</p>
+                  <p className="text-sm text-gray-600 mt-1">typical TX insurance claim deadline from storm date</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Step-by-step guide */}
+            <div className="mb-14">
+              <h2 className="text-3xl font-display font-bold text-gray-900 mb-6">What To Do Immediately After a Storm</h2>
+              <ol className="space-y-6">
+                <li className="flex gap-4">
+                  <span className="flex-shrink-0 w-10 h-10 rounded-full bg-primary-700 text-white flex items-center justify-center font-bold text-lg">1</span>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-1">Stay Safe — Don't Access the Roof Yourself</h3>
+                    <p className="text-gray-700">After wind, hail, or heavy rain, structural damage may not be visible from the ground. Wet roofing materials are extremely slippery. Call a licensed contractor to perform the inspection rather than climbing up yourself.</p>
+                  </div>
+                </li>
+                <li className="flex gap-4">
+                  <span className="flex-shrink-0 w-10 h-10 rounded-full bg-primary-700 text-white flex items-center justify-center font-bold text-lg">2</span>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-1">Document Everything Within 72 Hours</h3>
+                    <p className="text-gray-700">Photograph damage to your siding, gutters, HVAC units, and any interior water intrusion. Date-stamp all photos. Insurance adjusters require proof that damage occurred during the storm event, not from previous wear-and-tear.</p>
+                  </div>
+                </li>
+                <li className="flex gap-4">
+                  <span className="flex-shrink-0 w-10 h-10 rounded-full bg-primary-700 text-white flex items-center justify-center font-bold text-lg">3</span>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-1">Apply Emergency Protection Before Filing</h3>
+                    <p className="text-gray-700">If there is an active leak or exposed decking, a temporary roof tarp should be applied before the next rain event. Most insurance policies require homeowners to take reasonable steps to prevent further damage — this protects your claim.</p>
+                  </div>
+                </li>
+                <li className="flex gap-4">
+                  <span className="flex-shrink-0 w-10 h-10 rounded-full bg-primary-700 text-white flex items-center justify-center font-bold text-lg">4</span>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-1">Get a Roofing Contractor Inspection Before the Adjuster Arrives</h3>
+                    <p className="text-gray-700">A qualified roofer can document granule loss, dented vents, cracked ridge caps, and bruised shingles that are easy for non-specialists to miss. Having an independent inspection report strengthens your claim and ensures the adjuster doesn't underestimate the scope of damage.</p>
+                  </div>
+                </li>
+                <li className="flex gap-4">
+                  <span className="flex-shrink-0 w-10 h-10 rounded-full bg-primary-700 text-white flex items-center justify-center font-bold text-lg">5</span>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-1">File Your Insurance Claim Promptly</h3>
+                    <p className="text-gray-700">Texas law (TIC §542A) gives insurers 15 days to acknowledge your claim and 5 business days to accept or deny it after receiving all documentation. Most policies have a 1-year deadline from the date of loss to file — don't let that window close.</p>
+                  </div>
+                </li>
+                <li className="flex gap-4">
+                  <span className="flex-shrink-0 w-10 h-10 rounded-full bg-primary-700 text-white flex items-center justify-center font-bold text-lg">6</span>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-1">Choose a Local, Licensed Contractor to Complete Repairs</h3>
+                    <p className="text-gray-700">After a major storm, out-of-state "storm chasers" flood the area offering quick low-cost repairs. Always verify a contractor holds a Texas roofing registration, is properly insured, and has verifiable local references before signing any contract.</p>
+                  </div>
+                </li>
+              </ol>
+            </div>
+
+            {/* Insurance section */}
+            <div className="mb-14 bg-blue-50 rounded-2xl p-8">
+              <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">Understanding Your Roof Insurance Claim in Texas</h2>
+              <p className="text-gray-700 mb-4">
+                Texas homeowner policies typically cover sudden storm damage from wind, hail, and lightning. However, damage caused by lack of maintenance, age-related deterioration, or improper installation is usually excluded. This distinction is critical when your adjuster is assessing your roof.
+              </p>
+              <p className="text-gray-700 mb-4">
+                <strong>ACV vs. RCV:</strong> Your policy may pay <em>actual cash value</em> (ACV — current market value minus depreciation) or <em>replacement cost value</em> (RCV — full replacement cost with no depreciation deducted). RCV policies pay out in two stages: the ACV amount upfront, then the <em>recoverable depreciation</em> once repairs are completed. Understanding which you have changes how you should approach your claim.
+              </p>
+              <p className="text-gray-700">
+                <strong>Class 4 impact-resistant shingles</strong> installed after a claim replacement may qualify you for a 20–30% homeowner insurance discount in Texas. Ask your contractor about CertainTeed Class 4 options — they can pay for themselves within a few policy renewal cycles.
+              </p>
+            </div>
+
+            {/* FAQ */}
+            <div className="mb-4">
+              <h2 className="text-3xl font-display font-bold text-gray-900 mb-8">Storm Damage FAQs</h2>
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">How can I tell if my roof has hail damage without going up there?</h3>
+                  <p className="text-gray-700">Look for these ground-level signs: dented aluminum gutters or downspouts, cracked or bent gutter guards, damage to HVAC units or window screens, and dents in soft-metal flashing around your chimney or vents. If you see any of these, assume your shingles took a hit too.</p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">How long do I have to file a storm damage claim in Texas?</h3>
+                  <p className="text-gray-700">Most Texas homeowner insurance policies require you to file within <strong>1 year of the date of loss</strong>. Some policies are shorter (6 months). Check your declarations page, and don't delay — getting a free inspection right after a storm is the best way to know whether you have a claim worth filing.</p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Will a storm damage repair affect my insurance premiums?</h3>
+                  <p className="text-gray-700">In Texas, a single weather-related claim typically does not increase your premiums or cause non-renewal. Weather claims are categorized as "Acts of God" and treated differently from at-fault claims. However, multiple claims within a short period may affect your policy terms — your insurer and agent can give you specifics.</p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Should I use the roofing contractor my insurance company recommends?</h3>
+                  <p className="text-gray-700">You are not required to. Insurers may have preferred vendor programs, but you have the legal right to choose any licensed Texas contractor you trust. Choosing your own contractor — especially one who performs a thorough independent inspection before the adjuster visits — often results in a more complete claim payout.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </Container>
+      </section>
+
       {/* CTA */}
       <section className="py-16 bg-gradient-to-r from-red-700 to-primary-900 text-white">
         <Container>

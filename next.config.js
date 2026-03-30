@@ -37,6 +37,16 @@ const nextConfig = {
       },
       // Old tag pages (redirect to blog)
       {
+        source: '/tag/:slug*/feed',
+        destination: '/blog',
+        permanent: true,
+      },
+      {
+        source: '/tag/:slug*/feed/',
+        destination: '/blog',
+        permanent: true,
+      },
+      {
         source: '/tag/:slug*',
         destination: '/blog',
         permanent: true,

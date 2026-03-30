@@ -34,9 +34,9 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
     }
   }
 
-  const title = `${service.title} in Central Texas | Ripple Roofing`
+  const title = `${service.title} | Round Rock & Austin TX | Ripple Roofing`
   const isPDR = service.slug === 'paintless-dent-repair'
-  const description = `Expert ${service.title.toLowerCase()} services in Round Rock, Austin, and Central Texas. ${service.shortDescription} Call (512) 763-5277 for free inspection.`
+  const description = `${service.shortDescription} Serving Round Rock, Austin & all of Central Texas. CertainTeed certified. Free inspections — call (512) 763-5277.`
 
   return {
     title: { absolute: title },
