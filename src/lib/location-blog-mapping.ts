@@ -60,6 +60,12 @@ export const LOCATION_BLOG_POSTS: Record<string, Array<{
       slug: 'solar-panel-roof-requirements-austin',
       category: 'Specialty'
     },
+    {
+      title: 'We Achieved CertainTeed ShingleMaster Premier Status',
+      description: 'Ripple Roofing achieves the highest CertainTeed certification — now offering Lifetime, 30-Year & 15-Year backed workmanship warranties.',
+      slug: 'certainteed-shinglemaster-premier-ripple-roofing',
+      category: 'Company News'
+    },
   ],
   'round-rock': [
     {
@@ -97,6 +103,12 @@ export const LOCATION_BLOG_POSTS: Record<string, Array<{
       description: 'Why stone-coated metal roofing is one of the best investments for Round Rock homeowners.',
       slug: 'stone-coated-metal-roofing-round-rock',
       category: 'Materials'
+    },
+    {
+      title: 'We Achieved CertainTeed ShingleMaster Premier Status',
+      description: 'Ripple Roofing achieves the highest CertainTeed certification — now offering Lifetime, 30-Year & 15-Year backed workmanship warranties.',
+      slug: 'certainteed-shinglemaster-premier-ripple-roofing',
+      category: 'Company News'
     },
   ],
   'georgetown': [
