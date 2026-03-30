@@ -304,9 +304,14 @@ export default function StormDamageHub() {
               <p className="text-gray-700 mb-4">
                 <strong>ACV vs. RCV:</strong> Your policy may pay <em>actual cash value</em> (ACV — current market value minus depreciation) or <em>replacement cost value</em> (RCV — full replacement cost with no depreciation deducted). RCV policies pay out in two stages: the ACV amount upfront, then the <em>recoverable depreciation</em> once repairs are completed. Understanding which you have changes how you should approach your claim.
               </p>
-              <p className="text-gray-700">
+              <p className="text-gray-700 mb-6">
                 <strong>Class 4 impact-resistant shingles</strong> installed after a claim replacement may qualify you for a 20–30% homeowner insurance discount in Texas. Ask your contractor about CertainTeed Class 4 options — they can pay for themselves within a few policy renewal cycles.
               </p>
+              <div className="border-t border-blue-200 pt-4">
+                <p className="text-sm text-gray-500 italic">
+                  <strong>Disclaimer:</strong> Ripple Roofing &amp; Construction is a licensed roofing contractor — we are not insurance professionals, public adjusters, or licensed insurance agents, and nothing on this page constitutes public adjusting or insurance advice. This content is provided for general informational purposes only. Every homeowner policy is different. Please contact your insurance agent or insurance company directly for guidance specific to your policy, coverage, and claim.
+                </p>
+              </div>
             </div>
 
             {/* FAQ */}
