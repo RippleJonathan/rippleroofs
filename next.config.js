@@ -91,6 +91,106 @@ const nextConfig = {
         destination: '/blog',
         permanent: true,
       },
+      // Old WordPress category pages (no /blog prefix)
+      {
+        source: '/category/:slug*',
+        destination: '/blog',
+        permanent: true,
+      },
+      // Old WordPress homepage variants
+      {
+        source: '/home',
+        destination: '/',
+        permanent: true,
+      },
+      // Old WordPress pages → equivalent Next.js pages
+      {
+        source: '/download',
+        destination: '/resources',
+        permanent: true,
+      },
+      {
+        source: '/commercial-roofing',
+        destination: '/services/commercial-roofing',
+        permanent: true,
+      },
+      {
+        source: '/instant-roof-quote',
+        destination: '/estimate',
+        permanent: true,
+      },
+      {
+        source: '/gallery',
+        destination: '/projects',
+        permanent: true,
+      },
+      {
+        source: '/product/:slug*',
+        destination: '/calculators',
+        permanent: true,
+      },
+      // Old WordPress blog posts → closest matching Next.js blog posts
+      {
+        source: '/why-metal-roofs-are-perfect-for-texas',
+        destination: '/blog/metal-vs-shingle-roofing-austin',
+        permanent: true,
+      },
+      {
+        source: '/why-metal-roofs-are-perfect-for-texas-2',
+        destination: '/blog/metal-vs-shingle-roofing-austin',
+        permanent: true,
+      },
+      {
+        source: '/why-metal-roofs-are-perfect-for-texas-3',
+        destination: '/blog/metal-vs-shingle-roofing-austin',
+        permanent: true,
+      },
+      {
+        source: '/why-metal-roofs-are-perfect-for-texas-4',
+        destination: '/blog/metal-vs-shingle-roofing-austin',
+        permanent: true,
+      },
+      {
+        source: '/why-metal-roofs-are-perfect-for-texas-7',
+        destination: '/blog/metal-vs-shingle-roofing-austin',
+        permanent: true,
+      },
+      {
+        source: '/why-metal-roofs-are-perfect-for-texas-10',
+        destination: '/blog/metal-vs-shingle-roofing-austin',
+        permanent: true,
+      },
+      {
+        source: '/the-benefits-of-metal-roofin',
+        destination: '/blog/metal-vs-shingle-roofing-austin',
+        permanent: true,
+      },
+      {
+        source: '/how-to-navigate-the-roof-insurance-claim-process-smoothly',
+        destination: '/blog/roof-insurance-claim-guide-texas',
+        permanent: true,
+      },
+      {
+        source: '/how-to-choose-the-best-roofing-material-for-your-homes-architecture',
+        destination: '/blog/best-roofing-materials-texas-heat',
+        permanent: true,
+      },
+      {
+        source: '/why-professional-roof-inspections-are-crucial-after-a-storm',
+        destination: '/blog/diy-roof-inspection-checklist',
+        permanent: true,
+      },
+      {
+        source: '/the-benefits-of-installing-a-new-roof-before-selling-your-home',
+        destination: '/blog/roof-replacement-vs-repair-guide',
+        permanent: true,
+      },
+      // Old WordPress crawl artifacts
+      {
+        source: '/benefit_icon-svg',
+        destination: '/',
+        permanent: true,
+      },
     ]
   },
   
