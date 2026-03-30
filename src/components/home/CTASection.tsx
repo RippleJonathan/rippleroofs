@@ -1,4 +1,4 @@
-import { FC } from 'react'
+﻿import { FC } from 'react'
 import Link from 'next/link'
 import { Container } from '@/components/layout/Container'
 import { Button } from '@/components/ui/Button'
@@ -21,7 +21,7 @@ export const CTASection: FC = () => {
           </h2>
           <p className="text-xl text-primary-100 mb-8 leading-relaxed">
             Get a free, no-obligation roof inspection from Central Texas's trusted roofing experts. 
-            CertainTeed Shingle Master certified with 24/7 emergency service available.
+            CertainTeed ShingleMaster Premier certified with 24/7 emergency service available.
           </p>
 
           {/* CTA Buttons */}

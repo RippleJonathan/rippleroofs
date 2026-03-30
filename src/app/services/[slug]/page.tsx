@@ -1,4 +1,4 @@
-import { FC } from 'react'
+﻿import { FC } from 'react'
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
@@ -368,7 +368,7 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
                               Impact-Resistant Architectural Shingles (Recommended)
                             </h3>
                             <p className="text-primary-700 mb-4">
-                              <strong>Our Top Choice:</strong> <Link href="/blog" className="text-accent-600 hover:text-accent-700 font-semibold">CertainTeed Landmark Impact</Link> (we're Shingle Master certified)
+                              <strong>Our Top Choice:</strong> <Link href="/blog" className="text-accent-600 hover:text-accent-700 font-semibold">CertainTeed Landmark Impact</Link> (we're ShingleMaster Premier certified)
                             </p>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                               <div>
@@ -606,7 +606,7 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
                           <li>• <strong>Covers:</strong> Manufacturing defects, premature failure</li>
                         </ul>
                         <p className="text-sm mt-4 text-white/80">
-                          As a CertainTeed Shingle Master, we offer enhanced warranty options not available from standard contractors.
+                          As a CertainTeed ShingleMaster Premier, we offer enhanced warranty options not available from standard contractors.
                         </p>
                       </div>
                       <div className="bg-white/10 rounded-xl p-6 backdrop-blur">
@@ -3301,7 +3301,7 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
                         <p className="text-primary-600">
                           We provide two warranties: <strong>(1) Manufacturer warranty</strong> on materials (25-70 years depending on material chosen)—
                           this is registered with the manufacturer and covers defects. <strong>(2) Workmanship warranty</strong> on our installation 
-                          (10 years)—this covers any leaks or issues from our work. As a CertainTeed Shingle Master, we also offer enhanced warranty 
+                          (10 years)—this covers any leaks or issues from our work. As a CertainTeed ShingleMaster Premier, we also offer enhanced warranty 
                           options not available from standard contractors. All warranties are transferable if you sell your home, adding value.
                         </p>
                       </div>
@@ -3800,7 +3800,7 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
                           Do you offer warranties on your work?
                         </h3>
                         <p className="text-primary-600">
-                          Yes! As a CertainTeed Shingle Master certified contractor, we offer comprehensive warranties on both 
+                          Yes! As a CertainTeed ShingleMaster Premier certified contractor, we offer comprehensive warranties on both 
                           materials and workmanship. We'll discuss specific warranty options during your consultation.
                         </p>
                       </div>

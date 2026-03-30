@@ -1,11 +1,11 @@
-import { FC } from 'react'
+﻿import { FC } from 'react'
 import { Container } from '@/components/layout/Container'
 
 export const WhyChooseUs: FC = () => {
   const comparisons = [
     {
       feature: 'Certification',
-      us: 'CertainTeed Shingle Master',
+      us: 'CertainTeed ShingleMaster Premier',
       them: 'Basic contractor license',
       highlight: true,
     },

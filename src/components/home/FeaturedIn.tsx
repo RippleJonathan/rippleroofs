@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { FC } from 'react'
 
@@ -91,7 +91,7 @@ export const FeaturedIn: FC = () => {
           {/* Trust Badge */}
           <div className="mt-8 text-center">
             <p className="text-xs text-primary-600 uppercase tracking-wider">
-              ✓ Featured as Local Expert Source • CertainTeed Shingle Master Certified
+              ✓ Featured as Local Expert Source • CertainTeed ShingleMaster Premier Certified
             </p>
           </div>
         </div>

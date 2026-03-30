@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { FC, useState, useEffect } from 'react'
 import { SITE_CONFIG } from '@/lib/constants'
@@ -106,7 +106,7 @@ export const EmergencyBanner: FC = () => {
                 Ripple Roofing
               </span>
               <span className="text-sm text-primary-300 hidden md:inline">
-                | CertainTeed Shingle Master
+                | CertainTeed ShingleMaster Premier
               </span>
             </div>
             

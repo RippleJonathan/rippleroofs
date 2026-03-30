@@ -1,4 +1,4 @@
-import { FC } from 'react'
+﻿import { FC } from 'react'
 import Script from 'next/script'
 import { BUSINESS_INFO_ARIZONA } from '@/constants/business'
 
@@ -81,7 +81,7 @@ export const CitySchema: FC<CitySchemaProps> = ({
           {
             '@type': 'EducationalOccupationalCredential',
             'credentialCategory': 'Certification',
-            'name': 'CertainTeed ShingleMaster',
+            'name': 'CertainTeed ShingleMaster Premier',
             'issuedBy': {
               '@type': 'Organization',
               'name': 'CertainTeed Corporation'

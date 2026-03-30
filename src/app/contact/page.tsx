@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { FC, useState, useEffect, Suspense } from 'react'
 import { usePathname, useSearchParams } from 'next/navigation'
@@ -280,7 +280,7 @@ const ContactPageContent: FC = () => {
                 <p className="text-primary-600 text-sm">
                   {isArizona 
                     ? 'ROC licensed (#362945) with comprehensive warranties on all work and premium materials.'
-                    : 'CertainTeed Shingle Master certified with comprehensive warranties on all work.'
+                    : 'CertainTeed ShingleMaster Premier certified with comprehensive warranties on all work.'
                   }
                 </p>
               </div>

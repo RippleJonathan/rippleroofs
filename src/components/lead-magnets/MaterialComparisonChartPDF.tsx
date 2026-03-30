@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import jsPDF from 'jspdf';
 import autoTable from 'jspdf-autotable';
@@ -420,7 +420,7 @@ export function generateMaterialComparisonChartPDF() {
   
   doc.setFontSize(8);
   doc.setTextColor(200, 220, 255);
-  doc.text('Ripple Roofing & Construction - CertainTeed Shingle Master Certified', 105, yPos + 65, { align: 'center' });
+  doc.text('Ripple Roofing & Construction - CertainTeed ShingleMaster Premier Certified', 105, yPos + 65, { align: 'center' });
   
   // Save the PDF
   doc.save('Ripple-Roofing-Material-Comparison-Chart.pdf');

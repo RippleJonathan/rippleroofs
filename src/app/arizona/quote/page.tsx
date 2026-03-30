@@ -1,4 +1,4 @@
-import { FC } from 'react';
+﻿import { FC } from 'react';
 import { Metadata } from 'next';
 import { Container } from '@/components/layout/Container';
 import { ArizonaQuoteForm } from '@/components/forms/ArizonaQuoteForm';
@@ -137,7 +137,7 @@ const ArizonaQuotePage: FC = () => {
                   </div>
                   <div className="flex items-center gap-2">
                     <Shield className="w-4 h-4 text-blue-600" />
-                    <span>CertainTeed Shingle Master</span>
+                    <span>CertainTeed ShingleMaster Premier</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Shield className="w-4 h-4 text-yellow-600" />

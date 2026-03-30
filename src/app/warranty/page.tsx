@@ -1,12 +1,12 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { Container } from '@/components/layout/Container'
 
 export const metadata: Metadata = {
-  title: 'Warranties & Guarantees',
-  description: 'Learn about our comprehensive warranty coverage, CertainTeed manufacturer warranties, and workmanship guarantees. We stand behind every roof we install.',
+  title: 'Lifetime Roofing Warranty | CertainTeed ShingleMaster Premier | Ripple Roofing',
+  description: 'Ripple Roofing is a CertainTeed ShingleMaster Premier contractor — the highest certification level. We offer Lifetime, 30-Year, and 15-Year CertainTeed-backed workmanship warranties in Round Rock & Austin, TX.',
   openGraph: {
-    title: 'Warranties & Guarantees - Ripple Roofing & Construction',
-    description: 'Comprehensive warranty coverage and quality guarantees',
+    title: 'Lifetime Roofing Warranty — CertainTeed ShingleMaster Premier | Ripple Roofing',
+    description: 'The highest CertainTeed certification level. Lifetime, 30-Year & 15-Year backed workmanship warranties in Central Texas.',
   },
 }
 
@@ -18,10 +18,13 @@ export default function WarrantyPage() {
         <Container>
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6">
-              Warranties & Guarantees
+              Lifetime Roofing Warranty
             </h1>
-            <p className="text-xl text-primary-100 mb-8">
-              We stand behind every roof we install with comprehensive warranty coverage and quality guarantees
+            <p className="text-xl text-primary-100 mb-4">
+              Ripple Roofing is a <strong>CertainTeed ShingleMaster Premier</strong> contractor — the highest certification level CertainTeed offers. That means you get industry-leading warranty protection backed by one of the largest roofing manufacturers in North America.
+            </p>
+            <p className="text-lg text-primary-200 mb-8">
+              Choose from Lifetime, 30-Year, or 15-Year CertainTeed-backed workmanship warranties — not just a contractor promise.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4">
               <a href="/contact">
@@ -51,6 +54,53 @@ export default function WarrantyPage() {
               <p className="text-lg text-primary-700 max-w-3xl mx-auto">
                 When you invest in a new roof, you deserve confidence that it will protect your home for years to come. That's why we offer industry-leading warranty coverage backed by our commitment to quality workmanship.
               </p>
+            </div>
+
+            {/* Warranty Tiers — ShingleMaster Premier */}
+            <div className="mb-16">
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-primary-900 mb-4 text-center">
+                Choose Your Warranty Level
+              </h2>
+              <p className="text-lg text-primary-700 text-center max-w-3xl mx-auto mb-10">
+                As a CertainTeed ShingleMaster Premier contractor — the highest certification tier — we can offer three levels of CertainTeed-backed workmanship warranty. Most contractors cannot offer these options.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                {/* Lifetime */}
+                <div className="bg-gradient-to-br from-primary-900 to-primary-800 text-white rounded-2xl p-8 text-center relative overflow-hidden">
+                  <div className="absolute top-4 right-4 bg-accent-500 text-white text-xs font-bold px-3 py-1 rounded-full">BEST</div>
+                  <div className="text-5xl font-display font-bold mb-2">Lifetime</div>
+                  <div className="text-primary-200 text-sm mb-6">Workmanship Warranty</div>
+                  <ul className="text-left space-y-3 text-primary-100">
+                    <li className="flex items-start gap-2"><span className="text-accent-400 mt-0.5">✓</span> CertainTeed-backed coverage</li>
+                    <li className="flex items-start gap-2"><span className="text-accent-400 mt-0.5">✓</span> Covers installation defects for life of the roof</li>
+                    <li className="flex items-start gap-2"><span className="text-accent-400 mt-0.5">✓</span> Transferable to future homeowners</li>
+                    <li className="flex items-start gap-2"><span className="text-accent-400 mt-0.5">✓</span> Available on qualifying CertainTeed systems</li>
+                  </ul>
+                </div>
+                {/* 30-Year */}
+                <div className="bg-gradient-to-br from-primary-700 to-primary-600 text-white rounded-2xl p-8 text-center">
+                  <div className="text-5xl font-display font-bold mb-2">30-Year</div>
+                  <div className="text-primary-200 text-sm mb-6">Workmanship Warranty</div>
+                  <ul className="text-left space-y-3 text-primary-100">
+                    <li className="flex items-start gap-2"><span className="text-accent-400 mt-0.5">✓</span> CertainTeed-backed coverage</li>
+                    <li className="flex items-start gap-2"><span className="text-accent-400 mt-0.5">✓</span> 30 years of installation protection</li>
+                    <li className="flex items-start gap-2"><span className="text-accent-400 mt-0.5">✓</span> Transferable to future homeowners</li>
+                    <li className="flex items-start gap-2"><span className="text-accent-400 mt-0.5">✓</span> Available on select CertainTeed products</li>
+                  </ul>
+                </div>
+                {/* 15-Year */}
+                <div className="bg-gradient-to-br from-primary-500 to-primary-400 text-white rounded-2xl p-8 text-center">
+                  <div className="text-5xl font-display font-bold mb-2">15-Year</div>
+                  <div className="text-primary-200 text-sm mb-6">Workmanship Warranty</div>
+                  <ul className="text-left space-y-3 text-primary-100">
+                    <li className="flex items-start gap-2"><span className="text-accent-400 mt-0.5">✓</span> CertainTeed-backed coverage</li>
+                    <li className="flex items-start gap-2"><span className="text-accent-400 mt-0.5">✓</span> 15 years of installation protection</li>
+                    <li className="flex items-start gap-2"><span className="text-accent-400 mt-0.5">✓</span> Transferable to future homeowners</li>
+                    <li className="flex items-start gap-2"><span className="text-accent-400 mt-0.5">✓</span> Standard CertainTeed systems</li>
+                  </ul>
+                </div>
+              </div>
+              <p className="text-center text-sm text-primary-600 italic">Warranty tier is determined by the CertainTeed product system selected. Ask us which warranty level applies to your project — we'll walk you through your options at no cost.</p>
             </div>
 
             {/* Warranty Types */}
@@ -85,7 +135,7 @@ export default function WarrantyPage() {
                     <svg className="w-6 h-6 text-accent-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <span className="text-primary-800"><strong>CertainTeed Products:</strong> Enhanced warranties available as Shingle Master contractor</span>
+                    <span className="text-primary-800"><strong>CertainTeed Products:</strong> Enhanced system warranties available as a ShingleMaster Premier contractor</span>
                   </li>
                 </ul>
               </div>
@@ -108,16 +158,21 @@ export default function WarrantyPage() {
                     <svg className="w-6 h-6 text-accent-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <span className="text-primary-800"><strong>10-Year Coverage:</strong> All installation workmanship</span>
+                    <span className="text-primary-800"><strong>Lifetime, 30-Year, or 15-Year:</strong> CertainTeed-backed workmanship coverage depending on product system</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <svg className="w-6 h-6 text-accent-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <span className="text-primary-800"><strong>Transferable:</strong> Can be transferred to new homeowners</span>
+                    <span className="text-primary-800"><strong>Transferable:</strong> Can be transferred to new homeowners — adds real resale value</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <svg className="w-6 h-6 text-accent-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-primary-800"><strong>No Hidden Fees:</strong> Repairs covered at no additional cost</span>
+                  </li>
+                </ul>
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     <span className="text-primary-800"><strong>No Hidden Fees:</strong> Repairs covered at no additional cost</span>
@@ -207,7 +262,7 @@ export default function WarrantyPage() {
               </div>
             </div>
 
-            {/* CertainTeed Shingle Master Benefits */}
+            {/* CertainTeed ShingleMaster Premier Benefits */}
             <div className="mb-16 bg-gradient-to-r from-primary-900 to-primary-800 text-white rounded-3xl p-8 md:p-12">
               <div className="max-w-3xl mx-auto">
                 <div className="flex items-center justify-center mb-6">
@@ -218,10 +273,10 @@ export default function WarrantyPage() {
                   </div>
                 </div>
                 <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 text-center">
-                  CertainTeed Shingle Master Advantages
+                  CertainTeed ShingleMaster Premier Advantages
                 </h2>
                 <p className="text-xl text-primary-100 mb-8 text-center">
-                  As a CertainTeed Shingle Master contractor, we can offer enhanced warranty options
+                  As a CertainTeed ShingleMaster Premier contractor, we can offer enhanced warranty options
                 </p>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-4">

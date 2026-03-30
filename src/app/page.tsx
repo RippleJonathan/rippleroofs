@@ -26,7 +26,7 @@ const FreeResourcesSection = dynamic(() => import('@/components/home/FreeResourc
 
 export const metadata = {
   title: 'Round Rock Roofing | CertainTeed Certified | 24/7 Service',
-  description: 'Top-rated roofer in Round Rock & Austin, TX. CertainTeed Shingle Master certified. Residential, commercial & 24/7 emergency services. Free roof inspections.',
+  description: 'Top-rated roofer in Round Rock & Austin, TX. CertainTeed ShingleMaster Premier certified. Residential, commercial & 24/7 emergency services. Free roof inspections.',
   // 156 chars — within Google\'s display window
   alternates: {
     canonical: 'https://rippleroofs.com'

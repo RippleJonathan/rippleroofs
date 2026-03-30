@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { FC } from 'react'
 import Image from 'next/image'
@@ -22,7 +22,7 @@ export const CertainTeedBadge: FC<CertainTeedBadgeProps> = ({
         </div>
         <div className="flex flex-col">
           <span className="text-xs font-bold text-amber-900">CertainTeed</span>
-          <span className="text-xs text-amber-700">Shingle Master™</span>
+          <span className="text-xs text-amber-700">ShingleMaster Premier™</span>
         </div>
       </div>
     )
@@ -42,7 +42,7 @@ export const CertainTeedBadge: FC<CertainTeedBadgeProps> = ({
       {/* Text Content */}
       <div className="text-center">
         <h3 className="text-sm font-bold text-amber-900">CertainTeed</h3>
-        <p className="text-xs font-semibold text-amber-700">Shingle Master™ Certified</p>
+        <p className="text-xs font-semibold text-amber-700">ShingleMaster Premier™ Certified</p>
         <p className="text-xs text-amber-600 mt-1">Top 1% of Contractors</p>
       </div>
 

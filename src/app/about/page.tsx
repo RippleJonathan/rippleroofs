@@ -1,4 +1,4 @@
-import { FC } from 'react'
+﻿import { FC } from 'react'
 import { Metadata } from 'next'
 import Image from 'next/image'
 import { Container } from '@/components/layout/Container'
@@ -7,7 +7,7 @@ import { SITE_CONFIG } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: 'About Us - Premier Roofing Contractor in Central Texas | Ripple Roofing',
-  description: `Learn about Ripple Roofing & Construction. CertainTeed Shingle Master certified roofing company serving Central Texas with integrity, excellence, and professionalism since day one.`,
+  description: `Learn about Ripple Roofing & Construction. CertainTeed ShingleMaster Premier certified roofing company serving Central Texas with integrity, excellence, and professionalism since day one.`,
   keywords: 'about Ripple Roofing, Round Rock roofer, Central Texas roofing company, CertainTeed certified, roofing contractor',
   openGraph: {
     title: 'About Ripple Roofing & Construction',
@@ -210,9 +210,9 @@ const AboutPage: FC = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-primary-900 mb-2">CertainTeed Shingle Master Certified</h3>
+                    <h3 className="text-xl font-bold text-primary-900 mb-2">CertainTeed ShingleMaster Premier Certified</h3>
                     <p className="text-primary-600">
-                      As one of the elite CertainTeed Shingle Master contractors in Central Texas, we meet the 
+                      As one of the elite CertainTeed ShingleMaster Premier contractors in Central Texas, we meet the 
                       highest standards of quality and can offer enhanced warranty coverage on your roofing investment.
                     </p>
                   </div>
@@ -302,7 +302,7 @@ const AboutPage: FC = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2">CertainTeed Shingle Master</h3>
+              <h3 className="text-xl font-bold mb-2">CertainTeed ShingleMaster Premier</h3>
               <p className="text-primary-100">
                 Elite certification for top-tier roofing contractors
               </p>

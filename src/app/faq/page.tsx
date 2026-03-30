@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { Container } from '@/components/layout/Container'
 import { FAQAccordion } from '@/components/faq/FAQAccordion'
 
@@ -59,11 +59,11 @@ const faqCategories = [
     questions: [
       {
         question: 'What roofing materials do you recommend?',
-        answer: 'For Central Texas, we typically recommend architectural asphalt shingles (great value, 25-30 year lifespan), metal roofing (excellent for Texas heat, energy-efficient, 40-70 years), or tile roofing (premium aesthetic, very durable). As a CertainTeed Shingle Master contractor, we specialize in high-quality shingle installations with industry-leading warranties.',
+        answer: 'For Central Texas, we typically recommend architectural asphalt shingles (great value, 25-30 year lifespan), metal roofing (excellent for Texas heat, energy-efficient, 40-70 years), or tile roofing (premium aesthetic, very durable). As a CertainTeed ShingleMaster Premier contractor, we specialize in high-quality shingle installations with industry-leading warranties.',
       },
       {
         question: 'Are CertainTeed shingles better than other brands?',
-        answer: 'CertainTeed is one of North America\'s leading roofing manufacturers, known for durability, aesthetic options, and comprehensive warranties. As a Shingle Master contractor, we\'ve been specially trained in CertainTeed products and can offer enhanced warranties. We also work with other premium brands to meet your specific needs and preferences.',
+        answer: 'CertainTeed is one of North America\'s leading roofing manufacturers, known for durability, aesthetic options, and comprehensive warranties. As a ShingleMaster Premier contractor, we\'ve been specially trained in CertainTeed products and can offer enhanced warranties. We also work with other premium brands to meet your specific needs and preferences.',
       },
       {
         question: 'Can I install a new roof over my existing one?',
@@ -80,7 +80,7 @@ const faqCategories = [
     questions: [
       {
         question: 'What kind of warranty do you offer?',
-        answer: 'We offer comprehensive warranty coverage: Manufacturer\'s Material Warranty (varies by product, typically 25-50 years), Our Workmanship Warranty (covers installation for 10 years), and Enhanced Warranties (available as CertainTeed Shingle Master for qualifying installations). We stand behind our work and will address any installation-related issues.',
+        answer: 'We offer comprehensive warranty coverage: Manufacturer\'s Material Warranty (varies by product, typically 25-50 years), Our Workmanship Warranty (covers installation for 10 years), and Enhanced Warranties (available as CertainTeed ShingleMaster Premier for qualifying installations). We stand behind our work and will address any installation-related issues.',
       },
       {
         question: 'What does your warranty cover?',

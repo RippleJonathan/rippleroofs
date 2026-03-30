@@ -1,4 +1,4 @@
-import { FC } from 'react'
+﻿import { FC } from 'react'
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: LocationPageProps): Promise<M
   }
 
   const title = `${location.city} Roofing | Free Inspection | CertainTeed Certified`
-  const description = `Top-rated roofing contractor in ${location.city}, TX. Residential, commercial & emergency services. CertainTeed Shingle Master certified. Free inspections — call ${SITE_CONFIG.phone}.`
+  const description = `Top-rated roofing contractor in ${location.city}, TX. Residential, commercial & emergency services. CertainTeed ShingleMaster Premier certified. Free inspections — call ${SITE_CONFIG.phone}.`
 
   return {
     title: { absolute: title },
@@ -104,7 +104,7 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
               and all {location.city} neighborhoods
             </p>
             <p className="text-lg text-primary-200 mb-8">
-              CertainTeed Shingle Master Certified • Certified & Insured • 24/7 Emergency Service
+              CertainTeed ShingleMaster Premier Certified • Certified & Insured • 24/7 Emergency Service
             </p>
             <div className="flex flex-wrap gap-4 mb-6">
               <Button variant="primary" size="lg" href="#quote">
@@ -282,7 +282,7 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
                     <div>
                       <h3 className="text-xl font-bold text-primary-900 mb-2">CertainTeed Certified</h3>
                       <p className="text-primary-600">
-                        Our Shingle Master certification means you get premium quality installation and access to 
+                        Our ShingleMaster Premier certification means you get premium quality installation and access to 
                         enhanced warranty coverage. We're one of the few certified contractors serving {location.city}.
                       </p>
                     </div>
@@ -5806,7 +5806,7 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
                   Hutto represents one of the most explosive growth stories in Texas—transforming from a quiet railroad town of 630 residents in 1990 to a thriving suburban city of 35,000+ today. This rapid expansion brings new construction, modern developments like Star Ranch and Riverwalk, and families drawn by Dell Technologies proximity, excellent Hutto ISD schools, and affordable Austin-area living. As your local Hutto roofing contractor, we understand the unique needs of this fast-growing community.
                 </p>
                 <p className="text-lg text-primary-700 leading-relaxed">
-                  Whether you're in Star Ranch's master-planned neighborhoods, The Enclave's newer developments, or historic downtown Hutto, we deliver CertainTeed Shingle Master quality with transparent pricing that respects your investment. We're growing alongside Hutto—protecting new builds, first-time homebuyer roofs, and everything in between. <strong>From tech workers commuting to Dell to families discovering Hutto's small-town charm, we're your neighbors serving neighbors.</strong>
+                  Whether you're in Star Ranch's master-planned neighborhoods, The Enclave's newer developments, or historic downtown Hutto, we deliver CertainTeed ShingleMaster Premier quality with transparent pricing that respects your investment. We're growing alongside Hutto—protecting new builds, first-time homebuyer roofs, and everything in between. <strong>From tech workers commuting to Dell to families discovering Hutto's small-town charm, we're your neighbors serving neighbors.</strong>
                 </p>
               </div>
 
@@ -6114,7 +6114,7 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
                   Manor represents East Austin's most dynamic affordable housing market—a rapidly expanding community where families and young professionals discover spacious homes, excellent Manor ISD schools, and easy Austin access at prices 20-30% below comparable West Austin properties. The 2010s brought explosive growth with ShadowGlen's master-planned development adding 3,000+ modern homes, Presidential Meadows attracting first-time buyers, and Dell/Samsung employees seeking value near their campuses. As your local Manor roofing contractor, we understand this community's unique needs.
                 </p>
                 <p className="text-lg text-primary-700 leading-relaxed">
-                  Manor's roofing market reflects its growth timeline: newer developments like ShadowGlen feature 10-15 year old roofs approaching first replacement, established neighborhoods need upgrades after 20+ years, and East Austin's hail corridor means frequent storm damage claims. Whether you're in ShadowGlen, Presidential Meadows, Stonewater, or Historic Downtown Manor, we're CertainTeed Shingle Master certified contractors providing transparent pricing, quality materials, and workmanship that protects your investment.
+                  Manor's roofing market reflects its growth timeline: newer developments like ShadowGlen feature 10-15 year old roofs approaching first replacement, established neighborhoods need upgrades after 20+ years, and East Austin's hail corridor means frequent storm damage claims. Whether you're in ShadowGlen, Presidential Meadows, Stonewater, or Historic Downtown Manor, we're CertainTeed ShingleMaster Premier certified contractors providing transparent pricing, quality materials, and workmanship that protects your investment.
                 </p>
               </div>
 
@@ -6400,7 +6400,7 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
                   Jarrell's story is one of resilience, community, and remembrance. Forever marked by the devastating F5 tornado of May 27, 1997—one of the deadliest in Texas history—Jarrell has rebuilt itself into a close-knit community of 2,000+ residents who understand the critical importance of durable, weather-resistant construction. Located north of Round Rock along I-35, Jarrell offers affordable family living, excellent Jarrell ISD schools, and quick Austin Metro access while maintaining small-town character. As your local Jarrell roofing contractor, we honor this community's history with quality work built to withstand severe weather.
                 </p>
                 <p className="text-lg text-primary-700 leading-relaxed">
-                  Jarrell's roofing considerations are shaped by its location in severe tornado alley and I-35 hail corridor. Heritage Oaks and newer developments feature modern construction with proper wind ratings, while historic downtown properties may need structural upgrades. The 1997 tornado memorial serves as a constant reminder: roofing in Jarrell isn't just about curb appeal—it's about life safety and protecting families from nature's fury. We take that responsibility seriously with CertainTeed Shingle Master certified installations and impact-resistant materials.
+                  Jarrell's roofing considerations are shaped by its location in severe tornado alley and I-35 hail corridor. Heritage Oaks and newer developments feature modern construction with proper wind ratings, while historic downtown properties may need structural upgrades. The 1997 tornado memorial serves as a constant reminder: roofing in Jarrell isn't just about curb appeal—it's about life safety and protecting families from nature's fury. We take that responsibility seriously with CertainTeed ShingleMaster Premier certified installations and impact-resistant materials.
                 </p>
               </div>
 
@@ -7396,7 +7396,7 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
                   Leander represents one of the fastest-growing cities in America, transforming from a quiet Hill Country town into a thriving Austin suburb with award-winning schools, major employers like Quarry Lake, and master-planned communities that attract families seeking the Texas dream. As your local Leander roofing contractor, we've grown alongside this community—protecting new developments, established neighborhoods, and everything in between.
                 </p>
                 <p className="text-lg text-primary-700 leading-relaxed">
-                  Whether you're in Bryson, Crystal Falls, or the historic Old Town Leander near the train depot, we understand Leander's unique roofing challenges: strict HOA requirements, modern building codes, severe Central Texas hail, and the need for quality that protects your investment in one of Texas' hottest real estate markets. CertainTeed Shingle Master certification means we deliver the excellence Leander homeowners expect.
+                  Whether you're in Bryson, Crystal Falls, or the historic Old Town Leander near the train depot, we understand Leander's unique roofing challenges: strict HOA requirements, modern building codes, severe Central Texas hail, and the need for quality that protects your investment in one of Texas' hottest real estate markets. CertainTeed ShingleMaster Premier certification means we deliver the excellence Leander homeowners expect.
                 </p>
               </div>
 
@@ -7693,7 +7693,7 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
                   Ready to Protect Your Leander Home?
                 </h2>
                 <p className="text-xl mb-6 text-white/90">
-                  Free inspection. Transparent pricing. HOA approval handling. CertainTeed Shingle Master quality. That's the Leander roofing experience you deserve.
+                  Free inspection. Transparent pricing. HOA approval handling. CertainTeed ShingleMaster Premier quality. That's the Leander roofing experience you deserve.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a href="tel:5127635277" className="bg-white text-accent-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition text-center">
@@ -7722,7 +7722,7 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
                   Temple sits at the heart of Bell County, serving as a regional hub for healthcare, military families from Fort Cavazos, and proud Texas communities. As your local Temple roofing experts, we understand the unique needs of this area—from military families on deployment schedules to healthcare professionals working at Baylor Scott & White, to homeowners building equity in Central Texas' most resilient city.
                 </p>
                 <p className="text-lg text-primary-700 leading-relaxed">
-                  Whether you're in Downtown Temple's historic neighborhoods, Wildflower Country Club's master-planned luxury, or affordable communities near Fort Cavazos, we deliver CertainTeed Shingle Master quality with pricing that respects military and first responder budgets. We're honored to serve those who serve us.
+                  Whether you're in Downtown Temple's historic neighborhoods, Wildflower Country Club's master-planned luxury, or affordable communities near Fort Cavazos, we deliver CertainTeed ShingleMaster Premier quality with pricing that respects military and first responder budgets. We're honored to serve those who serve us.
                 </p>
               </div>
 
@@ -8019,7 +8019,7 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
                   San Marcos sits perfectly between Austin and San Antonio, offering crystal-clear springs, Texas State University, and a growing residential community. As your local San Marcos roofing contractor, we understand the unique challenges of roofing in Hays County—from severe hail and flash flooding near the San Marcos River to the intense Texas heat and humidity that test every roof.
                 </p>
                 <p className="text-lg text-primary-700 leading-relaxed">
-                  Whether you're in The Heights near Texas State, Purgatory Creek's master-planned community, or Old Town San Marcos with its historic charm, we bring CertainTeed Shingle Master expertise to every San Marcos roofing project. Our team knows San Marcos neighborhoods inside out and delivers the quality roofing services this vibrant university town deserves.
+                  Whether you're in The Heights near Texas State, Purgatory Creek's master-planned community, or Old Town San Marcos with its historic charm, we bring CertainTeed ShingleMaster Premier expertise to every San Marcos roofing project. Our team knows San Marcos neighborhoods inside out and delivers the quality roofing services this vibrant university town deserves.
                 </p>
               </div>
 
@@ -8528,7 +8528,7 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
                 "name": `Are you certified and insured in ${location.city}?`,
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": `Yes! We are fully insured and CertainTeed Shingle Master certified to provide roofing services throughout ${location.city} and Central Texas. We carry comprehensive liability and workers' compensation coverage.`
+                  "text": `Yes! We are fully insured and CertainTeed ShingleMaster Premier certified to provide roofing services throughout ${location.city} and Central Texas. We carry comprehensive liability and workers' compensation coverage.`
                 }
               }
             ]

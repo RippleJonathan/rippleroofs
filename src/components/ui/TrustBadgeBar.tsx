@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { FC } from 'react'
 
@@ -59,7 +59,7 @@ export const TrustBadgeBar: FC<TrustBadgeBarProps> = ({
               </div>
               <div>
                 <div className="text-lg font-bold text-primary-900">CertainTeed Certified</div>
-                <div className="text-sm text-primary-600">Shingle Master™ Status</div>
+                <div className="text-sm text-primary-600">ShingleMaster Premier™ Status</div>
                 <div className="text-xs text-primary-500 mt-1">Top 1% of Contractors</div>
               </div>
             </div>
@@ -104,7 +104,7 @@ export const TrustBadgeBar: FC<TrustBadgeBarProps> = ({
               </div>
               <div>
                 <div className="text-sm font-bold text-primary-900">CertainTeed</div>
-                <div className="text-xs text-primary-600">Shingle Master™</div>
+                <div className="text-xs text-primary-600">ShingleMaster Premier™</div>
               </div>
             </div>
 

@@ -17,7 +17,7 @@ export default function LocalBusinessSchema() {
       'https://rippleroofs.com/images/services/commercial-roofing.jpg',
     ],
     description:
-      'Premium roofing services in Texas and Arizona. CertainTeed Shingle Master certified contractor serving Round Rock, Austin, Phoenix, Scottsdale, and surrounding areas with roof replacement, repairs, emergency services, and more. 24/7 emergency service available.',
+      'Premium roofing services in Texas and Arizona. CertainTeed ShingleMaster Premier certified contractor serving Round Rock, Austin, Phoenix, Scottsdale, and surrounding areas with roof replacement, repairs, emergency services, and more. 24/7 emergency service available.',
     email: 'info@rippleroofs.com',
     sameAs: [
       'https://www.facebook.com/rippleroofs',
@@ -59,7 +59,7 @@ export default function LocalBusinessSchema() {
     url: 'https://rippleroofs.com',
     logo: 'https://rippleroofs.com/images/ripple-roofing-logo.png',
     description:
-      'Premium roofing services in Central Texas. CertainTeed Shingle Master certified contractor serving Round Rock, Austin, Georgetown, and surrounding areas.',
+      'Premium roofing services in Central Texas. CertainTeed ShingleMaster Premier certified contractor serving Round Rock, Austin, Georgetown, and surrounding areas.',
     telephone: BUSINESS_INFO_TEXAS.phoneRaw,
     email: 'info@rippleroofs.com',
     priceRange: '$$$',
@@ -222,12 +222,12 @@ export default function LocalBusinessSchema() {
       'Impact-Resistant Roofing',
       'CertainTeed Shingles',
     ],
-    awards: ['CertainTeed Shingle Master Certification'],
+    awards: ['CertainTeed ShingleMaster Premier Certification'],
     hasCredential: [
       {
         '@type': 'EducationalOccupationalCredential',
         credentialCategory: 'certification',
-        name: 'CertainTeed Shingle Master',
+        name: 'CertainTeed ShingleMaster Premier',
         recognizedBy: {
           '@type': 'Organization',
           name: 'CertainTeed Corporation',
@@ -416,12 +416,12 @@ export default function LocalBusinessSchema() {
       'Asphalt Shingles',
       'Arizona Roofing',
     ],
-    awards: ['CertainTeed Shingle Master Certification', 'Arizona ROC 362945 Licensed'],
+    awards: ['CertainTeed ShingleMaster Premier Certification', 'Arizona ROC 362945 Licensed'],
     hasCredential: [
       {
         '@type': 'EducationalOccupationalCredential',
         credentialCategory: 'certification',
-        name: 'CertainTeed Shingle Master',
+        name: 'CertainTeed ShingleMaster Premier',
         recognizedBy: {
           '@type': 'Organization',
           name: 'CertainTeed Corporation',

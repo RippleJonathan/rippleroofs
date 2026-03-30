@@ -1,4 +1,4 @@
-import { FC } from 'react'
+﻿import { FC } from 'react'
 import { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -48,7 +48,7 @@ const ServicesPage: FC = () => {
               Our Roofing Services
             </h2>
             <p className="text-xl text-primary-600">
-              Professional roofing solutions backed by CertainTeed Shingle Master certification and years of experience.
+              Professional roofing solutions backed by CertainTeed ShingleMaster Premier certification and years of experience.
             </p>
           </div>
 
@@ -114,7 +114,7 @@ const ServicesPage: FC = () => {
                 CertainTeed Certified
               </h3>
               <p className="text-primary-600">
-                Shingle Master certification ensures top-quality installations
+                ShingleMaster Premier certification ensures top-quality installations
               </p>
             </div>
 

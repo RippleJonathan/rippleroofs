@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Business constants for Ripple Roofing & Construction
  * Multi-state configuration for Texas and Arizona offices
  * Updated: January 5, 2026 - Added Arizona expansion
@@ -177,7 +177,7 @@ export const SERVICE_AREAS = [
  */
 export const CREDENTIALS = {
   certifications: [
-    'CertainTeed Shingle Master Company',
+    'CertainTeed ShingleMaster Premier Company',
     'BBB Accredited Business',
     'HAAG Certified Inspector',
   ],

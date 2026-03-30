@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { Inter, Space_Grotesk } from 'next/font/google'
 import Script from 'next/script'
 import dynamic from 'next/dynamic'
@@ -34,9 +34,9 @@ export const metadata: Metadata = {
     default: 'Ripple Roofing & Construction - Premium Roofing Services in Central Texas',
     template: '%s | Ripple Roofing & Construction'
   },
-  description: 'Expert roofers in Central Texas. CertainTeed Shingle Master certified. Residential, commercial & emergency services. Fully insured. Free inspections.',
+  description: 'Expert roofers in Central Texas. CertainTeed ShingleMaster Premier certified. Residential, commercial & emergency services. Fully insured. Free inspections.',
   // 149 chars — within Google\'s display window
-  keywords: ['roofing austin', 'roofing round rock', 'roof repair texas', 'roof replacement austin', 'roofing company central texas', 'residential roofing', 'commercial roofing', 'emergency roof repair', 'CertainTeed shingle master'],
+  keywords: ['roofing austin', 'roofing round rock', 'roof repair texas', 'roof replacement austin', 'roofing company central texas', 'residential roofing', 'commercial roofing', 'emergency roof repair', 'CertainTeed ShingleMaster Premier'],
   authors: [{ name: 'Ripple Roofing & Construction' }],
   creator: 'Ripple Roofing & Construction',
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://rippleroofs.com'),
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     url: '/',
     siteName: 'Ripple Roofing & Construction',
     title: 'Ripple Roofing & Construction - Premium Roofing Services in Central Texas',
-    description: 'CertainTeed Shingle Master certified roofing experts. Residential, commercial, and 24/7 emergency services in Austin Metro and Central Texas.',
+    description: 'CertainTeed ShingleMaster Premier certified roofing experts. Residential, commercial, and 24/7 emergency services in Austin Metro and Central Texas.',
     images: [
       {
         url: '/og-image.jpg',

@@ -1,4 +1,4 @@
-import { FC } from 'react'
+﻿import { FC } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Container } from '@/components/layout/Container'
@@ -38,7 +38,7 @@ export const Hero: FC = () => {
             </h1>
             
             <p className="text-xl md:text-2xl text-primary-100 mb-8 leading-relaxed animate-fade-up" style={{ animationDelay: '0.1s' }}>
-              CertainTeed Shingle Master certified roofing experts serving the Austin Metro area. 
+              CertainTeed ShingleMaster Premier certified roofing experts serving the Austin Metro area. 
               Residential, commercial, and emergency services available 24/7.
             </p>
 
@@ -92,7 +92,7 @@ export const Hero: FC = () => {
             <div className="relative w-32 h-32">
               <Image
                 src="/images/certainteed-shingle-master.webp"
-                alt="CertainTeed Shingle Master Certified"
+                alt="CertainTeed ShingleMaster Premier Certified"
                 fill
                 className="object-contain"
               />

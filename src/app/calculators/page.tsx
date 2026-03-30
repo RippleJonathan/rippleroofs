@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { Container } from '@/components/layout/Container'
 import { RoofSizeCalculator } from '@/components/calculators/RoofSizeCalculator'
 import { CostEstimator } from '@/components/calculators/CostEstimator'
@@ -238,7 +238,7 @@ export default function CalculatorsPage() {
             {/* Trust Indicators */}
             <div className="mt-8 pt-8 border-t border-white/20">
               <div className="flex flex-wrap justify-center gap-6 text-sm text-white/90">
-                <span>✓ CertainTeed Shingle Master</span>
+                <span>✓ CertainTeed ShingleMaster Premier</span>
                 <span>✓ A+ BBB Rating</span>
                 <span>✓ 10-Year Workmanship Warranty</span>
                 <span>✓ Free Inspections</span>

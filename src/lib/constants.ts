@@ -14,7 +14,7 @@ export const SITE_CONFIG = {
   zip: '78664',
   hours: '24/7 Emergency Service Available',
   serviceArea: 'Central Texas, Austin Metro, San Antonio, Georgetown, Round Rock, Killeen, Copperas Cove, Portland',
-  certifications: ['CertainTeed Shingle Master', 'Fully Insured'],
+  certifications: ['CertainTeed ShingleMaster Premier', 'Fully Insured'],
   social: {
     facebook: 'https://facebook.com/rippleroofs',
     instagram: 'https://www.instagram.com/ripple_roofing/',
@@ -159,7 +159,7 @@ export const SERVICES: Service[] = [
     title: 'Residential Roofing',
     slug: 'residential-roofing',
     shortDescription: 'Complete residential roofing services—installation, repair, replacement, and maintenance for Central Texas homes.',
-    description: 'Your home is your family\'s sanctuary and your largest investment. Ripple Roofing & Construction provides comprehensive residential roofing services for homeowners throughout Central Texas—from simple repairs to complete roof replacements. As CertainTeed Shingle Master certified contractors, we offer expert installation of all roofing types: architectural shingles, impact-resistant shingles, metal roofing, tile, and specialty materials. We serve Round Rock, Austin, Georgetown, and surrounding communities with honest assessments, quality craftsmanship, and warranties that protect your investment. Whether you need emergency storm repairs, routine maintenance, or a brand new roof, we treat your home like our own. Free inspections, transparent pricing, and 10-year workmanship warranty on all installations.',
+    description: 'Your home is your family\'s sanctuary and your largest investment. Ripple Roofing & Construction provides comprehensive residential roofing services for homeowners throughout Central Texas—from simple repairs to complete roof replacements. As CertainTeed ShingleMaster Premier certified contractors, we offer expert installation of all roofing types: architectural shingles, impact-resistant shingles, metal roofing, tile, and specialty materials. We serve Round Rock, Austin, Georgetown, and surrounding communities with honest assessments, quality craftsmanship, and warranties that protect your investment. Whether you need emergency storm repairs, routine maintenance, or a brand new roof, we treat your home like our own. Free inspections, transparent pricing, and 10-year workmanship warranty on all installations.',
     icon: '🏠',
     image: '/images/services/residential-roofing.jpg',
     process: [
@@ -170,7 +170,7 @@ export const SERVICES: Service[] = [
       { step: 5, title: 'Quality Inspection & Warranty Activation', description: 'We conduct a final walkthrough with you, perform magnetic nail sweep, clean up completely, and activate your manufacturer material warranty plus our 10-year workmanship warranty. You get copies of all documentation for your records.' },
     ],
     benefits: [
-      'CertainTeed Shingle Master Certified contractors',
+      'CertainTeed ShingleMaster Premier Certified contractors',
       'All roofing types: shingles, metal, tile, specialty',
       'Free inspections—no obligation quotes',
       'Impact-resistant shingles for hail protection',
@@ -219,7 +219,7 @@ export const SERVICES: Service[] = [
     title: 'Roof Replacement',
     slug: 'roof-replacement',
     shortDescription: 'Expert roof replacement services in Central Texas. From material selection to installation, we guide you through every step with transparency and craftsmanship.',
-    description: 'When it\'s time for a new roof, Ripple Roofing & Construction guides you through the process with expertise and transparency. As a CertainTeed Shingle Master certified contractor, we offer premium roofing materials specifically chosen for Central Texas\'s challenging climate—intense heat, severe storms, and hail. Whether your roof has reached the end of its lifespan, sustained storm damage, or you\'re upgrading for energy efficiency and curb appeal, we provide comprehensive roof replacement services with industry-leading warranties. Serving Round Rock, Austin, Georgetown, and all of Central Texas, we\'ve helped thousands of homeowners protect their most valuable investment with quality craftsmanship and honest service.',
+    description: 'When it\'s time for a new roof, Ripple Roofing & Construction guides you through the process with expertise and transparency. As a CertainTeed ShingleMaster Premier certified contractor, we offer premium roofing materials specifically chosen for Central Texas\'s challenging climate—intense heat, severe storms, and hail. Whether your roof has reached the end of its lifespan, sustained storm damage, or you\'re upgrading for energy efficiency and curb appeal, we provide comprehensive roof replacement services with industry-leading warranties. Serving Round Rock, Austin, Georgetown, and all of Central Texas, we\'ve helped thousands of homeowners protect their most valuable investment with quality craftsmanship and honest service.',
     icon: '🔨',
     image: '/images/services/roof-replacement.jpg',
     process: [
@@ -232,7 +232,7 @@ export const SERVICES: Service[] = [
       { step: 7, title: 'Warranty Activation & Follow-Up', description: 'We register your warranty with the manufacturer, provide all documentation, and schedule a follow-up inspection after your first rain. We\'re here for the life of your roof with ongoing support and maintenance.' },
     ],
     benefits: [
-      'CertainTeed Shingle Master Certified—elite contractor status with enhanced warranties',
+      'CertainTeed ShingleMaster Premier Certified—elite contractor status with enhanced warranties',
       'Premium materials rated for Texas heat, hail, and high winds',
       'Transparent pricing with detailed, itemized estimates',
       'Most projects completed in 1-3 days with minimal disruption',
@@ -251,7 +251,7 @@ export const SERVICES: Service[] = [
     title: 'Roof Repairs',
     slug: 'roof-repairs',
     shortDescription: 'Fast, reliable roof repairs that stop leaks and prevent costly damage.',
-    description: 'Don\'t let a small roof problem become a big expense. Our expert roof repair services in Round Rock, Austin, and Georgetown address everything from minor leaks and missing shingles to storm damage and flashing issues. As a CertainTeed Shingle Master certified contractor, we use premium materials and proven techniques to restore your roof\'s integrity. Most repairs are completed in just a few hours, with same-day service available. We provide honest assessments—if repair isn\'t the best option, we\'ll tell you. Our 10-year workmanship warranty backs every repair we make.',
+    description: 'Don\'t let a small roof problem become a big expense. Our expert roof repair services in Round Rock, Austin, and Georgetown address everything from minor leaks and missing shingles to storm damage and flashing issues. As a CertainTeed ShingleMaster Premier certified contractor, we use premium materials and proven techniques to restore your roof\'s integrity. Most repairs are completed in just a few hours, with same-day service available. We provide honest assessments—if repair isn\'t the best option, we\'ll tell you. Our 10-year workmanship warranty backs every repair we make.',
     icon: '🛠️',
     image: '/images/services/roof-repairs.jpg',
     process: [
@@ -264,7 +264,7 @@ export const SERVICES: Service[] = [
     ],
     benefits: [
       'Same-day and emergency repair services available',
-      'CertainTeed Shingle Master certified technicians',
+      'CertainTeed ShingleMaster Premier certified technicians',
       'Premium Texas-rated materials that match existing roof',
       'Complete in 2-4 hours for most repairs',
       '10-year workmanship warranty on all repairs',
@@ -313,7 +313,7 @@ export const SERVICES: Service[] = [
     title: 'Roof Inspection & Assessment',
     slug: 'roof-inspection',
     shortDescription: 'Comprehensive 50-point roof inspections with detailed photo reports.',
-    description: 'Knowledge is power when it comes to your roof. Our comprehensive roof inspections provide you with a complete understanding of your roof\'s condition—whether you\'re buying a home, selling a property, concerned about storm damage, or simply want peace of mind. As CertainTeed Shingle Master certified contractors, we conduct thorough 50-point inspections of every roof component. You receive a detailed photo report with condition ratings, remaining lifespan estimates, and prioritized repair recommendations. We serve homeowners in Round Rock, Austin, Georgetown, and all Central Texas. Most inspections are completed in 45-60 minutes. Free inspections after major storms!',
+    description: 'Knowledge is power when it comes to your roof. Our comprehensive roof inspections provide you with a complete understanding of your roof\'s condition—whether you\'re buying a home, selling a property, concerned about storm damage, or simply want peace of mind. As CertainTeed ShingleMaster Premier certified contractors, we conduct thorough 50-point inspections of every roof component. You receive a detailed photo report with condition ratings, remaining lifespan estimates, and prioritized repair recommendations. We serve homeowners in Round Rock, Austin, Georgetown, and all Central Texas. Most inspections are completed in 45-60 minutes. Free inspections after major storms!',
     icon: '🔍',
     image: '/images/services/roof-inspection.jpg',
     process: [
@@ -326,7 +326,7 @@ export const SERVICES: Service[] = [
     benefits: [
       'Comprehensive 50-point inspection checklist',
       'Detailed photo report with condition ratings',
-      'Certified CertainTeed Shingle Master inspectors',
+      'Certified CertainTeed ShingleMaster Premier inspectors',
       'Drone photography for steep/complex roofs',
       'Completed in 45-60 minutes',
       'Free post-storm inspections',
@@ -628,7 +628,7 @@ export const SERVICE_TYPES = [
 export const VALUE_PROPS = [
   {
     icon: '✅',
-    title: 'CertainTeed Shingle Master',
+    title: 'CertainTeed ShingleMaster Premier',
     description: 'Certified Excellence',
   },
   {

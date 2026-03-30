@@ -1,4 +1,4 @@
-import { Metadata } from 'next'
+﻿import { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Container } from '@/components/layout/Container'
@@ -71,7 +71,7 @@ export default function RoofingRoundRockPage() {
             <div className="flex flex-wrap items-center gap-4 text-sm text-primary-200">
               <span>⭐ 4.9/5 Stars</span>
               <span className="hidden sm:inline">•</span>
-              <span>✓ CertainTeed Shingle Master</span>
+              <span>✓ CertainTeed ShingleMaster Premier</span>
               <span className="hidden sm:inline">•</span>
               <span>🛡️ A+ BBB Rating</span>
               <span className="hidden sm:inline">•</span>
@@ -124,7 +124,7 @@ export default function RoofingRoundRockPage() {
                   <p>
                     When you need a roofing contractor in Round Rock, you need a team that understands Central Texas weather. 
                     At Ripple Roofing & Construction, we've been protecting Round Rock homes and businesses from Texas hailstorms, 
-                    intense summer heat, and severe weather for years. As a <strong>CertainTeed Shingle Master certified contractor</strong>, 
+                    intense summer heat, and severe weather for years. As a <strong>CertainTeed ShingleMaster Premier certified contractor</strong>, 
                     we bring the highest level of expertise to every Round Rock roofing project.
                   </p>
                   <p className="mt-4">
@@ -304,7 +304,7 @@ export default function RoofingRoundRockPage() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-primary-900 mb-2">CertainTeed Shingle Master Certified</h3>
+                      <h3 className="text-xl font-bold text-primary-900 mb-2">CertainTeed ShingleMaster Premier Certified</h3>
                       <p className="text-primary-600">
                         We're one of only 1% of roofing contractors nationwide to earn CertainTeed's highest certification. 
                         This means enhanced warranties for you, guaranteed quality installation, and access to premium roofing 
@@ -515,7 +515,7 @@ export default function RoofingRoundRockPage() {
                       <svg className="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
-                      <span>CertainTeed Shingle Master</span>
+                      <span>CertainTeed ShingleMaster Premier</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <svg className="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">

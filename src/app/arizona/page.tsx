@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+﻿import { Metadata } from 'next';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import { Phone, MapPin, CheckCircle, Shield, Clock, Star } from 'lucide-react';
@@ -65,7 +65,7 @@ export default function ArizonaHomePage() {
             </h1>
             
             <p className="text-xl md:text-2xl mb-4 text-blue-100">
-              Serving Arizona Since 2026 | CertainTeed Shingle Master Certified
+              Serving Arizona Since 2026 | CertainTeed ShingleMaster Premier Certified
             </p>
             
             <p className="text-lg mb-8 text-blue-200 max-w-2xl mx-auto">
@@ -134,7 +134,7 @@ export default function ArizonaHomePage() {
               <div className="flex justify-center mb-2">
                 <CheckCircle className="w-8 h-8 text-green-600" />
               </div>
-              <div className="font-bold text-lg">ShingleMaster</div>
+              <div className="font-bold text-lg">ShingleMaster Premier</div>
               <div className="text-sm text-gray-600">CertainTeed Certified</div>
             </div>
             <div className="text-center">
@@ -265,7 +265,7 @@ export default function ArizonaHomePage() {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-2">CertainTeed Shingle Master</h3>
+                  <h3 className="text-xl font-bold mb-2">CertainTeed ShingleMaster Premier</h3>
                   <p className="text-gray-600">
                     Elite certified contractor for premium asphalt shingle installations. Extended warranties and quality guarantees on all shingle projects.
                   </p>
