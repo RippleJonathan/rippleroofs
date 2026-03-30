@@ -17,11 +17,6 @@ const FooterReviews = dynamic(() => import('@/components/layout/FooterReviews').
   ssr: true
 })
 
-const ExitIntentPopup = dynamic(() => import('@/components/ui/ExitIntentPopup').then(mod => ({ default: mod.ExitIntentPopup })), {
-  ssr: false, // Client-side only
-  loading: () => null
-})
-
 const inter = Inter({ 
   subsets: ['latin'],
   variable: '--font-inter',
@@ -132,7 +127,6 @@ export default function RootLayout({
         <Footer />
         <FloatingCallButton />
         <StickyMobileBar />
-        <ExitIntentPopup />
       </body>
     </html>
   )
