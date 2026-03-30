@@ -172,10 +172,17 @@ export default function WarrantyPage() {
                     </svg>
                     <span className="text-primary-800"><strong>No Hidden Fees:</strong> Repairs covered at no additional cost</span>
                   </li>
-                </ul>
+                  <li className="flex items-start gap-3">
+                    <svg className="w-6 h-6 text-accent-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <span className="text-primary-800"><strong>No Hidden Fees:</strong> Repairs covered at no additional cost</span>
+                    <span className="text-primary-800"><strong>Transferable Up to 20 Years:</strong> New buyer inherits remaining warranty coverage — a documented asset when you sell</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <svg className="w-6 h-6 text-accent-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-primary-800"><strong>We Handle Registration:</strong> We register your warranty with CertainTeed upon project completion — no extra steps for you</span>
                   </li>
                 </ul>
               </div>
