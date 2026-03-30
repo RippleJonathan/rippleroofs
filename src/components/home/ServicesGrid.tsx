@@ -6,8 +6,8 @@ import { Card } from '@/components/ui/Card'
 import { SERVICES } from '@/lib/constants'
 
 export const ServicesGrid: FC = () => {
-  // Show first 6 services on homepage
-  const featuredServices = SERVICES.slice(0, 6)
+  // Show first 9 services on homepage
+  const featuredServices = SERVICES.slice(0, 9)
 
   return (
     <section className="section-spacing bg-gradient-to-b from-white to-primary-50">

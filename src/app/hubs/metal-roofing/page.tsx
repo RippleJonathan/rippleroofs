@@ -1,4 +1,4 @@
-import { FC } from 'react'
+﻿import { FC } from 'react'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -366,7 +366,7 @@ export default function MetalRoofingHub() {
               <Button variant="secondary" size="lg" href="/contact">Schedule Consultation</Button>
             </div>
             <p className="mt-6 text-primary-200">
-              📞 Questions? Call us: <a href="tel:5123660880" className="underline hover:text-accent-300">(512) 366-0880</a>
+              📞 Questions? Call us: <a href="tel:5127635277" className="underline hover:text-accent-300">(512) 763-5277</a>
             </p>
           </div>
         </Container>

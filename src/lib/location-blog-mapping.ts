@@ -30,6 +30,36 @@ export const LOCATION_BLOG_POSTS: Record<string, Array<{
       slug: 'metal-vs-shingle-roofing-austin',
       category: 'Materials'
     },
+    {
+      title: 'Residential Roofing in Austin TX',
+      description: 'Complete guide to residential roofing services in Austin — materials, costs, and what to expect.',
+      slug: 'residential-roofing-austin-tx',
+      category: 'Location Guide'
+    },
+    {
+      title: 'Gutter Installation in Austin',
+      description: 'Expert gutter installation and replacement services for Austin homeowners.',
+      slug: 'gutter-installation-austin',
+      category: 'Services'
+    },
+    {
+      title: 'Emergency Roof Leak Repair in Austin',
+      description: '24/7 emergency roof leak repair in Austin — what to do when your roof fails during a storm.',
+      slug: 'emergency-roof-leak-repair-austin',
+      category: 'Emergency'
+    },
+    {
+      title: 'Spring Hail Season Prep — Austin',
+      description: 'How Austin homeowners can prepare their roofs before spring hail season hits.',
+      slug: 'spring-hail-season-prep-austin',
+      category: 'Storm Damage'
+    },
+    {
+      title: 'Solar Panel Roof Requirements in Austin',
+      description: 'What Austin homeowners need to know about roof condition and requirements before going solar.',
+      slug: 'solar-panel-roof-requirements-austin',
+      category: 'Specialty'
+    },
   ],
   'round-rock': [
     {
@@ -48,6 +78,24 @@ export const LOCATION_BLOG_POSTS: Record<string, Array<{
       title: 'Best Roofing Materials for Round Rock',
       description: 'Expert comparison of roofing materials optimized for Round Rock\'s hail and heat challenges.',
       slug: 'best-roofing-materials-round-rock',
+      category: 'Materials'
+    },
+    {
+      title: 'Round Rock Hail Damage Guide',
+      description: 'How to identify, document, and file an insurance claim for hail damage in Round Rock.',
+      slug: 'round-rock-hail-damage-guide',
+      category: 'Storm Damage'
+    },
+    {
+      title: 'Metal Roofing in Round Rock',
+      description: 'Costs, materials, and contractor tips for metal roofing installations in Round Rock, TX.',
+      slug: 'metal-roofing-round-rock',
+      category: 'Materials'
+    },
+    {
+      title: 'Stone-Coated Metal Roofing in Round Rock',
+      description: 'Why stone-coated metal roofing is one of the best investments for Round Rock homeowners.',
+      slug: 'stone-coated-metal-roofing-round-rock',
       category: 'Materials'
     },
   ],
@@ -160,6 +208,32 @@ export const LOCATION_BLOG_POSTS: Record<string, Array<{
       title: 'Bee Cave Roofing Guide',
       description: 'Expert roofing guide for Bee Cave\'s affluent Hill Country community with premium recommendations.',
       slug: 'bee-cave-roofing-guide',
+      category: 'Location Guide'
+    },
+  ],
+  'san-antonio': [
+    {
+      title: 'Best Roofing Contractor in San Antonio',
+      description: 'How to find and vet the best roofing contractor in San Antonio — credentials, reviews, and red flags.',
+      slug: 'best-roofing-contractor-san-antonio',
+      category: 'Contractor Tips'
+    },
+    {
+      title: 'Metal Roofing in San Antonio',
+      description: 'Metal roofing costs, styles, and contractor tips for San Antonio homeowners.',
+      slug: 'metal-roofing-san-antonio',
+      category: 'Materials'
+    },
+    {
+      title: 'Roof Replacement Cost in San Antonio',
+      description: 'How much does a roof replacement cost in San Antonio? Real pricing data and what affects your quote.',
+      slug: 'roof-replacement-cost-san-antonio',
+      category: 'Cost Guide'
+    },
+    {
+      title: 'San Antonio Roof Repair Guide',
+      description: 'Common San Antonio roofing problems and how to repair them — from leak fixes to storm damage.',
+      slug: 'san-antonio-roof-repair-guide',
       category: 'Location Guide'
     },
   ],

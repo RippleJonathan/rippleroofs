@@ -131,7 +131,7 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
       {/* Trust Bar */}
       <section className="pt-16 pb-8 md:py-8 bg-gradient-to-r from-accent-500 to-accent-600 text-white">
         <Container>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
             <div>
               <div className="text-3xl font-bold mb-1">{location.population}</div>
               <div className="text-sm text-white/90">Residents Served</div>
@@ -191,7 +191,7 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
                   Our {location.city} Roofing Services
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {SERVICES.slice(0, 6).map((service) => (
+                  {SERVICES.slice(0, 9).map((service) => (
                     <Link
                       key={service.id}
                       href={`/services/${service.slug}`}

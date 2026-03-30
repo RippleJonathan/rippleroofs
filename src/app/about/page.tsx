@@ -108,6 +108,10 @@ const AboutPage: FC = () => {
               Delivering high-quality roofing and construction services with integrity and reliability 
               throughout Central Texas.
             </p>
+            <div className="flex flex-wrap gap-4">
+              <Button variant="primary" size="lg" href="/contact">Get a Free Inspection</Button>
+              <Button variant="secondary" size="lg" href={`tel:${SITE_CONFIG.phone.replace(/[^0-9]/g, '')}`}>Call {SITE_CONFIG.phone}</Button>
+            </div>
           </div>
         </Container>
       </section>

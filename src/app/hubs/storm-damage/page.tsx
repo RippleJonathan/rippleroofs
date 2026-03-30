@@ -1,4 +1,4 @@
-import { FC } from 'react'
+﻿import { FC } from 'react'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -69,7 +69,7 @@ export default function StormDamageHub() {
               </Button>
             </div>
             <div className="mt-6 p-4 bg-red-900/50 border border-red-400 rounded-lg">
-              <p className="text-lg font-semibold">📞 Emergency Hotline: <a href="tel:5123660880" className="underline hover:text-accent-300">(512) 366-0880</a></p>
+              <p className="text-lg font-semibold">📞 Emergency Hotline: <a href="tel:5127635277" className="underline hover:text-accent-300">(512) 763-5277</a></p>
             </div>
           </div>
         </Container>
@@ -349,7 +349,7 @@ export default function StormDamageHub() {
             <p className="text-xl text-primary-100 mb-8">Fast response times for emergency repairs and free damage inspections throughout Central Texas</p>
             <div className="flex flex-wrap items-center justify-center gap-4">
               <Button variant="primary" size="lg" href="/contact">🚨 Emergency Service</Button>
-              <Button variant="secondary" size="lg" href="tel:5123660880">📞 Call: (512) 366-0880</Button>
+              <Button variant="secondary" size="lg" href="tel:5127635277">📞 Call: (512) 763-5277</Button>
             </div>
           </div>
         </Container>
