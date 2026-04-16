@@ -144,14 +144,38 @@ export function getBusinessInfo(state?: StateCode | null): BusinessInfo {
 /**
  * Google Business Profile ratings
  * Source: Google Business Profile
- * Last updated: November 2025
+ * Last updated: April 2026
  */
 export const BUSINESS_RATING = {
   ratingValue: '5.0',
-  reviewCount: '62',
+  reviewCount: '63',
   bestRating: '5',
   worstRating: '1',
 } as const;
+
+type BusinessRatingOverride = {
+  ratingValue?: number | string | null;
+  reviewCount?: number | string | null;
+};
+
+export function getBusinessRatingSnapshot(overrides: BusinessRatingOverride = {}) {
+  const ratingValue =
+    typeof overrides.ratingValue === 'number'
+      ? overrides.ratingValue.toFixed(1)
+      : overrides.ratingValue ?? BUSINESS_RATING.ratingValue;
+
+  const reviewCount =
+    typeof overrides.reviewCount === 'number'
+      ? String(overrides.reviewCount)
+      : overrides.reviewCount ?? BUSINESS_RATING.reviewCount;
+
+  return {
+    ratingValue,
+    reviewCount,
+    bestRating: BUSINESS_RATING.bestRating,
+    worstRating: BUSINESS_RATING.worstRating,
+  };
+}
 
 /**
  * Service areas (cities we serve in Central Texas)

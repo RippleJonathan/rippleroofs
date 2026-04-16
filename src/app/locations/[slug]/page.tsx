@@ -7,6 +7,7 @@ import { Container } from '@/components/layout/Container'
 import { QuoteForm } from '@/components/forms/QuoteForm'
 import { Button } from '@/components/ui/Button'
 import { LocationFAQ } from '@/components/location/LocationFAQ'
+import { getBusinessRatingSnapshot } from '@/constants/business'
 import { LOCATIONS, type LocationData } from '@/lib/locations'
 import { SERVICES, SITE_CONFIG } from '@/lib/constants'
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
@@ -66,6 +67,8 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
     notFound()
   }
 
+  const businessRating = getBusinessRatingSnapshot()
+
   return (
     <main className="min-h-screen bg-white">
       {/* Schema Markup */}
@@ -116,7 +119,9 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
             </div>
             {/* Quick Trust Badges */}
             <div className="flex flex-wrap items-center gap-4 text-sm text-primary-200">
-              <span>⭐ 4.9/5 Stars</span>
+              <span>⭐ {businessRating.ratingValue}/5 Google Rating</span>
+              <span className="hidden sm:inline">•</span>
+              <span>{businessRating.reviewCount} Google Reviews</span>
               <span className="hidden sm:inline">•</span>
               <span>✓ CertainTeed Master</span>
               <span className="hidden sm:inline">•</span>
@@ -141,8 +146,8 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
               <div className="text-sm text-white/90">Emergency Service</div>
             </div>
             <div>
-              <div className="text-3xl font-bold mb-1">267+</div>
-              <div className="text-sm text-white/90">Happy Customers</div>
+              <div className="text-3xl font-bold mb-1">{businessRating.reviewCount}</div>
+              <div className="text-sm text-white/90">Google Reviews</div>
             </div>
             <div>
               <div className="text-3xl font-bold mb-1">$200</div>
@@ -8386,8 +8391,8 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
             },
             "aggregateRating": {
               "@type": "AggregateRating",
-              "ratingValue": "4.9",
-              "reviewCount": "127"
+              "ratingValue": businessRating.ratingValue,
+              "reviewCount": businessRating.reviewCount
             }
           })
         }}
@@ -8441,10 +8446,10 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
             },
             "aggregateRating": {
               "@type": "AggregateRating",
-              "ratingValue": "5.0",
+              "ratingValue": businessRating.ratingValue,
               "bestRating": "5",
               "worstRating": "1",
-              "reviewCount": "62"
+              "reviewCount": businessRating.reviewCount
             },
             "review": [
               {

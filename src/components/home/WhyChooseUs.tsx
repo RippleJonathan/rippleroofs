@@ -1,7 +1,10 @@
 ﻿import { FC } from 'react'
 import { Container } from '@/components/layout/Container'
+import { getBusinessRatingSnapshot } from '@/constants/business'
 
 export const WhyChooseUs: FC = () => {
+  const businessRating = getBusinessRatingSnapshot()
+
   const comparisons = [
     {
       feature: 'Certification',
@@ -35,7 +38,7 @@ export const WhyChooseUs: FC = () => {
     },
     {
       feature: 'Customer Rating',
-      us: '5.0 stars (62+ reviews)',
+      us: `${businessRating.ratingValue} stars (${businessRating.reviewCount} Google reviews)`,
       them: 'Variable or no reviews',
       highlight: true,
     },

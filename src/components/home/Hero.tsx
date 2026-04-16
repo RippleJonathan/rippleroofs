@@ -3,9 +3,12 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Container } from '@/components/layout/Container'
 import { Button } from '@/components/ui/Button'
+import { getBusinessRatingSnapshot } from '@/constants/business'
 import { SITE_CONFIG } from '@/lib/constants'
 
 export const Hero: FC = () => {
+  const businessRating = getBusinessRatingSnapshot()
+
   return (
     <section className="relative min-h-[70vh] md:min-h-[85vh] lg:min-h-[90vh] flex items-center justify-center bg-gradient-to-br from-primary-950 via-primary-900 to-primary-800 overflow-hidden">
       {/* Background Image */}
@@ -43,6 +46,32 @@ export const Hero: FC = () => {
             </p>
 
             <div className="animate-fade-up" style={{ animationDelay: '0.2s' }}>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+                <Link
+                  href="/services/residential-roofing"
+                  className="rounded-2xl border border-white/15 bg-white/10 px-5 py-4 backdrop-blur-sm transition hover:bg-white/20"
+                >
+                  <div className="text-xs font-bold uppercase tracking-[0.18em] text-accent-300 mb-2">
+                    For Homeowners
+                  </div>
+                  <div className="text-lg font-bold text-white mb-1">Residential Roofing</div>
+                  <div className="text-sm text-primary-100">
+                    Roof replacement, repairs, storm recovery, and gutter upgrades.
+                  </div>
+                </Link>
+                <Link
+                  href="/services/commercial-roofing"
+                  className="rounded-2xl border border-white/15 bg-white/10 px-5 py-4 backdrop-blur-sm transition hover:bg-white/20"
+                >
+                  <div className="text-xs font-bold uppercase tracking-[0.18em] text-accent-300 mb-2">
+                    For Businesses
+                  </div>
+                  <div className="text-lg font-bold text-white mb-1">Commercial Roofing</div>
+                  <div className="text-sm text-primary-100">
+                    Flat roofing, coatings, maintenance plans, and low-disruption installs.
+                  </div>
+                </Link>
+              </div>
               <div className="flex flex-col sm:flex-row gap-4 mb-4">
                 <Link href="/contact">
                   <Button variant="primary" size="lg" className="w-full sm:w-auto">
@@ -56,7 +85,9 @@ export const Hero: FC = () => {
                 </a>
               </div>
               <div className="flex flex-wrap gap-3 text-sm text-primary-100">
-                <span className="flex items-center gap-1">⭐ 5.0 Star Rating</span>
+                <span className="flex items-center gap-1">⭐ {businessRating.ratingValue} Google Rating</span>
+                <span>•</span>
+                <span className="flex items-center gap-1">🗣️ {businessRating.reviewCount} Google Reviews</span>
                 <span>•</span>
                 <span className="flex items-center gap-1">✓ CertainTeed Master™</span>
                 <span>•</span>

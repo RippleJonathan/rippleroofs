@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { Container } from '@/components/layout/Container'
 import { QuoteForm } from '@/components/forms/QuoteForm'
 import { Button } from '@/components/ui/Button'
+import { getBusinessRatingSnapshot } from '@/constants/business'
 import { ServiceLeadMagnetCTA } from '@/components/services/ServiceLeadMagnetCTA'
 import { SERVICES } from '@/lib/constants'
 import ServiceSchema from '@/components/seo/ServiceSchema'
@@ -69,6 +70,7 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
   }
 
   const isPDR = service.slug === 'paintless-dent-repair'
+  const businessRating = getBusinessRatingSnapshot()
 
   return (
     <main className="min-h-screen bg-white">
@@ -3985,8 +3987,8 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
               "priceRange": "$$",
               "aggregateRating": {
                 "@type": "AggregateRating",
-                "ratingValue": "4.9",
-                "reviewCount": "267"
+                "ratingValue": businessRating.ratingValue,
+                "reviewCount": businessRating.reviewCount
               }
             },
             "areaServed": [

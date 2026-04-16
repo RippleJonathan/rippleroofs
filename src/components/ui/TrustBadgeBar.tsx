@@ -1,6 +1,7 @@
 ﻿'use client'
 
 import { FC } from 'react'
+import { getBusinessRatingSnapshot } from '@/constants/business'
 
 interface TrustBadgeBarProps {
   variant?: 'default' | 'compact' | 'detailed'
@@ -13,6 +14,7 @@ export const TrustBadgeBar: FC<TrustBadgeBarProps> = ({
   className = '',
   serviceType = 'roofing'
 }) => {
+  const businessRating = getBusinessRatingSnapshot()
   const isPDR = serviceType === 'pdr'
   
   if (variant === 'compact') {
@@ -20,8 +22,8 @@ export const TrustBadgeBar: FC<TrustBadgeBarProps> = ({
       <div className={`flex flex-wrap items-center justify-center gap-4 text-sm ${className}`}>
         <div className="flex items-center gap-2 text-primary-700">
           <span className="text-accent-500 text-xl">⭐</span>
-          <span className="font-bold">5.0/5</span> 
-          <span className="hidden sm:inline">from 62+ Reviews</span>
+          <span className="font-bold">{businessRating.ratingValue}/5</span>
+          <span className="hidden sm:inline">from {businessRating.reviewCount} Google reviews</span>
         </div>
         {!isPDR && (
           <div className="flex items-center gap-2 text-primary-700">
@@ -46,9 +48,9 @@ export const TrustBadgeBar: FC<TrustBadgeBarProps> = ({
               ⭐
             </div>
             <div>
-              <div className="text-2xl font-bold text-primary-900">5.0/5 Stars</div>
-              <div className="text-sm text-primary-600">62+ Happy Customers</div>
-              <div className="text-xs text-primary-500 mt-1">Google & Facebook Reviews</div>
+              <div className="text-2xl font-bold text-primary-900">{businessRating.ratingValue}/5 Stars</div>
+              <div className="text-sm text-primary-600">{businessRating.reviewCount} Google Reviews</div>
+              <div className="text-xs text-primary-500 mt-1">Google Business Profile</div>
             </div>
           </div>
 
@@ -89,8 +91,8 @@ export const TrustBadgeBar: FC<TrustBadgeBarProps> = ({
             <span className="text-accent-600 text-xl">⭐</span>
           </div>
           <div>
-            <div className="text-lg font-bold text-primary-900">5.0/5 Stars</div>
-            <div className="text-xs text-primary-600">62+ Reviews</div>
+            <div className="text-lg font-bold text-primary-900">{businessRating.ratingValue}/5 Stars</div>
+            <div className="text-xs text-primary-600">{businessRating.reviewCount} Google Reviews</div>
           </div>
         </div>
 

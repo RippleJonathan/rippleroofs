@@ -6,6 +6,7 @@ import { CTASection } from '@/components/home/CTASection'
 import { TrustBadges } from '@/components/ui/TrustBadges'
 import { WhyChooseUs } from '@/components/home/WhyChooseUs'
 import { FeaturedIn } from '@/components/home/FeaturedIn'
+import { getBusinessRatingSnapshot } from '@/constants/business'
 import { SITE_CONFIG } from '@/lib/constants'
 
 // Lazy load below-the-fold components for better mobile performance
@@ -34,6 +35,8 @@ export const metadata = {
 }
 
 export default function Home() {
+  const businessRating = getBusinessRatingSnapshot()
+
   // Enhanced Structured Data - LocalBusiness/Organization Schema
   const structuredData = {
     '@context': 'https://schema.org',
@@ -126,10 +129,10 @@ export default function Home() {
     priceRange: '$$-$$$',
     aggregateRating: {
       '@type': 'AggregateRating',
-      ratingValue: '5.0',
-      reviewCount: '267',
-      bestRating: '5',
-      worstRating: '1',
+      ratingValue: businessRating.ratingValue,
+      reviewCount: businessRating.reviewCount,
+      bestRating: businessRating.bestRating,
+      worstRating: businessRating.worstRating,
     },
     sameAs: [
       SITE_CONFIG.social.facebook,

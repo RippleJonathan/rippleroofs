@@ -177,6 +177,17 @@ const ContactPageContent: FC = () => {
                       {businessInfo.address.street}<br />
                       {businessInfo.address.city}, {businessInfo.address.state} {businessInfo.address.zip}
                     </address>
+                    <a
+                      href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(`${businessInfo.address.street}, ${businessInfo.address.city}, ${businessInfo.address.state} ${businessInfo.address.zip}`)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 mt-2 text-sm font-semibold text-accent-600 hover:text-accent-700 transition-colors"
+                    >
+                      Get Directions
+                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
+                    </a>
                   </div>
                 </div>
               </div>

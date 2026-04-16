@@ -4,6 +4,9 @@ import Image from 'next/image'
 import { Container } from '@/components/layout/Container'
 import { QuoteForm } from '@/components/forms/QuoteForm'
 import { Button } from '@/components/ui/Button'
+import { LocationReviewWall } from '@/components/location/LocationReviewWall'
+import { getBusinessRatingSnapshot } from '@/constants/business'
+import { fetchGoogleReviews } from '@/lib/googleReviews'
 import { SITE_CONFIG } from '@/lib/constants'
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
 
@@ -20,7 +23,14 @@ export const metadata: Metadata = {
   }
 }
 
-export default function RoofingRoundRockPage() {
+export default async function RoofingRoundRockPage() {
+  const googleReviews = await fetchGoogleReviews()
+  const businessRating = getBusinessRatingSnapshot({
+    ratingValue: googleReviews?.rating,
+    reviewCount: googleReviews?.user_ratings_total,
+  })
+  const featuredReviews = googleReviews?.reviews?.slice(0, 3) ?? []
+
   return (
     <main className="min-h-screen bg-white">
       {/* Schema Markup */}
@@ -69,11 +79,11 @@ export default function RoofingRoundRockPage() {
             </div>
             {/* Trust Indicators */}
             <div className="flex flex-wrap items-center gap-4 text-sm text-primary-200">
-              <span>⭐ 4.9/5 Stars</span>
+              <span>⭐ {businessRating.ratingValue}/5 Google Rating</span>
+              <span className="hidden sm:inline">•</span>
+              <span>{businessRating.reviewCount} Google Reviews</span>
               <span className="hidden sm:inline">•</span>
               <span>✓ CertainTeed ShingleMaster Premier</span>
-              <span className="hidden sm:inline">•</span>
-              <span>🛡️ A+ BBB Rating</span>
               <span className="hidden sm:inline">•</span>
               <span>🚀 24/7 Emergency Service</span>
             </div>
@@ -94,8 +104,8 @@ export default function RoofingRoundRockPage() {
               <div className="text-sm text-white/90">Emergency Service</div>
             </div>
             <div>
-              <div className="text-3xl font-bold mb-1">267+</div>
-              <div className="text-sm text-white/90">Happy Customers</div>
+              <div className="text-3xl font-bold mb-1">{businessRating.reviewCount}</div>
+              <div className="text-sm text-white/90">Google Reviews</div>
             </div>
             <div>
               <div className="text-3xl font-bold mb-1">FREE</div>
@@ -140,6 +150,14 @@ export default function RoofingRoundRockPage() {
                   </p>
                 </div>
               </div>
+
+              <LocationReviewWall
+                city="Round Rock"
+                ratingValue={businessRating.ratingValue}
+                reviewCount={businessRating.reviewCount}
+                reviews={featuredReviews}
+                reviewUrl={SITE_CONFIG.social.googleBusiness}
+              />
 
               {/* Round Rock Roofing Services */}
               <div>
@@ -608,8 +626,8 @@ export default function RoofingRoundRockPage() {
             },
             aggregateRating: {
               '@type': 'AggregateRating',
-              ratingValue: '4.9',
-              reviewCount: '267'
+              "ratingValue": businessRating.ratingValue,
+              "reviewCount": businessRating.reviewCount
             }
           })
         }}
