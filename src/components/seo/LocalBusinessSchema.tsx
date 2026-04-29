@@ -26,13 +26,6 @@ export default function LocalBusinessSchema() {
       'https://nextdoor.com/page/ripple-roofing-construction/',
       'https://share.google/SsBLQ1RNm8ZQ7rFrk',
     ],
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: BUSINESS_RATING.ratingValue,
-      reviewCount: BUSINESS_RATING.reviewCount,
-      bestRating: BUSINESS_RATING.bestRating,
-      worstRating: BUSINESS_RATING.worstRating,
-    },
     areaServed: [
       {
         '@type': 'State',
@@ -63,6 +56,13 @@ export default function LocalBusinessSchema() {
     telephone: BUSINESS_INFO_TEXAS.phoneRaw,
     email: 'info@rippleroofs.com',
     priceRange: '$$$',
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: BUSINESS_RATING.ratingValue,
+      reviewCount: BUSINESS_RATING.reviewCount,
+      bestRating: BUSINESS_RATING.bestRating,
+      worstRating: BUSINESS_RATING.worstRating,
+    },
     address: {
       '@type': 'PostalAddress',
       streetAddress: BUSINESS_INFO_TEXAS.address.street,

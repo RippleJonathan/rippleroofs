@@ -14,7 +14,7 @@ export default function BreadcrumbSchema({ items }: BreadcrumbSchemaProps) {
     itemListElement: items.map((item, index) => ({
       '@type': 'ListItem',
       position: index + 1,
-      name: item.name,
+      name: item.name || item.url.split('/').filter(Boolean).pop()?.replace(/-/g, ' ') || 'Page',
       item: `https://rippleroofs.com${item.url}`,
     })),
   };

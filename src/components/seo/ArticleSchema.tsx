@@ -38,6 +38,7 @@ export default function ArticleSchema({
     },
     publisher: {
       '@type': 'Organization',
+      '@id': 'https://rippleroofs.com/#organization',
       name: 'Ripple Roofing & Construction',
       logo: {
         '@type': 'ImageObject',
