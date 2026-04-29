@@ -161,7 +161,7 @@ export const LOCATIONS: LocationData[] = [
     metroArea: 'Killeen-Temple Metro',
     heroImage: '/images/locations/killeen-hero.jpg',
     neighborhoods: [
-      'Fort Cavazos Area',
+      'Fort Hood Area',
       'Clear Creek',
       'Marlboro Heights',
       'Skyline',
@@ -172,7 +172,7 @@ export const LOCATIONS: LocationData[] = [
       'Woodland Hills'
     ],
     landmarks: [
-      'Fort Cavazos (Fort Hood)',
+      'Fort Hood',
       'Lions Club Park',
       'Killeen Mall',
       'Vive Les Arts Theatre',
@@ -180,7 +180,7 @@ export const LOCATIONS: LocationData[] = [
       'Dana Peak Park',
       'Belton Lake'
     ],
-    description: 'Killeen proudly serves as home to Fort Cavazos (formerly Fort Hood), one of the world\'s largest military installations. This vibrant community supports military families, veterans, and civilians with excellent schools, shopping, and recreation. We\'re honored to serve those who serve, providing quality roofing services to military and civilian families throughout the Killeen area.',
+    description: 'Killeen proudly serves as home to Fort Hood, one of the world\'s largest military installations. This vibrant community supports military families, veterans, and civilians with excellent schools, shopping, and recreation. We\'re honored to serve those who serve, providing quality roofing services to military and civilian families throughout the Killeen area.',
     population: '150,000+',
     weatherNote: 'Killeen\'s Central Texas location brings severe thunderstorms with large hail, damaging wind gusts, intense summer heat exceeding 100°F, high UV exposure, occasional tornadoes, and rapid weather changes.'
   },
@@ -415,10 +415,10 @@ export const LOCATIONS: LocationData[] = [
       'Ogletree Gap Heritage Festival',
       'City Park',
       'Copperas Cove Civic Center',
-      'Fort Cavazos (adjacent)',
+      'Fort Hood (adjacent)',
       'South Mountain'
     ],
-    description: 'Copperas Cove is a close-knit community adjacent to Fort Cavazos, proudly supporting military families and offering small-town Texas living. With affordable housing, good schools, and strong community spirit, Copperas Cove provides a welcoming environment. We\'re honored to serve military and civilian families in Copperas Cove with professional roofing services.',
+    description: 'Copperas Cove is a close-knit community adjacent to Fort Hood, proudly supporting military families and offering small-town Texas living. With affordable housing, good schools, and strong community spirit, Copperas Cove provides a welcoming environment. We\'re honored to serve military and civilian families in Copperas Cove with professional roofing services.',
     population: '35,000+',
     weatherNote: 'Copperas Cove experiences severe Central Texas weather including large hail, strong winds, extreme summer heat, occasional tornadoes, and intense thunderstorms typical of the region.'
   },
