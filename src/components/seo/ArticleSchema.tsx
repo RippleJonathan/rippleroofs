@@ -47,13 +47,6 @@ export default function ArticleSchema({
         height: 60,
       },
       url: 'https://rippleroofs.com',
-      telephone: '+15127635277',
-      address: {
-        '@type': 'PostalAddress',
-        addressLocality: 'Round Rock',
-        addressRegion: 'TX',
-        addressCountry: 'US',
-      },
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
