@@ -620,4 +620,165 @@ export const LOCATIONS: LocationData[] = [
     population: '5,000+',
     weatherNote: 'Dripping Springs\' Hill Country location brings unique weather challenges including flash flooding in limestone terrain, severe hailstorms, extreme heat and drought, damaging winds, and occasional ice storms in winter.'
   },
+  {
+    slug: 'hewitt',
+    city: 'Hewitt',
+    state: 'TX',
+    zip: '76643',
+    county: 'McLennan County',
+    metroArea: 'Greater Waco',
+    neighborhoods: [
+      'Hewitt Ranch',
+      'Estates of Hewitt',
+      'The Preserve at Hewitt',
+      'Kendrick Farms',
+      'Southern Hills',
+      'Windmill Farms',
+      'Hewitt Oaks'
+    ],
+    landmarks: [
+      'Hewitt City Hall',
+      'Hewitt City Park',
+      'James Connally Road Corridor',
+      'Lake Shore Drive',
+      'Woodway/Hewitt Business District',
+      'Central Texas Marketplace'
+    ],
+    description: 'Hewitt is a fast-growing suburb directly south of Waco with top-rated McLennan County schools, beautiful neighborhoods, and a strong community identity. Located along I-35, Hewitt offers easy commutes to Waco and is known for its family-friendly atmosphere and newer construction. We proudly serve Hewitt homeowners with expert roofing services and hail damage expertise.',
+    population: '16,000+',
+    weatherNote: 'Hewitt sits in the heart of McLennan County\'s severe weather corridor. The April 2026 hail storm caused widespread damage across Hewitt neighborhoods. Residents face frequent large hail events, damaging straight-line winds, and tornado risk from the active storm track between Dallas and Austin.'
+  },
+  {
+    slug: 'woodway',
+    city: 'Woodway',
+    state: 'TX',
+    zip: '76712',
+    county: 'McLennan County',
+    metroArea: 'Greater Waco',
+    neighborhoods: [
+      'Woodway Estates',
+      'Stone Ridge',
+      'Hunters Chase',
+      'Woodway Hills',
+      'Country Club Estates',
+      'Alta Vista',
+      'Lakeview Estates'
+    ],
+    landmarks: [
+      'Woodway City Hall',
+      'Carleen Bright Arboretum',
+      'Waco Country Club',
+      'Lake Waco nearby',
+      'Woodway Community Park',
+      'Bosque Boulevard'
+    ],
+    description: 'Woodway is one of the most affluent and desirable communities in the Waco metro area, known for its tree-lined streets, executive homes, and premier schools. Located west of Waco along Bosque Boulevard, Woodway homeowners have high standards for roofing quality — we match that with CertainTeed ShingleMaster Premier-certified installation on every project.',
+    population: '9,000+',
+    weatherNote: 'Woodway\'s elevated terrain west of Waco makes it directly exposed to the severe storm track from the west. The April 2026 hail event hit Woodway neighborhoods hard. Homeowners in Woodway Estates and Stone Ridge reported significant hail damage to premium roofing systems. Impact-resistant materials are strongly recommended.'
+  },
+  {
+    slug: 'bellmead',
+    city: 'Bellmead',
+    state: 'TX',
+    zip: '76705',
+    county: 'McLennan County',
+    metroArea: 'Greater Waco',
+    neighborhoods: [
+      'North Bellmead',
+      'East Bellmead',
+      'Lacy-Lakeview corridor',
+      'Industrial District',
+      'Central Bellmead',
+      'Airport Drive area'
+    ],
+    landmarks: [
+      'TSTC (Texas State Technical College)',
+      'Waco Regional Airport (nearby)',
+      'Bellmead Community Center',
+      'Loop 340 Corridor',
+      'North Waco Business Park'
+    ],
+    description: 'Bellmead is a working community on the northeast side of Waco, home to Texas State Technical College and a mix of residential and industrial properties. With affordable homes and proximity to Waco\'s employment centers, Bellmead offers strong value. We serve Bellmead homeowners with honest, professional roofing inspections and repairs.',
+    population: '10,000+',
+    weatherNote: 'Bellmead\'s flat terrain north of the Brazos River makes it highly exposed to severe storms sweeping across McLennan County. The April 2026 hail storm tracked directly over north Waco and Bellmead. Older roofing systems in this area are particularly vulnerable to hail and wind damage.'
+  },
+  {
+    slug: 'hillsboro',
+    city: 'Hillsboro',
+    state: 'TX',
+    zip: '76645',
+    county: 'Hill County',
+    metroArea: 'Waco–Dallas Corridor',
+    neighborhoods: [
+      'Hillsboro Heights',
+      'Downtown Hillsboro',
+      'West Hillsboro',
+      'Pecan Grove',
+      'Hill County Estates',
+      'Airport Road area'
+    ],
+    landmarks: [
+      'Hill County Courthouse (Historic)',
+      'Hillsboro Premium Outlets',
+      'Confederate Research Center',
+      'Joe Garlington Park',
+      'Hillsboro Carnegie Library',
+      'I-35 / I-35W split'
+    ],
+    description: 'Hillsboro sits at the junction of I-35 and I-35W, making it the crossroads of Hill County. The county seat offers a charming historic downtown, premium outlets, and a tight-knit community. We serve Hillsboro and all of Hill County with professional roofing services for residential and commercial properties.',
+    population: '8,000+',
+    weatherNote: 'Hill County sits directly in Central Texas\'s severe weather corridor. Hillsboro and surrounding communities were impacted by the April 2026 hail storm system. The area\'s open plains terrain provides no natural barriers to severe storms, creating above-average hail and wind damage risk year-round.'
+  },
+  {
+    slug: 'corsicana',
+    city: 'Corsicana',
+    state: 'TX',
+    zip: '75110',
+    county: 'Navarro County',
+    metroArea: 'Dallas–Waco Corridor',
+    neighborhoods: [
+      'North Corsicana',
+      'Historic Downtown',
+      'Navarro Hills',
+      'Collins Street district',
+      'Corsicana Country Club area',
+      'East Corsicana'
+    ],
+    landmarks: [
+      'Pioneer Village',
+      'Corsicana State Park (nearby)',
+      'Navarro County Courthouse',
+      'Collin Street Bakery',
+      'Corsicana ISD Stadium',
+      'Richland-Chambers Reservoir'
+    ],
+    description: 'Corsicana is the seat of Navarro County and sits between Waco and Dallas along US-287. Known as the home of Collin Street Bakery and one of Texas\'s first oil booms, Corsicana is a historic city with an active residential market. We serve Corsicana and Navarro County homeowners with trusted roofing services.',
+    population: '24,000+',
+    weatherNote: 'Corsicana and Navarro County experience significant severe weather including large hail events that track along the US-287 and I-45 corridors. The April 2026 storm system brought damaging hail to the greater Corsicana area. Homeowners should schedule post-storm inspections promptly to preserve insurance claim rights.'
+  },
+  {
+    slug: 'mcgregor',
+    city: 'McGregor',
+    state: 'TX',
+    zip: '76657',
+    county: 'McLennan County',
+    metroArea: 'Greater Waco',
+    neighborhoods: [
+      'Downtown McGregor',
+      'North McGregor',
+      'McGregor Heights',
+      'South McGregor',
+      'Highway 84 corridor'
+    ],
+    landmarks: [
+      'McGregor City Park',
+      'McGregor Airport',
+      'SpaceX Test Facility (nearby)',
+      'McGregor Independent School District',
+      'Hwy 84 / FM 2490 area'
+    ],
+    description: 'McGregor is a small but growing city in western McLennan County, known in recent years as the site of SpaceX\'s Rocket Development and Test Facility. With a close-knit community, good schools, and affordable housing, McGregor is increasingly attracting families from the greater Waco area. We serve McGregor homeowners with professional roofing and storm damage services.',
+    population: '5,500+',
+    weatherNote: 'McGregor\'s location on the western McLennan County plains puts it directly in the path of storms approaching from the southwest. The spring 2026 hail storms impacted McGregor and western McLennan County. Open terrain amplifies wind and hail impact on roofing systems.'
+  },
 ]

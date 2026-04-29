@@ -5112,6 +5112,43 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
           {/* Location-Specific Deep Content - Waco */}
           {location.slug === 'waco' && (
             <div className="mt-16 space-y-12">
+
+              {/* Spring 2026 Hail Storm Alert Banner */}
+              <div className="bg-red-50 border-2 border-red-400 rounded-2xl p-8">
+                <div className="flex items-start gap-4">
+                  <div className="text-4xl">⚠️</div>
+                  <div>
+                    <h2 className="text-2xl font-display font-bold text-red-800 mb-3">
+                      Spring 2026 Hail Storm: McLennan County Was Hit Hard
+                    </h2>
+                    <p className="text-red-700 mb-4 leading-relaxed">
+                      The spring 2026 severe weather season brought significant hail to Waco, Hewitt, Woodway, Bellmead, and communities across McLennan County. If your home or business was in the storm path — especially in Woodway Estates, Hewitt Ranch, West Waco, Sanger Heights, or Cameron Park — you need a professional roof inspection before your insurance claim window closes.
+                    </p>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                      <div className="bg-white rounded-lg p-4 border border-red-200">
+                        <p className="text-sm font-bold text-red-800 mb-1">⏰ Act Now</p>
+                        <p className="text-sm text-red-700">Texas insurance policies require timely reporting. The official NWS storm record is your date-of-loss documentation — but you need to file before that claim window closes.</p>
+                      </div>
+                      <div className="bg-white rounded-lg p-4 border border-red-200">
+                        <p className="text-sm font-bold text-red-800 mb-1">🔍 Free Inspection</p>
+                        <p className="text-sm text-red-700">We&apos;re already inspecting homes across McLennan County. Schedule your free inspection today — no obligation, no pressure, just honest documentation.</p>
+                      </div>
+                    </div>
+                    <div className="flex flex-col sm:flex-row gap-3">
+                      <a href="tel:+15127635277" className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-bold px-6 py-3 rounded-lg transition-colors">
+                        📞 Call (512) 763-5277 Now
+                      </a>
+                      <a href="/contact" className="inline-flex items-center justify-center gap-2 bg-white hover:bg-red-50 text-red-700 font-bold px-6 py-3 rounded-lg border-2 border-red-400 transition-colors">
+                        Schedule Free Inspection →
+                      </a>
+                    </div>
+                    <p className="text-xs text-red-600 mt-3">
+                      <a href="/blog/waco-hail-storm-april-2026" className="underline">Read our full Waco hail storm guide →</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
               {/* Waco Neighborhoods Deep Dive */}
               <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
                 <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
@@ -5466,6 +5503,272 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
                   <p className="text-primary-700">
                     These are estimates. Your actual cost depends on your specific home, neighborhood (Woodway, Hewitt, Magnolia area, etc.), materials, and current conditions. We provide <strong>FREE inspections</strong> and detailed written quotes with no obligation. <strong>Fixer Upper fans & historic home renovators: We match Magnolia-quality standards!</strong> Call <strong>(512) 763-5277</strong> or schedule online for your personalized Waco roof replacement estimate.
                   </p>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Location-Specific Deep Content - Hewitt */}
+          {location.slug === 'hewitt' && (
+            <div className="mt-16 space-y-12">
+              <div className="bg-red-50 border-2 border-red-400 rounded-2xl p-8">
+                <div className="flex items-start gap-4">
+                  <div className="text-4xl">⚠️</div>
+                  <div>
+                    <h2 className="text-2xl font-display font-bold text-red-800 mb-3">
+                      Spring 2026 Hail Storm: Hewitt Was Directly Impacted
+                    </h2>
+                    <p className="text-red-700 mb-4 leading-relaxed">
+                      The spring 2026 severe weather system brought significant hail directly over Hewitt neighborhoods including Hewitt Ranch, Estates of Hewitt, The Preserve at Hewitt, and Kendrick Farms. If your home was in the storm&apos;s path, you need a professional inspection before your insurance claim window closes.
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-3">
+                      <a href="tel:+15127635277" className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-bold px-6 py-3 rounded-lg transition-colors">
+                        📞 (512) 763-5277 — Free Inspection
+                      </a>
+                      <a href="/contact" className="inline-flex items-center justify-center gap-2 bg-white hover:bg-red-50 text-red-700 font-bold px-6 py-3 rounded-lg border-2 border-red-400 transition-colors">
+                        Schedule Now →
+                      </a>
+                    </div>
+                    <p className="text-xs text-red-600 mt-3"><a href="/blog/waco-hail-storm-april-2026" className="underline">Read our full Waco/McLennan County hail storm guide →</a></p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-4">
+                  Hewitt Roofing: McLennan County&apos;s Growing Suburb
+                </h2>
+                <p className="text-primary-700 mb-6 leading-relaxed">
+                  Hewitt sits directly south of Waco along I-35, combining top-rated schools, family-friendly neighborhoods, and strong community character. As one of McLennan County&apos;s fastest-growing suburbs, Hewitt features a mix of established neighborhoods and newer construction — all exposed to the area&apos;s active severe weather.
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏘️ Hewitt Ranch &amp; Estates</h3>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Spring 2026 hail damage, granule loss on architectural shingles, gutter damage</p>
+                      <p><strong>Best Materials:</strong> Class 4 impact-resistant shingles — essential in McLennan County</p>
+                      <p><strong>Insurance Discount:</strong> Class 4 shingles qualify for 10–30% premium discount with most Texas insurers</p>
+                      <p><strong>Typical Cost:</strong> $14,000–$24,000 for 2,000–3,200 sq ft homes</p>
+                    </div>
+                  </div>
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🌿 The Preserve &amp; Newer Developments</h3>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Hail impact on newer architectural shingles, wind damage, seal strip failure</p>
+                      <p><strong>Best Materials:</strong> Premium impact-resistant architectural shingles, enhanced warranties</p>
+                      <p><strong>Upgrade Tip:</strong> If your builder-grade shingles were installed less than 10 years ago and are hail-damaged, this is the ideal time to upgrade to Class 4</p>
+                      <p><strong>Typical Cost:</strong> $15,000–$26,000 for 2,200–3,600 sq ft homes</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-6 bg-amber-50 border-l-4 border-amber-500 p-4 rounded">
+                  <p className="text-sm font-bold text-primary-900 mb-1">💡 McLennan County Insurance Tip</p>
+                  <p className="text-sm text-primary-700">Hewitt homeowners: Most major Texas insurers offer 10–30% premium discounts for Class 4 impact-resistant shingles. On a $2,800/year policy, that&apos;s $280–$840 annual savings. Combined with your hail claim, upgrading to Class 4 often costs you nothing out of pocket beyond your deductible.</p>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Location-Specific Deep Content - Woodway */}
+          {location.slug === 'woodway' && (
+            <div className="mt-16 space-y-12">
+              <div className="bg-red-50 border-2 border-red-400 rounded-2xl p-8">
+                <div className="flex items-start gap-4">
+                  <div className="text-4xl">⚠️</div>
+                  <div>
+                    <h2 className="text-2xl font-display font-bold text-red-800 mb-3">
+                      Spring 2026 Hail Storm: Woodway Premium Neighborhoods Impacted
+                    </h2>
+                    <p className="text-red-700 mb-4 leading-relaxed">
+                      The spring 2026 hail storm impacted Woodway&apos;s premier neighborhoods including Woodway Estates, Stone Ridge, Hunter&apos;s Chase, and communities along Bosque Boulevard. Premium roofing systems damaged in this event deserve premium repair — with CertainTeed ShingleMaster Premier installation.
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-3">
+                      <a href="tel:+15127635277" className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-bold px-6 py-3 rounded-lg transition-colors">
+                        📞 (512) 763-5277 — Free Inspection
+                      </a>
+                      <a href="/contact" className="inline-flex items-center justify-center gap-2 bg-white hover:bg-red-50 text-red-700 font-bold px-6 py-3 rounded-lg border-2 border-red-400 transition-colors">
+                        Schedule Now →
+                      </a>
+                    </div>
+                    <p className="text-xs text-red-600 mt-3"><a href="/blog/waco-hail-storm-april-2026" className="underline">Read our full McLennan County hail storm guide →</a></p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-4">
+                  Woodway Roofing: Premium Installation for Waco&apos;s Most Prestigious Community
+                </h2>
+                <p className="text-primary-700 mb-6 leading-relaxed">
+                  Woodway is Waco&apos;s most affluent suburb — and its residents expect the highest quality roofing installation. We match that standard with CertainTeed ShingleMaster Premier certification, strict HOA-compliant material selection, and meticulous installation that protects premium homes through every Central Texas storm season.
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏡 Woodway Estates &amp; Stone Ridge</h3>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Hail damage to premium architectural shingles, HOA color/material requirements, high-quality expectation for aesthetics</p>
+                      <p><strong>Best Materials:</strong> CertainTeed Grand Manor, GAF Armor Shield II Class 4, designer color selections</p>
+                      <p><strong>Insurance Tip:</strong> Woodway homes with premium shingles often have higher insured values — confirm your policy reflects replacement cost, not ACV</p>
+                      <p><strong>Typical Cost:</strong> $20,000–$38,000 for 2,800–5,000 sq ft executive homes</p>
+                    </div>
+                  </div>
+                  <div className="bg-white rounded-xl p-6 shadow-md">
+                    <h3 className="text-lg font-bold text-primary-900 mb-3">🌳 Hunter&apos;s Chase &amp; Alta Vista</h3>
+                    <div className="space-y-2 text-sm text-primary-700">
+                      <p><strong>Common Issues:</strong> Tree canopy damage from hail and wind, moss/algae in shaded areas, high-pitch roofs require safety equipment</p>
+                      <p><strong>Best Materials:</strong> Algae-resistant, Class 4 impact-resistant, steep-slope certified installation</p>
+                      <p><strong>Note:</strong> Steep pitch adds 15–20% to installation cost but is standard in Woodway&apos;s architectural style</p>
+                      <p><strong>Typical Cost:</strong> $18,000–$35,000 for 2,500–4,500 sq ft homes with complex rooflines</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Location-Specific Deep Content - Bellmead */}
+          {location.slug === 'bellmead' && (
+            <div className="mt-16 space-y-12">
+              <div className="bg-red-50 border-2 border-red-400 rounded-2xl p-8">
+                <div className="flex items-start gap-4">
+                  <div className="text-4xl">⚠️</div>
+                  <div>
+                    <h2 className="text-2xl font-display font-bold text-red-800 mb-3">
+                      Spring 2026 Hail Storm: Bellmead &amp; North Waco Impacted
+                    </h2>
+                    <p className="text-red-700 mb-4 leading-relaxed">
+                      The spring 2026 storm system tracked directly over north Waco and Bellmead. Homeowners in the Loop 340 corridor, TSTC-adjacent neighborhoods, and north Bellmead residential areas should schedule professional inspections promptly.
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-3">
+                      <a href="tel:+15127635277" className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-bold px-6 py-3 rounded-lg transition-colors">
+                        📞 (512) 763-5277 — Free Inspection
+                      </a>
+                      <a href="/contact" className="inline-flex items-center justify-center gap-2 bg-white hover:bg-red-50 text-red-700 font-bold px-6 py-3 rounded-lg border-2 border-red-400 transition-colors">
+                        Schedule Now →
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-4">Bellmead Roofing Services</h2>
+                <p className="text-primary-700 mb-6">Bellmead is a working community on Waco&apos;s northeast side. We provide honest, professional roofing services for Bellmead homeowners — free inspections, fair pricing, and insurance claim support when hail strikes.</p>
+                <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded">
+                  <p className="text-sm font-bold text-primary-900 mb-1">Older Roofs in Bellmead</p>
+                  <p className="text-sm text-primary-700">Many Bellmead homes have roofing systems approaching or past their replacement age. If your roof is 15+ years old and experienced the spring 2026 hail, a full replacement through insurance may cost you only your deductible — while giving you a new, impact-resistant roof for the next 25–30 years.</p>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Location-Specific Deep Content - Hillsboro */}
+          {location.slug === 'hillsboro' && (
+            <div className="mt-16 space-y-12">
+              <div className="bg-red-50 border-2 border-red-400 rounded-2xl p-8">
+                <div className="flex items-start gap-4">
+                  <div className="text-4xl">⚠️</div>
+                  <div>
+                    <h2 className="text-2xl font-display font-bold text-red-800 mb-3">
+                      Spring 2026 Hail Storm: Hill County Was in the Storm Path
+                    </h2>
+                    <p className="text-red-700 mb-4 leading-relaxed">
+                      The spring 2026 storm system that swept through McLennan County continued northeast through Hill County. Hillsboro homeowners and property owners across Hill County should document damage and schedule inspections before claim deadlines pass.
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-3">
+                      <a href="tel:+15127635277" className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-bold px-6 py-3 rounded-lg transition-colors">
+                        📞 (512) 763-5277 — Free Inspection
+                      </a>
+                      <a href="/contact" className="inline-flex items-center justify-center gap-2 bg-white hover:bg-red-50 text-red-700 font-bold px-6 py-3 rounded-lg border-2 border-red-400 transition-colors">
+                        Schedule Now →
+                      </a>
+                    </div>
+                    <p className="text-xs text-red-600 mt-3"><a href="/blog/hillsboro-corsicana-hail-storm-2026" className="underline">Read our Hill County &amp; Navarro County hail storm guide →</a></p>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-4">Hillsboro &amp; Hill County Roofing</h2>
+                <p className="text-primary-700 mb-6">Hillsboro sits at the I-35/I-35W junction — the crossroads of North and Central Texas. We serve Hillsboro, Itasca, Hubbard, Abbott, Whitney, and all of Hill County with professional roofing and storm damage services.</p>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div className="bg-white rounded-xl p-5 shadow-sm">
+                    <h3 className="font-bold text-primary-900 mb-2">Historic Hillsboro Homes</h3>
+                    <p className="text-sm text-primary-700">Hill County has beautiful historic homes near downtown Hillsboro. These homes often require careful material selection and may have unique structural considerations. We have experience with historic Texas homes.</p>
+                  </div>
+                  <div className="bg-white rounded-xl p-5 shadow-sm">
+                    <h3 className="font-bold text-primary-900 mb-2">Rural &amp; Farm Properties</h3>
+                    <p className="text-sm text-primary-700">Hill County&apos;s rural properties face open-terrain wind and hail exposure. Metal roofing is popular in this area for its durability and longevity. We install standing seam and metal shingle systems alongside asphalt.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Location-Specific Deep Content - Corsicana */}
+          {location.slug === 'corsicana' && (
+            <div className="mt-16 space-y-12">
+              <div className="bg-red-50 border-2 border-red-400 rounded-2xl p-8">
+                <div className="flex items-start gap-4">
+                  <div className="text-4xl">⚠️</div>
+                  <div>
+                    <h2 className="text-2xl font-display font-bold text-red-800 mb-3">
+                      Spring 2026 Hail Storm: Corsicana &amp; Navarro County Impacted
+                    </h2>
+                    <p className="text-red-700 mb-4 leading-relaxed">
+                      The spring 2026 storm system brought hail to the Corsicana area. Navarro County homeowners should document damage and schedule professional inspections promptly — insurance claims require timely reporting.
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-3">
+                      <a href="tel:+15127635277" className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-bold px-6 py-3 rounded-lg transition-colors">
+                        📞 (512) 763-5277 — Free Inspection
+                      </a>
+                      <a href="/contact" className="inline-flex items-center justify-center gap-2 bg-white hover:bg-red-50 text-red-700 font-bold px-6 py-3 rounded-lg border-2 border-red-400 transition-colors">
+                        Schedule Now →
+                      </a>
+                    </div>
+                    <p className="text-xs text-red-600 mt-3"><a href="/blog/hillsboro-corsicana-hail-storm-2026" className="underline">Read our Hillsboro &amp; Corsicana hail storm guide →</a></p>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-4">Corsicana &amp; Navarro County Roofing</h2>
+                <p className="text-primary-700 mb-6">Corsicana is the historic seat of Navarro County — home to the famous Collin Street Bakery and one of Texas&apos;s earliest oil booms. We serve Corsicana and Navarro County homeowners with honest roofing services and insurance claim expertise for this active storm corridor.</p>
+                <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded">
+                  <p className="text-sm font-bold text-primary-900 mb-1">The US-287 Storm Corridor</p>
+                  <p className="text-sm text-primary-700">Corsicana sits along US-287 and I-45 — a well-documented severe weather corridor in Central Texas. Navarro County properties face above-average hail and wind risk year-round. If you haven&apos;t upgraded to impact-resistant shingles, your next roof replacement is the right time.</p>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Location-Specific Deep Content - McGregor */}
+          {location.slug === 'mcgregor' && (
+            <div className="mt-16 space-y-12">
+              <div className="bg-red-50 border-2 border-red-400 rounded-2xl p-8">
+                <div className="flex items-start gap-4">
+                  <div className="text-4xl">⚠️</div>
+                  <div>
+                    <h2 className="text-2xl font-display font-bold text-red-800 mb-3">
+                      Spring 2026 Hail Storm: McGregor &amp; Western McLennan County
+                    </h2>
+                    <p className="text-red-700 mb-4 leading-relaxed">
+                      The spring 2026 storm system impacted western McLennan County including McGregor and surrounding communities. Open-terrain properties in this area are especially exposed to storm intensity without urban shelter from neighboring structures.
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-3">
+                      <a href="tel:+15127635277" className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-bold px-6 py-3 rounded-lg transition-colors">
+                        📞 (512) 763-5277 — Free Inspection
+                      </a>
+                      <a href="/contact" className="inline-flex items-center justify-center gap-2 bg-white hover:bg-red-50 text-red-700 font-bold px-6 py-3 rounded-lg border-2 border-red-400 transition-colors">
+                        Schedule Now →
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
+                <h2 className="text-3xl font-display font-bold text-primary-900 mb-4">McGregor Roofing Services</h2>
+                <p className="text-primary-700 mb-6">McGregor is a growing community in western McLennan County — made famous by SpaceX&apos;s nearby rocket test facility and known for its tight-knit community and excellent schools. We serve McGregor homeowners with professional roofing and storm damage services.</p>
+                <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded">
+                  <p className="text-sm font-bold text-primary-900 mb-1">Metal Roofing in McGregor</p>
+                  <p className="text-sm text-primary-700">McGregor&apos;s semi-rural character and open terrain make metal roofing a popular and practical choice. Standing seam metal roofs offer superior hail resistance, 40–50 year lifespans, and strong wind ratings — ideal for properties outside the city core where roofing labor cost-per-square is higher.</p>
                 </div>
               </div>
             </div>
@@ -8398,37 +8701,6 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
         }}
       />
       
-      {/* Breadcrumb Schema */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://rippleroofs.com"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Locations",
-                "item": "https://rippleroofs.com/locations"
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "name": location.city,
-                "item": `https://rippleroofs.com/locations/${location.slug}`
-              }
-            ]
-          })
-        }}
-      />
-
       {/* Review Schema for Rich Snippets */}
       <script
         type="application/ld+json"

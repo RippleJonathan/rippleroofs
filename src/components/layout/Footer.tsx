@@ -368,6 +368,12 @@ export const Footer: FC = () => {
                   <li><Link href="/locations/temple" className="text-primary-200 hover:text-accent-500 transition-colors">Temple</Link></li>
                   <li><Link href="/locations/killeen" className="text-primary-200 hover:text-accent-500 transition-colors">Killeen</Link></li>
                   <li><Link href="/locations/waco" className="text-primary-200 hover:text-accent-500 transition-colors">Waco</Link></li>
+                  <li><Link href="/locations/hewitt" className="text-primary-200 hover:text-accent-500 transition-colors">Hewitt</Link></li>
+                  <li><Link href="/locations/woodway" className="text-primary-200 hover:text-accent-500 transition-colors">Woodway</Link></li>
+                  <li><Link href="/locations/bellmead" className="text-primary-200 hover:text-accent-500 transition-colors">Bellmead</Link></li>
+                  <li><Link href="/locations/hillsboro" className="text-primary-200 hover:text-accent-500 transition-colors">Hillsboro</Link></li>
+                  <li><Link href="/locations/corsicana" className="text-primary-200 hover:text-accent-500 transition-colors">Corsicana</Link></li>
+                  <li><Link href="/locations/mcgregor" className="text-primary-200 hover:text-accent-500 transition-colors">McGregor</Link></li>
                 </ul>
               </div>
 

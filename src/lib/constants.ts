@@ -71,6 +71,12 @@ export const NAV_LINKS: NavLink[] = [
       { href: '/locations/killeen', label: 'Killeen' },
       { href: '/locations/copperas-cove', label: 'Copperas Cove' },
       { href: '/locations/waco', label: 'Waco' },
+      { href: '/locations/hewitt', label: 'Hewitt' },
+      { href: '/locations/woodway', label: 'Woodway' },
+      { href: '/locations/bellmead', label: 'Bellmead' },
+      { href: '/locations/hillsboro', label: 'Hillsboro' },
+      { href: '/locations/corsicana', label: 'Corsicana' },
+      { href: '/locations/mcgregor', label: 'McGregor' },
     ]
   },
   { href: '/projects', label: 'Projects' },
