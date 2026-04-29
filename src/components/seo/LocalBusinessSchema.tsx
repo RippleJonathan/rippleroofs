@@ -1,5 +1,4 @@
-﻿import { BUSINESS_RATING } from '@/constants/business';
-import { BUSINESS_INFO_TEXAS, BUSINESS_INFO_ARIZONA } from '@/constants/business';
+﻿import { BUSINESS_INFO_TEXAS, BUSINESS_INFO_ARIZONA } from '@/constants/business';
 
 export default function LocalBusinessSchema() {
   // Organization schema with both offices
@@ -56,13 +55,6 @@ export default function LocalBusinessSchema() {
     telephone: BUSINESS_INFO_TEXAS.phoneRaw,
     email: 'info@rippleroofs.com',
     priceRange: '$$$',
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: BUSINESS_RATING.ratingValue,
-      reviewCount: BUSINESS_RATING.reviewCount,
-      bestRating: BUSINESS_RATING.bestRating,
-      worstRating: BUSINESS_RATING.worstRating,
-    },
     address: {
       '@type': 'PostalAddress',
       streetAddress: BUSINESS_INFO_TEXAS.address.street,
