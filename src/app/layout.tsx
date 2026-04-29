@@ -101,10 +101,10 @@ export default function RootLayout({
           // @ts-ignore - Next.js handles image optimization
           imageSrcSet="/images/hero/hero-bg.jpg"
         />
-        {/* Local Business Schema - must be in <head> to prevent Next.js RSC streaming duplication */}
-        <LocalBusinessSchema />
       </head>
       <body className="font-sans">
+        {/* Local Business Schema */}
+        <LocalBusinessSchema />
         
         {/* Google Analytics - Deferred for better performance */}
         <Script
