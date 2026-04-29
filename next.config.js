@@ -201,6 +201,23 @@ const nextConfig = {
         destination: '/',
         permanent: true,
       },
+      // Arizona service URLs that don't exist → Arizona page
+      {
+        source: '/arizona/services/:slug*',
+        destination: '/arizona',
+        permanent: true,
+      },
+      // Hubs pages → relevant service pages
+      {
+        source: '/hubs/storm-damage',
+        destination: '/services/storm-damage',
+        permanent: true,
+      },
+      {
+        source: '/hubs/:slug*',
+        destination: '/',
+        permanent: true,
+      },
     ]
   },
   
