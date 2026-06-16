@@ -120,11 +120,11 @@ const ContactPageContent: FC = () => {
                 {/* Overlay prevents iframe from stealing scroll wheel events.
                     On mousedown it hides itself so clicks reach the form,
                     then restores on mouseup. */}
-                <div className="relative">
+                <div className="relative h-[950px] md:h-[700px]">
                   <iframe
                     src="https://ketterly.com/forms/c4854b29-e0d1-44e1-885f-a7b645c4ce01"
                     width="100%"
-                    height="700"
+                    height="100%"
                     frameBorder={0}
                     style={{ border: 'none', display: 'block' }}
                     title="Contact Us"
