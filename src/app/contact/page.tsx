@@ -3,9 +3,8 @@
 import { FC, useState, useEffect, Suspense } from 'react'
 import { usePathname, useSearchParams } from 'next/navigation'
 import { Container } from '@/components/layout/Container'
-import { QuoteForm } from '@/components/forms/QuoteForm'
-import { ArizonaQuoteForm } from '@/components/forms/ArizonaQuoteForm'
 import { ServiceAreasMap } from '@/components/contact/ServiceAreasMap'
+import { TrustBadgeBar } from '@/components/ui/TrustBadgeBar'
 import { SITE_CONFIG } from '@/lib/constants'
 import { BUSINESS_INFO_TEXAS, BUSINESS_INFO_ARIZONA } from '@/constants/business'
 import { getCookie } from '@/lib/utils'
@@ -108,14 +107,41 @@ const ContactPageContent: FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Contact Form */}
             <div className="lg:col-span-2">
-              <div className="bg-white rounded-2xl shadow-xl p-8 md:p-10">
-                <h2 className="text-2xl font-display font-bold text-primary-900 mb-6">
-                  Request a Free Inspection
-                </h2>
-                <p className="text-primary-600 mb-8">
-                  Fill out the form below and we'll get back to you within 24 hours with a detailed quote for your roofing project.
-                </p>
-                {isArizona ? <ArizonaQuoteForm /> : <QuoteForm />}
+              <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+                <div className="p-8 md:p-10 pb-6">
+                  <h2 className="text-2xl font-display font-bold text-primary-900 mb-4">
+                    Request a Free Inspection
+                  </h2>
+                  <p className="text-primary-600 mb-6">
+                    Fill out the form below and we'll get back to you within 24 hours with a detailed quote for your roofing project.
+                  </p>
+                  <TrustBadgeBar variant="compact" />
+                </div>
+                {/* Overlay prevents iframe from stealing scroll wheel events.
+                    On mousedown it hides itself so clicks reach the form,
+                    then restores on mouseup. */}
+                <div className="relative">
+                  <iframe
+                    src="https://ketterly.com/forms/c4854b29-e0d1-44e1-885f-a7b645c4ce01"
+                    width="100%"
+                    height="700"
+                    frameBorder={0}
+                    style={{ border: 'none', display: 'block' }}
+                    title="Contact Us"
+                  />
+                  <div
+                    className="absolute inset-0"
+                    onMouseDown={(e) => {
+                      const overlay = e.currentTarget as HTMLDivElement
+                      overlay.style.display = 'none'
+                      const restore = () => {
+                        overlay.style.display = ''
+                        window.removeEventListener('mouseup', restore)
+                      }
+                      window.addEventListener('mouseup', restore)
+                    }}
+                  />
+                </div>
               </div>
             </div>
 
