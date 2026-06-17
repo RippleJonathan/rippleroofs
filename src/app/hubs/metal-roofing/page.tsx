@@ -8,8 +8,8 @@ import { Button } from '@/components/ui/Button'
 
 export const metadata: Metadata = {
   title: 'Metal Roofing Central Texas: Complete Guide, Costs & Benefits Hub',
-  description: 'Everything you need to know about metal roofing in Central Texas. Compare costs, types, energy savings, and find expert metal roofing contractors in Round Rock, Austin, Georgetown, and Cedar Park.',
-  keywords: 'metal roofing texas, standing seam metal roof, metal roof cost, metal roofing contractors, central texas metal roofing, metal vs shingles',
+  description: 'Complete resource for metal roofing in Central Texas — standing seam metal roof costs, stone-coated steel, energy savings, hail performance, and certified contractors in Round Rock, Austin, and Georgetown.',
+  keywords: 'metal roofing texas, standing seam metal roof, standing seam metal roof cost texas, standing seam metal roof austin, metal roof cost, metal roofing contractors central texas, metal vs shingles',
   alternates: {
     canonical: 'https://rippleroofs.com/hubs/metal-roofing'
   },
@@ -129,12 +129,60 @@ export default function MetalRoofingHub() {
             <a href="#locations" className="px-4 py-2 bg-white rounded-lg hover:bg-accent-50 hover:text-accent-700 transition-colors shadow-sm">
               📍 By Location
             </a>
+            <a href="#standing-seam" className="px-4 py-2 bg-accent-600 text-white rounded-lg hover:bg-accent-700 transition-colors shadow-sm font-semibold">
+              🏗️ Standing Seam
+            </a>
             <a href="#types" className="px-4 py-2 bg-white rounded-lg hover:bg-accent-50 hover:text-accent-700 transition-colors shadow-sm">
-              🏗️ Types & Comparison
+              ⚖️ Types & Comparison
             </a>
             <a href="#performance" className="px-4 py-2 bg-white rounded-lg hover:bg-accent-50 hover:text-accent-700 transition-colors shadow-sm">
               ⚡ Performance & Benefits
             </a>
+          </div>
+        </Container>
+      </section>
+
+      {/* Standing Seam: The Premium Choice */}
+      <section id="standing-seam" className="py-16 bg-gradient-to-br from-primary-900 to-primary-800 text-white">
+        <Container>
+          <div className="max-w-5xl mx-auto">
+            <div className="inline-block px-4 py-2 bg-accent-500 rounded-full mb-4">
+              <span className="font-bold text-sm">THE GOLD STANDARD</span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
+              Standing Seam Metal Roofing: The Premium Choice
+            </h2>
+            <p className="text-lg text-primary-100 mb-8 max-w-3xl">
+              Standing seam is the same roofing system used on government buildings, high-end commercial facilities, and luxury homes that demand the best. The defining feature: zero exposed fasteners. Panels interlock via a concealed clip system — no screws through the metal surface, ever. No leak points, no corroded fasteners, no callbacks.
+            </p>
+            <div className="grid md:grid-cols-3 gap-6 mb-10">
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                <div className="text-3xl mb-3">🔒</div>
+                <h3 className="text-lg font-bold mb-2">Zero Exposed Fasteners</h3>
+                <p className="text-primary-200 text-sm">Concealed clip system eliminates every screw-through-metal leak point. The fundamental difference from every other roofing system.</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                <div className="text-3xl mb-3">⏳</div>
+                <h3 className="text-lg font-bold mb-2">50–70 Year Lifespan</h3>
+                <p className="text-primary-200 text-sm">Install it once. In a 60-year period, asphalt shingles require 2-3 full replacements — often costing more in total than standing seam installed right the first time.</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                <div className="text-3xl mb-3">☀️</div>
+                <h3 className="text-lg font-bold mb-2">Solar-Ready Design</h3>
+                <p className="text-primary-200 text-sm">Solar clamps attach to the raised seams without any roof penetrations. Roof warranty stays intact. The ideal base for a solar + roofing system.</p>
+              </div>
+            </div>
+            <div className="flex flex-wrap gap-4">
+              <Button variant="primary" size="lg" href="/services/standing-seam-metal-roofing">
+                See Standing Seam Service Page
+              </Button>
+              <Button variant="secondary" size="lg" href="/blog/standing-seam-metal-roof-cost-texas">
+                2026 Standing Seam Cost Guide
+              </Button>
+              <Button variant="secondary" size="lg" href="/blog/standing-seam-vs-stone-coated-steel-texas">
+                Standing Seam vs Stone-Coated Steel
+              </Button>
+            </div>
           </div>
         </Container>
       </section>
