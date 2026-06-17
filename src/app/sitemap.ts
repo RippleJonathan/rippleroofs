@@ -3,6 +3,7 @@ import { SERVICES } from '@/lib/constants'
 import { LOCATIONS } from '@/lib/locations'
 import { ARIZONA_LOCATIONS } from '@/constants/locations-arizona'
 import { getAllPosts } from '@/lib/blog'
+import { PROJECTS } from '@/lib/projects'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://rippleroofs.com'
@@ -221,5 +222,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
-  return [...staticPages, ...servicePages, ...locationPages, ...arizonaLocationPages, ...blogPages]
+  // Individual project pages
+  const projectPages = PROJECTS.map((project) => ({
+    url: `${baseUrl}/projects/${project.id}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.75,
+  }))
+
+  return [...staticPages, ...servicePages, ...locationPages, ...arizonaLocationPages, ...blogPages, ...projectPages]
 }
