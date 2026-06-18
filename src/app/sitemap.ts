@@ -1,7 +1,6 @@
 import { MetadataRoute } from 'next'
 import { SERVICES } from '@/lib/constants'
 import { LOCATIONS } from '@/lib/locations'
-import { ARIZONA_LOCATIONS } from '@/constants/locations-arizona'
 import { getAllPosts } from '@/lib/blog'
 import { PROJECTS } from '@/lib/projects'
 
@@ -151,38 +150,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.8,
     },
-    // Arizona landing page
-    {
-      url: `${baseUrl}/arizona`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.9,
-    },
-    // Arizona service pages
-    {
-      url: `${baseUrl}/arizona/services/foam-roof-coating`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/arizona/services/tile-roof-repair`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/arizona/services/roof-replacement`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/arizona/services/monsoon-damage-repair`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
-      priority: 0.8,
-    },
   ]
 
   // Service pages - dynamically generated from SERVICES constant
@@ -205,14 +172,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: priorityLocationSlugs.includes(location.slug) ? 0.95 : 0.85,
   }))
 
-  // Arizona city pages
-  const arizonaLocationPages = ARIZONA_LOCATIONS.map((location) => ({
-    url: `${baseUrl}/arizona/${location.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'weekly' as const,
-    priority: 0.85,
-  }))
-
   // Blog posts - dynamically generated from blog content
   const posts = getAllPosts()
   const blogPages = posts.map((post) => ({
@@ -230,5 +189,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }))
 
-  return [...staticPages, ...servicePages, ...locationPages, ...arizonaLocationPages, ...blogPages, ...projectPages]
+  return [...staticPages, ...servicePages, ...locationPages, ...blogPages, ...projectPages]
 }

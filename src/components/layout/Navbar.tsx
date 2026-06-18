@@ -10,19 +10,12 @@ import { SITE_CONFIG, getNavLinks } from '@/lib/constants'
 import { cn } from '@/lib/utils'
 import { trackPhoneClick } from '@/lib/analytics'
 import { getBusinessInfo } from '@/constants/business'
-import { StateSelector } from '@/components/StateSelector'
-import { ROCLicenseBadge } from '@/components/ROCLicenseBadge'
 
 export const Navbar: FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const pathname = usePathname()
-  
-  // Detect current state from pathname
-  const currentState = useMemo(() => {
-    return pathname?.startsWith('/arizona') ? 'AZ' : 'TX'
-  }, [pathname])
-  
-  const businessInfo = getBusinessInfo(currentState)
+
+  const businessInfo = getBusinessInfo()
   const navLinks = useMemo(() => getNavLinks(pathname), [pathname])
 
   return (
@@ -32,9 +25,6 @@ export const Navbar: FC = () => {
         <Container>
           <div className="flex items-center justify-between h-12 text-sm">
             <div className="flex items-center gap-2 md:gap-6">
-              {currentState === 'AZ' && (
-                <ROCLicenseBadge />
-              )}
               <a
                 href={`tel:${businessInfo.phoneRaw}`}
                 className="flex items-center gap-2 hover:text-accent-400 transition-colors"
@@ -62,7 +52,6 @@ export const Navbar: FC = () => {
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <StateSelector />
               {/* Social Media Links */}
               <div className="hidden lg:flex items-center gap-3">
                 {SITE_CONFIG.social.facebook && (
@@ -254,8 +243,8 @@ export const Navbar: FC = () => {
                 ))}
                 
                 <div className="pt-4">
-                  <Link 
-                    href={currentState === 'AZ' ? '/contact?state=AZ' : '/contact'} 
+                  <Link
+                    href="/contact"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     <Button variant="primary" size="lg" className="w-full">

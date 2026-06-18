@@ -1,7 +1,7 @@
-﻿import { BUSINESS_INFO_TEXAS, BUSINESS_INFO_ARIZONA } from '@/constants/business';
+import { BUSINESS_INFO_TEXAS } from '@/constants/business';
 
 export default function LocalBusinessSchema() {
-  // Organization schema with both offices
+  // Organization schema - Texas only
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
@@ -16,7 +16,7 @@ export default function LocalBusinessSchema() {
       'https://rippleroofs.com/images/services/commercial-roofing.jpg',
     ],
     description:
-      'Premium roofing services in Texas and Arizona. CertainTeed ShingleMaster Premier certified contractor serving Round Rock, Austin, Phoenix, Scottsdale, and surrounding areas with roof replacement, repairs, emergency services, and more. 24/7 emergency service available.',
+      'Premium roofing services in Texas. CertainTeed ShingleMaster Premier certified contractor serving Round Rock, Austin, Georgetown, and surrounding areas with roof replacement, repairs, emergency services, and more. 24/7 emergency service available.',
     email: 'info@rippleroofs.com',
     sameAs: [
       'https://www.facebook.com/rippleroofs',
@@ -30,12 +30,8 @@ export default function LocalBusinessSchema() {
         '@type': 'State',
         name: 'Texas',
       },
-      {
-        '@type': 'State',
-        name: 'Arizona',
-      },
     ],
-    slogan: 'Premium Roofing Services in Texas & Arizona',
+    slogan: 'Premium Roofing Services in Texas',
     foundingDate: '2015',
   };
 
@@ -228,207 +224,6 @@ export default function LocalBusinessSchema() {
     ],
   };
 
-  // Arizona Office LocalBusiness
-  const arizonaOfficeSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'RoofingContractor',
-    '@id': 'https://rippleroofs.com/#arizona-office',
-    name: 'Ripple Roofing & Construction - Arizona',
-    parentOrganization: {
-      '@id': 'https://rippleroofs.com/#organization',
-    },
-    url: 'https://rippleroofs.com/arizona',
-    logo: 'https://rippleroofs.com/images/ripple-roofing-logo.png',
-    description:
-      'Premium roofing services in Phoenix Metro. Tile roof specialists, foam roofing experts, monsoon damage repair. Arizona ROC 362945 licensed contractor.',
-    telephone: BUSINESS_INFO_ARIZONA.phoneRaw,
-    email: 'info@rippleroofs.com',
-    priceRange: '$$$',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: BUSINESS_INFO_ARIZONA.address.street,
-      addressLocality: BUSINESS_INFO_ARIZONA.address.city,
-      addressRegion: BUSINESS_INFO_ARIZONA.address.state,
-      postalCode: BUSINESS_INFO_ARIZONA.address.zip,
-      addressCountry: 'US',
-    },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: BUSINESS_INFO_ARIZONA.geo.latitude.toString(),
-      longitude: BUSINESS_INFO_ARIZONA.geo.longitude.toString(),
-    },
-    openingHoursSpecification: [
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-        opens: '08:00',
-        closes: '18:00',
-      },
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: 'Saturday',
-        opens: '09:00',
-        closes: '16:00',
-      },
-    ],
-    contactPoint: [
-      {
-        '@type': 'ContactPoint',
-        telephone: `+1${BUSINESS_INFO_ARIZONA.phoneRaw}`,
-        contactType: 'customer service',
-        availableLanguage: ['English', 'Spanish'],
-        areaServed: 'AZ',
-        hoursAvailable: {
-          '@type': 'OpeningHoursSpecification',
-          opens: '00:00',
-          closes: '23:59',
-          dayOfWeek: [
-            'Monday',
-            'Tuesday',
-            'Wednesday',
-            'Thursday',
-            'Friday',
-            'Saturday',
-            'Sunday',
-          ],
-          description: '24/7 Emergency Service',
-        },
-      },
-    ],
-    areaServed: [
-      {
-        '@type': 'City',
-        name: 'Scottsdale',
-      },
-      {
-        '@type': 'City',
-        name: 'Phoenix',
-      },
-      {
-        '@type': 'City',
-        name: 'Tempe',
-      },
-      {
-        '@type': 'City',
-        name: 'Mesa',
-      },
-      {
-        '@type': 'City',
-        name: 'Chandler',
-      },
-      {
-        '@type': 'City',
-        name: 'Gilbert',
-      },
-      {
-        '@type': 'City',
-        name: 'Peoria',
-      },
-      {
-        '@type': 'City',
-        name: 'Surprise',
-      },
-      {
-        '@type': 'City',
-        name: 'Avondale',
-      },
-      {
-        '@type': 'City',
-        name: 'Goodyear',
-      },
-      {
-        '@type': 'City',
-        name: 'Glendale',
-      },
-    ],
-    hasOfferCatalog: {
-      '@type': 'OfferCatalog',
-      name: 'Arizona Roofing Services',
-      itemListElement: [
-        {
-          '@type': 'OfferCatalog',
-          name: 'Tile Roofing',
-          itemListElement: [
-            {
-              '@type': 'Offer',
-              itemOffered: {
-                '@type': 'Service',
-                name: 'Tile Roof Repair',
-                url: 'https://rippleroofs.com/arizona/services/tile-roof-repair',
-              },
-            },
-            {
-              '@type': 'Offer',
-              itemOffered: {
-                '@type': 'Service',
-                name: 'Tile Roof Replacement',
-                url: 'https://rippleroofs.com/arizona/services/roof-replacement',
-              },
-            },
-          ],
-        },
-        {
-          '@type': 'OfferCatalog',
-          name: 'Foam Roofing',
-          itemListElement: [
-            {
-              '@type': 'Offer',
-              itemOffered: {
-                '@type': 'Service',
-                name: 'Foam Roof Coating',
-                url: 'https://rippleroofs.com/arizona/services/foam-roof-coating',
-              },
-            },
-          ],
-        },
-        {
-          '@type': 'OfferCatalog',
-          name: 'Emergency Services',
-          itemListElement: [
-            {
-              '@type': 'Offer',
-              itemOffered: {
-                '@type': 'Service',
-                name: 'Monsoon Damage Repair',
-                url: 'https://rippleroofs.com/arizona/services/monsoon-damage-repair',
-              },
-            },
-          ],
-        },
-      ],
-    },
-    knowsAbout: [
-      'Tile Roofing',
-      'Foam Roofing',
-      'Monsoon Damage',
-      'Roof Replacement',
-      'SPF Roofing',
-      'Concrete Tile',
-      'Clay Tile',
-      'Asphalt Shingles',
-      'Arizona Roofing',
-    ],
-    awards: ['CertainTeed ShingleMaster Premier Certification', 'Arizona ROC 362945 Licensed'],
-    hasCredential: [
-      {
-        '@type': 'EducationalOccupationalCredential',
-        credentialCategory: 'certification',
-        name: 'CertainTeed ShingleMaster Premier',
-        recognizedBy: {
-          '@type': 'Organization',
-          name: 'CertainTeed Corporation',
-        },
-      },
-    ],
-    additionalProperty: [
-      {
-        '@type': 'PropertyValue',
-        name: 'Arizona ROC License',
-        value: BUSINESS_INFO_ARIZONA.license?.number || 'ROC 362945',
-      },
-    ],
-  };
-
   return (
     <>
       <script
@@ -438,10 +233,6 @@ export default function LocalBusinessSchema() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(texasOfficeSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(arizonaOfficeSchema) }}
       />
     </>
   );

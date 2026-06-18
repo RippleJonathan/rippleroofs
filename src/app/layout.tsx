@@ -7,7 +7,6 @@ import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
 import { FloatingCallButton } from '@/components/ui/FloatingCallButton'
 import { EmergencyBanner } from '@/components/ui/EmergencyBanner'
-import { SeasonalBanner } from '@/components/layout/SeasonalBanner'
 import { StickyMobileBar } from '@/components/ui/StickyMobileBar'
 import LocalBusinessSchema from '@/components/seo/LocalBusinessSchema'
 

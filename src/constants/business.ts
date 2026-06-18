@@ -1,10 +1,9 @@
 ﻿/**
  * Business constants for Ripple Roofing & Construction
- * Multi-state configuration for Texas and Arizona offices
- * Updated: January 5, 2026 - Added Arizona expansion
+ * Texas office configuration
  */
 
-export type StateCode = 'TX' | 'AZ';
+export type StateCode = 'TX';
 
 export interface BusinessInfo {
   name: string;
@@ -81,64 +80,18 @@ export const BUSINESS_INFO_TEXAS: BusinessInfo = {
 } as const;
 
 /**
- * Arizona Office - Glendale
- * Launched: January 2026
- */
-export const BUSINESS_INFO_ARIZONA: BusinessInfo = {
-  name: 'Ripple Roofing & Construction',
-  state: 'AZ',
-  stateName: 'Arizona',
-  office: 'Glendale Office',
-  phone: '(602) 529-3311',
-  phoneRaw: '6025293311',
-  email: 'az@rippleroofs.com',
-  address: {
-    street: '6751 N. Sunset Blvd. #320',
-    city: 'Glendale',
-    state: 'AZ',
-    zip: '85305',
-    country: 'US',
-  },
-  geo: {
-    latitude: 33.5387,
-    longitude: -112.1860,
-  },
-  hours: {
-    weekdays: 'Monday-Friday: 8:00 AM - 5:00 PM',
-    saturday: 'Saturday: 9:00 AM - 3:00 PM',
-    sunday: 'Sunday: Closed',
-    emergency: '24/7 Emergency Services Available',
-  },
-  social: {
-    facebook: 'https://www.facebook.com/rippleroofing',
-    instagram: 'https://www.instagram.com/rippleroofing',
-    linkedin: 'https://www.linkedin.com/company/ripple-roofing',
-    youtube: 'https://www.youtube.com/@rippleroofing',
-  },
-  license: {
-    number: 'ROC 362945',
-    type: 'Arizona Registrar of Contractors',
-    verifyUrl: 'https://azroc.my.site.com/AZRoc/s/contractor-search?licenseId=a0ocs00000HufhpAAB',
-  },
-} as const;
-
-/**
  * Legacy export for backward compatibility
  * Defaults to Texas office
- * @deprecated Use getBusinessInfo() instead for state-aware access
  */
 export const BUSINESS_INFO = BUSINESS_INFO_TEXAS;
 
 /**
  * Get business info for specific state
- * @param state - State code ('TX' or 'AZ')
- * @returns Business info object for the specified state
+ * @param state - State code ('TX')
+ * @returns Business info object for Texas
  */
 export function getBusinessInfo(state?: StateCode | null): BusinessInfo {
-  if (state === 'AZ') {
-    return BUSINESS_INFO_ARIZONA;
-  }
-  return BUSINESS_INFO_TEXAS; // Default to Texas
+  return BUSINESS_INFO_TEXAS;
 }
 
 /**

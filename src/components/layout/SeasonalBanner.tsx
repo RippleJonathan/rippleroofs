@@ -3,10 +3,6 @@
 import { FC, useMemo } from 'react'
 import { Container } from '@/components/layout/Container'
 
-interface SeasonalBannerProps {
-  state?: 'TX' | 'AZ'
-}
-
 interface BannerInfo {
   show: boolean
   icon: string
@@ -18,41 +14,13 @@ interface BannerInfo {
   iconColor: string
 }
 
-export const SeasonalBanner: FC<SeasonalBannerProps> = ({ state = 'TX' }) => {
+export const SeasonalBanner: FC = () => {
   const bannerInfo: BannerInfo = useMemo(() => {
     const now = new Date()
     const month = now.getMonth() + 1 // 1-12
 
-    // Arizona: Monsoon Season (June-September)
-    if (state === 'AZ' && month >= 6 && month <= 9) {
-      return {
-        show: true,
-        icon: '⛈️',
-        message: 'Monsoon Season Alert: Free roof inspections to check for storm damage',
-        ctaText: 'Schedule Inspection',
-        ctaHref: '/arizona/quote',
-        bgColor: 'bg-gradient-to-r from-blue-900 to-blue-800',
-        textColor: 'text-white',
-        iconColor: 'text-yellow-300'
-      }
-    }
-
-    // Arizona: Extreme Heat (May-October)
-    if (state === 'AZ' && ((month >= 5 && month <= 10) && !(month >= 6 && month <= 9))) {
-      return {
-        show: true,
-        icon: '☀️',
-        message: 'Extreme heat season: Check your roof before summer peaks. Free inspections available.',
-        ctaText: 'Get Free Inspection',
-        ctaHref: '/arizona/quote',
-        bgColor: 'bg-gradient-to-r from-orange-600 to-red-600',
-        textColor: 'text-white',
-        iconColor: 'text-yellow-200'
-      }
-    }
-
     // Texas: Hail Season (March-May)
-    if (state === 'TX' && month >= 3 && month <= 5) {
+    if (month >= 3 && month <= 5) {
       return {
         show: true,
         icon: '🌩️',
@@ -66,7 +34,7 @@ export const SeasonalBanner: FC<SeasonalBannerProps> = ({ state = 'TX' }) => {
     }
 
     // Texas: Hurricane Season (June-November)
-    if (state === 'TX' && month >= 6 && month <= 11) {
+    if (month >= 6 && month <= 11) {
       return {
         show: true,
         icon: '🌀',
@@ -79,16 +47,14 @@ export const SeasonalBanner: FC<SeasonalBannerProps> = ({ state = 'TX' }) => {
       }
     }
 
-    // Winter storm preparation (December-February) - Both states
+    // Winter storm preparation (December-February)
     if (month === 12 || month <= 2) {
       return {
         show: true,
         icon: '❄️',
-        message: state === 'AZ' 
-          ? 'Winter weather coming: Ensure your roof is ready for cooler temps and rain.'
-          : 'Winter storm season: Get your roof inspected before freezing temperatures arrive.',
+        message: 'Winter storm season: Get your roof inspected before freezing temperatures arrive.',
         ctaText: 'Book Inspection',
-        ctaHref: state === 'AZ' ? '/arizona/quote' : '/contact',
+        ctaHref: '/contact',
         bgColor: 'bg-gradient-to-r from-blue-700 to-indigo-700',
         textColor: 'text-white',
         iconColor: 'text-blue-200'
@@ -106,7 +72,7 @@ export const SeasonalBanner: FC<SeasonalBannerProps> = ({ state = 'TX' }) => {
       textColor: '',
       iconColor: ''
     }
-  }, [state])
+  }, [])
 
   if (!bannerInfo.show) {
     return null
