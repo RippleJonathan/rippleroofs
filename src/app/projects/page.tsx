@@ -121,12 +121,17 @@ export default function ProjectsPage() {
                   {/* Image */}
                   <div className="relative h-64 overflow-hidden bg-primary-100">
                     <Image
-                      src={project.image}
+                      src={project.photos[0]}
                       alt={`${project.title} in ${project.location}`}
                       fill
                       className="object-cover group-hover:scale-110 transition-transform duration-500"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
+                    {project.photos.length > 1 && (
+                      <div className="absolute bottom-3 right-3 bg-black/60 text-white text-xs font-semibold px-2 py-1 rounded-full">
+                        +{project.photos.length - 1} photos
+                      </div>
+                    )}
                     <div className="absolute top-4 right-4 bg-accent-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
                       {project.category}
                     </div>

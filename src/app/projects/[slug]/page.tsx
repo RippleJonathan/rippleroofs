@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     openGraph: {
       title: project.title,
       description: project.description,
-      images: [{ url: `${SITE_CONFIG.url}${project.image}` }],
+      images: [{ url: `${SITE_CONFIG.url}${project.photos[0]}` }],
     },
   }
 }
@@ -47,7 +47,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
     '@type': 'Article',
     headline: project.title,
     description: project.description,
-    image: `${SITE_CONFIG.url}${project.image}`,
+    image: `${SITE_CONFIG.url}${project.photos[0]}`,
     datePublished: project.year ? `${project.year}-06-01` : undefined,
     author: {
       '@type': 'Organization',
@@ -119,9 +119,10 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Left: Photo + Details */}
             <div className="lg:col-span-1">
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl mb-8">
+              {/* Primary photo */}
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl mb-3">
                 <Image
-                  src={project.image}
+                  src={project.photos[0]}
                   alt={`${project.title} — ${locationStr}`}
                   fill
                   className="object-cover"
@@ -129,6 +130,22 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                   priority
                 />
               </div>
+              {/* Additional photos */}
+              {project.photos.length > 1 && (
+                <div className={`grid gap-3 mb-8 ${project.photos.length === 2 ? 'grid-cols-1' : 'grid-cols-2'}`}>
+                  {project.photos.slice(1).map((photo, i) => (
+                    <div key={i} className="relative aspect-[4/3] rounded-xl overflow-hidden shadow">
+                      <Image
+                        src={photo}
+                        alt={`${project.title} — photo ${i + 2}`}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 1024px) 50vw, 20vw"
+                      />
+                    </div>
+                  ))}
+                </div>
+              )}
 
               {/* Project Details Card */}
               <div className="bg-primary-50 rounded-2xl p-6 border border-primary-100">
@@ -274,7 +291,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                 >
                   <div className="relative h-48 overflow-hidden">
                     <Image
-                      src={related.image}
+                      src={related.photos[0]}
                       alt={related.title}
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-300"

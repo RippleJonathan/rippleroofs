@@ -43,7 +43,7 @@ export const ProjectGalleryPreview: FC = () => {
               {/* Image */}
               <div className="relative h-64 overflow-hidden bg-primary-100">
                 <Image
-                  src={project.image}
+                  src={project.photos[0]}
                   alt={`${project.title} in ${project.location}`}
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"

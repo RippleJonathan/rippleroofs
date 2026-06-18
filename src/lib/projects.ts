@@ -3,9 +3,9 @@ export interface Project {
   title: string
   location: string
   neighborhood?: string
-  category: 'Metal Roofing' | 'Shingle Roofing'
+  category: 'Metal Roofing' | 'Shingle Roofing' | 'Roof Repair' | 'Storm Damage' | 'Commercial' | 'Gutters & Drainage'
   service: string
-  image: string
+  photos: string[]
   description: string
   longDescription?: string
   year?: string
@@ -27,7 +27,7 @@ export const PROJECTS: Project[] = [
     neighborhood: 'Mueller',
     category: 'Metal Roofing',
     service: 'Roof Replacement',
-    image: '/images/projects/metal-roof-austin-1.jpg',
+    photos: ['/images/projects/metal-roof-austin-1.jpg'],
     description: 'Standing seam Galvalume metal roof in Mueller, Austin. State Farm-approved hail claim with solar-ready clamp system installed.',
     longDescription: 'This Mueller homeowner had been planning rooftop solar for years — the deciding factor that pushed them from Class 4 shingles to standing seam. Clamp-based solar racking attaches to the raised seam ribs without drilling through the panel, preserving the roof warranty and making future panel installation faster and cheaper.\n\nThe roof also came out of an April 2024 hailstorm with significant damage to their existing 10-year-old architectural shingles. State Farm approved the full replacement scope, and the homeowner paid the upgrade difference to standing seam — roughly $8,000 above the shingle replacement value.\n\nWe specified Galvalume Steel in Charcoal finish — a neutral tone that satisfied the Mueller neighborhood architectural standards while complementing the home\'s modern aesthetic. Mueller\'s relatively progressive HOA had no issue with standing seam in this color.',
     year: '2024',
@@ -52,7 +52,7 @@ export const PROJECTS: Project[] = [
     neighborhood: 'Teravista',
     category: 'Metal Roofing',
     service: 'Roof Replacement',
-    image: '/images/projects/metal-roof-round-rock-1.jpg',
+    photos: ['/images/projects/metal-roof-round-rock-1.jpg'],
     description: 'Standing seam metal roof in Teravista, Round Rock. HOA architectural approval obtained for Slate Gray finish. State Farm hail claim covered full replacement.',
     longDescription: 'Teravista is one of Round Rock\'s most prominent master-planned communities with an active architectural review committee. This homeowner wanted standing seam after their neighbor\'s stone-coated steel roof came through the April 2024 hailstorm without a scratch — but they needed HOA sign-off first.\n\nWe prepared a full submittal package: panel profile drawings, Slate Gray color chip, manufacturer specifications, and a sample photo from a similar project. The Teravista ARB approved the application in 11 days. Running the HOA process in parallel with the State Farm claim allowed us to start the job the week after approval.\n\nThe 2,600 sq ft home had a moderate hip roof with two dormers, which added complexity but came in within the original estimate. State Farm covered the full replacement scope.',
     year: '2024',
@@ -77,7 +77,7 @@ export const PROJECTS: Project[] = [
     neighborhood: 'Bouldin Creek',
     category: 'Metal Roofing',
     service: 'New Installation',
-    image: '/images/projects/metal-roof-austin-2.jpg',
+    photos: ['/images/projects/metal-roof-austin-2.jpg'],
     description: 'Natural Galvalume standing seam metal roof on a modern farmhouse in Bouldin Creek, South Austin. Elective upgrade for the industrial aesthetic and 60-year lifespan.',
     longDescription: 'This Bouldin Creek homeowner wasn\'t filing a claim — they were doing a planned renovation and had wanted standing seam since they bought the house. The goal was a natural, unpainted Galvalume finish: the mill-finish aluminum-zinc alloy that develops a subtle silvery patina over time and defines the Texas modern farmhouse aesthetic.\n\nNo HOA, no insurance constraints — just executing the install correctly. The roof is a simple gable with a modest pitch, which made it ideal for showcasing the clean horizontal panel lines. We used 16" panels with concealed floating clips to allow full thermal expansion without oil-canning.\n\nNatural Galvalume won\'t fade because there\'s no paint to fade. The surface is self-healing at minor scratches and will outlast the home\'s other finishes by decades.',
     year: '2024',
@@ -104,7 +104,7 @@ export const PROJECTS: Project[] = [
     neighborhood: 'Cottonwood Creek',
     category: 'Shingle Roofing',
     service: 'Roof Replacement',
-    image: '/images/projects/shingle-roof-hutto-1.jpg',
+    photos: ['/images/projects/shingle-roof-hutto-1.jpg'],
     description: 'Class 4 impact-resistant shingle replacement in Hutto. Allstate-approved hail claim on an 8-year-old roof after a golf-ball hail event.',
     longDescription: 'An 8-year-old roof shouldn\'t need replacing — but golf-ball hail in Hutto doesn\'t care how old the shingles are. This Cottonwood Creek homeowner had standard architectural shingles that absorbed significant granule loss and impact bruising across the entire field.\n\nAllstate approved the full replacement scope without a fight — the damage documentation was thorough. Rather than replacing like-for-like with standard shingles, the homeowner upgraded to CertainTeed Landmark Pro Class 4 Impact Resistant shingles. This is the switch that pays dividends: most Texas carriers offer 15-30% discounts for Class 4 rated material, and the homeowner locked in a lower premium immediately.\n\nThe project came in at 2,200 sq ft across a standard hip roof with minimal complexity — two-day completion, passed city inspection, final Allstate paperwork submitted within the week.',
     year: '2024',
@@ -129,7 +129,7 @@ export const PROJECTS: Project[] = [
     neighborhood: 'Falcon Pointe',
     category: 'Shingle Roofing',
     service: 'Roof Replacement',
-    image: '/images/projects/shingle-roof-pflugerville-1.jpg',
+    photos: ['/images/projects/shingle-roof-pflugerville-1.jpg'],
     description: 'Architectural shingle replacement in Falcon Pointe, Pflugerville. Travelers Insurance approved full replacement after hail damage on a 12-year-old roof.',
     longDescription: 'Falcon Pointe homes from the early 2010s are at the age where their original builder-grade shingles are starting to show their years — and a hailstorm accelerates that conversation significantly. This homeowner had 12-year-old standard 3-tab shingles that were already past their effective life when hail pushed them over the edge.\n\nTravelers Insurance approved the full replacement scope. We spec\'d CertainTeed Landmark architectural shingles in Heather Blend — a warm blend that complements the brick-dominant facades common in Falcon Pointe. Architectural shingles give significantly better wind and weather performance than 3-tab, and the upgrade cost above the Travelers payout was minimal.\n\nThe 2,400 sq ft gable roof was a clean, straightforward installation: two days, no complications, one city permit, one inspection passed.',
     year: '2024',
@@ -154,7 +154,7 @@ export const PROJECTS: Project[] = [
     neighborhood: 'Harker Heights',
     category: 'Shingle Roofing',
     service: 'Roof Replacement',
-    image: '/images/projects/shingle-roof-killeen-1.jpg',
+    photos: ['/images/projects/shingle-roof-killeen-1.jpg'],
     description: 'Class 4 shingle replacement for an active duty military homeowner near Fort Cavazos in Killeen. USAA-approved hail claim completed in 4 days to meet a PCS timeline.',
     longDescription: 'Military families near Fort Cavazos deal with roofing claims differently than most homeowners — they often have a deployment or PCS window that makes timing critical. This homeowner was facing a PCS and needed the roof done before the move-out inspection.\n\nUSAA is well-regarded for claim processing speed, and they delivered here. Claim filed, adjuster inspection within 3 days, approval within a week. We coordinated the start date around the homeowner\'s schedule and completed the 2,800 sq ft installation in 4 days.\n\nUSAA homeowners near Fort Cavazos see Class 4 premium discounts consistently — it\'s worth specifying Class 4 on any roof replacement in this market. CertainTeed Landmark Pro in Weathered Wood was the color selection, a natural tone that works with the range of exterior styles common in Harker Heights.',
     year: '2024',
@@ -179,7 +179,7 @@ export const PROJECTS: Project[] = [
     neighborhood: 'Georgetown Village',
     category: 'Shingle Roofing',
     service: 'Roof Replacement',
-    image: '/images/projects/shingle-roof-georgetown-1.jpg',
+    photos: ['/images/projects/shingle-roof-georgetown-1.jpg'],
     description: 'Large architectural shingle roof replacement in Georgetown Village, Georgetown TX. Complex roofline with 5 dormers. State Farm-approved full replacement, 3,100 sq ft.',
     longDescription: 'Georgetown Village homes tend toward larger footprints and more architectural complexity than typical Round Rock builds — this project had 5 dormers, multiple hip-to-gable transitions, and a challenging valley layout that required careful planning before the first shingle came off.\n\nState Farm\'s initial adjuster scope missed two of the dormers entirely. We submitted a supplemental scope with photos and measurements documenting all five, and State Farm approved the revised scope without dispute. This is common on complex rooflines — adjusters working from aerial photos sometimes miss elements that only become visible on the roof.\n\nCertainTeed Landmark TL in Heather Blend was the material selection — a premium architectural shingle with a thicker profile than standard Landmark, giving the roof more visual depth appropriate to the home\'s scale. The project took 3 days and passed Georgetown\'s building inspection.',
     year: '2024',
@@ -204,7 +204,7 @@ export const PROJECTS: Project[] = [
     neighborhood: 'Sun City',
     category: 'Shingle Roofing',
     service: 'Roof Replacement',
-    image: '/images/projects/shingle-roof-georgetown-2.jpg',
+    photos: ['/images/projects/shingle-roof-georgetown-2.jpg'],
     description: 'Shingle roof replacement in Sun City Georgetown. Travelers Insurance claim for senior homeowner; completed in 2 days with minimal disruption.',
     longDescription: 'Sun City Georgetown is a 55+ active adult community — a different client experience than typical residential work. Homeowners here are often on fixed incomes and need the insurance claim process handled completely on their behalf, with minimal disruption to their schedule.\n\nThe Travelers claim was straightforward once we provided proper documentation. We submitted a full inspection report, photo evidence, and scope of work that aligned with Travelers\' estimating standards, which eliminated the back-and-forth that delays some claims.\n\nThe 2,000 sq ft roof was completed in 2 days, starting and finishing before noon on both days to minimize noise during afternoon hours. CertainTeed Landmark in Charcoal on a simple hip roof — no dormers, no skylights, no complications. Clean and done.',
     year: '2024',
@@ -229,7 +229,7 @@ export const PROJECTS: Project[] = [
     neighborhood: 'Star Ranch',
     category: 'Shingle Roofing',
     service: 'Roof Replacement',
-    image: '/images/projects/shingle-roof-hutto-2.jpg',
+    photos: ['/images/projects/shingle-roof-hutto-2.jpg'],
     description: 'First insurance claim experience for a Hutto Star Ranch homeowner. Allstate-approved Class 4 shingle replacement; we guided the full claim process start to finish.',
     longDescription: 'Filing your first roof insurance claim is stressful if you don\'t know the process. This Star Ranch homeowner had never made a property insurance claim and was uncertain whether the damage would even be covered. We walked through the property together, documented the hail impacts with photos and measurements, and filed the Allstate claim on their behalf.\n\nAllstate sent an adjuster within 4 days. The adjuster agreed with our scope, and we received approval for full replacement shortly after. First-time claimants sometimes worry they\'ll be dropped for filing — in Texas, insurers cannot drop you for a single weather-related claim, and we explained that clearly upfront.\n\nWe upgraded the material to CertainTeed Landmark Pro Class 4 at a modest out-of-pocket difference from the Allstate payout. The Class 4 rating earned the homeowner a 20% premium discount at renewal, recouping the upgrade cost within 3 years.',
     year: '2024',
@@ -254,7 +254,7 @@ export const PROJECTS: Project[] = [
     neighborhood: 'Emory Farms',
     category: 'Shingle Roofing',
     service: 'New Installation',
-    image: '/images/projects/shingle-roof-hutto-3.jpg',
+    photos: ['/images/projects/shingle-roof-hutto-3.jpg'],
     description: 'New construction shingle upgrade in Emory Farms, Hutto. Homeowner upgraded from builder-grade shingles to CertainTeed NorthGate Class 4 before move-in.',
     longDescription: 'Most production builders in Hutto\'s new construction corridors install the cheapest shingle that meets code — typically a standard 3-tab or entry-level architectural with no impact rating. This Emory Farms homeowner did their homework and decided to pay the upgrade cost before closing rather than deal with their first hail claim in 3-5 years.\n\nCertainTeed NorthGate is a Class 4 impact-resistant architectural shingle with a 30-year warranty and a profile that reads as a clean, standard architectural shingle to any HOA. We coordinated with the builder to schedule our work after framing and rough-in but before interior finishes — standard on these pre-close upgrades.\n\nThe insurance benefit is immediate: by reporting Class 4 material to their carrier on day one, the homeowner locked in a lower premium before ever making a claim. Over 20 years, that discount easily exceeds the upgrade cost.',
     year: '2024',
@@ -279,7 +279,7 @@ export const PROJECTS: Project[] = [
     neighborhood: 'Circle C Ranch',
     category: 'Shingle Roofing',
     service: 'Roof Replacement',
-    image: '/images/projects/shingle-roof-austin-1.jpg',
+    photos: ['/images/projects/shingle-roof-austin-1.jpg'],
     description: 'HOA-compliant shingle roof replacement in Circle C Ranch, Austin. State Farm claim supplemented to full replacement value; Heather Blend approved by Circle C ARB.',
     longDescription: 'Circle C Ranch is one of Austin\'s larger master-planned communities with a well-organized HOA. Color pre-approval is required before any roofing work — we submitted the Heather Blend sample to the architectural review board and received approval within a week before scheduling anything.\n\nThe State Farm claim was more involved. State Farm\'s initial payout was short of the full replacement scope, missing some transition flashing work and underlayment costs. We submitted a detailed supplement with the adjuster\'s own pricing database references, and State Farm approved the additional amount.\n\nThis is increasingly common: insurers\' initial estimates are often generated from aerial software that misses detail items. A contractor who knows how to supplement — professionally, with documentation — recovers the full replacement cost for the homeowner.',
     year: '2024',
@@ -304,7 +304,7 @@ export const PROJECTS: Project[] = [
     neighborhood: 'North Austin',
     category: 'Shingle Roofing',
     service: 'Roof Replacement',
-    image: '/images/projects/shingle-roof-austin-2.jpg',
+    photos: ['/images/projects/shingle-roof-austin-2.jpg'],
     description: 'Farmers Insurance roof replacement in North Austin near the Domain. Successfully negotiated RCV payout after Farmers initially offered ACV; homeowner paid deductible only.',
     longDescription: 'One of the more consequential insurance moves a homeowner can make is understanding the difference between ACV (actual cash value) and RCV (replacement cost value). This Domain-area homeowner had RCV coverage but Farmers\' initial offer was structured as ACV — a lower payout that accounts for depreciation on the existing roof.\n\nWe identified the discrepancy, confirmed the homeowner\'s policy included RCV, and submitted a formal request for reconsideration with the policy documentation. Farmers corrected the payment to full RCV within two weeks. The difference was roughly $6,200 in the homeowner\'s favor.\n\nCertainTeed Landmark Pro in Pewter Gray was the material selection — a cool neutral that works with the varied exterior styles common in North Austin\'s mid-2000s construction. The 2,300 sq ft installation was completed in two days.',
     year: '2024',
@@ -324,7 +324,15 @@ export const PROJECTS: Project[] = [
   },
 ]
 
-export const PROJECT_CATEGORIES = ['All Projects', 'Metal Roofing', 'Shingle Roofing'] as const
+export const PROJECT_CATEGORIES = [
+  'All Projects',
+  'Metal Roofing',
+  'Shingle Roofing',
+  'Roof Repair',
+  'Storm Damage',
+  'Commercial',
+  'Gutters & Drainage',
+] as const
 
 export const PROJECT_LOCATIONS = [
   'All Locations',
