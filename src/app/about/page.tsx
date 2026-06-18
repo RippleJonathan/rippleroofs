@@ -233,7 +233,7 @@ const AboutPage: FC = () => {
 
             <div className="bg-accent-600 text-white rounded-2xl p-8 text-center">
               <p className="text-xl font-semibold mb-2">
-                We've recovered thousands of dollars for homeowners whose insurance companies initially underpaid.
+                Thorough documentation before the adjuster arrives means the full scope of damage is on record — not just what's easiest to approve.
               </p>
               <p className="text-white/80">
                 If you've already received an adjuster's estimate, we'll review it for free before you sign anything.
@@ -331,33 +331,35 @@ const AboutPage: FC = () => {
           <div className="max-w-4xl mx-auto text-center mb-12">
             <p className="text-accent-600 font-semibold uppercase tracking-wide text-sm mb-3">How We Work</p>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-primary-900 mb-4">
-              Owner-Operated Doesn't Mean Understaffed
+              Quality Control on Every Job
             </h2>
             <p className="text-xl text-primary-600">
-              Jonathan is the only full-time employee of Ripple Roofing — and that's intentional. Here's why it works for you.
+              Ripple Roofing runs lean by design — experienced crews, strong oversight, and consistent standards
+              from the first inspection to the final walkthrough.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <div className="bg-white rounded-2xl p-8 shadow-sm text-center">
               <div className="text-5xl font-bold text-accent-500 mb-3">50+</div>
-              <h3 className="text-lg font-bold text-primary-900 mb-3">Trusted Subcontractor Network</h3>
+              <h3 className="text-lg font-bold text-primary-900 mb-3">Experienced Crew Network</h3>
               <p className="text-primary-600">
-                Every trade is covered by experienced subcontractors Jonathan has vetted and worked with
-                directly. When you hire Ripple Roofing, you get a qualified crew — not whoever was
+                Every trade is handled by crews we've worked with directly and vetted firsthand.
+                When you hire Ripple Roofing, you get experienced installers — not whoever was
                 available this week.
               </p>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-sm text-center">
               <div className="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-accent-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               </div>
-              <h3 className="text-lg font-bold text-primary-900 mb-3">Direct Owner Access</h3>
+              <h3 className="text-lg font-bold text-primary-900 mb-3">Leadership Oversight</h3>
               <p className="text-primary-600">
-                You're not talking to a call center. You're not handed off to a project manager you've
-                never met. Jonathan is your point of contact from inspection through final walkthrough.
+                Leadership is involved at every key stage — inspection, scope, installation, and final
+                sign-off. Quality isn't delegated away and forgotten. The standard that earns a
+                CertainTeed Premier certification gets applied on every job, regardless of size.
               </p>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-sm text-center">
@@ -366,11 +368,11 @@ const AboutPage: FC = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                 </svg>
               </div>
-              <h3 className="text-lg font-bold text-primary-900 mb-3">Scalable When It Matters</h3>
+              <h3 className="text-lg font-bold text-primary-900 mb-3">Built to Scale</h3>
               <p className="text-primary-600">
-                After a major storm event, many contractors can't handle the surge. Ripple Roofing's
-                subcontractor network scales to meet demand — without compromising the quality standards
-                Jonathan enforces on every job.
+                After a major storm event, many contractors can't handle the volume. Our crew network
+                scales to meet demand without compromising the installation standards and quality
+                controls we hold every project to.
               </p>
             </div>
           </div>
