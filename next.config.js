@@ -23,16 +23,44 @@ const nextConfig = {
   // Redirects for old site URLs
   async redirects() {
     return [
-      // Old "about-2" pages
+      // Old "about-2" pages (with and without trailing slash)
+      {
+        source: '/about-2/',
+        destination: '/about',
+        permanent: true,
+      },
       {
         source: '/about-2',
         destination: '/about',
         permanent: true,
       },
-      // Old residential roofing pages
+      // Old residential roofing pages (with and without trailing slash)
+      {
+        source: '/residential-roofing-2/',
+        destination: '/services/residential-roofing',
+        permanent: true,
+      },
       {
         source: '/residential-roofing-2',
         destination: '/services/residential-roofing',
+        permanent: true,
+      },
+      // Old service page with trailing slash
+      {
+        source: '/service/',
+        destination: '/services',
+        permanent: true,
+      },
+      // Old FAQ with trailing slash
+      {
+        source: '/faq/',
+        destination: '/faq',
+        permanent: true,
+      },
+      // Old contact with trailing slash (duplicate of entry below but catches www crawl)
+      {
+        source: '/services/',
+        destination: '/services',
         permanent: true,
       },
       // Old tag pages (redirect to blog)

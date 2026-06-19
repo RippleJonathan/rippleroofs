@@ -56,6 +56,7 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
       title: `${categoryName} Articles | Ripple Roofing`,
       description,
     },
+    robots: { index: false, follow: false },
   }
 }
 
