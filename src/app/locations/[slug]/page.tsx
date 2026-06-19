@@ -8691,11 +8691,6 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
                   "description": service.shortDescription
                 }
               }))
-            },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": businessRating.ratingValue,
-              "reviewCount": businessRating.reviewCount
             }
           })
         }}
@@ -8722,48 +8717,7 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
               "bestRating": "5",
               "worstRating": "1",
               "reviewCount": businessRating.reviewCount
-            },
-            "review": [
-              {
-                "@type": "Review",
-                "author": {
-                  "@type": "Person",
-                  "name": "Sarah Martinez"
-                },
-                "reviewRating": {
-                  "@type": "Rating",
-                  "ratingValue": "5",
-                  "bestRating": "5"
-                },
-                "reviewBody": "Ripple Roofing did an outstanding job on our roof replacement. Professional, fast, and thorough cleanup. Highly recommend!"
-              },
-              {
-                "@type": "Review",
-                "author": {
-                  "@type": "Person",
-                  "name": "Michael Thompson"
-                },
-                "reviewRating": {
-                  "@type": "Rating",
-                  "ratingValue": "5",
-                  "bestRating": "5"
-                },
-                "reviewBody": "Best roofing company in Central Texas. They worked with our insurance and made the storm damage claim process easy."
-              },
-              {
-                "@type": "Review",
-                "author": {
-                  "@type": "Person",
-                  "name": "Jennifer Lopez"
-                },
-                "reviewRating": {
-                  "@type": "Rating",
-                  "ratingValue": "5",
-                  "bestRating": "5"
-                },
-                "reviewBody": "CertainTeed certified contractor with excellent workmanship. Our new roof looks amazing and the warranty is fantastic."
-              }
-            ]
+            }
           })
         }}
       />
