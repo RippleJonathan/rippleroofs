@@ -90,16 +90,6 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://lh3.googleusercontent.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-        
-        {/* Preload LCP image for faster render - CRITICAL */}
-        <link
-          rel="preload"
-          as="image"
-          href="/images/hero/hero-bg.jpg"
-          fetchPriority="high"
-          // @ts-ignore - Next.js handles image optimization
-          imageSrcSet="/images/hero/hero-bg.jpg"
-        />
       </head>
       <body className="font-sans">
         {/* Local Business Schema */}
