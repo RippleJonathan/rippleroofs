@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { Container } from '@/components/layout/Container'
 import { getAllPostSlugs, getPostBySlug, getAllPosts } from '@/lib/blog'
 import { MDXRemote } from 'next-mdx-remote/rsc'
+import remarkGfm from 'remark-gfm'
 import Image from 'next/image'
 import Link from 'next/link'
 import { RelatedPosts } from '@/components/blog/RelatedPosts'
@@ -211,7 +212,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
 
               {/* MDX Content */}
               <article className="prose prose-lg max-w-none prose-headings:font-display prose-headings:text-primary-900 prose-p:text-primary-700 prose-a:text-accent-600 hover:prose-a:text-accent-700 prose-strong:text-primary-900 prose-ul:text-primary-700 prose-ol:text-primary-700 prose-headings:scroll-mt-24">
-                <MDXRemote source={post.content} />
+                <MDXRemote source={post.content} options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }} />
               </article>
 
             {/* Tags */}
