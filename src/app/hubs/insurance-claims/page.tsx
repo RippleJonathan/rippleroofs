@@ -7,8 +7,8 @@ import { Button } from '@/components/ui/Button'
 
 export const metadata: Metadata = {
   title: 'Roof Insurance Claims Texas: Carrier Guides & Expert Help Hub',
-  description: 'Complete resource for Texas roof insurance claims. Carrier-specific guides for State Farm, USAA, Allstate, Farmers, and Travelers. How to document damage, handle adjusters, and get a fair settlement in Central Texas.',
-  keywords: 'roof insurance claim texas, hail damage insurance claim, state farm roof claim, usaa roof claim, allstate roof claim, farmers insurance roof claim, travelers roof claim, insurance adjuster, roof insurance settlement',
+  description: 'Complete resource for Texas roof insurance claims. Carrier-specific guides for State Farm, USAA, Allstate, Farmers, Travelers, Liberty Mutual, and Nationwide. How to document damage, handle adjusters, and get a fair settlement in Central Texas.',
+  keywords: 'roof insurance claim texas, hail damage insurance claim, state farm roof claim, usaa roof claim, allstate roof claim, farmers insurance roof claim, travelers roof claim, liberty mutual roof claim, nationwide roof claim, insurance adjuster, roof insurance settlement',
   alternates: {
     canonical: 'https://rippleroofs.com/hubs/insurance-claims'
   },
@@ -56,6 +56,20 @@ const CARRIER_POSTS = [
     description: 'Travelers\' weather data verification process, functional vs. cosmetic damage, and their depreciation approach.',
     badge: 'Data-Driven Process',
     badgeColor: 'bg-orange-100 text-orange-700',
+  },
+  {
+    slug: 'liberty-mutual-roof-insurance-claim-texas',
+    carrier: 'Liberty Mutual',
+    description: 'Liberty Mutual\'s roof payment schedule endorsement, aggressive depreciation on initial scopes, and how to supplement effectively in Texas.',
+    badge: 'Watch: Payment Schedule',
+    badgeColor: 'bg-yellow-100 text-yellow-800',
+  },
+  {
+    slug: 'nationwide-roof-insurance-claim-texas',
+    carrier: 'Nationwide',
+    description: 'Nationwide\'s roof age payment schedule, independent adjuster variability, and the appraisal clause for disputed claims.',
+    badge: 'Watch: Age Schedule',
+    badgeColor: 'bg-teal-100 text-teal-700',
   },
 ]
 
