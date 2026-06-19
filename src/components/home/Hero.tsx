@@ -20,10 +20,8 @@ export const Hero: FC = () => {
           priority
           fetchPriority="high"
           className="object-cover"
-          quality={80}
+          quality={65}
           sizes="100vw"
-          placeholder="blur"
-          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
         />        {/* Gradient Overlay - Simplified for mobile performance */}
         <div className="absolute inset-0 bg-gradient-to-r from-primary-900/90 to-primary-900/70" />
       </div>
@@ -49,7 +47,7 @@ export const Hero: FC = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
                 <Link
                   href="/services/residential-roofing"
-                  className="rounded-2xl border border-white/15 bg-white/10 px-5 py-4 backdrop-blur-sm transition hover:bg-white/20"
+                  className="rounded-2xl border border-white/15 bg-white/15 px-5 py-4 transition hover:bg-white/25"
                 >
                   <div className="text-xs font-bold uppercase tracking-[0.18em] text-accent-300 mb-2">
                     For Homeowners
@@ -61,7 +59,7 @@ export const Hero: FC = () => {
                 </Link>
                 <Link
                   href="/services/commercial-roofing"
-                  className="rounded-2xl border border-white/15 bg-white/10 px-5 py-4 backdrop-blur-sm transition hover:bg-white/20"
+                  className="rounded-2xl border border-white/15 bg-white/15 px-5 py-4 transition hover:bg-white/25"
                 >
                   <div className="text-xs font-bold uppercase tracking-[0.18em] text-accent-300 mb-2">
                     For Businesses
@@ -97,19 +95,19 @@ export const Hero: FC = () => {
 
             {/* Trust Indicators */}
             <div className="mt-12 flex flex-wrap gap-6 text-primary-100 animate-fade-up" style={{ animationDelay: '0.3s' }}>
-              <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
+              <div className="flex items-center gap-2 bg-white/15 px-4 py-2 rounded-full">
                 <svg className="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 <span className="text-sm font-semibold">5-Star Rated Service</span>
               </div>
-              <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
+              <div className="flex items-center gap-2 bg-white/15 px-4 py-2 rounded-full">
                 <svg className="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 <span className="text-sm font-semibold">Top 1% Certified Master</span>
               </div>
-              <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
+              <div className="flex items-center gap-2 bg-white/15 px-4 py-2 rounded-full">
                 <svg className="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
