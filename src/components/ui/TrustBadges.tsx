@@ -1,6 +1,4 @@
-﻿'use client'
-
-import { FC } from 'react'
+﻿import { FC } from 'react'
 import { Container } from '@/components/layout/Container'
 import { getBusinessRatingSnapshot } from '@/constants/business'
 

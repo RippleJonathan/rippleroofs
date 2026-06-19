@@ -1,6 +1,4 @@
-﻿'use client'
-
-import { FC } from 'react'
+﻿import { FC } from 'react'
 
 export const FeaturedIn: FC = () => {
   return (
