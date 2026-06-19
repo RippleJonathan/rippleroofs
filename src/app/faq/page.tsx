@@ -1,139 +1,153 @@
-﻿import type { Metadata } from 'next'
+import type { Metadata } from 'next'
 import { Container } from '@/components/layout/Container'
 import { FAQAccordion } from '@/components/faq/FAQAccordion'
 
 export const metadata: Metadata = {
-  title: 'Frequently Asked Questions',
-  description: 'Get answers to common questions about roofing services, costs, warranties, and more. Expert advice from Central Texas roofing professionals.',
+  title: 'Roofing FAQ: Costs, Insurance Claims & Contractors | Central Texas',
+  description: 'Expert answers to the most common roofing questions for Central Texas homeowners — insurance claims, roof replacement costs, what to say to adjusters, how to choose a contractor, and more.',
+  alternates: {
+    canonical: 'https://rippleroofs.com/faq'
+  },
   openGraph: {
-    title: 'FAQ - Ripple Roofing & Construction',
-    description: 'Common questions about roofing answered by our experts',
+    title: 'Roofing FAQ | Ripple Roofing — Central Texas',
+    description: 'Answers to the most common roofing questions for Central Texas homeowners.',
   },
 }
 
 const faqCategories = [
   {
-    category: 'General Roofing',
+    category: 'Insurance Claims & Storm Damage',
     questions: [
       {
-        question: 'How often should I replace my roof?',
-        answer: 'The lifespan of your roof depends on the material. Asphalt shingle roofs typically last 20-25 years, metal roofs 40-70 years, and tile roofs can last 50+ years. However, factors like weather conditions, maintenance, and installation quality can affect this timeline. We recommend a professional inspection every 3-5 years to assess your roof\'s condition.',
+        question: 'What should you not say to a roof insurance adjuster?',
+        answer: 'Avoid saying "I don\'t think there\'s much damage" before the adjuster has fully inspected — you may be right about cosmetic areas but wrong about the full scope. Don\'t accept the first estimate as final before comparing it to a contractor\'s documented scope. Don\'t say the damage looks old or was pre-existing — leave condition assessments to the adjuster and your contractor. And don\'t sign anything that waives your right to supplement or dispute the claim before the work is complete and you\'ve reviewed the settlement.',
       },
       {
-        question: 'How do I know if I need a roof repair or replacement?',
-        answer: 'Signs you need repair include: missing or damaged shingles, minor leaks, granules in gutters, or localized damage. You likely need replacement if: your roof is over 20 years old, has widespread damage, multiple leaks, sagging areas, or extensive water damage. Our free inspection will help determine the best solution for your situation.',
+        question: 'What is the 25% rule for roofing in Texas?',
+        answer: 'The 25% rule is an insurance industry threshold: if repairing a roof costs more than 25% of the full replacement cost, many insurers consider full replacement rather than partial repair to be the appropriate remedy. In Texas, this rule is often cited in conjunction with functional damage assessments — if a significant portion of the roof was damaged in a storm, the adjuster may opt for replacement rather than spot repairs. Your contractor should document damage to every section to establish the full scope.',
       },
       {
-        question: 'How long does a roof replacement take?',
-        answer: 'Most residential roof replacements take 1-3 days, depending on the size of your home, roof complexity, weather conditions, and material choice. We\'ll provide a specific timeline during your estimate and keep you informed throughout the process.',
+        question: 'Is it worth filing a roof insurance claim for hail damage in Texas?',
+        answer: 'In most cases, yes — if you have genuine storm damage and an RCV (Replacement Cost Value) policy. Texas law gives homeowners two years to file from the date of loss, and most major hailstorm events are declared catastrophe events by carriers, which typically doesn\'t affect individual renewal rates. Get a free inspection first. If the damage doesn\'t meet your deductible or is purely cosmetic under your policy, we\'ll tell you that honestly so you can make an informed decision.',
       },
       {
-        question: 'Will you work in bad weather?',
-        answer: 'Safety is our priority. We don\'t install roofs during heavy rain, high winds, or extreme temperatures, as these conditions can compromise installation quality and worker safety. However, we offer 24/7 emergency tarping services to protect your home until conditions improve.',
+        question: 'How long does a roof insurance claim take in Texas?',
+        answer: 'Under the Texas Prompt Payment Act, insurers must acknowledge your claim within 15 days of filing, accept or deny within 15 business days of receiving proof of loss, and pay within 5 business days of acceptance. In practice, major storm events stretch these timelines considerably — adjusters are in high demand and scheduling can take 2-4 weeks. Once settled, most roof replacements complete within 1-2 weeks of material availability.',
+      },
+      {
+        question: 'Can my insurance company drop me for filing a roof claim in Texas?',
+        answer: 'Texas carriers can non-renew policies after claims, but they cannot cancel mid-term for filing a weather claim. After a major catastrophe event (like the April 2026 Williamson County storms), claims are typically coded as CAT events and don\'t trigger individual non-renewals. Isolated, non-CAT weather claims can affect your renewal eligibility. If damage is minor and close to your deductible, discuss with your agent before filing.',
+      },
+      {
+        question: 'Do I have to use the insurance company\'s preferred contractor?',
+        answer: 'No. Texas law gives you the right to choose any licensed roofing contractor. Insurance carriers may suggest preferred contractor networks, but participation is entirely voluntary. Using a carrier-preferred contractor does not affect your settlement amount — you\'re entitled to the full Xactimate scope regardless of which contractor you choose.',
       },
     ],
   },
   {
-    category: 'Cost & Payment',
+    category: 'Costs & Pricing',
     questions: [
       {
-        question: 'How much does a new roof cost?',
-        answer: 'Roof replacement costs vary based on several factors: roof size, material choice, complexity, accessibility, and any necessary repairs to underlying structures. On average, homeowners can expect to invest $8,000-$25,000+ for a complete replacement. We provide free, detailed estimates that break down all costs with no hidden fees.',
+        question: 'Is $30,000 too much for a roof in Texas?',
+        answer: 'Not necessarily — it depends heavily on home size, material, and complexity. For a 2,000–2,500 sq ft home with standard architectural shingles, $14,000–$22,000 is typical in Central Texas. $30,000 at that size would be high for shingles but reasonable for Class 4 impact shingles or stone-coated steel on a complex roof. For standing seam metal roofing on a 2,000–2,500 sq ft home, $28,000–$46,000 is the expected range. Always get itemized proposals so you understand what drives the number.',
       },
       {
-        question: 'Do you offer financing options?',
-        answer: 'Yes! We partner with Pure Finance to offer flexible financing options with competitive rates. You can apply online and get approved quickly. We believe quality roofing should be accessible, so we work with various budgets to find a solution that fits your financial situation.',
+        question: 'How much does it cost to replace a roof on a 2,200 square foot home in Texas?',
+        answer: 'For a 2,200 sq ft home in Central Texas, expect: standard architectural shingles — $14,000–$20,000; Class 4 impact-resistant shingles — $16,000–$24,000; stone-coated steel — $26,000–$40,000; standing seam metal — $31,000–$51,000. These are installed prices including tear-off, deck inspection, all materials, labor, permit, and cleanup. Roof pitch complexity, number of penetrations (chimneys, skylights, dormers), and material lead times affect final cost.',
       },
       {
-        question: 'Do you work with insurance companies?',
-        answer: 'Absolutely! We have extensive experience working with insurance companies on storm damage claims. We can help document damage, provide detailed estimates, and work directly with your adjuster to ensure you get the coverage you deserve. Our goal is to make the insurance process as smooth as possible.',
+        question: 'How much does it cost to shingle a 1,200 square foot roof?',
+        answer: 'A 1,200 sq ft home in Central Texas would expect to pay $9,500–$14,000 for standard architectural shingles installed, or $11,000–$17,000 for Class 4 impact-resistant shingles. The square footage of your living space and your roof\'s actual surface area aren\'t the same — a 1,200 sq ft home might have 1,400–1,800 sq ft of actual roof surface depending on pitch and overhangs. We measure the actual roof, not the footprint.',
       },
       {
-        question: 'Is a deposit required?',
-        answer: 'We typically require a deposit to secure materials and schedule your project. The deposit amount varies based on project size and scope. We never require full payment upfront – final payment is due upon satisfactory completion of the work.',
+        question: 'What is the cheapest time of year to get a new roof in Texas?',
+        answer: 'Late fall and winter (November through February) typically have lower demand and sometimes better contractor availability in Central Texas. However, the price difference is modest — material costs are set by manufacturers, not season, and quality contractors stay busy year-round. The biggest pricing factor is storm events: after a major hailstorm, demand spikes and some contractors raise prices. Getting ahead of storm season or moving quickly after settlement (rather than waiting) is more impactful than timing the calendar.',
+      },
+      {
+        question: 'How much does a metal roof save on insurance in Texas?',
+        answer: 'Class 4 impact-resistant metal roofing (standing seam or stone-coated steel) qualifies for 15–35% premium discounts with most major Texas carriers. On a $4,000/year homeowners policy, that\'s $600–$1,400/year in savings. Over a 50-year metal roof lifespan, that\'s $30,000–$70,000 in cumulative premium savings — often more than offsetting the installation premium over asphalt. Contact your carrier to confirm your specific discount after installation.',
       },
     ],
   },
   {
-    category: 'Materials & Installation',
+    category: 'Choosing a Contractor',
     questions: [
       {
-        question: 'What roofing materials do you recommend?',
-        answer: 'For Central Texas, we typically recommend architectural asphalt shingles (great value, 25-30 year lifespan), metal roofing (excellent for Texas heat, energy-efficient, 40-70 years), or tile roofing (premium aesthetic, very durable). As a CertainTeed ShingleMaster Premier contractor, we specialize in high-quality shingle installations with industry-leading warranties.',
+        question: 'How do you tell if a roofer is lying to you?',
+        answer: 'Watch for these: vague or verbal-only proposals (legitimate contractors provide written, itemized scopes); pressure to sign immediately before a storm-chasing "deal" expires; claims they can waive your insurance deductible (this is insurance fraud in Texas and illegal); no physical local address or Texas registration; asking for full payment upfront. A trustworthy contractor will welcome your questions, provide references, pull permits in their name, and never pressure you to sign on the spot.',
       },
       {
-        question: 'Are CertainTeed shingles better than other brands?',
-        answer: 'CertainTeed is one of North America\'s leading roofing manufacturers, known for durability, aesthetic options, and comprehensive warranties. As a ShingleMaster Premier contractor, we\'ve been specially trained in CertainTeed products and can offer enhanced warranties. We also work with other premium brands to meet your specific needs and preferences.',
+        question: 'What should you not say to a roofing contractor?',
+        answer: 'Don\'t say "just do whatever you think is best" without getting it in writing first — verbal agreements create misunderstandings. Don\'t say you\'ll pay cash to avoid permits (permits protect you, not just the contractor). Don\'t reveal your insurance settlement amount before getting an independent estimate — your coverage is your business. And don\'t agree to let a contractor who "happens to be in the neighborhood" inspect your roof without verifying their license and insurance first.',
       },
       {
-        question: 'Can I install a new roof over my existing one?',
-        answer: 'While it\'s sometimes possible to install over one existing layer, we generally don\'t recommend it. Removing old roofing allows us to inspect the decking for damage, ensures proper installation, maximizes your new roof\'s lifespan, and may be required by local building codes. A proper tear-off also keeps your roof lighter and extends its life.',
+        question: 'What questions should I ask a roofing contractor before hiring?',
+        answer: 'Ask: Are you registered with the Texas Department of Insurance as a roofing contractor? (Required in most TX cities.) Can I see your general liability and workers\' compensation certificates? Do you pull permits and schedule inspections, or do I have to? What manufacturer are you certified with, and what warranty does that enable? How do you handle supplements with my insurance carrier? Can you provide references from recent jobs in my neighborhood? Get specific answers, not vague reassurances.',
       },
       {
-        question: 'Do you handle permits and inspections?',
-        answer: 'Yes! We handle all necessary permits and ensure your project meets local building codes. We coordinate all required inspections and provide you with copies of all documentation. This is included in our service – you don\'t need to worry about navigating the permit process.',
+        question: 'Is CertainTeed ShingleMaster Premier the best shingle certification?',
+        answer: 'CertainTeed\'s ShingleMaster Premier is the highest tier of their three-level certification program — fewer than 1% of CertainTeed contractors nationwide hold it. It requires demonstrated installation volume, inspector verification, and ongoing training. Premier certification enables the SureStart PLUS warranty, which is CertainTeed\'s best coverage and extends the manufacturer\'s material warranty with enhanced protection. For a homeowner, it means your contractor was vetted, not just signed up.',
       },
     ],
   },
   {
-    category: 'Warranties & Guarantees',
+    category: 'Materials & Performance',
     questions: [
       {
-        question: 'What kind of warranty do you offer?',
-        answer: 'We offer comprehensive warranty coverage: Manufacturer\'s Material Warranty (varies by product, typically 25-50 years), Our Workmanship Warranty (covers installation for 10 years), and Enhanced Warranties (available as CertainTeed ShingleMaster Premier for qualifying installations). We stand behind our work and will address any installation-related issues.',
+        question: 'What color roof increases home value in Texas?',
+        answer: 'Neutral, coordinated tones consistently outperform trendy colors at resale — Charcoal Gray, Medium Bronze, Weathered Wood, and Slate remain preferred by buyers in Central Texas markets. For metal roofing, Dark Bronze and Charcoal test well with modern and transitional architecture common in Austin suburbs. The bigger driver of value is material quality: a Class 4 shingle or metal roof with documented impact resistance and remaining warranty life is a meaningful selling point regardless of color. Buyers and inspectors look for this.',
       },
       {
-        question: 'What does your warranty cover?',
-        answer: 'Our workmanship warranty covers any defects or issues related to the installation process, including improper nailing, flashing errors, or other installation mistakes. Manufacturer warranties cover material defects. We provide detailed warranty documentation at project completion explaining all coverage.',
+        question: 'How long do roofs actually last in Central Texas heat?',
+        answer: 'Shorter than manufacturer ratings suggest. Standard architectural shingles rated for 30 years often perform 18–22 years in Texas due to UV intensity, thermal cycling, and heat. Class 4 impact shingles do better — 25–35 years is realistic. Stone-coated steel: 40–55 years. Standing seam metal: 50–70 years. The Texas climate specifically degrades asphalt through blistering, granule loss, and accelerated thermal expansion. This is the core reason metal roofing ROI improves significantly in our market versus northern states.',
       },
       {
-        question: 'Will my warranty be voided if I sell my home?',
-        answer: 'No! Our warranties and most manufacturer warranties are transferable to new homeowners, which can be a valuable selling point. We provide all necessary documentation for warranty transfer. Some enhanced warranties may have specific transfer procedures – we\'ll explain these at project completion.',
+        question: 'What is Class 4 impact resistance and why does it matter in Texas?',
+        answer: 'Class 4 is the highest UL 2218 impact resistance rating, tested by dropping a 2-inch steel ball from 20 feet. Shingles or metal panels that pass retain waterproofing after impact. In Texas — which sits in national hail alley — Class 4 rating qualifies for insurance premium discounts (15–35% with most carriers) and is the threshold that prevents functional damage on all but the most extreme hail events. It\'s the single most important specification to ask about when replacing a roof in Central Texas.',
+      },
+      {
+        question: 'Does a new roof affect my homeowners insurance premium?',
+        answer: 'Yes, materially. A new roof — regardless of material — typically triggers a premium review. Older roofs (15+ years) often carry a surcharge or ACV-only coverage restriction. A new Class 4 shingle or metal roof can qualify for 15–35% discounts with most major Texas carriers. Notify your insurer within 30 days of completion and provide the post-installation documentation (material specs, impact rating, permit). We provide this documentation as part of every job closeout.',
       },
     ],
   },
   {
-    category: 'Emergency Services',
+    category: 'Emergency Services & Storm Response',
     questions: [
       {
-        question: 'Do you offer 24/7 emergency services?',
-        answer: 'Yes! We understand that roof emergencies don\'t wait for business hours. We offer 24/7 emergency response for situations like severe storm damage, sudden leaks, or fallen trees. Call us anytime at (512) 763-5277 and we\'ll dispatch a team to assess and secure your property.',
+        question: 'What should I do immediately after a hailstorm damages my roof?',
+        answer: 'Don\'t go on the roof yourself — assess from ground level only. Take dated photos of any visible damage: dented gutters, dings on AC units, and damaged landscaping all corroborate a storm event for your claim. Call for a professional inspection before contacting your insurer if possible — our inspection documents the damage properly before an adjuster scopes it. Then file your claim promptly. Texas law gives you two years, but filing soon preserves your ability to establish damage was storm-related, not pre-existing.',
       },
       {
-        question: 'How quickly can you respond to emergencies?',
-        answer: 'We prioritize emergency calls and typically respond within 2-4 hours for critical situations. Our first priority is securing your property with tarping or temporary repairs to prevent further damage. We\'ll then schedule permanent repairs as quickly as possible.',
+        question: 'Do you offer 24/7 emergency tarping?',
+        answer: 'Yes. If a storm has left your home exposed — missing shingles, damaged decking, holes from fallen branches — we provide emergency tarping to prevent interior water damage while waiting for a permanent repair scope and insurance settlement. Call (512) 763-5277 anytime.',
       },
       {
-        question: 'What constitutes a roofing emergency?',
-        answer: 'Contact us immediately for: Active leaking causing interior damage, large sections of missing roofing, structural damage or sagging, holes in the roof, storm damage with exposed areas, fallen trees or branches penetrating the roof. Don\'t wait – these situations worsen quickly and can cause extensive interior damage.',
+        question: 'How do I know if my roof actually needs replacement or just repair after a storm?',
+        answer: 'This depends on storm severity, roof age, and damage distribution. If hail impacts are distributed across the entire roof surface and the shingles are losing granule protection, replacement is typically warranted — partial repairs leave the remaining surface compromised. If damage is isolated to a few sections (e.g., one slope was sheltered), repair may be appropriate. A professional inspection with photos and a written scope is the only reliable way to know. We document everything and give you an honest assessment.',
       },
     ],
   },
   {
-    category: 'Process & Timeline',
+    category: 'Warranties & CertainTeed Certification',
     questions: [
       {
-        question: 'What\'s involved in the free inspection?',
-        answer: 'Our comprehensive inspection includes: visual examination of all roof surfaces, checking for damaged or missing shingles, inspecting flashing around chimneys and vents, evaluating gutters and drainage, looking for signs of leaks or water damage, assessing ventilation, and documenting findings with photos. We provide a detailed report and honest recommendations.',
+        question: 'What warranty does a CertainTeed ShingleMaster Premier contractor offer?',
+        answer: 'Premier certification enables the SureStart PLUS warranty — CertainTeed\'s highest tier. It covers both materials and workmanship, is transferable to the next homeowner (a real selling point), and extends material coverage beyond the standard warranty. The specifics depend on the product line installed. We provide full warranty documentation at project completion and explain exactly what\'s covered and for how long.',
       },
       {
-        question: 'How soon can you start my project?',
-        answer: 'Timeline depends on project scope and our current schedule. Emergency repairs can often begin within 24-48 hours. Full replacements typically start within 1-2 weeks of approval. During peak storm season, timelines may extend. We\'ll provide a specific start date when you approve your estimate.',
+        question: 'Is a roofing warranty transferable when I sell my home?',
+        answer: 'CertainTeed\'s SureStart PLUS warranty is transferable to new homeowners — this is one of its key advantages. Manufacturer material warranties from other brands are typically also transferable with notice. Our workmanship warranty transfers as well. A documented, in-force warranty is a verifiable selling point that buyers\' inspectors and real estate agents can confirm. We provide all transfer documentation.',
       },
       {
-        question: 'Do I need to be home during the work?',
-        answer: 'You don\'t need to be present during the entire project, but we recommend being available for the initial walkthrough and final inspection. We\'ll coordinate with you on key milestones. Our crews are professional, respectful of your property, and will keep you updated on progress.',
-      },
-      {
-        question: 'How will you protect my property and landscaping?',
-        answer: 'We take protection seriously: tarps protect landscaping and AC units, magnetic tools collect metal debris, careful material handling prevents damage, daily site cleanup, and final thorough inspection with a magnet roller. We treat your property as if it were our own.',
+        question: 'What voids a roofing warranty in Texas?',
+        answer: 'Common warranty voidances: improper ventilation (most manufacturers require specific attic ventilation standards); installation of equipment that penetrates the roof without approved flashing (solar, HVAC, etc.); re-coating or painting the roof surface without manufacturer approval; roof traffic without protection; and installation over materials the manufacturer doesn\'t approve. For metal roofing, solar clamp installation on standing seam does NOT void the warranty — this is specifically designed into the system.',
       },
     ],
   },
 ]
 
 export default function FAQPage() {
-  // FAQ Schema for SEO
   const faqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -151,51 +165,47 @@ export default function FAQPage() {
 
   return (
     <>
-      {/* Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary-900 via-primary-800 to-primary-900 text-white py-20">
         <Container>
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6">
-              Frequently Asked Questions
+              Roofing Questions, Straight Answers
             </h1>
             <p className="text-xl text-primary-100 mb-8">
-              Expert answers to your roofing questions from Central Texas's trusted professionals
+              Real answers for Central Texas homeowners — insurance claims, costs, contractors, and materials.
+              No fluff.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4">
               <a href="/contact">
-                <button className="btn btn-primary">
-                  Get Free Inspection
-                </button>
+                <button className="btn btn-primary">Get Free Inspection</button>
               </a>
-              <a href={`tel:5127635277`}>
-                <button className="btn btn-secondary">
-                  Call: (512) 763-5277
-                </button>
+              <a href="tel:5127635277">
+                <button className="btn btn-secondary">Call: (512) 763-5277</button>
               </a>
             </div>
           </div>
         </Container>
       </section>
 
-      {/* FAQ Content */}
       <section className="py-20 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            {/* Intro */}
             <div className="mb-12 text-center">
               <p className="text-lg text-primary-700">
-                We've compiled answers to the most common questions we receive. Don't see your
-                question? <a href="/contact" className="text-accent-600 hover:text-accent-700 font-semibold">Contact us</a> – we're happy to help!
+                These are the questions we actually get from Central Texas homeowners — especially after hailstorms.
+                Don't see yours?{' '}
+                <a href="/contact" className="text-accent-600 hover:text-accent-700 font-semibold">
+                  Contact us
+                </a>{' '}
+                and we'll answer it directly.
               </p>
             </div>
 
-            {/* FAQ Categories */}
             <div className="space-y-12">
               {faqCategories.map((category, idx) => (
                 <div key={idx}>
@@ -207,21 +217,18 @@ export default function FAQPage() {
               ))}
             </div>
 
-            {/* CTA */}
             <div className="mt-16 bg-gradient-to-r from-accent-50 to-primary-50 rounded-2xl p-8 md:p-12 text-center">
               <h2 className="text-2xl md:text-3xl font-display font-bold text-primary-900 mb-4">
                 Still Have Questions?
               </h2>
               <p className="text-lg text-primary-700 mb-6">
-                Our team is here to help! Get in touch for personalized answers and a free, no-obligation inspection.
+                We'll give you a straight answer — no sales pressure. Free inspection, honest assessment.
               </p>
               <div className="flex flex-wrap items-center justify-center gap-4">
                 <a href="/contact">
-                  <button className="btn btn-primary btn-lg">
-                    Schedule Free Inspection
-                  </button>
+                  <button className="btn btn-primary btn-lg">Schedule Free Inspection</button>
                 </a>
-                <a href={`tel:5127635277`}>
+                <a href="tel:5127635277">
                   <button className="btn btn-secondary btn-lg">
                     <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
