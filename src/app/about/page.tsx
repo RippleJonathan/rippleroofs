@@ -7,9 +7,9 @@ import { Button } from '@/components/ui/Button'
 import { SITE_CONFIG } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'About Ripple Roofing & Construction | Founded in Round Rock, TX',
+  title: 'About Ripple Roofing | CertainTeed Premier Roofer in Round Rock, TX',
   description:
-    'Ripple Roofing was founded in Round Rock in 2024 by a Navy veteran and Texas A&M grad who saw how corporate roofing companies fail homeowners. CertainTeed ShingleMaster Premier certified — the highest of three levels.',
+    'Navy veteran-owned roofing company in Round Rock, TX. One of fewer than 3% of contractors to hold CertainTeed ShingleMaster Premier certification. Honest insurance claims, real advocacy — no deductible waiving, ever.',
   keywords:
     'about Ripple Roofing, Round Rock roofing company, CertainTeed ShingleMaster Premier, owner-operated roofer Central Texas, roof insurance claim advocate Texas',
   openGraph: {

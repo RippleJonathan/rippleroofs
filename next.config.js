@@ -201,21 +201,27 @@ const nextConfig = {
         destination: '/',
         permanent: true,
       },
-      // Arizona service URLs that don't exist → Arizona page
+      // Arizona service URLs that don't exist → services page
       {
         source: '/arizona/services/:slug*',
-        destination: '/arizona',
+        destination: '/services',
         permanent: true,
       },
-      // Hubs pages → relevant service pages
+      // Arizona city pages → homepage
+      {
+        source: '/arizona/:slug*',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/arizona',
+        destination: '/',
+        permanent: true,
+      },
+      // Old storm-damage hub → service page
       {
         source: '/hubs/storm-damage',
-        destination: '/services/storm-damage',
-        permanent: true,
-      },
-      {
-        source: '/hubs/:slug*',
-        destination: '/',
+        destination: '/services/storm-damage-restoration',
         permanent: true,
       },
     ]
