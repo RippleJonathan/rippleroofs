@@ -23,6 +23,22 @@ const nextConfig = {
   // Redirects for old site URLs
   async redirects() {
     return [
+      // Removed San Antonio contractor posts (not our service area)
+      {
+        source: '/blog/best-roofing-contractor-san-antonio',
+        destination: '/blog',
+        permanent: true,
+      },
+      {
+        source: '/blog/san-antonio-roof-repair-guide',
+        destination: '/services/roof-repairs',
+        permanent: true,
+      },
+      {
+        source: '/blog/metal-roofing-san-antonio',
+        destination: '/hubs/metal-roofing',
+        permanent: true,
+      },
       // Old "about-2" pages (with and without trailing slash)
       {
         source: '/about-2/',
