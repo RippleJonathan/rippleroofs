@@ -286,30 +286,40 @@ export const Footer: FC = () => {
           <div className="border-t border-primary-800 mt-8 pt-8">
             <h3 className="text-lg font-display font-bold mb-6 text-white">Service Areas</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-sm">
-              {/* Austin Metro */}
+              {/* Austin / Travis County */}
               <div>
-                <h4 className="font-semibold text-accent-400 mb-2">Austin Metro</h4>
+                <h4 className="font-semibold text-accent-400 mb-2">Austin / Travis Co.</h4>
                 <ul className="space-y-1.5">
                   <li><Link href="/locations/austin" className="text-primary-200 hover:text-accent-500 transition-colors">Austin</Link></li>
-                  <li><Link href="/locations/round-rock" className="text-primary-200 hover:text-accent-500 transition-colors">Round Rock</Link></li>
                   <li><Link href="/locations/pflugerville" className="text-primary-200 hover:text-accent-500 transition-colors">Pflugerville</Link></li>
+                  <li><Link href="/locations/manor" className="text-primary-200 hover:text-accent-500 transition-colors">Manor</Link></li>
+                  <li><Link href="/locations/buda" className="text-primary-200 hover:text-accent-500 transition-colors">Buda</Link></li>
+                  <li><Link href="/locations/kyle" className="text-primary-200 hover:text-accent-500 transition-colors">Kyle</Link></li>
+                  <li><Link href="/locations/dripping-springs" className="text-primary-200 hover:text-accent-500 transition-colors">Dripping Springs</Link></li>
+                  <li><Link href="/locations/san-marcos" className="text-primary-200 hover:text-accent-500 transition-colors">San Marcos</Link></li>
+                  <li><Link href="/locations/new-braunfels" className="text-primary-200 hover:text-accent-500 transition-colors">New Braunfels</Link></li>
+                </ul>
+              </div>
+
+              {/* Williamson County */}
+              <div>
+                <h4 className="font-semibold text-accent-400 mb-2">Williamson County</h4>
+                <ul className="space-y-1.5">
+                  <li><Link href="/locations/round-rock" className="text-primary-200 hover:text-accent-500 transition-colors">Round Rock</Link></li>
                   <li><Link href="/locations/cedar-park" className="text-primary-200 hover:text-accent-500 transition-colors">Cedar Park</Link></li>
                   <li><Link href="/locations/georgetown" className="text-primary-200 hover:text-accent-500 transition-colors">Georgetown</Link></li>
                   <li><Link href="/locations/leander" className="text-primary-200 hover:text-accent-500 transition-colors">Leander</Link></li>
                   <li><Link href="/locations/hutto" className="text-primary-200 hover:text-accent-500 transition-colors">Hutto</Link></li>
-                  <li><Link href="/locations/manor" className="text-primary-200 hover:text-accent-500 transition-colors">Manor</Link></li>
+                  <li><Link href="/locations/taylor" className="text-primary-200 hover:text-accent-500 transition-colors">Taylor</Link></li>
                   <li><Link href="/locations/jarrell" className="text-primary-200 hover:text-accent-500 transition-colors">Jarrell</Link></li>
+                  <li><Link href="/locations/liberty-hill" className="text-primary-200 hover:text-accent-500 transition-colors">Liberty Hill</Link></li>
                 </ul>
               </div>
 
-              {/* Central Texas */}
+              {/* Greater Waco & Central TX */}
               <div>
-                <h4 className="font-semibold text-accent-400 mb-2">Central TX</h4>
+                <h4 className="font-semibold text-accent-400 mb-2">Waco & Central TX</h4>
                 <ul className="space-y-1.5">
-                  <li><Link href="/locations/san-marcos" className="text-primary-200 hover:text-accent-500 transition-colors">San Marcos</Link></li>
-                  <li><Link href="/locations/new-braunfels" className="text-primary-200 hover:text-accent-500 transition-colors">New Braunfels</Link></li>
-                  <li><Link href="/locations/temple" className="text-primary-200 hover:text-accent-500 transition-colors">Temple</Link></li>
-                  <li><Link href="/locations/killeen" className="text-primary-200 hover:text-accent-500 transition-colors">Killeen</Link></li>
                   <li><Link href="/locations/waco" className="text-primary-200 hover:text-accent-500 transition-colors">Waco</Link></li>
                   <li><Link href="/locations/hewitt" className="text-primary-200 hover:text-accent-500 transition-colors">Hewitt</Link></li>
                   <li><Link href="/locations/woodway" className="text-primary-200 hover:text-accent-500 transition-colors">Woodway</Link></li>
@@ -317,18 +327,19 @@ export const Footer: FC = () => {
                   <li><Link href="/locations/hillsboro" className="text-primary-200 hover:text-accent-500 transition-colors">Hillsboro</Link></li>
                   <li><Link href="/locations/corsicana" className="text-primary-200 hover:text-accent-500 transition-colors">Corsicana</Link></li>
                   <li><Link href="/locations/mcgregor" className="text-primary-200 hover:text-accent-500 transition-colors">McGregor</Link></li>
+                  <li><Link href="/locations/temple" className="text-primary-200 hover:text-accent-500 transition-colors">Temple</Link></li>
+                  <li><Link href="/locations/killeen" className="text-primary-200 hover:text-accent-500 transition-colors">Killeen</Link></li>
+                  <li><Link href="/locations/copperas-cove" className="text-primary-200 hover:text-accent-500 transition-colors">Copperas Cove</Link></li>
                 </ul>
               </div>
 
-              {/* San Antonio */}
+              {/* South Texas */}
               <div>
-                <h4 className="font-semibold text-accent-400 mb-2">San Antonio</h4>
+                <h4 className="font-semibold text-accent-400 mb-2">South Texas</h4>
                 <ul className="space-y-1.5">
                   <li><Link href="/locations/san-antonio" className="text-primary-200 hover:text-accent-500 transition-colors">San Antonio</Link></li>
-                  <li className="text-primary-300 text-xs pt-1">Stone Oak<br/>Alamo Heights<br/>Medical Center</li>
                 </ul>
               </div>
-
             </div>
           </div>
         </Container>

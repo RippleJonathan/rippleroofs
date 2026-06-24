@@ -243,6 +243,18 @@ export const LOCATION_BLOG_POSTS: Record<string, Array<{
       category: 'Cost Guide'
     },
     {
+      title: 'Roof Repair in Taylor TX: Costs, Common Issues & When to Call',
+      description: 'Complete guide to roof repairs in Taylor, TX — the 8 most common repair types, local costs, repair vs. replace decision guide, and emergency repair steps.',
+      slug: 'roof-repair-taylor-tx',
+      category: 'Repair Guide'
+    },
+    {
+      title: 'Roof Replacement in Taylor TX: Materials, Process & What to Expect',
+      description: 'Everything Taylor, TX homeowners need to know about roof replacement — materials matched to your home type, the full process from tear-off to warranty, and how to choose a contractor.',
+      slug: 'roof-replacement-taylor-tx',
+      category: 'Replacement Guide'
+    },
+    {
       title: 'Class 4 Shingles & Insurance Discounts',
       description: 'Save 10-35% on insurance premiums with impact-resistant roofing. Complete guide to Class 4 shingles in Texas.',
       slug: 'class-4-shingles-insurance-discounts-texas',
