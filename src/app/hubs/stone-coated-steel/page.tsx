@@ -125,11 +125,11 @@ export default function StoneCoatedSteelHub() {
             </div>
 
             <div className="flex flex-wrap gap-3">
-              <Button asChild size="lg" className="bg-amber-500 hover:bg-amber-600 text-black font-semibold">
-                <Link href="/contact">Get a Free Estimate</Link>
+              <Button href="/contact" size="lg" className="bg-amber-500 hover:bg-amber-600 text-black font-semibold">
+                Get a Free Estimate
               </Button>
-              <Button asChild variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10">
-                <Link href="/services/stone-coated-steel-roofing">Service Overview</Link>
+              <Button href="/services/stone-coated-steel-roofing" variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10">
+                Service Overview
               </Button>
             </div>
           </div>
@@ -401,11 +401,11 @@ export default function StoneCoatedSteelHub() {
               We'll measure your roof, walk through brand and profile options that fit your home and HOA, and give you a written proposal you can actually compare. No obligation, no pressure.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
-              <Button asChild size="lg" className="bg-amber-500 hover:bg-amber-600 text-black font-semibold">
-                <Link href="/contact">Request a Free Estimate</Link>
+              <Button href="/contact" size="lg" className="bg-amber-500 hover:bg-amber-600 text-black font-semibold">
+                Request a Free Estimate
               </Button>
-              <Button asChild variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10">
-                <Link href="tel:5127635277">Call (512) 763-5277</Link>
+              <Button href="tel:5127635277" variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10">
+                Call (512) 763-5277
               </Button>
             </div>
           </div>

@@ -46,11 +46,11 @@ export default function CertainTeedPremierPage() {
                   It means more than a badge. It means CertainTeed's manufacturer warranty backs our workmanship — not just the materials.
                 </p>
                 <div className="flex flex-wrap gap-3">
-                  <Button asChild size="lg" className="bg-amber-500 hover:bg-amber-600 text-black font-semibold">
-                    <Link href="/contact">Schedule Free Inspection</Link>
+                  <Button href="/contact" size="lg" className="bg-amber-500 hover:bg-amber-600 text-black font-semibold">
+                    Schedule Free Inspection
                   </Button>
-                  <Button asChild variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10">
-                    <Link href="tel:5127635277">(512) 763-5277</Link>
+                  <Button href="tel:5127635277" variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10">
+                    (512) 763-5277
                   </Button>
                 </div>
               </div>
@@ -357,11 +357,11 @@ export default function CertainTeedPremierPage() {
               Free inspection. Honest estimate. CertainTeed-backed workmanship warranty on every qualifying project. We serve Round Rock, Austin, Georgetown, Cedar Park, Leander, and all of Central Texas.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
-              <Button asChild size="lg" className="bg-amber-500 hover:bg-amber-600 text-black font-semibold">
-                <Link href="/contact">Schedule Free Inspection</Link>
+              <Button href="/contact" size="lg" className="bg-amber-500 hover:bg-amber-600 text-black font-semibold">
+                Schedule Free Inspection
               </Button>
-              <Button asChild variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10">
-                <Link href="tel:5127635277">Call (512) 763-5277</Link>
+              <Button href="tel:5127635277" variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10">
+                Call (512) 763-5277
               </Button>
             </div>
             <p className="text-white/50 text-sm mt-6">
