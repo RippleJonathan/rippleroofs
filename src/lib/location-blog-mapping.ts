@@ -223,6 +223,32 @@ export const LOCATION_BLOG_POSTS: Record<string, Array<{
       category: 'Location Guide'
     },
   ],
+  'taylor': [
+    {
+      title: 'Taylor TX Roofing Guide 2026',
+      description: 'Local contractor tips, costs, common issues, and material recommendations for Taylor homeowners — including Samsung-era new construction.',
+      slug: 'taylor-roofing-guide',
+      category: 'Location Guide'
+    },
+    {
+      title: 'Taylor TX Hail Damage: Insurance Claims & What to Do',
+      description: 'Step-by-step guide to identifying, documenting, and filing a Texas insurance claim after hail damage in Taylor.',
+      slug: 'taylor-tx-hail-damage-guide',
+      category: 'Storm Damage'
+    },
+    {
+      title: 'Roof Replacement Cost in Taylor TX (2026)',
+      description: 'Real pricing data for Taylor roof replacements by home size, material type, and complexity — including older home premiums.',
+      slug: 'roof-replacement-cost-taylor-tx',
+      category: 'Cost Guide'
+    },
+    {
+      title: 'Class 4 Shingles & Insurance Discounts',
+      description: 'Save 10-35% on insurance premiums with impact-resistant roofing. Complete guide to Class 4 shingles in Texas.',
+      slug: 'class-4-shingles-insurance-discounts-texas',
+      category: 'Insurance'
+    },
+  ],
   'san-antonio': [
     {
       title: 'Best Roofing Contractor in San Antonio',

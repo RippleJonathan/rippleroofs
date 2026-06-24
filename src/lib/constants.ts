@@ -63,6 +63,7 @@ export const NAV_LINKS: NavLink[] = [
       { href: '/locations/leander', label: 'Leander' },
       { href: '/locations/georgetown', label: 'Georgetown' },
       { href: '/locations/hutto', label: 'Hutto' },
+      { href: '/locations/taylor', label: 'Taylor' },
       { href: '/locations/manor', label: 'Manor' },
       { href: '/locations/jarrell', label: 'Jarrell' },
       { href: '/locations/san-marcos', label: 'San Marcos' },

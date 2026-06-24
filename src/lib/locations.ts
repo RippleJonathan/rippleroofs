@@ -453,6 +453,37 @@ export const LOCATIONS: LocationData[] = [
     weatherNote: 'Hutto experiences typical Central Texas severe weather including devastating hailstorms, intense summer heat exceeding 100°F, occasional tornadoes, flash flooding, and damaging thunderstorms with high winds.'
   },
   {
+    slug: 'taylor',
+    city: 'Taylor',
+    state: 'TX',
+    zip: '76574',
+    county: 'Williamson County',
+    metroArea: 'Austin-Round Rock Metro',
+    neighborhoods: [
+      'Downtown Taylor',
+      'Mustang Creek',
+      'Taylor Ranch',
+      'Heritage Oaks',
+      'Murphy Street District',
+      'East Taylor',
+      'North Taylor',
+      'Donahoe Creek Estates'
+    ],
+    landmarks: [
+      'Samsung Austin Semiconductor (Taylor Fab)',
+      'Taylor City Park',
+      'Murphy Heritage Park',
+      'Taylor High School',
+      'San Gabriel River',
+      'Taylor Heritage Museum',
+      'Historic Downtown Square',
+      'Taylor ISD Athletic Complex'
+    ],
+    description: 'Taylor is a historic Williamson County city undergoing a generational transformation. Samsung\'s $17+ billion semiconductor campus — one of the largest foreign investments in U.S. history — has sparked a wave of residential development, rising home values, and an influx of new residents. The city\'s housing stock spans a century: from pre-war craftsman bungalows in the historic downtown core to brand-new subdivisions going up on the city\'s outskirts. That mix means roofing needs vary widely, and working with a contractor who understands both older construction and modern install standards matters here more than in most Central Texas markets.',
+    population: '18,000+',
+    weatherNote: 'Taylor sits on the eastern edge of Williamson County where open terrain provides less protection from incoming storms than the more urbanized western suburbs. Severe spring hailstorms, intense summer heat regularly exceeding 100°F with rooftop surface temperatures of 160–180°F, high UV exposure, and flash flooding risk from Taylor Creek make durable, properly installed roofing critical for every Taylor home.'
+  },
+  {
     slug: 'manor',
     city: 'Manor',
     state: 'TX',
