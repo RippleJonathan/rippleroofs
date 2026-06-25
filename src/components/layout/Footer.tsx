@@ -285,7 +285,7 @@ export const Footer: FC = () => {
           {/* Service Areas Section - Additional Row */}
           <div className="border-t border-primary-800 mt-8 pt-8">
             <h3 className="text-lg font-display font-bold mb-6 text-white">Service Areas</h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-sm">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-6 text-sm">
               {/* Austin / Travis County */}
               <div>
                 <h4 className="font-semibold text-accent-400 mb-2">Austin / Travis Co.</h4>
@@ -330,14 +330,6 @@ export const Footer: FC = () => {
                   <li><Link href="/locations/temple" className="text-primary-200 hover:text-accent-500 transition-colors">Temple</Link></li>
                   <li><Link href="/locations/killeen" className="text-primary-200 hover:text-accent-500 transition-colors">Killeen</Link></li>
                   <li><Link href="/locations/copperas-cove" className="text-primary-200 hover:text-accent-500 transition-colors">Copperas Cove</Link></li>
-                </ul>
-              </div>
-
-              {/* South Texas */}
-              <div>
-                <h4 className="font-semibold text-accent-400 mb-2">South Texas</h4>
-                <ul className="space-y-1.5">
-                  <li><Link href="/locations/san-antonio" className="text-primary-200 hover:text-accent-500 transition-colors">San Antonio</Link></li>
                 </ul>
               </div>
             </div>
