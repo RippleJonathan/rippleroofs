@@ -260,6 +260,18 @@ export const LOCATION_BLOG_POSTS: Record<string, Array<{
       slug: 'class-4-shingles-insurance-discounts-texas',
       category: 'Insurance'
     },
+    {
+      title: 'Metal Roofing in Taylor TX: Types, Costs & What Works Best',
+      description: 'Complete guide to standing seam, stone-coated steel, and metal shingles for Taylor TX homes — with real cost ranges and material matching by home type.',
+      slug: 'metal-roofing-taylor-tx',
+      category: 'Materials Guide'
+    },
+    {
+      title: 'Gutter Installation in Taylor TX: Seamless Gutters, Costs & Local Drainage',
+      description: 'Everything Taylor homeowners need to know about seamless gutter installation, sizing, guards, and drainage — from a certified local contractor.',
+      slug: 'gutter-installation-taylor-tx',
+      category: 'Gutters'
+    },
   ],
   'san-antonio': [
     {
