@@ -272,6 +272,36 @@ export const LOCATION_BLOG_POSTS: Record<string, Array<{
       slug: 'gutter-installation-taylor-tx',
       category: 'Gutters'
     },
+    {
+      title: 'Wind Damage Roof Repair in Taylor TX: Identify, Document & Fix Storm Damage',
+      description: 'How to spot wind damage from the ground, document it for insurance, avoid storm chasers, and get permanent repairs completed — a local guide for Taylor TX homeowners.',
+      slug: 'wind-damage-roof-repair-taylor-tx',
+      category: 'Storm Damage'
+    },
+    {
+      title: 'Emergency Roof Repair in Taylor TX: What to Do When Your Roof Is Actively Failing',
+      description: 'Active leak or storm damage? Here is exactly what to do in the first 30 minutes — emergency steps, tarping, storm chasers, and how to get to permanent repair.',
+      slug: 'emergency-roof-repair-taylor-tx',
+      category: 'Emergency Repair'
+    },
+    {
+      title: 'Roof Inspection in Taylor TX: When to Get One & What It Covers',
+      description: 'Everything Taylor homeowners need to know about roof inspections — the 5 situations that warrant one, what a thorough inspection covers, and how to read the results.',
+      slug: 'roof-inspection-taylor-tx',
+      category: 'Inspection Guide'
+    },
+    {
+      title: 'Stone-Coated Steel Roofing in Taylor TX: Complete Guide',
+      description: 'How stone-coated steel is made, the top brands (Decra, EDCO), installed costs in Taylor TX, and when to choose it over standing seam or architectural shingles.',
+      slug: 'stone-coated-steel-roofing-taylor-tx',
+      category: 'Materials Guide'
+    },
+    {
+      title: 'Class 4 Impact-Resistant Shingles in Taylor TX: Insurance Discounts & Top Products',
+      description: 'The best Class 4 shingle products for Taylor TX, how much you save on insurance by carrier, real installed costs, and when Class 4 asphalt beats a full metal upgrade.',
+      slug: 'class-4-shingles-taylor-tx',
+      category: 'Materials Guide'
+    },
   ],
   'san-antonio': [
     {
