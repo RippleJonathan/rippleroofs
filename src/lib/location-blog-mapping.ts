@@ -75,6 +75,12 @@ export const LOCATION_BLOG_POSTS: Record<string, Array<{
       category: 'Location Guide'
     },
     {
+      title: 'Teravista Roofing Guide',
+      description: 'HOA architectural approval, best materials, 2026 costs, and storm damage steps for Teravista homeowners in Round Rock.',
+      slug: 'teravista-round-rock-roofing-guide',
+      category: 'Location Guide'
+    },
+    {
       title: 'Top 5 Roofing Problems in Round Rock',
       description: 'Common issues Round Rock homeowners face and how to fix them before they become expensive.',
       slug: 'top-5-roofing-problems-round-rock',
@@ -116,6 +122,12 @@ export const LOCATION_BLOG_POSTS: Record<string, Array<{
       title: 'Georgetown Roofing Guide',
       description: 'Complete roofing guide for Georgetown including historic district requirements and Sun City advice.',
       slug: 'georgetown-roofing-guide',
+      category: 'Location Guide'
+    },
+    {
+      title: 'Sun City Georgetown Roofing Guide',
+      description: 'HOA approval requirements, approved materials, costs, and storm damage claims for Sun City Georgetown homeowners.',
+      slug: 'sun-city-georgetown-roofing-guide',
       category: 'Location Guide'
     },
     {
