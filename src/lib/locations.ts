@@ -812,4 +812,53 @@ export const LOCATIONS: LocationData[] = [
     population: '5,500+',
     weatherNote: 'McGregor\'s location on the western McLennan County plains puts it directly in the path of storms approaching from the southwest. The spring 2026 hail storms impacted McGregor and western McLennan County. Open terrain amplifies wind and hail impact on roofing systems.'
   },
+  {
+    slug: 'lakeway',
+    city: 'Lakeway',
+    state: 'TX',
+    zip: '78734',
+    county: 'Travis County',
+    metroArea: 'Austin-Round Rock Metro',
+    neighborhoods: [
+      'The Hills of Lakeway',
+      'Rough Hollow',
+      'Flintrock Falls',
+      'Serene Hills',
+      'Lakeway Proper'
+    ],
+    landmarks: [
+      'Lake Travis',
+      'Lakeway Marina',
+      'The Hills Country Club',
+      'World of Tennis',
+      'Lakeway City Park'
+    ],
+    description: 'Lakeway is an affluent lakefront city on Lake Travis in the Hill Country west of Austin, known for its golf courses, marina, and a housing stock ranging from established 1970s-1990s homes to custom lakefront estates. The city\'s hilltop and waterfront lots offer sought-after views but face more direct wind and storm exposure than more sheltered parts of the Austin metro. We serve Lakeway homeowners with professional roofing services matched to the area\'s premium housing market.',
+    population: '19,000+',
+    weatherNote: 'Lakeway\'s elevated, lakefront terrain exposes roofs to stronger wind gusts than lower-lying parts of the Austin metro, along with the same severe hailstorms, extreme summer heat, and high UV exposure common across Central Texas. Lakefront humidity adds moisture-related wear that inland homes see less of.'
+  },
+  {
+    slug: 'bee-cave',
+    city: 'Bee Cave',
+    state: 'TX',
+    zip: '78738',
+    county: 'Travis County',
+    metroArea: 'Austin-Round Rock Metro',
+    neighborhoods: [
+      'Spanish Oaks',
+      'Falconhead',
+      'Serene Hills',
+      'The Highlands',
+      'Hamilton Pool Road Area'
+    ],
+    landmarks: [
+      'Hill Country Galleria',
+      'Spanish Oaks Golf Club',
+      'Falconhead Golf Club',
+      'Bee Cave City Park'
+    ],
+    description: 'Bee Cave is one of the fastest-growing and most affluent cities in the Austin metro, sitting in the Hill Country just west of Austin along Highway 71. Anchored by the Hill Country Galleria and master-planned communities like Spanish Oaks and Falconhead, Bee Cave combines upscale new construction with dramatic Hill Country terrain. We serve Bee Cave homeowners with professional roofing services suited to the area\'s premium housing market.',
+    population: '9,000+',
+    weatherNote: 'Bee Cave sits at higher elevation than much of the Austin metro, exposing hilltop homes to stronger wind gusts during severe thunderstorms. The area sees the same hail-prone spring storm pattern, intense summer heat, and high UV exposure as the rest of Central Texas, with steep terrain adding drainage and access considerations during heavy rain.'
+  },
 ]

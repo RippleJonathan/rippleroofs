@@ -69,6 +69,16 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
 
   const businessRating = getBusinessRatingSnapshot()
 
+  // Deterministically rotate which generic posts show per location, so all of
+  // them surface somewhere instead of always the same first two.
+  const genericStartIndex = location.slug
+    .split('')
+    .reduce((sum, char) => sum + char.charCodeAt(0), 0) % GENERIC_LOCATION_POSTS.length
+  const genericPosts = [
+    ...GENERIC_LOCATION_POSTS.slice(genericStartIndex),
+    ...GENERIC_LOCATION_POSTS.slice(0, genericStartIndex),
+  ].slice(0, 3)
+
   return (
     <main className="min-h-screen bg-white">
       {/* Schema Markup */}
@@ -362,7 +372,7 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
                     ))}
                     
                     {/* Generic helpful posts */}
-                    {GENERIC_LOCATION_POSTS.slice(0, 2).map((post) => (
+                    {genericPosts.map((post) => (
                       <Link
                         key={post.slug}
                         href={`/blog/${post.slug}`}
