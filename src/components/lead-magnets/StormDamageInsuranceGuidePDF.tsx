@@ -299,7 +299,6 @@ export function generateStormDamageInsuranceGuidePDF() {
     '• Take your deposit and never return',
     '',
     '✓ Choose LOCAL contractors with:',
-    '• 5+ years serving your area',
     '• Physical business address you can visit',
     '• Multiple local references (call them!)',
     '• Proper insurance and licensing',
@@ -459,7 +458,7 @@ export function generateStormDamageInsuranceGuidePDF() {
   
   doc.setFontSize(8);
   doc.setTextColor(255, 200, 200);
-  doc.text('Ripple Roofing & Construction - Serving Central Texas Since 2010', 105, yPos + 65, { align: 'center' });
+  doc.text('Ripple Roofing & Construction - Serving Central Texas', 105, yPos + 65, { align: 'center' });
   
   // Save the PDF
   doc.save('Ripple-Roofing-Storm-Damage-Insurance-Guide.pdf');

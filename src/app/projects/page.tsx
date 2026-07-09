@@ -188,7 +188,7 @@ export default function ProjectsPage() {
               Ready to Start Your Roofing Project?
             </h2>
             <p className="text-xl text-white/90 mb-8">
-              Join hundreds of satisfied Central Texas homeowners. Get your free inspection and detailed quote today.
+              Join Central Texas homeowners who trust Ripple Roofing. Get your free inspection and detailed quote today.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link href="/contact">

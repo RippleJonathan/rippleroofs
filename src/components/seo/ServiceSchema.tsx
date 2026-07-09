@@ -20,7 +20,7 @@ export default function ServiceSchema({
       '@id': 'https://rippleroofs.com/#organization',
       name: 'Ripple Roofing & Construction',
       telephone: '+15127635277',
-      email: 'info@rippleroofs.com',
+      email: 'tx@rippleroofs.com',
       url: 'https://rippleroofs.com',
       logo: 'https://rippleroofs.com/images/logo.png',
       image: 'https://rippleroofs.com/images/logo.png',

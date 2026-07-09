@@ -3565,7 +3565,7 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
                           Will insurance cover my roof replacement?
                         </h3>
                         <p className="text-primary-600">
-                          <strong>Insurance covers replacement if damage from covered events</strong> (hail, wind, falling trees, fire). You pay deductible ($2,500-$5,000 or 1-2% of dwelling coverage), insurance covers rest. <strong>What's NOT covered:</strong> Age/wear-and-tear, poor maintenance, cosmetic damage only. <strong>Age matters:</strong> Some policies depreciate roofs over 10-15 years. We provide FREE post-storm inspections, document damage with photos, help file claims, attend adjuster meetings. We've helped thousands of homeowners successfully navigate claims.
+                          <strong>Insurance covers replacement if damage from covered events</strong> (hail, wind, falling trees, fire). You pay deductible ($2,500-$5,000 or 1-2% of dwelling coverage), insurance covers rest. <strong>What's NOT covered:</strong> Age/wear-and-tear, poor maintenance, cosmetic damage only. <strong>Age matters:</strong> Some policies depreciate roofs over 10-15 years. We provide FREE post-storm inspections, document damage with photos, help file claims, attend adjuster meetings.
                         </p>
                       </div>
                       <div className="border-l-4 border-accent-500 pl-6 bg-primary-50 p-6 rounded-r-xl">
@@ -3968,7 +3968,7 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
               "@type": "RoofingContractor",
               "name": "Ripple Roofing & Construction",
               "telephone": "(512) 763-5277",
-              "email": "info@rippleroofs.com",
+              "email": "tx@rippleroofs.com",
               "url": "https://rippleroofs.com",
               "logo": "https://rippleroofs.com/logo.png",
               "address": {

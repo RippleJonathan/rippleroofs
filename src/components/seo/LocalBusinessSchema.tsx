@@ -17,7 +17,7 @@ export default function LocalBusinessSchema() {
     ],
     description:
       'Premium roofing services in Texas. CertainTeed ShingleMaster Premier certified contractor serving Round Rock, Austin, Georgetown, and surrounding areas with roof replacement, repairs, emergency services, and more. 24/7 emergency service available.',
-    email: 'info@rippleroofs.com',
+    email: 'tx@rippleroofs.com',
     sameAs: [
       'https://www.facebook.com/rippleroofs',
       'https://www.instagram.com/ripple_roofing/',
@@ -49,7 +49,7 @@ export default function LocalBusinessSchema() {
     description:
       'Premium roofing services in Central Texas. CertainTeed ShingleMaster Premier certified contractor serving Round Rock, Austin, Georgetown, and surrounding areas.',
     telephone: BUSINESS_INFO_TEXAS.phoneRaw,
-    email: 'info@rippleroofs.com',
+    email: 'tx@rippleroofs.com',
     priceRange: '$$$',
     address: {
       '@type': 'PostalAddress',

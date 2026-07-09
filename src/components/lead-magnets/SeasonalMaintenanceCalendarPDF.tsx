@@ -520,7 +520,7 @@ export function generateSeasonalMaintenanceCalendarPDF() {
   
   doc.setFontSize(8);
   doc.setTextColor(200, 255, 200);
-  doc.text('Serving Central Texas with Professional Roof Care Since 2010', 105, yPos + 65, { align: 'center' });
+  doc.text('Serving Central Texas with Professional Roof Care', 105, yPos + 65, { align: 'center' });
   
   // Save the PDF
   doc.save('Ripple-Roofing-Seasonal-Maintenance-Calendar.pdf');

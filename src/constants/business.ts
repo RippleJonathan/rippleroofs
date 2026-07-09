@@ -53,7 +53,7 @@ export const BUSINESS_INFO_TEXAS: BusinessInfo = {
   office: 'Round Rock Headquarters',
   phone: '(512) 763-5277',
   phoneRaw: '5127635277',
-  email: 'info@rippleroofs.com',
+  email: 'tx@rippleroofs.com',
   address: {
     street: '1000 Heritage Center Circle, #165',
     city: 'Round Rock',
@@ -155,7 +155,6 @@ export const SERVICE_AREAS = [
 export const CREDENTIALS = {
   certifications: [
     'CertainTeed ShingleMaster Premier Company',
-    'BBB Accredited Business',
     'HAAG Certified Inspector',
   ],
   licenses: [
