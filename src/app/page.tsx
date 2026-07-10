@@ -188,7 +188,7 @@ export default function Home() {
       'Impact-Resistant Shingles'
     ],
     slogan: 'Central Texas Premier Roofing Contractor',
-    foundingDate: '2018',
+    foundingDate: '2024',
     serviceArea: {
       '@type': 'GeoCircle',
       geoMidpoint: {

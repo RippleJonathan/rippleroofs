@@ -32,7 +32,7 @@ export default function LocalBusinessSchema() {
       },
     ],
     slogan: 'Premium Roofing Services in Texas',
-    foundingDate: '2015',
+    foundingDate: '2024',
   };
 
   // Texas Office LocalBusiness
