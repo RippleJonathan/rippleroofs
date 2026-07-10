@@ -12,7 +12,8 @@ This file exists because a batch of blog content (and some service-page copy) wa
 ## Contact info (use exactly this — never invent department emails)
 
 - **Phone:** (512) 763-5277
-- **Email:** tx@rippleroofs.com — this is the only real inbox. Do not invent `luxury@`, `leander@`, `pflugerville@`, `estimates@`, `emergency@`, or any other subdomain/department alias.
+- **Email:** tx@rippleroofs.com — this is the only real inbox for customer-facing content. Do not invent `luxury@`, `leander@`, `pflugerville@`, `estimates@`, `emergency@`, or any other subdomain/department alias.
+- **Internal lead notifications** (quote/estimate requests, lead-magnet downloads, contact form alerts in `src/lib/email.ts` and the API routes) also route to `tx@rippleroofs.com`. `sales@rippleroofs.com` (outbound "from" address, verified in Resend) and `noreply@rippleroofs.com` (system sender) are real and fine to keep — but don't route anything to `jonathan@rippleroofs.com`, it's not a confirmed working inbox.
 - **Address:** 1000 Heritage Center Circle, #165, Round Rock, TX
 
 ## Credentials — only claim what's real
@@ -20,7 +21,7 @@ This file exists because a batch of blog content (and some service-page copy) wa
 - **CertainTeed ShingleMaster Premier certified** — real, confirmed.
 - **General liability insurance: $1M** — not $2M. Several blog posts say "$2M General Liability" — that's wrong.
 - **BBB:** not Accredited Business — do not add a letter grade ("A+ BBB Rating"). That specific claim is false and appears repeatedly in blog posts and in `src/lib/constants.ts`.
-- **Google rating:** Pull from `BUSINESS_RATING` in `src/constants/business.ts` (via `getBusinessRatingSnapshot()`) rather than hardcoding a number in content — it's a live figure that gets updated there. As of the last update it's 5.0/5 from 63 reviews. Do not write "4.9/5 Stars (500+ Reviews)" or similar invented figures.
+- **Google rating:** Pull from `BUSINESS_RATING` in `src/constants/business.ts` (via `getBusinessRatingSnapshot()`) rather than hardcoding a number in content — it's a live figure that gets updated there. As of the last update (July 2026) it's 5.0/5 from 70 reviews, and the review count climbs regularly — don't hardcode a specific count in blog/MDX content (it can't pull from the constant), just say "5.0/5 Stars on Google" without a number. Do not write "4.9/5 Stars (500+ Reviews)" or similar invented figures.
 
 ## Fabricated content pattern to watch for
 
