@@ -72,8 +72,8 @@ export const BUSINESS_INFO_TEXAS: BusinessInfo = {
     emergency: '24/7 Emergency Services Available',
   },
   social: {
-    facebook: 'https://www.facebook.com/rippleroofing',
-    instagram: 'https://www.instagram.com/rippleroofing',
+    facebook: 'https://www.facebook.com/rippleroofs',
+    instagram: 'https://www.instagram.com/ripple_roofing/',
     linkedin: 'https://www.linkedin.com/company/ripple-roofing',
     youtube: 'https://www.youtube.com/@rippleroofing',
   },
