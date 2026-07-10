@@ -12,10 +12,10 @@ export const EMAIL_CONFIG = {
   from: 'noreply@rippleroofs.com',
   
   // Your email where you'll receive notifications
-  to: 'jonathan@rippleroofs.com',
-  
+  to: 'tx@rippleroofs.com',
+
   // Reply-to address for customer emails
-  replyTo: 'jonathan@rippleroofs.com',
+  replyTo: 'tx@rippleroofs.com',
 };
 
 // Email templates

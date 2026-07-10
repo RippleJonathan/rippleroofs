@@ -97,11 +97,11 @@ export function getBusinessInfo(state?: StateCode | null): BusinessInfo {
 /**
  * Google Business Profile ratings
  * Source: Google Business Profile
- * Last updated: April 2026
+ * Last updated: July 2026
  */
 export const BUSINESS_RATING = {
   ratingValue: '5.0',
-  reviewCount: '63',
+  reviewCount: '70',
   bestRating: '5',
   worstRating: '1',
 } as const;

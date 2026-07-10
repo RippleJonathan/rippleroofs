@@ -239,7 +239,7 @@ export async function POST(request: NextRequest) {
     try {
       await resend.emails.send({
         from: 'Ripple Roofing <sales@rippleroofs.com>',
-        to: ['jonathan@rippleroofs.com'],
+        to: ['tx@rippleroofs.com'],
         subject: `New Lead Magnet Download: ${validatedData.title}`,
         html: `
           <h2>New Lead Magnet Download</h2>
