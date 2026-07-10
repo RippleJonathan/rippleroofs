@@ -5,6 +5,7 @@ import { CostEstimator } from '@/components/calculators/CostEstimator'
 import { ROICalculator } from '@/components/calculators/ROICalculator'
 import { Button } from '@/components/ui/Button'
 import { SITE_CONFIG } from '@/lib/constants'
+import { getBusinessRatingSnapshot } from '@/constants/business'
 
 export const metadata: Metadata = {
   title: { absolute: 'Roof Replacement Cost Calculator | Central Texas | Ripple Roofing' },
@@ -19,6 +20,8 @@ export const metadata: Metadata = {
 }
 
 export default function CalculatorsPage() {
+  const businessRating = getBusinessRatingSnapshot()
+
   return (
     <>
       {/* Hero Section */}
@@ -239,7 +242,7 @@ export default function CalculatorsPage() {
             <div className="mt-8 pt-8 border-t border-white/20">
               <div className="flex flex-wrap justify-center gap-6 text-sm text-white/90">
                 <span>✓ CertainTeed ShingleMaster Premier</span>
-                <span>✓ A+ BBB Rating</span>
+                <span>✓ {businessRating.ratingValue}/5 Stars on Google</span>
                 <span>✓ 10-Year Workmanship Warranty</span>
                 <span>✓ Free Inspections</span>
               </div>
