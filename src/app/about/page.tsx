@@ -9,7 +9,7 @@ import { SITE_CONFIG } from '@/lib/constants'
 export const metadata: Metadata = {
   title: 'About Ripple Roofing | CertainTeed Premier Roofer in Round Rock, TX',
   description:
-    'Navy veteran-owned roofing company in Round Rock, TX. One of fewer than 3% of contractors to hold CertainTeed ShingleMaster Premier certification. Honest insurance claims, real advocacy — no deductible waiving, ever.',
+    'Navy veteran-owned roofing company in Round Rock, TX. One of fewer than 1% of contractors to hold CertainTeed ShingleMaster Premier certification. Honest insurance claims, real advocacy — no deductible waiving, ever.',
   keywords:
     'about Ripple Roofing, Round Rock roofing company, CertainTeed ShingleMaster Premier, owner-operated roofer Central Texas, roof insurance claim advocate Texas',
   openGraph: {

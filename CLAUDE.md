@@ -29,7 +29,7 @@ This file exists because a batch of blog content (and some service-page copy) wa
 ## Credentials — only claim what's real
 
 - **CertainTeed ShingleMaster Premier certified** — real, confirmed.
-- **"Top 3% of contractors" / "fewer than 3%"** (CertainTeed Premier tier stat, used on the About page and a couple of blog posts) — appears consistently rather than looking like a copy-paste fabrication, but hasn't been explicitly verified against CertainTeed's own published numbers. Treat as probably-fine, not confirmed.
+- **"Top 1% of contractors" / "fewer than 1%"** — verified July 2026 against CertainTeed's own published materials: ShingleMaster Premier is the top 1% of contractors nationally. Use "1%," not "3%." A "top 3%" variant had crept into 3 files (About page, bee-cave-roofing-guide.mdx, best-roofing-materials-georgetown.mdx) while 9+ other posts correctly said "1%" — all reconciled to "1%."
 - **General liability insurance: $1M** — not $2M. Several blog posts say "$2M General Liability" — that's wrong.
 - **BBB:** not Accredited Business — do not add a letter grade ("A+ BBB Rating"). That specific claim is false and appears repeatedly in blog posts and in `src/lib/constants.ts`.
 - **Google rating:** Pull from `BUSINESS_RATING` in `src/constants/business.ts` (via `getBusinessRatingSnapshot()`) rather than hardcoding a number in content — it's a live figure that gets updated there. As of the last update (July 2026) it's 5.0/5 from 70 reviews, and the review count climbs regularly — don't hardcode a specific count in blog/MDX content (it can't pull from the constant), just say "5.0/5 Stars on Google" without a number. Do not write "4.9/5 Stars (500+ Reviews)" or similar invented figures.
