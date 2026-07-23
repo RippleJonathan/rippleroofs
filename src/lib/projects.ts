@@ -1,3 +1,5 @@
+import generatedProjects from '@/data/projects.generated.json'
+
 export interface Project {
   id: string
   title: string
@@ -18,7 +20,7 @@ export interface Project {
   relatedServiceSlug?: string
 }
 
-export const PROJECTS: Project[] = [
+const CURATED_PROJECTS: Project[] = [
   // Metal Roofs
   {
     id: 'standing-seam-metal-roof-mueller-austin',
@@ -351,6 +353,13 @@ export const PROJECTS: Project[] = [
     relatedServiceSlug: 'shingle-roofing',
   },
 ]
+
+// Machine-generated project pages appended by the Ketterly SEO engine — see
+// src/data/projects.generated.json (starts as an empty array). Kept in a separate
+// JSON file so automated tooling can append new projects safely without editing
+// this TypeScript source. The cast is needed because JSON string literals can't
+// narrow to the Project union types (e.g. `category`).
+export const PROJECTS: Project[] = [...CURATED_PROJECTS, ...(generatedProjects as unknown as Project[])]
 
 export const PROJECT_CATEGORIES = [
   'All Projects',
