@@ -156,6 +156,7 @@ export const CREDENTIALS = {
   certifications: [
     'CertainTeed ShingleMaster Premier Company',
     'HAAG Certified Inspector',
+    'SBA Veteran-Owned Certified',
   ],
   licenses: [
     'Licensed and Insured in Texas',

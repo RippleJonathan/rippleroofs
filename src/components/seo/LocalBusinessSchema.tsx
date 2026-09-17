@@ -16,7 +16,7 @@ export default function LocalBusinessSchema() {
       'https://rippleroofs.com/images/services/commercial-roofing.jpg',
     ],
     description:
-      'Premium roofing services in Texas. CertainTeed ShingleMaster Premier certified contractor serving Round Rock, Austin, Georgetown, and surrounding areas with roof replacement, repairs, emergency services, and more. 24/7 emergency service available.',
+      'Premium roofing services in Texas. Veteran-owned, SBA-certified, and CertainTeed ShingleMaster Premier certified contractor serving Round Rock, Austin, Georgetown, and surrounding areas with roof replacement, repairs, emergency services, and more. 24/7 emergency service available.',
     email: 'tx@rippleroofs.com',
     sameAs: [
       'https://www.facebook.com/rippleroofs',
@@ -210,7 +210,10 @@ export default function LocalBusinessSchema() {
       'Impact-Resistant Roofing',
       'CertainTeed Shingles',
     ],
-    awards: ['CertainTeed ShingleMaster Premier Certification'],
+    awards: [
+      'CertainTeed ShingleMaster Premier Certification',
+      'SBA Certified Veteran-Owned Small Business',
+    ],
     hasCredential: [
       {
         '@type': 'EducationalOccupationalCredential',
@@ -219,6 +222,15 @@ export default function LocalBusinessSchema() {
         recognizedBy: {
           '@type': 'Organization',
           name: 'CertainTeed Corporation',
+        },
+      },
+      {
+        '@type': 'EducationalOccupationalCredential',
+        credentialCategory: 'certification',
+        name: 'Veteran-Owned Small Business (SBA Certified)',
+        recognizedBy: {
+          '@type': 'Organization',
+          name: 'U.S. Small Business Administration',
         },
       },
     ],

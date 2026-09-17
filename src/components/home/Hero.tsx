@@ -39,8 +39,8 @@ export const Hero: FC = () => {
             </h1>
             
             <p className="text-xl md:text-2xl text-primary-100 mb-8 leading-relaxed animate-fade-up" style={{ animationDelay: '0.1s' }}>
-              CertainTeed ShingleMaster Premier certified roofing experts serving the Austin Metro area. 
-              Residential, commercial, and emergency services available 24/7.
+              CertainTeed ShingleMaster Premier certified, Veteran-Owned and SBA-certified roofing experts serving
+              the Austin Metro area. Residential, commercial, and emergency services available 24/7.
             </p>
 
             <div className="animate-fade-up" style={{ animationDelay: '0.2s' }}>
@@ -113,15 +113,29 @@ export const Hero: FC = () => {
                 </svg>
                 <span className="text-sm font-semibold">24/7 Emergency Service</span>
               </div>
+              <div className="flex items-center gap-2 bg-white/15 px-4 py-2 rounded-full">
+                <svg className="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                <span className="text-sm font-semibold">Veteran-Owned Certified</span>
+              </div>
             </div>
           </div>
 
-          {/* CertainTeed Badge - Right Side */}
-          <div className="hidden lg:flex justify-end pt-8 animate-fade-up" style={{ animationDelay: '0.4s' }}>
-            <div className="relative w-32 h-32">
+          {/* Certification Badges - Right Side */}
+          <div className="hidden lg:flex justify-end gap-4 pt-8 animate-fade-up" style={{ animationDelay: '0.4s' }}>
+            <div className="relative w-28 h-28">
               <Image
                 src="/images/certainteed-shingle-master.webp"
                 alt="CertainTeed ShingleMaster Premier Certified"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <div className="relative w-28 h-28">
+              <Image
+                src="/images/sba-veteran-owned-certified.jpg"
+                alt="SBA Veteran-Owned Small Business Certified"
                 fill
                 className="object-contain"
               />

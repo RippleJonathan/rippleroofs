@@ -73,7 +73,7 @@ export const TrustBadgeBar: FC<TrustBadgeBarProps> = ({
             </div>
             <div>
               <div className="text-lg font-bold text-primary-900">Certified & Insured</div>
-              <div className="text-sm text-primary-600">$2M Liability Coverage</div>
+              <div className="text-sm text-primary-600">$1M Liability Coverage</div>
               <div className="text-xs text-primary-500 mt-1">Workers' Comp Included</div>
             </div>
           </div>

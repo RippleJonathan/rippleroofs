@@ -14,7 +14,7 @@ export const SITE_CONFIG = {
   zip: '78664',
   hours: '24/7 Emergency Service Available',
   serviceArea: 'Central Texas, Austin Metro, San Antonio, Georgetown, Round Rock, Killeen, Copperas Cove, Portland',
-  certifications: ['CertainTeed ShingleMaster Premier', 'Fully Insured'],
+  certifications: ['CertainTeed ShingleMaster Premier', 'SBA Veteran-Owned Certified', 'Fully Insured'],
   social: {
     facebook: 'https://facebook.com/rippleroofs',
     instagram: 'https://www.instagram.com/ripple_roofing/',

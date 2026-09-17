@@ -74,7 +74,7 @@ const faqCategories = [
     questions: [
       {
         question: 'How do you tell if a roofer is lying to you?',
-        answer: 'Watch for these: vague or verbal-only proposals (legitimate contractors provide written, itemized scopes); pressure to sign immediately before a storm-chasing "deal" expires; claims they can waive your insurance deductible (this is insurance fraud in Texas and illegal); no physical local address or Texas registration; asking for full payment upfront. A trustworthy contractor will welcome your questions, provide references, pull permits in their name, and never pressure you to sign on the spot.',
+        answer: 'Watch for these: vague or verbal-only proposals (legitimate contractors provide written, itemized scopes); pressure to sign immediately before a storm-chasing "deal" expires; claims they can waive your insurance deductible (this is insurance fraud in Texas and illegal); no physical local address or a Certificate of Insurance they\'re willing to let you verify with the carrier; asking for full payment upfront. A trustworthy contractor will welcome your questions, provide references, pull permits in their name, and never pressure you to sign on the spot.',
       },
       {
         question: 'What should you not say to a roofing contractor?',
@@ -82,11 +82,19 @@ const faqCategories = [
       },
       {
         question: 'What questions should I ask a roofing contractor before hiring?',
-        answer: 'Ask: Are you registered with the Texas Department of Insurance as a roofing contractor? (Required in most TX cities.) Can I see your general liability and workers\' compensation certificates? Do you pull permits and schedule inspections, or do I have to? What manufacturer are you certified with, and what warranty does that enable? How do you handle supplements with my insurance carrier? Can you provide references from recent jobs in my neighborhood? Get specific answers, not vague reassurances.',
+        answer: 'Ask: Can I see your Certificate of Insurance for general liability and workers\' compensation, and can I confirm it directly with your carrier? Texas doesn\'t issue a state roofing license, so insurance and manufacturer certification are what you verify instead of a license number. What manufacturer are you certified with, and what warranty does that enable? Do you pull permits and schedule inspections, or do I have to? How do you handle supplements with my insurance carrier? Can you provide references from recent jobs in my neighborhood? Get specific answers, not vague reassurances.',
       },
       {
         question: 'Is CertainTeed ShingleMaster Premier the best shingle certification?',
         answer: 'CertainTeed\'s ShingleMaster Premier is the highest tier of their three-level certification program — fewer than 1% of CertainTeed contractors nationwide hold it. It requires demonstrated installation volume, inspector verification, and ongoing training. Premier certification enables the SureStart PLUS warranty, which is CertainTeed\'s best coverage and extends the manufacturer\'s material warranty with enhanced protection. For a homeowner, it means your contractor was vetted, not just signed up.',
+      },
+      {
+        question: 'Is Ripple Roofing a veteran-owned company?',
+        answer: 'Yes. Ripple Roofing & Construction is a Veteran-Owned Small Business certified by the U.S. Small Business Administration, founded by U.S. Navy veteran Jonathan in Round Rock, Texas in January 2024. The certification means Jonathan\'s military service and ownership were independently verified by the federal government through the SBA\'s VetCert program — not just stated on our website.',
+      },
+      {
+        question: 'What\'s the difference between a company that says "veteran-owned" and one that\'s SBA-certified veteran-owned?',
+        answer: 'Almost anyone can put "veteran-owned" on a truck or website with no verification at all. SBA certification means the business submitted documentation — including military service records and proof of ownership and control — and a federal reviewer confirmed the owner is a veteran who holds at least 51% ownership of the company. It\'s the difference between a claim and a verified credential.',
       },
     ],
   },

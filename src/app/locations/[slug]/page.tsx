@@ -4342,7 +4342,7 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
                       <strong>Common Roof Type:</strong> Composition shingles, simple gable/hip roofs
                     </p>
                     <div className="bg-blue-50 p-3 rounded mb-3">
-                      <p className="text-xs text-primary-700"><strong>Military Family Focus:</strong> We understand PCS schedules, deployment timelines, and VA loan requirements. Flexible scheduling for active duty. Military & veteran discounts available. Fast turnaround for families PCSing.</p>
+                      <p className="text-xs text-primary-700"><strong>Military Family Focus:</strong> We understand PCS schedules, deployment timelines, and VA loan requirements. Flexible scheduling for active duty. Fast turnaround for families PCSing.</p>
                     </div>
                     <div className="space-y-2 text-sm text-primary-700">
                       <p><strong>Common Issues:</strong> Aging roofs from 1980s-1990s construction, hail damage from Central Texas storms, wind damage, rental property wear and tear</p>
@@ -4483,13 +4483,6 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
                       <li className="flex items-start gap-2">
                         <span className="text-green-600 font-bold">✓</span>
                         <div>
-                          <p className="font-semibold text-primary-900">Military & Veteran Discounts</p>
-                          <p>Active duty, reserves, veterans, and military spouses receive special pricing. Thank you for your service.</p>
-                        </div>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-green-600 font-bold">✓</span>
-                        <div>
                           <p className="font-semibold text-primary-900">VA Loan Requirements Expertise</p>
                           <p>Understand VA appraisal requirements. Ensure roof meets VA standards for home purchases/refinances.</p>
                         </div>
@@ -4515,7 +4508,7 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
                 <div className="mt-6 bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
                   <p className="font-bold text-primary-900 mb-2">🎖️ Fort Cavazos Families: We Understand Your Unique Needs</p>
                   <p className="text-sm text-primary-700">
-                    Whether you're active duty at Fort Cavazos, a military spouse, a veteran who settled in Killeen, or a civilian supporting the installation—we're here to help. We've worked with hundreds of military families and understand the challenges of frequent moves, deployments, and military life. <strong>Military discount + flexible scheduling + fast turnaround = stress-free roofing.</strong> Thank you for your service to our country.
+                    Whether you're active duty at Fort Cavazos, a military spouse, a veteran who settled in Killeen, or a civilian supporting the installation—we're here to help. We understand the challenges of frequent moves, deployments, and military life. <strong>Flexible scheduling + fast turnaround = stress-free roofing.</strong> Thank you for your service to our country.
                   </p>
                 </div>
               </div>
@@ -4718,10 +4711,6 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-green-600 font-bold">✓</span>
-                        <span><strong>Military & veteran discount</strong> (thank you for your service!)</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-green-600 font-bold">✓</span>
                         <span><strong>Multiple properties discount</strong> (rental investors with 3+ Killeen properties)</span>
                       </li>
                     </ul>
@@ -4729,23 +4718,20 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
                 </div>
 
                 <div className="bg-gradient-to-r from-accent-50 to-blue-50 rounded-lg p-6">
-                  <h3 className="text-xl font-bold text-primary-900 mb-4">💡 5 Ways Killeen Homeowners Save on Roof Replacement</h3>
+                  <h3 className="text-xl font-bold text-primary-900 mb-4">💡 4 Ways Killeen Homeowners Save on Roof Replacement</h3>
                   <div className="grid md:grid-cols-2 gap-4 text-sm text-primary-700">
                     <div>
                       <p className="font-bold text-primary-900 mb-1">1. File Insurance Claims After Hail (CRITICAL)</p>
                       <p className="mb-3">Killeen gets major hail every 2-3 years. April 2024 damaged thousands of Bell County roofs. If neighbors filed claims, you should too. Insurance covers 100% minus deductible. We handle entire process. Active duty? We coordinate around your schedule!</p>
-                      
+
                       <p className="font-bold text-primary-900 mb-1">2. Impact-Resistant = Insurance Savings</p>
                       <p className="mb-3">$3k-$4k more upfront, but saves $400-$700/year on Killeen insurance (15-30% discount). Pays for itself in 5-7 years. Over 30 years: $12,000-$21,000 savings. Plus survives Killeen's frequent hail better.</p>
-                      
-                      <p className="font-bold text-primary-900 mb-1">3. Military & Veteran Discounts</p>
-                      <p className="mb-3">Active duty, reserves, veterans, military spouses receive special pricing. Our way of saying thank you. Combine with insurance claim for maximum savings.</p>
                     </div>
                     <div>
-                      <p className="font-bold text-primary-900 mb-1">4. Investor Volume Pricing</p>
+                      <p className="font-bold text-primary-900 mb-1">3. Investor Volume Pricing</p>
                       <p className="mb-3">Own 3+ Killeen rental properties? We offer 10-15% volume discounts. Schedule back-to-back reduces mobilization costs. Popular with Fort Cavazos area landlords.</p>
-                      
-                      <p className="font-bold text-primary-900 mb-1">5. 0% Financing Available</p>
+
+                      <p className="font-bold text-primary-900 mb-1">4. 0% Financing Available</p>
                       <p className="mb-3">Spread $12k-$20k Killeen roof over 12-18 months interest-free through approved lenders. Makes quality roofing affordable. No prepayment penalty.</p>
                     </div>
                   </div>
@@ -7456,12 +7442,6 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
                     <h3 className="text-xl font-bold text-primary-900 mb-4">💰 Financial Options for Military Families</h3>
                     <ul className="space-y-3 text-sm text-primary-700">
                       <li className="flex items-start gap-3">
-                        <span className="text-2xl">🎖️</span>
-                        <div>
-                          <strong className="text-primary-900">Military & Veteran Discounts:</strong> Active duty, veterans, and military retirees receive special pricing. Thank you for your service—we're honored to serve you.
-                        </div>
-                      </li>
-                      <li className="flex items-start gap-3">
                         <span className="text-2xl">💳</span>
                         <div>
                           <strong className="text-primary-900">Flexible Financing:</strong> 0% financing available. $0 down payment options. We work with military budgets and understand BAH constraints.
@@ -7671,10 +7651,6 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-green-600 font-bold">✓</span>
-                        <span><strong>Military/veteran discount</strong> (active duty, veterans, retirees)</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-green-600 font-bold">✓</span>
                         <span><strong>Neighborhood storm pricing</strong> (multiple homes after hail events)</span>
                       </li>
                     </ul>
@@ -7688,7 +7664,6 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
                     <li>• <strong>VA Loan Requirements:</strong> Selling your home with VA financing? We provide all documentation to meet VA appraisal standards for next buyer.</li>
                     <li>• <strong>Deployment Support:</strong> Deployed spouse? We communicate with family/POA, provide photos/updates, handle everything professionally while you're serving.</li>
                     <li>• <strong>BAH Budget:</strong> We understand military budgets. Financing options available. We work with you to find quality solutions within your constraints.</li>
-                    <li>• <strong>Military Discount:</strong> Active duty, veterans, retirees receive special pricing. It's our way of saying thank you for your service.</li>
                   </ul>
                 </div>
 
@@ -8098,10 +8073,10 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
                       </div>
                       <div>
                         <p className="font-semibold text-primary-900 mb-2">Smart Military Value:</p>
-                        <p className="text-sm mb-3">Impact-resistant architectural shingles provide best value. Quality installation ensures VA/FHA inspection pass. Transferable manufacturer warranties protect investment through PCS moves. We work with deployment schedules and offer military discounts. Fast timelines when orders come through.</p>
-                        <p className="font-semibold text-primary-900 mb-2">Military-Friendly Pricing:</p>
+                        <p className="text-sm mb-3">Impact-resistant architectural shingles provide best value. Quality installation ensures VA/FHA inspection pass. Transferable manufacturer warranties protect investment through PCS moves. We work with deployment schedules. Fast timelines when orders come through.</p>
+                        <p className="font-semibold text-primary-900 mb-2">Typical Pricing:</p>
                         <p className="text-accent-600 font-bold text-xl">$11,000-$18,000</p>
-                        <p className="text-sm">Most Fort Cavazos-area homes 1,400-2,200 sq ft, simple ranch styles. <span className="font-bold">Ask about military/veteran discounts.</span> Financing available through USAA partnerships.</p>
+                        <p className="text-sm">Most Fort Cavazos-area homes 1,400-2,200 sq ft, simple ranch styles. Financing available through USAA partnerships.</p>
                       </div>
                     </div>
                   </div>
@@ -8162,7 +8137,7 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
                 <div className="mt-8 bg-green-50 border-l-4 border-green-600 p-6 rounded">
                   <p className="text-primary-900 font-semibold mb-2">🪖 Military & First Responder Appreciation:</p>
                   <p className="text-primary-700">
-                    We're honored to serve Fort Cavazos military families, veterans, and Temple's first responders. Ask about our military discount and deployment-friendly scheduling. We understand PCS timelines, VA/FHA loan requirements, and the value of a transferable warranty when orders come through. Thank you for your service—let us serve you with the quality roofing Temple's heroes deserve.
+                    We're honored to serve Fort Cavazos military families, veterans, and Temple's first responders. We offer deployment-friendly scheduling and understand PCS timelines, VA/FHA loan requirements, and the value of a transferable warranty when orders come through. Thank you for your service—let us serve you with the quality roofing Temple's heroes deserve.
                   </p>
                 </div>
               </div>
@@ -8274,7 +8249,7 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
                   Temple Roof Replacement Costs: Honest Pricing
                 </h2>
                 <p className="text-primary-700 mb-6">
-                  Transparent pricing for Temple homeowners. Military/veteran discounts available. Costs vary by home size and neighborhood:
+                  Transparent pricing for Temple homeowners. Costs vary by home size and neighborhood:
                 </p>
                 <div className="space-y-4">
                   <div className="flex justify-between items-start border-b border-green-200 pb-3">
@@ -8316,9 +8291,6 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
                 <div className="mt-6 bg-white p-4 rounded-lg border-l-4 border-green-600">
                   <p className="text-sm text-primary-700">
                     <strong>All prices include:</strong> Complete tear-off, haul-off, impact-resistant architectural shingles, synthetic underlayment, ice/water shield, new vents, flashing, cleanup, warranty registration.
-                  </p>
-                  <p className="text-sm text-accent-600 font-bold mt-2">
-                    🪖 Military/Veteran Discount: Ask about special pricing for Fort Cavazos families and all who've served.
                   </p>
                 </div>
               </div>

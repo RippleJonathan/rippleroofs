@@ -7,15 +7,15 @@ import { Button } from '@/components/ui/Button'
 import { SITE_CONFIG } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'About Ripple Roofing | CertainTeed Premier Roofer in Round Rock, TX',
+  title: 'About Ripple Roofing | Veteran-Owned, CertainTeed Premier Roofer in Round Rock, TX',
   description:
-    'Navy veteran-owned roofing company in Round Rock, TX. One of fewer than 1% of contractors to hold CertainTeed ShingleMaster Premier certification. Honest insurance claims, real advocacy — no deductible waiving, ever.',
+    'Navy veteran-owned roofing company in Round Rock, TX — SBA Veteran-Owned Certified. One of fewer than 1% of contractors to hold CertainTeed ShingleMaster Premier certification. Honest insurance claims, real advocacy — no deductible waiving, ever.',
   keywords:
-    'about Ripple Roofing, Round Rock roofing company, CertainTeed ShingleMaster Premier, owner-operated roofer Central Texas, roof insurance claim advocate Texas',
+    'about Ripple Roofing, veteran owned roofing company Round Rock, SBA certified veteran owned business, Round Rock roofing company, CertainTeed ShingleMaster Premier, owner-operated roofer Central Texas, roof insurance claim advocate Texas',
   openGraph: {
     title: 'About Ripple Roofing & Construction | Round Rock, TX',
     description:
-      'Owner-operated roofing company founded in 2024. CertainTeed ShingleMaster Premier certified. Real insurance claim advocacy. No deductible waiving — ever.',
+      'Owner-operated, SBA-certified Veteran-Owned roofing company founded in 2024. CertainTeed ShingleMaster Premier certified. Real insurance claim advocacy. No deductible waiving — ever.',
   },
   alternates: {
     canonical: 'https://rippleroofs.com/about',
@@ -110,6 +110,11 @@ const AboutPage: FC = () => {
                   approach the work.
                 </p>
                 <p>
+                  In September 2026, that service became an official business credential: Ripple Roofing is now a{' '}
+                  <strong>Veteran-Owned Small Business certified by the U.S. Small Business Administration</strong>.
+                  It's federal verification of Jonathan's military service and ownership — not just a claim on a website.
+                </p>
+                <p>
                   He built Ripple Roofing with something else in mind, too: his wife and three children. He wants
                   them to see firsthand what it looks like to build something with integrity — that when you identify
                   a problem and believe you can solve it better, you go do it.
@@ -152,6 +157,23 @@ const AboutPage: FC = () => {
                     </div>
                   ))}
                 </div>
+              </div>
+
+              <div className="bg-white rounded-2xl p-8 border-2 border-accent-200 text-center">
+                <div className="relative w-32 h-40 mx-auto mb-4">
+                  <Image
+                    src="/images/sba-veteran-owned-certified.jpg"
+                    alt="SBA Veteran-Owned Small Business Certified badge"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+                <p className="text-accent-600 font-semibold uppercase tracking-wide text-sm mb-2">Certified September 2026</p>
+                <h3 className="text-lg font-bold text-primary-900 mb-2">Veteran-Owned Small Business</h3>
+                <p className="text-primary-600 text-sm leading-relaxed">
+                  The U.S. Small Business Administration independently verified Jonathan's veteran status and
+                  ownership of Ripple Roofing — official confirmation, not just a claim on a website.
+                </p>
               </div>
             </div>
           </div>
@@ -300,12 +322,12 @@ const AboutPage: FC = () => {
               <div className="bg-primary-50 rounded-2xl p-7 flex items-start gap-5">
                 <div className="w-14 h-14 bg-accent-500 rounded-full flex items-center justify-center flex-shrink-0">
                   <svg className="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2z" />
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-primary-900 mb-1">Texas Registered Roofing Contractor</h3>
-                  <p className="text-primary-600 text-sm">Registered and compliant with Texas state roofing contractor requirements.</p>
+                  <h3 className="text-lg font-bold text-primary-900 mb-1">SBA Veteran-Owned Certified</h3>
+                  <p className="text-primary-600 text-sm">Verified Veteran-Owned Small Business, certified by the U.S. Small Business Administration.</p>
                 </div>
               </div>
 
