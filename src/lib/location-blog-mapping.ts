@@ -165,6 +165,12 @@ export const LOCATION_BLOG_POSTS: Record<string, Array<{
   ],
   'round-rock': [
     {
+      title: 'Roof Repair Cost in Texas: 2026 Estimate Guide',
+      description: 'Real roof repair price ranges by type, what changes your estimate, and how to tell if you need a repair or a full replacement.',
+      slug: 'roof-repair-cost-texas',
+      category: 'Cost Guide'
+    },
+    {
       title: 'Complete Round Rock Roofing Guide',
       description: 'Comprehensive guide to roofing in Round Rock including neighborhood-specific advice.',
       slug: 'round-rock-roofing-guide',
