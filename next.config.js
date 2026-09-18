@@ -278,6 +278,12 @@ const nextConfig = {
         destination: '/services/storm-damage-restoration',
         permanent: true,
       },
+      // Commercial portfolio page retired - no real completed commercial jobs to show yet
+      {
+        source: '/commercial-portfolio',
+        destination: '/services/commercial-roofing',
+        permanent: true,
+      },
     ]
   },
   

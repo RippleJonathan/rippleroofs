@@ -88,12 +88,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.85,
     },
-    {
-      url: `${baseUrl}/commercial-portfolio`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
-      priority: 0.7,
-    },
     // Resources hub
     {
       url: `${baseUrl}/resources`,
