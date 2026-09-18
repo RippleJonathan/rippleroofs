@@ -96,8 +96,8 @@ export default async function RoofingRoundRockPage() {
         <Container>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
             <div>
-              <div className="text-3xl font-bold mb-1">137,000+</div>
-              <div className="text-sm text-white/90">Round Rock Residents Served</div>
+              <div className="text-3xl font-bold mb-1">50+</div>
+              <div className="text-sm text-white/90">Crew Members Network</div>
             </div>
             <div>
               <div className="text-3xl font-bold mb-1">24/7</div>
@@ -132,9 +132,9 @@ export default async function RoofingRoundRockPage() {
                 </h2>
                 <div className="prose prose-lg max-w-none text-primary-700">
                   <p>
-                    When you need a roofing contractor in Round Rock, you need a team that understands Central Texas weather. 
-                    At Ripple Roofing & Construction, we've been protecting Round Rock homes and businesses from Texas hailstorms, 
-                    intense summer heat, and severe weather for years. As a <strong>CertainTeed ShingleMaster Premier certified contractor</strong>, 
+                    When you need a roofing contractor in Round Rock, you need a team that understands Central Texas weather.
+                    At Ripple Roofing & Construction, we protect Round Rock homes and businesses from Texas hailstorms,
+                    intense summer heat, and severe weather. As a <strong>CertainTeed ShingleMaster Premier certified contractor</strong>,
                     we bring the highest level of expertise to every Round Rock roofing project.
                   </p>
                   <p className="mt-4">
@@ -144,9 +144,15 @@ export default async function RoofingRoundRockPage() {
                     insurance claim assistance.
                   </p>
                   <p className="mt-4">
-                    <strong>Why Round Rock homeowners choose Ripple Roofing:</strong> We're local, we understand Round Rock's unique 
-                    challenges (hail season, HOA requirements, rapid growth), and we deliver exceptional quality at fair prices. 
+                    <strong>Why Round Rock homeowners choose Ripple Roofing:</strong> We're local, we understand Round Rock's unique
+                    challenges (hail season, HOA requirements, rapid growth), and we deliver exceptional quality at fair prices.
                     From free inspections to 10-year workmanship warranties, we're committed to protecting Round Rock homes for decades.
+                  </p>
+                  <p className="mt-4">
+                    Still comparing options? Our <Link href="/blog/round-rock-roofing-guide" className="text-accent-600 font-semibold hover:text-accent-700">Round Rock roofing buyer's guide</Link> walks
+                    through choosing between repair and replacement, picking a material, and vetting a contractor. If you're
+                    specifically considering metal, see our <Link href="/blog/metal-roofing-round-rock" className="text-accent-600 font-semibold hover:text-accent-700">metal roofing guide</Link> for
+                    standing seam and stone-coated steel pricing, HOA approval, and energy savings in Round Rock's heat.
                   </p>
                 </div>
               </div>
@@ -372,8 +378,8 @@ export default async function RoofingRoundRockPage() {
                     <div>
                       <h3 className="text-xl font-bold text-primary-900 mb-2">Insurance Claim Experts</h3>
                       <p className="text-primary-600">
-                        We've helped hundreds of Round Rock homeowners navigate insurance claims after hailstorms. We document 
-                        damage thoroughly, meet with your adjuster, and ensure you get the coverage you deserve. In Round Rock's 
+                        We help Round Rock homeowners navigate insurance claims after hailstorms. We document
+                        damage thoroughly, meet with your adjuster, and ensure you get the coverage you deserve. In Round Rock's
                         hail-prone climate, this expertise is invaluable—we maximize your claim while minimizing your hassle.
                       </p>
                     </div>
@@ -437,7 +443,7 @@ export default async function RoofingRoundRockPage() {
                   <div>
                     <h3 className="font-bold text-primary-900 mb-2">📅 Peak Hail Season: March-May</h3>
                     <p className="text-primary-700 text-sm">
-                      75% of Round Rock's damaging hail occurs in spring. After major storms, schedule a FREE inspection 
+                      Round Rock's peak hail activity tends to hit in spring. After major storms, schedule a FREE inspection
                       within 1-2 weeks—damage may not be immediately visible but appears gradually as shingles weather.
                     </p>
                   </div>
@@ -469,6 +475,14 @@ export default async function RoofingRoundRockPage() {
                   Expert advice for Round Rock homeowners:
                 </p>
                 <div className="grid md:grid-cols-2 gap-4">
+                  <Link href="/blog/round-rock-roofing-guide" className="p-4 bg-white rounded-lg border border-primary-200 hover:border-accent-500 hover:shadow-md transition-all">
+                    <h3 className="font-bold text-primary-900 mb-2">Round Rock Roofing Buyer's Guide</h3>
+                    <p className="text-sm text-primary-600">How to decide between repair vs. replacement, choose a material, and vet a contractor.</p>
+                  </Link>
+                  <Link href="/blog/metal-roofing-round-rock" className="p-4 bg-white rounded-lg border border-primary-200 hover:border-accent-500 hover:shadow-md transition-all">
+                    <h3 className="font-bold text-primary-900 mb-2">Metal Roofing in Round Rock</h3>
+                    <p className="text-sm text-primary-600">Standing seam vs. stone-coated steel costs, HOA approval, and energy savings.</p>
+                  </Link>
                   <Link href="/blog/stone-coated-steel-hoa-approval-texas" className="p-4 bg-white rounded-lg border border-primary-200 hover:border-accent-500 hover:shadow-md transition-all">
                     <h3 className="font-bold text-primary-900 mb-2">Getting HOA Approval for Roof Replacement</h3>
                     <p className="text-sm text-primary-600">Essential for Teravista, Walsh Ranch, and other Round Rock HOA communities.</p>
@@ -552,6 +566,12 @@ export default async function RoofingRoundRockPage() {
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
                       <span>10-Year Workmanship Warranty</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <svg className="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                      </svg>
+                      <span>SBA Veteran-Owned Certified</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <svg className="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">

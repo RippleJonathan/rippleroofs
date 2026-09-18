@@ -9,6 +9,7 @@ This file exists because a batch of blog content (and some service-page copy) wa
 - **Do not claim tenure.** No "since 2015," "X+ years in business," "X+ years serving Central Texas," or similar. The company is genuinely new (~2.5 years old as of mid-2026) and there's nothing to gain by fabricating history — if a post needs a trust signal, lean on certifications and licensing instead, not years in operation.
 - Jonathan is a U.S. Navy veteran, attended Central Texas College and Texas A&M University in Killeen, and has lived in Central Texas 14+ years. He ran operations for a corporate roofing company before founding Ripple. That personal background is real and citable — but it is *his* history, not the company's operating history. Don't convert "Jonathan has lived here 14 years" into "Ripple has served this area for 14 years."
 - **Crew network:** "50+ Crew Members Network" (used on the About page) is confirmed accurate — a real subcontractor/crew roster size. Unlike the inflated project/customer counts below, this one can be reused elsewhere as a trust signal.
+- **Round Rock Chamber of Commerce member:** confirmed real (Jonathan, Sept 2026) — safe to cite as "Round Rock Chamber Member" as a trust signal. (An earlier ground-truth pass wrongly flagged this as unverified and stripped it from `/roofing-round-rock` — restored.)
 
 ## Contact info (use exactly this — never invent department emails)
 
