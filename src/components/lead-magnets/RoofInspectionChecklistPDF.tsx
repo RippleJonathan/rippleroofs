@@ -331,7 +331,7 @@ export function generateRoofInspectionChecklistPDF() {
   doc.text('Ripple Roofing & Construction', 105, yPos + 15, { align: 'center' });
   doc.text('FREE 50-Point Roof Inspection', 105, yPos + 22, { align: 'center' });
   doc.text('Call: (512) 763-5277', 105, yPos + 29, { align: 'center' });
-  doc.text('www.rippleroofs.com', 105, yPos + 36, { align: 'center' });
+  doc.text('rippleroofs.com', 105, yPos + 36, { align: 'center' });
   
   doc.setFontSize(8);
   doc.setTextColor(200, 200, 200);

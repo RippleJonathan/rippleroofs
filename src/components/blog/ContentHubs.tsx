@@ -34,7 +34,7 @@ const CONTENT_HUBS: Hub[] = [
   {
     title: 'Storm Damage',
     description: 'Hail damage, insurance claims & emergency repairs',
-    href: '/hubs/storm-damage',
+    href: '/services/storm-damage-restoration',
     icon: <CloudRain className="w-5 h-5" />,
   },
 ];

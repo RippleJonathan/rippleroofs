@@ -516,7 +516,7 @@ export function generateSeasonalMaintenanceCalendarPDF() {
   
   doc.setFontSize(10);
   doc.setFont('helvetica', 'normal');
-  doc.text('www.rippleroofs.com', 105, yPos + 56, { align: 'center' });
+  doc.text('rippleroofs.com', 105, yPos + 56, { align: 'center' });
   
   doc.setFontSize(8);
   doc.setTextColor(200, 255, 200);

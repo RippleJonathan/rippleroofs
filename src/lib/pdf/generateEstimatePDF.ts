@@ -77,7 +77,7 @@ export async function generateEstimatePDF(data: EstimatePDFData): Promise<Blob> 
   
   // Add logo (centered at top) - compressed for smaller PDF size
   try {
-    const logoBase64 = await loadImageAsBase64('https://www.rippleroofs.com/images/logo.png', 400, 0.8)
+    const logoBase64 = await loadImageAsBase64('https://rippleroofs.com/images/logo.png', 400, 0.8)
     doc.addImage(logoBase64, 'JPEG', pageWidth / 2 - 20, 8, 40, 15)
   } catch (error) {
     console.log('Logo not loaded, using text fallback')

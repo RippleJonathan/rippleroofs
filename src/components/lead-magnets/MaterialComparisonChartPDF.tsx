@@ -416,7 +416,7 @@ export function generateMaterialComparisonChartPDF() {
   
   doc.setFontSize(10);
   doc.setFont('helvetica', 'normal');
-  doc.text('www.rippleroofs.com/estimate', 105, yPos + 56, { align: 'center' });
+  doc.text('rippleroofs.com/estimate', 105, yPos + 56, { align: 'center' });
   
   doc.setFontSize(8);
   doc.setTextColor(200, 220, 255);
