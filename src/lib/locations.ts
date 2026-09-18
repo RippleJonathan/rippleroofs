@@ -117,42 +117,6 @@ export const LOCATIONS: LocationData[] = [
     weatherNote: 'Georgetown\'s location north of Austin means increased exposure to severe weather including devastating hailstorms (some of Texas\'s worst), high winds exceeding 60mph, intense summer heat, and occasional tornadoes.'
   },
   {
-    slug: 'san-antonio',
-    city: 'San Antonio',
-    state: 'TX',
-    zip: '78201',
-    county: 'Bexar County',
-    metroArea: 'Greater San Antonio',
-    heroImage: '/images/locations/san-antonio-hero.jpg',
-    neighborhoods: [
-      'Alamo Heights',
-      'Stone Oak',
-      'The Dominion',
-      'Terrell Hills',
-      'Medical Center',
-      'Downtown San Antonio',
-      'Southtown',
-      'King William',
-      'Monte Vista',
-      'Olmos Park',
-      'Shavano Park',
-      'Castle Hills'
-    ],
-    landmarks: [
-      'The Alamo',
-      'River Walk',
-      'Tower of the Americas',
-      'San Antonio Missions',
-      'Pearl District',
-      'Six Flags Fiesta Texas',
-      'SeaWorld San Antonio',
-      'San Antonio Zoo'
-    ],
-    description: 'San Antonio, Texas\' second-largest city, masterfully blends 300 years of rich history with modern metropolitan growth. Home to historic missions, a world-famous River Walk, and major military installations, San Antonio offers diverse architecture from Spanish colonial to modern suburban. We provide comprehensive roofing services throughout San Antonio and surrounding areas.',
-    population: '1,500,000+',
-    weatherNote: 'San Antonio faces extreme summer heat exceeding 100°F for extended periods, frequent and severe hailstorms, high humidity levels that accelerate roof deterioration, occasional flooding, and intense UV radiation year-round.'
-  },
-  {
     slug: 'killeen',
     city: 'Killeen',
     state: 'TX',

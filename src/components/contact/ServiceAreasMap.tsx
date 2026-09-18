@@ -50,12 +50,6 @@ const SERVICE_AREAS_TEXAS = [
     population: '18,000+',
     featured: false,
   },
-  {
-    name: 'San Antonio',
-    description: 'Expanding coverage area',
-    population: '1.5M+',
-    featured: true,
-  },
 ];
 
 export const ServiceAreasMap: FC = () => {
@@ -83,7 +77,7 @@ export const ServiceAreasMap: FC = () => {
               <div className="text-sm text-primary-600 font-medium">Mile Radius</div>
             </div>
             <div className="bg-white rounded-xl shadow-lg p-6 text-center border-2 border-accent-100">
-              <div className="text-4xl font-bold mb-2 text-accent-600">9+</div>
+              <div className="text-4xl font-bold mb-2 text-accent-600">8+</div>
               <div className="text-sm text-primary-600 font-medium">Cities Served</div>
             </div>
             <div className="bg-white rounded-xl shadow-lg p-6 text-center border-2 border-accent-100">

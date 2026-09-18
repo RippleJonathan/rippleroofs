@@ -158,7 +158,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
 
   // Texas location pages
-  const priorityLocationSlugs = ['round-rock', 'austin', 'georgetown', 'pflugerville', 'cedar-park', 'leander', 'san-antonio', 'temple', 'san-marcos']
+  const priorityLocationSlugs = ['round-rock', 'austin', 'georgetown', 'pflugerville', 'cedar-park', 'leander', 'temple', 'san-marcos']
   const locationPages = LOCATIONS.map((location) => ({
     url: `${baseUrl}/locations/${location.slug}`,
     lastModified: new Date(),

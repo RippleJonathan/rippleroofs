@@ -140,10 +140,6 @@ export default function LocalBusinessSchema() {
       },
       {
         '@type': 'City',
-        name: 'San Antonio',
-      },
-      {
-        '@type': 'City',
         name: 'Temple',
       },
       {

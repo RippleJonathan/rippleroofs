@@ -147,10 +147,10 @@ const AboutPage: FC = () => {
                 <h3 className="text-xl font-bold mb-4">Locally Rooted, Regionally Serving</h3>
                 <p className="text-primary-200 leading-relaxed mb-4">
                   We're headquartered in Round Rock and serve the greater Central Texas region — from Georgetown
-                  and Cedar Park to San Antonio, Temple, and beyond.
+                  and Cedar Park to Temple, and beyond.
                 </p>
                 <div className="grid grid-cols-2 gap-2 text-sm">
-                  {['Round Rock', 'Austin', 'Georgetown', 'Cedar Park', 'Leander', 'Pflugerville', 'Hutto', 'Taylor', 'Killeen', 'Temple', 'San Antonio', 'San Marcos'].map((city) => (
+                  {['Round Rock', 'Austin', 'Georgetown', 'Cedar Park', 'Leander', 'Pflugerville', 'Hutto', 'Taylor', 'Killeen', 'Temple', 'San Marcos'].map((city) => (
                     <div key={city} className="flex items-center gap-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-accent-400 flex-shrink-0" />
                       <span className="text-primary-200">{city}</span>

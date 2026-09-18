@@ -39,6 +39,16 @@ const nextConfig = {
         destination: '/hubs/metal-roofing',
         permanent: true,
       },
+      {
+        source: '/blog/roof-replacement-cost-san-antonio',
+        destination: '/services/roof-replacement',
+        permanent: true,
+      },
+      {
+        source: '/locations/san-antonio',
+        destination: '/locations',
+        permanent: true,
+      },
       // Old "about-2" pages (with and without trailing slash)
       {
         source: '/about-2/',

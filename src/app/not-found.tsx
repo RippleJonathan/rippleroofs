@@ -87,11 +87,6 @@ const NotFound: FC = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/locations/san-antonio" className="hover:text-accent-600 transition-colors">
-                    San Antonio
-                  </Link>
-                </li>
-                <li>
                   <Link href="/locations/round-rock" className="hover:text-accent-600 transition-colors">
                     Round Rock
                   </Link>

@@ -3218,7 +3218,6 @@ const ServicePage: FC<ServicePageProps> = ({ params }) => {
                     { name: 'Round Rock', slug: 'round-rock' },
                     { name: 'Austin', slug: 'austin' },
                     { name: 'Georgetown', slug: 'georgetown' },
-                    { name: 'San Antonio', slug: 'san-antonio' },
                     { name: 'Killeen', slug: 'killeen' },
                     { name: 'Copperas Cove', slug: 'copperas-cove' },
                     { name: 'Cedar Park', slug: 'cedar-park' },

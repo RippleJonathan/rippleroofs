@@ -75,10 +75,6 @@ export default function ServiceSchema({
       },
       {
         '@type': 'City',
-        name: 'San Antonio',
-      },
-      {
-        '@type': 'City',
         name: 'Killeen',
       },
       {

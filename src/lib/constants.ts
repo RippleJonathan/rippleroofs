@@ -13,7 +13,7 @@ export const SITE_CONFIG = {
   state: 'Texas',
   zip: '78664',
   hours: '24/7 Emergency Service Available',
-  serviceArea: 'Central Texas, Austin Metro, San Antonio, Georgetown, Round Rock, Killeen, Copperas Cove, Portland',
+  serviceArea: 'Central Texas, Austin Metro, Georgetown, Round Rock, Killeen, Copperas Cove, Portland',
   certifications: ['CertainTeed ShingleMaster Premier', 'SBA Veteran-Owned Certified', 'Fully Insured'],
   social: {
     facebook: 'https://facebook.com/rippleroofs',
@@ -68,7 +68,6 @@ export const NAV_LINKS: NavLink[] = [
       { href: '/locations/jarrell', label: 'Jarrell' },
       { href: '/locations/san-marcos', label: 'San Marcos' },
       { href: '/locations/new-braunfels', label: 'New Braunfels' },
-      { href: '/locations/san-antonio', label: 'San Antonio' },
       { href: '/locations/temple', label: 'Temple' },
       { href: '/locations/killeen', label: 'Killeen' },
       { href: '/locations/copperas-cove', label: 'Copperas Cove' },

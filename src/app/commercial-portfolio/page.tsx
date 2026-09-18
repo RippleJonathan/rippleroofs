@@ -74,22 +74,6 @@ const COMMERCIAL_PROJECTS = [
     ],
   },
   {
-    id: 'commercial-5',
-    title: 'Restaurant Group Multi-Location Roofing',
-    category: 'Food Service',
-    location: 'Austin, San Antonio, Round Rock',
-    service: 'Multi-Location Roof Replacement',
-    year: 2024,
-    image: '/images/projects/commercial-restaurant.jpg',
-    description: 'Coordinated roof replacements across 4 restaurant locations. Standardized material selection and contractor team for consistent quality. Minimized disruption to business operations across all sites.',
-    highlights: [
-      '4 restaurant locations',
-      'Coordinated project management',
-      'Business hours-friendly scheduling',
-      'Consistent quality across all sites',
-    ],
-  },
-  {
     id: 'commercial-6',
     title: 'Medical Office Building TPO Roof',
     category: 'Medical Facility',
@@ -107,7 +91,7 @@ const COMMERCIAL_PROJECTS = [
   },
 ]
 
-const COMMERCIAL_CATEGORIES = ['All Projects', 'Apartment Complex', 'Office Building', 'Retail Center', 'Warehouse', 'Food Service', 'Medical Facility']
+const COMMERCIAL_CATEGORIES = ['All Projects', 'Apartment Complex', 'Office Building', 'Retail Center', 'Warehouse', 'Medical Facility']
 
 export default function CommercialPortfolioPage() {
   const [selectedCategory, setSelectedCategory] = useState<string>('All Projects')

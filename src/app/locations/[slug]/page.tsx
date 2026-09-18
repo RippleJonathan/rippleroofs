@@ -36,13 +36,28 @@ export async function generateMetadata({ params }: LocationPageProps): Promise<M
     }
   }
 
-  const title = `${location.city} Roofing | Free Inspection | CertainTeed Certified`
-  const description = `Top-rated roofing contractor in ${location.city}, TX. Residential, commercial & emergency services. CertainTeed ShingleMaster Premier certified. Free inspections — call ${SITE_CONFIG.phone}.`
+  // Round Rock has a dedicated commercial landing page at /roofing-round-rock that
+  // targets the exact same head terms as the standard location-page template below
+  // (e.g. "roofing round rock", "round rock roofing company"). Running both pages
+  // after the same phrase splits ranking signal between them, so this page is
+  // deliberately retitled around its actual job — the service-area/neighborhood
+  // overview — while /roofing-round-rock owns the commercial head terms.
+  const isRoundRock = params.slug === 'round-rock'
+
+  const title = isRoundRock
+    ? `Round Rock, TX Service Area & Neighborhoods We Cover | Ripple Roofing`
+    : `${location.city} Roofing | Free Inspection | CertainTeed Certified`
+  const description = isRoundRock
+    ? `Ripple Roofing & Construction is headquartered in Round Rock, TX. See the neighborhoods and local factors we account for on every job — then visit our full Round Rock roofing services page for pricing, materials, and to request a free inspection.`
+    : `Top-rated roofing contractor in ${location.city}, TX. Residential, commercial & emergency services. CertainTeed ShingleMaster Premier certified. Free inspections — call ${SITE_CONFIG.phone}.`
+  const keywords = isRoundRock
+    ? `Round Rock TX neighborhoods, Round Rock roofing service area, Ripple Roofing headquarters Round Rock`
+    : `${location.city} roofer, roofing company ${location.city} ${location.state}, roof repair ${location.city}, roof replacement ${location.city}, ${location.city} roofing contractor`
 
   return {
     title: { absolute: title },
     description,
-    keywords: `${location.city} roofer, roofing company ${location.city} ${location.state}, roof repair ${location.city}, roof replacement ${location.city}, ${location.city} roofing contractor`,
+    keywords,
     openGraph: {
       title,
       description,
@@ -68,6 +83,7 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
   }
 
   const businessRating = getBusinessRatingSnapshot()
+  const isRoundRock = location.slug === 'round-rock'
 
   // Deterministically rotate which generic posts show per location, so all of
   // them surface somewhere instead of always the same first two.
@@ -119,6 +135,14 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
             <p className="text-lg text-primary-200 mb-8">
               CertainTeed ShingleMaster Premier Certified • Certified & Insured • 24/7 Emergency Service
             </p>
+            {isRoundRock && (
+              <p className="text-primary-100 mb-6">
+                This is our home base — see our full{' '}
+                <Link href="/roofing-round-rock" className="underline font-semibold hover:text-white">
+                  Round Rock roofing services, pricing, and reviews
+                </Link>.
+              </p>
+            )}
             <div className="flex flex-wrap gap-4 mb-6">
               <Button variant="primary" size="lg" href="#quote">
                 🎯 Schedule FREE Inspection Today
@@ -3950,373 +3974,6 @@ const LocationPage: FC<LocationPageProps> = ({ params }) => {
                   <p className="text-primary-900 font-semibold mb-2">📞 Get Your Exact Leander Roof Replacement Cost</p>
                   <p className="text-primary-700">
                     These are estimates. Your actual cost depends on your specific home, neighborhood, materials, HOA requirements, and current conditions. We provide <strong>FREE inspections</strong> and detailed written quotes with no obligation. <strong>Crystal Falls, Summerlyn & Travisso homeowners: We handle ALL HOA paperwork and approvals—you don't lift a finger!</strong> Call <strong>(512) 763-5277</strong> or schedule online for your personalized Leander roof replacement estimate.
-                  </p>
-                </div>
-              </div>
-            </div>
-          )}
-
-          {/* Location-Specific Deep Content - San Antonio */}
-          {location.slug === 'san-antonio' && (
-            <div className="mt-16 space-y-12">
-              {/* San Antonio Neighborhoods Deep Dive */}
-              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
-                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
-                  San Antonio Neighborhoods: Roofing Considerations & Costs
-                </h2>
-                <p className="text-primary-700 mb-8 leading-relaxed">
-                  San Antonio's diverse neighborhoods range from historic districts with century-old homes to modern master-planned communities. Here's what homeowners in each major area should know about roofing:
-                </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="bg-white rounded-xl p-6 shadow-md">
-                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏘️ Stone Oak & The Dominion</h3>
-                    <p className="text-sm text-primary-700 mb-3">
-                      <strong>Built:</strong> 1980s-2020s • <strong>Style:</strong> Luxury estates, Hill Country contemporary<br />
-                      <strong>Common Roof Type:</strong> Spanish tile, architectural shingles, some metal
-                    </p>
-                    <div className="bg-blue-50 p-3 rounded mb-3">
-                      <p className="text-xs text-primary-700"><strong>HOA Considerations:</strong> The Dominion has strict architectural controls requiring approval for all exterior changes. Stone Oak varies by subdivision. Many mandate specific materials and colors that match community aesthetic.</p>
-                    </div>
-                    <div className="space-y-2 text-sm text-primary-700">
-                      <p><strong>Common Issues:</strong> Tile roof damage from hail, underlayment failure in extreme heat, oak tree debris and moss, complex roof geometry on custom homes</p>
-                      <p><strong>Best Materials:</strong> S-tile or barrel tile for Spanish style, premium impact-resistant shingles (CertainTeed Grand Manor, GAF Timberline HDZ) for traditional, standing seam metal for modern</p>
-                      <p><strong>Typical Cost:</strong> $25,000-$65,000+ for 3,500-6,000+ sq ft luxury homes (tile roofs significantly higher)</p>
-                    </div>
-                  </div>
-
-                  <div className="bg-white rounded-xl p-6 shadow-md">
-                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏡 Alamo Heights & Terrell Hills</h3>
-                    <p className="text-sm text-primary-700 mb-3">
-                      <strong>Built:</strong> 1920s-1960s (many) • <strong>Style:</strong> Historic homes, Spanish colonial, ranch<br />
-                      <strong>Common Roof Type:</strong> Clay tile, composition shingles, some slate
-                    </p>
-                    <div className="bg-amber-50 p-3 rounded mb-3">
-                      <p className="text-xs text-primary-700"><strong>Historic Home Alert:</strong> Many homes feature original clay tile or architectural details requiring specialized expertise. Historic district requirements may apply. Matching materials can be costly but necessary.</p>
-                    </div>
-                    <div className="space-y-2 text-sm text-primary-700">
-                      <p><strong>Common Issues:</strong> Aging tile roofs (100+ years possible), wood decking deterioration, outdated ventilation, tree damage from mature oaks, termite damage in older homes</p>
-                      <p><strong>Best Materials:</strong> Clay tile replacement to maintain character, high-end architectural shingles if transitioning from tile, proper underlayment critical in San Antonio heat</p>
-                      <p><strong>Typical Cost:</strong> $18,000-$40,000 for 2,500-4,000 sq ft homes (add $5k-$15k for extensive decking repairs on historic homes)</p>
-                    </div>
-                  </div>
-
-                  <div className="bg-white rounded-xl p-6 shadow-md">
-                    <h3 className="text-lg font-bold text-primary-900 mb-3">🌳 Medical Center & Shavano Park</h3>
-                    <p className="text-sm text-primary-700 mb-3">
-                      <strong>Built:</strong> 1970s-2000s • <strong>Style:</strong> Professional community, varied styles<br />
-                      <strong>Common Roof Type:</strong> Architectural shingles, some tile
-                    </p>
-                    <div className="bg-green-50 p-3 rounded mb-3">
-                      <p className="text-xs text-primary-700"><strong>Professional Focus:</strong> Many medical professionals and UTSA faculty live here. Schedules often require flexible timing for inspections and work. We accommodate evening/weekend appointments.</p>
-                    </div>
-                    <div className="space-y-2 text-sm text-primary-700">
-                      <p><strong>Common Issues:</strong> UV damage from intense San Antonio sun, wind damage on hilltop properties, algae growth in shaded areas, hail damage from spring storms</p>
-                      <p><strong>Best Materials:</strong> Impact-resistant architectural shingles with high wind ratings (Class 4, 130 mph), algae-resistant formulas for longevity, IR-reflective colors to reduce cooling costs</p>
-                      <p><strong>Typical Cost:</strong> $16,000-$28,000 for 2,200-3,500 sq ft homes</p>
-                    </div>
-                  </div>
-
-                  <div className="bg-white rounded-xl p-6 shadow-md">
-                    <h3 className="text-lg font-bold text-primary-900 mb-3">🏘️ King William & Southtown</h3>
-                    <p className="text-sm text-primary-700 mb-3">
-                      <strong>Built:</strong> 1880s-1920s • <strong>Style:</strong> Victorian, historic architecture<br />
-                      <strong>Common Roof Type:</strong> Composition shingles, metal (standing seam), some slate
-                    </p>
-                    <div className="bg-purple-50 p-3 rounded mb-3">
-                      <p className="text-xs text-primary-700"><strong>Historic District Rules:</strong> King William Historic District has specific requirements. HDRC approval may be needed for material/color changes. We navigate these processes regularly for downtown San Antonio properties.</p>
-                    </div>
-                    <div className="space-y-2 text-sm text-primary-700">
-                      <p><strong>Common Issues:</strong> Narrow lot access challenges, steep Victorian roof pitches, wood decking often needs replacement, termite damage common, matching historic character while meeting code</p>
-                      <p><strong>Best Materials:</strong> Standing seam metal to replicate historic appearance, premium architectural shingles in period-appropriate colors, proper ventilation upgrades critical</p>
-                      <p><strong>Typical Cost:</strong> $20,000-$45,000 for 2,000-3,500 sq ft Victorian homes (access challenges and historic requirements increase costs)</p>
-                    </div>
-                  </div>
-
-                  <div className="bg-white rounded-xl p-6 shadow-md">
-                    <h3 className="text-lg font-bold text-primary-900 mb-3">🆕 Northwest San Antonio</h3>
-                    <p className="text-sm text-primary-700 mb-3">
-                      <strong>Built:</strong> 2000s-2020s • <strong>Style:</strong> Modern suburban developments<br />
-                      <strong>Common Roof Type:</strong> Architectural shingles, increasing metal popularity
-                    </p>
-                    <div className="bg-green-50 p-3 rounded mb-3">
-                      <p className="text-xs text-primary-700"><strong>Growth Area:</strong> Rapid development northwest of Loop 1604 brings new roofing opportunities. Many homes still under builder warranty. Check warranty status before paying for repairs!</p>
-                    </div>
-                    <div className="space-y-2 text-sm text-primary-700">
-                      <p><strong>Common Issues:</strong> Hail damage on newer roofs, builder-grade materials nearing end of life (20-25 years), attic ventilation inadequate for San Antonio heat, wind damage from exposed hilltops</p>
-                      <p><strong>Best Materials:</strong> Impact-resistant shingles (GAF Timberline HDZ, CertainTeed Landmark Pro), proper ventilation systems, consider metal for longevity in harsh climate</p>
-                      <p><strong>Typical Cost:</strong> $15,000-$30,000 for 2,200-3,800 sq ft homes</p>
-                    </div>
-                  </div>
-
-                  <div className="bg-white rounded-xl p-6 shadow-md">
-                    <h3 className="text-lg font-bold text-primary-900 mb-3">🌆 Downtown & Monte Vista</h3>
-                    <p className="text-sm text-primary-700 mb-3">
-                      <strong>Built:</strong> 1920s-1940s • <strong>Style:</strong> Bungalows, Spanish Revival, Tudor<br />
-                      <strong>Common Roof Type:</strong> Composition shingles, tile, metal
-                    </p>
-                    <div className="bg-blue-50 p-3 rounded mb-3">
-                      <p className="text-xs text-primary-700"><strong>Urban Challenges:</strong> Tight access, parking restrictions, historic preservation requirements, mature tree coverage. We coordinate with city parking permits and HOD requirements as needed.</p>
-                    </div>
-                    <div className="space-y-2 text-sm text-primary-700">
-                      <p><strong>Common Issues:</strong> Narrow street access, lack of driveway space for materials/dumpsters, tree debris and damage, aging wood decking, termite concerns, historic character preservation</p>
-                      <p><strong>Best Materials:</strong> Period-appropriate materials respecting architectural style, high-quality underlayment, proper wood decking repairs/replacement, algae-resistant shingles under tree canopy</p>
-                      <p><strong>Typical Cost:</strong> $16,000-$32,000 for 1,800-3,000 sq ft historic homes (access challenges can add 10-15% to standard costs)</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* San Antonio Weather & Storm History */}
-              <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-8">
-                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
-                  San Antonio Weather & Roofing: What Every Homeowner Should Know
-                </h2>
-                <p className="text-lg text-primary-700 mb-8">
-                  San Antonio's climate is exceptionally harsh on roofs. Understanding local weather patterns helps you protect your investment and know when to act:
-                </p>
-
-                <div className="grid md:grid-cols-2 gap-8">
-                  <div>
-                    <h3 className="text-xl font-bold text-primary-900 mb-4">🌡️ Extreme Heat & UV Exposure</h3>
-                    <div className="bg-white rounded-lg p-6 shadow-md mb-4">
-                      <p className="text-sm text-primary-700 mb-3">
-                        San Antonio averages <strong>100+ days per year above 90°F</strong>, with summer temperatures regularly exceeding 100°F for weeks at a time. This is among the hottest climates in Texas.
-                      </p>
-                      <div className="bg-red-50 p-4 rounded mb-3">
-                        <p className="font-bold text-red-900 text-sm mb-2">How Heat Damages Your Roof:</p>
-                        <ul className="text-xs text-primary-700 space-y-1">
-                          <li>• <strong>Shingle deterioration:</strong> Asphalt shingles dry out, crack, and lose granules faster in San Antonio than cooler climates</li>
-                          <li>• <strong>Underlayment failure:</strong> Roofing felt degrades rapidly under attic temperatures reaching 150-170°F</li>
-                          <li>• <strong>Adhesive failure:</strong> Extreme heat can cause shingle sealant strips to fail, leading to wind blow-off</li>
-                          <li>• <strong>Attic damage:</strong> Poor ventilation + SA heat = warped decking, damaged insulation, AC overwork</li>
-                        </ul>
-                      </div>
-                      <p className="text-sm font-semibold text-primary-900">What This Means For You:</p>
-                      <p className="text-sm text-primary-700">San Antonio roofs typically last 15-20 years vs 25-30 in cooler climates. Light-colored, IR-reflective shingles reduce attic temps by 20-30°F and extend roof life. Proper attic ventilation is CRITICAL—not optional.</p>
-                    </div>
-                  </div>
-
-                  <div>
-                    <h3 className="text-xl font-bold text-primary-900 mb-4">⚡ Severe Storms & Hail</h3>
-                    <div className="bg-white rounded-lg p-6 shadow-md mb-4">
-                      <p className="text-sm text-primary-700 mb-3">
-                        San Antonio sits in "Hail Alley" and experiences frequent severe weather, particularly <strong>March-May</strong>. Recent major events include April 2021 (baseball-sized hail), April 2016, and May 2019 storms.
-                      </p>
-                      <div className="bg-amber-50 p-4 rounded mb-3">
-                        <p className="font-bold text-primary-900 text-sm mb-2">San Antonio Hail Statistics:</p>
-                        <div className="text-xs text-primary-700 space-y-1">
-                          <div className="flex justify-between items-center border-b border-primary-200 pb-1">
-                            <span>Pea/dime (0.25"-0.75") - Cosmetic</span>
-                            <span className="font-bold text-amber-600">Multiple times/year</span>
-                          </div>
-                          <div className="flex justify-between items-center border-b border-primary-200 pb-1">
-                            <span>Quarter/half dollar (1"-1.25") - Damage likely</span>
-                            <span className="font-bold text-orange-600">1-2x per year</span>
-                          </div>
-                          <div className="flex justify-between items-center border-b border-primary-200 pb-1">
-                            <span>Golf ball (1.75") - Severe damage</span>
-                            <span className="font-bold text-red-600">Every 2-3 years</span>
-                          </div>
-                          <div className="flex justify-between items-center">
-                            <span>Baseball+ (2.75"+) - Roof totaled</span>
-                            <span className="font-bold text-red-600">Every 3-5 years</span>
-                          </div>
-                        </div>
-                      </div>
-                      <p className="text-sm font-semibold text-primary-900">What This Means For You:</p>
-                      <p className="text-sm text-primary-700">Impact-resistant (Class 4) shingles are ESSENTIAL in San Antonio. Insurance companies offer 20-35% discounts because they know SA gets hail. IR shingles survive storms standard shingles cannot. After major storms, get FREE inspection immediately—insurance claims must be filed within timeframes (typically 1 year).</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-white rounded-lg p-6 shadow-lg mt-6">
-                  <h3 className="text-xl font-bold text-primary-900 mb-4">🌪️ Recent Major Storm Events in San Antonio</h3>
-                  <div className="space-y-3 text-sm text-primary-700">
-                    <div className="border-l-4 border-red-500 pl-4">
-                      <p className="font-bold text-primary-900">April 12, 2023 – North/Northwest San Antonio Hailstorm</p>
-                      <p>Baseball-sized hail (2.75") devastated Stone Oak, Shavano Park, and northwest neighborhoods. Estimated 30-40% of roofs damaged. Thousands of insurance claims filed. If you live in these areas and haven't had roof inspected since, you may have covered damage.</p>
-                    </div>
-                    <div className="border-l-4 border-orange-500 pl-4">
-                      <p className="font-bold text-primary-900">April 12, 2021 – Hill Country Severe Storms</p>
-                      <p>Multiple rounds of golf ball to baseball-sized hail hit northwestern suburbs. The Dominion, far northwest communities hit hardest. Wind gusts 70+ mph caused additional blow-off damage.</p>
-                    </div>
-                    <div className="border-l-4 border-amber-500 pl-4">
-                      <p className="font-bold text-primary-900">May 2019 – Widespread San Antonio Hail</p>
-                      <p>Large hail impacted multiple quadrants of San Antonio. Downtown to Stone Oak received quarter to golf ball-sized hail. Significant roof damage across Bexar County.</p>
-                    </div>
-                    <div className="border-l-4 border-yellow-500 pl-4">
-                      <p className="font-bold text-primary-900">April 2016 – San Antonio Supercell</p>
-                      <p>Baseball-sized hail north of Loop 1604. Some of the largest hail ever recorded in Bexar County. Entire neighborhoods required roof replacement.</p>
-                    </div>
-                  </div>
-                  <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded mt-4">
-                    <p className="text-xs font-bold text-red-900 mb-1">⚠️ San Antonio Homeowners: After ANY significant storm with hail...</p>
-                    <p className="text-xs text-primary-700">Get a FREE professional inspection even if you don't see visible damage. Hail damage may not be obvious from ground level. Waiting too long means missing insurance claim deadlines. We provide free storm inspections with documentation for insurance—no obligation. Stone Oak, The Dominion, and northwest neighborhoods especially vulnerable to hail.</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* San Antonio Roof Replacement Cost Guide */}
-              <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl p-8">
-                <h2 className="text-3xl font-display font-bold text-primary-900 mb-6">
-                  San Antonio Roof Replacement Costs: Complete Pricing Guide
-                </h2>
-                <p className="text-lg text-primary-700 mb-8">
-                  San Antonio roof replacement costs vary significantly based on home size, neighborhood, architectural style, and material choice. Here's what you can expect:
-                </p>
-
-                <div className="space-y-4 mb-8">
-                  <div className="border-l-4 border-blue-500 pl-4">
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <p className="font-bold text-primary-900">1,400-1,800 sq ft Home</p>
-                        <p className="text-sm text-primary-700">Typical: Older SA ranch, bungalow, 2-3 bed/1-2 bath, simple roof, 16-22 squares - Monte Vista, Terrell Hills smaller homes</p>
-                      </div>
-                      <p className="text-xl font-bold text-accent-600">$10,000-$16,000</p>
-                    </div>
-                  </div>
-                  <div className="border-l-4 border-green-500 pl-4">
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <p className="font-bold text-primary-900">1,800-2,400 sq ft Home (Most Common)</p>
-                        <p className="text-sm text-primary-700">Typical: Standard SA two-story, 3-4 bed/2-3 bath, moderate complexity, 22-28 squares - Medical Center, Shavano, northwest communities</p>
-                      </div>
-                      <p className="text-xl font-bold text-accent-600">$14,000-$22,000</p>
-                    </div>
-                  </div>
-                  <div className="border-l-4 border-purple-500 pl-4">
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <p className="font-bold text-primary-900">2,400-3,200 sq ft Home</p>
-                        <p className="text-sm text-primary-700">Typical: Larger SA family home, 4-5 bed/3 bath, increased complexity, 28-38 squares - Alamo Heights, Stone Oak</p>
-                      </div>
-                      <p className="text-xl font-bold text-accent-600">$18,000-$30,000</p>
-                    </div>
-                  </div>
-                  <div className="border-l-4 border-red-500 pl-4">
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <p className="font-bold text-primary-900">3,200-4,500 sq ft Home</p>
-                        <p className="text-sm text-primary-700">Typical: Large SA estate, 5+ bed/4+ bath, complex roof, 38-55 squares - The Dominion, Stone Oak luxury, Alamo Heights estates</p>
-                      </div>
-                      <p className="text-xl font-bold text-accent-600">$25,000-$45,000</p>
-                    </div>
-                  </div>
-                  <div className="border-l-4 border-amber-500 pl-4">
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <p className="font-bold text-primary-900">4,500+ sq ft Luxury Home</p>
-                        <p className="text-sm text-primary-700">Typical: The Dominion estates, custom luxury, highly complex, 55+ squares, premium materials - tile, slate, specialty shingles</p>
-                      </div>
-                      <p className="text-xl font-bold text-accent-600">$40,000-$85,000+</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-purple-50 border-l-4 border-purple-500 p-6 rounded mb-8">
-                  <p className="font-bold text-primary-900 mb-2">🏛️ Spanish Tile & Clay Tile Roofing (Common in San Antonio)</p>
-                  <p className="text-sm text-primary-700 mb-3">San Antonio's Spanish colonial heritage means many homes feature tile roofs. Costs are significantly higher than shingles:</p>
-                  <ul className="text-sm text-primary-700 space-y-1">
-                    <li>• <strong>Concrete S-Tile:</strong> $18,000-$35,000 (2,000 sq ft) • Durable, heavy, HOA-compliant in many neighborhoods</li>
-                    <li>• <strong>Clay Barrel Tile:</strong> $25,000-$55,000 (2,000 sq ft) • Traditional, premium, 50-100 year lifespan</li>
-                    <li>• <strong>Lightweight Synthetic Tile:</strong> $15,000-$28,000 (2,000 sq ft) • Authentic look, half the weight, growing popularity</li>
-                    <li>• <strong>Tile Repairs (vs Full Replacement):</strong> $1,500-$8,000 • Replace broken tiles, re-bed ridges, underlayment repairs</li>
-                  </ul>
-                  <p className="text-xs text-primary-700 mt-3"><strong>Note:</strong> Alamo Heights, The Dominion, and historic districts often REQUIRE tile or tile-appearance roofing. We specialize in both traditional tile installation and repairs. Many tile roofs only need underlayment replacement ($8k-$15k) rather than full tile replacement—we assess honestly.</p>
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-6 mb-8">
-                  <div className="bg-red-50 rounded-lg p-6 border-l-4 border-red-500">
-                    <h3 className="text-lg font-bold text-primary-900 mb-3">📈 What INCREASES Cost in San Antonio</h3>
-                    <ul className="space-y-2 text-sm text-primary-700">
-                      <li className="flex items-start gap-2">
-                        <span className="text-red-600 font-bold">+100-200%</span>
-                        <span><strong>Tile roofing</strong> (Spanish/clay tile standard in many SA neighborhoods)</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-red-600 font-bold">+20-35%</span>
-                        <span><strong>Complex roof lines</strong> (The Dominion customs, historic homes with turrets/valleys)</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-red-600 font-bold">+15-25%</span>
-                        <span><strong>Steep pitch roofs</strong> (Victorian homes, Hill Country estates on slopes)</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-red-600 font-bold">+$3k-8k</span>
-                        <span><strong>Decking repairs</strong> (common in Alamo Heights, Monte Vista, King William older homes)</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-red-600 font-bold">+10-15%</span>
-                        <span><strong>Access challenges</strong> (downtown, King William narrow lots, parking restrictions)</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-red-600 font-bold">+$500-1.5k</span>
-                        <span><strong>Historic district approvals</strong> (King William, Monte Vista preservation requirements)</span>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div className="bg-green-50 rounded-lg p-6 border-l-4 border-green-500">
-                    <h3 className="text-lg font-bold text-primary-900 mb-3">📉 What DECREASES Cost in San Antonio</h3>
-                    <ul className="space-y-2 text-sm text-primary-700">
-                      <li className="flex items-start gap-2">
-                        <span className="text-green-600 font-bold">✓</span>
-                        <span><strong>Simple gable or hip roof</strong> (many northwest SA neighborhoods)</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-green-600 font-bold">✓</span>
-                        <span><strong>Single-story ranch</strong> (safer, faster installation, popular in SA)</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-green-600 font-bold">✓</span>
-                        <span><strong>Good existing decking</strong> (newer northwest developments, well-maintained homes)</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-green-600 font-bold">✓</span>
-                        <span><strong>Insurance claim coverage</strong> (pay deductible only - typically $2k-$4k SA, rest covered)</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-green-600 font-bold">✓</span>
-                        <span><strong>Neighborhood group pricing</strong> (coordinate with neighbors after hail storms for 10-15% off)</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-green-600 font-bold">✓</span>
-                        <span><strong>Easy property access</strong> (wide streets, good driveways, no parking restrictions)</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div className="bg-gradient-to-r from-accent-50 to-blue-50 rounded-lg p-6">
-                  <h3 className="text-xl font-bold text-primary-900 mb-4">💡 6 Ways San Antonio Homeowners Save on Roof Replacement</h3>
-                  <div className="grid md:grid-cols-2 gap-4 text-sm text-primary-700">
-                    <div>
-                      <p className="font-bold text-primary-900 mb-1">1. File Insurance Claims After Hailstorms (CRITICAL)</p>
-                      <p className="mb-3">San Antonio gets roof-damaging hail every 2-3 years. April 2023 damaged tens of thousands of SA roofs (Stone Oak, northwest especially). If your neighbors filed claims, you should too. Insurance covers 100% minus deductible ($2k-$4k). We handle entire process including adjuster meetings. Don't leave money on table!</p>
-                      
-                      <p className="font-bold text-primary-900 mb-1">2. Coordinate with Neighbors (MASSIVE Savings)</p>
-                      <p className="mb-3">After hailstorms, entire Stone Oak/Shavano Park/northwest blocks need roofs. When we work 8-12 homes in same neighborhood, we offer 10-15% group discounts ($2k-$5k per home savings). One material delivery, one crew = lower costs. Join neighborhood groups after storms!</p>
-                      
-                      <p className="font-bold text-primary-900 mb-1">3. Impact-Resistant Shingles = Long-Term Savings</p>
-                      <p className="mb-3">$3k-$5k more upfront, but SA insurance companies give 20-35% discounts ($600-$900/year savings). Pays for itself in 4-6 years. Plus survives SA's frequent hail = fewer future claims. Over 30 years: $18,000-$27,000 in insurance savings. Essential in San Antonio.</p>
-                    </div>
-                    <div>
-                      <p className="font-bold text-primary-900 mb-1">4. Consider Tile Repair vs Full Replacement</p>
-                      <p className="mb-3">If you have tile roof, often only underlayment needs replacement ($8k-$15k) not tiles ($25k-$55k). We assess honestly—many contractors push full replacement unnecessarily. Tile repair extends life 15-20 years for fraction of cost.</p>
-                      
-                      <p className="font-bold text-primary-900 mb-1">5. Light-Colored Materials Save on Cooling</p>
-                      <p className="mb-3">SA's extreme heat means light/reflective roofing reduces attic temps 20-30°F, cutting AC costs 10-20% ($200-$400/year). Over roof's lifetime: $4,000-$8,000 saved. Cool roof coatings or IR-reflective shingles pay for themselves.</p>
-                      
-                      <p className="font-bold text-primary-900 mb-1">6. Take Advantage of 0% Financing</p>
-                      <p className="mb-3">We offer 0% financing 12-18 months through approved lenders. Spread $20k-$35k SA roof into $1,200-$2,000/month payments. No interest if paid within promo period. Popular for Stone Oak/Dominion luxury homes.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="mt-6 bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
-                  <p className="text-primary-900 font-semibold mb-2">📞 Get Your Exact San Antonio Roof Replacement Cost</p>
-                  <p className="text-primary-700">
-                    These are estimates. Your actual cost depends on your specific home, neighborhood (Stone Oak, Alamo Heights, etc.), materials (shingle vs tile), and current conditions. We provide <strong>FREE inspections</strong> and detailed written quotes with no obligation. <strong>The Dominion & Alamo Heights homeowners: We handle ALL HOA/historic district approvals!</strong> Call <strong>(512) 763-5277</strong> or schedule online for your personalized San Antonio roof replacement estimate.
                   </p>
                 </div>
               </div>

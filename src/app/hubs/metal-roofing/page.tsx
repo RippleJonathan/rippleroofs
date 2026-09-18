@@ -48,7 +48,7 @@ export default function MetalRoofingHub() {
   const locationPosts = metalPosts.filter(post => 
     post.category === 'Location Guides' ||
     post.tags.some(tag => 
-      ['Austin', 'Round Rock', 'Georgetown', 'Cedar Park', 'Pflugerville', 'Leander', 'San Antonio'].includes(tag)
+      ['Austin', 'Round Rock', 'Georgetown', 'Cedar Park', 'Pflugerville', 'Leander'].includes(tag)
     )
   )
   

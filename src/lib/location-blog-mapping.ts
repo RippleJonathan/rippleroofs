@@ -525,38 +525,6 @@ export const LOCATION_BLOG_POSTS: Record<string, Array<{
       category: 'Storm Damage'
     },
   ],
-  'san-antonio': [
-    {
-      title: 'Best Roofing Contractor in San Antonio',
-      description: 'How to find and vet the best roofing contractor in San Antonio — credentials, reviews, and red flags.',
-      slug: 'best-roofing-contractor-san-antonio',
-      category: 'Contractor Tips'
-    },
-    {
-      title: 'Metal Roofing in San Antonio',
-      description: 'Metal roofing costs, styles, and contractor tips for San Antonio homeowners.',
-      slug: 'metal-roofing-san-antonio',
-      category: 'Materials'
-    },
-    {
-      title: 'Roof Replacement Cost in San Antonio',
-      description: 'How much does a roof replacement cost in San Antonio? Real pricing data and what affects your quote.',
-      slug: 'roof-replacement-cost-san-antonio',
-      category: 'Cost Guide'
-    },
-    {
-      title: 'San Antonio Roof Repair Guide',
-      description: 'Common San Antonio roofing problems and how to repair them — from leak fixes to storm damage.',
-      slug: 'san-antonio-roof-repair-guide',
-      category: 'Location Guide'
-    },
-    {
-      title: 'Allstate Roof Insurance Claims Texas: How to Get a Fair Settlement',
-      description: 'Filing a roof damage claim with Allstate in Texas? Learn how Allstate evaluates hail and wind damage, what drives underpayments, how Allstate\'s QuickFoto Claim works, and what to do when the initial offer is too low.',
-      slug: 'allstate-roof-insurance-claim-texas',
-      category: 'Insurance & Claims'
-    },
-  ],
   'hutto': [
     {
       title: 'Hutto TX Roofing Guide: Contractors, Costs & Neighborhood Considerations 2026',

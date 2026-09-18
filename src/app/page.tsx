@@ -118,11 +118,6 @@ export default function Home() {
         '@type': 'City',
         name: 'Leander',
         containedIn: { '@type': 'State', name: 'Texas' }
-      },
-      {
-        '@type': 'City',
-        name: 'San Antonio',
-        containedIn: { '@type': 'State', name: 'Texas' }
       }
     ],
     priceRange: '$$-$$$',
