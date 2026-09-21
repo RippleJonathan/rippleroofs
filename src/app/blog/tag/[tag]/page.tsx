@@ -29,6 +29,9 @@ export async function generateMetadata({ params }: TagPageProps): Promise<Metada
     title: `${tagName} | Roofing Blog`,
     description: `Articles tagged with ${tagName} from Central Texas roofing professionals.`,
     robots: { index: false, follow: false },
+    alternates: {
+      canonical: `https://rippleroofs.com/blog/tag/${tagSlug}`,
+    },
   }
 }
 

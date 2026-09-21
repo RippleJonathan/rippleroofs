@@ -57,6 +57,9 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
       description,
     },
     robots: { index: false, follow: false },
+    alternates: {
+      canonical: `https://rippleroofs.com/blog/category/${categorySlug}`,
+    },
   }
 }
 

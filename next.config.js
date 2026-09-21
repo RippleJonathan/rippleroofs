@@ -134,9 +134,20 @@ const nextConfig = {
         destination: '/contact',
         permanent: true,
       },
-      // Old blog category redirects with URL-encoded characters
+      // Old blog category/tag redirects with URL-encoded characters
       {
         source: '/blog/category/solar-&-energy',
+        destination: '/blog',
+        permanent: true,
+      },
+      // Orphaned WordPress taxonomy terms with no matching posts (were 404ing)
+      {
+        source: '/blog/category/roof-repair',
+        destination: '/blog',
+        permanent: true,
+      },
+      {
+        source: '/blog/tag/roofing-scams',
         destination: '/blog',
         permanent: true,
       },
