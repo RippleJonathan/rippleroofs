@@ -477,8 +477,8 @@ export const LOCATION_BLOG_POSTS: Record<string, Array<{
       category: 'Insurance'
     },
     {
-      title: 'Metal Roofing in Taylor TX: Types, Costs & What Works Best',
-      description: 'Complete guide to standing seam, stone-coated steel, and metal shingles for Taylor TX homes — with real cost ranges and material matching by home type.',
+      title: 'Standing Seam Metal Roofs in Taylor TX: Cost, Hail & Older Homes',
+      description: 'What standing seam costs on a Taylor home, how it holds up to Williamson County hail, and what older board-sheathed homes need before metal goes on.',
       slug: 'metal-roofing-taylor-tx',
       category: 'Materials Guide'
     },
