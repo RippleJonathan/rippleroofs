@@ -335,11 +335,6 @@ export default function CalculatorsPage() {
             '@type': 'WebApplication',
             name: 'Roofing Cost Calculator',
             applicationCategory: 'UtilitiesApplication',
-            offers: {
-              '@type': 'Offer',
-              price: '0',
-              priceCurrency: 'USD'
-            },
             description: 'Free roofing calculators for Central Texas homeowners. Calculate roof size, estimate replacement costs, and analyze energy savings ROI.',
             provider: {
               '@type': 'Organization',

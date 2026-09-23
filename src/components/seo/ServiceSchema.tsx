@@ -97,16 +97,6 @@ export default function ServiceSchema({
         },
       ],
     },
-    offers: {
-      '@type': 'Offer',
-      availability: 'https://schema.org/InStock',
-      priceRange: '$$$',
-      priceCurrency: 'USD',
-      availableAtOrFrom: {
-        '@type': 'Place',
-        name: 'Central Texas',
-      },
-    },
     availableChannel: {
       '@type': 'ServiceChannel',
       serviceUrl: `https://rippleroofs.com/services/${slug}`,

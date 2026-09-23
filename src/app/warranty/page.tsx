@@ -4,6 +4,9 @@ import { Container } from '@/components/layout/Container'
 export const metadata: Metadata = {
   title: 'Lifetime Roofing Warranty | CertainTeed ShingleMaster Premier | Ripple Roofing',
   description: 'Ripple Roofing is a CertainTeed ShingleMaster Premier contractor — the highest certification level. We offer Lifetime, 30-Year, and 15-Year CertainTeed-backed workmanship warranties in Round Rock & Austin, TX.',
+  alternates: {
+    canonical: 'https://rippleroofs.com/warranty',
+  },
   openGraph: {
     title: 'Lifetime Roofing Warranty — CertainTeed ShingleMaster Premier | Ripple Roofing',
     description: 'The highest CertainTeed certification level. Lifetime, 30-Year & 15-Year backed workmanship warranties in Central Texas.',

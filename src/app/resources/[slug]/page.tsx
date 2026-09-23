@@ -104,6 +104,9 @@ export async function generateMetadata({
   return {
     title: `${leadMagnet.title} | Ripple Roofing`,
     description: leadMagnet.metaDescription,
+    alternates: {
+      canonical: `https://rippleroofs.com/resources/${params.slug}`,
+    },
     openGraph: {
       title: leadMagnet.title,
       description: leadMagnet.metaDescription,

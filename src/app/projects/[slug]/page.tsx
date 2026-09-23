@@ -22,6 +22,9 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   return {
     title: `${project.title} | Ripple Roofing`,
     description: project.description,
+    alternates: {
+      canonical: `https://rippleroofs.com/projects/${project.id}`,
+    },
     openGraph: {
       title: project.title,
       description: project.description,

@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'Roofing Material Comparison Tool | Compare All Options | Ripple Roofs',
   description: 'Interactive roofing material comparison tool. Compare costs, lifespan, hail resistance, and warranties for shingles, metal, and tile roofs in Central Texas.',
   keywords: 'roofing material comparison, roof types, shingle vs metal roof, Class 4 shingles, impact resistant roofing, Texas roofing materials, roof cost comparison',
+  alternates: {
+    canonical: 'https://rippleroofs.com/resources/material-comparison-tool',
+  },
   openGraph: {
     title: 'Interactive Roofing Material Comparison Tool',
     description: 'Compare all roofing materials side-by-side. Filter by budget, climate needs, and durability.',

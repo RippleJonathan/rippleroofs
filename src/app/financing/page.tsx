@@ -5,6 +5,9 @@ import Image from 'next/image'
 export const metadata: Metadata = {
   title: 'Financing Options',
   description: 'Flexible financing options for your roofing project. Easy online application with competitive rates. Make your dream roof affordable with payment plans that fit your budget.',
+  alternates: {
+    canonical: 'https://rippleroofs.com/financing',
+  },
   openGraph: {
     title: 'Roofing Financing - Ripple Roofing & Construction',
     description: 'Affordable payment plans for quality roofing',
