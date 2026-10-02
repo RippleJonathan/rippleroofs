@@ -31,7 +31,7 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: {
     default: 'Ripple Roofing & Construction - Premium Roofing Services in Central Texas',
-    template: '%s | Ripple Roofing & Construction'
+    template: '%s | Ripple Roofing'
   },
   description: 'Expert roofers in Central Texas. CertainTeed ShingleMaster Premier certified. Residential, commercial & emergency services. Fully insured. Free inspections.',
   // 149 chars — within Google\'s display window

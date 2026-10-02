@@ -5,7 +5,7 @@ import { getAllPosts } from '@/lib/blog'
 import { Button } from '@/components/ui/Button'
 
 export const metadata: Metadata = {
-  title: 'Stone-Coated Steel Roofing Texas: Complete Resource Hub',
+  title: 'Stone-Coated Steel Roofing Texas: Resource Hub',
   description: 'Everything Texas homeowners need about stone-coated steel roofing. Brand comparisons (Decra vs Metro Tiles), cost guides, HOA approval tips, and city-specific guides for Austin, Round Rock, and all of Central Texas.',
   keywords: 'stone coated steel roofing texas, decra roofing, metro tiles, stone coated steel cost, hoa approved metal roofing, stone coated steel vs asphalt, stone coated steel vs tile, round rock metal roofing, austin metal roofing',
   alternates: {

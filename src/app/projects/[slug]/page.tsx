@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     : project.location
 
   return {
-    title: `${project.title} | Ripple Roofing`,
+    title: project.metaTitle || project.title,
     description: project.description,
     alternates: {
       canonical: `https://rippleroofs.com/projects/${project.id}`,

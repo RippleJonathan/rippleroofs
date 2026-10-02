@@ -2,7 +2,7 @@
 import { Container } from '@/components/layout/Container'
 
 export const metadata: Metadata = {
-  title: 'Lifetime Roofing Warranty | CertainTeed ShingleMaster Premier | Ripple Roofing',
+  title: 'Lifetime Roofing Warranty | CertainTeed Premier',
   description: 'Ripple Roofing is a CertainTeed ShingleMaster Premier contractor — the highest certification level. We offer Lifetime, 30-Year, and 15-Year CertainTeed-backed workmanship warranties in Round Rock & Austin, TX.',
   alternates: {
     canonical: 'https://rippleroofs.com/warranty',

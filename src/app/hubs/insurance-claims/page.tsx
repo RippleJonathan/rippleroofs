@@ -6,7 +6,7 @@ import { getAllPosts } from '@/lib/blog'
 import { Button } from '@/components/ui/Button'
 
 export const metadata: Metadata = {
-  title: 'Roof Insurance Claims Texas: Carrier Guides & Expert Help Hub',
+  title: 'Roof Insurance Claims Texas: Carrier Guides & Help',
   description: 'Complete resource for Texas roof insurance claims. Carrier-specific guides for State Farm, USAA, Allstate, Farmers, Travelers, Liberty Mutual, and Nationwide. How to document damage, handle adjusters, and get a fair settlement in Central Texas.',
   keywords: 'roof insurance claim texas, hail damage insurance claim, state farm roof claim, usaa roof claim, allstate roof claim, farmers insurance roof claim, travelers roof claim, liberty mutual roof claim, nationwide roof claim, insurance adjuster, roof insurance settlement',
   alternates: {

@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
     }
   }
 
-  const title = `${service.title} | Round Rock & Austin TX | Ripple Roofing`
+  const title = `${service.title} | Round Rock & Austin | Ripple Roofing`
   const isPDR = service.slug === 'paintless-dent-repair'
   const description = `${service.shortDescription} Serving Round Rock, Austin & all of Central Texas. CertainTeed certified. Free inspections — call (512) 763-5277.`
 

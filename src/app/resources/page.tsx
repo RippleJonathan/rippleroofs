@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Download, Calculator, FileText, Calendar, Shield, CheckCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Free Roofing Resources & Tools | Ripple Roofing',
+  title: 'Free Roofing Resources & Tools',
   description: 'Free roofing guides, checklists, calculators, and tools for Texas homeowners. Download expert resources for roof inspection, storm damage claims, material selection, and seasonal maintenance.',
   alternates: {
     canonical: 'https://rippleroofs.com/resources'

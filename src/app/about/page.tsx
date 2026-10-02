@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/Button'
 import { SITE_CONFIG } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'About Ripple Roofing | Veteran-Owned, CertainTeed Premier Roofer in Round Rock, TX',
+  title: 'About Us: Veteran-Owned, CertainTeed Premier Roofer',
   description:
     'Navy veteran-owned roofing company in Round Rock, TX — SBA Veteran-Owned Certified. One of fewer than 1% of contractors to hold CertainTeed ShingleMaster Premier certification. Honest insurance claims, real advocacy — no deductible waiving, ever.',
   keywords:

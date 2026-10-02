@@ -7,7 +7,7 @@ import { getAllPosts } from '@/lib/blog'
 import { Button } from '@/components/ui/Button'
 
 export const metadata: Metadata = {
-  title: 'Austin Roofing Guide: Complete Resource Hub | Ripple Roofing',
+  title: 'Austin Roofing Guide: Complete Resource Hub',
   description: 'Your complete resource for Austin roofing: costs, contractors, materials, insurance, and neighborhood-specific advice. Expert guides for Round Rock, Georgetown, Cedar Park, and more.',
   keywords: 'Austin roofing, Austin roofer, roofing cost Austin, roofing contractors Austin, Round Rock roofing, Georgetown roofing',
   alternates: {

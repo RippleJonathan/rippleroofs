@@ -7,7 +7,7 @@ import { LOCATIONS } from '@/lib/locations'
 import { SITE_CONFIG } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Service Areas - Central Texas Roofing | Ripple Roofing',
+  title: 'Service Areas | Central Texas Roofing',
   description: `Ripple Roofing serves Round Rock, Austin, Georgetown, Killeen, and surrounding Central Texas areas with premium roofing services. Find your city!`,
   keywords: 'Central Texas roofing, Round Rock roofer, Austin roofing, Georgetown roofing, service areas',
   openGraph: {

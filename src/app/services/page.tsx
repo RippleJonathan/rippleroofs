@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/Button'
 import { SERVICES, SITE_CONFIG } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Roofing Services Round Rock TX | Repair, Replacement & Emergency | Free Inspections',
+  title: 'Roofing Services | Repair, Replacement & Emergency',
   description: `Expert roof repair, replacement, storm damage & emergency services in Round Rock & Central Texas. CertainTeed certified. Free inspections. Call ${SITE_CONFIG.phone} today.`,
   keywords: 'roofing services, Round Rock roofer, Austin roofing, Central Texas roofing, roof repair, roof replacement, emergency roofing',
   openGraph: {

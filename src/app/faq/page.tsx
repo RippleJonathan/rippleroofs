@@ -3,7 +3,7 @@ import { Container } from '@/components/layout/Container'
 import { FAQAccordion } from '@/components/faq/FAQAccordion'
 
 export const metadata: Metadata = {
-  title: 'Roofing FAQ: Costs, Insurance Claims & Contractors | Central Texas',
+  title: 'Roofing FAQ: Costs, Insurance Claims & Contractors',
   description: 'Expert answers to the most common roofing questions for Central Texas homeowners — insurance claims, roof replacement costs, what to say to adjusters, how to choose a contractor, and more.',
   alternates: {
     canonical: 'https://rippleroofs.com/faq'

@@ -7,7 +7,7 @@ import { getAllPosts } from '@/lib/blog'
 import { Button } from '@/components/ui/Button'
 
 export const metadata: Metadata = {
-  title: 'Metal Roofing Central Texas: Complete Guide, Costs & Benefits Hub',
+  title: 'Metal Roofing Central Texas: Guide, Costs & Benefits',
   description: 'Complete resource for metal roofing in Central Texas — standing seam metal roof costs, stone-coated steel, energy savings, hail performance, and certified contractors in Round Rock, Austin, and Georgetown.',
   keywords: 'metal roofing texas, standing seam metal roof, standing seam metal roof cost texas, standing seam metal roof austin, metal roof cost, metal roofing contractors central texas, metal vs shingles',
   alternates: {

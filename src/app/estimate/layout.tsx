@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Free Instant Roof Estimate | Ripple Roofing',
+  title: 'Free Instant Roof Estimate',
   description: 'Get an instant, accurate roof replacement estimate in 60 seconds. Draw your roof on our interactive map and see pricing for CertainTeed, metal, and economic roofing packages.',
   alternates: {
     canonical: 'https://rippleroofs.com/estimate',

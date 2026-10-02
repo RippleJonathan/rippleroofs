@@ -18,6 +18,7 @@ export interface Project {
   result?: string
   highlights?: string[]
   relatedServiceSlug?: string
+  metaTitle?: string // Optional <title> override (keeps H1 untouched)
 }
 
 const CURATED_PROJECTS: Project[] = [
@@ -75,6 +76,7 @@ const CURATED_PROJECTS: Project[] = [
   {
     id: 'standing-seam-metal-roof-south-austin',
     title: 'Standing Seam Metal Roof — South Austin (Bouldin Creek)',
+    metaTitle: 'Standing Seam Metal Roof, Bouldin Creek, Austin',
     location: 'Austin, TX',
     neighborhood: 'Bouldin Creek',
     category: 'Metal Roofing',
@@ -127,6 +129,7 @@ const CURATED_PROJECTS: Project[] = [
   {
     id: 'shingle-roof-pflugerville-patriot-gutters',
     title: 'CertainTeed Patriot Roof Replacement + Gutters — Pflugerville TX',
+    metaTitle: 'CertainTeed Patriot Roof + Gutters — Pflugerville TX',
     location: 'Pflugerville, TX',
     category: 'Shingle Roofing',
     service: 'Roof Replacement + Gutter Installation',
@@ -155,6 +158,7 @@ const CURATED_PROJECTS: Project[] = [
   {
     id: 'shingle-roof-replacement-pflugerville-falcon-pointe',
     title: 'Shingle Roof Replacement — Pflugerville TX (Falcon Pointe)',
+    metaTitle: 'Roof Replacement — Falcon Pointe, Pflugerville',
     location: 'Pflugerville, TX',
     neighborhood: 'Falcon Pointe',
     category: 'Shingle Roofing',
@@ -205,6 +209,7 @@ const CURATED_PROJECTS: Project[] = [
   {
     id: 'shingle-roof-georgetown-village-state-farm',
     title: 'Architectural Shingle Replacement — Georgetown Village, Georgetown TX',
+    metaTitle: 'Shingle Roof Replacement — Georgetown Village',
     location: 'Georgetown, TX',
     neighborhood: 'Georgetown Village',
     category: 'Shingle Roofing',
@@ -280,6 +285,7 @@ const CURATED_PROJECTS: Project[] = [
   {
     id: 'class-4-shingle-hutto-emory-farms-new-construction',
     title: 'Class 4 Upgrade — New Construction Home, Emory Farms Hutto TX',
+    metaTitle: 'Class 4 Shingles, New Build — Emory Farms, Hutto',
     location: 'Hutto, TX',
     neighborhood: 'Emory Farms',
     category: 'Shingle Roofing',

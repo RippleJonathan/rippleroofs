@@ -7,7 +7,7 @@ import { getAllPosts } from '@/lib/blog'
 import { Button } from '@/components/ui/Button'
 
 export const metadata: Metadata = {
-  title: 'Roofing Materials & Cost Guide Hub | Central Texas Pricing',
+  title: 'Roofing Materials & Cost Guide | Central Texas',
   description: 'Compare roofing materials, understand costs, and make informed decisions. Complete pricing guides for shingles, metal, tile, and more in Texas.',
   keywords: 'roofing materials, roofing cost, shingle prices, metal roof cost, roofing materials comparison, Texas roofing',
   alternates: {

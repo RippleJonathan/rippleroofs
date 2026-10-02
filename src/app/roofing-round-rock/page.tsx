@@ -11,7 +11,7 @@ import { SITE_CONFIG } from '@/lib/constants'
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
 
 export const metadata: Metadata = {
-  title: 'Roofing Round Rock TX | Expert Roof Repair & Replacement | Free Inspection',
+  title: 'Roofing Round Rock TX | Roof Repair & Replacement',
   description: 'Round Rock\'s #1 roofing contractor. Expert roof repair, replacement & storm damage service. CertainTeed certified. Serving all Round Rock neighborhoods. 24/7 emergency service. Call (512) 763-5277 for free inspection.',
   keywords: 'roofing round rock, round rock roofer, roof repair round rock tx, roof replacement round rock, roofing contractor round rock texas, round rock roofing company',
   openGraph: {

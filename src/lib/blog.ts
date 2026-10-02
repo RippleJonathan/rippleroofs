@@ -38,6 +38,7 @@ export interface BlogPost {
   readingTime: string
   comparisonTable?: ComparisonTable
   howTo?: HowToGuide
+  metaTitle?: string // Optional <title> override (keeps H1/headline untouched)
 }
 
 export interface BlogPostMetadata {
@@ -152,6 +153,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
       readingTime: stats.text,
       comparisonTable: data.comparisonTable,
       howTo: data.howTo,
+      metaTitle: data.metaTitle,
     }
   } catch (error) {
     return null
