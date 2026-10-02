@@ -332,22 +332,16 @@ export default function CalculatorsPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'WebApplication',
-            name: 'Roofing Cost Calculator',
-            applicationCategory: 'UtilitiesApplication',
+            '@type': 'WebPage',
+            name: 'Roof Replacement Cost Calculator',
+            url: `${SITE_CONFIG.url}/calculators`,
             description: 'Free roofing calculators for Central Texas homeowners. Calculate roof size, estimate replacement costs, and analyze energy savings ROI.',
-            provider: {
+            publisher: {
               '@type': 'Organization',
               name: SITE_CONFIG.name,
               telephone: SITE_CONFIG.phone,
               url: SITE_CONFIG.url
             },
-            featureList: [
-              'Roof Size Calculator with pitch multipliers',
-              'Cost Estimator with material comparison',
-              'Energy Savings ROI Calculator',
-              'Central Texas specific pricing'
-            ]
           })
         }}
       />

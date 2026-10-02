@@ -393,7 +393,7 @@ export const LOCATIONS: LocationData[] = [
     zip: '78634',
     county: 'Williamson County',
     metroArea: 'Austin-Round Rock Metro',
-    heroImage: '/images/locations/hutto-hero.jpg',
+    heroImage: '/images/projects/shingle-roof-hutto-1.jpg',
     neighborhoods: [
       'Star Ranch',
       'Riverwalk',
@@ -454,7 +454,6 @@ export const LOCATIONS: LocationData[] = [
     zip: '78653',
     county: 'Travis County',
     metroArea: 'Austin-Round Rock Metro',
-    heroImage: '/images/locations/manor-hero.jpg',
     neighborhoods: [
       'ShadowGlen',
       'Presidential Meadows',
@@ -481,7 +480,6 @@ export const LOCATIONS: LocationData[] = [
     zip: '76537',
     county: 'Williamson County',
     metroArea: 'Austin-Round Rock Metro',
-    heroImage: '/images/locations/jarrell-hero.jpg',
     neighborhoods: [
       'Heritage Oaks',
       'Sonterra',
@@ -506,7 +504,7 @@ export const LOCATIONS: LocationData[] = [
     zip: '78642',
     county: 'Williamson County',
     metroArea: 'Austin-Round Rock Metro',
-    heroImage: '/images/locations/liberty-hill-hero.jpg',
+    heroImage: '/images/blog/roof-replacement-cost-liberty-hill-tx.jpg',
     neighborhoods: [
       'Goodnight Ranch',
       'Winn Ridge',
@@ -533,7 +531,6 @@ export const LOCATIONS: LocationData[] = [
     zip: '78610',
     county: 'Hays County',
     metroArea: 'Austin-San Marcos Corridor',
-    heroImage: '/images/locations/buda-hero.jpg',
     neighborhoods: [
       'Garlic Creek',
       'Sunfield',
@@ -562,7 +559,6 @@ export const LOCATIONS: LocationData[] = [
     zip: '78640',
     county: 'Hays County',
     metroArea: 'Austin-San Marcos Corridor',
-    heroImage: '/images/locations/kyle-hero.jpg',
     neighborhoods: [
       'Plum Creek',
       'Kohlers Crossing',
@@ -592,7 +588,6 @@ export const LOCATIONS: LocationData[] = [
     zip: '78620',
     county: 'Hays County',
     metroArea: 'Austin Metro - Hill Country',
-    heroImage: '/images/locations/dripping-springs-hero.jpg',
     neighborhoods: [
       'Caliterra',
       'Belterra',

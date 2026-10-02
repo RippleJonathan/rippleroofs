@@ -5,7 +5,7 @@ import { Container } from '@/components/layout/Container'
 import { QuoteForm } from '@/components/forms/QuoteForm'
 import { Button } from '@/components/ui/Button'
 import { LocationReviewWall } from '@/components/location/LocationReviewWall'
-import { getBusinessRatingSnapshot } from '@/constants/business'
+import { getBusinessRatingSnapshot, BUSINESS_INFO_TEXAS } from '@/constants/business'
 import { fetchGoogleReviews } from '@/lib/googleReviews'
 import { SITE_CONFIG } from '@/lib/constants'
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema'
@@ -601,6 +601,14 @@ export default async function RoofingRoundRockPage() {
               name: 'Ripple Roofing & Construction',
               telephone: '(512) 763-5277',
               url: 'https://rippleroofs.com',
+              address: {
+                '@type': 'PostalAddress',
+                streetAddress: BUSINESS_INFO_TEXAS.address.street,
+                addressLocality: BUSINESS_INFO_TEXAS.address.city,
+                addressRegion: BUSINESS_INFO_TEXAS.address.state,
+                postalCode: BUSINESS_INFO_TEXAS.address.zip,
+                addressCountry: 'US',
+              },
               areaServed: {
                 '@type': 'City',
                 name: 'Round Rock',

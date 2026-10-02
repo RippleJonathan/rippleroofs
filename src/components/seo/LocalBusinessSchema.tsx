@@ -9,11 +9,11 @@ export default function LocalBusinessSchema() {
     name: 'Ripple Roofing & Construction',
     legalName: 'Ripple Roofing & Construction LLC',
     url: 'https://rippleroofs.com',
-    logo: 'https://rippleroofs.com/images/ripple-roofing-logo.png',
+    logo: 'https://rippleroofs.com/images/logo.png',
     image: [
-      'https://rippleroofs.com/images/ripple-roofing-logo.png',
-      'https://rippleroofs.com/images/services/residential-roofing.jpg',
-      'https://rippleroofs.com/images/services/commercial-roofing.jpg',
+      'https://rippleroofs.com/images/logo.png',
+      'https://rippleroofs.com/images/projects/shingle-roof-georgetown-1.jpg',
+      'https://rippleroofs.com/images/projects/shingle-roof-hutto-1.jpg',
     ],
     description:
       'Premium roofing services in Texas. Veteran-owned, SBA-certified, and CertainTeed ShingleMaster Premier certified contractor serving Round Rock, Austin, Georgetown, and surrounding areas with roof replacement, repairs, emergency services, and more. 24/7 emergency service available.',
@@ -45,7 +45,7 @@ export default function LocalBusinessSchema() {
       '@id': 'https://rippleroofs.com/#organization',
     },
     url: 'https://rippleroofs.com',
-    logo: 'https://rippleroofs.com/images/ripple-roofing-logo.png',
+    logo: 'https://rippleroofs.com/images/logo.png',
     description:
       'Premium roofing services in Central Texas. CertainTeed ShingleMaster Premier certified contractor serving Round Rock, Austin, Georgetown, and surrounding areas.',
     telephone: BUSINESS_INFO_TEXAS.phoneRaw,
